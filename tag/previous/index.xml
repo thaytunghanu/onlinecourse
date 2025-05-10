@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Previous | Thầy Tùng HANU</title><link>https://example.com/tag/previous/</link><atom:link href="https://example.com/tag/previous/index.xml" rel="self" type="application/rss+xml"/><description>Previous</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate><image><url>https://example.com/media/icon_hu_7613a4a452ac7087.png</url><title>Previous</title><link>https://example.com/tag/previous/</link></image><item><title>🤖 Learn Robotics</title><link>https://example.com/course/robotics/</link><pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate><guid>https://example.com/course/robotics/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Previous | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/tag/previous/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/tag/previous/index.xml" rel="self" type="application/rss+xml"/><description>Previous</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/media/icon_hu_7613a4a452ac7087.png</url><title>Previous</title><link>https://thaytunghanu.github.io/onlinecourse/tag/previous/</link></image><item><title>🤖 Learn Robotics</title><link>https://thaytunghanu.github.io/onlinecourse/course/robotics/</link><pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/robotics/</guid><description>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
-/course/robotics/featured_hu_8e54716d0d6cf7d7.webp 400w,
-/course/robotics/featured_hu_658f69ff8aac8838.webp 760w,
-/course/robotics/featured_hu_e369c30e73e61e46.webp 1200w"
-src="https://example.com/course/robotics/featured_hu_8e54716d0d6cf7d7.webp"
+/onlinecourse/course/robotics/featured_hu_8e54716d0d6cf7d7.webp 400w,
+/onlinecourse/course/robotics/featured_hu_658f69ff8aac8838.webp 760w,
+/onlinecourse/course/robotics/featured_hu_e369c30e73e61e46.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/robotics/featured_hu_8e54716d0d6cf7d7.webp"
 width="760"
 height="507"
 loading="lazy" data-zoomable />&lt;/div>
@@ -38,23 +38,23 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;h2 id="courses-in-this-program">Courses in this program&lt;/h2>
 &lt;ul class="list-unstyled">
 &lt;li>
-&lt;h5>&lt;a href="https://example.com/course/robotics/python/">Python basics&lt;/a>&lt;/h5>
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/robotics/python/">Python basics&lt;/a>&lt;/h5>
 &lt;p>Build a foundation in Python.
 &lt;/p>
 &lt;/li>
 &lt;li>
-&lt;h5>&lt;a href="https://example.com/course/robotics/visualization/">Visualization&lt;/a>&lt;/h5>
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/robotics/visualization/">Visualization&lt;/a>&lt;/h5>
 &lt;p>Learn how to visualize data with Plotly.
 &lt;/p>
 &lt;/li>
 &lt;li>
-&lt;h5>&lt;a href="https://example.com/course/robotics/stats/">Statistics&lt;/a>&lt;/h5>
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/robotics/stats/">Statistics&lt;/a>&lt;/h5>
 &lt;p>Introduction to statistics for data science.
 &lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h2 id="meet-your-instructor">Meet your instructor&lt;/h2>
-&lt;a href="https://example.com/author/dr.-hoang-thanh-tung/">Dr. Hoàng Thanh Tùng&lt;/a>
+&lt;a href="https://thaytunghanu.github.io/onlinecourse/author/dr.-hoang-thanh-tung/">Dr. Hoàng Thanh Tùng&lt;/a>
 &lt;h2 id="faqs">FAQs&lt;/h2>
 &lt;details class="spoiler " id="spoiler-9">
 &lt;summary>Are there prerequisites?&lt;/summary>
