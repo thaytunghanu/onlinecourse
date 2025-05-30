@@ -2,7 +2,7 @@
 widget: hero
 headless: true
 weight: 10
-title: Online Course Template
+title: Các khóa học online miễn phí của Thầy Tùng HANU
 hero_media: teacher.png
 design:
   background:
@@ -26,8 +26,12 @@ advanced:
 
 <br>
 
-Published with the [Hugo Blox Builder](https://hugoblox.com/).
+<!-- Published with the [Hugo Blox Builder](https://hugoblox.com/). -->
 
-Introduce your courses here.
+Các khóa học bao gồm:
+- GIS căn bản
+- Phân tích dữ liệu 
+- Kinh tế môi trường
+- Biến đổi khí hậu
 
 <a class="github-button" href="https://github.com/HugoBlox/hugo-blox-builder" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Hugo Blox Builder">Star Hugo Blox Builder</a><br><a class="github-button" href="https://github.com/HugoBlox/theme-online-course" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star the Online Course template">Star the Online Course template</a><script async defer src="https://buttons.github.io/buttons.js"></script>
