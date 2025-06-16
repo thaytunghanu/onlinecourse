@@ -1,15 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Current | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/tag/current/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/tag/current/index.xml" rel="self" type="application/rss+xml"/><description>Current</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/media/icon_hu_7613a4a452ac7087.png</url><title>Current</title><link>https://thaytunghanu.github.io/onlinecourse/tag/current/</link></image><item><title>📊 Learn Data Science</title><link>https://thaytunghanu.github.io/onlinecourse/course/data-science/</link><pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/data-science/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Current | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/tag/current/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/tag/current/index.xml" rel="self" type="application/rss+xml"/><description>Current</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 15 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Current</title><link>https://thaytunghanu.github.io/onlinecourse/tag/current/</link></image><item><title>🗺️ GIS</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/</link><pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/</guid><description>&lt;!--
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img alt="" srcset="
-/onlinecourse/course/data-science/featured_hu_9b9e0a631e4a4cb3.webp 400w,
-/onlinecourse/course/data-science/featured_hu_33a0fe7af416055f.webp 760w,
-/onlinecourse/course/data-science/featured_hu_de6c62ec1e79aaa5.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/data-science/featured_hu_9b9e0a631e4a4cb3.webp"
-width="760"
-height="507"
-loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="featured.jpg" alt="" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
+-->
 &lt;details class="toc-inpage d-print-none d-xl-none " open>
 &lt;summary class="font-weight-bold">Table of Contents&lt;/summary>
 &lt;nav id="TableOfContents">
@@ -38,17 +32,17 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;h2 id="courses-in-this-program">Courses in this program&lt;/h2>
 &lt;ul class="list-unstyled">
 &lt;li>
-&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/data-science/python/">Python basics&lt;/a>&lt;/h5>
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/python/">Python basics&lt;/a>&lt;/h5>
 &lt;p>Build a foundation in Python.
 &lt;/p>
 &lt;/li>
 &lt;li>
-&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/data-science/visualization/">Visualization&lt;/a>&lt;/h5>
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/visualization/">Visualization&lt;/a>&lt;/h5>
 &lt;p>Learn how to visualize data with Plotly.
 &lt;/p>
 &lt;/li>
 &lt;li>
-&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/data-science/stats/">Statistics&lt;/a>&lt;/h5>
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/stats/">Statistics&lt;/a>&lt;/h5>
 &lt;p>Introduction to statistics for data science.
 &lt;/p>
 &lt;/li>
