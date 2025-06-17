@@ -7568,16 +7568,13 @@ div.alert a {
   clear: both; }
 
 .article-banner {
-  display: block; margin: 0 auto;
-  border-radius: 20px;
-  }
-  /* width: 100%;
+  width: 100%;
   height: 260px;
   object-fit: cover; }
   @media (min-width: 992px) {
     .article-banner {
       height: 310px;
-      /* Increased height on desktop */ } } */
+      /* Increased height on desktop */ } }
 .featured-image-wrapper {
   position: relative;
   padding-left: 0;
@@ -9750,3 +9747,9 @@ div.chart {
 
 .cta-group {
   justify-content: center; }
+
+.article-banner {
+  display: block;
+  margin: 0 auto;
+  max-width: 25%;
+  border-radius: 20px; }
