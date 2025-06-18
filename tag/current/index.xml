@@ -8,31 +8,28 @@
 &lt;summary class="font-weight-bold">Table of Contents&lt;/summary>
 &lt;nav id="TableOfContents">
 &lt;ul>
-&lt;li>&lt;a href="#what-you-will-learn">What you will learn&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#program-overview">Program overview&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#mục-tiêu-khóa-học">Mục tiêu khóa học&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#một-số-kết-quả-của-các-cựu-học-viên">Một số kết quả của các cựu học viên&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#courses-in-this-program">Courses in this program&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#meet-your-instructor">Meet your instructor&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#faqs">FAQs&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/nav>
 &lt;/details>
-&lt;h2 id="what-you-will-learn">What you will learn&lt;/h2>
+&lt;h2 id="mục-tiêu-khóa-học">Mục tiêu khóa học&lt;/h2>
+&lt;p>Sau khi học xong, người học có thể:&lt;/p>
 &lt;ul>
-&lt;li>Fundamental
-&lt;mark>Python programming skills&lt;/mark>&lt;/li>
-&lt;li>
-&lt;mark>Statistical concepts&lt;/mark> and how to apply them in practice&lt;/li>
-&lt;li>Gain experience with the
-&lt;mark>Scikit&lt;/mark>, including data visualization with
-&lt;mark>Plotly&lt;/mark> and data wrangling with
-&lt;mark>Pandas&lt;/mark>&lt;/li>
+&lt;li>Xử lý được dữ liệu GIS bằng phần mềm QGIS&lt;/li>
+&lt;li>Vận dụng được các phương pháp phân tích không gian cơ bản trong các vấn đề thực tế thuộc nhiều lĩnh vực: khoa học xã hội, khoa học tự nhiên, kỹ thuật.&lt;/li>
+&lt;li>Tạo, trình bày được bản đồ chuyên đề phục vụ nghiên cứu và báo cáo&lt;/li>
+&lt;li>Có hiểu biết căn bản về WebGIS, và tạo được một ứng dụng WebGIS đơn giản&lt;/li>
 &lt;/ul>
-&lt;h2 id="program-overview">Program overview&lt;/h2>
-&lt;p>The demand for skilled data science practitioners is rapidly growing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi.&lt;/p>
+&lt;h2 id="một-số-kết-quả-của-các-cựu-học-viên">Một số kết quả của các cựu học viên&lt;/h2>
+&lt;p>&amp;hellip;&amp;hellip;&lt;/p>
 &lt;h2 id="courses-in-this-program">Courses in this program&lt;/h2>
 &lt;ul class="list-unstyled">
 &lt;li>
-&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/python/">Python basics&lt;/a>&lt;/h5>
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/python/">1. Python basics&lt;/a>&lt;/h5>
 &lt;p>Build a foundation in Python.
 &lt;/p>
 &lt;/li>
@@ -50,11 +47,11 @@
 &lt;h2 id="meet-your-instructor">Meet your instructor&lt;/h2>
 &lt;a href="https://thaytunghanu.github.io/onlinecourse/author/dr.-hoang-thanh-tung/">Dr. Hoàng Thanh Tùng&lt;/a>
 &lt;h2 id="faqs">FAQs&lt;/h2>
-&lt;details class="spoiler " id="spoiler-9">
+&lt;details class="spoiler " id="spoiler-4">
 &lt;summary>Are there prerequisites?&lt;/summary>
 &lt;p>There are no prerequisites for the first course.&lt;/p>
 &lt;/details>
-&lt;details class="spoiler " id="spoiler-10">
+&lt;details class="spoiler " id="spoiler-5">
 &lt;summary>How often do the courses run?&lt;/summary>
 &lt;p>Continuously, at your own pace.&lt;/p>
 &lt;/details>
