@@ -9751,5 +9751,5 @@ div.chart {
 .article-banner {
   display: block;
   margin: 0 auto;
-  max-width: 25%;
+  max-width: 300px;
   border-radius: 20px; }
