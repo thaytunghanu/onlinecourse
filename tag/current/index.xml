@@ -25,7 +25,57 @@
 &lt;li>Có hiểu biết căn bản về WebGIS, và tạo được một ứng dụng WebGIS đơn giản&lt;/li>
 &lt;/ul>
 &lt;h2 id="một-số-kết-quả-của-các-cựu-học-viên">Một số kết quả của các cựu học viên&lt;/h2>
-&lt;p>&amp;hellip;&amp;hellip;&lt;/p>
+&lt;div class="hb-columns">
+&lt;div class="hb-column">
+&lt;figure id="figure-project-1">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="output1.jpg" alt="Ảnh 1" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Project 1
+&lt;/figcaption>&lt;/figure>
+&lt;/div>
+&lt;div class="hb-column">
+&lt;figure id="figure-project-2">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="output2.jpg" alt="Ảnh 2" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Project 2
+&lt;/figcaption>&lt;/figure>
+&lt;/div>
+&lt;div class="hb-column">
+&lt;figure id="figure-project-3">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="output3.jpg" alt="Ảnh 3" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Project 3
+&lt;/figcaption>&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.hb-columns {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+justify-content: space-between;
+}
+.hb-columns .hb-column {
+flex: 1 1 calc(33.333% - 1rem);
+max-width: calc(33.333% - 1rem);
+box-sizing: border-box;
+}
+.hb-columns .hb-column img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+@media (max-width: 768px) {
+.hb-columns .hb-column {
+flex: 1 1 100%;
+max-width: 100%;
+}
+}
+&lt;/style>
+&lt;!-- ![screen reader text](output1.jpg "caption") -->
 &lt;h2 id="courses-in-this-program">Courses in this program&lt;/h2>
 &lt;ul class="list-unstyled">
 &lt;li>
@@ -47,11 +97,11 @@
 &lt;h2 id="meet-your-instructor">Meet your instructor&lt;/h2>
 &lt;a href="https://thaytunghanu.github.io/onlinecourse/author/dr.-hoang-thanh-tung/">Dr. Hoàng Thanh Tùng&lt;/a>
 &lt;h2 id="faqs">FAQs&lt;/h2>
-&lt;details class="spoiler " id="spoiler-4">
+&lt;details class="spoiler " id="spoiler-5">
 &lt;summary>Are there prerequisites?&lt;/summary>
 &lt;p>There are no prerequisites for the first course.&lt;/p>
 &lt;/details>
-&lt;details class="spoiler " id="spoiler-5">
+&lt;details class="spoiler " id="spoiler-6">
 &lt;summary>How often do the courses run?&lt;/summary>
 &lt;p>Continuously, at your own pace.&lt;/p>
 &lt;/details>
