@@ -9,9 +9,10 @@
 &lt;nav id="TableOfContents">
 &lt;ul>
 &lt;li>&lt;a href="#mục-tiêu-khóa-học">Mục tiêu khóa học&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#đối-tượng-của-khóa-học">Đối tượng của khóa học&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#một-số-kết-quả-của-các-cựu-học-viên">Một số kết quả của các cựu học viên&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#courses-in-this-program">Courses in this program&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#meet-your-instructor">Meet your instructor&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#nội-dung-khóa-học">Nội dung khóa học&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#thông-tin-giảng-viên">Thông tin giảng viên&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#faqs">FAQs&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/nav>
@@ -24,8 +25,10 @@
 &lt;li>Tạo, trình bày được bản đồ chuyên đề phục vụ nghiên cứu và báo cáo&lt;/li>
 &lt;li>Có hiểu biết căn bản về WebGIS, và tạo được một ứng dụng WebGIS đơn giản&lt;/li>
 &lt;/ul>
+&lt;h2 id="đối-tượng-của-khóa-học">Đối tượng của khóa học&lt;/h2>
+&lt;p>Sinh viên, học viên cao học, nghiên cứu sinh, người có công việc liên quan đến GIS cần bổ trợ kiến thức, kỹ năng về bản đồ số và dữ liệu không gian trong học tập, nghiên cứu, nghiệp vụ.&lt;/p>
 &lt;h2 id="một-số-kết-quả-của-các-cựu-học-viên">Một số kết quả của các cựu học viên&lt;/h2>
-&lt;div class="hb-columns">
+&lt;div class="hb-columns hb-columns-3">
 &lt;div class="hb-column">
 &lt;figure id="figure-project-1">
 &lt;div class="d-flex justify-content-center">
@@ -57,30 +60,37 @@ display: flex;
 flex-wrap: wrap;
 gap: 1rem;
 justify-content: space-between;
+align-items: stretch;
 }
 .hb-columns .hb-column {
-flex: 1 1 calc(33.333% - 1rem);
-max-width: calc(33.333% - 1rem);
+flex: 1 1 auto;
 box-sizing: border-box;
 }
-.hb-columns .hb-column img {
+.hb-columns-3 .hb-column { flex-basis: calc(33.333% - 1rem); max-width: calc(33.333% - 1rem); }
+.hb-columns img {
 max-width: 100%;
 height: auto;
 display: block;
+transition: transform 0.3s ease;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.hb-columns img:hover {
+transform: scale(1.03);
+box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 @media (max-width: 768px) {
 .hb-columns .hb-column {
-flex: 1 1 100%;
-max-width: 100%;
+flex-basis: 100% !important;
+max-width: 100% !important;
 }
 }
 &lt;/style>
-&lt;!-- ![screen reader text](output1.jpg "caption") -->
-&lt;h2 id="courses-in-this-program">Courses in this program&lt;/h2>
+&lt;h2 id="nội-dung-khóa-học">Nội dung khóa học&lt;/h2>
 &lt;ul class="list-unstyled">
 &lt;li>
-&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/python/">1. Python basics&lt;/a>&lt;/h5>
-&lt;p>Build a foundation in Python.
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/">1. Giới thiệu về GIS và phần mềm QGIS&lt;/a>&lt;/h5>
+&lt;p>Lý thuyết về GIS và ứng dụng, cài đặt phần mềm QGIS
 &lt;/p>
 &lt;/li>
 &lt;li>
@@ -94,19 +104,19 @@ max-width: 100%;
 &lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h2 id="meet-your-instructor">Meet your instructor&lt;/h2>
-&lt;a href="https://thaytunghanu.github.io/onlinecourse/author/dr.-hoang-thanh-tung/">Dr. Hoàng Thanh Tùng&lt;/a>
+&lt;h2 id="thông-tin-giảng-viên">Thông tin giảng viên&lt;/h2>
+&lt;a href="https://thaytunghanu.github.io/onlinecourse/author/ts.-hoang-thanh-tung/">TS. Hoàng Thanh Tùng&lt;/a>
 &lt;h2 id="faqs">FAQs&lt;/h2>
 &lt;details class="spoiler " id="spoiler-5">
-&lt;summary>Are there prerequisites?&lt;/summary>
-&lt;p>There are no prerequisites for the first course.&lt;/p>
+&lt;summary>Điều kiện tiên quyết của khóa học?&lt;/summary>
+&lt;p>Khóa học không yêu cầu điều kiện tiên quyết.&lt;/p>
 &lt;/details>
 &lt;details class="spoiler " id="spoiler-6">
-&lt;summary>How often do the courses run?&lt;/summary>
-&lt;p>Continuously, at your own pace.&lt;/p>
+&lt;summary>Khóa học kéo dài bao lâu?&lt;/summary>
+&lt;p>10 buổi, mỗi buổi khoảng 120 phút. Các bạn có thể tự điều chỉnh theo khung thời gian của mình nếu tự học.&lt;/p>
 &lt;/details>
 &lt;ul class="cta-group">
 &lt;li>
-&lt;a href="python" class="btn btn-primary px-3 py-3">Begin the course&lt;/a>
+&lt;a href="1_intro" class="btn btn-primary px-3 py-3">Bắt đầu khóa học&lt;/a>
 &lt;/li>
 &lt;/ul></description></item></channel></rss>

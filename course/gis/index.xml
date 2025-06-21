@@ -1,31 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>🗺️ Hệ thống thông tin Địa lý - GIS | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/course/gis/index.xml" rel="self" type="application/rss+xml"/><description>🗺️ Hệ thống thông tin Địa lý - GIS</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 15 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/course/gis/featured.png</url><title>🗺️ Hệ thống thông tin Địa lý - GIS</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/</link></image><item><title>1. Python basics</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/python/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/python/</guid><description>&lt;p>Build a foundation in Python.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>🗺️ Hệ thống thông tin Địa lý - GIS | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/course/gis/index.xml" rel="self" type="application/rss+xml"/><description>🗺️ Hệ thống thông tin Địa lý - GIS</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 15 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/course/gis/featured.png</url><title>🗺️ Hệ thống thông tin Địa lý - GIS</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/</link></image><item><title>1. Giới thiệu về GIS và phần mềm QGIS</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/</link><pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/</guid><description>&lt;p>Lý thuyết về GIS và ứng dụng, cài đặt phần mềm QGIS&lt;/p>
+&lt;!--
+&lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 1-2 hours per week, for 8 weeks -->
+&lt;h2 id="lý-thuyết-về-gis-và-các-ứng-dụng-của-gis">Lý thuyết về GIS và các ứng dụng của GIS&lt;/h2>
 &lt;p>
-&lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 1-2 hours per week, for 8 weeks&lt;/p>
-&lt;h2 id="learn">Learn&lt;/h2>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/rfscVS0vtbw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;div class="responsive-wrap">
+&lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRruTwmsr9kKMO2RyxSE-efaAOV10D0v57Zz-sF8wMbZBZ5rQzcE4KcjRgkbBzNrA/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
 &lt;/div>
+&lt;br>
+Các học liệu đọc thêm:&lt;br>
+Tim Sutton et al. 2009, A Gentle Introduction to GIS, Chapter 2: Introducing GIS, &lt;a href="https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/introducing_gis.html" target="_blank" rel="noopener">https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/introducing_gis.html&lt;/a>&lt;/p>
 &lt;h2 id="quiz">Quiz&lt;/h2>
-&lt;details class="spoiler " id="spoiler-2">
-&lt;summary>What is the difference between lists and tuples?&lt;/summary>
-&lt;p>&lt;p>Lists&lt;/p>
-&lt;ul>
-&lt;li>Lists are mutable - they can be changed&lt;/li>
-&lt;li>Slower than tuples&lt;/li>
-&lt;li>Syntax: &lt;code>a_list = [1, 2.0, 'Hello world']&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;p>Tuples&lt;/p>
-&lt;ul>
-&lt;li>Tuples are immutable - they can&amp;rsquo;t be changed&lt;/li>
-&lt;li>Tuples are faster than lists&lt;/li>
-&lt;li>Syntax: &lt;code>a_tuple = (1, 2.0, 'Hello world')&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/p>
-&lt;/details>
-&lt;details class="spoiler " id="spoiler-3">
-&lt;summary>Is Python case-sensitive?&lt;/summary>
-&lt;p>Yes&lt;/p>
-&lt;/details></description></item><item><title>Visualization</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/visualization/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/visualization/</guid><description>&lt;p>Learn how to visualize data with Plotly.&lt;/p>
+&lt;p>Để làm quen với GIS, dựa trên Google Earth, hãy tạo một số đối tượng dạng điểm (Placemark), đường (Path), vùng (Polygon) ở khu vực nơi mình sống.&lt;/p>
+&lt;h2 id="cài-đặt-phần-mềm-qgis">Cài đặt phần mềm QGIS&lt;/h2></description></item><item><title>Visualization</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/visualization/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/visualization/</guid><description>&lt;p>Learn how to visualize data with Plotly.&lt;/p>
 &lt;p>
 &lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 1-2 hours per week, for 8 weeks&lt;/p>
 &lt;h2 id="learn">Learn&lt;/h2>
