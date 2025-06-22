@@ -30,23 +30,6 @@
 &lt;h2 id="program-overview">Program overview&lt;/h2>
 &lt;p>The demand for skilled data science practitioners is rapidly growing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi.&lt;/p>
 &lt;h2 id="courses-in-this-program">Courses in this program&lt;/h2>
-&lt;ul class="list-unstyled">
-&lt;li>
-&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/suscc/python/">Python basics&lt;/a>&lt;/h5>
-&lt;p>Build a foundation in Python.
-&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/suscc/visualization/">Visualization&lt;/a>&lt;/h5>
-&lt;p>Learn how to visualize data with Plotly.
-&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/suscc/stats/">Statistics&lt;/a>&lt;/h5>
-&lt;p>Introduction to statistics for data science.
-&lt;/p>
-&lt;/li>
-&lt;/ul>
 &lt;h2 id="meet-your-instructor">Meet your instructor&lt;/h2>
 &lt;a href="https://thaytunghanu.github.io/onlinecourse/author/ts.-hoang-thanh-tung/">TS. Hoàng Thanh Tùng&lt;/a>
 &lt;h2 id="faqs">FAQs&lt;/h2>
