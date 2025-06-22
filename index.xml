@@ -1,4 +1,345 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/index.xml" rel="self" type="application/rss+xml"/><description>Thầy Tùng HANU</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 20 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/</link></image><item><title>Python basics</title><link>https://thaytunghanu.github.io/onlinecourse/course/dana/python/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/dana/python/</guid><description>&lt;p>Build a foundation in Python.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/index.xml" rel="self" type="application/rss+xml"/><description>Thầy Tùng HANU</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 20 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/</link></image><item><title>1. Giới thiệu về GIS và phần mềm QGIS</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/</link><pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/</guid><description>&lt;p>Lý thuyết về GIS và ứng dụng, cài đặt phần mềm QGIS&lt;/p>
+&lt;!--
+&lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 1-2 hours per week, for 8 weeks -->
+&lt;h2 id="lý-thuyết-về-gis-và-các-ứng-dụng-của-gis">Lý thuyết về GIS và các ứng dụng của GIS&lt;/h2>
+&lt;p>
+&lt;div class="responsive-wrap">
+&lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRruTwmsr9kKMO2RyxSE-efaAOV10D0v57Zz-sF8wMbZBZ5rQzcE4KcjRgkbBzNrA/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
+&lt;/div>
+&lt;br>
+Các học liệu đọc thêm:&lt;br>
+Tim Sutton et al. 2009, A Gentle Introduction to GIS, Chapter 2: Introducing GIS, &lt;a href="https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/introducing_gis.html" target="_blank" rel="noopener">https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/introducing_gis.html&lt;/a>&lt;/p>
+&lt;h2 id="quiz">Quiz&lt;/h2>
+&lt;p>Để làm quen với GIS, dựa trên Google Earth, hãy tạo một số đối tượng dạng điểm (Placemark), đường (Path), vùng (Polygon) ở khu vực nơi mình sống.&lt;/p>
+&lt;h2 id="cài-đặt-phần-mềm-qgis">Cài đặt phần mềm QGIS&lt;/h2>
+&lt;p>QGIS (tên đầy đủ: Quantum GIS) là phần mềm mã nguồn mở (free &amp;amp; open source) dùng để xử lý dữ liệu không gian (GIS - Geographic Information System), phục vụ cho:&lt;/p>
+&lt;ul>
+&lt;li>Bản đồ số&lt;/li>
+&lt;li>Phân tích không gian&lt;/li>
+&lt;li>Quản lý tài nguyên thiên nhiên&lt;/li>
+&lt;li>Quy hoạch đô thị, giao thông, môi trường&amp;hellip;&lt;/li>
+&lt;li>Nghiên cứu khoa học, xã hội, kinh tế&amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;p>QGIS được cung cấp miễn phí ở: &lt;a href="https://qgis.org/download/" target="_blank" rel="noopener">https://qgis.org/download/&lt;/a>.
+Phần mềm QGIS được nâng cấp liên tục. Phiên bản mới nhất cho tới 6/2025 là version 3.4. Ở trang download, tương ứng với mỗi hệ điều hành được hỗ trợ (Window hay MacOS) đều có 2 phiên bản khác nhau là Long Term Release (LTR) và Latest version. &lt;strong>Nên sử dụng bản LTR&lt;/strong> vì tính ổn định cao hơn.&lt;/p>
+&lt;h3 id="quá-trình-cài-đặt-qgis-ở-hệ-điều-hành-windows">Quá trình cài đặt QGIS ở hệ điều hành Windows&lt;/h3>
+&lt;ol>
+&lt;li>Chọn bản LTR ở mục Offline (Standalone) installers. Download file cài đặt ***.msi về máy tính, dung lượng khoảng 1.2 GB.&lt;/li>
+&lt;/ol>
+&lt;p>
+&lt;figure id="figure-chọn-phiên-bản-ltr">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/1_intro/1_intro_LTR_hu_52c5a73ca308bbc7.webp 400w,
+/onlinecourse/course/gis/1_intro/1_intro_LTR_hu_39d653bae966f53f.webp 760w,
+/onlinecourse/course/gis/1_intro/1_intro_LTR_hu_5e6b75dc087d9f9d.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/1_intro_LTR_hu_52c5a73ca308bbc7.webp"
+width="760"
+height="245"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chọn phiên bản LTR
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ol start="2">
+&lt;li>Ấn Next một vài lần để tiến hành cài đặt, sau đó ấn Finish để hoàn tất cài đặt&lt;/li>
+&lt;/ol>
+&lt;p>
+&lt;figure id="figure-ấn-next">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 2" srcset="
+/onlinecourse/course/gis/1_intro/1_intro_next_hu_8104030ddd47df5b.webp 400w,
+/onlinecourse/course/gis/1_intro/1_intro_next_hu_d7685d53f6278264.webp 760w,
+/onlinecourse/course/gis/1_intro/1_intro_next_hu_f48e5869693a961e.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/1_intro_next_hu_8104030ddd47df5b.webp"
+width="495"
+height="387"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Ấn Next
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure id="figure-ấn-finish">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 3" srcset="
+/onlinecourse/course/gis/1_intro/1_intro_finish_hu_596168c4d6be6bcf.webp 400w,
+/onlinecourse/course/gis/1_intro/1_intro_finish_hu_999ddffe8d058d32.webp 760w,
+/onlinecourse/course/gis/1_intro/1_intro_finish_hu_1608d1916d70db.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/1_intro_finish_hu_596168c4d6be6bcf.webp"
+width="495"
+height="387"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Ấn Finish
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ol start="3">
+&lt;li>Khởi động QGIS bằng một trong số các cách sau:&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>Nhấp chuột vào icon QGIS Desktop 3.40.7 ở màn hình desktop&lt;/li>
+&lt;li>Tìm &amp;ldquo;QGIS&amp;rdquo; trong thanh Start&lt;/li>
+&lt;li>Khởi động bằng cách nhấp vào file bin: &amp;ldquo;C:\Program Files\QGIS 3.40.7\bin\qgis-ltr-bin.exe&amp;rdquo;&lt;/li>
+&lt;/ul>
+&lt;h2 id="làm-quen-với-giao-diện-qgis">Làm quen với giao diện QGIS&lt;/h2>
+&lt;h3 id="các-vùng-làm-việc-của-giao-diện-qgis">Các vùng làm việc của giao diện QGIS:&lt;/h3>
+&lt;ul>
+&lt;li>Map Canvas: là nơi hiển thị dữ liệu GIS&lt;/li>
+&lt;li>Browser Panel: bảng trình duyệt, dùng để gọi dữ liệu đưa vào Map Canvas&lt;/li>
+&lt;li>Menu bar: chứa các tool chính để thao tác&lt;/li>
+&lt;li>Các Tool bar khác ở bên dưới Menu bar&lt;/li>
+&lt;li>Layer Panel: bảng hiển thị các lớp dữ liệu&lt;/li>
+&lt;li>Processing Toolbox: tổng hợp các công cụ phân tích, xử lý. Nhiều công cụ ở Menu bar cũng được liệt kê trong Processing Toolbox.&lt;/li>
+&lt;li>Ngoài ra: Location coordinates để hiển thị vị trí tọa độ của trỏ chuột; Map scale: tỉ lệ bản đồ hiện tại; CRS: tên của hệ thống tham chiếu tọa độ đang dùng (sẽ học sau).&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-giao-diện-của-qgis">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 4" srcset="
+/onlinecourse/course/gis/1_intro/1_intro_interface_hu_bc9e1b44343eb1da.webp 400w,
+/onlinecourse/course/gis/1_intro/1_intro_interface_hu_89af8b5f2337cf4a.webp 760w,
+/onlinecourse/course/gis/1_intro/1_intro_interface_hu_8353ef3e6dd4c12e.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/1_intro_interface_hu_bc9e1b44343eb1da.webp"
+width="760"
+height="459"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Giao diện của QGIS
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="thanh-công-cụ-menu-bar">Thanh công cụ Menu bar&lt;/h3>
+&lt;p>
+&lt;figure id="figure-thanh-menu-bar">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 5" srcset="
+/onlinecourse/course/gis/1_intro/1_intro_menubar_hu_f061b9cc2367181f.webp 400w,
+/onlinecourse/course/gis/1_intro/1_intro_menubar_hu_f96439bf20916e7.webp 760w,
+/onlinecourse/course/gis/1_intro/1_intro_menubar_hu_3fda7ce4a3990b2.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/1_intro_menubar_hu_f061b9cc2367181f.webp"
+width="760"
+height="366"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thanh Menu bar
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h4 id="project-menu">Project menu&lt;/h4>
+&lt;p>Trạng thái làm việc hiện thời của phần mềm QGIS được gọi là project. Khi tạm dừng làm việc và tắt phần mềm, bạn có thể lưu trạng thái làm việc (save project), để sau đó có thể tiếp tục một cách thuận tiện, không cần phải mở lại các dữ liệu từ đầu.&lt;br>
+Cấu trúc tổ chức của 1 project bao gồm 2 layer được minh họa ví dụ như sau:
+&lt;figure id="figure-cấu-trúc-project-của-qgis">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 6" srcset="
+/onlinecourse/course/gis/1_intro/1_intro_project_hu_da8c8860d1146d92.webp 400w,
+/onlinecourse/course/gis/1_intro/1_intro_project_hu_9ecb9224b67b8d26.webp 760w,
+/onlinecourse/course/gis/1_intro/1_intro_project_hu_1cc5a5120dda8f8f.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/1_intro_project_hu_da8c8860d1146d92.webp"
+width="760"
+height="289"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Cấu trúc project của QGIS
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;div class="hb-columns hb-columns-2">
+&lt;div class="hb-column">
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 7" srcset="
+/onlinecourse/course/gis/1_intro/1_intro_menu_project_hu_bf5fa46bf094d353.webp 400w,
+/onlinecourse/course/gis/1_intro/1_intro_menu_project_hu_58dd84159c60aa58.webp 760w,
+/onlinecourse/course/gis/1_intro/1_intro_menu_project_hu_1baf51ef9492419a.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/1_intro_menu_project_hu_bf5fa46bf094d353.webp"
+width="200"
+height="451"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/div>
+&lt;div class="hb-column">
+&lt;p>Project menu có các nút open, save, save as, &amp;hellip; để thao tác với project.&lt;/p>
+&lt;div class="alert alert-warning">
+&lt;div>
+Chú ý: Bạn cần phân biệt rõ &lt;mark>Save project&lt;/mark> và &lt;mark>Save layer edits&lt;/mark>
+&lt;/div>
+&lt;/div>
+&lt;p>Một số nút khác dành cho thao tác trình bày layout bản đồ.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.hb-columns {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+justify-content: space-between;
+align-items: stretch;
+}
+.hb-columns .hb-column {
+flex: 1 1 auto;
+box-sizing: border-box;
+}
+.hb-columns-2 .hb-column { flex-basis: calc(50% - 1rem); max-width: calc(50% - 1rem); }
+.hb-columns img {
+max-width: 100%;
+height: auto;
+display: block;
+transition: transform 0.3s ease;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.hb-columns img:hover {
+transform: scale(1.03);
+box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+@media (max-width: 768px) {
+.hb-columns .hb-column {
+flex-basis: 100% !important;
+max-width: 100% !important;
+}
+}
+&lt;/style>
+&lt;h4 id="edit-menu">Edit menu&lt;/h4>
+&lt;p>Gồm các chức năng dùng khi chỉnh sửa, edit dữ liệu.&lt;/p>
+&lt;h4 id="view-menu">View menu&lt;/h4>
+&lt;div class="hb-columns hb-columns-3">
+&lt;div class="hb-column">
+&lt;figure id="figure-view-menu-bao-gồm-các-chức-năng-zoom-kéo-pan-bản-đồ-chú-ý-ở-menu-view-có-2-nút-quan-trọng-là-panels-và-toolbars-ảnh-bên-cạnh">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="1_intro_menuview.jpg" alt="Ảnh 1" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+View Menu: bao gồm các chức năng zoom, kéo (pan) bản đồ. Chú ý: ở menu View có 2 nút quan trọng là Panels và Toolbars (ảnh bên cạnh)
+&lt;/figcaption>&lt;/figure>
+&lt;/div>
+&lt;div class="hb-column">
+&lt;figure id="figure-viewpanel-bật-tắt-để-hiển-thị-hoặc-ẩn-các-panel-khi-bạn-không-nhìn-thấy-panel-cần-chẳng-hạn-panel-layers-thì-vào-viewpanel-để-xem-checkbox-của-layers-là-đang-ở-chế-độ-hiển-thị-hay-đang-ẩn">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="1_intro_panel.jpg" alt="Ảnh 1" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+View/Panel: Bật tắt để hiển thị hoặc ẩn các Panel. Khi bạn không nhìn thấy panel cần, chẳng hạn panel Layers, thì vào View/Panel để xem checkbox của Layers là đang ở chế độ hiển thị hay đang ẩn.
+&lt;/figcaption>&lt;/figure>
+&lt;/div>
+&lt;div class="hb-column">
+&lt;figure id="figure-viewtoolbar-để-bật-tắt-các-thanh-công-cụ-toolbar">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="1_intro_toolbar.jpg" alt="Ảnh 1" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+View/Toolbar: để bật tắt các thanh công cụ toolbar
+&lt;/figcaption>&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.hb-columns {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+justify-content: space-between;
+align-items: stretch;
+}
+.hb-columns .hb-column {
+flex: 1 1 auto;
+box-sizing: border-box;
+}
+.hb-columns-3 .hb-column { flex-basis: calc(33.333% - 1rem); max-width: calc(33.333% - 1rem); }
+.hb-columns img {
+max-width: 100%;
+height: auto;
+display: block;
+transition: transform 0.3s ease;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.hb-columns img:hover {
+transform: scale(1.03);
+box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+@media (max-width: 768px) {
+.hb-columns .hb-column {
+flex-basis: 100% !important;
+max-width: 100% !important;
+}
+}
+&lt;/style>
+&lt;h4 id="layer-menu">Layer menu&lt;/h4>
+&lt;p>Chứa các chức năng thao tác với layer: creat, add, mở bảng thuộc tính, Toggle Editing (đổi sang trạng thái chỉnh sửa được cho lớp dữ liệu).&lt;/p>
+&lt;h4 id="settings-menu">Settings menu&lt;/h4>
+&lt;p>Chứa các cài đặt hệ thống của phần mềm.&lt;/p>
+&lt;h4 id="plugins-menu">Plugins menu&lt;/h4>
+&lt;p>Plugins trong QGIS là các tiện ích mở rộng (extension), cho phép bổ sung các chức năng vượt ra ngoài các công cụ mặc định. Cũng như phần mềm QGIS, các plugins được cung cấp miễn phí thông qua &lt;span style="background-color:#d3d3d3;padding:2px 4px;border-radius:4px;font-family:monospace;">Manage and Install Plugins ...&lt;/span>
+&lt;/p>
+&lt;h3 id="cài-đặt-plugin-quickmapservices">Cài đặt plugin QuickMapServices&lt;/h3>
+&lt;p>QuickMapServices là một trong những plugins quan trọng và hữu ích nhất của QGIS. Plugin này cung cấp bản đồ nền, ảnh vệ tinh nền độ phân giải cao của nhiều nhà cung cấp lớn như Google, Bing, Openstreetmap. Các bước cài đặt như sau:&lt;/p>
+&lt;ol>
+&lt;li>Vào Plugins/Manage and Install Plugins &amp;hellip;, gõ “QuickMapservices” trong ô tìm kiếm. Khi đã tìm đúng plugin đó, ấn &lt;span style="background-color:#d3d3d3;padding:2px 4px;border-radius:4px;font-family:monospace;">Install plugin&lt;/span>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/1_intro/1_intro_quickMS1_hu_d035965c79227980.webp 400w,
+/onlinecourse/course/gis/1_intro/1_intro_quickMS1_hu_add48aa027ed3d91.webp 760w,
+/onlinecourse/course/gis/1_intro/1_intro_quickMS1_hu_30426131571d4fae.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/1_intro_quickMS1_hu_d035965c79227980.webp"
+width="760"
+height="479"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/li>
+&lt;li>Trên Menu bar, vào Web/QuickMapservices (hoặc nhấn biểu tượng QuickMapservices ở Toolbar), chọn Settings
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/1_intro/1_intro_quickMS2_hu_1e9cc551167caadb.webp 400w,
+/onlinecourse/course/gis/1_intro/1_intro_quickMS2_hu_71b8cf89c8d6788e.webp 760w,
+/onlinecourse/course/gis/1_intro/1_intro_quickMS2_hu_c5418aec865a298.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/1_intro_quickMS2_hu_1e9cc551167caadb.webp"
+width="760"
+height="329"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/li>
+&lt;li>Chọn thẻ “More services” (Các dịch vụ khác), chọn “Get contributed pack” (gói thuộc tính) và
+nhấn nút “Save”.
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/1_intro/1_intro_quickMS3_hu_58533d4c9f942dd4.webp 400w,
+/onlinecourse/course/gis/1_intro/1_intro_quickMS3_hu_2eec382682de23bd.webp 760w,
+/onlinecourse/course/gis/1_intro/1_intro_quickMS3_hu_d383e75fa3151975.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/1_intro_quickMS3_hu_58533d4c9f942dd4.webp"
+width="573"
+height="450"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/li>
+&lt;li>Hãy thử hiển thị ảnh vệ tinh độ phân giải cao của Google lên Map canvas. Chọn Google Hybrid để có tên địa danh.
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/1_intro/1_intro_quickMS4_hu_6349e12f49487481.webp 400w,
+/onlinecourse/course/gis/1_intro/1_intro_quickMS4_hu_8a6664fddc5b622e.webp 760w,
+/onlinecourse/course/gis/1_intro/1_intro_quickMS4_hu_c1932cd9d1bdadb2.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/1_intro_quickMS4_hu_6349e12f49487481.webp"
+width="760"
+height="450"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="map-navigation-tool-bar">Map navigation tool bar&lt;/h4>
+&lt;p>Hãy thử nghiệm các chức năng của thanh công cụ này với bản đồ nền Google Hybrid vừa tải lên Map Canvas
+&lt;figure id="figure-map-navigation-tool-bar">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/1_intro/1_intro_mapnav_hu_c74fa661dfd14000.webp 400w,
+/onlinecourse/course/gis/1_intro/1_intro_mapnav_hu_8a1065cba267ce0c.webp 760w,
+/onlinecourse/course/gis/1_intro/1_intro_mapnav_hu_4fefd08d21a4f99.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/1_intro_mapnav_hu_c74fa661dfd14000.webp"
+width="760"
+height="259"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Map navigation tool bar
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="homework">Homework&lt;/h3>
+&lt;p>Imagine you are planning a project that applies GIS to a topic of your interest. Describe your project ideas, including the chosen topic, how you plan to organize the project, and any other relevant details. (Approximately 200 words).&lt;/p></description></item><item><title>Python basics</title><link>https://thaytunghanu.github.io/onlinecourse/course/dana/python/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/dana/python/</guid><description>&lt;p>Build a foundation in Python.&lt;/p>
 &lt;p>
 &lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 1-2 hours per week, for 8 weeks&lt;/p>
 &lt;h2 id="learn">Learn&lt;/h2>
