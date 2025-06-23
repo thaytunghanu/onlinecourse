@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CRS | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/tag/crs/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/tag/crs/index.xml" rel="self" type="application/rss+xml"/><description>CRS</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png</url><title>CRS</title><link>https://thaytunghanu.github.io/onlinecourse/tag/crs/</link></image><item><title>2. Hệ thống tham chiếu tọa độ (CRS)</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/</guid><description>&lt;p>Lý thuyết về các hệ thống tham chiếu tọa độ GIS. Thực hành làm quen các công cụ cơ bản của QGIS.&lt;/p>
+&lt;h2 id="lý-thuyết-về-các-hệ-thống-tham-chiếu-tọa-độ">Lý thuyết về các hệ thống tham chiếu tọa độ&lt;/h2>
+&lt;div class="responsive-wrap">
+&lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRUX_CAFWfwX1IZZcf09sJ-6iXoUupLZy6oDFmlhnUBELJN51RBnQN3xseRRrkPGg/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="làm-quen-các-công-cụ-cơ-bản-của-qgis">Làm quen các công cụ cơ bản của QGIS&lt;/h2>
+&lt;h3 id="lấy-dữ-liệu-để-thực-hành">Lấy dữ liệu để thực hành&lt;/h3>
+&lt;p>Đây là module thực hành đầu tiên trong 10 module. Gọi tên module là Part 1.
+&lt;a href="https://drive.google.com/drive/folders/16BGONstMOuhNSkJ0r6BwgU-3jNzsJkkx?usp=drive_link" target="_blank" rel="noopener">Download dữ liệu Dataset Part 1 ở đây.&lt;/a>&lt;br>
+Dữ liệu bao gồm các lớp:&lt;br>
+Các lớp định dạng vector bao gồm:&lt;/p>
+&lt;ul>
+&lt;li>Ranh giới hành chính như: World_Admin_Boundaries, Vietnam_Provinces&lt;/li>
+&lt;li>Đường giao thông: Roads_opm&lt;/li>
+&lt;li>Các lớp dạng điểm: Heritage_Sites, Poorest_Districts&lt;br>
+Lưu ý: các lớp vector đều có 5 hoặc 6 file thành phần. Ví dụ:
+&lt;figure id="figure-ví-dụ-về-các-file-thành-phần-của-một-lớp-vector-bạn-cần-đảm-bảo-các-file-thành-phần-này-luôn-ở-cùng-nhau-nếu-không-các-phần-mềm-như-qgis-sẽ-không-đọc-được-dữ-liệu">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_vectorfiles_hu_be9353262d11301e.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_vectorfiles_hu_2b69944a29de5c4d.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_vectorfiles_hu_1eadef532962182f.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_vectorfiles_hu_be9353262d11301e.webp"
+width="259"
+height="237"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Ví dụ về các file thành phần của một lớp vector. &lt;strong>Bạn cần đảm bảo các file thành phần này luôn ở cùng nhau. Nếu không, các phần mềm (như QGIS) sẽ không đọc được dữ liệu&lt;/strong>
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;p>Có một lớp định dạng raster là Elevation_Raster.tif. Đây là mô hình số độ cao (DEM) toàn lãnh thổ đất liền Việt Nam (không bao gồm các đảo, quần đảo).&lt;br>
+&lt;em>&lt;strong>Bài sau sẽ giải thích rõ về dữ liệu vector và dữ liệu raster.&lt;/strong>&lt;/em>&lt;br>
+Định dạng csv (dạng text) là lớp Hydropower_Plants.csv&lt;/p>
+&lt;h3 id="cách-qgis-quản-lý-dữ-liệu">Cách QGIS quản lý dữ liệu&lt;/h3>
+&lt;p>QGIS hỗ trợ xử lý rất nhiều định dạng dữ liệu. Mỗi loại định dạng dữ liệu được lưu trữ theo cách khác nhau, ví dụ shapefile có 5 hoặc 6 file thành phần như đã đề cập, trong khi định dạng tif (raster) chỉ có một file duy nhất. Dù có bao nhiêu file thành phần, mỗi lớp dữ liệu cũng chỉ hiển thị một chỉ mục (một dòng) duy nhất ở Layers Panel.&lt;br>
+&lt;figure id="figure-các-lớp-dữ-liệu-hiển-thị-trong-layers-panel-và-ở-ngoài-window-explorer">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_datamanagement_hu_6d6762d4f0f15fc4.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_datamanagement_hu_76ca83b7b8ef66f5.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_datamanagement_hu_a72220c71550e5ac.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_datamanagement_hu_6d6762d4f0f15fc4.webp"
+width="744"
+height="463"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Các lớp dữ liệu hiển thị trong Layers Panel và ở ngoài Window Explorer
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="thêm-lớp-dữ-liệu-add-layer">Thêm lớp dữ liệu (Add Layer)&lt;/h3>
+&lt;p>Thêm dữ liệu, nói cách khác là mở dữ liệu. Có nhiều cách để thêm dữ liệu.&lt;/p>
+&lt;div class="alert alert-note">
+&lt;div>
+Chú ý: Khi thêm dữ liệu vector, chỉ cần chọn file &lt;code>*.shp&lt;/code>, không cần thiết phải chọn cả 5 file thành phần.
+&lt;/div>
+&lt;/div>
+&lt;ol>
+&lt;li>
+&lt;p>Thêm dữ liệu bằng Menu bar: Layer menu/Add Layer/Add Vector Layer (hoặc các định dạng khác). &lt;strong>Add Vector Layer&lt;/strong> chỉ có tác dụng với dữ liệu vector, và tương tự, &lt;strong>Add Raster Layer&lt;/strong> chỉ có tác dụng với các lớp raster.
+&lt;figure id="figure-thêm-lớp-dữ-liệu-bằng-menu-bar">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_addlayer_menubar_hu_cf2d26d2817739a1.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_addlayer_menubar_hu_446b8f9e02c9bc64.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_addlayer_menubar_hu_fe6c0fd4d54c1725.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_addlayer_menubar_hu_cf2d26d2817739a1.webp"
+width="760"
+height="405"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thêm lớp dữ liệu bằng Menu bar
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Thêm dữ liệu bằng Manage Layers Toolbar. Cách làm tương tự như thao tác với Menu bar
+&lt;figure id="figure-thêm-lớp-dữ-liệu-bằng-manage-layers-toolbar">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_addlayer_toolbar_hu_300476370a9ef4c2.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_addlayer_toolbar_hu_23062f379be7aa24.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_addlayer_toolbar_hu_b46dea98700b95b8.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_addlayer_toolbar_hu_300476370a9ef4c2.webp"
+width="760"
+height="403"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thêm lớp dữ liệu bằng Manage Layers Toolbar
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Kéo &amp;amp; thả (drag &amp;amp; drop) từ Browser Panel vào Map canvas.
+&lt;figure id="figure-thêm-lớp-dữ-liệu-bằng-kéo--thả-drag--drop-từ-browser-panel-vào-map-canvas">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_addlayer_dragdrop_hu_cdff1c4acef23537.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_addlayer_dragdrop_hu_8777f1491c3a391d.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_addlayer_dragdrop_hu_f850a5c0046eb114.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_addlayer_dragdrop_hu_cdff1c4acef23537.webp"
+width="760"
+height="400"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thêm lớp dữ liệu bằng Kéo &amp;amp; thả (drag &amp;amp; drop) từ Browser Panel vào Map canvas
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Ngoài ra, bạn có thể kéo thả trực tiếp từ Window Explorer vào Map canvas của QGIS.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="quản-lý-các-lớp-ở-layers-panel">Quản lý các lớp ở Layers Panel&lt;/h3>
+&lt;ul>
+&lt;li>Trước mỗi tên lớp ở Layers Panel có một checkbox dùng để bật và tắt sự hiển thị (visibility) của các lớp dữ liệu.&lt;/li>
+&lt;li>Thứ tự sắp xếp của các lớp ở Layers Panel cũng quy định sự hiển thị của các lớp. Nếu để các lớp có diện bao phủ rộng như World_Admin_Boundaries ở trên cùng thì lớp này sẽ che khuất các lớp ở dưới nó. Do đó, để tăng cường sự hiển thị các lớp, cần sắp xếp các lớp theo nguyên tắc: độ che phủ cao ở dưới, độ che phủ thấp ở trên. Ví dụ các lớp dạng điểm cần xếp ở trên cùng, sau đó đến các lớp dạng đường, rồi đến các lớp dạng vùng ở dưới cùng.&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -94,8 +94,8 @@ max-width: 100% !important;
 &lt;/p>
 &lt;/li>
 &lt;li>
-&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/visualization/">Visualization&lt;/a>&lt;/h5>
-&lt;p>Learn how to visualize data with Plotly.
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/">2. Hệ thống tham chiếu tọa độ (CRS)&lt;/a>&lt;/h5>
+&lt;p>Lý thuyết về các hệ thống tham chiếu tọa độ GIS. Thực hành làm quen các công cụ cơ bản của QGIS.
 &lt;/p>
 &lt;/li>
 &lt;li>
