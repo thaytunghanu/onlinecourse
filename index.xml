@@ -367,9 +367,9 @@ Attributes Toolbar
 Dữ liệu bao gồm các lớp:&lt;br>
 Các lớp định dạng vector bao gồm:&lt;/p>
 &lt;ul>
-&lt;li>Ranh giới hành chính như: World_Admin_Boundaries, Vietnam_Provinces&lt;/li>
+&lt;li>Ranh giới dạng vùng: World_Admin_Boundaries, Vietnam_Provinces, Heritage_Sites&lt;/li>
 &lt;li>Đường giao thông: Roads_opm&lt;/li>
-&lt;li>Các lớp dạng điểm: Heritage_Sites, Poorest_Districts&lt;br>
+&lt;li>Các lớp dạng điểm: Poorest_Districts&lt;br>
 Lưu ý: các lớp vector đều có 5 hoặc 6 file thành phần. Ví dụ:
 &lt;figure id="figure-ví-dụ-về-các-file-thành-phần-của-một-lớp-vector-bạn-cần-đảm-bảo-các-file-thành-phần-này-luôn-ở-cùng-nhau-nếu-không-các-phần-mềm-như-qgis-sẽ-không-đọc-được-dữ-liệu">
 &lt;div class="d-flex justify-content-center">
@@ -388,7 +388,8 @@ Ví dụ về các file thành phần của một lớp vector. &lt;strong>Bạn
 &lt;/ul>
 &lt;p>Có một lớp định dạng raster là Elevation_Raster.tif. Đây là mô hình số độ cao (DEM) toàn lãnh thổ đất liền Việt Nam (không bao gồm các đảo, quần đảo).&lt;br>
 &lt;em>&lt;strong>Bài sau sẽ giải thích rõ về dữ liệu vector và dữ liệu raster.&lt;/strong>&lt;/em>&lt;br>
-Định dạng csv (dạng text) là lớp Hydropower_Plants.csv&lt;/p>
+Định dạng csv (dạng text) là lớp Hydropower_Plants.csv&lt;br>
+&lt;code>Kết quả cần đạt được: Download toàn bộ dữ liệu Part 1 về và lưu tại 1 folder, có thể đặt tên là Dataset_Part1&lt;/code>&lt;/p>
 &lt;h3 id="cách-qgis-quản-lý-dữ-liệu">Cách QGIS quản lý dữ liệu&lt;/h3>
 &lt;p>QGIS hỗ trợ xử lý rất nhiều định dạng dữ liệu. Mỗi loại định dạng dữ liệu được lưu trữ theo cách khác nhau, ví dụ shapefile có 5 hoặc 6 file thành phần như đã đề cập, trong khi định dạng tif (raster) chỉ có một file duy nhất. Dù có bao nhiêu file thành phần, mỗi lớp dữ liệu cũng chỉ hiển thị một chỉ mục (một dòng) duy nhất ở Layers Panel.&lt;br>
 &lt;figure id="figure-các-lớp-dữ-liệu-hiển-thị-trong-layers-panel-và-ở-ngoài-window-explorer">
@@ -465,14 +466,150 @@ Thêm lớp dữ liệu bằng Kéo &amp;amp; thả (drag &amp;amp; drop) từ B
 &lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Ngoài ra, bạn có thể kéo thả trực tiếp từ Window Explorer vào Map canvas của QGIS.&lt;/p>
+&lt;p>Ngoài ra, bạn có thể kéo thả trực tiếp từ Window Explorer vào Map canvas của QGIS.&lt;br>
+&lt;code>Hãy thêm các lớp sau: World_Admin_Boundaries, Vietnam_Provinces, Heritage_Sites, Roads_opm, Poorest_Districts, Elevation_Raster.tif&lt;/code>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="quản-lý-các-lớp-ở-layers-panel">Quản lý các lớp ở Layers Panel&lt;/h3>
 &lt;ul>
 &lt;li>Trước mỗi tên lớp ở Layers Panel có một checkbox dùng để bật và tắt sự hiển thị (visibility) của các lớp dữ liệu.&lt;/li>
-&lt;li>Thứ tự sắp xếp của các lớp ở Layers Panel cũng quy định sự hiển thị của các lớp. Nếu để các lớp có diện bao phủ rộng như World_Admin_Boundaries ở trên cùng thì lớp này sẽ che khuất các lớp ở dưới nó. Do đó, để tăng cường sự hiển thị các lớp, cần sắp xếp các lớp theo nguyên tắc: độ che phủ cao ở dưới, độ che phủ thấp ở trên. Ví dụ các lớp dạng điểm cần xếp ở trên cùng, sau đó đến các lớp dạng đường, rồi đến các lớp dạng vùng ở dưới cùng.&lt;/li>
-&lt;/ul></description></item><item><title>Python basics</title><link>https://thaytunghanu.github.io/onlinecourse/course/dana/python/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/dana/python/</guid><description>&lt;p>Build a foundation in Python.&lt;/p>
+&lt;li>Thứ tự sắp xếp của các lớp ở Layers Panel cũng quy định sự hiển thị của các lớp. Nếu để các lớp có diện bao phủ rộng như World_Admin_Boundaries ở trên cùng thì lớp này sẽ che khuất các lớp ở dưới nó. Do đó, để tăng cường sự hiển thị các lớp, cần sắp xếp các lớp theo nguyên tắc: độ che phủ cao ở dưới, độ che phủ thấp ở trên. Ví dụ các lớp dạng điểm cần xếp ở trên cùng, sau đó đến các lớp dạng đường, rồi đến các lớp dạng vùng ở dưới cùng.&lt;br>
+&lt;code>Hãy thử nghiệm các tính năng tắt bật sự hiển thị của các lớp. Tiếp theo, thử nghiệm thay đổi thứ tự của các lớp ở Layers Panel và quan sát sự thay đổi về hiển thị.&lt;/code>&lt;br>
+&lt;figure id="figure-fig1">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Bật tắt các lớp ở Layers Panel" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_layerspanel_hu_13049447c26a68ac.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_layerspanel_hu_8de01265ea73c9f.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_layerspanel_hu_fed61e84ad60a6bb.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_layerspanel_hu_13049447c26a68ac.webp"
+width="760"
+height="412"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Bật tắt các lớp ở Layers Panel
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="mở-bảng-thuộc-tính-của-một-lớp-attributes-table">Mở bảng thuộc tính của một lớp (Attributes table)&lt;/h3>
+&lt;p>Mỗi đối tượng (&lt;strong>feature&lt;/strong>) trên Map canvas, có thể là một điểm thuộc lớp Poorest_Districts hay một tỉnh thuộc lớp Vietnam_Provinces, đều liên kết với một tập hợp các thuộc tính. &lt;br>
+Bảng thuộc tính là bảng dữ liệu liên kết với mỗi lớp vector GIS. Mỗi hàng trong bảng thuộc tính tương ứng với một đối tượng không gian (&lt;strong>feature&lt;/strong>) trong lớp vector, còn các cột là các thuộc tính mô tả (attributes) của đối tượng đó. Mỗi cột cũng có thể được gọi là một trường thông tin (&lt;strong>field&lt;/strong>).&lt;br>
+Vai trò của bảng thuộc tính:&lt;/p>
+&lt;ul>
+&lt;li>Lưu thông tin mô tả: mọi thông tin phi không gian được gắn với đối tượng không gian.&lt;/li>
+&lt;li>Truy vấn dữ liệu: người dùng có thể lọc, tìm kiếm theo thuộc tính.&lt;/li>
+&lt;li>Phân tích GIS: phân loại, thống kê, lập bản đồ theo giá trị thuộc tính.&lt;/li>
+&lt;li>Kết hợp dữ liệu (Join, Relate): liên kết với bảng dữ liệu khác.&lt;br>
+Để mở bảng thuộc tính, có thể dùng 2 cách:&lt;/li>
+&lt;/ul>
+&lt;ol>
+&lt;li>Mở bằng nút &lt;strong>Open Attributes Table&lt;/strong> nằm ở Attibutes Toolbar
+&lt;figure id="figure-fig2">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Attributes Toolbar" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_attributestoolbar_hu_51774d9e613325d9.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_attributestoolbar_hu_6ae70fc0023c7dc0.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_attributestoolbar_hu_69a02c185b8ec47.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_attributestoolbar_hu_51774d9e613325d9.webp"
+width="672"
+height="229"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Attributes Toolbar
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Ấn chuột phải vào lớp cần mở bảng thuộc tính ở &lt;strong>Layers Panel&lt;/strong>, sau đó vào Open Attributes Table. Xem &lt;a href="#figure-fig1">hình minh họa này&lt;/a>.&lt;br>
+&lt;code>Hãy thử nghiệm mở bảng thuộc tính của lớp Vietnam_Provinces. Có bao nhiêu trường thông tin? Có bao nhiêu đối tượng ở lớp này?&lt;/code>
+&lt;figure id="figure-bảng-thuộc-tính">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_attributestable_hu_661cf3d3052ebe3b.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_attributestable_hu_76a93788cd10ba32.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_attributestable_hu_e4bb9c64501ac4d7.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_attributestable_hu_661cf3d3052ebe3b.webp"
+width="760"
+height="431"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Bảng thuộc tính
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="công-cụ-identify-features">Công cụ Identify features&lt;/h3>
+&lt;p>Identify Features dùng để:&lt;/p>
+&lt;ul>
+&lt;li>Xem nhanh thông tin thuộc tính (attribute) của một đối tượng không gian trong bản đồ.&lt;/li>
+&lt;li>Kiểm tra các lớp (layer) chồng lên nhau: khi bạn click vào một điểm trên bản đồ, QGIS sẽ liệt kê tất cả các đối tượng nằm ở vị trí đó (trong các lớp đang bật).&lt;/li>
+&lt;/ul>
+&lt;p>Công cụ này nằm ở &lt;a href="#figure-fig2">Attributes Toolbar&lt;/a>.&lt;br>
+&lt;code>Hãy thử nghiệm bằng cách kích Identify features, sau đó kích vào một tỉnh thuộc lớp Vietnam_Provinces.&lt;/code>
+&lt;figure id="figure-identify-features">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_identifyfeatures_hu_54a56e8690ea4dbb.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_identifyfeatures_hu_16514e174e100e31.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_identifyfeatures_hu_2d4017a3eaa7748f.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_identifyfeatures_hu_54a56e8690ea4dbb.webp"
+width="682"
+height="388"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Identify features
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="thanh-công-cụ-selection-toolbar">Thanh công cụ Selection Toolbar&lt;/h3>
+&lt;p>
+&lt;figure id="figure-fig3">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Selection Toolbar" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_selectiontoolbar_hu_9d52e27d53132ebd.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_selectiontoolbar_hu_64527a32a804d96a.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_selectiontoolbar_hu_3b2c933a76f64e0b.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_selectiontoolbar_hu_9d52e27d53132ebd.webp"
+width="547"
+height="313"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Selection Toolbar
+&lt;/figcaption>&lt;/figure>
+&lt;br>
+Selection Toolbar giúp người dùng chọn (select) các đối tượng không gian trên bản đồ theo nhiều cách khác nhau. Các đối tượng được chọn sẽ được tô sáng màu vàng. Sau khi chọn chúng ta có thể xử lý riêng những đối tượng được chọn chứ không xử lý cho toàn lớp thông tin.&lt;br>
+&lt;code>Ở bài này, hãy làm quen với công cụ Select features by area or single click. Dùng công cụ này kích vào 1 tỉnh của lớp Vietnam_Provinces. Sau đó mở bảng thuộc tính của Vietnam_Provinces, bạn sẽ thấy tỉnh đã được lựa chọn cũng được tô sáng ở bảng thuộc tính. Như vậy, Map canvas và bảng thuộc tính có sự tương thông.&lt;/code>
+&lt;figure id="figure-chọn-một-đối-tượng">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_selecting_hu_a4abe655f7de2a93.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_selecting_hu_27487e4758b75f71.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_selecting_hu_22d0becd508f78c5.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_selecting_hu_a4abe655f7de2a93.webp"
+width="682"
+height="388"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chọn một đối tượng
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="zoom-to-layer">Zoom to layer&lt;/h3>
+&lt;p>Zoom to Layer là lệnh giúp bạn ngay lập tức phóng bản đồ tới phạm vi bao trọn (extent) của toàn bộ lớp dữ liệu (layer) mà bạn chọn. Hay nói đơn giản, bạn muốn nhìn &amp;ldquo;toàn cảnh&amp;rdquo; của cả lớp dữ liệu → chỉ cần dùng Zoom to Layer.&lt;br>
+&lt;figure id="figure-fig4">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Zoom to Layer" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_zoomtolayer_hu_5e4a9714b0a60f80.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_zoomtolayer_hu_bc8861ecc6ad2c30.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_zoomtolayer_hu_1fa817a78a6455df.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_zoomtolayer_hu_5e4a9714b0a60f80.webp"
+width="760"
+height="499"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Zoom to Layer
+&lt;/figcaption>&lt;/figure>
+&lt;br>
+Cách thực hiện: có 2 cách&lt;/p>
+&lt;ol>
+&lt;li>Trên bảng Layers Panel, chuột phải vào tên layer → chọn Zoom to Layer(s).&lt;/li>
+&lt;li>Trên thanh công cụ Map Navigation Toolbar, Nhấn nút Zoom to Layer (biểu tượng hình lớp bản đồ với kính lúp).&lt;/li>
+&lt;/ol>
+&lt;h3 id="layer-properties">Layer Properties&lt;/h3></description></item><item><title>Python basics</title><link>https://thaytunghanu.github.io/onlinecourse/course/dana/python/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/dana/python/</guid><description>&lt;p>Build a foundation in Python.&lt;/p>
 &lt;p>
 &lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 1-2 hours per week, for 8 weeks&lt;/p>
 &lt;h2 id="learn">Learn&lt;/h2>
