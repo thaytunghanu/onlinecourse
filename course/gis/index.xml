@@ -306,8 +306,7 @@ width="573"
 height="450"
 loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
-&lt;/li>
-&lt;li>Hãy thử hiển thị ảnh vệ tinh độ phân giải cao của Google lên Map canvas. Chọn Google Hybrid để có tên địa danh.
+&lt;code>4. Hãy thử hiển thị ảnh vệ tinh độ phân giải cao của Google lên Map canvas. Chọn Google Hybrid để có tên địa danh.&lt;/code>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
@@ -322,7 +321,7 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;/li>
 &lt;/ol>
 &lt;h4 id="map-navigation-toolbar">Map navigation Toolbar&lt;/h4>
-&lt;p>Hãy thử nghiệm các chức năng của thanh công cụ này với bản đồ nền Google Hybrid vừa tải lên Map Canvas.
+&lt;p>&lt;code>Hãy thử nghiệm các chức năng của thanh công cụ này với bản đồ nền Google Hybrid vừa tải lên Map Canvas.&lt;/code>
 &lt;figure id="figure-map-navigation-toolbar">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
@@ -338,7 +337,7 @@ Map navigation Toolbar
 &lt;/figcaption>&lt;/figure>
 &lt;/p>
 &lt;h4 id="attributes-toolbar">Attributes Toolbar&lt;/h4>
-&lt;p>Hãy thử nghiệm chức năng Measure của thanh công cụ này với bản đồ nền Google Hybrid vừa tải lên Map Canvas. Ví dụ, đo diện tích của Hồ Hoàn Kiếm, đo độ dài của cầu Long Biên &amp;hellip; và so sánh kết quả với số liệu trên Internet (Wikipedia).&lt;br>
+&lt;p>&lt;code>Hãy thử nghiệm chức năng Measure của thanh công cụ này với bản đồ nền Google Hybrid vừa tải lên Map Canvas&lt;/code>. Ví dụ, đo diện tích của Hồ Hoàn Kiếm, đo độ dài của cầu Long Biên &amp;hellip; và so sánh kết quả với số liệu trên Internet (Wikipedia).&lt;br>
 Các công cụ khác của Toolbar này sẽ được học ở các bài sau.
 &lt;figure id="figure-attributes-toolbar">
 &lt;div class="d-flex justify-content-center">
@@ -468,6 +467,113 @@ Thêm lớp dữ liệu bằng Kéo &amp;amp; thả (drag &amp;amp; drop) từ B
 &lt;li>
 &lt;p>Ngoài ra, bạn có thể kéo thả trực tiếp từ Window Explorer vào Map canvas của QGIS.&lt;br>
 &lt;code>Hãy thêm các lớp sau: World_Admin_Boundaries, Vietnam_Provinces, Heritage_Sites, Roads_opm, Poorest_Districts, Elevation_Raster.tif&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="thêm-và-chuyển-đổi-dữ-liệu-phi-không-gian-csv-thành-dữ-liệu-không-gian">Thêm và chuyển đổi dữ liệu phi không gian (*.csv) thành dữ liệu không gian&lt;/h3>
+&lt;p>Các dữ liệu phi không gian thường được biểu diễn dưới dạng bảng (tabular). Ví dụ định dạng Comma Separated Value (.csv) là dữ liệu bảng, có thể mở bằng Excel để nhìn thấy cấu trúc dạng bảng.&lt;br>
+Tuy nhiên, nếu dữ liệu này chứa các thông tin về tọa độ như kinh, vĩ độ, thì có thể chuyển đổi thành dữ liệu không gian dưới dạng điểm (point).&lt;br>
+Cách làm:&lt;/p>
+&lt;ol>
+&lt;li>Chọn Delimited Text từ Data Source Manager, tick vào mục CSV, dẫn đến địa chỉ của file Hydropower_Plants.csv.&lt;br>
+&lt;figure id="figure-chọn-delimited-text-và-dẫn-đến-địa-chỉ-file-csv">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv_hu_ee779b0e3879632b.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv_hu_8ba321ec129de67a.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv_hu_1b21dbeae959d61f.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv_hu_ee779b0e3879632b.webp"
+width="760"
+height="496"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chọn Delimited Text và dẫn đến địa chỉ file csv
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Thiết lập các tham số về tọa độ ở Geometry Definition:
+Chọn vào mục &lt;strong>Point Coordinates&lt;/strong>
+X field → trường thông tin chứa giá trị kinh độ hoặc tọa độ X của các hệ UTM (trục thẳng đứng)
+Y field → trường thông tin chứa giá trị vĩ độ hoặc tọa độ Y của các hệ UTM (trục nằm ngang)
+Geometry CRS → chọn đúng CRS của dữ liệu gốc bằng cách ấn vào nút Browse CRS phía bên phải.
+&lt;figure id="figure-thiết-lập-các-tham-số-về-tọa-độ-ở-geometry-definition">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv2_hu_b8cf313e5d7efba8.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv2_hu_f9879ea162665242.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv2_hu_2a5e34f663647684.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv2_hu_b8cf313e5d7efba8.webp"
+width="760"
+height="504"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập các tham số về tọa độ ở Geometry Definition
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Kết quả: từ một file dạng bảng csv đã chuyển thành một lớp không gian dạng điểm bao gồm 2 điểm (vì ở dữ liệu csv chỉ có 2 đối tượng là có đầy đủ kinh vĩ độ).
+&lt;figure id="figure-kết-quả">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv3_hu_69b3aee0e035f774.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv3_hu_cd3efc6b22c8a09b.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv3_hu_4a95ff91e7ec367c.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv3_hu_69b3aee0e035f774.webp"
+width="617"
+height="331"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Lưu lớp không gian Hydropower_Plants vừa tạo sang định dạng shapefile. Thực hiện: chuột phải vào lớp Hydropower_Plants ở Layers Panel, chọn Export/Save Feature As. QGIS sẽ hiện ra cửa sổ Save Vector Layer as, tiếp tục chọn Format là ESRI Shapefile, File name: chọn địa chỉ thư mục mong muốn và đặt tên file. Cuối cùng ấn OK
+&lt;div class="hb-columns hb-columns-2">
+&lt;div class="hb-column">
+&lt;figure id="figure-save-feature-as">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="2_crs_addlayer_csv4.jpg" alt="Ảnh 1" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Save Feature As
+&lt;/figcaption>&lt;/figure>
+&lt;/div>
+&lt;div class="hb-column">
+&lt;figure id="figure-thiết-lập-ở-cửa-sổ-save-vector-layer-as">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="2_crs_addlayer_csv5.jpg" alt="Ảnh 1" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập ở cửa sổ Save Vector Layer as
+&lt;/figcaption>&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.hb-columns {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+justify-content: space-between;
+align-items: stretch;
+}
+.hb-columns .hb-column {
+flex: 1 1 auto;
+box-sizing: border-box;
+}
+.hb-columns-2 .hb-column { flex-basis: calc(50% - 1rem); max-width: calc(50% - 1rem); }
+.hb-columns img {
+max-width: 100%;
+height: auto;
+display: block;
+transition: transform 0.3s ease;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.hb-columns img:hover {
+transform: scale(1.03);
+box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+@media (max-width: 768px) {
+.hb-columns .hb-column {
+flex-basis: 100% !important;
+max-width: 100% !important;
+}
+}
+&lt;/style>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="quản-lý-các-lớp-ở-layers-panel">Quản lý các lớp ở Layers Panel&lt;/h3>
@@ -609,7 +715,243 @@ Cách thực hiện: có 2 cách&lt;/p>
 &lt;li>Trên bảng Layers Panel, chuột phải vào tên layer → chọn Zoom to Layer(s).&lt;/li>
 &lt;li>Trên thanh công cụ Map Navigation Toolbar, Nhấn nút Zoom to Layer (biểu tượng hình lớp bản đồ với kính lúp).&lt;/li>
 &lt;/ol>
-&lt;h3 id="layer-properties">Layer Properties&lt;/h3></description></item><item><title>Statistics</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/stats/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/stats/</guid><description>&lt;p>Introduction to statistics for data science.&lt;/p>
+&lt;h3 id="layer-properties">Layer Properties&lt;/h3>
+&lt;p>Layer Properties trong QGIS là nơi bạn kiểm soát toàn bộ cách một lớp dữ liệu hoạt động, hiển thị và tương tác trong dự án bản đồ của mình.&lt;br>
+Cách mở Layer Properties:&lt;/p>
+&lt;ul>
+&lt;li>Cách 1: Chuột phải vào tên layer trong Layers Panel → chọn Properties.&lt;/li>
+&lt;li>Cách 2: Click đúp vào tên layer.&lt;br>
+&lt;figure id="figure-layer-properties">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_layerproperties_hu_7dbce7bf4f8411e3.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_layerproperties_hu_d7ac1b2efd14ee66.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_layerproperties_hu_bf3830ed2e442e97.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_layerproperties_hu_7dbce7bf4f8411e3.webp"
+width="760"
+height="430"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Layer Properties
+&lt;/figcaption>&lt;/figure>
+&lt;br>
+Layer Properties chứa nhiều mục quan trọng.&lt;/li>
+&lt;/ul>
+&lt;h4 id="mục-information">Mục Information&lt;/h4>
+&lt;p>Chứa các thông tin chung của lớp: địa chỉ, dung lượng, CRS &amp;hellip;
+&lt;figure id="figure-layer-propertiesinformation">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_layerproperties_info_hu_24601d924dc16039.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_layerproperties_info_hu_ffaf77694702c95b.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_layerproperties_info_hu_2a0bcbd13d93106c.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_layerproperties_info_hu_24601d924dc16039.webp"
+width="760"
+height="636"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Layer Properties/Information
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h4 id="mục-source">Mục source&lt;/h4>
+&lt;ul>
+&lt;li>Hiển thị đường dẫn đến file gốc (ví dụ: đường dẫn đến file shapefile, geopackage&amp;hellip;)&lt;/li>
+&lt;li>Cho biết loại dữ liệu (vector/raster), định dạng, hệ tọa độ (CRS)&lt;/li>
+&lt;li>Có nút Set Layer CRS để thay đổi hệ tọa độ (chỉ thay cách QGIS định nghĩa, không thay đổi dữ liệu gốc)&lt;/li>
+&lt;/ul>
+&lt;h4 id="mục-symbology-ký-hiệu">Mục Symbology (Ký hiệu)&lt;/h4>
+&lt;p>Thiết lập cách hiển thị của layer: màu sắc, kiểu đường, điểm, vùng…
+Các kiểu hiển thị chính:&lt;/p>
+&lt;ul>
+&lt;li>Single symbol: toàn bộ dữ liệu dùng 1 ký hiệu&lt;/li>
+&lt;li>Categorized: phân loại theo giá trị thuộc tính (dùng màu khác nhau)&lt;/li>
+&lt;li>Graduated: phân lớp theo số liệu (như mật độ dân số)&lt;/li>
+&lt;li>Rule-based / Expression-based: tùy biến theo điều kiện
+&lt;figure id="figure-layer-propertiessymbology">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol_hu_fbc177381a29b3d8.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol_hu_94bba6fc966fe768.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol_hu_d7e5a5ed470cc765.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol_hu_fbc177381a29b3d8.webp"
+width="760"
+height="536"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Layer Properties/Symbology
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;p>Trong nhiều trường hợp, việc hiển thị trong suốt màu nền của các đối tượng vùng (polygon) là cần thiết, để có thể quan sát và hiển thị dễ dàng các lớp bên dưới.&lt;br>
+&lt;code>Hãy thử nghiệm làm trong màu nền của lớp Heritage_Sites, đồng thời tăng kích thước đường viền (Stroke Width) của các đối tượng.&lt;/code>&lt;br>
+Thực hiện: Properties/Symbology/Single Symbology, kích vào Simple Fill, di chuyển chuột xuống dưới ô Fill color, kích vào hộp nhỏ phía bên phải hộp màu và chọn Transparent Fill. Ở ô Stroke width, tăng giá trị lên so với số ban đầu.
+&lt;figure id="figure-làm-trong-màu-nền-của-lớp-heritage_sites-đồng-thời-tăng-kích-thước-đường-viền-stroke-width">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol2_hu_16bc6d160fa795c7.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol2_hu_d75fd691aeb06493.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol2_hu_50c9bb89853d5725.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol2_hu_16bc6d160fa795c7.webp"
+width="760"
+height="358"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Làm trong màu nền của lớp Heritage_Sites, đồng thời tăng kích thước đường viền (Stroke Width)
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>Vừa rồi chúng ta đã làm trong màu nền (Fill color) của các đối tượng. Ngoài ra, chúng ta có thể làm trong toàn bộ tất cả các yếu tố hiển thị của một lớp.&lt;br>
+Thực hiện:
+Properties/Symbology/Single Symbology, kích vào Fill, di chuyển chuột xuống dưới ô Opacity, điều chỉnh số % phù hợp. Giá % càng thấp thì mức độ trong suốt của lớp càng cao.
+&lt;figure id="figure-điều-chỉnh-opacity-của-một-lớp">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol3_hu_8ef60695deb58b7c.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol3_hu_6233733723e8596c.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol3_hu_578d62ea2444bead.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol3_hu_8ef60695deb58b7c.webp"
+width="760"
+height="410"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Điều chỉnh Opacity của một lớp
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h4 id="mục-labels">Mục Labels&lt;/h4>
+&lt;p>Có chức năng cài đặt cách hiển thị nhãn (tên địa danh, số liệu, v.v.) cho các đối tượng. Có thể chọn trường để hiển thị làm nhãn, và tuỳ biến font chữ, màu, khoảng cách, hiệu ứng (halo, buffer…).&lt;br>
+&lt;code>Hãy hiển thị nhãn cho lớp Vietnam_Provinces dựa trên trường tên tỉnh bằng tiếng Anh, hiệu ứng font chữ kiểu halo&lt;/code>&lt;br>
+Thực hiện:&lt;/p>
+&lt;ol>
+&lt;li>Trước tiên, mở bảng thuộc tính xem trường nào lưu thông tin tên tỉnh bằng tiếng Anh. Đó là trường VARNAME_1
+&lt;figure id="figure-mở-bảng-thuộc-tính-để-xem-trường-nào-lưu-thông-tin-tên-tỉnh-bằng-tiếng-anh-đó-là-trường-varname_1">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_layerproperties_label1_hu_a3cd8adafc1a3b37.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_layerproperties_label1_hu_3608bf60a89f7f5c.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_layerproperties_label1_hu_68ed207594d35b3d.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_layerproperties_label1_hu_a3cd8adafc1a3b37.webp"
+width="760"
+height="328"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Mở bảng thuộc tính để xem trường nào lưu thông tin tên tỉnh bằng tiếng Anh. Đó là trường VARNAME_1.
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Vào Properties/Symbology/Labels. Ô đầu tiên chỉnh sang lựa chọn Single Labels, ô Value chọn trường chứa thông tin mình cần, đó là VARNAME_1. Chọn mục buffer ở dưới để tạo hiệu ứng chữ có viền xung quanh (halo), tick vào ô Draw text buffer.
+&lt;div class="hb-columns hb-columns-2">
+&lt;div class="hb-column">
+&lt;figure id="figure-thiết-lập-tham-số-hiển-thị-label">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="2_crs_layerproperties_label2.jpg" alt="Ảnh 1" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập tham số hiển thị label
+&lt;/figcaption>&lt;/figure>
+&lt;/div>
+&lt;div class="hb-column">
+&lt;figure id="figure-kết-quả-hiển-thị-label">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="2_crs_layerproperties_label3.jpg" alt="Ảnh 1" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả hiển thị label
+&lt;/figcaption>&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.hb-columns {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+justify-content: space-between;
+align-items: stretch;
+}
+.hb-columns .hb-column {
+flex: 1 1 auto;
+box-sizing: border-box;
+}
+.hb-columns-2 .hb-column { flex-basis: calc(50% - 1rem); max-width: calc(50% - 1rem); }
+.hb-columns img {
+max-width: 100%;
+height: auto;
+display: block;
+transition: transform 0.3s ease;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.hb-columns img:hover {
+transform: scale(1.03);
+box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+@media (max-width: 768px) {
+.hb-columns .hb-column {
+flex-basis: 100% !important;
+max-width: 100% !important;
+}
+}
+&lt;/style>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="các-mục-khác-thuộc-layer-properties-sẽ-được-học-ở-những-bài-sau">Các mục khác thuộc Layer Properties sẽ được học ở những bài sau&lt;/h4>
+&lt;h3 id="save-qgis-project">Save QGIS project&lt;/h3>
+&lt;p>Save project là một việc quan trọng cần làm để lưu trạng thái làm việc khi tắt phần mềm QGIS. Trạng thái làm việc bao gồm các lớp đang được mở, thiết lập hiển thị hiện thời của các lớp đó (màu sắc, label &amp;hellip;), thứ tự các lớp.
+&lt;figure id="figure-cấu-trúc-project-của-qgis">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 6" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_project_hu_da8c8860d1146d92.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_project_hu_9ecb9224b67b8d26.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_project_hu_1cc5a5120dda8f8f.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_project_hu_da8c8860d1146d92.webp"
+width="760"
+height="289"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Cấu trúc project của QGIS
+&lt;/figcaption>&lt;/figure>
+Để lưu project: có thể dùng Ctrl + S, hoặc dùng nút Save project ở Toolbar, hoặc vào Project/Save trên Menu Bar.
+&lt;figure id="figure-save-project">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 6" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_saveproject_hu_a0948527af07a51a.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_saveproject_hu_12ca0238c116b668.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_saveproject_hu_62f0e8fb5c890481.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_saveproject_hu_a0948527af07a51a.webp"
+width="760"
+height="520"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Save project
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>&lt;code>Hãy lưu project cho trạng thái làm việc hiện tại với tên project1.qgz. Sau đó, thay đổi màu sắc của một số lớp, ví dụ đổi màu của các đối tượng lớp Vietnam_Provinces, lưu project với tên project2.qgz. Mở 2 cửa sổ làm việc của QGIS, một cửa sổ bật project1.qgz, cái còn lại bật project2.qgz, so sánh sự khác nhau (do bạn vừa tạo ra) của 2 trạng thái làm việc&lt;/code>&lt;/p>
+&lt;h3 id="homework">Homework&lt;/h3>
+&lt;p>Làm lại một lần nữa các bước thực hành vừa rồi theo quy trình dưới đây&lt;/p>
+&lt;ol>
+&lt;li>Launch QGIS and open the previously saved QGIS_practicals.qgs project.&lt;/li>
+&lt;li>Add the datasets downloaded in the previous session. In doing this, explore the various options available. For example:&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>2A. Select ‘Add Vector Layer’ and browse your GIS folder to find the ‘Heritage_sites.kml’. Select the file and add it to the project. Open its ‘Properties’ &amp;gt; ‘Source’ to identify what is the layers coordinate reference system.&lt;/li>
+&lt;li>2B. Select ‘Add Delimited Text’ and add the ‘Hydropower_plants.csv’. Follow the instructions above to specify the X and Y coordinates and the CSR of the dataset (in this case, WGS 1984).&lt;/li>
+&lt;li>2C. Drag and drop the rest of the files from the Browser Panel.&lt;/li>
+&lt;/ul>
+&lt;ol start="3">
+&lt;li>Reorganise the layers in the Layers Panel to ensure all layers are visible.&lt;/li>
+&lt;li>Change their symbology (e.g. make the polygons hollow) to enhance the combined visibility of the various datasets.&lt;/li>
+&lt;li>Apply a transparency to any relevant layers (e.g. the administrative boundaries – Vietnam Provinces).&lt;/li>
+&lt;/ol>
+&lt;p>Your final Project Panel should look something like this:
+&lt;figure id="figure-yêu-cầu-kết-quả-của-homework">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 6" srcset="
+/onlinecourse/course/gis/2_crs/2_crs_homework_hu_4a9dc76f7b73dfd6.webp 400w,
+/onlinecourse/course/gis/2_crs/2_crs_homework_hu_ea0429453c6c8168.webp 760w,
+/onlinecourse/course/gis/2_crs/2_crs_homework_hu_ba0fc51d6df2d400.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_homework_hu_4a9dc76f7b73dfd6.webp"
+width="476"
+height="696"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Yêu cầu kết quả của homework
+&lt;/figcaption>&lt;/figure>
+&lt;/p></description></item><item><title>Statistics</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/stats/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/stats/</guid><description>&lt;p>Introduction to statistics for data science.&lt;/p>
 &lt;p>
 &lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 1-2 hours per week, for 8 weeks&lt;/p>
 &lt;p>
