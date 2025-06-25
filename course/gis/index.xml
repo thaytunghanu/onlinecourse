@@ -951,31 +951,9 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;figcaption>
 Yêu cầu kết quả của homework
 &lt;/figcaption>&lt;/figure>
-&lt;/p></description></item><item><title>Statistics</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/stats/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/stats/</guid><description>&lt;p>Introduction to statistics for data science.&lt;/p>
-&lt;p>
-&lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 1-2 hours per week, for 8 weeks&lt;/p>
-&lt;p>
-&lt;figure id="figure-chọn-phiên-bản-ltr">
-&lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="output1.jpg" alt="ppp" loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;figcaption>
-Chọn phiên bản LTR
-&lt;/figcaption>&lt;/figure>
-&lt;/p>
-&lt;h2 id="learn">Learn&lt;/h2>
-&lt;p>The general form of the &lt;strong>normal&lt;/strong> probability density function is:&lt;/p>
-&lt;p>$$
-f(x) = \frac{1}{\sigma \sqrt{2\pi} } e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
-$$&lt;/p>
-&lt;div class="alert alert-note">
-&lt;div>
-The parameter $\mu$ is the mean or expectation of the distribution.
-$\sigma$ is its standard deviation.
-The variance of the distribution is $\sigma^{2}$.
+&lt;/p></description></item><item><title>3. Dữ liệu GIS, làm việc với dữ liệu vector</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/</link><pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/</guid><description>&lt;p>Lý thuyết về dữ liệu GIS: vector và raster. Thực hành làm việc với dữ liệu vector.&lt;/p>
+&lt;h2 id="lý-thuyết-về-các-loại-dữ-liệu-không-gian">Lý thuyết về các loại dữ liệu không gian&lt;/h2>
+&lt;div class="responsive-wrap">
+&lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRhY2dq8ffRYOz8n5nAJuXocD7KMNny40vifOgPkbBM_9ifMhntTOhx6M7Yk1JQHw/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
 &lt;/div>
-&lt;/div>
-&lt;h2 id="quiz">Quiz&lt;/h2>
-&lt;details class="spoiler " id="spoiler-2">
-&lt;summary>What is the parameter $\mu$?&lt;/summary>
-&lt;p>The parameter $\mu$ is the mean or expectation of the distribution.&lt;/p>
-&lt;/details></description></item></channel></rss>
+&lt;h2 id="thực-hành-làm-việc-với-dữ-liệu-vector">Thực hành: làm việc với dữ liệu vector&lt;/h2></description></item></channel></rss>

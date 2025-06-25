@@ -99,8 +99,8 @@ max-width: 100% !important;
 &lt;/p>
 &lt;/li>
 &lt;li>
-&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/stats/">Statistics&lt;/a>&lt;/h5>
-&lt;p>Introduction to statistics for data science.
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/">3. Dữ liệu GIS, làm việc với dữ liệu vector&lt;/a>&lt;/h5>
+&lt;p>Lý thuyết về dữ liệu GIS: vector và raster. Thực hành làm việc với dữ liệu vector.
 &lt;/p>
 &lt;/li>
 &lt;/ul>
