@@ -3,4 +3,133 @@
 &lt;div class="responsive-wrap">
 &lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRhY2dq8ffRYOz8n5nAJuXocD7KMNny40vifOgPkbBM_9ifMhntTOhx6M7Yk1JQHw/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
 &lt;/div>
-&lt;h2 id="thực-hành-làm-việc-với-dữ-liệu-vector">Thực hành: làm việc với dữ liệu vector&lt;/h2></description></item></channel></rss>
+&lt;h2 id="thực-hành-làm-việc-với-dữ-liệu-vector">Thực hành: làm việc với dữ liệu vector&lt;/h2>
+&lt;p>Trong bài thực hành này, người học sẽ học cách số hóa một số lớp vector tương ứng với 3 loại đặc tính hình học là điểm (point), đường (line/polyline), vùng (polygon). Cụ thể, với khu vực nghiên cứu là khu vực quanh hồ Bảo Linh, huyện Định Hóa, Thái Nguyên, nhiệm vụ của người học là số hóa các lớp: hồ (lake) dạng vùng, đường giao thông (main roads), và vị trí mất rừng (Deforested areas) dạng điểm.&lt;/p>
+&lt;h3 id="lấy-dữ-liệu-để-thực-hành">Lấy dữ liệu để thực hành&lt;/h3>
+&lt;p>Thực hành module Part 2.
+&lt;a href="https://drive.google.com/drive/folders/1goJ9U4dkTS0ZmxXKgXPKbR5satNp8eqZ?usp=drive_link" target="_blank" rel="noopener">Download dữ liệu Dataset Part 2 ở đây.&lt;/a>&lt;br>
+Dữ liệu bao gồm lớp: file điểm vị trí hồ Bảo Linh để định vị khu vực nghiên cứu dễ dàng.&lt;/p>
+&lt;h3 id="tạo-layer">Tạo layer&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>Để tạo layer: &lt;strong>Layer &amp;gt; Create Layer &amp;gt; New Shapefile Layer &amp;hellip;&lt;/strong>&lt;br>
+&lt;figure id="figure-tạo-mới-một-lớp-shapefile">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp_hu_7e9b86b1f3ae4b21.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp_hu_494f8317efb7f06d.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp_hu_eebcccc7e7a9b2d9.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp_hu_7e9b86b1f3ae4b21.webp"
+width="760"
+height="403"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Tạo mới một lớp shapefile
+&lt;/figcaption>&lt;/figure>
+Hãy bắt đầu bằng việc tạo lớp Lake (hồ).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Trước tiên, điền &lt;strong>File name&lt;/strong>: Lake và đường dẫn địa chỉ chứa file. Khi được đặt tên, cả 5 file thành phần sẽ có cùng tên file, chỉ khác nhau phần đuôi mở rộng (shp, shx, prj &amp;hellip;). Chú ý: tên file nên viết liền, tránh dấu cách. Có thể dùng dấu gạch dưới &amp;ldquo;_&amp;rdquo; (underscore) khi muốn tách chữ.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Thiết lập &lt;strong>Geometry type&lt;/strong>, chúng ta để dạng Polygon cho lớp Lake.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Thiết lập &lt;strong>Project CRS&lt;/strong>, Hãy thiết lập ‘&lt;strong>EPSG:3405 - VN-2000 / UTM zone 48N – Projected&lt;/strong>’.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Tạo các trường dữ liệu thuộc tính. Ô &lt;strong>New field&lt;/strong> bên dưới dùng để tạo các trường dữ liệu. QGIS luôn tạo sẵn trường id. Hãy tạo thêm một trường tên là Name. Trường này sẽ chứa thông tin tên của các đối tượng. Do đó kiểu dữ liệu (Type) phải là &amp;ldquo;Text Data&amp;rdquo;, và cần thiết lập thông số về độ dài là 80, chính là số kí tự cho phép của Name. Sau đó, tạo thêm một trường tên là Area, kiểu dữ liệu: Decimal Number.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Ấn OK&lt;br>
+&lt;figure id="figure-thiết-lập-các-tham-số-khi-tạo-một-lớp-shapefile">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp2_hu_93309e5265cbae26.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp2_hu_1344af9edbbf9838.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp2_hu_25fc9266985c26b5.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp2_hu_93309e5265cbae26.webp"
+width="760"
+height="338"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập các tham số khi tạo một lớp shapefile
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Sau khi ấn OK, một lớp mới được tạo với tên Lake sẽ xuất hiện ở Layers Panel.&lt;br>
+&lt;figure id="figure-lớp-mới-xuất-hiện-ở-layers-panel">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp3_hu_da3521416130a55.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp3_hu_8b4ed1c7b1dd7621.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp3_hu_1aa41a014618f0e2.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp3_hu_da3521416130a55.webp"
+width="280"
+height="85"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Lớp mới xuất hiện ở Layers Panel
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Màu của lớp mới sẽ có thể được QGIS đặt ngẫu nhiên tùy ý. Hãy chỉnh lại màu của lớp Lake về màu xanh Cyan như ảnh trên (gợi ý: vào Symbology).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Mở bảng thuộc tính của lớp Lake, các bạn sẽ thấy các trường dữ liệu đã tạo xuất hiện bao gồm id, Name, Area. Tuy nhiên, lớp mới tạo chưa có đối tượng nào (chưa có một hàng dữ liệu nào).
+&lt;figure id="figure-mở-bảng-thuộc-tính-của-lớp-lake-mới-tạo">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp4_hu_6e30d374832103a6.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp4_hu_40c61b0f8eae4173.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp4_hu_537d59d777b7eefe.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp4_hu_6e30d374832103a6.webp"
+width="760"
+height="403"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Mở bảng thuộc tính của lớp Lake mới tạo
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;code>Tự thực hành tạo các lớp:&lt;/code>&lt;br>
+&lt;code>- Lớp “Deforested_Areas” dạng điểm, tạo trường “Purpose”, dữ liệu text data.&lt;/code>&lt;br>
+&lt;code>- Lớp “Main_Roads” dạng đường, tạo trường “Type”, dữ liệu text data.&lt;/code>&lt;br>
+&lt;code>- Sau đó chỉnh Symbology của các lớp vừa tạo theo ảnh dưới.&lt;/code>&lt;br>
+&lt;figure id="figure-tạo-các-lớp-deforested_areas-và-main_roads">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp5_hu_6134e7e779aaa41d.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp5_hu_5e5e1eabf43872db.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp5_hu_8990e0fbfe30580a.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp5_hu_6134e7e779aaa41d.webp"
+width="306"
+height="117"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Tạo các lớp Deforested_Areas và Main_Roads
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="số-hóa-và-biên-tập-các-lớp-shapefile">Số hóa và biên tập các lớp shapefile&lt;/h3>
+&lt;ul>
+&lt;li>Mở một lớp nền ảnh vệ tinh, ví dụ Bing Satellite, bằng cách Web &amp;gt; QuickMapServices &amp;gt; Bing &amp;gt; Bing Satellite. Chúng ta sẽ sử dụng lớp nền này trong quá trình số hóa.&lt;/li>
+&lt;li>Dùng lớp Ho_Bao_Linh_location để định vị khu vực nghiên cứu. Zoom vào khu vực hồ Bảo Linh như ảnh dưới.&lt;br>
+&lt;figure id="figure-định-vị-khu-vực-hồ-bảo-linh">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize1_hu_ea0d9b6aaafe06fd.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize1_hu_e7a2771c21d28a41.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize1_hu_2da9aa6b3a4d61fe.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize1_hu_ea0d9b6aaafe06fd.webp"
+width="760"
+height="416"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Định vị khu vực hồ Bảo Linh
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Trước khi bắt đầu số hóa, việc quan trọng cần làm là&lt;/li>
+&lt;/ul></description></item></channel></rss>
