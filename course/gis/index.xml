@@ -1085,5 +1085,337 @@ loading="lazy" data-zoomable />&lt;/div>
 Định vị khu vực hồ Bảo Linh
 &lt;/figcaption>&lt;/figure>
 &lt;/li>
-&lt;li>Trước khi bắt đầu số hóa, việc quan trọng cần làm là&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul>
+&lt;h3 id="cài-đặt-snapping-option-chế-độ-bắt-dính-điểm">Cài đặt Snapping option (Chế độ bắt dính điểm)&lt;/h3>
+&lt;ul>
+&lt;li>Trong QGIS, snapping là một chức năng giúp bạn vẽ hoặc chỉnh sửa các đối tượng địa lý (vector) chính xác hơn bằng cách tự động bắt dính (snap) các điểm mới tạo vào các vị trí điểm gần nhất đã có sẵn. Đây là một công cụ cực kỳ quan trọng khi làm việc với dữ liệu vector để đảm bảo các đỉnh (vertex) hoặc cạnh (edge) của các đối tượng không bị lệch nhau, tránh các lỗi topological như khe hở (gap) hoặc chồng lắp không mong muốn.&lt;br>
+Ví dụ: khi mỗi tỉnh là một đối tượng dạng vùng, 2 tỉnh liền kề phải có chung đường biên giới. Không thể có khoảng trống nào giữa biên giới 2 tỉnh liền kề nhau.&lt;/li>
+&lt;li>Có thể chỉnh các tham số về Snapping ở: Settings &amp;gt; Options &amp;gt; Digitizing, sau đó tùy chỉnh các tham số ở ô Snapping hoặc Tick vào box Enable Snapping by default.
+&lt;figure id="figure-snapping-option">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize2_hu_ce69ddc07a2baf3c.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize2_hu_4e2fbc656c0c84a8.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize2_hu_634cb9825363eba8.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize2_hu_ce69ddc07a2baf3c.webp"
+width="760"
+height="395"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Snapping Option
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Sau đó bật nút Enable Snapping (hình cái nam châm) ở Snapping Toolbar.&lt;br>
+&lt;figure id="figure-snapping-toolbar--enable-snapping">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize3_hu_5228488f6cfb629b.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize3_hu_1b18c5dbfdd5d8bf.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize3_hu_34f68fc086eaf056.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize3_hu_5228488f6cfb629b.webp"
+width="443"
+height="57"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Snapping Toolbar &amp;gt; Enable Snapping
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Sau đó kiểm tra chế độ Snapping bằng cách khi đưa chuột vào các vertex (các node) sẵn có thì sẽ hiện lên hình vuông nhỏ màu hồng báo hiệu đang bắt dính.
+&lt;figure id="figure-đang-ở-chế-độ-snapping-hiện-hình-vuông-màu-hồng-nếu-di-chuột-vào-đỉnh-có-sẵn">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize4_hu_1c8be9c70c849ac8.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize4_hu_72a5c523aeba2b.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize4_hu_c0ed88bd86e3c080.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize4_hu_1c8be9c70c849ac8.webp"
+width="656"
+height="317"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Đang ở chế độ Snapping, hiện hình vuông màu hồng nếu di chuột vào đỉnh có sẵn
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="số-hóa-dữ-liệu-vector">Số hóa dữ liệu vector&lt;/h3>
+&lt;ul>
+&lt;li>Trước khi bắt đầu số hóa, hoặc nói cách khác là vẽ các đối tượng ở một lớp dữ liệu, ta cần chuyển chế độ của lớp đó sang &lt;strong>chế độ chỉnh sửa được&lt;/strong> bằng nút &lt;strong>Toggle Editting&lt;/strong> (hình bút chì). Thực hiện: 1. Chọn lớp đó ở Layers Panel, sau đó ấn vào Toggle Editting:
+&lt;figure id="figure-toggle-editing">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize5_hu_bd8432a5a8ba4b6d.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize5_hu_51b54e0573fe9c5d.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize5_hu_4d3e357123035571.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize5_hu_bd8432a5a8ba4b6d.webp"
+width="467"
+height="56"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Toggle Editing
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Tùy loại hình học của dữ liệu: điểm, hay đường, hay vùng mà các công cụ để số hóa sẽ xuất hiện trên Toolbar.
+&lt;figure id="figure-các-công-cụ-thêmvẽ-đối-tượng">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize6_hu_e18a65e747ec0ba4.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize6_hu_326676216e112a1e.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize6_hu_fc934d79ac6e980b.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize6_hu_e18a65e747ec0ba4.webp"
+width="760"
+height="129"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Các công cụ thêm/vẽ đối tượng
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="bắt-đầu-vẽ-số-hóa-lớp-polygon">Bắt đầu vẽ số hóa lớp polygon&lt;/h4>
+&lt;ul>
+&lt;li>Trước tiên, chọn lớp Lake ở Layers Panel và ấn nút Toogle Editting trên Toolbar để bật chế độ chỉnh sửa cho lớp Lake. Sau đó bật nút Add polygon feature (ở gần nút Toggle Editting)
+&lt;figure id="figure-chuẩn-bị-số-hóa-lớp-lake">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize7_hu_33967f40759dcf65.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize7_hu_f947e1ce307f353d.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize7_hu_a5ef0bac29b69d6b.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize7_hu_33967f40759dcf65.webp"
+width="760"
+height="398"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chuẩn bị số hóa lớp Lake
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Sau đó dựa vào bản đồ nền ảnh vệ tinh (Bing Satellite), vẽ xung quanh đường ranh giới hồ Bảo Linh. Mỗi lần ấn chuột trái là tạo một đỉnh (vertex).
+&lt;figure id="figure-thực-hiện-số-hóa-lớp-lake">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize8_hu_1d11bb8861c2f5b0.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize8_hu_9572147d5ca66cce.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize8_hu_21c2554fd1f00aa2.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize8_hu_1d11bb8861c2f5b0.webp"
+width="760"
+height="492"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thực hiện số hóa lớp Lake
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Sau khi hoàn tất số hóa hồ Bảo Linh, nghĩa là vẽ một vòng quanh hồ và quay về điểm bắt đầu, ấn chuột phải để báo hiệu QGIS là hoàn tất việc vẽ một đối tượng (feature).&lt;/li>
+&lt;li>Sau bước ấn chuột phải, QGIS hiển thị một cửa sổ Feature Attributes pops-up, để phục vụ việc nhập các thuộc tính cho đối tượng vừa số hóa.&lt;br>
+&lt;figure id="figure-nhập-thuộc-tính-cho-đối-tượng-vừa-số-hóa-ở-cửa-sổ-feature-attributes">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize9_hu_46c3fa915bcc8a8d.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize9_hu_562c2deb3af1bc03.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize9_hu_18d00f7ea2559824.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize9_hu_46c3fa915bcc8a8d.webp"
+width="672"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Nhập thuộc tính cho đối tượng vừa số hóa ở cửa sổ Feature Attributes
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Cuối cùng, lưu dữ liệu số hóa bằng Save layer edits. &lt;strong>Chú ý: Save layer edits chỉ lưu sự thay đổi của một lớp dữ liệu đang chỉnh sửa. Icon của nút này khá giống nút Save project nhưng chức năng khác nhau.&lt;/strong>
+&lt;figure id="figure-nhập-thuộc-tính-cho-đối-tượng-vừa-số-hóa-ở-cửa-sổ-feature-attributes">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize10_hu_7cb2d52712c6fce7.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize10_hu_3a90ffc49cc03a41.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize10_hu_f496070b1297204a.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize10_hu_7cb2d52712c6fce7.webp"
+width="224"
+height="56"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Nhập thuộc tính cho đối tượng vừa số hóa ở cửa sổ Feature Attributes
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Kết quả khi hoàn tất số hóa lớp Lake.
+&lt;figure id="figure-kết-quả-khi-hoàn-tất-số-hóa-lớp-lake">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize11_hu_307d9b8a3a655e8a.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize11_hu_e9d6c87c121ec5a2.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize11_hu_33e7da203409f25.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize11_hu_307d9b8a3a655e8a.webp"
+width="760"
+height="543"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả khi hoàn tất số hóa lớp Lake
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-note">
+&lt;div>
+Tip: khi số hóa, có thể làm trong suốt màu nền của lớp polygon đang số hóa, từ đó việc quan sát và giải đoán ảnh vệ tinh nền được thuận tiện hơn.
+&lt;/div>
+&lt;/div>
+&lt;h3 id="chỉnh-sửa-hình-học">Chỉnh sửa hình học&lt;/h3>
+&lt;p>Phần này sẽ trình bày một số công cụ dùng để chỉnh sửa hình học các đối tượng.&lt;/p>
+&lt;ul>
+&lt;li>Có một số công cụ giúp chúng ta vẽ nhanh các hình cơ bản như: hình chữ nhật, tròn, elip &amp;hellip; Những công cụ này ở thanh Shape digitizing toolbar.
+&lt;figure id="figure-shape-digitizing-toolbar">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo1_hu_c748fe42c5cf05cf.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo1_hu_dd56bd00d67b3935.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo1_hu_178e9fdd062c6fea.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo1_hu_c748fe42c5cf05cf.webp"
+width="227"
+height="60"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Shape digitizing toolbar
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Một số đối tượng khi số hóa cũng chỉ cần vẽ dạng hình cơ bản như hình chữ nhật đối với nhà cửa, building. Ở phần này, hãy tạo một lớp polygon vector, đặt tên là Buildings.&lt;/li>
+&lt;li>Dùng công cụ Add Rectangle from 3 Points để tạo hình chữ nhật, số hóa cho các ngôi nhà, tòa nhà.
+&lt;figure id="figure-vẽ-hình-chữ-nhật-bằng-add-rectangle-from-3-points">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo2_hu_7b28d2bffef106d4.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo2_hu_3456016b4ebbcf6d.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo2_hu_edc033697674b12c.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo2_hu_7b28d2bffef106d4.webp"
+width="287"
+height="124"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Vẽ hình chữ nhật bằng Add Rectangle from 3 Points
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Hãy số hóa một vài ngôi nhà ở khu vực hồ Bảo Linh.&lt;/li>
+&lt;li>Khi cần chỉnh sửa nếu hình chữ nhật vẽ ra chưa khớp hẳn với nền ảnh vệ tinh, có thể dùng 1 hoặc kết hợp 2 công cụ sau để chỉnh sửa: Rotate Feature (quay đối tượng quanh trọng tâm của nó) và Move Feature (di chuyển đối tượng).&lt;/li>
+&lt;li>Cách thực hiện: dùng công cụ Select Features by Area or Single Click, kích chọn đối tượng cần chỉnh sửa. Sau đó ấn vào Rotate Feature hoặc Move Feature và thực hiện chức năng quay hoặc di chuyển.&lt;br>
+&lt;figure id="figure-rotate-feature-and-move-feature">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo3_hu_b7a6574e010b20f1.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo3_hu_52e7cfde9c435d7d.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo3_hu_f4b5d1dadeb2ef6d.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo3_hu_b7a6574e010b20f1.webp"
+width="760"
+height="316"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Rotate Feature and Move Feature
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="chỉnh-sửa-các-đỉnh-vertex-của-đối-tượng">Chỉnh sửa các đỉnh (vertex) của đối tượng&lt;/h3>
+&lt;ul>
+&lt;li>Chúng ta có thể thay đổi vị trí các vertex bằng công cụ Vertex Tool, để nâng cao độ chính xác khi số hóa.
+&lt;figure id="figure-vertex-tool">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo4_hu_c3ead9ac171220cf.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo4_hu_ff1f48a8b9409ec5.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo4_hu_7632c3fe1e07299e.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo4_hu_c3ead9ac171220cf.webp"
+width="298"
+height="41"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Vertex Tool
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Cách thực hiện: Ấn vào vertex tool và kích vào đỉnh cần đặt lại vị trí. Sau đó đưa đến vị trí mới và chuột trái một lần nữa. Khi đặt lại vị trí vertex có thể kết hợp Zoom in bằng chuột giữa (bánh xe cuộn) để tăng độ chính xác.
+&lt;figure id="figure-kết-quả-sau-khi-đặt-lại-vị-trí-đỉnh-bằng-vertex-tool">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo5_hu_fd3528f363ef673e.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo5_hu_7107dc7cde8b9afb.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo5_hu_cb4634639ddfbb18.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo5_hu_fd3528f363ef673e.webp"
+width="760"
+height="256"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả sau khi đặt lại vị trí đỉnh bằng vertex tool
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="chỉnh-sửa-nâng-cao-reshape">Chỉnh sửa nâng cao: reshape&lt;/h3>
+&lt;ul>
+&lt;li>Công cụ reshape dùng để thêm hoặc xóa đi một phần diện tích của một đối tượng.
+&lt;figure id="figure-reshape-feature">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan1_hu_419812af07159b53.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan1_hu_3bb487558907277a.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan1_hu_e7459fd880505dc2.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan1_hu_419812af07159b53.webp"
+width="481"
+height="50"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Reshape Feature
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Cách thực hiện: Chọn đối tượng cần chỉnh sửa &amp;gt; Ấn Reshape &amp;gt; Nếu thêm diện tích, số hóa bắt đầu từ trong polygon ra ngoài phần diện tích cần thêm (ảnh dưới). Nếu cần bớt diện tích thì làm ngược lại, nghĩa là bắt đầu reshape từ ngoài vào bên trong đối tượng.
+&lt;figure id="figure-ví-dụ-thực-hiện-reshape-feature">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan2_hu_a3f4111f0099ee14.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan2_hu_77fb98fe563758b5.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan2_hu_ffb3c4ad1bf41c6d.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan2_hu_a3f4111f0099ee14.webp"
+width="760"
+height="224"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Ví dụ thực hiện Reshape Feature
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="chỉnh-sửa-nâng-cao-add-part-và-delete-part">Chỉnh sửa nâng cao: Add Part và Delete Part&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Add part&lt;/strong> dùng để thêm một phần mới vào các đối tượng có sẵn. Phần mới này không nhất thiết phải tiếp giáp, liền kề với đối tượng có sẵn cần add part.&lt;/li>
+&lt;li>Cách thực hiện: Chọn đối tượng cần add part &amp;gt; Ấn nút Add part &amp;gt; Số hóa thêm phần mới như số hóa đối tượng bình thường &amp;gt; Khi hoàn tất, bạn sẽ thấy phần vừa số hóa chỉ là một phần của đối tượng cũ. Khi dùng công cụ chọn, cả phần mới và phần cũ đều được tô sáng. Ví dụ dưới đây thực hiện cho lớp Main_roads (dạng đường).
+&lt;figure id="figure-add-part-bước-1-chọn-đối-tượng-ấn-công-cụ-add-part">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan3_hu_8a806a0d12957a08.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan3_hu_4def957bdf279315.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan3_hu_1dd809ce2171f746.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan3_hu_8a806a0d12957a08.webp"
+width="645"
+height="271"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Add Part bước 1: Chọn đối tượng, ấn công cụ Add part
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-add-part-bước-2-số-hóa-thêm-phần-mới">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan4_hu_f47a4b4ed1b2600e.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan4_hu_87c4105b20304dcf.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan4_hu_5eca070069e315cf.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan4_hu_f47a4b4ed1b2600e.webp"
+width="670"
+height="483"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Add Part bước 2: Số hóa thêm phần mới
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Để xóa một phần, chỉ cần ấn &lt;strong>Delete Part&lt;/strong>, và kích chuột trái vào phần cần xóa.
+&lt;figure id="figure-delete-part">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan5_hu_1445a08f8c214c6e.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan5_hu_bc17416187a52069.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan5_hu_3bf43194e84d1b8f.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan5_hu_1445a08f8c214c6e.webp"
+width="541"
+height="143"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Delete Part
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="chỉnh-sửa-nâng-cao-ring-toolbars">Chỉnh sửa nâng cao: Ring Toolbars&lt;/h3></description></item></channel></rss>
