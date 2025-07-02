@@ -354,7 +354,7 @@ loading="lazy" data-zoomable />&lt;/div>
 Attributes Toolbar
 &lt;/figcaption>&lt;/figure>
 &lt;/p>
-&lt;h3 id="homework">Homework&lt;/h3>
+&lt;h2 id="homework">Homework&lt;/h2>
 &lt;p>Imagine you are planning a project that applies GIS to a topic of your interest. Describe your project ideas, including the chosen topic, how you plan to organize the project, and any other relevant details. (Approximately 200 words).&lt;/p></description></item><item><title>2. Hệ thống tham chiếu tọa độ (CRS)</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/</guid><description>&lt;p>Lý thuyết về các hệ thống tham chiếu tọa độ GIS. Thực hành làm quen các công cụ cơ bản của QGIS.&lt;/p>
 &lt;h2 id="lý-thuyết-về-các-hệ-thống-tham-chiếu-tọa-độ">Lý thuyết về các hệ thống tham chiếu tọa độ&lt;/h2>
 &lt;div class="responsive-wrap">
@@ -922,7 +922,7 @@ Save project
 &lt;/figcaption>&lt;/figure>
 &lt;/p>
 &lt;p>&lt;code>Hãy lưu project cho trạng thái làm việc hiện tại với tên project1.qgz. Sau đó, thay đổi màu sắc của một số lớp, ví dụ đổi màu của các đối tượng lớp Vietnam_Provinces, lưu project với tên project2.qgz. Mở 2 cửa sổ làm việc của QGIS, một cửa sổ bật project1.qgz, cái còn lại bật project2.qgz, so sánh sự khác nhau (do bạn vừa tạo ra) của 2 trạng thái làm việc&lt;/code>&lt;/p>
-&lt;h3 id="homework">Homework&lt;/h3>
+&lt;h2 id="homework">Homework&lt;/h2>
 &lt;p>Làm lại một lần nữa các bước thực hành vừa rồi theo quy trình dưới đây&lt;/p>
 &lt;ol>
 &lt;li>Launch QGIS and open the previously saved QGIS_practicals.qgs project.&lt;/li>
@@ -1445,7 +1445,132 @@ Delete Part
 &lt;/figcaption>&lt;/figure>
 &lt;/li>
 &lt;/ul>
-&lt;h3 id="chỉnh-sửa-nâng-cao-ring-toolbars">Chỉnh sửa nâng cao: Ring Toolbars&lt;/h3></description></item><item><title>Visualization</title><link>https://thaytunghanu.github.io/onlinecourse/course/dana/visualization/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/dana/visualization/</guid><description>&lt;p>Learn how to visualize data with Plotly.&lt;/p>
+&lt;h3 id="chỉnh-sửa-nâng-cao-add-ring-delete-ring-fill-ring">Chỉnh sửa nâng cao: Add Ring, Delete Ring, Fill Ring&lt;/h3>
+&lt;ul>
+&lt;li>Chức năng &lt;strong>Add Ring&lt;/strong> nhằm tạo một &amp;ldquo;lỗ thủng&amp;rdquo; ở giữa một đối tượng dạng vùng. Chức năng này hay được dùng khi chúng ta loại bỏ một phần diện tích nằm hoàn toàn phía trong đối tượng vùng. Ví dụ, loại bỏ diện tích đảo ở giữa mặt nước hồ.&lt;/li>
+&lt;li>Thực hiện: Ấn Add Ring &amp;gt; Vẽ số hóa 1 vùng nằm trong 1 đối tượng &amp;gt; Khi vẽ xong, vùng đó sẽ là lỗ thủng
+&lt;figure id="figure-add-ring">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan6_hu_b770831c24455129.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan6_hu_1b86bc8a368c1b19.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan6_hu_c5ea2000229cf1c4.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan6_hu_b770831c24455129.webp"
+width="663"
+height="60"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Add Ring
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-thực-hiện-add-ring-khi-loại-bỏ-phần-diện-tích-đảo-khỏi-diện-tích-mặt-nước-hồ">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan7_hu_f68acb6ecfa54ed9.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan7_hu_c372359fa2aa28b4.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan7_hu_95ef92897f3aaf15.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan7_hu_f68acb6ecfa54ed9.webp"
+width="760"
+height="313"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thực hiện Add Ring khi loại bỏ phần diện tích đảo khỏi diện tích mặt nước hồ
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Chức năng &lt;strong>Delete Ring&lt;/strong> để làm điều ngược lại là lấp lỗ thủng, thực hành bằng cách ấn chuột trái vào vùng lỗ thủng. Các bạn hãy tự khám phá chức năng công cụ &lt;strong>Fill Ring&lt;/strong>.
+&lt;figure id="figure-delete-ring-và-fill-ring">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan8_hu_d20694819ca41ff3.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan8_hu_41edd40a4eb1a8a7.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan8_hu_3c4892423d91ac04.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan8_hu_d20694819ca41ff3.webp"
+width="423"
+height="150"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Delete Ring và Fill Ring
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="công-cụ-tự-động-theo-dấu---automatic-tracing">Công cụ tự động theo dấu - Automatic Tracing&lt;/h3>
+&lt;ul>
+&lt;li>Tracing giúp bạn vẽ một đối tượng mới bằng cách tự động đi theo (bám theo) biên của các đối tượng khác đã có trong lớp (layer) hiện tại hoặc lớp khác. Khi được bật, bạn chỉ cần nhấn điểm bắt đầu và kết thúc, QGIS sẽ tự động tìm đường đi hợp lý giữa hai điểm dọc theo đường viền của đối tượng gần nhất. Điều này cực kỳ hữu ích khi bạn muốn đảm bảo các ranh giới liền khít, chính xác và không bị lệch giữa các đối tượng kế cận (ví dụ như thửa đất, vùng hành chính, lô rừng&amp;hellip;), đồng thời tiết kiệm thời gian số hóa.&lt;/li>
+&lt;li>Thực hiện: Giả sử bạn cần số hóa 1 đối tượng liền kề với đường giao thông. Đối tượng ở một lớp mới tên là Agricultural_Areas, dạng vùng. Các bước để thực hiện tracing như sau:
+&lt;ol>
+&lt;li>Bật Enable Snapping&lt;/li>
+&lt;li>Bật Enable Tracing&lt;/li>
+&lt;li>Bật công cụ số hóa Add Polygon Feature&lt;/li>
+&lt;li>Nhấp điểm bắt đầu trên đối tượng cần bám theo &amp;gt; Di chuột dọc theo biên muốn vẽ &amp;gt; Nhấp điểm kết thúc – QGIS sẽ tự động &amp;ldquo;trace&amp;rdquo; đoạn đường từ điểm đầu đến điểm cuối &amp;gt; Tiếp tục hoàn thiện đối tượng như bình thường.
+&lt;figure id="figure-enable-tracing">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan9_hu_dba6f63d1e4c848a.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan9_hu_da982048e8274c9c.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan9_hu_37eb74860f06a1b2.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan9_hu_dba6f63d1e4c848a.webp"
+width="483"
+height="68"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Enable Tracing
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-thực-hiện-tracing">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan10_hu_c1ea8a5f39cfe521.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan10_hu_886c09f14a955253.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_advan10_hu_a10237be539e943.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan10_hu_c1ea8a5f39cfe521.webp"
+width="760"
+height="552"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thực hiện Tracing
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="homework">Homework&lt;/h2>
+&lt;p>Hoàn thành những công việc sau:&lt;/p>
+&lt;ol>
+&lt;li>Số hóa lớp Lake. Đảm bảo độ chính xác khi số hóa. Dùng các công cụ căn chỉnh nếu cần như vertex tool, reshape, add ring&amp;hellip;&lt;/li>
+&lt;li>Tạo lớp Buildings, dạng vùng, tạo 1 trường &amp;ldquo;Name&amp;rdquo;. Điền một số giá trị vào trường Name như: “Household A”, “Shop”, “Place of worship”&lt;/li>
+&lt;li>Tạo và số hóa lớp Main_roads, dạng đường, tạo trường Type. Điền các giá trị như “main road”, “side road”, “side street”, etc.&lt;/li>
+&lt;li>Tạo và số hóa lớp Deforested_Areas, dạng điểm, tạo trường ‘Purpose’. Điền các giá trị như agriculture, logging etc.
+Kết quả sẽ tương tự như ảnh dưới:
+&lt;figure id="figure-kết-quả-bài-tập-yêu-cầu">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_homework_hu_f64803dc1c32239a.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_homework_hu_96958be53600c216.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_homework_hu_683d5101ffb6e2ce.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_homework_hu_f64803dc1c32239a.webp"
+width="698"
+height="571"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả bài tập yêu cầu
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Tạo và số hóa lớp Agricultural_Areas. Dùng công cụ tracing để bám biên các đối tượng khoảnh đất nông nghiệp với đường biên của hồ nước, đường giao thông.&lt;/li>
+&lt;li>Cắt bỏ diện tích đảo khỏi diện tích mặt nước hồ Bảo Linh bằng Add Ring.&lt;/li>
+&lt;li>Tạo 1 lớp mới tên là ‘Islands’, trong đó hãy tạo đảo số 1 ở hồ lớn và đảo 2,3 ở hồ nhỏ, thuộc hồ Bảo Linh. Điền số vào trường id như ảnh dưới.
+&lt;figure id="figure-kết-quả-bài-tập-yêu-cầu">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/3_gisdata/3_gisdata_homework2_hu_ec21ae1ee0d64fdd.webp 400w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_homework2_hu_a5299c7911ffb756.webp 760w,
+/onlinecourse/course/gis/3_gisdata/3_gisdata_homework2_hu_9e2138d54eeda1df.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_homework2_hu_ec21ae1ee0d64fdd.webp"
+width="657"
+height="431"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả bài tập yêu cầu
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ol></description></item><item><title>Visualization</title><link>https://thaytunghanu.github.io/onlinecourse/course/dana/visualization/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/dana/visualization/</guid><description>&lt;p>Learn how to visualize data with Plotly.&lt;/p>
 &lt;p>
 &lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 1-2 hours per week, for 8 weeks&lt;/p>
 &lt;h2 id="learn">Learn&lt;/h2>

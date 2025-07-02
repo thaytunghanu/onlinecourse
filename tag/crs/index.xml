@@ -565,7 +565,7 @@ Save project
 &lt;/figcaption>&lt;/figure>
 &lt;/p>
 &lt;p>&lt;code>Hãy lưu project cho trạng thái làm việc hiện tại với tên project1.qgz. Sau đó, thay đổi màu sắc của một số lớp, ví dụ đổi màu của các đối tượng lớp Vietnam_Provinces, lưu project với tên project2.qgz. Mở 2 cửa sổ làm việc của QGIS, một cửa sổ bật project1.qgz, cái còn lại bật project2.qgz, so sánh sự khác nhau (do bạn vừa tạo ra) của 2 trạng thái làm việc&lt;/code>&lt;/p>
-&lt;h3 id="homework">Homework&lt;/h3>
+&lt;h2 id="homework">Homework&lt;/h2>
 &lt;p>Làm lại một lần nữa các bước thực hành vừa rồi theo quy trình dưới đây&lt;/p>
 &lt;ol>
 &lt;li>Launch QGIS and open the previously saved QGIS_practicals.qgs project.&lt;/li>
