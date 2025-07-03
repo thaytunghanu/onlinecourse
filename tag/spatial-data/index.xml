@@ -113,7 +113,7 @@ loading="lazy" data-zoomable />&lt;/div>
 Tạo các lớp Deforested_Areas và Main_Roads
 &lt;/figcaption>&lt;/figure>
 &lt;/p>
-&lt;h3 id="số-hóa-và-biên-tập-các-lớp-shapefile">Số hóa và biên tập các lớp shapefile&lt;/h3>
+&lt;h3 id="chuẩn-bị-số-hóa-và-biên-tập-các-lớp-shapefile">Chuẩn bị Số hóa và biên tập các lớp shapefile&lt;/h3>
 &lt;ul>
 &lt;li>Mở một lớp nền ảnh vệ tinh, ví dụ Bing Satellite, bằng cách Web &amp;gt; QuickMapServices &amp;gt; Bing &amp;gt; Bing Satellite. Chúng ta sẽ sử dụng lớp nền này trong quá trình số hóa.&lt;/li>
 &lt;li>Dùng lớp Ho_Bao_Linh_location để định vị khu vực nghiên cứu. Zoom vào khu vực hồ Bảo Linh như ảnh dưới.&lt;br>

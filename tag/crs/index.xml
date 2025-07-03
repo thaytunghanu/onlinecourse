@@ -3,6 +3,15 @@
 &lt;div class="responsive-wrap">
 &lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRUX_CAFWfwX1IZZcf09sJ-6iXoUupLZy6oDFmlhnUBELJN51RBnQN3xseRRrkPGg/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
 &lt;/div>
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;p>Tip:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://vbpl.vn/botainguyen/Pages/vbpq-toanvan.aspx?ItemID=138922" target="_blank" rel="noopener">Thông tư 973/2001/TT-TCĐC&lt;/a> về việc Hướng dẫn áp dụng hệ quy chiếu và hệ tọa độ quốc gia VN-2000&lt;/li>
+&lt;li>Plugins HCMGIS có tổng hợp tên các EPSG code của hệ quy chiếu VN/2000 múi 3 độ cho tất cả các tỉnh theo Thông tư 973, rất thuận tiện khi cần biết tên EPSG để chuyển hệ tọa độ liên quan đến hệ VN-2000.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/div>
 &lt;h2 id="thực-hành-làm-quen-các-công-cụ-cơ-bản-của-qgis">Thực hành: Làm quen các công cụ cơ bản của QGIS&lt;/h2>
 &lt;h3 id="lấy-dữ-liệu-để-thực-hành">Lấy dữ liệu để thực hành&lt;/h3>
 &lt;p>Đây là module thực hành đầu tiên trong 10 module. Gọi tên module là Part 1.

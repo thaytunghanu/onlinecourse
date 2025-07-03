@@ -360,6 +360,15 @@ Attributes Toolbar
 &lt;div class="responsive-wrap">
 &lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRUX_CAFWfwX1IZZcf09sJ-6iXoUupLZy6oDFmlhnUBELJN51RBnQN3xseRRrkPGg/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
 &lt;/div>
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;p>Tip:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://vbpl.vn/botainguyen/Pages/vbpq-toanvan.aspx?ItemID=138922" target="_blank" rel="noopener">Thông tư 973/2001/TT-TCĐC&lt;/a> về việc Hướng dẫn áp dụng hệ quy chiếu và hệ tọa độ quốc gia VN-2000&lt;/li>
+&lt;li>Plugins HCMGIS có tổng hợp tên các EPSG code của hệ quy chiếu VN/2000 múi 3 độ cho tất cả các tỉnh theo Thông tư 973, rất thuận tiện khi cần biết tên EPSG để chuyển hệ tọa độ liên quan đến hệ VN-2000.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/div>
 &lt;h2 id="thực-hành-làm-quen-các-công-cụ-cơ-bản-của-qgis">Thực hành: Làm quen các công cụ cơ bản của QGIS&lt;/h2>
 &lt;h3 id="lấy-dữ-liệu-để-thực-hành">Lấy dữ liệu để thực hành&lt;/h3>
 &lt;p>Đây là module thực hành đầu tiên trong 10 module. Gọi tên module là Part 1.
@@ -1094,7 +1103,7 @@ loading="lazy" data-zoomable />&lt;/div>
 Tạo các lớp Deforested_Areas và Main_Roads
 &lt;/figcaption>&lt;/figure>
 &lt;/p>
-&lt;h3 id="số-hóa-và-biên-tập-các-lớp-shapefile">Số hóa và biên tập các lớp shapefile&lt;/h3>
+&lt;h3 id="chuẩn-bị-số-hóa-và-biên-tập-các-lớp-shapefile">Chuẩn bị Số hóa và biên tập các lớp shapefile&lt;/h3>
 &lt;ul>
 &lt;li>Mở một lớp nền ảnh vệ tinh, ví dụ Bing Satellite, bằng cách Web &amp;gt; QuickMapServices &amp;gt; Bing &amp;gt; Bing Satellite. Chúng ta sẽ sử dụng lớp nền này trong quá trình số hóa.&lt;/li>
 &lt;li>Dùng lớp Ho_Bao_Linh_location để định vị khu vực nghiên cứu. Zoom vào khu vực hồ Bảo Linh như ảnh dưới.&lt;br>
@@ -1589,7 +1598,372 @@ Kết quả bài tập yêu cầu
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">fig&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">px&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">bar&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">data_canada&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;year&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">y&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;pop&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">fig&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">show&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/p>
-&lt;/details></description></item><item><title>Statistics</title><link>https://thaytunghanu.github.io/onlinecourse/course/dana/stats/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/dana/stats/</guid><description>&lt;p>Introduction to statistics for data science.&lt;/p>
+&lt;/details></description></item><item><title>4. Dữ liệu thuộc tính</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/</link><pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/</guid><description>&lt;p>Làm việc với dữ liệu thuộc tính của file vector: nhập dữ liệu, tính toán trường dữ liệu, liên kết bảng dữ liệu ngoài (Joining External Tables)&lt;/p>
+&lt;h2 id="tạo-các-trường-thuộc-tính-và-nhập-dữ-liệu">Tạo các trường thuộc tính và nhập dữ liệu&lt;/h2>
+&lt;p>Bài trước đã trình bày cách nhập dữ liệu thuộc tính khi số hóa các đối tượng. Bài này sẽ giới thiệu những cách nhập và tạo dữ liệu thuộc tính cho những lớp đã có sẵn.&lt;/p>
+&lt;h3 id="nhập-dữ-liệu-thuộc-tính-thủ-công">Nhập dữ liệu thuộc tính thủ công&lt;/h3>
+&lt;ul>
+&lt;li>Ở bài trước, bạn đã tạo một số lớp và đã nhập một số trường thuộc tính khi số hóa xong mỗi đối tượng. Ví dụ lớp Main_roads:
+&lt;figure id="figure-bảng-thuộc-tính-của-lớp-main_roads-bao-gồm-trường-id-và-trường-type-đã-tạo-từ-bài-trước">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/4_attribute/4_attribute_manual1_hu_b23f975fcfd4cb70.webp 400w,
+/onlinecourse/course/gis/4_attribute/4_attribute_manual1_hu_47b3647328586eeb.webp 760w,
+/onlinecourse/course/gis/4_attribute/4_attribute_manual1_hu_7d22cb8f4dde7df8.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_manual1_hu_b23f975fcfd4cb70.webp"
+width="760"
+height="281"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Bảng thuộc tính của lớp Main_roads, bao gồm trường id và trường Type đã tạo từ bài trước
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-note">
+&lt;div>
+Khi chọn đối tượng ở Map canvas bằng công cụ Select, hàng tương ứng ở bảng thuộc tính cũng được tự động tô sáng. Ngược lại, khi chọn một hàng ở bảng thuộc tính, thì đối tượng ở bên Map canvas cũng được tô sáng theo. Nói cách khác, phần hình học và phần thuộc tính của một đối tượng luôn tương thông với nhau.
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;code>Nhiệm vụ của phần này là tạo một trường dữ liệu mới tên là Code ở lớp Main_Roads, sau đó nhập dữ liệu thuộc tính thủ công.&lt;/code>&lt;br>
+Thực hiện như sau:&lt;/p>
+&lt;ul>
+&lt;li>Bật Toogle Editing lớp Main_Roads.&lt;/li>
+&lt;li>Ấn nút New Field để bắt đầu tạo một trường dữ liệu mới.
+&lt;figure id="figure-thực-hiện-tạo-một-trường-dữ-liệu-mới">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/4_attribute/4_attribute_manual2_hu_892dea82141d76cd.webp 400w,
+/onlinecourse/course/gis/4_attribute/4_attribute_manual2_hu_1b6bbeba2c3a1aa4.webp 760w,
+/onlinecourse/course/gis/4_attribute/4_attribute_manual2_hu_9799fc0eb31246d8.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_manual2_hu_892dea82141d76cd.webp"
+width="667"
+height="225"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thực hiện tạo một trường dữ liệu mới
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Ô cửa sổ Add field xuất hiện để tiếp tục xác lập các tham số:
+&lt;ul>
+&lt;li>Name: tên trường&lt;/li>
+&lt;li>Type: kiểu dữ liệu. Tùy ý nghĩa thuộc tính mà xác lập kiểu dữ liệu là số nguyên (vd; dân số), số thập phân (vd: diện tích đất), kiểu kí tự (vd: tên địa danh), hay kiểu ngày (ngày sinh).&lt;/li>
+&lt;li>Length: độ dài của dữ liệu.
+&lt;figure id="figure-xác-lập-tham-số-khi-tạo-trường-dữ-liệu">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/4_attribute/4_attribute_manual3_hu_79fd5e0a04df14d1.webp 400w,
+/onlinecourse/course/gis/4_attribute/4_attribute_manual3_hu_7fedb3fbe02dfbe1.webp 760w,
+/onlinecourse/course/gis/4_attribute/4_attribute_manual3_hu_96439c2c4c57430b.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_manual3_hu_79fd5e0a04df14d1.webp"
+width="681"
+height="375"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Xác lập tham số khi tạo trường dữ liệu
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-kết-quả-khi-tạo-trường-code">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/4_attribute/4_attribute_manual4_hu_54093ceb5b1d94a5.webp 400w,
+/onlinecourse/course/gis/4_attribute/4_attribute_manual4_hu_46ce2063c86cab55.webp 760w,
+/onlinecourse/course/gis/4_attribute/4_attribute_manual4_hu_4f36d20b26c57eb8.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_manual4_hu_54093ceb5b1d94a5.webp"
+width="523"
+height="323"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả khi tạo trường Code
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Sau đó, nhập Code cho các đối tượng ở bảng thuộc tính bằng cách đánh vào các ô tương ứng. Ví dụ: L7, L8, &amp;hellip;, L11&lt;/li>
+&lt;li>Để lưu quá trình chỉnh sửa ấn Save edits ở bảng thuộc tính. Hoặc có thể ấn Save layer edits ở Toolbar cũng được.
+&lt;figure id="figure-kết-quả-sau-khi-nhập-code">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/4_attribute/4_attribute_manual5_hu_c79d4eb8e1e1fa63.webp 400w,
+/onlinecourse/course/gis/4_attribute/4_attribute_manual5_hu_2bc47e1c3b2571e0.webp 760w,
+/onlinecourse/course/gis/4_attribute/4_attribute_manual5_hu_e1f6b5dc9c00039f.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_manual5_hu_c79d4eb8e1e1fa63.webp"
+width="760"
+height="412"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả sau khi nhập Code
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;p>Có thể hiện Code dưới dạng label ở Map Canvas. Nên format cho label kiểu Halo, nghĩa là có buffer xung quanh chữ.
+&lt;figure id="figure-hiện-label-dựa-vào-trường-code">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/4_attribute/4_attribute_manual6_hu_620f28a86210c60f.webp 400w,
+/onlinecourse/course/gis/4_attribute/4_attribute_manual6_hu_8e9ba3ebe253f3f0.webp 760w,
+/onlinecourse/course/gis/4_attribute/4_attribute_manual6_hu_c1ef984fa590505d.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_manual6_hu_620f28a86210c60f.webp"
+width="760"
+height="386"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Hiện label dựa vào trường Code
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="nhập-dữ-liệu-thuộc-tính-dựa-vào-công-cụ-tính-toán-field-calculator">Nhập dữ liệu thuộc tính dựa vào công cụ tính toán Field calculator&lt;/h3>
+&lt;p>Phần mềm QGIS hoặc các phần GIS khác đều tích hợp chức năng tính toán các tham số hình học cho đối tượng như diện tích, chu vi, độ dài &amp;hellip;
+Đây là một chức năng hữu ích và được sử dụng phổ biến của các phần mềm GIS.&lt;br>
+Phần này sẽ giới thiệu cách tính diện tích của các đối tượng lớp Lake một cách tự động, và đưa các kết quả tính toán về một trường dữ liệu.&lt;br>
+Các bước thực hiện:&lt;/p>
+&lt;ul>
+&lt;li>Mở bảng thuộc tính lớp Lake&lt;/li>
+&lt;li>Ấn Open Field Calculator
+&lt;figure id="figure-open-field-calculator">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal1_hu_e50b6cf2499e8cea.webp 400w,
+/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal1_hu_33155bd87e04934a.webp 760w,
+/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal1_hu_42487f9419c29409.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal1_hu_e50b6cf2499e8cea.webp"
+width="760"
+height="510"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Open Field Calculator
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Xác lập các tham số:
+&lt;ul>
+&lt;li>Tick vào &lt;strong>Create a new field&lt;/strong>. Trong trường hợp bạn đã tạo trường sẵn từ trước, thì chọn Update existing field (bên phải).&lt;/li>
+&lt;li>Đặt tên trường là Area&lt;/li>
+&lt;li>Kiểu dữ liệu là số thập phân - decimal number&lt;/li>
+&lt;li>length: lấy bao nhiêu số và precision: bao nhiêu số sau dấu phẩy. Đề giá trị mặc định là 10, và 3 tương ứng.&lt;/li>
+&lt;li>Chọn hàm area ở mục Geometry, hoặc có thể đánh trực tiếp $area&lt;/li>
+&lt;li>Nếu không có lỗi, mục preview phía dưới sẽ hiện một kết quả mẫu.
+&lt;figure id="figure-xác-lập-tham-số-field-calculator">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal2_hu_bed5d129a9d77bb.webp 400w,
+/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal2_hu_8ce6375c1bb71d5.webp 760w,
+/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal2_hu_776f9a0fee97649d.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal2_hu_bed5d129a9d77bb.webp"
+width="760"
+height="566"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Xác lập tham số Field Calculator
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-kết-quả-tính-toán-diện-tích-hồ-bảo-linh">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal3_hu_e36b03d180c52ae0.webp 400w,
+/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal3_hu_1cf583d605aeafe6.webp 760w,
+/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal3_hu_c70704248eaa3222.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal3_hu_e36b03d180c52ae0.webp"
+width="320"
+height="166"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả tính toán diện tích hồ Bảo Linh
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-note">
+&lt;div>
+Chú ý: đơn vị của giá trị diện tích sẽ tương ứng với đơn vị của hệ quy chiếu tọa độ (CRS) của lớp đó.
+&lt;/div>
+&lt;/div>
+&lt;p style="color: red">Hãy check CRS của lớp Lake và trả lời câu hỏi đơn vị của giá trị diện tích QGIS tính ra là gì? m&lt;sup>2&lt;/sup>, hay km&lt;sup>2&lt;/sup> &amp;hellip;?&lt;/p>
+&lt;details class="spoiler " id="spoiler-2">
+&lt;summary>Đơn vị của diện tích lớp Lake vừa tính?&lt;/summary>
+&lt;p>Là m&lt;sup>2&lt;/sup>&lt;/p>
+&lt;/details>
+&lt;p>Vậy muốn chuyển đổi đơn vị này sang ha và km&lt;sup>2&lt;/sup> thì phải làm thế nào? Biết rẳng &lt;span style="background-color:#d3d3d3;padding:2px 4px;border-radius:4px;font-family:monospace;"> 1 ha = 10,000 m&lt;sup>2&lt;/sup>&lt;/span>
+, &lt;span style="background-color:#d3d3d3;padding:2px 4px;border-radius:4px;font-family:monospace;"> 1 km&lt;sup>2&lt;/sup> = 1,000,000 m&lt;sup>2&lt;/sup>&lt;/span>
+. Suy nghĩ và thực hiện, yêu cầu kết quả là tạo ra 2 trường Area_ha, Area_km2 với giá trị được tính toán tự động.
+&lt;figure id="figure-yêu-cầu-kết-quả-cuối-cùng">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal4_hu_70221a4e1d3de45c.webp 400w,
+/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal4_hu_504d3ecf88841e73.webp 760w,
+/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal4_hu_d1e7b9e9cd527355.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal4_hu_70221a4e1d3de45c.webp"
+width="518"
+height="148"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Yêu cầu kết quả cuối cùng
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h2 id="liên-kết-bảng-dữ-liệu-bên-ngoài-joining-external-tables">Liên kết bảng dữ liệu bên ngoài (Joining External Tables)&lt;/h2>
+&lt;ul>
+&lt;li>Trong QGIS, Joining External Tables (kết nối bảng dữ liệu bên ngoài) là tính năng cho phép bạn liên kết (join) dữ liệu từ một bảng thuộc tính của một lớp (vector layer) với một bảng thuộc tính bên ngoài (có thể là file .csv, Excel, bảng từ database, v.v.) dựa trên một trường có chung giá trị (gọi là key field/common field, ví dụ mã vùng, tên đối tượng, ID). Các giá trị của trường chung phải hoàn toàn giống nhau.&lt;/li>
+&lt;li>Sau khi join, các cột từ bảng ngoài sẽ xuất hiện trong bảng thuộc tính của layer chính, và có thể được sử dụng để hiển thị, phân loại, tạo nhãn, hoặc phân tích.&lt;/li>
+&lt;li>Đây là một công cụ cực kỳ hữu ích để mở rộng hoặc bổ sung thông tin cho dữ liệu không gian mà không cần chỉnh sửa trực tiếp lớp gốc.&lt;/li>
+&lt;/ul>
+&lt;h3 id="lấy-dữ-liệu-để-thực-hành">Lấy dữ liệu để thực hành&lt;/h3>
+&lt;p>Thực hành module Part 4.
+&lt;a href="https://drive.google.com/drive/folders/1wi68IJJiaGy9kVXcrrYjUUCD90QY51CM?usp=drive_link" target="_blank" rel="noopener">Download dữ liệu Dataset Part 4 ở đây.&lt;/a>&lt;br>
+Dữ liệu bao gồm lớp:&lt;/p>
+&lt;ul>
+&lt;li>File csv thông tin dân số năm 2015 của 63 tỉnh thành trước sát nhập: 2015 provincial population.csv&lt;/li>
+&lt;li>File csv thông tin về diện tích rừng trồng và rừng tự nhiên của 2 năm 2005 và 2016: Vietnam_Provinces_Forested_Area(Ha).csv&lt;/li>
+&lt;/ul>
+&lt;h3 id="thực-hành-liên-kết-bảng-dữ-liệu-bên-ngoài">Thực hành liên kết bảng dữ liệu bên ngoài&lt;/h3>
+&lt;p>Nhiệm vụ trong phần này là kết nối dữ liệu dân số cấp tỉnh ở file csv 2015 provincial population.csv với bảng thuộc tính của lớp Vietnam_provinces, thể hiện ranh giới hành chính cấp tỉnh.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Add file Vietnam_provinces đã download từ bài thực hành phần 1: &lt;a href="https://drive.google.com/drive/folders/16BGONstMOuhNSkJ0r6BwgU-3jNzsJkkx?usp=drive_link" target="_blank" rel="noopener">Download dữ liệu Dataset Part 1 ở đây&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Có thể kiểm tra nhanh số lượng đối tượng của lớp bằng công cụ &lt;strong>Show feature count&lt;/strong>. Thực hiện: chọn lớp Vietnam_provinces ở Layers Panel &amp;gt; chuột phải và chọn Show feature count &amp;gt; tổng số đối tượng sẽ hiện ở bên phải tên lớp, ở Layers Panel.
+&lt;figure id="figure-show-feature-count">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/4_attribute/4_attribute_join1_hu_e87fbb61a669b4d2.webp 400w,
+/onlinecourse/course/gis/4_attribute/4_attribute_join1_hu_d7b0a9cae65b8d02.webp 760w,
+/onlinecourse/course/gis/4_attribute/4_attribute_join1_hu_d3e322bbd791a296.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_join1_hu_e87fbb61a669b4d2.webp"
+width="760"
+height="409"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Show feature count
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add file &amp;ldquo;2015 provincial population.csv&amp;rdquo; vào Layers Panel bằng công cụ &lt;strong>Delimited Text&lt;/strong> ở Data Source Manager. Cần tick vào lựa chọn No geometry, vì file này không có các trường tọa độ. Kiểm tra lại kiểu dữ liệu của các trường xem đã chính xác chưa.
+&lt;figure id="figure-add-file-dữ-liệu-csv-bằng-công-cụ-delimited-text">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/4_attribute/4_attribute_join2_hu_89857d146b0e2a40.webp 400w,
+/onlinecourse/course/gis/4_attribute/4_attribute_join2_hu_2419e350b6c62b56.webp 760w,
+/onlinecourse/course/gis/4_attribute/4_attribute_join2_hu_ebbefa02d0cfe2fa.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_join2_hu_89857d146b0e2a40.webp"
+width="760"
+height="543"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Add file dữ liệu csv bằng công cụ Delimited Text
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-note">
+&lt;div>
+Chú ý: nếu bạn add file csv bằng cách kéo và thả vào Map canvas thì các trường dữ liệu đều có kiểu dữ liệu mặc định là text (kí tự). Nếu vậy sẽ dẫn đến sự không chính xác về kiểu dữ liệu. Cụ thể là dữ liệu dân số phải là dạng số, không phải dạng kí tự. Sự không chính xác về kiểu dữ liệu sẽ dẫn đến mất khả năng hiển thị Symbology phù hợp với dữ liệu dạng số.&lt;br>
+Do đó, phải thêm file csv bằng công cụ &lt;strong>Delimited text&lt;/strong>.
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>Xác định trường chung: mở bảng thuộc tính của &amp;ldquo;2015 provincial population.csv&amp;rdquo; và bảng thuộc tính của Vietnam_Provinces. So sánh, đối chiếu 2 bảng này và trả lời câu hỏi:&lt;/li>
+&lt;/ul>
+&lt;details class="spoiler " id="spoiler-6">
+&lt;summary>Trường nào là trường chung của 2 bảng 2015 provincial population.csv và Vietnam_Provinces?&lt;/summary>
+&lt;p>Trường &lt;strong>Province&lt;/strong> ở file csv và trường &lt;strong>VARNAME_1&lt;/strong> của Vietnam_Provinces hoàn toàn giống nhau, đó chính là trường chung.&lt;/p>
+&lt;/details>
+&lt;ul>
+&lt;li>Dựa trên trường chung để kết nối 2 bảng thuộc tính. Cách thực hiện:
+&lt;ul>
+&lt;li>Chuột phải vào lớp Vietnam_Provinces &amp;gt; Properties &amp;gt; Joins. Sau đó ấn nút dấu +&lt;br>
+&lt;figure id="figure-chuẩn-bị-kết-nối-bảng-csv-và-bảng-dữ-liệu-vietnam_provinces">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/4_attribute/4_attribute_join3_hu_ac384b5208656886.webp 400w,
+/onlinecourse/course/gis/4_attribute/4_attribute_join3_hu_92b74cbe7611ff6d.webp 760w,
+/onlinecourse/course/gis/4_attribute/4_attribute_join3_hu_a3d5de6d63d313a2.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_join3_hu_ac384b5208656886.webp"
+width="760"
+height="411"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chuẩn bị kết nối bảng csv và bảng dữ liệu Vietnam_Provinces
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Thiết lập các tham số ở cửa sổ Add Vector Join:
+&lt;ul>
+&lt;li>Join layer là bảng csv cần thêm vào&lt;/li>
+&lt;li>Join field là trường chung ở csv&lt;/li>
+&lt;li>Target field là trường chung ở lớp vector đang chọn.
+&lt;figure id="figure-thiết-lập-các-tham-số-ở-cửa-sổ-add-vector-join">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/4_attribute/4_attribute_join4_hu_6313c326788b56c1.webp 400w,
+/onlinecourse/course/gis/4_attribute/4_attribute_join4_hu_c95b05cb8b365a90.webp 760w,
+/onlinecourse/course/gis/4_attribute/4_attribute_join4_hu_ca16146f30c9dd8d.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_join4_hu_6313c326788b56c1.webp"
+width="451"
+height="312"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập các tham số ở cửa sổ Add Vector Join
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Ấn OK.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Kết quả: bảng thuộc tính của Vietnam_Provinces hiện giờ đã xuất hiện thêm 5 cột dữ liệu dân số kết nối từ file csv.
+&lt;figure id="figure-kết-quả-khi-join-external-table">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/4_attribute/4_attribute_join5_hu_e3bc704f979d4315.webp 400w,
+/onlinecourse/course/gis/4_attribute/4_attribute_join5_hu_cf7c4d10b1c5b4ee.webp 760w,
+/onlinecourse/course/gis/4_attribute/4_attribute_join5_hu_63253a6575909c83.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_join5_hu_e3bc704f979d4315.webp"
+width="760"
+height="324"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả khi join external table
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Có một số hàng không thể kết nối dữ liệu và hiển thị giá trị NULL. Nguyên nhân: do tên tỉnh ở trường chung không giống nhau hoàn toàn nên không thể kết nối dữ liệu.&lt;/li>
+&lt;li>Cuối cùng, dữ liệu kết nối bảng bên ngoài chỉ là kết nối tạm thời, không phải cố định. kết nối này sẽ mất khi remove lớp Vietnam_Provinces.&lt;/li>
+&lt;li>Để kết nối này chuyển thành cố định, cần lưu file này sang một file mới: chuột phải vào lớp Vietnam_Provinces, Export &amp;gt; Save Feature As, điền tên và lưu.
+&lt;figure id="figure-lưu-file-vietnam_provinces-đang-có-kết-nối-sang-một-file-khác">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/4_attribute/4_attribute_join6_hu_ab2ba6978f1715a0.webp 400w,
+/onlinecourse/course/gis/4_attribute/4_attribute_join6_hu_d939b23d7992eb.webp 760w,
+/onlinecourse/course/gis/4_attribute/4_attribute_join6_hu_4e707c9c5246c5a1.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_join6_hu_ab2ba6978f1715a0.webp"
+width="760"
+height="423"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Lưu file Vietnam_Provinces đang có kết nối sang một file khác
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="homework">Homework&lt;/h2>
+&lt;p>Phần nhập dữ liệu thủ công và tính toán Field Calculator&lt;/p>
+&lt;ol>
+&lt;li>Số hóa lại thật chính xác Hồ Bảo Linh và tính diện tích hồ. Sau đó so sánh với số liệu công bố ở &lt;a href="https://vi.wikipedia.org/wiki/H%E1%BB%93_B%E1%BA%A3o_Linh" target="_blank" rel="noopener">Wikipedia&lt;/a>&lt;/li>
+&lt;li>Tính diện tích tự động cho lớp Islands, đơn vị yêu cầu: tính theo đơn vị m&lt;sup>2&lt;/sup>&lt;/li>
+&lt;li>Tính chu vi của các đảo, kết quả được tạo và lưu ở trường &amp;ldquo;Perimeter&amp;rdquo;.&lt;/li>
+&lt;li>Hiện label các đảo bằng số liệu chu vi vừa tính. Yêu cầu kết qủa như hình dưới:
+&lt;figure id="figure-yêu-cầu-kết-quả-của-phần-nhập-liệu-và-tính-toán-field-calculator">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/4_attribute/4_attribute_homework1_hu_ae4da50cd520bd29.webp 400w,
+/onlinecourse/course/gis/4_attribute/4_attribute_homework1_hu_fe33baeba8394566.webp 760w,
+/onlinecourse/course/gis/4_attribute/4_attribute_homework1_hu_91260163ef50b947.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_homework1_hu_ae4da50cd520bd29.webp"
+width="754"
+height="591"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Yêu cầu kết quả của phần nhập liệu và tính toán field calculator
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ol>
+&lt;p>Phần nhập kết nối với bảng bên ngoài:&lt;br>
+6. Sửa lại các giá trị ở trường chung ở file Vietnam_Provinces để hoàn toàn khớp với giá trị ở csv. Sau đó join lại bảng xem đã khắc phục được vấn đề chưa.&lt;br>
+7. Khi không còn hàng nào có giá trị NULL ở các cột dân số, hãy lưu lớp và đặt tên là Vietnam_provinces_2015population để chuyển kết nối bảng dữ liệu thành cố định.&lt;/p></description></item><item><title>Statistics</title><link>https://thaytunghanu.github.io/onlinecourse/course/dana/stats/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/dana/stats/</guid><description>&lt;p>Introduction to statistics for data science.&lt;/p>
 &lt;p>
 &lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 1-2 hours per week, for 8 weeks&lt;/p>
 &lt;h2 id="learn">Learn&lt;/h2>
@@ -1608,7 +1982,7 @@ The variance of the distribution is $\sigma^{2}$.
 &lt;details class="spoiler " id="spoiler-2">
 &lt;summary>What is the parameter $\mu$?&lt;/summary>
 &lt;p>The parameter $\mu$ is the mean or expectation of the distribution.&lt;/p>
-&lt;/details></description></item><item><title>Jian Yang and Monica Hall Win the Best Paper Award at Hugo Blox 2023</title><link>https://thaytunghanu.github.io/onlinecourse/post/20-12-02-icml-best-paper/</link><pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/post/20-12-02-icml-best-paper/</guid><description>&lt;p>Congratulations to Jian Yang and Monica Hall for winning the Best Paper Award at the 2023 Conference on Hugo Blox for their paper “Learning Hugo Blox”.&lt;/p>
+&lt;/details></description></item><item><title>Bài test 1</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/test_1/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/test_1/</guid><description>&lt;p>Kiểm tra kỹ năng số hóa các lớp vector và các hàm tự động tính toán các tham số hình học.&lt;/p></description></item><item><title>5. Thể hiện và trình bày dữ liệu vector</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/</guid><description>&lt;p>Thực hành về thể hiện và trình bày lớp vector. Tiếp tục thực hành về tính toán trường dữ liệu (field calculator).&lt;/p></description></item><item><title>Jian Yang and Monica Hall Win the Best Paper Award at Hugo Blox 2023</title><link>https://thaytunghanu.github.io/onlinecourse/post/20-12-02-icml-best-paper/</link><pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/post/20-12-02-icml-best-paper/</guid><description>&lt;p>Congratulations to Jian Yang and Monica Hall for winning the Best Paper Award at the 2023 Conference on Hugo Blox for their paper “Learning Hugo Blox”.&lt;/p>
 &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.&lt;/p>
 &lt;p>Sed eu dui nec ligula bibendum dapibus. Nullam imperdiet auctor tortor, vel cursus mauris malesuada non. Quisque ultrices euismod dapibus. Aenean sed gravida risus. Sed nisi tortor, vulputate nec quam non, placerat porta nisl. Nunc varius lobortis urna, condimentum facilisis ipsum molestie eu. Ut molestie eleifend ligula sed dignissim. Duis ut tellus turpis. Praesent tincidunt, nunc sed congue malesuada, mauris enim maximus massa, eget interdum turpis urna et ante. Morbi sem nisl, cursus quis mollis et, interdum luctus augue. Aliquam laoreet, leo et accumsan tincidunt, libero neque aliquet lectus, a ultricies lorem mi a orci.&lt;/p>
 &lt;p>Mauris dapibus sem vel magna convallis laoreet. Donec in venenatis urna, vitae sodales odio. Praesent tortor diam, varius non luctus nec, bibendum vel est. Quisque id sem enim. Maecenas at est leo. Vestibulum tristique pellentesque ex, blandit placerat nunc eleifend sit amet. Fusce eget lectus bibendum, accumsan mi quis, luctus sem. Etiam vitae nulla scelerisque, eleifend odio in, euismod quam. Etiam porta ullamcorper massa, vitae gravida turpis euismod quis. Mauris sodales sem ac ultrices viverra. In placerat ultrices sapien. Suspendisse eu arcu hendrerit, luctus tortor cursus, maximus dolor. Proin et velit et quam gravida dapibus. Donec blandit justo ut consequat tristique.&lt;/p></description></item><item><title>Richard Hendricks Wins First Place in the Hugo Blox Builder Prize</title><link>https://thaytunghanu.github.io/onlinecourse/post/20-12-01-wowchemy-prize/</link><pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/post/20-12-01-wowchemy-prize/</guid><description>&lt;p>Congratulations to Richard Hendricks for winning first place in the Wowchemy Prize.&lt;/p>

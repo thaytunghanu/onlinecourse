@@ -103,6 +103,21 @@ max-width: 100% !important;
 &lt;p>Lý thuyết về dữ liệu GIS: vector và raster. Thực hành làm việc với dữ liệu vector.
 &lt;/p>
 &lt;/li>
+&lt;li>
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/">4. Dữ liệu thuộc tính&lt;/a>&lt;/h5>
+&lt;p>Làm việc với dữ liệu thuộc tính của file vector: nhập dữ liệu, tính toán trường dữ liệu, liên kết bảng dữ liệu ngoài (Joining External Tables)
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/test_1/">Bài test 1&lt;/a>&lt;/h5>
+&lt;p>Kiểm tra kỹ năng số hóa các lớp vector và các hàm tự động tính toán các tham số hình học.
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/">5. Thể hiện và trình bày dữ liệu vector&lt;/a>&lt;/h5>
+&lt;p>Thực hành về thể hiện và trình bày lớp vector. Tiếp tục thực hành về tính toán trường dữ liệu (field calculator).
+&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;h2 id="thông-tin-giảng-viên">Thông tin giảng viên&lt;/h2>
 &lt;a href="https://thaytunghanu.github.io/onlinecourse/author/ts.-hoang-thanh-tung/">TS. Hoàng Thanh Tùng&lt;/a>
