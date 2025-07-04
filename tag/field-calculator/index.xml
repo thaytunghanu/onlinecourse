@@ -363,4 +363,384 @@ Yêu cầu kết quả của phần nhập liệu và tính toán field calculat
 &lt;/ol>
 &lt;p>Phần nhập kết nối với bảng bên ngoài:&lt;br>
 6. Sửa lại các giá trị ở trường chung ở file Vietnam_Provinces để hoàn toàn khớp với giá trị ở csv. Sau đó join lại bảng xem đã khắc phục được vấn đề chưa.&lt;br>
-7. Khi không còn hàng nào có giá trị NULL ở các cột dân số, hãy lưu lớp và đặt tên là Vietnam_provinces_2015population để chuyển kết nối bảng dữ liệu thành cố định.&lt;/p></description></item><item><title>5. Thể hiện và trình bày dữ liệu vector</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/</guid><description>&lt;p>Thực hành về thể hiện và trình bày lớp vector. Tiếp tục thực hành về tính toán trường dữ liệu (field calculator).&lt;/p></description></item></channel></rss>
+7. Khi không còn hàng nào có giá trị NULL ở các cột dân số, hãy lưu lớp và đặt tên là Vietnam_provinces_2015population để chuyển kết nối bảng dữ liệu thành cố định.&lt;/p></description></item><item><title>5. Thể hiện và trình bày dữ liệu vector</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/</guid><description>&lt;p>Thực hành về thể hiện và trình bày lớp vector. Tiếp tục thực hành về tính toán trường dữ liệu (field calculator).&lt;/p>
+&lt;h2 id="thể-hiện-ký-hiệu-bản-đồ-trong-qgis">Thể hiện ký hiệu bản đồ trong QGIS&lt;/h2>
+&lt;ul>
+&lt;li>Ở bài 2, chúng ta đã có thực hiện một số bước thực hành căn bản về ký hiệu bản đồ (symbology): bao gồm làm trong màu nền của đối tượng vùng và đổi màu đường viền.&lt;/li>
+&lt;li>Phần này sẽ giới thiệu sâu hơn về symbology.&lt;/li>
+&lt;li>Trong QGIS (Quantum GIS), symbology là thành phần chịu trách nhiệm về cách hiển thị dữ liệu không gian (vector hoặc raster) trên bản đồ. Nó giúp biến dữ liệu thô thành hình ảnh dễ hiểu, hỗ trợ quá trình phân tích, trực quan hóa và trình bày dữ liệu. Các đối tượng không gian được thể hiện trực quan hóa dựa trên:
+&lt;ul>
+&lt;li>Thuộc tính dữ liệu (giá trị trong bảng thuộc tính), hoặc giá trị pixel với dạng raster.&lt;/li>
+&lt;li>Quy tắc hiển thị (theo lớp, phân loại, thang màu, ký hiệu, v.v.)&lt;/li>
+&lt;li>Định dạng trực quan (màu sắc, độ dày, biểu tượng&amp;hellip;)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Các loại ký hiệu hiển thị chính:
+&lt;ul>
+&lt;li>&lt;strong>Single Symbol&lt;/strong> (Ký hiệu đơn lẻ): Áp dụng một kiểu hiển thị duy nhất cho toàn bộ lớp. Phù hợp với dữ liệu không cần phân loại.&lt;/li>
+&lt;li>&lt;strong>Categorized&lt;/strong> (Phân loại theo danh mục): Phân loại theo giá trị thuộc tính rời rạc và định tính (ví dụ: loại đất, loại cây). Mỗi giá trị sẽ có màu/biểu tượng riêng.&lt;/li>
+&lt;li>&lt;strong>Graduated&lt;/strong> (Phân loại theo thang đo): Hiển thị theo khoảng giá trị số (ví dụ: dân số, độ cao). Sử dụng thang màu hoặc kích thước để phân biệt.
+-&lt;strong>Rule-based&lt;/strong> (Theo quy tắc): Cho phép xây dựng quy tắc phức tạp để hiển thị đối tượng. Có thể dùng biểu thức, điều kiện logic.&lt;/li>
+&lt;li>&lt;strong>2.5D&lt;/strong> hoặc Phối cảnh 3D: Tạo hiệu ứng chiều cao hoặc đổ bóng để tăng tính trực quan.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="thực-hành">Thực hành&lt;/h2>
+&lt;h3 id="dữ-liệu-thực-hành">Dữ liệu thực hành&lt;/h3>
+&lt;p>Lớp Vietnam_provinces_2015population đã làm ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/#homework">Homework số 7, Bài 4&lt;/a>. Lớp này chính là Vietnam_Provinces đã liên kết thêm các trường thông tin dân số 2015.&lt;/p>
+&lt;h3 id="symbology-cơ-bản">Symbology cơ bản&lt;/h3>
+&lt;p>Nhắc lại kiến thức đã học: Hãy đổi màu nền các tỉnh sang màu vàng như ảnh dưới. Cách thực hiện: Chuột phải vào lớp Vietnam_provinces_2015population &amp;gt; Properties &amp;gt; Symbology &amp;gt; Chọn Simple Fill, xuống dưới đổi màu ô Color.
+&lt;figure id="figure-đổi-màu-nền-trong-mục-single-symbol">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_single_hu_b06d8ad159f1f36b.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_single_hu_b9e5b833d14a2984.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_single_hu_619fe1cb8879788a.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_single_hu_b06d8ad159f1f36b.webp"
+width="760"
+height="438"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Đổi màu nền trong mục Single Symbol
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="categorized-phân-loại-theo-danh-mục">Categorized: Phân loại theo danh mục&lt;/h3>
+&lt;p>&lt;code>Hãy tô màu các tỉnh tương ứng với tên tỉnh tiếng Anh.&lt;/code>&lt;br>
+Thực hiện:&lt;/p>
+&lt;ul>
+&lt;li>Chuột phải vào lớp Vietnam_provinces_2015population &amp;gt; Properties &amp;gt; Symbology &amp;gt; Categorized
+&lt;figure id="figure-chọn-categorized">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_categorized1_hu_5af45305b4e3ff0b.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_categorized1_hu_a9b9c1a19c9abb4e.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_categorized1_hu_d9974365729e2738.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_categorized1_hu_5af45305b4e3ff0b.webp"
+width="760"
+height="240"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chọn Categorized
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Ô value: chọn trường chứa tên tỉnh bằng tiếng Anh, đó là VARNAME_1
+&lt;figure id="figure-chọn-trường-varname_1-chứa-tên-tỉnh-bằng-tiếng-anh">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_categorized2_hu_f945041d6da2021a.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_categorized2_hu_c8f79cea25ce968f.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_categorized2_hu_874e5f669272f1da.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_categorized2_hu_f945041d6da2021a.webp"
+width="760"
+height="663"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chọn trường VARNAME_1 chứa tên tỉnh bằng tiếng Anh
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Ô Color Ramp, chọn Random Colors, ấn nút Classify bên dưới và cuối cùng ấn OK.
+&lt;figure id="figure-kết-quả-phân-loại-theo-danh-mục">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_categorized3_hu_85a23880de988c3.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_categorized3_hu_dfa412254677770e.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_categorized3_hu_4ff4094a6bd9662c.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_categorized3_hu_85a23880de988c3.webp"
+width="760"
+height="462"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả phân loại theo danh mục
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="graduated-phân-loại-theo-thang-đo">Graduated: Phân loại theo thang đo&lt;/h3>
+&lt;ul>
+&lt;li>&lt;code>Ở phần này, chúng ta sẽ phân loại các tỉnh theo dân số năm 2015&lt;/code>. Trường thông tin cần sử dụng trong phần này là trường dân số cấp tỉnh 2015.&lt;/li>
+&lt;li>Nếu bạn chưa có trường này, bạn cần thực hiện kết nối bảng thuộc tính của Vietnam_Provinces và file “2015 provincial population.csv” như hướng dẫn ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/#liên-kết-bảng-dữ-liệu-bên-ngoài-joining-external-tables">Bài 4&lt;/a>.&lt;/li>
+&lt;li>Lưu ý: đơn vị của dữ liệu dân số là &lt;strong>nghìn người&lt;/strong>. Ví dụ: tỉnh Hai Duong có giá trị 1774.5, nghĩa là dân số Hải Dương là 1,744,500 người.&lt;br>
+Cách thực hiện:&lt;/li>
+&lt;li>Chuột phải vào lớp Vietnam_provinces_2015population &amp;gt; Properties &amp;gt; Symbology &amp;gt; Graduated &amp;gt; Ô value chọn trường &amp;ldquo;2015 provincial population_Total_2015&amp;rdquo;, ấn Classify
+&lt;figure id="figure-phân-loại-theo-thang-đo---graduated-với-số-thang-đo-lớp-là-5">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_graduated1_hu_af282e84d5a011f5.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_graduated1_hu_3478775f38e8628e.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_graduated1_hu_605d16771f5803a0.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_graduated1_hu_af282e84d5a011f5.webp"
+width="760"
+height="536"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Phân loại theo thang đo - Graduated với số thang đo (lớp) là 5
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Có thể tùy chỉnh một số tham số như:
+&lt;ul>
+&lt;li>Classes: số thang đo&lt;/li>
+&lt;li>Mode hiển thị: một số mode phổ biến là equal count, equal interval, natural breaks. Hình dưới minh họa ý nghĩa của các mode hiển thị này, bạn hãy tự suy luận ý nghĩa của các mode.&lt;/li>
+&lt;li>Color Ramp: có thể tùy chọn các thang màu khác nhau.&lt;/li>
+&lt;li>Legend: có thể viết thêm để giải thích rõ hơn về đơn vị, ví dụ thêm mỗi dòng chữ thousand people.
+&lt;figure id="figure-tùy-chỉnh-các-tham-số-ở-phân-loại-theo-thang-đo">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_graduated2_hu_d17b599ba7380cf2.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_graduated2_hu_9b7dbf5986ea512.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_graduated2_hu_8b15ac14e3781339.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_graduated2_hu_d17b599ba7380cf2.webp"
+width="760"
+height="409"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Tùy chỉnh các tham số ở phân loại theo thang đo
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-các-mode-hiển-thị-ở-phân-loại-graduated-trong-qgis">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_graduated3_hu_cdaeb50a6a24174a.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_graduated3_hu_5738b8ee546cbffa.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_graduated3_hu_b6f5471e6bb4bf6b.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_graduated3_hu_cdaeb50a6a24174a.webp"
+width="760"
+height="452"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Các mode hiển thị ở Phân loại Graduated trong QGIS
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="rule-based-phân-loại-theo-quy-tắc">Rule-based: Phân loại theo quy tắc&lt;/h3>
+&lt;p>&lt;code>Trong phần này, hãy thực hiện việc hiển thị các thành phố trực thuộc trung ương.&lt;/code>&lt;br>
+Cách thực hiện:&lt;/p>
+&lt;ul>
+&lt;li>Chuột phải vào lớp Vietnam_provinces_2015population &amp;gt; Properties &amp;gt; Symbology &amp;gt; Rule-based &amp;gt; Nháy chuột vào chữ &amp;ldquo;No filter&amp;rdquo;
+&lt;figure id="figure-chuẩn-bị-thiết-lập-quy-tắc">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_rule1_hu_cf52011102175344.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_rule1_hu_8eb03d7dfa825b58.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_rule1_hu_5237bfc2697e29b.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_rule1_hu_cf52011102175344.webp"
+width="760"
+height="430"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chuẩn bị thiết lập quy tắc
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Mở bảng thuộc tính của lớp Vietnam_provinces_2015population, bạn sẽ thấy đối tượng là thành phố trung ương hay tỉnh được quy định bởi trường ENGTYPE_1. Đối tượng là thành phố TW nếu mang giá trị &amp;lsquo;City|Municipality|Thanh Pho&amp;rsquo;, đối tượng là tỉnh nếu mang giá trị &amp;lsquo;Province&amp;rsquo;.&lt;/li>
+&lt;li>Khi nháy vào chữ &amp;ldquo;No filter&amp;rdquo; &amp;gt; cửa sổ Edit rule xuất hiện &amp;gt; Có thể đặt tên cho quy tắc ở dòng Label: Cities/Municipalities (không bắt buộc) &amp;gt; ấn vào ký hiệu ε và điền dòng sau vào ô Expresion: &amp;ldquo;ENGTYPE_1&amp;rdquo; = &amp;lsquo;City|Municipality|Thanh Pho&amp;rsquo; &amp;gt; Ấn OK một vài lần.
+&lt;figure id="figure-thiết-lập-quy-tắc">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_rule2_hu_c0d06dcd040646e9.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_rule2_hu_2451dc74cdce692f.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_rule2_hu_e2a9e5f5064e93b8.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_rule2_hu_c0d06dcd040646e9.webp"
+width="760"
+height="445"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập quy tắc
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-kết-quả-hiển-thị">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_rule3_hu_360ac7c9bf78273.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_rule3_hu_363b46d04491dc50.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_rule3_hu_a01ce5bddbada937.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_rule3_hu_360ac7c9bf78273.webp"
+width="760"
+height="403"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả hiển thị
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="hiển-thị-25d">Hiển thị 2.5D&lt;/h3>
+&lt;p>Cách này sẽ hiển thị các đối tượng có hình dạng 2 chiều thành những hình khối 3 chiều.&lt;/p>
+&lt;p style="color: red">Nhiệm vụ phần này là hiển thị lớp Buildings đã số hóa ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/#homework">Homework số 2, Bài 3&lt;/a> dưới dạng 2.5D&lt;/p>
+&lt;p>Cách thực hiện:&lt;/p>
+&lt;ul>
+&lt;li>Chuột phải vào lớp Vietnam_provinces_2015population &amp;gt; Properties &amp;gt; Symbology &amp;gt; 2.5D&lt;/li>
+&lt;li>Thiết lập các tham số: Height: 2.5, Angle: 70, Roof color: light grey, Wall color: brown and Shadow: 3. Hãy tùy chỉnh các tham số này và xem sự thay đổi của hiển thị trên Map Canvas
+&lt;figure id="figure-thiết-lập-tham-số">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_3D1_hu_4875aae45ecdc7f7.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_3D1_hu_c081a4bc01dc9f97.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_3D1_hu_361f5e23b76614b1.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_3D1_hu_4875aae45ecdc7f7.webp"
+width="760"
+height="494"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập tham số
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-kết-quả-hiển-thị-25d">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_3D2_hu_12d04533351a5989.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_3D2_hu_a6c0d2547adcc5ea.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_3D2_hu_288f75f3d4d85154.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_3D2_hu_12d04533351a5989.webp"
+width="760"
+height="652"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả hiển thị 2.5D
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="opacity-độ-trong-suốt-của-một-lớp">Opacity: độ trong suốt của một lớp&lt;/h3>
+&lt;p>Có thể điều chỉnh độ trong suốt của một lớp để có thể nhìn thấy các lớp thông tin bên dưới. Sự điều chỉnh này thông qua tham số Opacity, được tính theo %. Giá trị % càng thấp thì độ trong suốt càng cao.
+&lt;figure id="figure-điều-chỉnh-mức-độ-trong-suốt-opacity">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_opacity_hu_2a63642247504108.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_opacity_hu_f2aa685abe4b5504.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_opacity_hu_564addb19a2e1a39.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_opacity_hu_2a63642247504108.webp"
+width="760"
+height="358"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Điều chỉnh mức độ trong suốt Opacity
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h2 id="tính-toán-các-trường-dữ-liệu-tiếp-theo">Tính toán các trường dữ liệu (tiếp theo)&lt;/h2>
+&lt;ul>
+&lt;li>Ở bài trước, chúng ta đã biết cách &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/#nhập-dữ-liệu-thuộc-tính-dựa-vào-công-cụ-tính-toán-field-calculator">tính diện tích của hồ Bảo Linh&lt;/a> thông qua hàm tính diện tích trong Field Calculator.&lt;/li>
+&lt;li>Phần này sẽ giới thiệu cách tạo một trường mới từ việc tính toán đại số dựa trên các trường đã có sẵn.&lt;/li>
+&lt;li>Cụ thể, nhiệm vụ của phần này là tính mật độ dân số năm 2015 của các tỉnh. Biết rằng:&lt;br>
+&lt;span style="background-color:#d3d3d3;padding:2px 4px;border-radius:4px;font-family:monospace;">mật độ dân số&lt;/span>
+= &lt;span style="background-color:#d3d3d3;padding:2px 4px;border-radius:4px;font-family:monospace;">dân số&lt;/span>
+/ &lt;span style="background-color:#d3d3d3;padding:2px 4px;border-radius:4px;font-family:monospace;">diện tích&lt;/span>
+&lt;br>
+Tham khảo thông tin về mật độ dân số các tỉnh năm 2024 &lt;a href="https://danso.info/dan-so-cac-tinh-cua-viet-nam/" target="_blank" rel="noopener">ở đây&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;p style="color: red">Câu hỏi:&lt;/p>
+&lt;details class="spoiler " id="spoiler-7">
+&lt;summary>Đơn vị phổ biến của mật độ dân số là gì?&lt;/summary>
+&lt;p>Là người/km&lt;sup>2&lt;/sup>&lt;/p>
+&lt;/details>
+&lt;ul>
+&lt;li>Việc quan trọng khi tính toán các con số định lượng là cần chú ý &lt;strong>đơn vị&lt;/strong> của các yếu tố.&lt;/li>
+&lt;li>Quay trở lại bài này, với yêu cầu tính mật độ dân số, chúng ta cần có dân số ở đơn vị: &lt;strong>người&lt;/strong>, và diện tích ở đơn vị: &lt;strong>km&lt;/strong>&lt;sup>&lt;strong>2&lt;/strong>&lt;/sup>.&lt;/li>
+&lt;/ul>
+&lt;p>Các bước thực hiện tính mật độ dân số các tỉnh như sau:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Tính diện tích các tỉnh tự động bằng hàm &amp;ldquo;$area&amp;rdquo;, tích hợp việc quy đổi đơn vị sang km&lt;sup>2&lt;/sup>. Có nghĩa là cần chia kết quả hàm $area cho 1.000.000 vì đơn vị diện tích mặc định của CRS EPSG:3405 - VN-2000 là m&lt;sup>2&lt;/sup>. Thực hiện: Mở bảng thuộc tính &amp;gt; Field Calculator &amp;gt; Nhập công thức như hình dưới, xác lập kiểu dữ liệu là decimal:
+&lt;figure id="figure-tính-diện-tích-các-tỉnh-theo-km2">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal1_hu_f0207a05b8059877.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal1_hu_f382d96c0867b8af.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal1_hu_d98182218bcd84bc.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal1_hu_f0207a05b8059877.webp"
+width="760"
+height="344"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Tính diện tích các tỉnh theo km&lt;sup>2&lt;/sup>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Chia dân số cho diện tích ở ô Expression. Chú ý: đơn vị của dân số hiện tại đang là nghìn người, muốn đổi đơn vị ra người cần nhân với 1000.
+&lt;figure id="figure-tính-mật-độ-dân-số">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal2_hu_5ccc54eb796f1fee.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal2_hu_4fdbd500c5349a06.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal2_hu_914f3672e4e6b508.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal2_hu_5ccc54eb796f1fee.webp"
+width="760"
+height="632"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Tính mật độ dân số
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-kết-quả-ở-bảng-thuộc-tính">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal3_hu_3970d119277dd390.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal3_hu_50f3720dc219ffb0.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal3_hu_39a1da38d1fddd32.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal3_hu_3970d119277dd390.webp"
+width="760"
+height="433"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả ở bảng thuộc tính
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="tính-toán-mật-độ-dân-số-chỉ-bằng-một-công-thức">Tính toán mật độ dân số chỉ bằng một công thức&lt;/h3>
+&lt;details class="spoiler " id="spoiler-8">
+&lt;summary>Hãy thực hiện việc tính toán mật độ dân số chỉ bằng một công thức duy nhất?&lt;/summary>
+&lt;p>Gợi ý: (&amp;ldquo;2015 provincial population_Total_2015&amp;rdquo; *1000)/($area/1000000)&lt;/p>
+&lt;/details>
+&lt;h2 id="homework">Homework&lt;/h2>
+&lt;h3 id="phần-thể-hiện-ký-hiệu-bản-đồ-trong-qgis">Phần thể hiện ký hiệu bản đồ trong QGIS&lt;/h3>
+&lt;ol>
+&lt;li>Nhân bản (duplicate) lớp Vietnam_provinces, xác định trường phân biệt thành phố TW và các tỉnh (đã đề cập ở trên). Sau đó phân loại theo phương pháp Categorized, dựa theo trường đó. Sau đó đổi kiểu ký hiệu, tỉnh và thành phồ TW đều có nền trong suốt, tuy nhiên với đường viền thì yêu cầu tăng kích thước đường viền của các đối tượng thành phố TW.&lt;/li>
+&lt;li>Với một bản Vietnam_provinces còn lại, phân loại theo Graduated dựa vào trường dân số nữ 2015 (2015 provincial population_Female_2015). Để lớp này xuống dưới lớp ở bài 1, nhằm nhìn thấy rõ các thành phố TW được thể hiện bằng đường viền đậm (ảnh dưới).
+&lt;figure id="figure-yêu-cầu-kết-quả">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_homework1_hu_8e6b02c4200ff83f.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_homework1_hu_28b1ceb9d18f3248.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_homework1_hu_9d5cca019f3e37e7.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_homework1_hu_8e6b02c4200ff83f.webp"
+width="760"
+height="633"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Yêu cầu kết quả
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="phần-tính-toán-trường-dữ-liệu">Phần tính toán trường dữ liệu&lt;/h3>
+&lt;p>Với dữ liệu và cách làm đã đề cập ở phần thực hành, hãy thực hiện:
+3. Tính mật độ dân số thành thị Urban_Dens, lưu ý đơn vị dân số là nghìn người. Gợi ý: &amp;ldquo;2015 provincial population_Urban_2015&amp;rdquo; * 1000 / &amp;ldquo;Area_km2&amp;rdquo;
+4. Tính mật độ dân số nông thôn Rural_Dens, lưu ý đơn vị dân số là nghìn người. Gợi ý: &amp;ldquo;2015 provincial population_Rural_2015&amp;rdquo; * 1000 / &amp;ldquo;Area_km2&amp;rdquo;
+5. Tính trường tỉ lệ mật độ: ‘UR_Ratio’ = “Urban_Dens / Rural_Dens”
+6. Tạo bản đồ thể hiện UR ratio: dùng phương pháp graduated.
+&lt;figure id="figure-kết-quả-mẫu-tính-ur_ratio">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_homework2_hu_f5c3c707950bb847.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_homework2_hu_7ad1be14163d6224.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_homework2_hu_400ade469a361c7e.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_homework2_hu_f5c3c707950bb847.webp"
+width="388"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả mẫu tính UR_Ratio
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>Sử dụng file Vietnam_Provinces_Forested_Area(Ha).csv&lt;br>
+&lt;a href="https://drive.google.com/drive/folders/1wi68IJJiaGy9kVXcrrYjUUCD90QY51CM?usp=drive_link" target="_blank" rel="noopener">Download ở đây.&lt;/a>&lt;br>
+7. Liên kết file Vietnam_Provinces_Forested_Area(Ha).csv với bảng thuộc tính của lớp Vietnam_provinces. Sau đó tính phần trăm thay đổi của rừng tự nhiên trong thời kỳ 2005-2016. Gợi ý: ((natural forest area 16 – natural forest area 05) / natural forest area 05)*100
+8. Tạo bản đồ thể hiện phần trăm thay đổi vừa tính, dùng phương pháp graduated.
+&lt;figure id="figure-kết-quả-mẫu-tính-phần-trăm-thay-đổi-của-rừng-tự-nhiên">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/5_symbology/5_symbology_homework3_hu_c9cf6147e908f2b.webp 400w,
+/onlinecourse/course/gis/5_symbology/5_symbology_homework3_hu_5a9b5294d6e8485.webp 760w,
+/onlinecourse/course/gis/5_symbology/5_symbology_homework3_hu_d7539d918d3bb4f4.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_homework3_hu_c9cf6147e908f2b.webp"
+width="324"
+height="606"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả mẫu tính phần trăm thay đổi của rừng tự nhiên
+&lt;/figcaption>&lt;/figure>
+&lt;/p></description></item></channel></rss>

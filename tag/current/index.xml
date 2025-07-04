@@ -109,13 +109,13 @@ max-width: 100% !important;
 &lt;/p>
 &lt;/li>
 &lt;li>
-&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/test_1/">Bài test 1&lt;/a>&lt;/h5>
-&lt;p>Kiểm tra kỹ năng số hóa các lớp vector và các hàm tự động tính toán các tham số hình học.
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/">5. Thể hiện và trình bày dữ liệu vector&lt;/a>&lt;/h5>
+&lt;p>Thực hành về thể hiện và trình bày lớp vector. Tiếp tục thực hành về tính toán trường dữ liệu (field calculator).
 &lt;/p>
 &lt;/li>
 &lt;li>
-&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/">5. Thể hiện và trình bày dữ liệu vector&lt;/a>&lt;/h5>
-&lt;p>Thực hành về thể hiện và trình bày lớp vector. Tiếp tục thực hành về tính toán trường dữ liệu (field calculator).
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/">6. Truy vấn dữ liệu vector&lt;/a>&lt;/h5>
+&lt;p>Thực hành về truy vấn/chọn dữ liệu vector: truy vấn dựa vào thuộc tính và truy vấn dựa vào vị trí.
 &lt;/p>
 &lt;/li>
 &lt;/ul>
