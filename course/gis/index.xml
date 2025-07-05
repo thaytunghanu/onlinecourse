@@ -2297,4 +2297,306 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;figcaption>
 Kết quả mẫu tính phần trăm thay đổi của rừng tự nhiên
 &lt;/figcaption>&lt;/figure>
-&lt;/p></description></item><item><title>6. Truy vấn dữ liệu vector</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/</guid><description>&lt;p>Thực hành về truy vấn/chọn dữ liệu vector: truy vấn dựa vào thuộc tính và truy vấn dựa vào vị trí.&lt;/p></description></item></channel></rss>
+&lt;/p></description></item><item><title>6. Truy vấn dữ liệu vector</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/</guid><description>&lt;p>Thực hành về truy vấn/chọn dữ liệu vector: truy vấn dựa vào thuộc tính và truy vấn dựa vào vị trí.&lt;/p>
+&lt;ul>
+&lt;li>Ở các bài trước, chúng ta đã học cách tạo (số hóa) đối tượng, nhập/tính toán dữ liệu thuộc tính, và thể hiện bản đồ (Symbology). Bài này sẽ giới thiệu những chức năng chọn đối tượng dựa trên các điều kiện đặt ra cho dữ liệu thuộc tính, hoặc dựa trên vị trí của đối tượng.&lt;/li>
+&lt;li>Mục đích của việc chọn đối tượng là sau đó chúng ta có thể xử lý riêng những đối tượng đã chọn, ví dụ: phân tích không gian, thống kê hoặc xuất dữ liệu riêng.&lt;/li>
+&lt;/ul>
+&lt;h2 id="dữ-liệu-thực-hành">Dữ liệu thực hành&lt;/h2>
+&lt;p>Lớp Vietnam_provinces_2015population đã làm ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/#homework">Homework số 7, Bài 4&lt;/a>. Lớp này chính là Vietnam_Provinces đã liên kết thêm các trường thông tin dân số 2015.&lt;/p>
+&lt;p>Một số lớp dữ liệu khác ở đây: &lt;a href="https://drive.google.com/drive/folders/1cGs0fwr60t1iiOxUr2SBVG4aseZOQRE2?usp=drive_link" target="_blank" rel="noopener">Download dữ liệu Dataset Part 5 ở đây.&lt;/a>&lt;br>
+Các lớp bao gồm:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>adm2&lt;/strong>: ranh giới hành chính cấp huyện (trước sát nhập)&lt;/li>
+&lt;li>&lt;strong>Vietnam_Landuses_OSM&lt;/strong>: bản đồ hiện trạng sử dụng đất, nguồn từ OpenStreetmap&lt;/li>
+&lt;li>&lt;strong>Vietnam_Rivers&lt;/strong>: mạng lưới sông ngòi Việt Nam.&lt;/li>
+&lt;/ul>
+&lt;h2 id="chọn-đối-tượng-thủ-công-dựa-vào-chuột-và-bàn-phím">Chọn đối tượng thủ công dựa vào chuột và bàn phím&lt;/h2>
+&lt;ul>
+&lt;li>Như đã đề cập ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/#thanh-công-cụ-selection-toolbar">Bài 2&lt;/a>, công cụ Select Features by Area or Single Click (gọi tắt là Select Features) được dùng để chọn đối tượng. Thực hiện: chọn lớp cần thao tác ở Layers Panel &amp;gt; ấn chuột trái vào đối tượng cần chọn, sau đó đối tượng được chọn sẽ được tô sáng màu vàng.&lt;/li>
+&lt;li>Có thể chọn nhiều đối tượng bằng cách kết hợp Ctrl + click chuột trái khi sử dụng Select Features.&lt;/li>
+&lt;li>Bỏ chọn bằng cách ấn chuột trái ra ngoài khoảng trống ở Map Canvas hoặc ấn nút Deselect Features.
+&lt;figure id="figure-chọn-nhiều-đối-tượng-bằng-ctrl--click-chuột-trái">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/6_query/6_query_multiselect_hu_119d5d7a6242bab6.webp 400w,
+/onlinecourse/course/gis/6_query/6_query_multiselect_hu_cad70d5d1d33c65d.webp 760w,
+/onlinecourse/course/gis/6_query/6_query_multiselect_hu_21160f16505e7d55.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_multiselect_hu_119d5d7a6242bab6.webp"
+width="605"
+height="474"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chọn nhiều đối tượng bằng Ctrl + click chuột trái
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Nếu dùng công cụ Select Features vẽ hình chữ nhật thì tất cả đối tượng giao cắt với hình chữ nhật đó sẽ được chọn.&lt;/li>
+&lt;/ul>
+&lt;div class="hb-columns hb-columns-2">
+&lt;div class="hb-column">
+&lt;figure id="figure-dùng-select-features-vẽ-hình-chữ-nhật-để-chọn-nhiều-đối-tượng">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="6_query_multiselect2.jpg" alt="Ảnh 1" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Dùng Select Features vẽ hình chữ nhật để chọn nhiều đối tượng
+&lt;/figcaption>&lt;/figure>
+&lt;/div>
+&lt;div class="hb-column">
+&lt;figure id="figure-kết-quả">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="6_query_multiselect3.jpg" alt="Ảnh 1" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả
+&lt;/figcaption>&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.hb-columns {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+justify-content: space-between;
+align-items: stretch;
+}
+.hb-columns .hb-column {
+flex: 1 1 auto;
+box-sizing: border-box;
+}
+.hb-columns-2 .hb-column { flex-basis: calc(50% - 1rem); max-width: calc(50% - 1rem); }
+.hb-columns img {
+max-width: 100%;
+height: auto;
+display: block;
+transition: transform 0.3s ease;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.hb-columns img:hover {
+transform: scale(1.03);
+box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+@media (max-width: 768px) {
+.hb-columns .hb-column {
+flex-basis: 100% !important;
+max-width: 100% !important;
+}
+}
+&lt;/style>
+&lt;ul>
+&lt;li>Công cụ Select Features còn một số sub-menu:
+&lt;ul>
+&lt;li>&lt;strong>Select Features by Polygon&lt;/strong>: Công cụ này cho phép người dùng tạo một polygon, sau đó những đối tượng giao cắt với polygon đó là được chọn.&lt;/li>
+&lt;li>&lt;strong>Select Features by Freehand&lt;/strong>: Vẽ tự do để tạo vùng chọn, vẽ tự do nghĩa là vẽ bằng cách di chuột thay vì ấn chuột trái mỗi lần tạo đỉnh (vertex) như vẽ polygon. Khi vẽ xong cần ấn chuột phải để báo hiệu hoàn thành.&lt;/li>
+&lt;li>&lt;strong>Select Features by Radius&lt;/strong>: chọn các đối tượng quanh bán kính nhất định với tâm là vị trí chuột.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-sub-menu-của-select-features">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/6_query/6_query_submenu_hu_a5e799a1d24b128e.webp 400w,
+/onlinecourse/course/gis/6_query/6_query_submenu_hu_53396032506c6814.webp 760w,
+/onlinecourse/course/gis/6_query/6_query_submenu_hu_d2ca2ace5b711ad6.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_submenu_hu_a5e799a1d24b128e.webp"
+width="295"
+height="144"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Sub-menu của Select Features
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-select-features-by-polygon">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/6_query/6_query_polygon_hu_900e7430366ae8c9.webp 400w,
+/onlinecourse/course/gis/6_query/6_query_polygon_hu_90350a41b095d21b.webp 760w,
+/onlinecourse/course/gis/6_query/6_query_polygon_hu_4807293b735790a8.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_polygon_hu_900e7430366ae8c9.webp"
+width="760"
+height="241"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Select Features by Polygon
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>Sau khi chọn xong, ta có thể xuất riêng những đối tượng được chọn ra một lớp mới. Thực hiện: Chọn đối tượng &amp;gt; Ấn chuột phải vào lớp ở Layers Panel &amp;gt; Export &amp;gt; Save select Features As &amp;gt; Đặt tên file và tick vào ô &amp;ldquo;&lt;strong>Save only selected features&lt;/strong>&amp;rdquo;.
+&lt;figure id="figure-lưu-các-đối-tượng-đã-chọn-sang-lớp-mới">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/6_query/6_query_savefeature_hu_d7e360eed34da96.webp 400w,
+/onlinecourse/course/gis/6_query/6_query_savefeature_hu_d788607e38b68f75.webp 760w,
+/onlinecourse/course/gis/6_query/6_query_savefeature_hu_3d1ae80e60f27c9d.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_savefeature_hu_d7e360eed34da96.webp"
+width="760"
+height="410"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Lưu các đối tượng đã chọn sang lớp mới
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="chọn-đối-tượng-sử-dụng-chức-năng-filter">Chọn đối tượng sử dụng chức năng filter&lt;/h2>
+&lt;ul>
+&lt;li>Cách hoạt động của chức năng này tương tự như cách thực hiện &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/#rule-based-phân-loại-theo-quy-tắc">Rule-based Symbology&lt;/a>.&lt;/li>
+&lt;li>Giả sử ta cần chọn riêng thành phố TW, cần thực hiện như sau:
+&lt;ul>
+&lt;li>Chuột phải vào lớp mục tiêu ở Layers Panel &amp;gt; Filter &amp;gt; Hộp &lt;strong>Query Builder&lt;/strong> hiện ra.&lt;/li>
+&lt;li>Đánh vào ô Provider Specific Filter Expression: &lt;code>&amp;quot;ENGTYPE_1&amp;quot;='City|Municipality|Thanh Pho'&lt;/code>&lt;/li>
+&lt;li>Ấn OK
+&lt;figure id="figure-kết-quả-chọn-bằng-filter">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/6_query/6_query_filter_hu_128b6c883125b85d.webp 400w,
+/onlinecourse/course/gis/6_query/6_query_filter_hu_4519cff1a7c91025.webp 760w,
+/onlinecourse/course/gis/6_query/6_query_filter_hu_e4d5f67a168b10d5.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_filter_hu_128b6c883125b85d.webp"
+width="412"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả chọn bằng Filter
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="chọn-đối-tượng-dựa-trên-thuộc-tính-select-by-expression">Chọn đối tượng dựa trên thuộc tính (Select by Expression)&lt;/h2>
+&lt;p>Nhiệm vụ của phần này là chọn các tỉnh có mật độ dân số lớn hơn một ngưỡng nào đó, ví dụ ≥ 100 người/km&lt;sup>2&lt;/sup>.&lt;br>
+Thực hiện:&lt;/p>
+&lt;ul>
+&lt;li>Chọn công cụ &lt;strong>Select Features by Expression&lt;/strong>
+&lt;figure id="figure-select-features-by-expression">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/6_query/6_query_expression_hu_8e7247ee8f8df8ce.webp 400w,
+/onlinecourse/course/gis/6_query/6_query_expression_hu_e4a1f52f0b960e8d.webp 760w,
+/onlinecourse/course/gis/6_query/6_query_expression_hu_c3db28df44364bfa.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_expression_hu_8e7247ee8f8df8ce.webp"
+width="423"
+height="272"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Select Features by Expression
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Đánh công thức vào ô Expression: &lt;code>&amp;quot;Density&amp;quot; &amp;gt;= 100&lt;/code>&lt;/li>
+&lt;li>Chú ý &amp;ldquo;Density&amp;rdquo; chính là trường Density (mật độ dân số) mà bạn đã tạo ra từ &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/#homework">Homework số 7, Bài 4&lt;/a>.
+&lt;figure id="figure-kết-quả-chọn-dựa-trên-thuộc-tính-mật-độ-dân-số-không-nhỏ-hơn-100-ngườikm2">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/6_query/6_query_expression2_hu_d065f92713905db1.webp 400w,
+/onlinecourse/course/gis/6_query/6_query_expression2_hu_780f8ce239cbe12a.webp 760w,
+/onlinecourse/course/gis/6_query/6_query_expression2_hu_b182082f2c1fd3f8.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_expression2_hu_d065f92713905db1.webp"
+width="760"
+height="528"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả chọn dựa trên thuộc tính mật độ dân số không nhỏ hơn 100 người/km&lt;sup>2&lt;/sup>
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="chọn-đối-tượng-dựa-trên-vị-trí-select-by-location">Chọn đối tượng dựa trên vị trí (Select by location)&lt;/h2>
+&lt;p>Trong QGIS, công cụ Select by Location (Chọn theo vị trí) cho phép bạn chọn các đối tượng không gian (điểm, đường, vùng) dựa trên mối quan hệ không gian với một lớp khác. Đây là một công cụ cực kỳ quan trọng trong phân tích không gian, giúp trả lời các câu hỏi như: “Những thửa đất nào nằm trong khu quy hoạch?”, hay “Những trường học nào nằm trong bán kính 1km từ trạm y tế?”.&lt;/p>
+&lt;p>Ở phần này, ta sẽ sử dụng lớp ranh giới cấp huyện &lt;strong>adm2&lt;/strong>.&lt;/p>
+&lt;div class="alert alert-note">
+&lt;div>
+Chú ý: Khi sử dụng Select by Location, cần đảm bảo các lớp liên quan đều có chung hệ quy chiếu tọa độ (CRS). Bạn có thể dùng công cụ chuyển đổi hệ tọa độ (reproject) để phục vụ việc đưa các lớp về một CRS thống nhất. Cách thực hiện: &lt;strong>Vector &amp;gt; Data Management Tools &amp;gt; Reproject layer&lt;/strong>
+&lt;/div>
+&lt;/div>
+&lt;p>Nhiệm vụ của phần này là chọn các huyện &lt;strong>nằm hoàn toàn bên trong&lt;/strong> ranh giới các tỉnh.
+Các bước thực hiện:&lt;/p>
+&lt;ul>
+&lt;li>Add lớp Vietnam_Provinces và adm2 vào Map Canvas.&lt;/li>
+&lt;li>Làm trong suốt màu nền của các lớp. Xác lập đường viền của Vietnam_Provinces &amp;ndash;&amp;gt; tăng kích thước, màu đỏ. Đường viền của adm2 &amp;ndash;&amp;gt; màu trắng.&lt;/li>
+&lt;li>Ấn vào biểu tượng Select by Location
+&lt;figure id="figure-nút-select-by-location">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/6_query/6_query_location_hu_af3a21750cbb5808.webp 400w,
+/onlinecourse/course/gis/6_query/6_query_location_hu_8122fdcdc3cbacdc.webp 760w,
+/onlinecourse/course/gis/6_query/6_query_location_hu_aeb7984d035364da.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_location_hu_af3a21750cbb5808.webp"
+width="275"
+height="73"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Nút Select by Location
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Xác lập các tham số ở Tab Parameters:
+&lt;ul>
+&lt;li>Select features from là chọn đối tượng của lớp nào: adm2&lt;/li>
+&lt;li>Geometric Predicate là quan hệ hình học, bao gồm các quan hệ sau:
+&lt;ul>
+&lt;li>&lt;strong>intersect&lt;/strong>: Cắt nhau, chạm nhau ở bất kỳ điểm nào&lt;/li>
+&lt;li>&lt;strong>contain&lt;/strong>: Lớp A chứa hoàn toàn lớp B&lt;/li>
+&lt;li>&lt;strong>within&lt;/strong>: Lớp A nằm hoàn toàn bên trong lớp B&lt;/li>
+&lt;li>&lt;strong>touch&lt;/strong>: Hai lớp chạm mép nhau&lt;/li>
+&lt;li>&lt;strong>overlap&lt;/strong>: Có phần giao nhau nhưng không chứa nhau hoàn toàn&lt;/li>
+&lt;li>&lt;strong>cross&lt;/strong>: Đường/đối tượng cắt qua nhau&lt;/li>
+&lt;li>&lt;strong>equal&lt;/strong>: Hai hình học giống nhau hoàn toàn&lt;br>
+Trong bài này yêu cầu chọn các huyện nằm hoàn toàn bên trong các tỉnh, do đó tick vào ô &lt;strong>are within&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>By Comparing to the features from: lớp còn lại &amp;ndash;&amp;gt; Vietnam_Provinces&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-kết-quả-khi-chọn-dựa-trên-vị-trí">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/6_query/6_query_location2_hu_db12c4f3c1a58622.webp 400w,
+/onlinecourse/course/gis/6_query/6_query_location2_hu_111c29c3ecdd2ee1.webp 760w,
+/onlinecourse/course/gis/6_query/6_query_location2_hu_e47e8ef9ac7fa889.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_location2_hu_db12c4f3c1a58622.webp"
+width="760"
+height="410"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả khi chọn dựa trên vị trí
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h2 id="homework">Homework&lt;/h2>
+&lt;h3 id="homework-phần-chọn-đối-tượng-dựa-trên-thuộc-tính">Homework phần chọn đối tượng dựa trên thuộc tính&lt;/h3>
+&lt;ol>
+&lt;li>Hãy dùng Select by Expression để chọn các tỉnh thỏa mãn điều kiện UR_Ratio ≥ 1. Sau đó lưu các tỉnh này sang một lớp mới với tên là &lt;strong>Dense_Urban_Regions&lt;/strong>.&lt;/li>
+&lt;li>Mở lớp mới ‘Dense_Urban_Regions’, chọn trong số các tỉnh đó top 5 tỉnh có Urban density cao nhất. Export top 5 tỉnh đã chọn này sang một lớp mới. Thể hiện bản đồ theo phương pháp Graduated, label dựa trên urban density value. Yêu cầu kết quả như ảnh dưới.
+&lt;figure id="figure-kết-quả-mẫu">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/6_query/6_query_homework1_hu_af649b5cb84aecb1.webp 400w,
+/onlinecourse/course/gis/6_query/6_query_homework1_hu_99796b3e8d443897.webp 760w,
+/onlinecourse/course/gis/6_query/6_query_homework1_hu_ced317cefc9dec0f.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_homework1_hu_af649b5cb84aecb1.webp"
+width="405"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả mẫu
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="homework-phần-chọn-đối-tượng-dựa-vào-vị-trí">Homework phần chọn đối tượng dựa vào vị trí&lt;/h3>
+&lt;ol start="3">
+&lt;li>Dựa trên 2 lớp Vietnam_Provinces và adm2, dùng các công cụ Filter và Select by Location để tạo một lớp mới bao gồm các huyện của riêng tỉnh Thái Nguyên (9 huyện).&lt;/li>
+&lt;li>Tính diện tích các huyện theo đơn vị m2.&lt;/li>
+&lt;li>Add lớp Vietnam_Landuses_OSM. Chọn thủ cộng huyện &amp;ldquo;Vo Nhai&amp;rdquo;. Dùng Select by Location để chọn ra các đối tượng land use của riêng Vo Nhai, sau đó lưu thành một lớp mới với tên “Vo_Nhai_Landuses”. Gợi ý: dùng quan hệ intersect.
+&lt;figure id="figure-land-uses-của-vo-nhai">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/6_query/6_query_homework2_hu_d40f564ecf028d8.webp 400w,
+/onlinecourse/course/gis/6_query/6_query_homework2_hu_af22fcb79e4b4e93.webp 760w,
+/onlinecourse/course/gis/6_query/6_query_homework2_hu_c5c9a1c92f3ecd.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_homework2_hu_d40f564ecf028d8.webp"
+width="760"
+height="445"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Land uses của Vo Nhai
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Thể hiện bản đồ lớp “Vo_Nhai_Landuses” theo phương pháp Categorized, dựa trên trường ‘fclass’.&lt;/li>
+&lt;/ol></description></item></channel></rss>
