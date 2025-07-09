@@ -2261,11 +2261,12 @@ Yêu cầu kết quả
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="phần-tính-toán-trường-dữ-liệu">Phần tính toán trường dữ liệu&lt;/h3>
-&lt;p>Với dữ liệu và cách làm đã đề cập ở phần thực hành, hãy thực hiện:
-3. Tính mật độ dân số thành thị Urban_Dens, lưu ý đơn vị dân số là nghìn người. Gợi ý: &amp;ldquo;2015 provincial population_Urban_2015&amp;rdquo; * 1000 / &amp;ldquo;Area_km2&amp;rdquo;
-4. Tính mật độ dân số nông thôn Rural_Dens, lưu ý đơn vị dân số là nghìn người. Gợi ý: &amp;ldquo;2015 provincial population_Rural_2015&amp;rdquo; * 1000 / &amp;ldquo;Area_km2&amp;rdquo;
-5. Tính trường tỉ lệ mật độ: ‘UR_Ratio’ = “Urban_Dens / Rural_Dens”
-6. Tạo bản đồ thể hiện UR ratio: dùng phương pháp graduated.
+&lt;p>Với dữ liệu và cách làm đã đề cập ở phần thực hành, hãy thực hiện:&lt;/p>
+&lt;ol start="3">
+&lt;li>Tính mật độ dân số thành thị Urban_Dens, lưu ý đơn vị dân số là nghìn người. Gợi ý: &amp;ldquo;2015 provincial population_Urban_2015&amp;rdquo; * 1000 / &amp;ldquo;Area_km2&amp;rdquo;&lt;/li>
+&lt;li>Tính mật độ dân số nông thôn Rural_Dens, lưu ý đơn vị dân số là nghìn người. Gợi ý: &amp;ldquo;2015 provincial population_Rural_2015&amp;rdquo; * 1000 / &amp;ldquo;Area_km2&amp;rdquo;&lt;/li>
+&lt;li>Tính trường tỉ lệ mật độ: ‘UR_Ratio’ = “Urban_Dens / Rural_Dens”&lt;/li>
+&lt;li>Tạo bản đồ thể hiện UR ratio: dùng phương pháp graduated.
 &lt;figure id="figure-kết-quả-mẫu-tính-ur_ratio">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
@@ -2279,11 +2280,13 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;figcaption>
 Kết quả mẫu tính UR_Ratio
 &lt;/figcaption>&lt;/figure>
-&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;p>Sử dụng file Vietnam_Provinces_Forested_Area(Ha).csv&lt;br>
-&lt;a href="https://drive.google.com/drive/folders/1wi68IJJiaGy9kVXcrrYjUUCD90QY51CM?usp=drive_link" target="_blank" rel="noopener">Download ở đây.&lt;/a>&lt;br>
-7. Liên kết file Vietnam_Provinces_Forested_Area(Ha).csv với bảng thuộc tính của lớp Vietnam_provinces. Sau đó tính phần trăm thay đổi của rừng tự nhiên trong thời kỳ 2005-2016. Gợi ý: ((natural forest area 16 – natural forest area 05) / natural forest area 05)*100
-8. Tạo bản đồ thể hiện phần trăm thay đổi vừa tính, dùng phương pháp graduated.
+&lt;a href="https://drive.google.com/drive/folders/1wi68IJJiaGy9kVXcrrYjUUCD90QY51CM?usp=drive_link" target="_blank" rel="noopener">Download ở đây.&lt;/a>&lt;/p>
+&lt;ol start="7">
+&lt;li>Liên kết file Vietnam_Provinces_Forested_Area(Ha).csv với bảng thuộc tính của lớp Vietnam_provinces. Sau đó tính phần trăm thay đổi của rừng tự nhiên trong thời kỳ 2005-2016. Gợi ý: ((natural forest area 16 – natural forest area 05) / natural forest area 05)*100&lt;/li>
+&lt;li>Tạo bản đồ thể hiện phần trăm thay đổi vừa tính, dùng phương pháp graduated.
 &lt;figure id="figure-kết-quả-mẫu-tính-phần-trăm-thay-đổi-của-rừng-tự-nhiên">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
@@ -2297,7 +2300,8 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;figcaption>
 Kết quả mẫu tính phần trăm thay đổi của rừng tự nhiên
 &lt;/figcaption>&lt;/figure>
-&lt;/p></description></item><item><title>6. Truy vấn dữ liệu vector</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/</guid><description>&lt;p>Thực hành về truy vấn/chọn dữ liệu vector: truy vấn dựa vào thuộc tính và truy vấn dựa vào vị trí.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>6. Truy vấn dữ liệu vector</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/</guid><description>&lt;p>Thực hành về truy vấn/chọn dữ liệu vector: truy vấn dựa vào thuộc tính và truy vấn dựa vào vị trí.&lt;/p>
 &lt;ul>
 &lt;li>Ở các bài trước, chúng ta đã học cách tạo (số hóa) đối tượng, nhập/tính toán dữ liệu thuộc tính, và thể hiện bản đồ (Symbology). Bài này sẽ giới thiệu những chức năng chọn đối tượng dựa trên các điều kiện đặt ra cho dữ liệu thuộc tính, hoặc dựa trên vị trí của đối tượng.&lt;/li>
 &lt;li>Mục đích của việc chọn đối tượng là sau đó chúng ta có thể xử lý riêng những đối tượng đã chọn, ví dụ: phân tích không gian, thống kê hoặc xuất dữ liệu riêng.&lt;/li>
@@ -2581,7 +2585,7 @@ Kết quả mẫu
 &lt;/ol>
 &lt;h3 id="homework-phần-chọn-đối-tượng-dựa-vào-vị-trí">Homework phần chọn đối tượng dựa vào vị trí&lt;/h3>
 &lt;ol start="3">
-&lt;li>Dựa trên 2 lớp Vietnam_Provinces và adm2, dùng các công cụ Filter và Select by Location để tạo một lớp mới bao gồm các huyện của riêng tỉnh Thái Nguyên (9 huyện).&lt;/li>
+&lt;li>Dựa trên 2 lớp Vietnam_Provinces và adm2, dùng các công cụ Filter và Select by Location để tạo một lớp mới bao gồm các huyện của riêng tỉnh Thái Nguyên (9 huyện). Đặt tên lớp là &lt;strong>ThaiNguyen_districts&lt;/strong>.&lt;/li>
 &lt;li>Tính diện tích các huyện theo đơn vị m2.&lt;/li>
 &lt;li>Add lớp Vietnam_Landuses_OSM. Chọn thủ cộng huyện &amp;ldquo;Vo Nhai&amp;rdquo;. Dùng Select by Location để chọn ra các đối tượng land use của riêng Vo Nhai, sau đó lưu thành một lớp mới với tên “Vo_Nhai_Landuses”. Gợi ý: dùng quan hệ intersect.
 &lt;figure id="figure-land-uses-của-vo-nhai">
@@ -2599,4 +2603,726 @@ Land uses của Vo Nhai
 &lt;/figcaption>&lt;/figure>
 &lt;/li>
 &lt;li>Thể hiện bản đồ lớp “Vo_Nhai_Landuses” theo phương pháp Categorized, dựa trên trường ‘fclass’.&lt;/li>
+&lt;/ol></description></item><item><title>7. Phân tích dữ liệu không gian</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/</guid><description>&lt;p>Thực hành các công cụ phân tích không gian: merge, union, clip, intersect, symmetrical difference, reproject, buffer, Point in Polygon Analysis&lt;/p>
+&lt;p>Các công cụ phân tích không gian: merge, clip, intersect, symmetrical difference, buffer &amp;hellip; là những công cụ cốt lõi trong xử lý và phân tích dữ liệu địa lý vector.
+Những công cụ này có thể được ứng dụng trong những bài toán phân tích không gian rất phổ biến như: phân tích vùng bị ảnh hưởng (mưa lũ, ô nhiễm…), quy hoạch vùng đô thị, bảo tồn.&lt;/p>
+&lt;h2 id="dữ-liệu-thực-hành">Dữ liệu thực hành&lt;/h2>
+&lt;p>&lt;a href="https://drive.google.com/drive/folders/1Wa3X6M30SxGDT8eLDIsq6P8M1Rr_JgsJ?usp=drive_link" target="_blank" rel="noopener">Download dữ liệu Dataset Part 7 ở đây&lt;/a>&lt;br>
+Dữ liệu bao gồm các lớp:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Vietnam_Provinces_65_Features&lt;/strong>: tương tự lớp Vietnam_Provinces, phục vụ thực hành chức năng merge.&lt;/li>
+&lt;li>&lt;strong>vietnam_dams&lt;/strong>: Vị trí các đập thủy điện của Việt Nam trước 2016 (nguồn: OpenDevelopmentMekong)&lt;/li>
+&lt;li>&lt;strong>VN_urbanareas&lt;/strong>: phân bố không gian của các vùng đô thị toàn quốc&lt;/li>
+&lt;li>&lt;strong>protected_area&lt;/strong>: phân bố không gian của các khu bảo tồn toàn quốc&lt;/li>
+&lt;li>&lt;strong>Thai_Nguyen_Rivers&lt;/strong>: mạng lưới sông ở Thái Nguyên&lt;/li>
+&lt;li>Ngoài ra cần lớp ranh giới cấp huyện của riêng tỉnh Thái Nguyên là &lt;strong>ThaiNguyen_districts&lt;/strong> ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/#homework-phần-chọn-đối-tượng-dựa-vào-vị-trí">Homework số 3, Bài 6&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="công-cụ-merge-selected-features">Công cụ Merge selected features&lt;/h2>
+&lt;ul>
+&lt;li>Mục đích: Gộp nhiều polygon (hoặc line) thành một feature duy nhất trong cùng một lớp. Ví dụ: Gộp các xã thành một huyện, gộp các thửa đất liền kề thành một khối duy nhất.&lt;/li>
+&lt;li>Nhiệm vụ của phần này là sử dụng công cụ merge để gộp các đối tượng vùng lãnh thổ thuộc cùng 1 tỉnh thành một đối tượng. Dữ liệu thực hành là lớp &lt;strong>Vietnam_Provinces_65_Features&lt;/strong>.&lt;/li>
+&lt;li>Cách thực hiện:
+&lt;ul>
+&lt;li>Add lớp Vietnam_Provinces_65_Features vào QGIS. Hiển thị label cho các tỉnh để dễ quan sát. Mở bảng thuộc tính và kiểm tra những tỉnh nào xuất hiện 2 lần ở trường dữ liệu tên tỉnh (VARNAME_1). Nhiệm vụ phần này là gộp những đối tượng đó lại thành một.
+&lt;figure id="figure-tỉnh-kiên-giang-hiện-có-2-đối-tượng-đất-liền-và-đảo-cần-phải-merge-thành-một-đối-tượng">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_merge1_hu_f04c14ebacad1cb9.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_merge1_hu_46e3d7e825371e14.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_merge1_hu_bcf88efa8e16f6b1.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_merge1_hu_f04c14ebacad1cb9.webp"
+width="760"
+height="435"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Tỉnh Kiên Giang hiện có 2 đối tượng, đất liền và đảo, cần phải merge thành một đối tượng
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Bật Toggle Editing cho lớp Vietnam_Provinces_65_Features&lt;/li>
+&lt;li>Chọn 2 đối tượng thuộc tỉnh Kiên Giang, bạn có thể chọn thủ công ở Map canvas hoặc chọn ở Bảng thuộc tính đều được.&lt;/li>
+&lt;li>Ấn nút &lt;strong>Merge Selected Features&lt;/strong> trên thanh công cụ.
+&lt;figure id="figure-chọn-và-gộp-các-đối-tượng">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_merge2_hu_a58acba4ee6fb3b3.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_merge2_hu_b4f11d87e1b961e2.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_merge2_hu_5ff41f208a214dde.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_merge2_hu_a58acba4ee6fb3b3.webp"
+width="760"
+height="368"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chọn và gộp các đối tượng
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Thiết lập các lựa chọn cho thuộc tính của đối tượng mới sau khi gộp:
+&lt;ul>
+&lt;li>Đối tượng mới sẽ có thuộc tính của đối tượng mình chỉ định (Take attributes from selected feature)&lt;/li>
+&lt;li>Đối tượng mới sẽ có thuộc tính của đối tượng có diện tích lớn hơn&lt;/li>
+&lt;li>Bỏ qua các trường dữ liệu&lt;/li>
+&lt;li>Hoặc bỏ lớp đã lựa chọn
+&lt;figure id="figure-các-lựa-chọn-cho-thuộc-tính-của-đối-tượng-mới-sau-khi-gộp">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_merge3_hu_703fd9109471b75e.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_merge3_hu_4f1b1802871e9629.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_merge3_hu_e719752f9d227d0d.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_merge3_hu_703fd9109471b75e.webp"
+width="647"
+height="414"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Các lựa chọn cho thuộc tính của đối tượng mới sau khi gộp
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Ấn OK, kết quả là 2 đối tượng của tỉnh Kiên Giang đã gộp thành một đối tượng mới. Có thể kiểm tra số lượng đối tượng bằng Show Feature Count.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="công-cụ-union-tổng-hợp">Công cụ Union (tổng hợp)&lt;/h2>
+&lt;ul>
+&lt;li>Union là một công cụ phân tích không gian trong QGIS dùng để:
+&lt;ul>
+&lt;li>Tạo ra một lớp mới chứa tất cả các vùng hình học là tổ hợp không gian của hai lớp đầu vào.&lt;/li>
+&lt;li>Giữ lại toàn bộ thuộc tính của cả hai lớp ban đầu.
+&lt;figure id="figure-sơ-đồ-cách-xử-lý-của-công-cụ-union-hoạt-động-union-giữa-một-lớp-a-có-2-đối-tượng-và-1-lớp-b-có-1-đối-tượng-sau-khi-union-thành-1-lớp-mới-bao-gồm-5-đối-tượng">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_union1_hu_50c6ffbf12fdb077.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_union1_hu_1a485713da799d7e.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_union1_hu_bb52d7475d50c730.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_union1_hu_50c6ffbf12fdb077.webp"
+width="443"
+height="201"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Sơ đồ cách xử lý của công cụ Union. Hoạt động union giữa một lớp a có 2 đối tượng và 1 lớp b có 1 đối tượng, sau khi Union thành 1 lớp mới bao gồm 5 đối tượng
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Nhiệm vụ của phần này là kết hợp ranh giới tỉnh Vĩnh Phúc từ Vietnam_Provinces và 2 huyện Pho Yen and Dai Tu từ lớp ThaiNguyen_districts thành một lớp mới.&lt;br>
+Cách thực hiện:&lt;/p>
+&lt;ul>
+&lt;li>Làm trong màu nền và hiện label của lớp Vietnam_Provinces_65_Features.&lt;/li>
+&lt;li>Chọn ranh giới Vĩnh Phúc, chọn tiếp 2 huyện Dai Tu và Pho Yen.
+&lt;figure id="figure-chọn-ranh-giới-tỉnh-vĩnh-phúc-từ-vietnam_provinces-và-2-huyện-pho-yen-and-dai-tu-từ-lớp-thainguyen_districts">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_union2_hu_e45cb5a6a8b6a216.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_union2_hu_3c93eff5debac5fc.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_union2_hu_866c43270d2de720.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_union2_hu_e45cb5a6a8b6a216.webp"
+width="760"
+height="517"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chọn ranh giới tỉnh Vĩnh phúc từ Vietnam_Provinces và 2 huyện Pho Yen and Dai Tu từ lớp ThaiNguyen_districts
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Bật công cụ Union: có thể dùng 1 trong 2 cách sau:
+&lt;ul>
+&lt;li>Dùng Menu Bar: Vector &amp;gt; Geoprocessing Tools &amp;gt; Union&lt;/li>
+&lt;li>Dùng Processing Toolbox: Gõ chữ Union và ô search ở Processing Toolbox panel bên phía tay phải.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="hb-columns hb-columns-2">
+&lt;div class="hb-column">
+&lt;figure id="figure-bật-union-dùng-menu-bar">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="7_analysis_union3.jpg" alt="Ảnh 1" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Bật Union dùng Menu Bar
+&lt;/figcaption>&lt;/figure>
+&lt;/div>
+&lt;div class="hb-column">
+&lt;figure id="figure-bật-union-bằng-processing-toolbox">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="7_analysis_union4.jpg" alt="Ảnh 1" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Bật Union bằng Processing Toolbox
+&lt;/figcaption>&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.hb-columns {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+justify-content: space-between;
+align-items: stretch;
+}
+.hb-columns .hb-column {
+flex: 1 1 auto;
+box-sizing: border-box;
+}
+.hb-columns-2 .hb-column { flex-basis: calc(50% - 1rem); max-width: calc(50% - 1rem); }
+.hb-columns img {
+max-width: 100%;
+height: auto;
+display: block;
+transition: transform 0.3s ease;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.hb-columns img:hover {
+transform: scale(1.03);
+box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+@media (max-width: 768px) {
+.hb-columns .hb-column {
+flex-basis: 100% !important;
+max-width: 100% !important;
+}
+}
+&lt;/style>
+&lt;ul>
+&lt;li>Thiết lập các tham số khi xử lý Union:
+&lt;ul>
+&lt;li>Input layer: Vietnam_Provinces&lt;/li>
+&lt;li>Overlay layer: ThaiNguyen_districts. Input layer và Overlay layer có thể đổi vị trí cho nhau.&lt;/li>
+&lt;li>Tick vào Selected Features only&lt;/li>
+&lt;li>Đặt tên lớp mới là &lt;strong>study_region.shp&lt;/strong>
+&lt;figure id="figure-thiết-lập-các-tham-số-khi-xử-lý-union">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_union5_hu_cfe88aa5c04f26a4.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_union5_hu_77428534aa9fcb93.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_union5_hu_2625178a71e856e.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_union5_hu_cfe88aa5c04f26a4.webp"
+width="760"
+height="461"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập các tham số khi xử lý Union
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Ấn OK.&lt;/li>
+&lt;li>
+&lt;ul>
+&lt;li>Kết quả hình học như ảnh dưới, và bảng thuộc tính lớp kết quả là tổng hợp của tất cả các trường dữ liệu của Vietnam_Provinces và ThaiNguyen_districts
+&lt;figure class="border border-black rounded-md" id="figure-kết-quả-sau-union">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả sau Union" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_union6_hu_96773b37d02edb4a.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_union6_hu_cdc51529a4c99463.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_union6_hu_269a2e01c1a0fd3c.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_union6_hu_96773b37d02edb4a.webp"
+width="760"
+height="481"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả sau Union
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="công-cụ-clip-cắt">Công cụ Clip (cắt)&lt;/h2>
+&lt;ul>
+&lt;li>Clip là một công cụ phân tích không gian dùng để cắt một lớp vector theo hình dạng của lớp khác, tương tự như cắt một tấm bản đồ theo khung. Nói đơn giản: Clip lấy phần giao nhau giữa lớp đầu vào và lớp “mặt nạ” (clip layer), giữ lại hình học và thuộc tính của lớp đầu vào.&lt;/li>
+&lt;li>Bạn nên sử dụng Clip khi:
+&lt;ul>
+&lt;li>Muốn trích xuất dữ liệu không gian giới hạn trong một khu vực cụ thể (ví dụ: chỉ lấy sông ngòi nằm trong ranh giới tỉnh Hà Giang).&lt;/li>
+&lt;li>Cần chuẩn bị dữ liệu cho bản đồ hoặc phân tích khu vực cụ thể (ví dụ: lấy dữ liệu đất nông nghiệp trong phạm vi một huyện).&lt;/li>
+&lt;li>Loại bỏ phần dữ liệu nằm ngoài vùng quan tâm.
+&lt;figure id="figure-cách-hoạt-động-của-clip-input-là-lớp-a-clip-layer-là-lớp-b">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_clip1_hu_83462003128de2a3.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_clip1_hu_f71b7511e42b687e.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_clip1_hu_60d219b483901d54.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_clip1_hu_83462003128de2a3.webp"
+width="443"
+height="201"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Cách hoạt động của Clip, Input là lớp a, clip layer là lớp b
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Nhiệm vụ của phần này là cắt lớp Vietnam_Provinces theo lớp study_region vừa tạo ở phần Union phía trên.
+Cách thực hiện:&lt;/p>
+&lt;ul>
+&lt;li>Bật công cụ clip, tương tự như cách bật công cụ Union.&lt;/li>
+&lt;li>Thiết lập các tham số:
+&lt;figure id="figure-thiết-lập-tham-số-khi-xử-lý-clip">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_clip2_hu_a4c5922a3cb4847c.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_clip2_hu_20d4b88877bf870b.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_clip2_hu_5756a1236448f48.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_clip2_hu_a4c5922a3cb4847c.webp"
+width="742"
+height="614"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập tham số khi xử lý Clip
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Kết quả như ảnh dưới, bảng thuộc tính của kết quả là bảng thuộc tính của Input layer.
+&lt;figure class="border border-black" id="figure-kết-quả-xử-lý-clip">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả xử lý Clip" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_clip3_hu_2c1c9edc01a388aa.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_clip3_hu_443b7d36efb15ce.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_clip3_hu_6c12ad460e010fa.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_clip3_hu_2c1c9edc01a388aa.webp"
+width="760"
+height="436"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả xử lý Clip
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="công-cụ-intersection-giao-cắt">Công cụ Intersection (giao cắt)&lt;/h2>
+&lt;p>Intersection là công cụ phân tích không gian dùng để xác định vùng chồng lấp không gian giữa hai lớp vector và tạo lớp mới chứa các vùng giao nhau, kèm theo thuộc tính từ cả hai lớp. Sử dụng Intersection khi:&lt;/p>
+&lt;ul>
+&lt;li>Muốn xác định vùng giao nhau giữa hai loại đối tượng không gian (ví dụ: vùng đất rừng nằm trong phạm vi xã A).&lt;/li>
+&lt;li>Cần phân tích thuộc tính chồng lấp, như: &amp;ldquo;khu vực nào vừa là vùng lũ vừa nằm trong quy hoạch dân cư&amp;rdquo;.&lt;/li>
+&lt;li>Phân tích mối quan hệ không gian phức tạp giữa hai lớp dữ liệu (phổ biến trong quản lý đất đai, quy hoạch, tài nguyên môi trường&amp;hellip;).&lt;/li>
+&lt;/ul>
+&lt;figure class="border border-black" id="figure-ví-dụ-về-cách-sử-dụng-intersect-xác-định-các-đoạn-đường-giao-thông-bị-ngập-bởi-lũ-đường-màu-đỏ">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ví dụ về cách sử dụng intersect: xác định các đoạn đường giao thông bị ngập bởi lũ (đường màu đỏ)" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_intersect0_hu_a33ef46c99109fe.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_intersect0_hu_32464401fc3e7bcd.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_intersect0_hu_5db1b96c34e0c23e.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_intersect0_hu_a33ef46c99109fe.webp"
+width="743"
+height="622"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Ví dụ về cách sử dụng intersect: xác định các đoạn đường giao thông bị ngập bởi lũ (đường màu đỏ)
+&lt;/figcaption>&lt;/figure>
+&lt;p>
+&lt;figure id="figure-cách-hoạt-động-của-intersection-giao-cắt-giữa-lớp-a-và-lớp-b-kết-quả-là-hình-bên-phải">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Cách hoạt động của Intersection, giao cắt giữa lớp a và lớp b, kết quả là hình bên phải" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_intersect1_hu_ff3f3d52fb0274cb.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_intersect1_hu_3f0ae279aab9057f.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_intersect1_hu_a52ea3ca04adc0e9.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_intersect1_hu_ff3f3d52fb0274cb.webp"
+width="443"
+height="201"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Cách hoạt động của Intersection, giao cắt giữa lớp a và lớp b, kết quả là hình bên phải
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>Nhiệm vụ của phần này là tạo lớp giao cắt giữa lớp VN_urbanareas và lớp ThaiNguyen_districts.&lt;br>
+Cách thực hiện:&lt;/p>
+&lt;ul>
+&lt;li>Add lớp VN_urbanareas và ThaiNguyen_districts, điều chỉnh màu nền sao cho dễ nhìn thấy ranh giới của cả 2 lớp.
+&lt;figure id="figure-add-2-lớp-vn_urbanareas-và-thainguyen_districts">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Add 2 lớp VN_urbanareas và ThaiNguyen_districts" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_intersect2_hu_c184612f3f893fb4.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_intersect2_hu_e4a8323790d1301a.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_intersect2_hu_3131b7446522878b.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_intersect2_hu_c184612f3f893fb4.webp"
+width="760"
+height="455"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Add 2 lớp VN_urbanareas và ThaiNguyen_districts
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Bật công cụ Intersection&lt;/li>
+&lt;li>Xác lập các tham số: input layer là VN_urbanareas, overlay layer là ThaiNguyen_districts
+&lt;figure id="figure-xác-lập-tham-số">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Xác lập tham số" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_intersect3_hu_157fc5a64f2411ce.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_intersect3_hu_87cb55e12da00067.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_intersect3_hu_c60692cb3ce7103b.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_intersect3_hu_157fc5a64f2411ce.webp"
+width="760"
+height="589"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Xác lập tham số
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Kết quả hình học như ảnh dưới, và bảng thuộc tính lớp kết quả là tổng hợp của tất cả các trường dữ liệu của VN_urbanareas và ThaiNguyen_districts
+&lt;figure id="figure-kết-quả-sau-khi-intersect">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả sau khi intersect" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_intersect4_hu_7697095b630d6d77.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_intersect4_hu_92a45e12aa2cac02.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_intersect4_hu_b17e59d2b6e23ca5.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_intersect4_hu_7697095b630d6d77.webp"
+width="639"
+height="329"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả sau khi intersect
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="công-cụ-symmetrical-difference">Công cụ Symmetrical Difference&lt;/h2>
+&lt;p>Symmetrical Difference là công cụ phân tích không gian dùng để tạo ra một lớp mới chứa các phần KHÔNG GIAO NHAU giữa hai lớp vector. Cụ thể:&lt;/p>
+&lt;ul>
+&lt;li>Lấy phần không chồng lấp của lớp A và lớp B,&lt;/li>
+&lt;li>Loại bỏ phần giao nhau của chúng.&lt;/li>
+&lt;/ul>
+&lt;p>Một ví dụ về sử dụng công cụ Symmetrical Difference: phân tích sự khác biệt vùng địa lý giữa hai tập dữ liệu (ví dụ: vùng rừng năm 2020 và 2023 để xác định thay đổi rừng không trùng lặp).
+&lt;figure id="figure-cách-hoạt-động-của-symmetrical-difference">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Cách hoạt động của Symmetrical Difference" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_symm1_hu_5358efe1fe772cce.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_symm1_hu_12bb1e708deea388.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_symm1_hu_a8686f9c8aa2aebf.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_symm1_hu_5358efe1fe772cce.webp"
+width="443"
+height="201"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Cách hoạt động của Symmetrical Difference
+&lt;/figcaption>&lt;/figure>
+&lt;br>
+Nhiệm vụ của phần này là áp dụng Symmetrical Difference cho lớp VN_urbanareas và lớp Vietnam_Provinces.&lt;br>
+Cách thực hiện:&lt;/p>
+&lt;ul>
+&lt;li>Bật công cụ Symmetrical Difference&lt;/li>
+&lt;li>Thiết lập các tham số:
+&lt;figure id="figure-thiết-lập-các-tham-số-của-symmetrical-difference">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập các tham số của Symmetrical Difference" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_symm2_hu_fa9399bd504e5e1f.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_symm2_hu_187334535dd8d917.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_symm2_hu_c21f261e28307e0c.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_symm2_hu_fa9399bd504e5e1f.webp"
+width="760"
+height="589"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập các tham số của Symmetrical Difference
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Hình ảnh kết quả trước và sau khi tiến hành Symmetrical Difference:
+&lt;figure id="figure-hình-ảnh-kết-quả-trước-và-sau-khi-tiến-hành-symmetrical-difference">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Hình ảnh kết quả trước và sau khi tiến hành Symmetrical Difference" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_symm3_hu_1b17319516f73f34.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_symm3_hu_505801e8761312df.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_symm3_hu_e771c17b923baf1e.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_symm3_hu_1b17319516f73f34.webp"
+width="760"
+height="403"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Hình ảnh kết quả trước và sau khi tiến hành Symmetrical Difference
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="các-công-cụ-chuyển-đổi-phép-chiếu-bản-đồ-reprojection">Các Công cụ chuyển đổi phép chiếu bản đồ (Reprojection)&lt;/h2>
+&lt;ul>
+&lt;li>Trong phân tích không gian, đôi khi cần thiết phải chuyển đổi hệ quy chiếu tọa độ của lớp thông tin GIS để phù hợp với mục đích sử dụng. Ví dụ: Không thể dùng CRS WGS84 (EPSG:4326) để thực hiện đo lường hoặc tính khoảng cách. Trường hợp này cần chuyển sang hệ tọa độ VN-2000 (EPSG:3405).&lt;/li>
+&lt;li>Lý thuyết về hệ quy chiếu tọa độ CRS và phép chiếu bản đồ đã trình bày ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/#lý-thuyết-về-các-hệ-thống-tham-chiếu-tọa-độ">Bài 2&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="on-the-fly-reprojection">‘On the fly’ Reprojection&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>Chuyển đổi ‘On the fly’ (OTF) Reprojection được kích hoạt trong QGIS theo mặc định. Điều này có nghĩa là phần mềm sẽ tự động điều chỉnh &lt;strong>tạm thời&lt;/strong> CRS của bất kỳ dữ liệu nào bạn thêm vào dự án của mình về một CRS thống nhất được thiết lập &lt;strong>nhằm mục đích hiển thị sự chồng xếp các lớp thông tin một cách chính xác&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Trong thực tế, khi xử lý dữ liệu GIS, dữ liệu thường đến từ nhiều nguồn, và do đó chúng có thể mang các CRS khác nhau. Vì vậy chức năng &lt;strong>‘On the fly’ Reprojection&lt;/strong> là cực kỳ quan trọng để tự động căn chỉnh &lt;strong>tạm thời&lt;/strong> các CRS của các lớp thông tin vể cùng 1 CRS thống nhất. Và từ đó, các lớp thông tin có thể hiển thị sự chồng xếp với nhau một cách chính xác.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Chúng ta có thể điều chỉnh các thiết lập mặc định của ‘On the fly’ Reprojection:&lt;/p>
+&lt;ul>
+&lt;li>Settings &amp;gt; Options &amp;gt; CRS&lt;/li>
+&lt;li>Khi tạo mới một dự án thì có thể thiết lập CRS của dự án là:
+&lt;ul>
+&lt;li>CRS của lớp đầu tiên được thêm vào&lt;/li>
+&lt;li>CRS mặc định mà bạn thiết lập.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Chú ý: CRS của dự án được hiển thị ở góc phải bên dưới.
+&lt;figure id="figure-thiết-lập-crs-mặc-định-cho-dự-án-và-cho-lóp-thông-tin">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập CRS mặc định cho dự án và cho lóp thông tin" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_reproj1_hu_5fa4a8a526ff969.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_reproj1_hu_1010610415ddd370.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_reproj1_hu_f8cbcb52940fcc98.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_reproj1_hu_5fa4a8a526ff969.webp"
+width="760"
+height="410"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập CRS mặc định cho dự án và cho lóp thông tin
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Ví dụ cụ thể: ảnh dưới đây là trường hợp 2 lớp thông tin có hai CRS hoàn toàn khác nhau: Vietnam_Provinces_48N có CRS là EPSG:3405 và ne_land_50m (đường biên giới của lãnh thổ thế giới) có CRS là EPSG:4326. Hai lớp này vẫn có thể chồng xếp lên nhau ở Map Canvas được là nhờ chức năng OTF Reprojection, đã chuyển tạm thời CRS của 2 lớp về CRS mặc định của dự án là EPSG:4326.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-ví-dụ-về-otf-reprojection">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ví dụ về OTF Reprojection" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_reproj2_hu_46088b450c624196.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_reproj2_hu_998e713a6a22c871.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_reproj2_hu_6e9ae3e96303c99.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_reproj2_hu_46088b450c624196.webp"
+width="760"
+height="383"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Ví dụ về OTF Reprojection
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="chuyển-hệ-tọa-độ-của-lớp-thông-tin-reproject-layer">Chuyển hệ tọa độ của lớp thông tin (Reproject layer)&lt;/h3>
+&lt;ul>
+&lt;li>Đôi khi trong phân tích không gian đòi hỏi các lớp thông tin đầu vào phải có cùng CRS. Điều này đòi hỏi cần chuyển đổi hẳn CRS của lớp thông tin sang một CRS mới.&lt;/li>
+&lt;li>Việc này được thực hiện qua công cụ &lt;strong>Reproject layer&lt;/strong>: Vector &amp;gt; Data Management Tools &amp;gt; Reproject Layer, hoặc gọi Reproject Layer từ Processing Toolbox.&lt;/li>
+&lt;li>Thực hiện việc chuyển đổi hệ tọa độ sang VN-2000 cho lớp &lt;strong>vietnam_dams&lt;/strong>:
+&lt;ul>
+&lt;li>Input layer: chỉnh về lớp vietnam_dams&lt;/li>
+&lt;li>Target CRS: thiết lập CRS mục tiêu cần chuyển là EPSG:3405 - VN-2000/UTM zone 48N&lt;/li>
+&lt;li>Reprojected: Đặt tên lớp sau khi chuyển CRS là &lt;strong>Vietnam_Dams_UTMZ48N&lt;/strong> và thư mục chứa.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-reproject-layer">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Reproject layer" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_reproj3_hu_2c1df10219672507.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_reproj3_hu_2b83d4eaf9f99d2f.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_reproj3_hu_dda43d07f1e9fb24.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_reproj3_hu_2c1df10219672507.webp"
+width="760"
+height="410"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Reproject layer
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h2 id="công-cụ-phân-tích-vùng-đệm-buffer">Công cụ phân tích vùng đệm (Buffer)&lt;/h2>
+&lt;ul>
+&lt;li>Buffer (vùng đệm) là công cụ tạo ra một vùng bao quanh đối tượng không gian (điểm, đường hoặc vùng), với khoảng cách xác định trước. Ví dụ: Tạo vùng 1 km xung quanh sông suối; Tạo vùng 500 m xung quanh đường giao thông; Tạo vùng bán kính 100 m quanh điểm trường học.&lt;/li>
+&lt;li>Sử dụng Buffer khi muốn:
+&lt;ul>
+&lt;li>Phân tích vùng ảnh hưởng của một đối tượng địa lý.&lt;/li>
+&lt;li>Đánh giá mức độ tiếp cận đến dịch vụ (trường học, trạm y tế, giao thông&amp;hellip;).&lt;/li>
+&lt;li>Phân vùng rủi ro, bảo vệ môi trường (vùng cách ly, vùng đệm rừng&amp;hellip;).&lt;/li>
+&lt;li>Chuẩn bị phân tích chồng lấp với các lớp khác (ví dụ: đất nông nghiệp nằm trong vùng 1 km tính từ sông).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-minh-họa-buffer-của-đối-tượng-điểm-đường-vùng">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Minh họa buffer của đối tượng điểm, đường, vùng" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_buffer1_hu_283b1d3aa51d89c8.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_buffer1_hu_668f6038cfae2c4f.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_buffer1_hu_9042cab66bc202fa.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_buffer1_hu_283b1d3aa51d89c8.webp"
+width="664"
+height="243"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Minh họa buffer của đối tượng điểm, đường, vùng
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>Nhiệm vụ của phần này là thử tạo buffer 1 km cho mỗi vị trí đập thủy điện ở Việt Nam, sử dụng lớp &lt;strong>Vietnam_Dams_UTMZ48N&lt;/strong> (chính là lớp vietnam_dams sau khi chuyển hệ tọa độ -&amp;gt; VN-2000).&lt;/li>
+&lt;li>Cách thực hiện:
+&lt;ul>
+&lt;li>Bật công cụ buffer: từ Vector &amp;gt; Geoprocessing Tools &amp;gt; Buffer&amp;hellip; hoặc từ Processing Toolbox&lt;/li>
+&lt;li>Thiết lập các tham số như hình dưới:&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-thiết-lập-tham-số-tạo-buffer-1-km-cho-mỗi-vị-trí-đập-thủy-điện">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập tham số tạo buffer 1 km cho mỗi vị trí đập thủy điện" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_buffer2_hu_4b91e3fd9f5217ce.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_buffer2_hu_d89e36fa591161ed.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_buffer2_hu_23f0c25cc0a7a3e8.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_buffer2_hu_4b91e3fd9f5217ce.webp"
+width="760"
+height="609"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập tham số tạo buffer 1 km cho mỗi vị trí đập thủy điện
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>Một số tham số không thường xuyên sử dụng như End cap style, Join Style, Miter limit tham khảo &lt;a href="https://docs.qgis.org/3.40/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#buffer" target="_blank" rel="noopener">tại đây&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-kết-quả-tạo-buffer">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả tạo buffer" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_buffer3_hu_9ef282485ed878a2.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_buffer3_hu_d31edbc60d36c0aa.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_buffer3_hu_c6bd25684ec018f7.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_buffer3_hu_9ef282485ed878a2.webp"
+width="760"
+height="408"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả tạo buffer
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>Thử chạy lại buffer một lần nữa với lựa chọn sử dụng &lt;strong>Dissolve result&lt;/strong>:
+&lt;figure id="figure-thiết-lập-tham-số-tạo-buffer-với-lựa-chọn-dissolve-result">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập tham số tạo buffer với lựa chọn dissolve result" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_buffer4_hu_e728082c193a5a44.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_buffer4_hu_4f77f66c60cbcacc.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_buffer4_hu_5359fb140796a18f.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_buffer4_hu_e728082c193a5a44.webp"
+width="760"
+height="449"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập tham số tạo buffer với lựa chọn dissolve result
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-kết-quả-tạo-buffer-với-dissolve-result">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả tạo buffer với dissolve result" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_buffer5_hu_434b508d51d2728f.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_buffer5_hu_8e022a66a50afbca.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_buffer5_hu_ac19f98dd83e56a0.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_buffer5_hu_434b508d51d2728f.webp"
+width="760"
+height="474"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả tạo buffer với dissolve result
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="công-cụ-đếm-điểm-trong-vùng-count-points-in-polygon">Công cụ đếm điểm trong vùng (Count Points in Polygon)&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>Công cụ đếm điểm trong vùng là một kỹ thuật trong phân tích không gian nhằm xác định số lượng điểm nằm trong từng polygon.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Ví dụ trường hợp sử dụng phân tích Point in Polygon Analysis: Đếm số trạm y tế, trường học, cây ATM, trạm xăng, cửa hàng tiện ích (point) nằm trong mỗi xã (polygon) hoặc đơn vị hành chính khác&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Nhiệm vụ phần này là đếm số lượng đập thủy điện cho mỗi tỉnh.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Cách thực hiện:&lt;/p>
+&lt;ul>
+&lt;li>Bật &lt;strong>Count Points in Polygon&amp;hellip;&lt;/strong> bằng Vector &amp;gt; Analysis Tools &amp;gt; Count Points in Polygon&amp;hellip; hoặc dùng Processing Toolbox&lt;/li>
+&lt;li>Thiết lập tham số:
+&lt;figure id="figure-thiết-lập-tham-số-đếm-điểm-trong-vùng">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập tham số đếm điểm trong vùng" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_countpoint1_hu_80b5f5c686343e8.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_countpoint1_hu_2409a19f5ec1fa51.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_countpoint1_hu_1e9d3797796a01e5.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_countpoint1_hu_80b5f5c686343e8.webp"
+width="760"
+height="562"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập tham số đếm điểm trong vùng
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>QGIS sẽ trả một lớp mới với một trường mới tạo là &amp;ldquo;&lt;strong>NUMPOINTS&lt;/strong>&amp;rdquo;, trường này lưu số lượng đập thủy điện mỗi tỉnh.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Hãy thể hiện bản đồ bằng phương pháp Graduated, dựa trên trường NUMPOINTS: Properties &amp;gt; Symbology &amp;gt; Graduated
+&lt;figure id="figure-kết-quả">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_countpoint2_hu_b85ea7a61a0e5d28.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_countpoint2_hu_f31c51fa4363fae.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_countpoint2_hu_59c145cdd1bc2994.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_countpoint2_hu_b85ea7a61a0e5d28.webp"
+width="574"
+height="538"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="homework">Homework&lt;/h2>
+&lt;h3 id="homework-phần-1">Homework phần 1&lt;/h3>
+&lt;ol>
+&lt;li>Reproject lớp &lt;strong>protected_area&lt;/strong> để sao cho lớp này có cùng CRS với lớp &lt;strong>ThaiNguyen_districts&lt;/strong>&lt;/li>
+&lt;li>Ở lớp protected_area, lưu polygon có FID = 145 riêng ra một lớp mới với tên &lt;strong>PZ145&lt;/strong>. Lưu riêng polygon huyện Dai Tu ở ThaiNguyen_districts ra một lớp mới, tên là &lt;strong>DaiTu&lt;/strong>.&lt;/li>
+&lt;li>Dùng một kỹ thuật phân tích không gian để tìm vùng chung của 2 lớp &lt;strong>PZ145&lt;/strong> và &lt;strong>DaiTu&lt;/strong>. Đây chính là diện tích khu bảo tồn của riêng huyện Dai Tu. Lưu lớp mới này dưới tên &lt;strong>study_region_PZ&lt;/strong>&lt;/li>
+&lt;li>Tính diện tích lớp study_region_PZ theo km2, hiển thị label của giá trị diện tích theo km2. Sau đó trình bày bản đồ như hình dưới:
+&lt;figure id="figure-yêu-cầu-kết-quả-homework-phần-1">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Yêu cầu kết quả homework phần 1" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_homework1_hu_e716e1f6f027543c.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_homework1_hu_763099cc2fc9cbde.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_homework1_hu_6371c15ae3f881a3.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_homework1_hu_e716e1f6f027543c.webp"
+width="760"
+height="510"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Yêu cầu kết quả homework phần 1
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="homework-phần-2">Homework phần 2&lt;/h3>
+&lt;ol start="5">
+&lt;li>Lên website Open Development Vietnam tìm dữ liệu tên là “&lt;em>Reservoirs of the Greater Mekong Subregion; Thailand, Cambodia, Laos, Vietnam and Myanmar&lt;/em>”.&lt;/li>
+&lt;li>Download dữ liệu tên là &lt;strong>VN_Reservoirs&lt;/strong>, chuyển hệ tọa độ của lớp này về EPSG:3405.&lt;/li>
+&lt;li>Tạo buffer 25km quanh mỗi đối tượng Reservoirs, có sử dụng ‘Dissolve result’&lt;/li>
+&lt;li>Chọn những tỉnh mà chạm (touch) vào buffer của các hồ chứa. Chọn bằng Select by location, xem lại bài &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/#chọn-đối-tượng-dựa-trên-vị-trí-select-by-location">ở đây&lt;/a>. Có điểm gì nổi bật ở những tỉnh này.
+&lt;figure id="figure-yêu-cầu-kết-quả-homework-phần-2">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Yêu cầu kết quả homework phần 2" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_homework2_hu_ecd8558e0ec496cc.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_homework2_hu_7aed36b9d2417320.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_homework2_hu_cb853ded043d3bc2.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_homework2_hu_ecd8558e0ec496cc.webp"
+width="492"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Yêu cầu kết quả homework phần 2
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="homework-phần-3">Homework phần 3&lt;/h3>
+&lt;ol start="9">
+&lt;li>Mở các lớp &lt;strong>Thai_Nguyen_Rivers&lt;/strong> và &lt;strong>ThaiNguyen_districts&lt;/strong>&lt;/li>
+&lt;li>Tạo buffer 50m xung quanh sông suối và có dùng ‘Dissolve result’&lt;/li>
+&lt;li>Làm trong layer buffer, mở lớp ảnh vệ tinh Bing Aerial Imagery. Bạn có nhận định gì về buffer 50m của sông suối trong khía cạnh nguy cơ lũ lụt.
+&lt;figure id="figure-minh-họa-homework-phần-3">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Minh họa homework phần 3" srcset="
+/onlinecourse/course/gis/7_analysis/7_analysis_homework3_hu_c5f826f7b0f32a26.webp 400w,
+/onlinecourse/course/gis/7_analysis/7_analysis_homework3_hu_a378b1b2a59b8b54.webp 760w,
+/onlinecourse/course/gis/7_analysis/7_analysis_homework3_hu_10f01a27b0f2814c.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_homework3_hu_c5f826f7b0f32a26.webp"
+width="645"
+height="482"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Minh họa homework phần 3
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
 &lt;/ol></description></item></channel></rss>

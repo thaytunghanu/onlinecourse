@@ -342,11 +342,12 @@ Yêu cầu kết quả
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="phần-tính-toán-trường-dữ-liệu">Phần tính toán trường dữ liệu&lt;/h3>
-&lt;p>Với dữ liệu và cách làm đã đề cập ở phần thực hành, hãy thực hiện:
-3. Tính mật độ dân số thành thị Urban_Dens, lưu ý đơn vị dân số là nghìn người. Gợi ý: &amp;ldquo;2015 provincial population_Urban_2015&amp;rdquo; * 1000 / &amp;ldquo;Area_km2&amp;rdquo;
-4. Tính mật độ dân số nông thôn Rural_Dens, lưu ý đơn vị dân số là nghìn người. Gợi ý: &amp;ldquo;2015 provincial population_Rural_2015&amp;rdquo; * 1000 / &amp;ldquo;Area_km2&amp;rdquo;
-5. Tính trường tỉ lệ mật độ: ‘UR_Ratio’ = “Urban_Dens / Rural_Dens”
-6. Tạo bản đồ thể hiện UR ratio: dùng phương pháp graduated.
+&lt;p>Với dữ liệu và cách làm đã đề cập ở phần thực hành, hãy thực hiện:&lt;/p>
+&lt;ol start="3">
+&lt;li>Tính mật độ dân số thành thị Urban_Dens, lưu ý đơn vị dân số là nghìn người. Gợi ý: &amp;ldquo;2015 provincial population_Urban_2015&amp;rdquo; * 1000 / &amp;ldquo;Area_km2&amp;rdquo;&lt;/li>
+&lt;li>Tính mật độ dân số nông thôn Rural_Dens, lưu ý đơn vị dân số là nghìn người. Gợi ý: &amp;ldquo;2015 provincial population_Rural_2015&amp;rdquo; * 1000 / &amp;ldquo;Area_km2&amp;rdquo;&lt;/li>
+&lt;li>Tính trường tỉ lệ mật độ: ‘UR_Ratio’ = “Urban_Dens / Rural_Dens”&lt;/li>
+&lt;li>Tạo bản đồ thể hiện UR ratio: dùng phương pháp graduated.
 &lt;figure id="figure-kết-quả-mẫu-tính-ur_ratio">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
@@ -360,11 +361,13 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;figcaption>
 Kết quả mẫu tính UR_Ratio
 &lt;/figcaption>&lt;/figure>
-&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;p>Sử dụng file Vietnam_Provinces_Forested_Area(Ha).csv&lt;br>
-&lt;a href="https://drive.google.com/drive/folders/1wi68IJJiaGy9kVXcrrYjUUCD90QY51CM?usp=drive_link" target="_blank" rel="noopener">Download ở đây.&lt;/a>&lt;br>
-7. Liên kết file Vietnam_Provinces_Forested_Area(Ha).csv với bảng thuộc tính của lớp Vietnam_provinces. Sau đó tính phần trăm thay đổi của rừng tự nhiên trong thời kỳ 2005-2016. Gợi ý: ((natural forest area 16 – natural forest area 05) / natural forest area 05)*100
-8. Tạo bản đồ thể hiện phần trăm thay đổi vừa tính, dùng phương pháp graduated.
+&lt;a href="https://drive.google.com/drive/folders/1wi68IJJiaGy9kVXcrrYjUUCD90QY51CM?usp=drive_link" target="_blank" rel="noopener">Download ở đây.&lt;/a>&lt;/p>
+&lt;ol start="7">
+&lt;li>Liên kết file Vietnam_Provinces_Forested_Area(Ha).csv với bảng thuộc tính của lớp Vietnam_provinces. Sau đó tính phần trăm thay đổi của rừng tự nhiên trong thời kỳ 2005-2016. Gợi ý: ((natural forest area 16 – natural forest area 05) / natural forest area 05)*100&lt;/li>
+&lt;li>Tạo bản đồ thể hiện phần trăm thay đổi vừa tính, dùng phương pháp graduated.
 &lt;figure id="figure-kết-quả-mẫu-tính-phần-trăm-thay-đổi-của-rừng-tự-nhiên">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
@@ -378,4 +381,5 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;figcaption>
 Kết quả mẫu tính phần trăm thay đổi của rừng tự nhiên
 &lt;/figcaption>&lt;/figure>
-&lt;/p></description></item></channel></rss>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>

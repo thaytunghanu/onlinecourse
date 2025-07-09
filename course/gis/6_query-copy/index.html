@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: July 7, 2025 --><html lang="en-us" >
+
+
+<head><script src="/onlinecourse/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=onlinecourse/livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/onlinecourse/css/vendor-bundle.min.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/onlinecourse/css/wowchemy.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/onlinecourse/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/onlinecourse/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="TS. Hoàng Thanh Tùng" />
+
+
+
+
+
+  
+
+<meta name="description" content="Thực hành về truy vấn/chọn dữ liệu vector: truy vấn dựa vào thuộc tính và truy vấn dựa vào vị trí." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="http://localhost:1313/onlinecourse/course/gis/6_query-copy/" />
+<link rel="canonical" href="http://localhost:1313/onlinecourse/course/gis/6_query-copy/" />
+
+
+
+  <link rel="manifest" href="/onlinecourse/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/onlinecourse/media/icon_hu_3b11da90b4c87ef8.png" />
+<link rel="apple-touch-icon" type="image/png" href="/onlinecourse/media/icon_hu_f21a43183798c34b.png" />
+
+<meta name="theme-color" content="#0072ff" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="http://localhost:1313/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Thầy Tùng HANU" />
+<meta property="og:url" content="http://localhost:1313/onlinecourse/course/gis/6_query-copy/" />
+<meta property="og:title" content="6. Truy vấn dữ liệu vector | Thầy Tùng HANU" />
+<meta property="og:description" content="Thực hành về truy vấn/chọn dữ liệu vector: truy vấn dựa vào thuộc tính và truy vấn dựa vào vị trí." /><meta property="og:image" content="http://localhost:1313/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2025-06-22T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2025-06-22T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>6. Truy vấn dữ liệu vector | Thầy Tùng HANU</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="cb3ff6b366b419635d377cdf87d68e5c" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/onlinecourse/js/wowchemy-init.min.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/onlinecourse/">Thầy Tùng HANU</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/onlinecourse/">Thầy Tùng HANU</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/onlinecourse/"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Courses</span><span class="caret"></span>
+            </a>
+            <div class="dropdown-menu">
+              
+                <a class="dropdown-item" href="/onlinecourse/course/gis/"><span>GIS</span></a>
+              
+                <a class="dropdown-item" href="/onlinecourse/course/dana/"><span>Phân tích dữ liệu</span></a>
+              
+                <a class="dropdown-item" href="/onlinecourse/course/suscc/"><span>PTBV & BĐKH</span></a>
+              
+            </div>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/onlinecourse/post/"><span>Blog</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/onlinecourse/contact/"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+        
+          GIS
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/onlinecourse/course/"><i class="fas fa-arrow-left pr-1"></i>📚 Courses</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/onlinecourse/course/gis/">GIS</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/onlinecourse/course/gis/1_intro/">1. Giới thiệu về GIS và phần mềm QGIS</a></li>
+
+
+
+  <li class=""><a href="/onlinecourse/course/gis/2_crs/">2. Hệ thống tham chiếu tọa độ (CRS)</a></li>
+
+
+
+  <li class=""><a href="/onlinecourse/course/gis/3_gisdata/">3. Dữ liệu GIS, làm việc với dữ liệu vector</a></li>
+
+
+
+  <li class=""><a href="/onlinecourse/course/gis/4_attribute/">4. Dữ liệu thuộc tính</a></li>
+
+
+
+  <li class=""><a href="/onlinecourse/course/gis/5_symbology/">5. Thể hiện và trình bày dữ liệu vector</a></li>
+
+
+
+  <li class="active"><a href="/onlinecourse/course/gis/6_query-copy/">6. Truy vấn dữ liệu vector</a></li>
+
+
+
+  <li class=""><a href="/onlinecourse/course/gis/6_query/">6. Truy vấn dữ liệu vector</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#dữ-liệu-thực-hành">Dữ liệu thực hành</a></li>
+    <li><a href="#chọn-đối-tượng-thủ-công-dựa-vào-chuột-và-bàn-phím">Chọn đối tượng thủ công dựa vào chuột và bàn phím</a></li>
+    <li><a href="#chọn-đối-tượng-sử-dụng-chức-năng-filter">Chọn đối tượng sử dụng chức năng filter</a></li>
+    <li><a href="#chọn-đối-tượng-dựa-trên-thuộc-tính-select-by-expression">Chọn đối tượng dựa trên thuộc tính (Select by Expression)</a></li>
+    <li><a href="#chọn-đối-tượng-dựa-trên-vị-trí-select-by-location">Chọn đối tượng dựa trên vị trí (Select by location)</a></li>
+    <li><a href="#homework">Homework</a>
+      <ul>
+        <li><a href="#homework-phần-chọn-đối-tượng-dựa-trên-thuộc-tính">Homework phần chọn đối tượng dựa trên thuộc tính</a></li>
+        <li><a href="#homework-phần-chọn-đối-tượng-dựa-vào-vị-trí">Homework phần chọn đối tượng dựa vào vị trí</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <div class="docs-article-container">
+        
+          
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+    
+  
+    
+  
+    
+  
+
+    <li class="breadcrumb-item">
+      <a href="/onlinecourse/">
+        
+          Home
+        
+      </a>
+    </li>
+  
+
+    <li class="breadcrumb-item">
+      <a href="/onlinecourse/course/">
+        
+          📚 Courses
+        
+      </a>
+    </li>
+  
+
+    <li class="breadcrumb-item">
+      <a href="/onlinecourse/course/gis/">
+        
+          GIS
+        
+      </a>
+    </li>
+  
+
+      <li class="breadcrumb-item active" aria-current="page">
+        6. Truy vấn dữ liệu vector
+      </li>
+    </ol>
+  </nav>
+
+
+
+
+        
+      </div>
+
+      
+      
+      
+
+      <div class="docs-article-container">
+        
+        <h1>6. Truy vấn dữ liệu vector</h1>
+
+        <article class="article-style">
+
+          
+          
+
+          <p>Thực hành về truy vấn/chọn dữ liệu vector: truy vấn dựa vào thuộc tính và truy vấn dựa vào vị trí.</p>
+<ul>
+<li>Ở các bài trước, chúng ta đã học cách tạo (số hóa) đối tượng, nhập/tính toán dữ liệu thuộc tính, và thể hiện bản đồ (Symbology). Bài này sẽ giới thiệu những chức năng chọn đối tượng dựa trên các điều kiện đặt ra cho dữ liệu thuộc tính, hoặc dựa trên vị trí của đối tượng.</li>
+<li>Mục đích của việc chọn đối tượng là sau đó chúng ta có thể xử lý riêng những đối tượng đã chọn, ví dụ: phân tích không gian, thống kê hoặc xuất dữ liệu riêng.</li>
+</ul>
+<h2 id="dữ-liệu-thực-hành">Dữ liệu thực hành</h2>
+<p>Lớp Vietnam_provinces_2015population đã làm ở <a href="/onlinecourse/course/gis/4_attribute/#homework">Homework số 7, Bài 4</a>. Lớp này chính là Vietnam_Provinces đã liên kết thêm các trường thông tin dân số 2015.</p>
+<p>Một số lớp dữ liệu khác ở đây: <a href="https://drive.google.com/drive/folders/1cGs0fwr60t1iiOxUr2SBVG4aseZOQRE2?usp=drive_link" target="_blank" rel="noopener">Download dữ liệu Dataset Part 5 ở đây.</a><br>
+Các lớp bao gồm:</p>
+<ul>
+<li><strong>adm2</strong>: ranh giới hành chính cấp huyện (trước sát nhập)</li>
+<li><strong>Vietnam_Landuses_OSM</strong>: bản đồ hiện trạng sử dụng đất, nguồn từ OpenStreetmap</li>
+<li><strong>Vietnam_Rivers</strong>: mạng lưới sông ngòi Việt Nam.</li>
+</ul>
+<h2 id="chọn-đối-tượng-thủ-công-dựa-vào-chuột-và-bàn-phím">Chọn đối tượng thủ công dựa vào chuột và bàn phím</h2>
+<ul>
+<li>Như đã đề cập ở <a href="/onlinecourse/course/gis/2_crs/#thanh-công-cụ-selection-toolbar">Bài 2</a>, công cụ Select Features by Area or Single Click (gọi tắt là Select Features) được dùng để chọn đối tượng. Thực hiện: chọn lớp cần thao tác ở Layers Panel &gt; ấn chuột trái vào đối tượng cần chọn, sau đó đối tượng được chọn sẽ được tô sáng màu vàng.</li>
+<li>Có thể chọn nhiều đối tượng bằng cách kết hợp Ctrl + click chuột trái khi sử dụng Select Features.</li>
+<li>Bỏ chọn bằng cách ấn chuột trái ra ngoài khoảng trống ở Map Canvas hoặc ấn nút Deselect Features.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-chọn-nhiều-đối-tượng-bằng-ctrl--click-chuột-trái">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="6_query_multiselect.jpg" alt="Ảnh 1" loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Chọn nhiều đối tượng bằng Ctrl + click chuột trái
+    </figcaption></figure>
+</li>
+<li>Nếu dùng công cụ Select Features vẽ hình chữ nhật thì tất cả đối tượng giao cắt với hình chữ nhật đó sẽ được chọn.</li>
+</ul>
+
+
+ 
+
+<div class="hb-columns hb-columns-2">
+  
+<div class="hb-column">
+  <figure  id="figure-dùng-select-features-vẽ-hình-chữ-nhật-để-chọn-nhiều-đối-tượng">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="6_query_multiselect2.jpg" alt="Ảnh 1" loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Dùng Select Features vẽ hình chữ nhật để chọn nhiều đối tượng
+    </figcaption></figure>
+</div>
+
+<div class="hb-column">
+  <figure  id="figure-kết-quả">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="6_query_multiselect3.jpg" alt="Ảnh 1" loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Kết quả
+    </figcaption></figure>
+</div>
+
+
+</div>
+
+<style>
+.hb-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.hb-columns .hb-column {
+  flex: 1 1 auto;
+  box-sizing: border-box;
+}
+
+
+.hb-columns-2 .hb-column { flex-basis: calc(50% - 1rem); max-width: calc(50% - 1rem); }
+
+
+.hb-columns img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hb-columns img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+  .hb-columns .hb-column {
+    flex-basis: 100% !important;
+    max-width: 100% !important;
+  }
+}
+</style>
+
+
+<ul>
+<li>Công cụ Select Features còn một số sub-menu:
+<ul>
+<li><strong>Select Features by Polygon</strong>: Công cụ này cho phép người dùng tạo một polygon, sau đó những đối tượng giao cắt với polygon đó là được chọn.</li>
+<li><strong>Select Features by Freehand</strong>: Vẽ tự do để tạo vùng chọn, vẽ tự do nghĩa là vẽ bằng cách di chuột thay vì ấn chuột trái mỗi lần tạo đỉnh (vertex) như vẽ polygon. Khi vẽ xong cần ấn chuột phải để báo hiệu hoàn thành.</li>
+<li><strong>Select Features by Radius</strong>: chọn các đối tượng quanh bán kính nhất định với tâm là vị trí chuột.</li>
+</ul>
+</li>
+</ul>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-sub-menu-của-select-features">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="6_query_submenu.jpg" alt="Ảnh 1" loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Sub-menu của Select Features
+    </figcaption></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-select-features-by-polygon">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="6_query_polygon.jpg" alt="Ảnh 1" loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Select Features by Polygon
+    </figcaption></figure>
+</p>
+<ul>
+<li>Sau khi chọn xong, ta có thể xuất riêng những đối tượng được chọn ra một lớp mới. Thực hiện: Chọn đối tượng &gt; Ấn chuột phải vào lớp ở Layers Panel &gt; Export &gt; Save select Features As &gt; Đặt tên file và tick vào ô &ldquo;<strong>Save only selected features</strong>&rdquo;.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-lưu-các-đối-tượng-đã-chọn-sang-lớp-mới">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="6_query_savefeature.jpg" alt="Ảnh 1" loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Lưu các đối tượng đã chọn sang lớp mới
+    </figcaption></figure>
+</li>
+</ul>
+<h2 id="chọn-đối-tượng-sử-dụng-chức-năng-filter">Chọn đối tượng sử dụng chức năng filter</h2>
+<ul>
+<li>Cách hoạt động của chức năng này tương tự như cách thực hiện <a href="/onlinecourse/course/gis/5_symbology/#rule-based-phân-loại-theo-quy-tắc">Rule-based Symbology</a>.</li>
+<li>Giả sử ta cần chọn riêng thành phố TW, cần thực hiện như sau:
+<ul>
+<li>Chuột phải vào lớp mục tiêu ở Layers Panel &gt; Filter &gt; Hộp <strong>Query Builder</strong> hiện ra.</li>
+<li>Đánh vào ô Provider Specific Filter Expression: <code>&quot;ENGTYPE_1&quot;='City|Municipality|Thanh Pho'</code></li>
+<li>Ấn OK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-kết-quả-chọn-bằng-filter">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="6_query_filter.jpg" alt="Ảnh 1" loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Kết quả chọn bằng Filter
+    </figcaption></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="chọn-đối-tượng-dựa-trên-thuộc-tính-select-by-expression">Chọn đối tượng dựa trên thuộc tính (Select by Expression)</h2>
+<p>Nhiệm vụ của phần này là chọn các tỉnh có mật độ dân số lớn hơn một ngưỡng nào đó, ví dụ ≥ 100 người/km<sup>2</sup>.<br>
+Thực hiện:</p>
+<ul>
+<li>Chọn công cụ <strong>Select Features by Expression</strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-select-features-by-expression">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="6_query_expression.jpg" alt="Ảnh 1" loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Select Features by Expression
+    </figcaption></figure>
+</li>
+<li>Đánh công thức vào ô Expression: <code>&quot;Density&quot; &gt;= 100</code></li>
+<li>Chú ý &ldquo;Density&rdquo; chính là trường Density (mật độ dân số) mà bạn đã tạo ra từ <a href="/onlinecourse/course/gis/4_attribute/#homework">Homework số 7, Bài 4</a>.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-kết-quả-chọn-dựa-trên-thuộc-tính-mật-độ-dân-số-không-nhỏ-hơn-100-ngườikm2">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="6_query_expression2.jpg" alt="Ảnh 1" loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Kết quả chọn dựa trên thuộc tính mật độ dân số không nhỏ hơn 100 người/km<sup>2</sup>
+    </figcaption></figure>
+</li>
+</ul>
+<h2 id="chọn-đối-tượng-dựa-trên-vị-trí-select-by-location">Chọn đối tượng dựa trên vị trí (Select by location)</h2>
+<p>Trong QGIS, công cụ Select by Location (Chọn theo vị trí) cho phép bạn chọn các đối tượng không gian (điểm, đường, vùng) dựa trên mối quan hệ không gian với một lớp khác. Đây là một công cụ cực kỳ quan trọng trong phân tích không gian, giúp trả lời các câu hỏi như: “Những thửa đất nào nằm trong khu quy hoạch?”, hay “Những trường học nào nằm trong bán kính 1km từ trạm y tế?”.</p>
+<p>Ở phần này, ta sẽ sử dụng lớp ranh giới cấp huyện <strong>adm2</strong>.</p>
+<div class="alert alert-note">
+  <div>
+    Chú ý: Khi sử dụng Select by Location, cần đảm bảo các lớp liên quan đều có chung hệ quy chiếu tọa độ (CRS). Bạn có thể dùng công cụ chuyển đổi hệ tọa độ (reproject) để phục vụ việc đưa các lớp về một CRS thống nhất. Cách thực hiện: <strong>Vector &gt; Data Management Tools &gt; Reproject layer</strong>
+  </div>
+</div>
+<p>Nhiệm vụ của phần này là chọn các huyện <strong>nằm hoàn toàn bên trong</strong> ranh giới các tỉnh.
+Các bước thực hiện:</p>
+<ul>
+<li>Add lớp Vietnam_Provinces và adm2 vào Map Canvas.</li>
+<li>Làm trong suốt màu nền của các lớp. Xác lập đường viền của Vietnam_Provinces &ndash;&gt; tăng kích thước, màu đỏ. Đường viền của adm2 &ndash;&gt; màu trắng.</li>
+<li>Ấn vào biểu tượng Select by Location
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-nút-select-by-location">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="6_query_location.jpg" alt="Ảnh 1" loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Nút Select by Location
+    </figcaption></figure>
+</li>
+<li>Xác lập các tham số ở Tab Parameters:
+<ul>
+<li>Select features from là chọn đối tượng của lớp nào: adm2</li>
+<li>Geometric Predicate là quan hệ hình học, bao gồm các quan hệ sau:
+<ul>
+<li><strong>intersect</strong>: Cắt nhau, chạm nhau ở bất kỳ điểm nào</li>
+<li><strong>contain</strong>: Lớp A chứa hoàn toàn lớp B</li>
+<li><strong>within</strong>: Lớp A nằm hoàn toàn bên trong lớp B</li>
+<li><strong>touch</strong>: Hai lớp chạm mép nhau</li>
+<li><strong>overlap</strong>: Có phần giao nhau nhưng không chứa nhau hoàn toàn</li>
+<li><strong>cross</strong>: Đường/đối tượng cắt qua nhau</li>
+<li><strong>equal</strong>: Hai hình học giống nhau hoàn toàn<br>
+Trong bài này yêu cầu chọn các huyện nằm hoàn toàn bên trong các tỉnh, do đó tick vào ô <strong>are within</strong>.</li>
+</ul>
+</li>
+<li>By Comparing to the features from: lớp còn lại &ndash;&gt; Vietnam_Provinces</li>
+</ul>
+</li>
+</ul>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-kết-quả-khi-chọn-dựa-trên-vị-trí">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="6_query_location2.jpg" alt="Ảnh 1" loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Kết quả khi chọn dựa trên vị trí
+    </figcaption></figure>
+</p>
+<h2 id="homework">Homework</h2>
+<h3 id="homework-phần-chọn-đối-tượng-dựa-trên-thuộc-tính">Homework phần chọn đối tượng dựa trên thuộc tính</h3>
+<ol>
+<li>Hãy dùng Select by Expression để chọn các tỉnh thỏa mãn điều kiện UR_Ratio ≥ 1. Sau đó lưu các tỉnh này sang một lớp mới với tên là <strong>Dense_Urban_Regions</strong>.</li>
+<li>Mở lớp mới ‘Dense_Urban_Regions’, chọn trong số các tỉnh đó top 5 tỉnh có Urban density cao nhất. Export top 5 tỉnh đã chọn này sang một lớp mới. Thể hiện bản đồ theo phương pháp Graduated, label dựa trên urban density value. Yêu cầu kết quả như ảnh dưới.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-kết-quả-mẫu">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="6_query_homework1.jpg" alt="Ảnh 1" loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Kết quả mẫu
+    </figcaption></figure>
+</li>
+</ol>
+<h3 id="homework-phần-chọn-đối-tượng-dựa-vào-vị-trí">Homework phần chọn đối tượng dựa vào vị trí</h3>
+<ol start="3">
+<li>Dựa trên 2 lớp Vietnam_Provinces và adm2, dùng các công cụ Filter và Select by Location để tạo một lớp mới bao gồm các huyện của riêng tỉnh Thái Nguyên (9 huyện).</li>
+<li>Tính diện tích các huyện theo đơn vị m2.</li>
+<li>Add lớp Vietnam_Landuses_OSM. Chọn thủ cộng huyện &ldquo;Vo Nhai&rdquo;. Dùng Select by Location để chọn ra các đối tượng land use của riêng Vo Nhai, sau đó lưu thành một lớp mới với tên “Vo_Nhai_Landuses”. Gợi ý: dùng quan hệ intersect.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-land-uses-của-vo-nhai">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="6_query_homework2.jpg" alt="Ảnh 1" loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Land uses của Vo Nhai
+    </figcaption></figure>
+</li>
+<li>Thể hiện bản đồ lớp “Vo_Nhai_Landuses” theo phương pháp Categorized, dựa trên trường ‘fclass’.</li>
+</ol>
+
+        </article>
+
+        
+
+        
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/onlinecourse/tag/select/">Select</a>
+  
+  <a class="badge badge-light" href="/onlinecourse/tag/query/">Query</a>
+  
+</div>
+
+
+
+        
+        
+        <div class="article-widget">
+          
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/onlinecourse/course/gis/5_symbology/" rel="next">5. Thể hiện và trình bày dữ liệu vector</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/onlinecourse/course/gis/6_query/" rel="prev">6. Truy vấn dữ liệu vector</a>
+  </div>
+  
+</div>
+
+        </div>
+        
+      </div>
+
+      <div class="body-footer">
+        <p>Last updated on Jun 22, 2025</p>
+
+        
+  
+
+        
+
+
+
+
+        
+
+
+      </div>
+
+      <footer class="site-footer">
+  
+   
+ 
+
+
+  <p class="powered-by">  
+    &copy; 2025 Thầy Tùng HANU.
+  
+     Mọi nội
+    dung thuộc bản quyền của Thầy Tùng HANU, không được sao chép mà không trích
+    dẫn hoặc không có sự cho phép. Published with Hugo Blox Builder.
+    
+  </p>
+
+  
+  <div style="text-align: center; margin-top: 20px;">
+    <button onclick="refreshPage()" style="padding: 8px 8px; background: #007acc; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 14px;">
+      🔄 Refresh Page
+    </button>
+  </div>
+
+  
+  <script>
+    function refreshPage() {
+      const url = window.location.href.split('?')[0];
+      window.location.href = url + "?_=" + new Date().getTime();
+    }
+  </script>
+
+</footer>
+
+  
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+
+
+<script src="/onlinecourse/js/vendor-bundle.min.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js" integrity="sha256-aQmOEF2ZD4NM/xt4hthzREIo/2PFkOX/g01WjxEV7Ys=" crossorigin="anonymous"></script>
+<script>
+  anchors.add();
+</script>
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/onlinecourse/en/js/wowchemy.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

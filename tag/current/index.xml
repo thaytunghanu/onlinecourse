@@ -118,6 +118,11 @@ max-width: 100% !important;
 &lt;p>Thực hành về truy vấn/chọn dữ liệu vector: truy vấn dựa vào thuộc tính và truy vấn dựa vào vị trí.
 &lt;/p>
 &lt;/li>
+&lt;li>
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/">7. Phân tích dữ liệu không gian&lt;/a>&lt;/h5>
+&lt;p>Thực hành các công cụ phân tích không gian: merge, union, clip, intersect, symmetrical difference, reproject, buffer, Point in Polygon Analysis
+&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;h2 id="thông-tin-giảng-viên">Thông tin giảng viên&lt;/h2>
 &lt;a href="https://thaytunghanu.github.io/onlinecourse/author/ts.-hoang-thanh-tung/">TS. Hoàng Thanh Tùng&lt;/a>

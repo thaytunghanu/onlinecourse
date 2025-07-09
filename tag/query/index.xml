@@ -282,7 +282,7 @@ Kết quả mẫu
 &lt;/ol>
 &lt;h3 id="homework-phần-chọn-đối-tượng-dựa-vào-vị-trí">Homework phần chọn đối tượng dựa vào vị trí&lt;/h3>
 &lt;ol start="3">
-&lt;li>Dựa trên 2 lớp Vietnam_Provinces và adm2, dùng các công cụ Filter và Select by Location để tạo một lớp mới bao gồm các huyện của riêng tỉnh Thái Nguyên (9 huyện).&lt;/li>
+&lt;li>Dựa trên 2 lớp Vietnam_Provinces và adm2, dùng các công cụ Filter và Select by Location để tạo một lớp mới bao gồm các huyện của riêng tỉnh Thái Nguyên (9 huyện). Đặt tên lớp là &lt;strong>ThaiNguyen_districts&lt;/strong>.&lt;/li>
 &lt;li>Tính diện tích các huyện theo đơn vị m2.&lt;/li>
 &lt;li>Add lớp Vietnam_Landuses_OSM. Chọn thủ cộng huyện &amp;ldquo;Vo Nhai&amp;rdquo;. Dùng Select by Location để chọn ra các đối tượng land use của riêng Vo Nhai, sau đó lưu thành một lớp mới với tên “Vo_Nhai_Landuses”. Gợi ý: dùng quan hệ intersect.
 &lt;figure id="figure-land-uses-của-vo-nhai">
