@@ -2603,7 +2603,7 @@ Land uses của Vo Nhai
 &lt;/figcaption>&lt;/figure>
 &lt;/li>
 &lt;li>Thể hiện bản đồ lớp “Vo_Nhai_Landuses” theo phương pháp Categorized, dựa trên trường ‘fclass’.&lt;/li>
-&lt;/ol></description></item><item><title>7. Phân tích dữ liệu không gian</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/</guid><description>&lt;p>Thực hành các công cụ phân tích không gian: merge, union, clip, intersect, symmetrical difference, reproject, buffer, Point in Polygon Analysis&lt;/p>
+&lt;/ol></description></item><item><title>7. Phân tích dữ liệu không gian</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/</guid><description>&lt;p>Thực hành các công cụ phân tích không gian: merge, union, clip, intersect, symmetrical difference, reproject, buffer, count points in polygon&lt;/p>
 &lt;p>Các công cụ phân tích không gian: merge, clip, intersect, symmetrical difference, buffer &amp;hellip; là những công cụ cốt lõi trong xử lý và phân tích dữ liệu địa lý vector.
 Những công cụ này có thể được ứng dụng trong những bài toán phân tích không gian rất phổ biến như: phân tích vùng bị ảnh hưởng (mưa lũ, ô nhiễm…), quy hoạch vùng đô thị, bảo tồn.&lt;/p>
 &lt;h2 id="dữ-liệu-thực-hành">Dữ liệu thực hành&lt;/h2>
@@ -3325,4 +3325,551 @@ loading="lazy" data-zoomable />&lt;/div>
 Minh họa homework phần 3
 &lt;/figcaption>&lt;/figure>
 &lt;/li>
-&lt;/ol></description></item></channel></rss>
+&lt;/ol></description></item><item><title>8. Thiết kế trang in bản đồ (Map Layouts)</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/</guid><description>&lt;p>Thiết kế bản đồ trình bày hoàn chỉnh phục vụ in ấn, xuất file ảnh/PDF, hoặc đính kèm báo cáo, luận văn, tài liệu kỹ thuật&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Sau khi hoàn thiện bản đồ và muốn in hoặc lưu dưới dạng PDF hoặc tệp hình ảnh khác để tham khảo sau này hoặc đưa vào báo cáo (ví dụ: tài liệu Word), bạn cần thiết kế bố cục bản đồ. Bố cục hoặc trang in bản đồ có thể bao gồm các thành phần (Map items) sau:&lt;/p>
+&lt;ul>
+&lt;li>Khung bản đồ chính (main map)&lt;/li>
+&lt;li>Tên bản đồ (title)&lt;/li>
+&lt;li>Bản đồ phụ (inset map)&lt;/li>
+&lt;li>Bảng chú giải (legend)&lt;/li>
+&lt;li>Mũi tên chỉ Bắc (North arrow)&lt;/li>
+&lt;li>Thước tỉ lệ (Scale bar)&lt;/li>
+&lt;li>Lưới tọa độ (reference grid)&lt;/li>
+&lt;li>Bảng biểu mô tả số liệu (tùy chọn)&lt;/li>
+&lt;li>Ảnh hoặc hình chụp phụ trợ (images/photos)&lt;/li>
+&lt;li>Chú thích về nguồn dữ liệu&lt;/li>
+&lt;li>Thông tin người/cơ quan lập bản đồ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>Hãy nhận diện các thành phần bản đồ trong bản đồ dưới đây:&lt;/code>
+&lt;figure id="figure-bản-đồ-mật-độ-dân-số-năm-2020-của-các-xã-thuộc-huyện-chi-lăng-tỉnh-lạng-sơn-trước-sát-nhập">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Bản đồ mật độ dân số năm 2020 của các xã thuộc huyện Chi Lăng, tỉnh Lạng Sơn (trước sát nhập)" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_example_hu_36f014f9516552d3.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_example_hu_cc188914fd03d557.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_example_hu_eac1e8129dd8c715.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_example_hu_36f014f9516552d3.webp"
+width="760"
+height="538"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Bản đồ mật độ dân số năm 2020 của các xã thuộc huyện Chi Lăng, tỉnh Lạng Sơn (trước sát nhập)
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Công cụ Layouts trong QGIS cho phép người dùng thiết kế bố cục của trang in bản đồ qua việc thiết kế và biên tập các thành phần bản đồ liệt kê ở trên. Bạn có thể định cỡ, nhóm, căn chỉnh, định vị và xoay từng thành phần và điều chỉnh các thuộc tính của chúng để tạo bố cục của bạn&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Nhiệm vụ của phần này là thiết kế một trang in bản đồ đơn giản. Dữ liệu sử dụng là dữ liệu &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/#graduated-phân-loại-theo-thang-đo">Vietnam_provinces_2015population&lt;/a> đã thao tác ở Bài 4 và Bài 5.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-chuẩn-bị-dữ-liệu-chính-để-thiết-kế-trang-in-vietnam_provinces_2015population-là-lớp-vietnam_provinces-sau-khi-join-dữ-liệu-dân-số-với-2015-provincial-populationcsv-ở-bài-4">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Chuẩn bị dữ liệu chính để thiết kế trang in, **Vietnam_provinces_2015population**: là lớp Vietnam_Provinces sau khi join dữ liệu dân số với 2015 provincial population.csv ở Bài 4" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_data_hu_6053c378af08d582.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_data_hu_a3dcff2172ec1915.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_data_hu_421fcbd42fba7039.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_data_hu_6053c378af08d582.webp"
+width="760"
+height="398"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chuẩn bị dữ liệu chính để thiết kế trang in, &lt;strong>Vietnam_provinces_2015population&lt;/strong>: là lớp Vietnam_Provinces sau khi join dữ liệu dân số với 2015 provincial population.csv ở Bài 4
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h2 id="thực-hiện-thiết-kế-trang-in-bản-đồ">Thực hiện thiết kế trang in bản đồ&lt;/h2>
+&lt;ul>
+&lt;li>Khởi động công in làm trang in, có 2 cách:
+&lt;ul>
+&lt;li>Dùng Menu Bar: &lt;strong>Project &amp;gt; New Print Layout&lt;/strong>&lt;/li>
+&lt;li>Dùng Tool Bar:
+&lt;figure id="figure-dùng-toolbar-ấn-nút-new-print-layout">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Dùng Toolbar: ấn nút New Print Layout" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_printlayout_hu_6cc06272442e81ca.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_printlayout_hu_f9c1bb11f74b10ba.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_printlayout_hu_a7d68f08da060689.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_printlayout_hu_6cc06272442e81ca.webp"
+width="760"
+height="197"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Dùng Toolbar: ấn nút New Print Layout
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Đặt tên cho bản in.&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;ol>
+&lt;li>Có thể tạo nhiều bản in (layout) trong một dự án (project). Quản lý các bản in trong dự án bằng công cụ &lt;strong>Layout Manager&lt;/strong>.&lt;/li>
+&lt;li>Nội dung trang in là một thành phần của project. Do đó, khi lưu project, các thiết lập hiện tại của các trang in cũng được lưu.&lt;/li>
+&lt;/ol>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>Dùng Layout Manager để quản lý các trang in:
+&lt;ul>
+&lt;li>&lt;strong>Show&lt;/strong>: hiện trang in&lt;/li>
+&lt;li>&lt;strong>Duplicate&lt;/strong>: nhân đôi&lt;/li>
+&lt;li>&lt;strong>Remove&lt;/strong>: xóa&lt;/li>
+&lt;li>&lt;strong>Rename&lt;/strong>: đổi tên&lt;/li>
+&lt;li>Tạo mới trang in.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-dùng-layout-manager-để-quản-lý-các-trang-in">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Dùng Layout Manager để quản lý các trang in" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_layoutmanager_hu_3219ed8c16295705.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_layoutmanager_hu_1d0b0f4afd1062c1.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_layoutmanager_hu_180482462a0579e9.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_layoutmanager_hu_3219ed8c16295705.webp"
+width="760"
+height="433"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Dùng Layout Manager để quản lý các trang in
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>Sau khi tạo New Print Layout và đặt tên cho layout, một cửa sổ Print Composer xuất hiện để chúng ta thao tác thiết kế trang in. Cửa sổ này chứa nhiều menu và sub menu phục vụ việc thiết kế trang in. Chúng ta sẽ từng bước làm quen với các công cụ này.
+&lt;figure id="figure-cửa-sổ-print-composer">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Cửa sổ Print Composer" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_printcomposer_hu_29a4fa1967de8854.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_printcomposer_hu_a5a826e0e60a877.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_printcomposer_hu_918d8785e2dc56c8.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_printcomposer_hu_29a4fa1967de8854.webp"
+width="760"
+height="424"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Cửa sổ Print Composer
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="thiết-lập-trang-in-page-and-print-set-up">Thiết lập trang in (Page and Print Set Up)&lt;/h3>
+&lt;ul>
+&lt;li>Ấn chuột phải vào vùng trắng của trang in &amp;gt; &lt;strong>Page Properties&lt;/strong> &amp;gt; thẻ &lt;strong>Item Properties&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Size&lt;/strong>: thiết lập kích cỡ giấy in tiêu chuẩn&lt;/li>
+&lt;li>&lt;strong>Orientation&lt;/strong>: thiết lập hướng giấy, portrait: chiều đứng, landscape: chiều nằm ngang.&lt;/li>
+&lt;li>&lt;strong>Width&lt;/strong>: chiều rộng giấy&lt;/li>
+&lt;li>&lt;strong>Height&lt;/strong>: chiều dài.&lt;/li>
+&lt;li>&lt;strong>Background&lt;/strong>: màu nền của bản đồ, mặc định màu trắng, có thể thay đổi.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-note">
+&lt;div>
+Bạn có thể tạo ra một kích thước trang in bất kỳ thông qua việc điều chỉnh 2 tham số Width và Height.
+&lt;/div>
+&lt;/div>
+&lt;p>
+&lt;figure id="figure-thiết-lập-trang-in">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập trang in" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_pagesetup_hu_f933dbb92ae76e7d.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_pagesetup_hu_5943491151187825.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_pagesetup_hu_9a3444ae7fe86a5.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_pagesetup_hu_f933dbb92ae76e7d.webp"
+width="760"
+height="385"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập trang in
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>Bạn có thể tạo nhiều trang rời nhau trên cùng một layout. Thực hiện: &lt;strong>Layout &amp;gt; Add Pages&lt;/strong>. Dùng nhiều trang trong 1 layout trong trường hợp cần sắp xếp các yếu tố ra các trang in riêng biệt. Ví dụ: trang thứ nhất là bản đồ chính, trang thứ 2 là bảng thuộc tính của lớp quan trọng nhất (ảnh dưới). Khi xuất ra ảnh, QGIS sẽ xuất ảnh cả 2 trang này thành 2 ảnh riêng biệt, mỗi trang in xuất thành 1 ảnh.&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-thiết-lập-2-trang-in-trong-1-layout">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập 2 trang in trong 1 layout" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_pagesetup2_hu_7091d728310629db.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_pagesetup2_hu_3f380410227458e7.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_pagesetup2_hu_28e6fe1902bc373e.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_pagesetup2_hu_7091d728310629db.webp"
+width="760"
+height="670"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập 2 trang in trong 1 layout
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="thiết-lập-tham-số-xuất-ảnh-export-settings">Thiết lập tham số xuất ảnh (Export Settings)&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>Một thiết lập cần chú ý là độ phân giải khi xuất bản đồ thành ảnh *.jpg hoặc *.png. Thiết lập này ở tab: &lt;strong>Layout&lt;/strong>, bên trái của tab &lt;strong>Item Properties&lt;/strong>.
+&lt;figure id="figure-thiết-lập-tham-số-xuất-ảnh">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập tham số xuất ảnh" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_export_hu_f829c14b537b2af6.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_export_hu_dd8f257caaabf371.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_export_hu_c52281c3b38aec0c.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_export_hu_f829c14b537b2af6.webp"
+width="353"
+height="483"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập tham số xuất ảnh
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Độ phân giải ảnh có đơn vị là &lt;strong>dpi (dot per inch)&lt;/strong>. Độ phân giải ảnh càng cao, dung lượng ảnh càng lớn.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Độ phân giải có thể đặt khoảng 150-200 dpi là đủ cho các ảnh bản đồ cỡ nhỏ thông thường.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Save world file&lt;/strong>: Tạo tọa độ cho file ảnh bản đồ sản phẩm. Thông thường bản đồ xuất ra ảnh nhằm mục đích đưa vào báo cáo hoặc để in ấn thì không cần hệ tọa độ. Tuy nhiên trong một số trường hợp cần, chắc năng này sẽ cung cấp tọa độ cho ảnh bản đồ sản phẩm.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="thêm-bản-đồ-add-map">Thêm bản đồ (Add Map)&lt;/h3>
+&lt;p>Chức năng này nhằm đưa các khung bản đồ chính hoặc bản đồ phụ vào trong trang in.&lt;br>
+Cách thực hiện&lt;/p>
+&lt;ul>
+&lt;li>Bật công cụ &lt;strong>Add Map&lt;/strong>, 2 cách:
+&lt;ul>
+&lt;li>Menu bar: &lt;strong>Add Item &amp;gt; Add Map&lt;/strong>&lt;/li>
+&lt;li>Ấn &lt;strong>Add Map&lt;/strong> ở Toolbar.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Vẽ một hình chữ nhật để tạo khung bản đồ chính.&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-note">
+&lt;div>
+QGIS chỉ xuất ảnh những nội dung phía trong diện tích trang in (vùng nền màu trắng ở ảnh dưới). Tất cả những nội dung nằm ngoài trang in sẽ không được xuất hiện ở bản in khi xuất ra ảnh hoặc file *.pdf.
+&lt;/div>
+&lt;/div>
+&lt;p>
+&lt;figure id="figure-thêm-bản-đồ-và-các-công-cụ-thiết-kế-trang-in">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thêm bản đồ và các công cụ thiết kế trang in" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_tools_hu_36f5e8cc02f0dcaf.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_tools_hu_7e42e3738cc99799.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_tools_hu_957bff1ff4a59ba8.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_tools_hu_36f5e8cc02f0dcaf.webp"
+width="760"
+height="544"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thêm bản đồ và các công cụ thiết kế trang in
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="selectmove-item-và-move-item-content">Select/Move Item và Move Item Content&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>Select/Move Item dùng để chọn và di chuyển các thành phần bản đồ như: bản đồ chính, bản đồ phụ, thước tỉ lệ, bảng chú giải &amp;hellip; vv
+&lt;figure id="figure-dùng-selectmove-item-di-chuyển-khung-bản-đồ">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Dùng Select/Move Item di chuyển khung bản đồ" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_selectitem_hu_aa0be3e5ad97e937.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_selectitem_hu_b7857f919372f3a.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_selectitem_hu_d8cb2c994f7c1ec3.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_selectitem_hu_aa0be3e5ad97e937.webp"
+width="550"
+height="402"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Dùng Select/Move Item di chuyển khung bản đồ
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Move Item content dùng để di chuyển &lt;strong>nội dung trong khung bản đồ&lt;/strong>
+&lt;figure id="figure-dùng-move-item-content-để-di-chuyển-nội-dung-trong-khung-bản-đồ">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Dùng Move item content để di chuyển nội dung trong khung bản đồ" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_itemcontent_hu_bb80d7946361ad99.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_itemcontent_hu_51169afe15dfab53.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_itemcontent_hu_25af153319f4cc6f.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_itemcontent_hu_bb80d7946361ad99.webp"
+width="474"
+height="272"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Dùng Move item content để di chuyển nội dung trong khung bản đồ
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="item-properties-của-map">Item Properties của Map&lt;/h3>
+&lt;ul>
+&lt;li>Tab &lt;strong>Item Properties&lt;/strong> chứa những tham số quan trọng dùng để điều chỉnh các tính chất của các thành phần bản đồ (item).&lt;/li>
+&lt;li>Với đối tượng Map, phần này sẽ giới thiệu những chức năng chính:
+&lt;ul>
+&lt;li>&lt;strong>Scale&lt;/strong>: tỉ lệ bản đồ. Khi tăng giảm tham số này, bạn có thể thấy nội dung bản đồ được thu và phóng tương ứng.&lt;/li>
+&lt;li>&lt;strong>Map rotation&lt;/strong>: nhằm xoay bản đồ theo một góc nào đó so với phương Bắc. Chức năng này ít khi được sử dụng.&lt;/li>
+&lt;li>&lt;strong>Lock layers&lt;/strong> và &lt;strong>Lock styles for layers&lt;/strong>: thông thường những thay đổi hiển thị bản đồ ở Map canvas, ví dụ như đổi symbology, sẽ liên kế với hiển thị bản đồ ở layout. Lựa chọn tick vào cả hai ô &lt;strong>Lock layers&lt;/strong> và &lt;strong>Lock styles for layers&lt;/strong> sẽ cố định hiển thị bản đồ ở thời điểm hiện tại. Sau khi đã lock, bất kỳ thay đổi nào ở Map Canvas cũng không làm thay đổi hiển thị ở layout.&lt;/li>
+&lt;li>&lt;strong>Lock&lt;/strong> ở trên ô item (hình cái khóa): đây là chức năng khóa vị trí của item, khi bạn không muốn di chuyển item đó nữa. Cách khác: bạn có thể chọn một hoặc nhiều thành phần bản đồ và ấn nút &lt;strong>Lock selected items&lt;/strong> trên Toolbar để khóa vị trí.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-item-properties-của-map">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Item Properties của Map" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_itemproperties_hu_db6b71129a7095bf.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_itemproperties_hu_aab47bc450ff2016.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_itemproperties_hu_46c6f3af44eed309.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_itemproperties_hu_db6b71129a7095bf.webp"
+width="760"
+height="451"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Item Properties của Map
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="thước-tỷ-lệ-scale-bar-và-mũi-tên-chỉ-bắc-north-arrow">Thước tỷ lệ (Scale bar) và mũi tên chỉ Bắc (North arrow)&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Tỷ lệ bản đồ&lt;/strong> là tỷ số giữa khoảng cách trên bản đồ và khoảng cách tương ứng ngoài thực tế. Ví dụ: 1:50.000 nghĩa là 1 đơn vị trên bản đồ = 50.000 đơn vị ngoài thực tế. Cụ thể hơn: 1 cm trên bản đồ = 50.000 cm (tức 500 m) ngoài thực địa.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Tỷ lệ càng nhỏ → diện tích phủ càng lớn → chi tiết địa lý càng ít. Tỷ lệ càng lớn → bản đồ càng chi tiết.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Thước tỷ lệ bản đồ&lt;/strong> (Scale Bar) là một thanh đo khoảng cách trực quan thể hiện mối quan hệ giữa khoảng cách thực tế trên mặt đất và khoảng cách tương ứng trên bản đồ. Nó giúp người đọc bản đồ ước lượng hoặc đo đạc khoảng cách thực tế một cách dễ hiểu, không cần tính toán theo tỷ lệ số.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Ví dụ: Một thước tỷ lệ ghi &amp;ldquo;1 km&amp;rdquo; trên bản đồ có chiều dài 2 cm, nghĩa là 2 cm trên bản đồ = 1 km ngoài thực địa.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Để thêm thước tỉ lệ:&lt;/p>
+&lt;ul>
+&lt;li>Ấn vào nút &lt;strong>Scale Bar&lt;/strong> ở Toolbar.&lt;/li>
+&lt;li>Đưa chuột xuống và vẽ một hình chữ nhật bằng chuột trái ở nơi muốn đặt thước tỷ lệ. Thước tỉ lệ thường được đặt phía dưới của bản đồ.&lt;/li>
+&lt;li>Chỉnh các tham số cho Scale Bar trong Item Properties (ảnh dưới)
+&lt;ul>
+&lt;li>&lt;strong>Map&lt;/strong>: chọn khung bản đồ nào cho thước tỉ lệ này. Trong layout có thể có nhiều bản đồ khác nhau như bản đồ chính, bản đồ inset. Các bản đồ có tỉ lệ khác nhau. Vì thế khi đặt thước tỉ lệ cần xác định rõ là đặt cho bản đồ nào, thường là bản đồ chính của layout.&lt;/li>
+&lt;li>&lt;strong>Style&lt;/strong>: kiểu của thước tỷ lệ. Hãy tự thử nghiệm các kiểu thước tỷ lệ.&lt;/li>
+&lt;li>&lt;strong>Scale bar units&lt;/strong>: đơn vị của thước&lt;/li>
+&lt;li>&lt;strong>Label unit multiplier&lt;/strong>: hệ số nhân của đơn vị, ít khi dùng&lt;/li>
+&lt;li>&lt;strong>Segment&lt;/strong>: mỗi phân đoạn của thước tỷ lệ
+&lt;ul>
+&lt;li>&lt;strong>Left&lt;/strong>: bên trái gốc 0 hiển thị bao nhiêu đoạn&lt;/li>
+&lt;li>&lt;strong>Right&lt;/strong>: bên phải gốc 0 hiển thị bao nhiêu đoạn&lt;/li>
+&lt;li>&lt;strong>Fixed width&lt;/strong>: mỗi đoạn là bao nhiêu units
+&lt;figure id="figure-item-properties-của-thước-tỷ-lệ">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Item Properties của Thước tỷ lệ" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_scalenorth1_hu_cc52d5dc6991e975.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_scalenorth1_hu_fd789ef24b8f224.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_scalenorth1_hu_14fd8d750c89c2ca.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_scalenorth1_hu_cc52d5dc6991e975.webp"
+width="577"
+height="523"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Item Properties của Thước tỷ lệ
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>North Arrow&lt;/strong> (mũi tên chỉ hướng Bắc) là một ký hiệu trên bản đồ dùng để xác định hướng Bắc địa lý trên bản đồ – từ đó người đọc biết được các hướng Đông, Tây, Nam tương ứng. Nói cách khác, North Arrow giúp người đọc định hướng đúng khi đọc hoặc sử dụng bản đồ.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Để thêm mũi tên:&lt;/p>
+&lt;ul>
+&lt;li>Ấn vào biểu tượng &lt;strong>Add North Arrow&lt;/strong>&lt;/li>
+&lt;li>Đưa chuột xuống và vẽ một hình vuông bằng chuột trái ở nơi muốn đặt mũi tên. Mũi tên thường được đặt ở phía trên bên phải của bản đồ.&lt;/li>
+&lt;li>Có thể chọn lựa kiểu mũi tên như ảnh dưới.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-chọn-kiểu-mũi-tên-chỉ-hướng-bắc">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Chọn kiểu mũi tên chỉ hướng Bắc" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_scalenorth2_hu_be602a8b47fd713c.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_scalenorth2_hu_d7877ec3a9d52f0c.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_scalenorth2_hu_e4f963f0ca541aa.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_scalenorth2_hu_be602a8b47fd713c.webp"
+width="419"
+height="567"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chọn kiểu mũi tên chỉ hướng Bắc
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure id="figure-đến-bước-này-bản-đồ-của-bạn-sẽ-trông-như-thế-này">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Đến bước này, bản đồ của bạn sẽ trông như thế này" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_intermediate_hu_78c02070e92942dc.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_intermediate_hu_65608e8abc5ad636.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_intermediate_hu_d899d42ed713132c.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_intermediate_hu_78c02070e92942dc.webp"
+width="448"
+height="751"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Đến bước này, bản đồ của bạn sẽ trông như thế này
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="thêm-bảng-chú-giải-legend">Thêm bảng chú giải (Legend)&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>Bảng chú giải hay Legend là bảng ký hiệu giải thích các yếu tố được thể hiện trên bản đồ. Nó giúp người đọc hiểu ý nghĩa của các biểu tượng, màu sắc, đường nét, vùng tô màu&amp;hellip; dùng trong bản đồ.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Để thêm legend:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Ấn nút &lt;strong>Add Legend&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Đưa chuột xuống và vẽ một hình chữ nhật bằng chuột trái ở nơi muốn đặt legend.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Legend sẽ xuất hiện với đầy đủ các lớp đang mở tại cửa sổ chính của QGIS.
+&lt;figure id="figure-legend-xuất-hiện-sau-khi-thêm">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Legend xuất hiện sau khi thêm" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_legend1_hu_aae630a2fc83bd18.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_legend1_hu_275a3c81a50b5d03.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_legend1_hu_4d0ba529a61c1e60.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_legend1_hu_aae630a2fc83bd18.webp"
+width="419"
+height="656"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Legend xuất hiện sau khi thêm
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Có thể điều chỉnh legend cho hợp lý qua cửa sổ &amp;ldquo;Item Properties&amp;rdquo;. Đối với legend, có 3 phần chính ở Item Properties cần chú ý là &lt;strong>Main Properties&lt;/strong>, &lt;strong>Legend Items&lt;/strong> và &lt;strong>Fonts and Text Formatting&lt;/strong>.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Main Properties&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong>: Tiêu đề của legend.&lt;/li>
+&lt;li>&lt;strong>Map&lt;/strong>: bản đồ mà legend đang liên kết&lt;/li>
+&lt;li>&lt;strong>Wrap text on&lt;/strong>: xác định chữ cần xuống dòng nếu tiêu đề dài&lt;/li>
+&lt;li>&lt;strong>Resize to fit contents&lt;/strong>: Legend tự resize để chứa trọn vẹn nội dung&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Legend items&lt;/strong>: Bao gồm các công cụ điều chỉnh các thành phần của legend.&lt;/p>
+&lt;ul>
+&lt;li>Trước hết để chỉnh sửa được các legend items, uncheck lựa chọn &lt;strong>Auto update&lt;/strong>.&lt;/li>
+&lt;li>Các công cụ điều chỉnh theo thứ tự ảnh bên dưới: đưa lớp xuống dưới (&lt;strong>Move item down&lt;/strong>), đưa lớp lên trên (&lt;strong>Move item up&lt;/strong>), gộp nhóm (&lt;strong>Add group&lt;/strong>), thêm lớp (&lt;strong>Add leyers to legend&lt;/strong>), bớt lớp (&lt;strong>Remove selected items from legend&lt;/strong>), sửa tên item (&lt;strong>Edit selected item properties&lt;/strong>), &lt;strong>Add an expression to the vector layer and each child symbol&amp;rsquo;s label&lt;/strong>, &lt;strong>Show feature count for each class of vector layer&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-các-công-cụ-trong-legend-items">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Các công cụ trong Legend items" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_legend2_hu_f0b3446936580cd6.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_legend2_hu_e6ae9a31d819954b.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_legend2_hu_d0f2a05dd10ceb32.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_legend2_hu_f0b3446936580cd6.webp"
+width="222"
+height="34"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Các công cụ trong Legend items
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>Nếu check vào ô &lt;strong>Only show items inside linked map&lt;/strong> thì chỉ những lớp đang hiện (visible) ở Map Canvas mới được liệt kê trong legend. Việc này giúp loại nhanh những lớp không cần thiết.&lt;/li>
+&lt;li>Muốn sửa tên các lớp trong legend: có thể chọn lớp cần sửa và ấn &amp;ldquo;Edit selected item properties&amp;rdquo;, hoặc đơn giản và nhanh hơn là kích đúp chuột trái vào lớp cần sửa.
+&lt;figure id="figure-các-công-cụ-trong-legend-items-tiếp">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Các công cụ trong Legend items (tiếp)" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_legend3_hu_71567d9fe77cd404.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_legend3_hu_9006df0b11b28a2f.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_legend3_hu_918774c767a4866f.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_legend3_hu_71567d9fe77cd404.webp"
+width="486"
+height="507"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Các công cụ trong Legend items (tiếp)
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Fonts and Text Formatting&lt;/strong>: quy định font cho legend như kích cỡ và màu sắc chữ.
+&lt;figure id="figure-font-and-text-formatting">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Font and Text Formatting" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_legend4_hu_1fbadbd4e8004c91.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_legend4_hu_ee59403c99692e1f.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_legend4_hu_29a14d05dd1f257c.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_legend4_hu_1fbadbd4e8004c91.webp"
+width="356"
+height="455"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Font and Text Formatting
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Frame&lt;/strong>: nên check ô &lt;strong>Frame&lt;/strong> để tạo khung cho legend.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Đến bước này, trang in bản đồ sẽ giống như thế này:
+&lt;figure id="figure-yêu-cầu-kết-quả-đến-bước-này">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Yêu cầu kết quả đến bước này" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_result1_hu_c60d00f7c07afe5a.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_result1_hu_28abe577b0147069.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_result1_hu_fc72c7cf547efdd0.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_result1_hu_c60d00f7c07afe5a.webp"
+width="517"
+height="748"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Yêu cầu kết quả đến bước này
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="thêm-tiêu-đề-bản-đồ">Thêm tiêu đề bản đồ&lt;/h3>
+&lt;ul>
+&lt;li>Để thêm tiêu đề bản đồ, ấn vào công cụ &lt;strong>Add label&lt;/strong>.&lt;/li>
+&lt;li>Ở tab Item Properties, ô Label, bạn có thể nhập tiêu đề và sau đó điều chỉnh font.
+&lt;figure id="figure-nhập-tiêu-đề-của-bản-đồ">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Nhập tiêu đề của bản đồ" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_title_hu_bc3725ebadf5f8dc.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_title_hu_ed0996eca16037e8.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_title_hu_14a3f9b710c117e6.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_title_hu_bc3725ebadf5f8dc.webp"
+width="760"
+height="456"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Nhập tiêu đề của bản đồ
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="thiết-lập-bản-đồ-phụ-inset-map">Thiết lập bản đồ phụ (inset map)&lt;/h3>
+&lt;h3 id="thêm-ảnhhình-chụp">Thêm ảnh/hình chụp&lt;/h3>
+&lt;h3 id="thiết-lập-lưới-tọa-độ-grid">Thiết lập lưới tọa độ (grid)&lt;/h3>
+&lt;h3 id="xuất-ảnh-bản-đồ">Xuất ảnh bản đồ&lt;/h3>
+&lt;h2 id="homework">Homework&lt;/h2></description></item></channel></rss>

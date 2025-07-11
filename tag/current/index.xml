@@ -120,7 +120,12 @@ max-width: 100% !important;
 &lt;/li>
 &lt;li>
 &lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/">7. Phân tích dữ liệu không gian&lt;/a>&lt;/h5>
-&lt;p>Thực hành các công cụ phân tích không gian: merge, union, clip, intersect, symmetrical difference, reproject, buffer, Point in Polygon Analysis
+&lt;p>Thực hành các công cụ phân tích không gian: merge, union, clip, intersect, symmetrical difference, reproject, buffer, count points in polygon
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/">8. Thiết kế trang in bản đồ (Map Layouts)&lt;/a>&lt;/h5>
+&lt;p>Thiết kế bản đồ trình bày hoàn chỉnh phục vụ in ấn, xuất file ảnh/PDF, hoặc đính kèm báo cáo, luận văn, tài liệu kỹ thuật
 &lt;/p>
 &lt;/li>
 &lt;/ul>
