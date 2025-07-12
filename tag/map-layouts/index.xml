@@ -542,7 +542,329 @@ Nhập tiêu đề của bản đồ
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="thiết-lập-bản-đồ-phụ-inset-map">Thiết lập bản đồ phụ (inset map)&lt;/h3>
+&lt;p>Bản đồ inset map trong QGIS là một bản đồ nhỏ được chèn vào trong layout in ấn của bản đồ chính, nhằm cung cấp ngữ cảnh không gian bổ sung cho người xem. Nó thường dùng để:&lt;/p>
+&lt;ul>
+&lt;li>Hiển thị vị trí bản đồ chính trong một khu vực lớn hơn, ví dụ: bản đồ tỉnh nằm trong bản đồ toàn quốc.&lt;/li>
+&lt;li>Phóng to một khu vực cụ thể trên bản đồ chính để thấy chi tiết (zoom-in map).&lt;/li>
+&lt;li>So sánh các khu vực khác nhau trong cùng một bố cục.&lt;/li>
+&lt;/ul>
+&lt;h4 id="dữ-liệu-thực-hành">Dữ liệu thực hành&lt;/h4>
+&lt;p>Thực hành phần này yêu cầu dữ liệu của &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/#công-cụ-đếm-điểm-trong-vùng-count-points-in-polygon">Bài 7&lt;/a>, bao gồm các lớp:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Vietnam_dams&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Vietnam_Provinces_with_Dams_count&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h4 id="chuẩn-bị-layout">Chuẩn bị layout&lt;/h4>
+&lt;ul>
+&lt;li>Trước khi thực hành thiết kế bản đồ inset, hãy ôn lại các các phần trước bằng cách chuẩn bị layout giống như hình dưới đây:&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-chuẩn-bị-layout">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Chuẩn bị layout" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_chuanbiinset_hu_180f6db3256b9c75.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_chuanbiinset_hu_5b4ed0a4dea9d56c.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_chuanbiinset_hu_5fddeaefe8ba2a54.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_chuanbiinset_hu_180f6db3256b9c75.webp"
+width="528"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chuẩn bị layout
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h4 id="thiết-kế-bản-đồ-inset">Thiết kế bản đồ inset&lt;/h4>
+&lt;p>Nhiệm vụ của phần này là thiết kế một bản đồ inset phóng to khu vực chứa nhiều đập thủy điện nhất trên toàn quốc (tính đến 2016), đó là tỉnh Dak Lak.
+&lt;figure id="figure-tỉnh-dak-lak-nơi-chứa-nhiều-đập-thủy-điện-được-chọn-để-thiết-kế-bản-đồ-inset">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Tỉnh Dak Lak nơi chứa nhiều đập thủy điện, được chọn để thiết kế bản đồ inset" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_inset1_hu_1f3db3281a0223e2.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_inset1_hu_9ec830344856b608.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_inset1_hu_759a9d32e5015d00.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_inset1_hu_1f3db3281a0223e2.webp"
+width="760"
+height="496"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Tỉnh Dak Lak nơi chứa nhiều đập thủy điện, được chọn để thiết kế bản đồ inset
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>&lt;strong>Cách thực hiện:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Ấn &lt;strong>Add Map&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Vẽ một hình chữ nhật ở vị trí cần đặt inset map. Điều chỉnh kích thước cho phù hợp.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Phóng to khu vực Dak Lak ở bản đồ inset map, dựa vào thay đổi số ở mục &lt;strong>Scale&lt;/strong> trong &amp;ldquo;&lt;strong>Item Properties&lt;/strong>&amp;rdquo;, kết hợp với công cụ &lt;strong>Move Item Content&lt;/strong>
+&lt;figure id="figure-đặt-inset-map-vào-vị-trí-và-phóng-to-tỉnh-dak-lak">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Đặt inset map vào vị trí và phóng to tỉnh Dak Lak" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_inset2_hu_b61017326aeb2d3.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_inset2_hu_6f5505c659dc7876.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_inset2_hu_af0254959701805e.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_inset2_hu_b61017326aeb2d3.webp"
+width="760"
+height="633"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Đặt inset map vào vị trí và phóng to tỉnh Dak Lak
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Hiện tại có 2 item thuộc loại bản đồ là&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Map 1&lt;/strong>: bản đồ chính&lt;/li>
+&lt;li>&lt;strong>Map 2&lt;/strong>: bản đồ inset Dak Lak vừa mới thêm.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Dùng công cụ &lt;strong>Select/Move Item&lt;/strong> chọn khung bản đồ chính &lt;strong>Map 1&lt;/strong> &amp;gt; Ở tab &lt;strong>Item Properties&lt;/strong>, tìm mục &lt;strong>Overview&lt;/strong> bên dưới &amp;gt; Ấn dấu cộng màu xanh để thực hiện thêm Overview (&lt;strong>Add a new overview&lt;/strong>) &amp;gt; Ở mục &lt;strong>Map frame&lt;/strong> bên dưới, chọn &lt;strong>Map 2&lt;/strong> (bản đồ vùng Dak Lak).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Có thể đổi màu Frame style tùy ý, ở ví dụ này là màu vàng.
+&lt;figure id="figure-kết-quả-tạo-bản-đồ-inset-cho-vùng-dak-lak">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả tạo bản đồ inset cho vùng Dak Lak" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_inset3_hu_ac6610798b9a921.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_inset3_hu_79befd189950c585.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_inset3_hu_1ad967815a10fdb8.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_inset3_hu_ac6610798b9a921.webp"
+width="760"
+height="553"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả tạo bản đồ inset cho vùng Dak Lak
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Hiện tại nội dung &lt;strong>Map 2&lt;/strong> và hình chữ nhật màu vàng ở &lt;strong>Map 1&lt;/strong> đã có sự tương thông. Hãy thử dùng công cụ &lt;strong>Move content&lt;/strong> để di chuyển nội dung &lt;strong>Map 2&lt;/strong> từ Dak Lak về phía Bắc, bạn sẽ thấy hình vuông màu vàng ở &lt;strong>Map 1&lt;/strong> cũng di chuyển theo.&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;h3 id="thêm-ảnhhình-chụp">Thêm ảnh/hình chụp&lt;/h3>
+&lt;ul>
+&lt;li>Để thêm hình minh họa, hoặc các nội dung dạng ảnh như sơ đồ, đồ thị, hoặc hình chụp thực địa, ấn &lt;strong>Add picture&lt;/strong>.&lt;/li>
+&lt;li>Vẽ hình chữ nhật để xác định vị trí đặt ảnh.&lt;/li>
+&lt;li>Chọn mục &lt;strong>Raster image&lt;/strong> và đường dẫn của ảnh.&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-thực-hiện-thêm-ảnh-vào-layout">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thực hiện thêm ảnh vào layout" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_image_hu_9b688d92c3a96ec2.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_image_hu_e3e74297608b9b9e.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_image_hu_dac4dd342fa4c11b.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_image_hu_9b688d92c3a96ec2.webp"
+width="665"
+height="401"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thực hiện thêm ảnh vào layout
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure id="figure-kết-quả-sau-khi-tạo-inset-map-và-thêm-ảnh">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả sau khi tạo inset map và thêm ảnh" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_result2_hu_cdc3e1037fdfa116.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_result2_hu_7d821ee080b3187f.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_result2_hu_e58b896c71df10a8.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_result2_hu_cdc3e1037fdfa116.webp"
+width="528"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả sau khi tạo inset map và thêm ảnh
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
 &lt;h3 id="thiết-lập-lưới-tọa-độ-grid">Thiết lập lưới tọa độ (grid)&lt;/h3>
+&lt;p>Trong QGIS, lưới tọa độ là hệ thống các đường ngang dọc biểu diễn tọa độ địa lý hoặc tọa độ phẳng (Projected Coordinates), được chèn vào Print Layout (bố cục in) để:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Giúp người đọc xác định vị trí trên bản đồ theo tọa độ.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Thể hiện rõ hệ tọa độ sử dụng (ví dụ: WGS 84, VN-2000, UTM,&amp;hellip;).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Là yêu cầu kỹ thuật phổ biến trong bản đồ chuyên đề, bản đồ địa chính, v.v.&lt;br>
+&lt;strong>Cách thực hiện:&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Chọn bản đồ cần kẻ lưới tọa độ (&lt;strong>Map 1&lt;/strong>) bằng công cụ &lt;strong>Select/Move Items&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Ở tab &lt;strong>Item Properties&lt;/strong>, tìm mục &lt;strong>Grids&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Ấn dấu cộng màu xanh (Add a new grid) để thêm một đối tượng lưới tọa độ Grids &amp;gt; Ô phía dưới sẽ hiện một lưới tên mặc định là Grid1
+&lt;figure id="figure-khởi-tạo-lưới-tọa-độ">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Khởi tạo lưới tọa độ" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_grid1_hu_443c9b2d82aea000.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_grid1_hu_59d358ac72d94ceb.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_grid1_hu_2fccf500c51d3442.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_grid1_hu_443c9b2d82aea000.webp"
+width="396"
+height="552"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Khởi tạo lưới tọa độ
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Ấn nút &lt;strong>Modify Grid &amp;hellip;&lt;/strong> để vào thiết lập các tham số tạo lưới&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Các tham số hiển thị (&lt;strong>Appearence&lt;/strong>):&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Grid Style&lt;/strong>: kiểu lưới: nét liền, nét đứt, kiểu dấu cộng, dấu ở các cạnh của khung&amp;hellip;&lt;/li>
+&lt;li>&lt;strong>CRS&lt;/strong>: Hệ tọa độ của lưới. Với ví dụ này, khu vực là lãnh thổ đất liền Việt Nam thì nên chọn hệ tọa độ Địa lý (WGS84)&lt;/li>
+&lt;li>&lt;strong>Interval&lt;/strong>: Khoảng cách giữa các đường kẻ. Tùy và phạm vi khu vực bản đồ và hệ quy chiếu tọa độ (CRS) mà cần đặt những giá trị interval hợp lý. Ở ví dụ này với hệ WGS84, đơn vị là độ địa lý, interval của cả trục X và Y có thể đặt là 4 độ, nghĩa là các lưới kinh tuyến, vĩ tuyến có khoảng cách 4 độ.&lt;/li>
+&lt;li>&lt;strong>Line style&lt;/strong>: Đổi màu đường kẻ lưới
+&lt;figure id="figure-khởi-tạo-lưới-tọa-độ">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Khởi tạo lưới tọa độ" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_grid2_hu_e9ff50dafc8b0bd0.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_grid2_hu_42baa32b01f62cfa.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_grid2_hu_3df1e2648e1e94be.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_grid2_hu_e9ff50dafc8b0bd0.webp"
+width="738"
+height="417"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Khởi tạo lưới tọa độ
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Các tham số khung bản đồ (&lt;strong>Frame&lt;/strong>)&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Frame style&lt;/strong>: Kiểu khung: thường để kiểu ngựa vằn.
+&lt;figure id="figure-khung-bản-đồ">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Khung bản đồ" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_grid3_hu_8af7819cc2ea9aa0.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_grid3_hu_36dfaec34f92fa3e.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_grid3_hu_60af51f5a9ac212e.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_grid3_hu_8af7819cc2ea9aa0.webp"
+width="669"
+height="558"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Khung bản đồ
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Các tham số hiển thị tọa độ (&lt;strong>Draw Coordinates&lt;/strong>)&lt;/p>
+&lt;ul>
+&lt;li>Format: định dạng của chữ tọa độ, thường chọn Độ, Phút với hậu tố. Ví dụ: 108°0′E&lt;/li>
+&lt;li>Định hướng của chữ tọa độ: bên trái nên sửa thành Vertical Ascending, bên phải nên sửa thành Vertical Descending.&lt;/li>
+&lt;li>Coordinate Precision: số chữ số thập phân của giá trị tọa độ. Tùy vào phạm vi của bản đồ rộng hay hẹp mà quyết định.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-thiết-lập-hiển-thị-tọa-độ">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập hiển thị tọa độ" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_grid4_hu_a26e2cf8e1c57393.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_grid4_hu_3d31d11ac3a0d81e.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_grid4_hu_21518ca5c3a14ad0.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_grid4_hu_a26e2cf8e1c57393.webp"
+width="679"
+height="577"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập hiển thị tọa độ
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure id="figure-kết-quả-sau-khi-kẻ-lưới-tọa-độ">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả sau khi kẻ lưới tọa độ" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_grid5_hu_cf80a7fe39d1b8fb.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_grid5_hu_749a603810207861.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_grid5_hu_aaa06f6f3e9eef66.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_grid5_hu_cf80a7fe39d1b8fb.webp"
+width="537"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả sau khi kẻ lưới tọa độ
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;h3 id="xuất-ảnh-bản-đồ">Xuất ảnh bản đồ&lt;/h3>
-&lt;h2 id="homework">Homework&lt;/h2></description></item></channel></rss>
+&lt;p>Có thể xuất bản đồ dạng ảnh hoặc dạng *.pdf.
+Cách thực hiện: trong layout view:&lt;/p>
+&lt;ul>
+&lt;li>Xuất dạng ảnh: &lt;strong>Layout &amp;gt; Export as image&lt;/strong>&lt;/li>
+&lt;li>Xuất dạng pdf: &lt;strong>Layout &amp;gt; Export as PDF&lt;/strong>
+&lt;figure id="figure-xuất-bản-đồ-dạng-pdf">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Xuất bản đồ dạng PDF" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_export2_hu_3d168362a33b5e42.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_export2_hu_a1bae4145b074221.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_export2_hu_95c6b4c3e23bd4b4.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_export2_hu_3d168362a33b5e42.webp"
+width="760"
+height="590"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Xuất bản đồ dạng PDF
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="homework">Homework&lt;/h2>
+&lt;h3 id="homework-phần-1">Homework phần 1&lt;/h3>
+&lt;p>Sử dụng các lớp dữ liệu đã số hóa ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/#homework">Bài 3&lt;/a> để thiết kế một layout như hình dưới:
+&lt;figure id="figure-yêu-cầu-kết-quả-homework-phần-1">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Yêu cầu kết quả homework phần 1" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_homework1_hu_74fb196ad9dad964.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_homework1_hu_7fd73bd05214e13b.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_homework1_hu_fd347252c4a20242.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_homework1_hu_74fb196ad9dad964.webp"
+width="760"
+height="523"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Yêu cầu kết quả homework phần 1
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="homework-phần-2">Homework phần 2&lt;/h3>
+&lt;p>Mở layout đã tạo ở homework phần 1 và bổ sung các thành phần bản đồ sau:&lt;/p>
+&lt;ul>
+&lt;li>Tiêu đề&lt;/li>
+&lt;li>Inset map: có thể phóng to một khu vực số hóa nhiều buildings.&lt;/li>
+&lt;li>Image: lấy ảnh minh họa nào đó trên internet.&lt;/li>
+&lt;/ul>
+&lt;h3 id="homework-phần-3">Homework phần 3&lt;/h3>
+&lt;ul>
+&lt;li>Export layout đã tạo ở homework phần 1 ra ảnh kèm theo &lt;strong>world file&lt;/strong>. Xem lại world file ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/#thiết-lập-tham-số-xuất-ảnh-export-settings">đây&lt;/a>&lt;/li>
+&lt;li>Load ảnh có world file vừa export lên Map canvas để trải nghiệm chức năng của world file.
+&lt;figure id="figure-load-ảnh-có-world-file-lên-map-canvas">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Load ảnh có world file lên Map canvas" srcset="
+/onlinecourse/course/gis/8_layout/8_layout_homework2_hu_71e80f4473596a09.webp 400w,
+/onlinecourse/course/gis/8_layout/8_layout_homework2_hu_f578f67e53f192f4.webp 760w,
+/onlinecourse/course/gis/8_layout/8_layout_homework2_hu_f1c97ab1111cf69b.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_homework2_hu_71e80f4473596a09.webp"
+width="760"
+height="403"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Load ảnh có world file lên Map canvas
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>
