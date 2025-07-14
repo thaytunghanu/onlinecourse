@@ -4194,4 +4194,826 @@ loading="lazy" data-zoomable />&lt;/div>
 Load ảnh có world file lên Map canvas
 &lt;/figcaption>&lt;/figure>
 &lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul></description></item><item><title>9. Xử lý dữ liệu raster</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/</guid><description>&lt;p>Xử lý dữ liệu raster DEM, phân tích Contours, Slope, Hillshade and Aspect. Giới thiệu các nguồn dữ liệu GIS online.&lt;/p>
+&lt;p>Bài này sẽ hướng dẫn các chức năng xử lý dữ liệu raster. Lý thuyết về dữ liệu raster đã được trình bày ở slide này:&lt;/p>
+&lt;div class="responsive-wrap">
+&lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRhY2dq8ffRYOz8n5nAJuXocD7KMNny40vifOgPkbBM_9ifMhntTOhx6M7Yk1JQHw/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
+&lt;/div>
+&lt;ul>
+&lt;li>
+&lt;p>Trong bài này, bạn sẽ sử dụng dữ liệu raster &lt;strong>Mô hình Độ cao Số (DEM)&lt;/strong>. DEM là một dạng dữ liệu không gian (raster) biểu diễn độ cao của địa hình bề mặt Trái Đất tại các điểm khác nhau, thường dưới dạng lưới ô vuông (grid), trong đó mỗi pixel chứa giá trị độ cao (so với mực nước biển trung bình).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>DEM là nền tảng cơ bản cho rất nhiều ứng dụng trong GIS và phân tích không gian, ví dụ:&lt;/p>
+&lt;ul>
+&lt;li>🌄 Tạo bản đồ địa hình: Tạo đường đồng mức, bản đồ bóng đổ địa hình (hillshade)&lt;/li>
+&lt;li>💧 Phân tích thủy văn: Mô hình dòng chảy, xác định lưu vực, hướng chảy&lt;/li>
+&lt;li>🚧 Quy hoạch hạ tầng: Phân tích độ dốc, chọn vị trí xây dựng&lt;/li>
+&lt;li>🌋 Mô phỏng thiên tai: Dự báo vùng lũ, lở đất&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Các nguồn dữ liệu DEM phổ biến:&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Nguồn cung cấp&lt;/th>
+&lt;th>Độ phân giải&lt;/th>
+&lt;th>Miễn phí&lt;/th>
+&lt;th>Tiếp cận&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>SRTM (NASA)&lt;/td>
+&lt;td>~30m (1 arc-second)&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>&lt;a href="https://dwtkns.com/srtm30m/" target="_blank" rel="noopener">dwtkns&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ASTER GDEM&lt;/td>
+&lt;td>~30m&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>&lt;a href="https://www.earthdata.nasa.gov/data/catalog/lpcloud-astgtm-003" target="_blank" rel="noopener">earthdata&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ALOS&lt;/td>
+&lt;td>~12.5m&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>&lt;a href="https://search.asf.alaska.edu/" target="_blank" rel="noopener">ASF&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>GMTED USGS&lt;/td>
+&lt;td>30-, 15-, and 7.5-arc-second&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>&lt;a href="https://earthexplorer.usgs.gov/" target="_blank" rel="noopener">earthexplorer&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>LiDAR-based DEM&lt;/td>
+&lt;td>1–5m hoặc tốt hơn&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;td>cơ quan chức năng&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="dữ-liệu-thực-hành">Dữ liệu thực hành&lt;/h2>
+&lt;ul>
+&lt;li>Trong bài này, chúng ta sẽ thực hành dựa trên dữ liệu GMTED USGS. Nội dung thực hành sẽ có phần hướng dẫn tải dữ liệu DEM GMTED. Tuy nhiên, trong trường hợp bạn không thể tải được dữ liệu từ nguồn chính thức (do website bảo trì, do kết nối &amp;hellip;) thì có thể tải ở đây: &lt;a href="https://drive.google.com/drive/folders/1bvdMtscDVyeXNKtNavvLjSfQNULW7TDc?usp=drive_link" target="_blank" rel="noopener">Download dữ liệu Dataset Part 9&lt;/a>, bao gồm:
+&lt;ul>
+&lt;li>&lt;strong>10n090e_20101117_gmted_mea300.tif&lt;/strong>: DEM mảnh phía Bắc Việt Nam, độ phân giải 30-arc-second, 10n090e là tọa độ điểm góc phía dưới bên trái của file raster (10° vĩ Bắc, 90° kinh Đông).&lt;/li>
+&lt;li>&lt;strong>10s090e_20101117_gmted_mea300.tif&lt;/strong>: DEM mảnh phía Nam Việt Nam, độ phân giải 30-arc-second&lt;/li>
+&lt;li>&lt;strong>10n090e_20101117_gmted_mea075.tif&lt;/strong>: DEM mảnh phía Bắc Việt Nam, độ phân giải 7.5-arc-second&lt;/li>
+&lt;li>&lt;strong>10s090e_20101117_gmted_mea075.tif&lt;/strong>: DEM mảnh phía Nam Việt Nam, độ phân giải 7.5-arc-second&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="hướng-dẫn-download-dữ-liệu-dem-gmted">Hướng dẫn download dữ liệu DEM GMTED&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>Dữ liệu DEM GMTED (viết tắt của Global Multi-resolution Terrain Elevation Data 2010) là một bộ mô hình số độ cao toàn cầu do USGS (Cơ quan Khảo sát Địa chất Hoa Kỳ) và NGA (Cơ quan Bản đồ Quốc gia Hoa Kỳ) phát hành vào năm 2010 để thay thế và cải tiến so với GTOPO30 – một DEM toàn cầu trước đó. GMTED được tạo ra từ SRTM, ASTER GDEM, GTOPO30, ICESat, và nhiều nguồn khác. Tuy có độ phân giải thấp, ưu điểm của GMTED2010 là ổn định, phủ toàn cầu, có nhiều biến thống kê, phù hợp cho bản đồ tỷ lệ nhỏ.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Phần này sẽ hướng dẫn cách download GMTED2010 từ &lt;a href="https://earthexplorer.usgs.gov/" target="_blank" rel="noopener">USGS earthexplorer&lt;/a>.&lt;br>
+&lt;strong>Cách thực hiện:&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Truy cập trang của Cục Khảo sát Địa chất Hoa Kỳ: &lt;a href="https://earthexplorer.usgs.gov/" target="_blank" rel="noopener">https://earthexplorer.usgs.gov/&lt;/a>. Để tải dữ liệu, hệ thống sẽ yêu cầu đăng ký tài khoản.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Xác định khu vực cần download DEM: Ở tab &lt;strong>Search Criteria&lt;/strong> ấn &lt;strong>Use Map&lt;/strong> &amp;gt; Điều chỉnh các điểm markers để giới hạn chính xác vùng cần tải DEM bằng cách kéo và thả
+&lt;figure id="figure-xác-định-khu-vực-cần-tải-dem">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Xác định khu vực cần tải DEM" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_download_hu_51ca1094e00f8a9a.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_download_hu_8c3fd680c7a3232.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_download_hu_63063af75a6fb580.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_download_hu_51ca1094e00f8a9a.webp"
+width="760"
+height="352"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Xác định khu vực cần tải DEM
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Chọn tab &lt;strong>Data Sets&lt;/strong> &amp;gt; Tìm mục &lt;strong>Digital Elevation&lt;/strong> &amp;gt; Tìm và chọn mục &lt;strong>GMTED2010&lt;/strong>
+&lt;figure id="figure-chọn-gmted">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Chọn GMTED" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_download2_hu_86bf81ffb055be11.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_download2_hu_d9e2eb7007c59d1e.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_download2_hu_5b20e15567c315c5.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_download2_hu_86bf81ffb055be11.webp"
+width="760"
+height="454"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chọn GMTED
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Chuyển sang tab &amp;ldquo;&lt;strong>Results&lt;/strong>&amp;rdquo; &amp;gt; Download cả 2 mảnh dữ liệu xuất hiện trên ở Result, chọn download bản có độ phân giải 7.5-arc-second và 30-arc-second. Sẽ có phần yêu cầu thực hiện cả 2 phiên bản để so sánh chất lượng. Bạn có thể kiểm tra độ phủ của từng mảnh dữ liệu bằng nút &lt;strong>Footprint&lt;/strong> (hình bàn chân).
+&lt;figure id="figure-tải-các-mảnh-dữ-liệu-gmted">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Tải các mảnh dữ liệu GMTED" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_download3_hu_cfbc70e0aa036dd.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_download3_hu_eaeef35cf3e1b1c2.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_download3_hu_55284574aeed573b.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_download3_hu_cfbc70e0aa036dd.webp"
+width="760"
+height="480"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Tải các mảnh dữ liệu GMTED
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="xử-lý-dữ-liệu-gmted">Xử lý dữ liệu GMTED&lt;/h2>
+&lt;h3 id="thêm-dữ-liệu-vào-map-canvas">Thêm dữ liệu vào Map Canvas&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Layer&amp;gt; Add Layer&amp;gt; Add Raster Layer&lt;/strong>&lt;/li>
+&lt;li>Hoặc dùng &lt;strong>Open Data Source Manager&lt;/strong> ở Main Toolbar&lt;/li>
+&lt;li>Hoặc kéo thả ở &lt;strong>Browser&lt;/strong> panel
+&lt;figure id="figure-thêm-dữ-liệu-raster">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thêm dữ liệu raster" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_adddata_hu_59973e926c7eeac7.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_adddata_hu_a7438dcae3b694b8.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_adddata_hu_73074c793e935db0.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_adddata_hu_59973e926c7eeac7.webp"
+width="760"
+height="458"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thêm dữ liệu raster
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;li>Mỗi pixel ở dữ liệu này mang giá trị độ cao so với mực nước biến, đơn vị là mét.&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-note">
+&lt;div>
+Tip:
+Có một Plugin hữu ích đối với dữ liệu raster là &lt;strong>Value Tool&lt;/strong>. Plugin này sẽ hiển thị giá trị pixel ở điểm mà chuột đang đứng trên.
+&lt;/div>
+&lt;/div>
+&lt;p>
+&lt;figure id="figure-plugin-value-tool">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Plugin Value Tool" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_adddata2_hu_6cf6e68bb5a034f0.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_adddata2_hu_77329c5893c00080.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_adddata2_hu_18c4208e754c1ae9.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_adddata2_hu_6cf6e68bb5a034f0.webp"
+width="760"
+height="363"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Plugin Value Tool
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure id="figure-giá-trị-pixel-được-hiển-thị-ở-value-tool-panel">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Giá trị pixel được hiển thị ở Value Tool panel" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_adddata3_hu_a4d81d87a0e4a664.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_adddata3_hu_dba0e6c9f64a9517.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_adddata3_hu_6e9b3044832b1775.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_adddata3_hu_a4d81d87a0e4a664.webp"
+width="760"
+height="316"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Giá trị pixel được hiển thị ở Value Tool panel
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="ghép-mảnh-dữ-liệu-raster-tile-mosaicmerging">Ghép mảnh dữ liệu (Raster tile Mosaic/Merging)&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>Chức năng này sẽ giúp ghép 2 mảnh dữ liệu Bắc Việt Nam và Nam Việt Nam thành một mảnh lớn.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Gọi chức năng Merge: &lt;strong>Raster &amp;gt; Miscellaneous &amp;gt; Merge&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Thiết lập đầu vào và đặt tên file raster đầu ra. Do cả 2 file raster đầu vào chỉ có kiểu dữ liệu là &lt;strong>Int16 - Sixteen bit signed integer&lt;/strong>, nên thay vì đặt &lt;strong>Float32&lt;/strong> cho file đầu ra, chỉ cần đặt &lt;strong>Int16&lt;/strong> như đầu vào là đủ. Việc này để tránh dung lượng nặng, kéo dài thời gian xử lý.
+&lt;figure id="figure-thiết-lập-đầu-vào-và-đầu-ra-cho-merge-raster">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập đầu vào và đầu ra cho Merge raster" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_merge_hu_50f263f57e127b7f.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_merge_hu_b108cecc5730c29e.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_merge_hu_5ae8451ac02a7d7c.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_merge_hu_50f263f57e127b7f.webp"
+width="760"
+height="329"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập đầu vào và đầu ra cho Merge raster
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Kết quả, 2 mảnh dữ liệu chứa lãnh thổ Việt Nam đã được ghép lại thành một mảnh chứa toàn bộ lãnh thổ Việt Nam.
+&lt;figure id="figure-kết-quả-merge-raster">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả Merge raster" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_merge2_hu_b9e86bd2497105d2.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_merge2_hu_cdfffc1e85846d52.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_merge2_hu_fda901f7c9703339.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_merge2_hu_b9e86bd2497105d2.webp"
+width="760"
+height="523"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả Merge raster
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="cắt-dữ-liệu-raster-clipping-a-raster-dataset">Cắt dữ liệu raster (Clipping a Raster Dataset)&lt;/h3>
+&lt;ul>
+&lt;li>Chức năng này sẽ giúp cắt dữ liệu raster theo một ranh giới hành chính.&lt;/li>
+&lt;li>Để tập chung vào vùng nghiên cứu là &lt;strong>phần đất liền Việt Nam&lt;/strong> (không bao gồm đảo và quần đảo), chúng ta sẽ cắt file raster theo ranh giới phần đất liền Việt Nam.&lt;/li>
+&lt;li>Gọi chức năng Clip Raster: &lt;strong>Raster &amp;gt; Extraction &amp;gt; Clip Raster by Mask Layer&lt;/strong>&lt;/li>
+&lt;li>Thiết lập tham số:
+&lt;ul>
+&lt;li>&lt;strong>Input layer&lt;/strong>: file raster &lt;strong>Vietnam_mosaic&lt;/strong> sau khi merge&lt;/li>
+&lt;li>&lt;strong>Mask layer&lt;/strong>: Ranh giới phần đất liền Việt Nam: &lt;strong>Vietnam_Provinces&lt;/strong>&lt;/li>
+&lt;li>Đặt tên file output: &lt;strong>Vietnam_mosaic_clipped.tif&lt;/strong>
+&lt;figure id="figure-thiết-lập-tham-số-clip">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập tham số clip" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_clip_hu_cddfef32b158da44.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_clip_hu_9160798c331cf40a.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_clip_hu_e6c7d9d74d48d83c.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_clip_hu_cddfef32b158da44.webp"
+width="760"
+height="353"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập tham số clip
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-kết-quả-sau-khi-clip-raster-diện-tích-phần-đất-liền-của-việt-nam-không-bao-gồm-đảo-và-quần-đảo">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả sau khi clip raster: diện tích phần đất liền của Việt Nam, không bao gồm đảo và quần đảo" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_clip2_hu_7576d14214f72e5f.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_clip2_hu_3f3516252b3e4666.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_clip2_hu_6d2688c3ab8c6e9e.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_clip2_hu_7576d14214f72e5f.webp"
+width="354"
+height="446"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả sau khi clip raster: diện tích phần đất liền của Việt Nam, không bao gồm đảo và quần đảo
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="hiển-thị-ký-hiệu-bản-đồ-đối-với-raster-symbology-of-a-raster-dataset">Hiển thị ký hiệu bản đồ đối với raster (Symbology of a Raster Dataset)&lt;/h3>
+&lt;ul>
+&lt;li>Tương tự như với vector, dữ liệu raster có nhiều kiểu hiển thị bản đồ khác nhau hỗ trợ hiệu quả việc trực quan hóa bản đồ.
+&lt;figure id="figure-hiển-thị-symbology-kiểu-hillshade">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Hiển thị symbology: kiểu hillshade" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_symbology1_hu_a3a4a98b6717621b.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_symbology1_hu_9ccf1741c5ae929a.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_symbology1_hu_c8d4b71d82a0370e.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_symbology1_hu_a3a4a98b6717621b.webp"
+width="760"
+height="529"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Hiển thị symbology: kiểu hillshade
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-hiển-thị-symbology-kiểu-singleband-pseudocolor">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Hiển thị symbology: kiểu Singleband pseudocolor" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_symbology2_hu_be5a5107534a9e2f.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_symbology2_hu_e114dcee70fbe2fd.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_symbology2_hu_3017af5893bdfae2.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_symbology2_hu_be5a5107534a9e2f.webp"
+width="760"
+height="320"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Hiển thị symbology: kiểu Singleband pseudocolor
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="phân-tích-contour">Phân tích contour&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Contour&lt;/strong> (trong bản đồ và GIS) là các đường đồng mức – các đường nối các điểm có cùng giá trị độ cao (elevation) trên bề mặt địa hình. Các đường Contour giúp ta hiểu được hình dạng và độ dốc của bề mặt đất (núi, thung lũng, dốc, v.v.) mà không cần nhìn thực tế.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Thông thường trên bản đồ địa hình, mỗi đường contour cách nhau một mức độ cao nhất định, gọi là &lt;strong>contour interval&lt;/strong> (ví dụ: Nếu contour interval là 10m, các đường sẽ lần lượt biểu diễn độ cao 100m, 110m, 120m&amp;hellip;)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Các đường contour không bao giờ cắt nhau. Khoảng cách giữa các đường contour biểu thị độ dốc: Gần nhau → dốc; Xa nhau → thoải. Với đồi tròn các đường contour sẽ tạo những vòng tròn đồng tâm.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Contour thường tạo thành vòng khép kín (dù không hiển thị toàn bộ trên bản đồ).
+&lt;figure id="figure-minh-họa-về-đường-contour">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Minh họa về đường contour" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_contour_hu_adfcd8b2b4fcb288.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_contour_hu_b8d545d1eefb29ca.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_contour_hu_d7ce4cb14cc67e40.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_contour_hu_adfcd8b2b4fcb288.webp"
+width="724"
+height="512"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Minh họa về đường contour
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Nhiệm vụ của phần này là tạo các đường contour dựa trên dữ liệu &lt;strong>Vietnam_mosaic_clipped.tif&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Cách thực hiện:&lt;/p>
+&lt;ul>
+&lt;li>Gọi công cụ: &lt;strong>Raster &amp;gt; Extraction &amp;gt; Contour&lt;/strong> hoặc tìm Contour ở &lt;strong>Processing Toolbox&lt;/strong>&lt;/li>
+&lt;li>Nhập các tham số:
+&lt;ul>
+&lt;li>
+&lt;p>Input: &lt;strong>Vietnam_mosaic_clipped.tif&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Interval between contour lines: nhập 500, nghĩa là 500m&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Nhập output.
+&lt;figure id="figure-thiết-lập-tham-số-phân-tích-contour">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập tham số phân tích contour" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_contour2_hu_39f80f5665dcb4af.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_contour2_hu_8d14874c3ee570ec.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_contour2_hu_c3cff7afddbdfdda.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_contour2_hu_39f80f5665dcb4af.webp"
+width="760"
+height="414"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập tham số phân tích contour
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-kết-quả">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_contour3_hu_40ae1932c22e8aaf.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_contour3_hu_4849302fed16b58b.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_contour3_hu_61a2a001454cf2bf.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_contour3_hu_40ae1932c22e8aaf.webp"
+width="760"
+height="439"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Bật nền Google Terrain để so sánh kết quả và Google Maps ở khu vực đỉnh Phu Si Lung, Muong Te, Lai Chau:
+&lt;figure id="figure-so-sánh-kết-quả-contour-và-bản-đồ-nền-google-terrain">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="So sánh kết quả contour và Bản đồ nền Google Terrain" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_contour4_hu_f3de6acf206b9ac7.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_contour4_hu_63bb2c977b37697a.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_contour4_hu_62a0e6ea57861a3.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_contour4_hu_f3de6acf206b9ac7.webp"
+width="760"
+height="408"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+So sánh kết quả contour và Bản đồ nền Google Terrain
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="phân-tích-độ-dốc-slope">Phân tích độ dốc (Slope)&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>Phân tích độ dốc (&lt;strong>Slope&lt;/strong>) trong GIS là quá trình tính toán và biểu diễn độ dốc (độ nghiêng) của bề mặt địa hình dựa trên dữ liệu DEM (Digital Elevation Model). Đây là một kỹ thuật cơ bản nhưng cực kỳ quan trọng trong phân tích địa hình, quy hoạch, môi trường, xây dựng, v.v.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Độ dốc là mức độ thay đổi độ cao của địa hình trên một khoảng cách nhất định. Có thể biểu diễn theo:&lt;/p>
+&lt;ul>
+&lt;li>Phần trăm (%): hay dùng trong xây dựng và kỹ thuật.&lt;/li>
+&lt;li>Độ (°): dùng phổ biến trong bản đồ địa hình.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Ý nghĩa của độ dốc trong thực tế:&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Độ dốc (°)&lt;/th>
+&lt;th>Mô tả địa hình&lt;/th>
+&lt;th>Ứng dụng thực tế&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>0–5°&lt;/td>
+&lt;td>Địa hình bằng&lt;/td>
+&lt;td>Quy hoạch đô thị, giao thông dễ&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>5–15°&lt;/td>
+&lt;td>Dốc nhẹ&lt;/td>
+&lt;td>Có thể trồng trọt, quy hoạch xây dựng&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>15–30°&lt;/td>
+&lt;td>Dốc vừa&lt;/td>
+&lt;td>Hạn chế xây dựng, có nguy cơ xói mòn&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&amp;gt;30°&lt;/td>
+&lt;td>Dốc cao&lt;/td>
+&lt;td>Nguy hiểm sạt lở, ít thích hợp sử dụng&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ul>
+&lt;li>
+&lt;p>Ứng dụng của phân tích độ dốc:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Lĩnh vực&lt;/th>
+&lt;th>Ứng dụng cụ thể&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>🌧️ Thủy văn&lt;/td>
+&lt;td>Xác định hướng dòng chảy, tốc độ nước chảy&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>🏘️ Quy hoạch&lt;/td>
+&lt;td>Chọn vị trí xây dựng phù hợp&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>🌿 Nông nghiệp&lt;/td>
+&lt;td>Thiết kế canh tác theo đường đồng mức&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>🌋 Đánh giá thiên tai&lt;/td>
+&lt;td>Xác định vùng có nguy cơ lũ quét, sạt lở đất&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>🛤️ Giao thông&lt;/td>
+&lt;td>Thiết kế tuyến đường tối ưu theo địa hình&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/li>
+&lt;li>
+&lt;p>Nhiệm vụ thực hành ở phần này là phân tích độ dốc từ file &lt;strong>Vietnam_mosaic_clipped.tif&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Cách thực hiện:&lt;/p>
+&lt;ul>
+&lt;li>Gọi công cụ: &lt;strong>Raster &amp;gt; Analysis &amp;gt; Slope&lt;/strong> hoặc dùng &lt;strong>Processing Toolbox&lt;/strong>&lt;/li>
+&lt;li>Nhập các tham số:
+&lt;ul>
+&lt;li>
+&lt;p>Input&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Ratio of vertical units to horizontal: là tỷ lệ đơn vị chiều thẳng đứng so với đơn vị chiều ngang. Nếu hệ tọa độ của lớp input là hệ tọa độ địa lý EPSG:4326, đơn vị là độ, thì cần nhập số &lt;strong>111000&lt;/strong> thay cho số 1. Vì 1 độ = 111000 m. Nếu hệ tọa độ của lớp input là VN-2000 EPSG:3405 với đơn vị là m, thì nhập số 1.
+&lt;figure id="figure-thiết-lập-tham-số-phân-tích-độ-dốc">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập tham số phân tích độ dốc" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_slope_hu_8fe6169f30113302.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_slope_hu_84c64ab78123d0e5.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_slope_hu_34f6232973014799.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_slope_hu_8fe6169f30113302.webp"
+width="760"
+height="540"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập tham số phân tích độ dốc
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Nếu không tick vào tùy chọn &lt;strong>Slope expressed as percent instead of degrees&lt;/strong> thì đơn vị của file đầu ra là độ, biến thiên từ 0-90. Nếu chọn tick vào mục đó, thì đơn vị là %, biến thiên từ 0-100.
+&lt;figure id="figure-kết-quả-phân-tích-độ-dốc-hãy-kiểm-tra-giá-trị-pixel-một-vài-điểm">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả phân tích độ dốc, hãy kiểm tra giá trị pixel một vài điểm" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_slope2_hu_d19565dde6be53b0.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_slope2_hu_8f19cdcdf1242556.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_slope2_hu_c94babbd4e772f50.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_slope2_hu_d19565dde6be53b0.webp"
+width="760"
+height="409"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả phân tích độ dốc, hãy kiểm tra giá trị pixel một vài điểm
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="phân-tích-bóng-địa-hình-hillshade">Phân tích bóng địa hình (Hillshade)&lt;/h3>
+&lt;ul>
+&lt;li>Phân tích bóng địa hình (&lt;strong>Hillshade&lt;/strong>) trong GIS là kỹ thuật tạo ra một lớp raster hiển thị ảnh bóng đổ mô phỏng ánh sáng chiếu lên địa hình, giúp tăng tính trực quan và cảm nhận không gian của bản đồ địa hình từ dữ liệu DEM.&lt;/li>
+&lt;li>Hillshade trông như thế nào:
+&lt;ul>
+&lt;li>&lt;strong>Màu sáng&lt;/strong>: mặt nghiêng về phía nguồn sáng.&lt;/li>
+&lt;li>&lt;strong>Màu tối&lt;/strong>: mặt khuất sáng hoặc sườn dốc ngược hướng ánh sáng.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Ứng dụng của Hillshade:&lt;/li>
+&lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Lĩnh vực&lt;/th>
+&lt;th>Ứng dụng cụ thể&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>🌧️ Thủy văn&lt;/td>
+&lt;td>Xác định hướng dòng chảy, tốc độ nước chảy&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>🏘️ Quy hoạch&lt;/td>
+&lt;td>Chọn vị trí xây dựng phù hợp&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>🌿 Nông nghiệp&lt;/td>
+&lt;td>Thiết kế canh tác theo đường đồng mức&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>🌋 Đánh giá thiên tai&lt;/td>
+&lt;td>Xác định vùng có nguy cơ lũ quét, sạt lở đất&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>🛤️ Giao thông&lt;/td>
+&lt;td>Thiết kế tuyến đường tối ưu theo địa hình&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ul>
+&lt;li>
+&lt;p>Nhiệm vụ thực hành ở phần này là phân tích hillshade từ file &lt;strong>Vietnam_mosaic_clipped.tif&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Cách thực hiện:&lt;/p>
+&lt;ul>
+&lt;li>Gọi công cụ: &lt;strong>Raster &amp;gt; Analysis &amp;gt; Hillshade&lt;/strong> hoặc dùng &lt;strong>Processing Toolbox&lt;/strong>&lt;/li>
+&lt;li>Nhập các tham số:
+&lt;ul>
+&lt;li>&lt;strong>Azimuth of the light&lt;/strong>: góc phương vị, mặc định: 315° (tây bắc)&lt;/li>
+&lt;li>&lt;strong>Altitude of the light&lt;/strong>: độ cao mặt trời (Góc nâng mặt trời), mặc định: 45°&lt;/li>
+&lt;li>&lt;strong>Z factor&lt;/strong>: hệ số nhân chiều dọc, để tăng sự tương phản địa hình.&lt;/li>
+&lt;li>&lt;strong>Scale&lt;/strong>: là tỷ lệ đơn vị chiều thẳng đứng so với đơn vị chiều ngang. Đã đề cập ở phần phân tích độ dốc.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-giải-thích-về-azimuth-và-altitude-of-the-light-nguồn-ảnhhttpsdocsqgisorg340endocsuser_manualprocessing_algsqgisrasterterrainanalysishtml">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Giải thích về azimuth và altitude of the light. [Nguồn ảnh](https://docs.qgis.org/3.40/en/docs/user_manual/processing_algs/qgis/rasterterrainanalysis.html) " srcset="
+/onlinecourse/course/gis/9_raster/9_raster_hillshade2_hu_20e86216f7b56f6e.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_hillshade2_hu_cfe247bb25606213.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_hillshade2_hu_7500d1f3c7651d68.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_hillshade2_hu_20e86216f7b56f6e.webp"
+width="600"
+height="514"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Giải thích về azimuth và altitude of the light. &lt;a href="https://docs.qgis.org/3.40/en/docs/user_manual/processing_algs/qgis/rasterterrainanalysis.html" target="_blank" rel="noopener">Nguồn ảnh&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure id="figure-thiết-lập-tham-số-phân-tích-hillshade">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập tham số phân tích hillshade" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_hillshade_hu_b2cc9e2171c4d9e5.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_hillshade_hu_4ff3c5e19b8b511f.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_hillshade_hu_99355f760a51fa97.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_hillshade_hu_b2cc9e2171c4d9e5.webp"
+width="479"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập tham số phân tích hillshade
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure id="figure-kết-quả-phân-tích-hillshade">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả phân tích hillshade" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_hillshade3_hu_d9103f68ec877850.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_hillshade3_hu_1b4b5d5e8c734fb8.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_hillshade3_hu_a9da2351b633fb11.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_hillshade3_hu_d9103f68ec877850.webp"
+width="760"
+height="489"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả phân tích hillshade
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;p>Tips:&lt;/p>
+&lt;ul>
+&lt;li>Dùng azimuth và altitude khác nhau để tạo bóng đổ theo hướng khác – phục vụ mục tiêu thị giác hoặc phân tích địa hình cụ thể.&lt;/li>
+&lt;li>Nếu địa hình phẳng hoặc quá dốc → hillshade có thể bị “tối đen” → cần điều chỉnh z-factor.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/div>
+&lt;h3 id="dùng-hillshade-kết-hợp-dem-màu-để-tăng-tính-thẩm-mỹ-của-bản-đồ">Dùng Hillshade kết hợp DEM màu để tăng tính thẩm mỹ của bản đồ&lt;/h3>
+&lt;ul>
+&lt;li>Bạn có thể tạo hiệu ứng bản đồ địa hình đẹp bằng cách:
+&lt;ol>
+&lt;li>Tạo hillshade raster.&lt;/li>
+&lt;li>Tạo bản đồ độ cao màu (elevation color ramp).&lt;/li>
+&lt;li>Xếp chồng 2 lớp lên nhau: Hillshade ở trên, chỉnh &lt;strong>Global Opacity&lt;/strong> của Hillshade về giá trị 50%.
+→ Kết quả: bản đồ địa hình màu sắc đẹp, có cảm giác 3D.&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-điều-chỉnh-global-opacity-của-lớp-nằm-trên-về-khoảng-50">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Điều chỉnh Global Opacity của lớp nằm trên về khoảng 50%" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_hillshade4_hu_3a658be1f0426dcc.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_hillshade4_hu_2a19c66692ead7c2.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_hillshade4_hu_5310b1c786e82ba1.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_hillshade4_hu_3a658be1f0426dcc.webp"
+width="760"
+height="230"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Điều chỉnh Global Opacity của lớp nằm trên về khoảng 50%
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure id="figure-kết-quả-hiển-thị-kết-hợp-hillshade-và-dem-màu">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả hiển thị kết hợp hillshade và DEM màu" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_hillshade5_hu_6c6883ecd79abd18.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_hillshade5_hu_ab053f31694c9e59.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_hillshade5_hu_bf396d02caf22227.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_hillshade5_hu_6c6883ecd79abd18.webp"
+width="760"
+height="484"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả hiển thị kết hợp hillshade và DEM màu
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="phân-tích-hướng-mặt-dốc-aspect">Phân tích hướng mặt dốc (aspect)&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>Phân tích &lt;strong>Aspect&lt;/strong> trong GIS là quá trình tính toán hướng dốc (hướng mà sườn đất nghiêng về phía nào) từ dữ liệu DEM (Digital Elevation Model).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Aspect là góc phương vị của hướng dốc, được tính theo độ từ hướng Bắc theo chiều kim đồng hồ:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Giá trị Aspect&lt;/th>
+&lt;th>Hướng địa lý&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>0°&lt;/td>
+&lt;td>Bắc (North)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>90°&lt;/td>
+&lt;td>Đông (East)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>180°&lt;/td>
+&lt;td>Nam (South)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>270°&lt;/td>
+&lt;td>Tây (West)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>-1&lt;/td>
+&lt;td>Địa hình bằng phẳng (không có hướng dốc)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/li>
+&lt;li>
+&lt;p>Ứng dụng của Aspect:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Lĩnh vực&lt;/th>
+&lt;th>Ứng dụng&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>🌞 Năng lượng mặt trời&lt;/td>
+&lt;td>Xác định sườn đồi quay về hướng có ánh nắng nhiều&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>🌱 Nông nghiệp&lt;/td>
+&lt;td>Phân tích vi khí hậu: sườn Nam nóng hơn → chọn cây trồng phù hợp&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>🏗️ Quy hoạch&lt;/td>
+&lt;td>Chọn hướng xây nhà, đường phù hợp với địa hình và gió&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>🌲 Sinh thái – rừng&lt;/td>
+&lt;td>Sườn hướng Bắc thường ẩm và mát hơn → ảnh hưởng đến thảm thực vật&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>🌧️ Thủy văn – xói mòn&lt;/td>
+&lt;td>Xác định hướng nước chảy, tác động đến quá trình xói mòn đất&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/li>
+&lt;li>
+&lt;p>Cách thực hiện:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Raster &amp;gt; Analysis &amp;gt; Aspect&lt;/strong> hoặc dùng &lt;strong>Processing Toolbox&lt;/strong>
+&lt;figure id="figure-thiết-lập-tham-số-phân-tích-aspect">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập tham số phân tích aspect" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_aspect_hu_4e926e358a3e88d7.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_aspect_hu_d49ef7e01ceab550.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_aspect_hu_e08c950dd1da82a5.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_aspect_hu_4e926e358a3e88d7.webp"
+width="531"
+height="522"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập tham số phân tích aspect
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-kết-quả-phân-tích-aspect">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả phân tích aspect" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_aspect2_hu_955d1462d84e8c46.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_aspect2_hu_d37088520e4b6c89.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_aspect2_hu_2a97f48c7c98b45c.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_aspect2_hu_955d1462d84e8c46.webp"
+width="760"
+height="281"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả phân tích aspect
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h2 id="homework">Homework&lt;/h2>
+&lt;ol>
+&lt;li>Thực hành từ bước download dữ liệu &amp;gt; merge &amp;gt; clip &amp;gt; Symbology cho dữ liệu có độ phân giải 30-arc-second. So sánh 2 phiên bản 30-arc-second và 7.5-arc-second.&lt;/li>
+&lt;li>Tạo contour 100m dựa trên DEM đã thực hành ở trên. Tô màu contour 500m màu đỏ, và đặt trên lớp contour 100m màu xanh.
+&lt;figure id="figure-yêu-cầu-kết-quả-tạo-contour">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Yêu cầu kết quả tạo contour" srcset="
+/onlinecourse/course/gis/9_raster/9_raster_homework_hu_c4a5f35968ae47c9.webp 400w,
+/onlinecourse/course/gis/9_raster/9_raster_homework_hu_d38d9d4f9054a544.webp 760w,
+/onlinecourse/course/gis/9_raster/9_raster_homework_hu_14448791c2395dc5.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/9_raster_homework_hu_c4a5f35968ae47c9.webp"
+width="760"
+height="497"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Yêu cầu kết quả tạo contour
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>

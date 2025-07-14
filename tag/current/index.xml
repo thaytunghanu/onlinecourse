@@ -128,6 +128,11 @@ max-width: 100% !important;
 &lt;p>Thiết kế bản đồ trình bày hoàn chỉnh phục vụ in ấn, xuất file ảnh/PDF, hoặc đính kèm báo cáo, luận văn, tài liệu kỹ thuật
 &lt;/p>
 &lt;/li>
+&lt;li>
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/">9. Xử lý dữ liệu raster&lt;/a>&lt;/h5>
+&lt;p>Xử lý dữ liệu raster DEM, phân tích Contours, Slope, Hillshade and Aspect. Giới thiệu các nguồn dữ liệu GIS online.
+&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;h2 id="thông-tin-giảng-viên">Thông tin giảng viên&lt;/h2>
 &lt;a href="https://thaytunghanu.github.io/onlinecourse/author/ts.-hoang-thanh-tung/">TS. Hoàng Thanh Tùng&lt;/a>
@@ -138,7 +143,7 @@ max-width: 100% !important;
 &lt;/details>
 &lt;details class="spoiler " id="spoiler-6">
 &lt;summary>Khóa học kéo dài bao lâu?&lt;/summary>
-&lt;p>10 buổi, mỗi buổi khoảng 120 phút. Các bạn có thể tự điều chỉnh theo khung thời gian của mình nếu tự học.&lt;/p>
+&lt;p>11 chủ đề được giảng trong 10 buổi, mỗi buổi khoảng 120 phút. Các bạn có thể tự điều chỉnh theo khung thời gian của mình nếu tự học.&lt;/p>
 &lt;/details>
 &lt;ul class="cta-group">
 &lt;li>
