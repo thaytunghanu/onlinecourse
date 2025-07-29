@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: July 15, 2025 --><html lang="en-us" >
+
+
+<head><script src="/onlinecourse/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=onlinecourse/livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/onlinecourse/css/vendor-bundle.min.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/onlinecourse/css/wowchemy.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/onlinecourse/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/onlinecourse/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="TS. Hoàng Thanh Tùng" />
+
+
+
+
+
+  
+
+<meta name="description" content="Giới thiệu các nguồn cung cấp dữ liệu GIS online." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="http://localhost:1313/onlinecourse/course/gis/92_source/" />
+<link rel="canonical" href="http://localhost:1313/onlinecourse/course/gis/92_source/" />
+
+
+
+  <link rel="manifest" href="/onlinecourse/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/onlinecourse/media/icon_hu_3b11da90b4c87ef8.png" />
+<link rel="apple-touch-icon" type="image/png" href="/onlinecourse/media/icon_hu_f21a43183798c34b.png" />
+
+<meta name="theme-color" content="#0072ff" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="http://localhost:1313/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Thầy Tùng HANU" />
+<meta property="og:url" content="http://localhost:1313/onlinecourse/course/gis/92_source/" />
+<meta property="og:title" content="10. Khai thác các nguồn dữ liệu GIS online | Thầy Tùng HANU" />
+<meta property="og:description" content="Giới thiệu các nguồn cung cấp dữ liệu GIS online." /><meta property="og:image" content="http://localhost:1313/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2025-06-22T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2025-06-22T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>10. Khai thác các nguồn dữ liệu GIS online | Thầy Tùng HANU</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="36b9108fc31ba0cd15b982ba8a15bd88" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/onlinecourse/js/wowchemy-init.min.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/onlinecourse/">Thầy Tùng HANU</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/onlinecourse/">Thầy Tùng HANU</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/onlinecourse/"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Courses</span><span class="caret"></span>
+            </a>
+            <div class="dropdown-menu">
+              
+                <a class="dropdown-item" href="/onlinecourse/course/gis/"><span>GIS</span></a>
+              
+                <a class="dropdown-item" href="/onlinecourse/course/dana/"><span>Phân tích dữ liệu</span></a>
+              
+                <a class="dropdown-item" href="/onlinecourse/course/suscc/"><span>PTBV & BĐKH</span></a>
+              
+            </div>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/onlinecourse/post/"><span>Blog</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/onlinecourse/contact/"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+        
+          GIS
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/onlinecourse/course/"><i class="fas fa-arrow-left pr-1"></i>📚 Courses</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/onlinecourse/course/gis/">GIS</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/onlinecourse/course/gis/1_intro/">1. Giới thiệu về GIS và phần mềm QGIS</a></li>
+
+
+
+  <li class=""><a href="/onlinecourse/course/gis/2_crs/">2. Hệ thống tham chiếu tọa độ (CRS)</a></li>
+
+
+
+  <li class=""><a href="/onlinecourse/course/gis/3_gisdata/">3. Dữ liệu GIS, làm việc với dữ liệu vector</a></li>
+
+
+
+  <li class=""><a href="/onlinecourse/course/gis/4_attribute/">4. Dữ liệu thuộc tính</a></li>
+
+
+
+  <li class=""><a href="/onlinecourse/course/gis/5_symbology/">5. Thể hiện và trình bày dữ liệu vector</a></li>
+
+
+
+  <li class=""><a href="/onlinecourse/course/gis/6_query/">6. Truy vấn dữ liệu vector</a></li>
+
+
+
+  <li class=""><a href="/onlinecourse/course/gis/7_analysis/">7. Phân tích dữ liệu không gian</a></li>
+
+
+
+  <li class=""><a href="/onlinecourse/course/gis/8_layout/">8. Thiết kế trang in bản đồ (Map Layouts)</a></li>
+
+
+
+  <li class=""><a href="/onlinecourse/course/gis/9_raster/">9. Xử lý dữ liệu raster</a></li>
+
+
+
+  <li class="active"><a href="/onlinecourse/course/gis/92_source/">10. Khai thác các nguồn dữ liệu GIS online</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents"></nav>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <div class="docs-article-container">
+        
+          
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+    
+  
+    
+  
+    
+  
+
+    <li class="breadcrumb-item">
+      <a href="/onlinecourse/">
+        
+          Home
+        
+      </a>
+    </li>
+  
+
+    <li class="breadcrumb-item">
+      <a href="/onlinecourse/course/">
+        
+          📚 Courses
+        
+      </a>
+    </li>
+  
+
+    <li class="breadcrumb-item">
+      <a href="/onlinecourse/course/gis/">
+        
+          GIS
+        
+      </a>
+    </li>
+  
+
+      <li class="breadcrumb-item active" aria-current="page">
+        10. Khai thác các nguồn dữ liệu GIS online
+      </li>
+    </ol>
+  </nav>
+
+
+
+
+        
+      </div>
+
+      
+      
+      
+
+      <div class="docs-article-container">
+        
+        <h1>10. Khai thác các nguồn dữ liệu GIS online</h1>
+
+        <article class="article-style">
+
+          
+          
+
+          <p>Giới thiệu các nguồn cung cấp dữ liệu GIS online.</p>
+
+        </article>
+
+        
+
+        
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/onlinecourse/tag/gis-data/">GIS Data</a>
+  
+  <a class="badge badge-light" href="/onlinecourse/tag/data-sources/">Data Sources</a>
+  
+  <a class="badge badge-light" href="/onlinecourse/tag/open-gis-data/">Open GIS Data</a>
+  
+</div>
+
+
+
+        
+        
+        <div class="article-widget">
+          
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/onlinecourse/course/gis/9_raster/" rel="next">9. Xử lý dữ liệu raster</a>
+  </div>
+  
+  
+</div>
+
+        </div>
+        
+      </div>
+
+      <div class="body-footer">
+        <p>Last updated on Jun 22, 2025</p>
+
+        
+  
+
+        
+
+
+
+
+        
+
+
+      </div>
+
+      <footer class="site-footer">
+  
+   
+ 
+
+
+  <p class="powered-by">  
+    &copy; 2025 Thầy Tùng HANU.
+  
+     Mọi nội
+    dung thuộc bản quyền của Thầy Tùng HANU, không được sao chép mà không trích
+    dẫn hoặc không có sự cho phép. Published with Hugo Blox Builder.
+    
+  </p>
+
+  
+  <div style="text-align: center; margin-top: 20px;">
+    <button onclick="refreshPage()" style="padding: 8px 8px; background: #007acc; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 14px;">
+      🔄 Refresh Page
+    </button>
+  </div>
+
+  
+  <script>
+    function refreshPage() {
+      const url = window.location.href.split('?')[0];
+      window.location.href = url + "?_=" + new Date().getTime();
+    }
+  </script>
+
+</footer>
+
+  
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+
+
+<script src="/onlinecourse/js/vendor-bundle.min.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js" integrity="sha256-aQmOEF2ZD4NM/xt4hthzREIo/2PFkOX/g01WjxEV7Ys=" crossorigin="anonymous"></script>
+<script>
+  anchors.add();
+</script>
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/onlinecourse/en/js/wowchemy.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
