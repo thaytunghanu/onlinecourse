@@ -2668,7 +2668,7 @@ Land uses của Vo Nhai
 &lt;/figcaption>&lt;/figure>
 &lt;/li>
 &lt;li>Thể hiện bản đồ lớp “Vo_Nhai_Landuses” theo phương pháp Categorized, dựa trên trường ‘fclass’.&lt;/li>
-&lt;/ol></description></item><item><title>7. Phân tích dữ liệu không gian</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/</guid><description>&lt;p>Thực hành các công cụ phân tích không gian: merge, union, clip, intersect, symmetrical difference, reproject, buffer, count points in polygon&lt;/p>
+&lt;/ol></description></item><item><title>7. Phân tích không gian</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/</guid><description>&lt;p>Thực hành các công cụ phân tích không gian: merge, union, clip, intersect, symmetrical difference, reproject, buffer, count points in polygon&lt;/p>
 &lt;p>Các công cụ phân tích không gian: merge, clip, intersect, symmetrical difference, buffer &amp;hellip; là những công cụ cốt lõi trong xử lý và phân tích dữ liệu địa lý vector.
 Những công cụ này có thể được ứng dụng trong những bài toán phân tích không gian rất phổ biến như: phân tích vùng bị ảnh hưởng (mưa lũ, ô nhiễm…), quy hoạch vùng đô thị, bảo tồn.&lt;/p>
 &lt;h2 id="dữ-liệu-thực-hành">Dữ liệu thực hành&lt;/h2>
@@ -2791,7 +2791,7 @@ Chọn ranh giới tỉnh Vĩnh phúc từ Vietnam_Provinces và 2 huyện Pho Y
 &lt;li>Bật công cụ Union: có thể dùng 1 trong 2 cách sau:
 &lt;ul>
 &lt;li>Dùng Menu Bar: Vector &amp;gt; Geoprocessing Tools &amp;gt; Union&lt;/li>
-&lt;li>Dùng Processing Toolbox: Gõ chữ Union và ô search ở Processing Toolbox panel bên phía tay phải.&lt;/li>
+&lt;li>Dùng Processing Toolbox: Gõ chữ Union vào ô search ở Processing Toolbox panel bên phía tay phải.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -6781,7 +6781,717 @@ Dữ liệu PM2.5 của CAMS ngày 27/7/2025
 &lt;/tbody>
 &lt;/table>
 &lt;h2 id="dữ-liệu-về-tài-nguyên">Dữ liệu về tài nguyên&lt;/h2>
-&lt;p>&lt;a href="https://resourcewatch.org/data/explore" target="_blank" rel="noopener">https://resourcewatch.org/data/explore&lt;/a>&lt;/p></description></item><item><title>Jian Yang and Monica Hall Win the Best Paper Award at Hugo Blox 2023</title><link>https://thaytunghanu.github.io/onlinecourse/post/20-12-02-icml-best-paper/</link><pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/post/20-12-02-icml-best-paper/</guid><description>&lt;p>Congratulations to Jian Yang and Monica Hall for winning the Best Paper Award at the 2023 Conference on Hugo Blox for their paper “Learning Hugo Blox”.&lt;/p>
+&lt;p>&lt;a href="https://resourcewatch.org/data/explore" target="_blank" rel="noopener">https://resourcewatch.org/data/explore&lt;/a>&lt;/p></description></item><item><title>11. Phân tích không gian nâng cao</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/</guid><description>&lt;p>Phân tích zonal statistics, nội suy, tính diện tích từ dữ liệu raster.&lt;/p>
+&lt;h2 id="zonal-statistics">Zonal statistics&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>Zonal statistics là một kỹ thuật phân tích trong GIS dùng để tính toán các giá trị thống kê của một lớp raster dựa trên các vùng (zone) xác định từ lớp vector hoặc raster khác. Đây là công cụ rất hữu ích khi bạn cần tóm tắt thông tin raster theo khu vực hành chính, vùng địa lý, hoặc phân loại đất.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Các thống kê phổ biến:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Thống kê&lt;/th>
+&lt;th>Ý nghĩa&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Mean (trung bình)&lt;/td>
+&lt;td>Giá trị trung bình trong vùng&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Sum (tổng)&lt;/td>
+&lt;td>Tổng giá trị các pixel trong vùng&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Count&lt;/td>
+&lt;td>Số lượng pixel hợp lệ&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Min / Max&lt;/td>
+&lt;td>Giá trị nhỏ nhất / lớn nhất&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Standard deviation (std)&lt;/td>
+&lt;td>Độ lệch chuẩn&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Majority / Minority&lt;/td>
+&lt;td>Giá trị xuất hiện nhiều nhất / ít nhất&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Median&lt;/td>
+&lt;td>Trung vị&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Range&lt;/td>
+&lt;td>Khoảng biến thiên (Max - Min)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/li>
+&lt;li>
+&lt;p>Ví dụ ứng dụng thực tế:&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Bài toán&lt;/th>
+&lt;th>Raster input&lt;/th>
+&lt;th>Zone input&lt;/th>
+&lt;th>Output&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Tính dân số theo vùng hành chính&lt;/td>
+&lt;td>Raster dân số&lt;/td>
+&lt;td>Bản đồ hành chính vector&lt;/td>
+&lt;td>Cột dân số ở mỗi vùng hành chính&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Tính nhiệt độ trung bình theo tỉnh&lt;/td>
+&lt;td>Raster nhiệt độ&lt;/td>
+&lt;td>Bản đồ ranh giới tỉnh&lt;/td>
+&lt;td>Bảng / lớp vector có cột &amp;ldquo;mean&amp;rdquo;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Diện tích đất rừng theo huyện&lt;/td>
+&lt;td>Raster land cover&lt;/td>
+&lt;td>Huyện (polygon)&lt;/td>
+&lt;td>Tổng số pixel loại rừng&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Độ dốc trung bình của lưu vực sông&lt;/td>
+&lt;td>Raster slope&lt;/td>
+&lt;td>Lưu vực (catchment)&lt;/td>
+&lt;td>Trung bình độ dốc mỗi lưu vực&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="thực-hành-tính-dân-số-cấp-tỉnh-năm-2020-dựa-trên-dữ-liệu-raster">Thực hành: tính dân số cấp tỉnh năm 2020 dựa trên dữ liệu raster&lt;/h3>
+&lt;h3 id="dữ-liệu-thực-hành">Dữ liệu thực hành&lt;/h3>
+&lt;ul>
+&lt;li>Ranh giới hành chính cấp tỉnh (trước sáp nhập 7/2025): provincial level boundary (gadm41_VNM_1.shp) ở trong file *.zip (9 MB) này: &lt;a href="https://geodata.ucdavis.edu/gadm/gadm4.1/shp/gadm41_VNM_shp.zip" target="_blank" rel="noopener">https://geodata.ucdavis.edu/gadm/gadm4.1/shp/gadm41_VNM_shp.zip&lt;/a>&lt;/li>
+&lt;li>Dữ liệu dân số (population count per pixel) từ WorldPop unconstrained (163 MB). Giá trị pixel là tổng số người được đếm trong phạm vi mỗi pixel:
+&lt;a href="https://data.worldpop.org/GIS/Population/Global_2000_2020/2020/VNM/vnm_ppp_2020_UNadj.tif" target="_blank" rel="noopener">https://data.worldpop.org/GIS/Population/Global_2000_2020/2020/VNM/vnm_ppp_2020_UNadj.tif&lt;/a>&lt;br>
+Các bạn có thể dùng các dữ liệu dân số khác đã học ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/#dữ-liệu-về-dân-số-worldpop-và-facebook-hrpd">Bài 10&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="các-bước-tiến-hành">Các bước tiến hành&lt;/h3>
+&lt;ul>
+&lt;li>Mở các lớp &lt;strong>vnm_ppp_2020_UNadj.tif&lt;/strong> và &lt;strong>gadm41_VNM_1.shp&lt;/strong>.&lt;/li>
+&lt;li>Dùng Processing Toolbox: Gõ chữ &amp;ldquo;zonal statistics&amp;rdquo; vào ô search ở Processing Toolbox panel bên phía tay phải.&lt;/li>
+&lt;li>Xác lập các tham số như ảnh dưới
+&lt;ul>
+&lt;li>Input layer: &lt;strong>gadm41_VNM_1.shp&lt;/strong>&lt;/li>
+&lt;li>Raster layer: &lt;strong>vnm_ppp_2020_UNadj.tif&lt;/strong>&lt;/li>
+&lt;li>Statistics to calculate: như đã đề cập về dữ liệu WorldPop, giá trị mỗi pixel là số người sống trên pixel đó. Mục tiêu của chúng ta là tính tổng dân số trong mỗi phạm vi tỉnh. Do đó, chúng ta cần chọn tham số thống kê là tổng (Sum) để ra lệnh cho QGIS tính tổng giá trị tất cả các pixel trong phạm vi mỗi polygon của lớp &lt;strong>gadm41_VNM_1.shp&lt;/strong>.&lt;/li>
+&lt;li>Đặt tên cho file đầu ra.
+&lt;figure id="figure-thiết-lập-tham-số-chạy-zonal-statistics">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập tham số chạy zonal statistics" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_zonal_hu_8e23d597f37093b6.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_zonal_hu_d9ab08d28cb32dc9.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_zonal_hu_9a67eff209f83893.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_zonal_hu_8e23d597f37093b6.webp"
+width="760"
+height="289"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập tham số chạy zonal statistics
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-sau-khi-chạy-zonal-statistics-bảng-thuộc-tính-của-gadm41_vnm_1shp-có-thêm-trường-_sum-chính-là-dân-số-tính-từ-raster">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Sau khi chạy zonal statistics, bảng thuộc tính của **gadm41_VNM_1.shp** có thêm trường **_sum** chính là dân số tính từ raster" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_zonal2_hu_7dccbe4e67216eb4.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_zonal2_hu_34542ebf2db4141.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_zonal2_hu_36f1460364da033e.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_zonal2_hu_7dccbe4e67216eb4.webp"
+width="504"
+height="440"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Sau khi chạy zonal statistics, bảng thuộc tính của &lt;strong>gadm41_VNM_1.shp&lt;/strong> có thêm trường &lt;strong>_sum&lt;/strong> chính là dân số tính từ raster
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="thực-hành--homework-tính-dân-số-cấp-tỉnh-sử-dụng-các-dữ-liệu-dân-số-raster-phổ-biến-khác">Thực hành / Homework: Tính dân số cấp tỉnh sử dụng các dữ liệu dân số raster phổ biến khác&lt;/h3>
+&lt;ol>
+&lt;li>Download dữ liệu dân số năm 2020 từ các nguồn sau:
+&lt;ul>
+&lt;li>&lt;a href="https://data.humdata.org/dataset/vietnam-high-resolution-population-density-maps-demographic-estimates" target="_blank" rel="noopener">Facebook HRPD, 30m&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://human-settlement.emergency.copernicus.eu/download.php?ds=pop" target="_blank" rel="noopener">GHS-POP, 250m&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Join bảng thuộc tính của &lt;strong>gadm41_VNM_1.shp&lt;/strong> với dữ liệu thống kê dân số 2020 cung cấp bởi Cục thống kê (&lt;a href="https://www.nso.gov.vn/px-web-2/?pxid=V0201&amp;amp;theme=D%C3%A2n%20s%E1%BB%91%20v%C3%A0%20lao%20%C4%91%E1%BB%99ng" target="_blank" rel="noopener">GSO&lt;/a>)&lt;/li>
+&lt;li>Chụp ảnh màn hình bảng thuộc tính của &lt;strong>gadm41_VNM_1.shp&lt;/strong> sau khi đã tính số liệu dân số từ 3 nguồn WorldPop, Facebook HRPD, GHS-POP và liên kết với số liệu thống kê từ GSO.&lt;/li>
+&lt;li>Nguồn dữ liệu nào có kết quả gần với số liệu thống kê nhất?&lt;/li>
+&lt;/ol>
+&lt;h2 id="nội-suy">Nội suy&lt;/h2>
+&lt;h3 id="khái-niệm-nội-suy">Khái niệm nội suy&lt;/h3>
+&lt;ul>
+&lt;li>Nội suy (&lt;strong>Interpolation&lt;/strong>) là một kỹ thuật dùng để ước lượng giá trị tại các vị trí chưa có dữ liệu dựa trên các điểm dữ liệu đã biết.&lt;/li>
+&lt;li>Về khía cạnh địa không gian, nội suy là quá trình tạo ra một bề mặt liên tục (thường là raster) từ một tập hợp các điểm có giá trị thuộc tính đã biết (thường là shapefile dạng điểm).&lt;/li>
+&lt;li>Ví dụ: từ 100 trạm quan trắc mưa rải rác, bạn muốn tạo bản đồ lượng mưa liên tục trên toàn vùng.&lt;/li>
+&lt;li>Ứng dụng của nội suy:
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Lĩnh vực&lt;/th>
+&lt;th>Ứng dụng nội suy&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Khí tượng&lt;/td>
+&lt;td>Tạo bản đồ nhiệt độ, lượng mưa&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Địa chất - Thủy văn&lt;/td>
+&lt;td>Độ mặn, mức nước ngầm, ô nhiễm đất&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Địa hình - DEM&lt;/td>
+&lt;td>Tạo mô hình địa hình từ điểm độ cao&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Môi trường&lt;/td>
+&lt;td>Chất lượng không khí, NO₂, bụi mịn&amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Nông nghiệp&lt;/td>
+&lt;td>Độ ẩm đất, pH đất, năng suất&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="các-phương-pháp-nội-suy">Các phương pháp nội suy&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Phương pháp&lt;/th>
+&lt;th style="text-align: center">Đặc điểm chính&lt;/th>
+&lt;th>Ưu điểm&lt;/th>
+&lt;th>Nhược điểm&lt;/th>
+&lt;th>Khi nào dùng&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Inverse Distance Weighting (IDW)&lt;/td>
+&lt;td style="text-align: center">Giá trị phụ thuộc vào khoảng cách – càng gần càng ảnh hưởng nhiều&lt;/td>
+&lt;td>Dễ dùng, nhanh&lt;/td>
+&lt;td>Có thể bị &amp;ldquo;nhọn&amp;rdquo; quanh điểm đo&lt;/td>
+&lt;td>Dữ liệu rải đều&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Kriging&lt;/td>
+&lt;td style="text-align: center">Phức tạp hơn, có mô hình hóa cấu trúc không gian (semivariogram)&lt;/td>
+&lt;td>Chính xác, có độ tin cậy&lt;/td>
+&lt;td>Phức tạp, cần hiểu thống kê&lt;/td>
+&lt;td>Phân tích môi trường, địa chất&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Spline&lt;/td>
+&lt;td style="text-align: center">Tạo bề mặt mượt mà, đảm bảo trơn liên tục&lt;/td>
+&lt;td>Mượt mà&lt;/td>
+&lt;td>Có thể vượt quá giá trị thực&lt;/td>
+&lt;td>Độ cao, địa hình&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Natural Neighbor&lt;/td>
+&lt;td style="text-align: center">Dựa trên thuật toán Voronoi – kết quả mượt và tự nhiên&lt;/td>
+&lt;td>Tự nhiên, không vượt giá trị&lt;/td>
+&lt;td>Không có dự đoán bên ngoài rìa&lt;/td>
+&lt;td>Dữ liệu khí hậu, sinh học&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>TIN&lt;/td>
+&lt;td style="text-align: center">Dùng tam giác hóa các điểm và nội suy trong từng tam giác&lt;/td>
+&lt;td>Giữ nguyên các điểm gốc&lt;/td>
+&lt;td>Không tạo raster liên tục đẹp&lt;/td>
+&lt;td>Mô hình địa hình chi tiết&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="lưu-ý-khi-sử-dụng-nội-suy">Lưu ý khi sử dụng nội suy&lt;/h3>
+&lt;ul>
+&lt;li>Số lượng và phân bố điểm đầu vào ảnh hưởng rất lớn đến kết quả.&lt;/li>
+&lt;li>Không nên nội suy cho khu vực quá xa các điểm đo (vì sai số cao).&lt;/li>
+&lt;li>Một số phương pháp (như Kriging) cần hiểu thống kê không gian để áp dụng đúng.&lt;/li>
+&lt;/ul>
+&lt;h3 id="thực-hành-nội-suy-sự-phân-bố-xâm-nhập-mặn-tại-đồng-bằng-sông-cửu-long-năm-2021">Thực hành: Nội suy sự phân bố xâm nhập mặn tại đồng bằng sông Cửu Long năm 2021&lt;/h3>
+&lt;ul>
+&lt;li>Xâm nhập mặn (saline intrusion) là hiện tượng nước mặn (&lt;strong>nồng độ muối từ 4‰&lt;/strong>) từ biển xâm nhập sâu vào nội địa theo các sông, kênh rạch, làm tăng độ mặn của nước mặt và nước ngầm, gây ảnh hưởng đến nông nghiệp, nước sinh hoạt và hệ sinh thái.&lt;/li>
+&lt;/ul>
+&lt;details class="spoiler " id="spoiler-1">
+&lt;summary>&lt;code>Những nguyên nhân nào gây ra xâm nhập mặn?&lt;/code>&lt;/summary>
+&lt;p>&lt;ul>
+&lt;li>Có nhiều nguyên nhân gây ra xâm nhập mặn:
+&lt;ul>
+&lt;li>Tự nhiên:
+&lt;ul>
+&lt;li>Địa hình thấp và có mạng lưới sông ngòi chằng chịt, thông thủy với biển.&lt;/li>
+&lt;li>Mùa khô kéo dài, ít mưa, dẫn đến dòng chảy từ thượng nguồn yếu.&lt;/li>
+&lt;li>Thủy triều từ Biển Đông và Biển Tây dâng cao vào mùa khô.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Nhân sinh:
+&lt;ul>
+&lt;li>Suy giảm dòng chảy sông Mekong do thủy điện và khai thác nước ở thượng nguồn.&lt;/li>
+&lt;li>Biến đổi khí hậu: mực nước biển dâng, hạn hán gay gắt hơn.&lt;/li>
+&lt;li>Sụt lún đất do khai thác nước ngầm quá mức.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/p>
+&lt;/details>
+&lt;ul>
+&lt;li>Hậu quả của xâm nhập mặn
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Lĩnh vực&lt;/th>
+&lt;th>Tác động&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>🌾 Nông nghiệp&lt;/td>
+&lt;td>Giảm năng suất lúa, trái cây chết, đất bị mặn hóa&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>💧 Nước sinh hoạt&lt;/td>
+&lt;td>Thiếu nước ngọt, nhiều vùng phải dùng nước mặn lợ&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>🐟 Thủy sản&lt;/td>
+&lt;td>Ảnh hưởng môi trường nuôi cá, tôm nước ngọt&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>🌱 Hệ sinh thái&lt;/td>
+&lt;td>Thay đổi cấu trúc rừng ngập mặn, vùng đất ngập nước&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="dữ-liệu-thực-hành-1">Dữ liệu thực hành&lt;/h3>
+&lt;ul>
+&lt;li>Dữ liệu từ một số trạm đo mặn ở ĐBSCL, nguồn OpenDevelopmentMekong Vietnam: &lt;a href="https://data.vietnam.opendevelopmentmekong.net/dataset/saline-intrusion-in-the-southern-region-vietnam" target="_blank" rel="noopener">Saline Intrusion in the Southern Region, Vietnam in 2021 and in 2022&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;figure id="figure-fig1">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Dữ liệu xâm nhập mặn ở ĐBSCL từ OpenDevelopmentMekong" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp_hu_d6b7a3e4213d5287.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp_hu_f27a225ea72aa2bc.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp_hu_cc21e2673b2bb16b.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp_hu_d6b7a3e4213d5287.webp"
+width="760"
+height="244"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Dữ liệu xâm nhập mặn ở ĐBSCL từ OpenDevelopmentMekong
+&lt;/figcaption>&lt;/figure>
+&lt;ul>
+&lt;li>
+&lt;p>Tuy nhiên, dữ liệu này là dữ liệu csv phi không gian. Không có tọa độ vị trí của trạm đo mặn. Chúng ta cần lấy vị trí của các trạm đo mặn ở văn bản sau: &lt;a href="https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/4/289-ttg.signed.pdf" target="_blank" rel="noopener">Quyết định số 289/QĐ-TTg của Thủ tướng Chính phủ: Phê duyệt Quy hoạch mạng lưới trạm khí tượng thủy văn quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Đây là dữ liệu mặn sau khi tích hợp vị trí tọa độ trạm đo mặn, có thêm 2 cột tọa độ X và Y:
+&lt;figure id="figure-fig2">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Dữ liệu xâm nhập mặn đã tích hợp thêm tọa độ X và Y" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp2_hu_eea93ba37b6d2861.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp2_hu_10d558a19d61c579.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp2_hu_8df1d9e6c3deafd8.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp2_hu_eea93ba37b6d2861.webp"
+width="760"
+height="303"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Dữ liệu xâm nhập mặn đã tích hợp thêm tọa độ X và Y
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Ranh giới đất liền của khu vực ĐBSCL (không bao gồm các đảo, quần đảo): &lt;a href="https://drive.google.com/file/d/1HrqaDzeGwXTZ8J6gezq2T6mjWQfpBZIN/view?usp=drive_link" target="_blank" rel="noopener">download&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="các-bước-thực-hành-nội-suy">Các bước thực hành nội suy&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>Dữ liệu &lt;a href="https://data.vietnam.opendevelopmentmekong.net/dataset/saline-intrusion-in-the-southern-region-vietnam" target="_blank" rel="noopener">Saline Intrusion in the Southern Region, Vietnam in 2021 and in 2022&lt;/a> bao gồm giá trị đo xâm nhập mặn 10 ngày một lần đo, từ tháng 1 đến tháng 3 của 2 năm 2021 và 2022. Trong bài thực hành này chỉ sử dụng dữ liệu của năm &lt;strong>2021&lt;/strong> như &lt;a href="#figure-fig2">ảnh trên đã trình bày&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Mở dữ liệu xâm nhập mặn đã tích hợp tọa độ trạm đo bằng cách &lt;strong>Add Delimited Text&lt;/strong> như đã thực hành ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/#thêm-và-chuyển-đổi-dữ-liệu-phi-không-gian-csv-thành-dữ-liệu-không-gian">Bài 2&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-add-delimited-text-dữ-liệu-csv-xâm-nhập-mặn-đã-tích-hợp-tọa-độ">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="**Add Delimited Text** dữ liệu csv xâm nhập mặn đã tích hợp tọa độ" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp3_hu_a305e38c47cff1bf.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp3_hu_f6221653fdba0372.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp3_hu_8e383bd96c54f8f9.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp3_hu_a305e38c47cff1bf.webp"
+width="727"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+&lt;strong>Add Delimited Text&lt;/strong> dữ liệu csv xâm nhập mặn đã tích hợp tọa độ
+&lt;/figcaption>&lt;/figure>
+&lt;br>
+&lt;figure id="figure-vị-trí-các-trạm-đo-mặn-ở-map-canvas-sau-khi-add-delimited-text">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Vị trí các trạm đo mặn ở Map Canvas sau khi **Add Delimited Text** " srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp4_hu_276686a194757de1.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp4_hu_e31f84c328231fb4.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp4_hu_e3b4feb938b9b5f6.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp4_hu_276686a194757de1.webp"
+width="664"
+height="653"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Vị trí các trạm đo mặn ở Map Canvas sau khi &lt;strong>Add Delimited Text&lt;/strong>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Lưu lớp vị trí trạm thành file shp tên là: &lt;strong>salinization_2021.shp&lt;/strong>.&lt;br>
+&lt;figure id="figure-bảng-thuộc-tính-của-salinization_2021shp">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Bảng thuộc tính của **salinization_2021.shp**" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp5_hu_f3a4b10a4e0602b7.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp5_hu_2d2ce40418f28f8a.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp5_hu_eb7e65d8ee5deee5.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp5_hu_f3a4b10a4e0602b7.webp"
+width="760"
+height="174"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Bảng thuộc tính của &lt;strong>salinization_2021.shp&lt;/strong>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Chúng ta sẽ dùng công cụ &lt;strong>IDW Interpolation&lt;/strong> để nội suy phân bố xâm nhập mặn 10 ngày cuối tháng 3 năm 2021, tức là cần chọn trường &lt;strong>21/03 - 31&lt;/strong>. Từ Processing Toolbox, gọi &lt;strong>IDW Interpolation&lt;/strong>. Xác lập các tham số như ảnh:&lt;/p>
+&lt;ul>
+&lt;li>Cần ấn nút dấu &lt;strong>+&lt;/strong> để hộp bên dưới ghi nhận &lt;strong>Vector layer&lt;/strong> và &lt;strong>Interpolation attribute&lt;/strong>&lt;/li>
+&lt;li>Tham số &lt;strong>Distance coefficient P&lt;/strong>: kiểm soát mức độ ảnh hưởng của các điểm gần và xa tới giá trị nội suy. Để giá trị mặc định.&lt;/li>
+&lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Giá trị &lt;code>P&lt;/code>&lt;/th>
+&lt;th>Ảnh hưởng&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>P = 1&lt;/code>&lt;/td>
+&lt;td>Trọng số giảm chậm theo khoảng cách. Các điểm &lt;strong>xa vẫn có ảnh hưởng đáng kể&lt;/strong>. Bề mặt mượt.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>P = 2&lt;/code>&lt;/td>
+&lt;td>Thường dùng mặc định. Trọng số giảm mạnh hơn. Các điểm gần có ảnh hưởng rõ rệt hơn.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>P &amp;gt; 2&lt;/code>&lt;/td>
+&lt;td>Trọng số giảm rất nhanh. &lt;strong>Chỉ các điểm gần mới có ảnh hưởng lớn&lt;/strong>. Bề mặt trở nên nhấp nhô, &amp;ldquo;nhiễu&amp;rdquo; hơn.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>P → ∞&lt;/code>&lt;/td>
+&lt;td>Chỉ điểm gần nhất có ảnh hưởng → gần giống &lt;strong>nearest neighbor&lt;/strong>.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ul>
+&lt;li>&lt;strong>Extent&lt;/strong>: Chọn extent của lớp diện tích đất liền ĐBSCL.&lt;/li>
+&lt;li>&lt;strong>Output raster size&lt;/strong>: để pixel size khoảng 250m.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-thiết-lập-tham-số-chạy-nội-suy-idw-interpolation-ấn-run">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập tham số chạy nội suy IDW Interpolation, ấn **Run**" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp6_hu_bb0ed349f9d85fc7.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp6_hu_dbfda3c1f6d4a005.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp6_hu_6bdb3eb0d8398a94.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp6_hu_bb0ed349f9d85fc7.webp"
+width="655"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập tham số chạy nội suy IDW Interpolation, ấn &lt;strong>Run&lt;/strong>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure id="figure-kết-quả-sau-khi-chạy-nội-suy">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả sau khi chạy nội suy" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp7_hu_736b537e367ffdf4.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp7_hu_de3555821bbd8057.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp7_hu_53f34bcf5cc678e1.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp7_hu_736b537e367ffdf4.webp"
+width="760"
+height="468"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả sau khi chạy nội suy
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>Clip raster nội suy theo file ranh giới đất liền ĐBSCL bằng &lt;strong>Clip Raster by Mask Layer&lt;/strong>:&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-clip-kết-quả-theo-ranh-giới-hành-chính-và-hiển-thị-màu">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Clip kết quả theo ranh giới hành chính và hiển thị màu" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp8_hu_b90867561ce91b0f.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp8_hu_c4213a22e0086b61.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp8_hu_28fd6b6e40091b07.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp8_hu_b90867561ce91b0f.webp"
+width="760"
+height="480"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Clip kết quả theo ranh giới hành chính và hiển thị màu
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Tạo contour để dễ phân tích kết quả. Sử dụng công cụ &lt;strong>Contour Polygons&lt;/strong>:
+&lt;figure id="figure-thiết-lập-tham-số-chạy-contour-polygon">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập tham số chạy contour polygon" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp9_hu_5d717d234084d5bf.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp9_hu_e7845f4aead8d958.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp9_hu_e3e24de06d696371.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp9_hu_5d717d234084d5bf.webp"
+width="627"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập tham số chạy contour polygon
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Kết quả chạy contour polygon. Ở những nơi không có dữ liệu, thì kết quả nội suy không đảm bảo sự chính xác. Ví dụ: trên thực tế, những vùng sâu trong đất liền như hightlight trên ảnh không bị xâm nhập mặn, tuy nhiên kết quả nội suy vẫn cho thấy giá trị xâm nhập mặn của vùng này ở mức 8-12 ‰. Do đó, khi số lượng dữ liệu hạn chế, kết quả nội suy cần phải được so sánh đối chiếu với các nguồn khác và cần được hiệu chỉnh bởi kiến thức chuyên gia.
+&lt;figure id="figure-kết-quả-chạy-contour-polygon">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả chạy contour polygon" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp10_hu_90c2b62170b879f7.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp10_hu_3c4d68575a151d22.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp10_hu_edb4bee6c52038ca.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp10_hu_90c2b62170b879f7.webp"
+width="717"
+height="596"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả chạy contour polygon
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-bản-đồ-dự-báo-phân-bố-độ-mặn-khu-vực-đbscl-tháng-52020-nguồn-linkhttpstnmttravinhgovvnxemxam-nhap-man-tai-dong-bang-song-cuu-long-nhung-ngay-dau-thang-52020">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Bản đồ dự báo phân bố độ mặn khu vực ĐBSCL tháng 5/2020, nguồn: [link](https://tnmttravinh.gov.vn/xem/xam-nhap-man-tai-dong-bang-song-cuu-long-nhung-ngay-dau-thang-52020)" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp11_hu_9dfc6dfa44928707.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp11_hu_f38b287adb7877eb.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_interp11_hu_fef9b061e3283787.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp11_hu_9dfc6dfa44928707.webp"
+width="620"
+height="439"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Bản đồ dự báo phân bố độ mặn khu vực ĐBSCL tháng 5/2020, nguồn: &lt;a href="https://tnmttravinh.gov.vn/xem/xam-nhap-man-tai-dong-bang-song-cuu-long-nhung-ngay-dau-thang-52020" target="_blank" rel="noopener">link&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="tính-diện-tích-dựa-trên-dữ-liệu-raster">Tính diện tích dựa trên dữ liệu raster&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>Nhiều ứng dụng yêu cầu định lượng các diện tích sử dụng đất trong một khu vực. Các bộ dữ liệu sử dụng đất / thảm phủ mặt đất (LULC) được định dạng dưới dạng raster, trong đó mỗi pixel được gán một giá trị lớp. Các nhà phân tích GIS thường cần tạo báo cáo dựa trên dữ liệu này bằng cách tính diện tích theo lớp trong một khu vực nhất định. QGIS đi kèm với nhiều công cụ tích hợp để phục vụ mục đích này.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Phần này sẽ hướng dẫn cách tính diện tích các loại thảm phủ đất dựa trên QGIS ở phạm vi xã Định Hóa, Thái Nguyên (sau sáp nhập). Đây cũng là địa phương đã được lựa chọn để thực hành Bài 3 (hồ Bảo Linh).&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="dữ-liệu-thực-hành-2">Dữ liệu thực hành&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>Truy cập trang cung cấp dữ liệu thảm phủ đất &lt;a href="https://viewer.esa-worldcover.org/worldcover/" target="_blank" rel="noopener">ESA Worldcover&lt;/a>. Download mảnh dữ liệu &lt;strong>ESA_WorldCover_10m_2021_v200_N21E105.tif&lt;/strong> theo hướng dẫn ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/#dữ-liệu-về-sử-dụng-đất-thảm-phủ-mặt-đất">Bài 10&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Downnload ranh giới xã Định Hóa, Thái Nguyên sau sáp nhập ở &lt;a href="https://gis.vn/ban-do-hanh-chinh-viet-nam" target="_blank" rel="noopener">https://gis.vn/ban-do-hanh-chinh-viet-nam&lt;/a>. Có thể download nhanh ở &lt;a href="https://drive.google.com/file/d/1bGBo-O4uLE0aCPkOcPnq4yB0TS3sMKB2/view?usp=drive_link" target="_blank" rel="noopener">link này&lt;/a>. &lt;code>Chú ý: nguồn dữ liệu bản đồ hành chính này không phải được cung cấp từ cơ quan chức năng có thẩm quyền, do đó chỉ nên dùng với tính chất tham khảo.&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="các-bước-thực-hành">Các bước thực hành&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>Clip dữ liệu theo ranh giới huyện Định Hóa bằng &lt;strong>Clip Raster by Mask Layer&lt;/strong>, lưu file output là &lt;strong>DinhHoa_LULC_.tif&lt;/strong>:
+&lt;figure id="figure-clip-dữ-liệu-theo-ranh-giới-huyện-định-hóa-bằng-clip-raster-by-mask-layer">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Clip dữ liệu theo ranh giới huyện Định Hóa bằng **Clip Raster by Mask Layer**" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area_hu_bb9d539d9c880e80.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area_hu_7874edc3b51c47e5.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area_hu_1d1cd74936ca9807.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_area_hu_bb9d539d9c880e80.webp"
+width="672"
+height="395"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Clip dữ liệu theo ranh giới huyện Định Hóa bằng &lt;strong>Clip Raster by Mask Layer&lt;/strong>
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-kết-quả-sau-khi-clip">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả sau khi Clip" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area2_hu_1cd385fdfeac865c.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area2_hu_5744d7c7db922450.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area2_hu_b934e238b00c2f33.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_area2_hu_1cd385fdfeac865c.webp"
+width="760"
+height="375"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả sau khi Clip
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Hiện tại, hệ tham chiếu tọa độ CRS của &lt;strong>DinhHoa_LULC_.tif&lt;/strong> là &lt;strong>EPSG:4326&lt;/strong>, đơn vị của CRS này là độ nên không phù hợp cho việc tính diện tích. Để việc tính diện tích được thực hiện đúng đắn, ta cần chuyển hệ tọa độ cho file &lt;strong>DinhHoa_LULC.tif&lt;/strong> thành EPSG:3405 (VN-2000) bằng công cụ &lt;strong>Warp (Reproject)&lt;/strong>, lưu file ở tên mới &lt;strong>DinhHoa_LULC_3405.tif&lt;/strong> :
+&lt;figure id="figure-chuyển-crs-cho-dinhhoa_lulctif">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="chuyển CRS cho **DinhHoa_LULC.tif**" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area3_hu_393c1c896e8df1c9.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area3_hu_770066db44402d49.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area3_hu_6cdad869a14c56d.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_area3_hu_393c1c896e8df1c9.webp"
+width="672"
+height="685"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+chuyển CRS cho &lt;strong>DinhHoa_LULC.tif&lt;/strong>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Sử dụng công cụ &lt;strong>Raster layer Unique values report&lt;/strong>, lưu &lt;strong>Unique values table&lt;/strong> ở dạng *&lt;strong>.gpkg&lt;/strong> với tên file là &lt;strong>report.gpkg&lt;/strong>:
+&lt;figure id="figure-thiết-lập-các-tham-số-ở-raster-layer-unique-values-report">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Thiết lập các tham số ở **Raster layer Unique values report**" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area4_hu_64b2c95e1ffbc232.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area4_hu_a8b01469b8e36fac.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area4_hu_3cc2a41cc54622b4.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_area4_hu_64b2c95e1ffbc232.webp"
+width="641"
+height="410"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Thiết lập các tham số ở &lt;strong>Raster layer Unique values report&lt;/strong>
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-kết-quả-sau-khi-tính-diện-tích-thể-hiện-ở-bảng-thuộc-tính-của-file-reportgpkg">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả sau khi tính diện tích thể hiện ở bảng thuộc tính của file **report.gpkg**" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area5_hu_f9ad52c8d2362a74.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area5_hu_e53af4faac009237.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area5_hu_2b655e4f9340b977.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_area5_hu_f9ad52c8d2362a74.webp"
+width="483"
+height="258"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả sau khi tính diện tích thể hiện ở bảng thuộc tính của file &lt;strong>report.gpkg&lt;/strong>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Đổi trường &lt;strong>value&lt;/strong> từ code LULC thành tên các loại hình sử dụng đất: mở &lt;strong>Field Calculator&lt;/strong> và điền đoạn mã sau vào ô &lt;strong>Expression&lt;/strong>:&lt;/p>
+&lt;pre>&lt;code> CASE
+WHEN &amp;quot;value&amp;quot; = 10 THEN 'Tree cover'
+WHEN &amp;quot;value&amp;quot; = 20 THEN 'Shrubland'
+WHEN &amp;quot;value&amp;quot; = 30 THEN 'Grassland'
+WHEN &amp;quot;value&amp;quot; = 40 THEN 'Cropland'
+WHEN &amp;quot;value&amp;quot; = 50 THEN 'Built-up'
+WHEN &amp;quot;value&amp;quot; = 60 THEN 'Bare / sparse vegetation'
+WHEN &amp;quot;value&amp;quot; = 70 THEN 'Snow and Ice'
+WHEN &amp;quot;value&amp;quot; = 80 THEN 'Permanent water bodies'
+WHEN &amp;quot;value&amp;quot; = 90 THEN 'Herbaceous wetland'
+WHEN &amp;quot;value&amp;quot; = 95 THEN 'Mangroves'
+WHEN &amp;quot;value&amp;quot; = 100 THEN 'Moss and lichen'
+END
+&lt;/code>&lt;/pre>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-đổi-trường-value-từ-code-lulc-thành-tên-các-loại-hình-sử-dụng-đất">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Đổi trường **value** từ code LULC thành tên các loại hình sử dụng đất" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area6_hu_1681a633cb19873c.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area6_hu_64f8b2669d33b02.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area6_hu_c8771cd1e1b5a6d1.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_area6_hu_1681a633cb19873c.webp"
+width="760"
+height="591"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Đổi trường &lt;strong>value&lt;/strong> từ code LULC thành tên các loại hình sử dụng đất
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-kết-quả-ở-bảng-thuộc-tính-reportgpkg">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả ở bảng thuộc tính **report.gpkg**" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area7_hu_e3bd9a2a7ba9d9e.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area7_hu_46e46a2ab86a9bbe.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area7_hu_ec37005e2997806f.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_area7_hu_e3bd9a2a7ba9d9e.webp"
+width="636"
+height="281"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả ở bảng thuộc tính &lt;strong>report.gpkg&lt;/strong>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>Cuối cùng, đổi diện tích &lt;strong>m2&lt;/strong> thành diện tích tính theo &lt;strong>ha&lt;/strong>, sử dụng &lt;strong>Field Calculator&lt;/strong>:
+&lt;figure id="figure-tính-diện-tích-theo-hecta">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Tính diện tích theo hecta" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area8_hu_b9ea406cbf55604a.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area8_hu_c58b412ce2594abc.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area8_hu_b4c0bdf3ee9a254f.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_area8_hu_b9ea406cbf55604a.webp"
+width="760"
+height="471"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Tính diện tích theo hecta
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-kết-quả-cuối-cùng-có-thể-lưu-thành-file-excel-để-dùng-làm-bảng-biểu-hoặc-vẽ-biểu-đồ-phục-vụ-các-báo-cáo">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả cuối cùng. Có thể lưu thành file excel để dùng làm bảng biểu hoặc vẽ biểu đồ phục vụ các báo cáo" srcset="
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area9_hu_eaf7a2a4d730b9a4.webp 400w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area9_hu_270f8b84c156af3.webp 760w,
+/onlinecourse/course/gis/11_analysis2/11_analysis2_area9_hu_3b37c275ca86c22.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_area9_hu_eaf7a2a4d730b9a4.webp"
+width="683"
+height="283"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả cuối cùng. Có thể lưu thành file excel để dùng làm bảng biểu hoặc vẽ biểu đồ phục vụ các báo cáo
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul></description></item><item><title>Jian Yang and Monica Hall Win the Best Paper Award at Hugo Blox 2023</title><link>https://thaytunghanu.github.io/onlinecourse/post/20-12-02-icml-best-paper/</link><pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/post/20-12-02-icml-best-paper/</guid><description>&lt;p>Congratulations to Jian Yang and Monica Hall for winning the Best Paper Award at the 2023 Conference on Hugo Blox for their paper “Learning Hugo Blox”.&lt;/p>
 &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.&lt;/p>
 &lt;p>Sed eu dui nec ligula bibendum dapibus. Nullam imperdiet auctor tortor, vel cursus mauris malesuada non. Quisque ultrices euismod dapibus. Aenean sed gravida risus. Sed nisi tortor, vulputate nec quam non, placerat porta nisl. Nunc varius lobortis urna, condimentum facilisis ipsum molestie eu. Ut molestie eleifend ligula sed dignissim. Duis ut tellus turpis. Praesent tincidunt, nunc sed congue malesuada, mauris enim maximus massa, eget interdum turpis urna et ante. Morbi sem nisl, cursus quis mollis et, interdum luctus augue. Aliquam laoreet, leo et accumsan tincidunt, libero neque aliquet lectus, a ultricies lorem mi a orci.&lt;/p>
 &lt;p>Mauris dapibus sem vel magna convallis laoreet. Donec in venenatis urna, vitae sodales odio. Praesent tortor diam, varius non luctus nec, bibendum vel est. Quisque id sem enim. Maecenas at est leo. Vestibulum tristique pellentesque ex, blandit placerat nunc eleifend sit amet. Fusce eget lectus bibendum, accumsan mi quis, luctus sem. Etiam vitae nulla scelerisque, eleifend odio in, euismod quam. Etiam porta ullamcorper massa, vitae gravida turpis euismod quis. Mauris sodales sem ac ultrices viverra. In placerat ultrices sapien. Suspendisse eu arcu hendrerit, luctus tortor cursus, maximus dolor. Proin et velit et quam gravida dapibus. Donec blandit justo ut consequat tristique.&lt;/p></description></item><item><title>Richard Hendricks Wins First Place in the Hugo Blox Builder Prize</title><link>https://thaytunghanu.github.io/onlinecourse/post/20-12-01-wowchemy-prize/</link><pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/post/20-12-01-wowchemy-prize/</guid><description>&lt;p>Congratulations to Richard Hendricks for winning first place in the Wowchemy Prize.&lt;/p>

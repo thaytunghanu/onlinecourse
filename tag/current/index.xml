@@ -21,12 +21,15 @@
 &lt;p>Sau khi học xong, người học có thể:&lt;/p>
 &lt;ul>
 &lt;li>Xử lý được dữ liệu GIS bằng phần mềm QGIS&lt;/li>
+&lt;li>Biên tập được bản đồ chuyên đề phục vụ nghiên cứu khoa học&lt;/li>
 &lt;li>Vận dụng được các phương pháp phân tích không gian cơ bản trong các vấn đề thực tế thuộc nhiều lĩnh vực: khoa học xã hội, khoa học tự nhiên, kỹ thuật.&lt;/li>
-&lt;li>Tạo, trình bày được bản đồ chuyên đề phục vụ nghiên cứu và báo cáo&lt;/li>
 &lt;li>Có hiểu biết căn bản về WebGIS, và tạo được một ứng dụng WebGIS đơn giản&lt;/li>
 &lt;/ul>
 &lt;h2 id="đối-tượng-của-khóa-học">Đối tượng của khóa học&lt;/h2>
-&lt;p>Sinh viên, học viên cao học, nghiên cứu sinh, người có công việc liên quan đến GIS cần bổ trợ kiến thức, kỹ năng về bản đồ số và dữ liệu không gian trong học tập, nghiên cứu, nghiệp vụ.&lt;/p>
+&lt;ul>
+&lt;li>Sinh viên; học viên cao học; nghiên cứu sinh; người có công việc liên quan đến GIS cần bổ trợ kiến thức, kỹ năng về bản đồ số và dữ liệu không gian trong học tập, nghiên cứu, nghiệp vụ.&lt;/li>
+&lt;li>Đối tượng mở rộng: học sinh phổ thông chuyên địa lý hoặc các bộ môn khác, muốn nghiên cứu khoa học về môi trường, địa lý, sinh thái, khoa học Trái Đất, các khoa học xã hội &amp;hellip;&lt;/li>
+&lt;/ul>
 &lt;h2 id="một-số-kết-quả-của-các-cựu-học-viên">Một số kết quả của các cựu học viên&lt;/h2>
 &lt;div class="hb-columns hb-columns-3">
 &lt;div class="hb-column">
@@ -119,7 +122,7 @@ max-width: 100% !important;
 &lt;/p>
 &lt;/li>
 &lt;li>
-&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/">7. Phân tích dữ liệu không gian&lt;/a>&lt;/h5>
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/">7. Phân tích không gian&lt;/a>&lt;/h5>
 &lt;p>Thực hành các công cụ phân tích không gian: merge, union, clip, intersect, symmetrical difference, reproject, buffer, count points in polygon
 &lt;/p>
 &lt;/li>
@@ -136,6 +139,11 @@ max-width: 100% !important;
 &lt;li>
 &lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/">10. Khai thác các nguồn dữ liệu GIS online&lt;/a>&lt;/h5>
 &lt;p>Giới thiệu các nguồn cung cấp dữ liệu GIS online.
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/">11. Phân tích không gian nâng cao&lt;/a>&lt;/h5>
+&lt;p>Phân tích zonal statistics, nội suy, tính diện tích từ dữ liệu raster.
 &lt;/p>
 &lt;/li>
 &lt;/ul>
