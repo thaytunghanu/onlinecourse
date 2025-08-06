@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Webgis | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/tag/webgis/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/tag/webgis/index.xml" rel="self" type="application/rss+xml"/><description>Webgis</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Webgis</title><link>https://thaytunghanu.github.io/onlinecourse/tag/webgis/</link></image><item><title>12. Giới thiệu về WebGIS</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/</guid><description>&lt;p>Giới thiệu về WebGIS và tạo một ứng dụng WebGIS đơn giản.&lt;/p>
+&lt;h2 id="khái-niệm-webgis">Khái niệm WebGIS&lt;/h2>
+&lt;h3 id="webgis-là-gì">WebGIS là gì&lt;/h3>
+&lt;ul>
+&lt;li>WebGIS (Web Geographic Information System) là hệ thống thông tin địa lý hoạt động trên nền tảng web – nói cách khác, nó cho phép bạn truy cập, xem, phân tích, và chia sẻ dữ liệu bản đồ thông qua trình duyệt internet.&lt;/li>
+&lt;/ul>
+&lt;h3 id="quan-sát-một-hệ-thống-webgis">Quan sát một hệ thống WebGIS&lt;/h3>
+&lt;ul>
+&lt;li>Truy cập: &lt;a href="https://camatlas.icem.com.au/" target="_blank" rel="noopener">https://camatlas.icem.com.au/&lt;/a> (Cambodia Mekong Delta Atlas)&lt;/li>
+&lt;li>Quan sát:
+&lt;ul>
+&lt;li>Những lớp thông tin, và các nhóm lớp thông tin được sắp xếp trên giao diện&lt;/li>
+&lt;li>Sự hiển thị bản đồ: màu sắc, đường nét,&lt;/li>
+&lt;li>Các thành phần của bản đồ: legend, scale bar, &amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;details class="spoiler " id="spoiler-0">
+&lt;summary>&lt;code>Các Ưu điểm của WebGIS là gì?&lt;/code>&lt;/summary>
+&lt;p>&lt;ul>
+&lt;li>Truy cập linh hoạt và mọi lúc, mọi nơi
+&lt;ul>
+&lt;li>Chỉ cần kết nối internet và trình duyệt web (hoặc ứng dụng di động).&lt;/li>
+&lt;li>Không bị giới hạn bởi hệ điều hành (Windows, MacOS, Linux, Android…).&lt;/li>
+&lt;li>Phù hợp cho người dùng ở nhiều vị trí địa lý khác nhau.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Không cần cài đặt phần mềm chuyên dụng&lt;/li>
+&lt;li>Chia sẻ và cộng tác dễ dàng
+&lt;ul>
+&lt;li>Dữ liệu được lưu trữ tập trung trên máy chủ, nên nhiều người có thể xem hoặc chỉnh sửa (nếu được cấp quyền).&lt;/li>
+&lt;li>Hỗ trợ truy cập công khai hoặc giới hạn cho nội bộ.&lt;/li>
+&lt;li>Có thể nhúng bản đồ vào website, báo cáo, hoặc chia sẻ qua link.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/p>
+&lt;/details>
+&lt;h3 id="vai-trò-của-webgis">Vai trò của WebGIS&lt;/h3>
+&lt;p>Hiện nay, WebGIS đóng vai trò rất quan trọng trong việc quản lý, chia sẻ và phân tích dữ liệu không gian, đặc biệt trong bối cảnh chuyển đổi số và dữ liệu mở. Có thể tóm gọn các vai trò chính như sau:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Công cụ chia sẻ dữ liệu không gian hiệu quả&lt;/strong>
+&lt;ul>
+&lt;li>Cho phép công khai hóa dữ liệu GIS tới cộng đồng hoặc chia sẻ nội bộ một cách nhanh chóng.&lt;/li>
+&lt;li>Hỗ trợ ra quyết định dựa trên dữ liệu chung, thay vì dữ liệu phân tán ở nhiều cá nhân. Ví dụ: các cổng dữ liệu mở của chính quyền, bản đồ dịch bệnh, bản đồ giám sát môi trường.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Nền tảng giám sát và quản lý theo thời gian thực&lt;/strong>
+&lt;ul>
+&lt;li>Kết nối với cảm biến IoT, GPS, thiết bị đo đạc để cập nhật thông tin liên tục.&lt;/li>
+&lt;li>Giám sát cháy rừng, lũ lụt, ô nhiễm không khí, giao thông… ngay khi sự kiện xảy ra.&lt;/li>
+&lt;li>Giúp phản ứng nhanh hơn trong các tình huống khẩn cấp.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Hỗ trợ ra quyết định dựa trên phân tích không gian&lt;/strong> (giống như hệ thống &lt;a href="https://camatlas.icem.com.au/" target="_blank" rel="noopener">CamAtlas&lt;/a> giới thiệu ở trên)
+&lt;ul>
+&lt;li>Tích hợp các công cụ phân tích trên web: đo khoảng cách, phân tích vùng đệm, tìm kiếm nâng cao, phân tích chồng lớp dữ liệu (overlay).&lt;/li>
+&lt;li>Giúp các nhà quản lý, quy hoạch, và nhà nghiên cứu đưa ra giải pháp dựa trên thông tin trực quan.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Thúc đẩy minh bạch và tham gia cộng đồng&lt;/strong>
+&lt;ul>
+&lt;li>Người dân có thể truy cập, giám sát, và đóng góp dữ liệu (crowdsourcing).&lt;/li>
+&lt;li>Tăng tính minh bạch trong các dự án quy hoạch, bảo vệ môi trường, và dịch vụ công.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="thực-hành-tạo-một-webgis-đơn-giản">Thực hành: Tạo một WebGIS đơn giản&lt;/h2>
+&lt;ul>
+&lt;li>Bài học này không cung cấp kiến thức về IT hoặc khoa học máy tính một cách hệ thống.&lt;/li>
+&lt;li>Cách tiếp cận của bài học này là tìm hiểu cách tạo một ứng dụng WebGIS &lt;strong>dành cho người không có kiến thức nền về phát triển web&lt;/strong>, dựa trên sự hỗ trợ của các công cụ AI như ChatGPT, Grok&amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;h3 id="chuẩn-bị">Chuẩn bị&lt;/h3>
+&lt;ul>
+&lt;li>Lập sẵn tài khoản để sử dụng các công cụ AI (miễn phí)&lt;/li>
+&lt;li>Lập sẵn tài khoản &lt;strong>Github&lt;/strong> để phục vụ đưa trang WebGIS lên Internet. Mục đích là tận dụng tính năng &lt;strong>Github Pages&lt;/strong> của &lt;strong>Github&lt;/strong> để &lt;strong>hosting&lt;/strong> trang webGIS.
+&lt;details class="spoiler " id="spoiler-1">
+&lt;summary>&lt;code>Github là gì?&lt;/code>&lt;/summary>
+&lt;p>&lt;ul>
+&lt;li>GitHub là một nền tảng lưu trữ và quản lý mã nguồn (source code) trực tuyến, cho phép lập trình viên và nhóm phát triển lưu trữ, chia sẻ, cộng tác trên các dự án phần mềm bằng hệ thống Git.&lt;/li>
+&lt;li>Git = công cụ quản lý phiên bản mã nguồn.&lt;/li>
+&lt;li>GitHub = dịch vụ web dựa trên Git, giúp bạn làm việc nhóm, chia sẻ và theo dõi thay đổi của mã nguồn dễ dàng.&lt;/li>
+&lt;/ul>
+&lt;/p>
+&lt;/details>
+&lt;details class="spoiler " id="spoiler-2">
+&lt;summary>&lt;code>Hosting là gì?&lt;/code>&lt;/summary>
+&lt;p>&lt;ul>
+&lt;li>Hosting (dịch sang tiếng Việt thường gọi là lưu trữ web) là dịch vụ cho phép bạn đặt (lưu trữ) website hoặc ứng dụng web của mình trên một máy chủ (server) kết nối Internet, để người khác có thể truy cập qua tên miền (domain).&lt;/li>
+&lt;li>Có thể hình dung:
+&lt;ul>
+&lt;li>Website = là &amp;ldquo;ngôi nhà&amp;rdquo; tập hợp file HTML, CSS, JS, dữ liệu hình ảnh, cơ sở dữ liệu&amp;hellip;&lt;/li>
+&lt;li>Hosting = mảnh đất để xây lên ngôi nhà.&lt;/li>
+&lt;li>Tên miền (domain) = “địa chỉ nhà” để người ta tìm đến.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/p>
+&lt;/details>&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-website-domain-và-hosting">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Website, domain, và hosting" srcset="
+/onlinecourse/course/gis/12_webgis1/12_webgis1_host_hu_f0abf19d1654942f.webp 400w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_host_hu_7ab53436793b6968.webp 760w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_host_hu_d5d4e781333af41f.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_host_hu_f0abf19d1654942f.webp"
+width="649"
+height="446"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Website, domain, và hosting
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="khởi-tạo-trang-webgis-cơ-bản-đầu-tiên">Khởi tạo trang webGIS cơ bản đầu tiên&lt;/h3>
+&lt;ul>
+&lt;li>Đánh vào ChatGPT: &lt;code>Hãy tạo 1 webgis cơ bản&lt;/code>&lt;/li>
+&lt;li>ChatGPT trả lời:&lt;/li>
+&lt;/ul>
+&lt;div class="box">
+&lt;p>&lt;strong>Thành phần cơ bản của một WebGIS&lt;/strong>&lt;br>
+&lt;code>Frontend&lt;/code> (Giao diện): hiển thị bản đồ, người dùng tương tác.&lt;br>
+&lt;code>Backend&lt;/code> (Tùy chọn): xử lý dữ liệu, &lt;code>API&lt;/code>.&lt;br>
+&lt;code>Map library&lt;/code>: như Leaflet.js, OpenLayers, hoặc Mapbox GL JS.&lt;br>
+&lt;code>Tile provider&lt;/code>: như OpenStreetMap hoặc Mapbox.&lt;/p>
+&lt;p>Các bạn hãy tự tìm hiểu sâu các khái niệm được highlight ở box này.&lt;/p>
+&lt;/div>
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;p>Tùy vào mục tiêu và quy mô, webGIS có thể được xây dựng dựa trên nhiều cách tiếp cận khác nhau:&lt;/p>
+&lt;ul>
+&lt;li>Nếu bạn chỉ cần bản đồ Leaflet + GeoJSON tĩnh → có thể dùng GitHub Pages (miễn phí).&lt;/li>
+&lt;li>Nếu cần WebGIS động, nhiều người truy cập, xử lý dữ liệu lớn → cần phải có backend, dùng VPS hoặc cloud server để chạy GeoServer và database PostGIS.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>Ở Ví dụ này, ta sẽ xây dựng một WebGIS cơ bản dùng Leaflet.js + OpenStreetMap.Không cần backend, chạy được luôn với file .html.&lt;/li>
+&lt;li>Dưới đây là đoạn mã html mà ChatGPT đã tạo để thiết lập 1 webGIS cơ bản với các chức năng:
+&lt;ul>
+&lt;li>Title: WebGIS cơ bản với Leaflet&lt;/li>
+&lt;li>Đặt vị trí trung tâm ở Việt Nam&lt;/li>
+&lt;li>Thêm lớp nền OpenStreetMap&lt;/li>
+&lt;li>Thêm một Marker đặt tại Hà Nội, với label là:&lt;br>
+&lt;b>Hà Nội&lt;/b>&lt;br>Thủ đô của Việt Nam&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">html&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>WebGIS cơ bản với Leaflet&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">meta&lt;/span> &lt;span class="na">charset&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;utf-8&amp;#34;&lt;/span> &lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">meta&lt;/span> &lt;span class="na">name&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;viewport&amp;#34;&lt;/span> &lt;span class="na">content&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c">&amp;lt;!-- Leaflet CSS --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">link&lt;/span> &lt;span class="na">rel&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;stylesheet&amp;#34;&lt;/span> &lt;span class="na">href&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;https://unpkg.com/leaflet/dist/leaflet.css&amp;#34;&lt;/span> &lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">style&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">#&lt;/span>&lt;span class="nn">map&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">height&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="kt">vh&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">width&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="kt">%&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">style&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">body&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">h3&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;text-align:center;&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>WebGIS cơ bản với Leaflet.js&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">h3&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">id&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;map&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&amp;lt;!-- Leaflet JS --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;https://unpkg.com/leaflet/dist/leaflet.js&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Khởi tạo bản đồ và đặt vị trí trung tâm (tọa độ Việt Nam)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">var&lt;/span> &lt;span class="nx">map&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">L&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">map&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;map&amp;#39;&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">setView&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mf">14.0583&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">108.2772&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="mi">6&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Thêm lớp nền từ OpenStreetMap
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">L&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">tileLayer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">maxZoom&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">19&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">attribution&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;© OpenStreetMap contributors&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}).&lt;/span>&lt;span class="nx">addTo&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">map&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Thêm 1 marker (ví dụ tại Hà Nội)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">var&lt;/span> &lt;span class="nx">marker&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">L&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">marker&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mf">21.0285&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">105.8544&lt;/span>&lt;span class="p">]).&lt;/span>&lt;span class="nx">addTo&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">map&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">marker&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">bindPopup&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;&amp;lt;b&amp;gt;Hà Nội&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;Thủ đô của Việt Nam&amp;#34;&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">openPopup&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">body&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">html&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="exercise-1-publish-webgis-cơ-bản-sử-dụng-github-pages">Exercise 1: Publish webGIS cơ bản sử dụng Github pages&lt;/h3>
+&lt;ul>
+&lt;li>Copy nội dung đoạn mã trên, dán vào 1 file notepad và lưu lại thành tên &lt;strong>index.html&lt;/strong>
+&lt;figure id="figure-dán-mã-html-vào-một-file-notepad-và-lưu-lại-dưới-tên-indexhtml">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Dán mã html vào một file notepad và lưu lại dưới tên index.html" srcset="
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex11_hu_478a2bdc5e308849.webp 400w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex11_hu_61f6bb725317985.webp 760w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex11_hu_4012cb3cf4d2cc0a.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex11_hu_478a2bdc5e308849.webp"
+width="756"
+height="737"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Dán mã html vào một file notepad và lưu lại dưới tên index.html
+&lt;/figcaption>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-mở-file-indexhtml-bằng-trình-duyệt-web-chrome-hoặc-firefox">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Mở file index.html bằng trình duyệt web, chrome hoặc firefox" srcset="
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex12_hu_7f4897b811336ae2.webp 400w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex12_hu_ae6cdb35787d1a3c.webp 760w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex12_hu_bb6f5a3b5db040f6.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex12_hu_7f4897b811336ae2.webp"
+width="760"
+height="459"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Mở file index.html bằng trình duyệt web, chrome hoặc firefox
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>Hãy sử dụng các chức năng Zoom để thử nghiệm.&lt;/li>
+&lt;li>Để publish webGIS, truy cập &lt;a href="https://github.com/" target="_blank" rel="noopener">Github&lt;/a> và đăng nhập tài khoản.&lt;/li>
+&lt;li>Tạo mới một &lt;strong>repository&lt;/strong>, đặt tên là exercise1.&lt;/li>
+&lt;li>&lt;strong>Repository&lt;/strong> (thường gọi tắt là &lt;strong>repo&lt;/strong>) trong GitHub là nơi lưu trữ toàn bộ mã nguồn, tài liệu, và lịch sử thay đổi của một dự án. Chức năng của repo:
+&lt;ul>
+&lt;li>Lưu trữ mã nguồn &amp;amp; file dự án (code, hình ảnh, tài liệu…).&lt;/li>
+&lt;li>Theo dõi lịch sử thay đổi (ai sửa gì, khi nào).&lt;/li>
+&lt;li>Hỗ trợ cộng tác (nhiều người có thể clone, pull, push, tạo pull request).&lt;/li>
+&lt;li>Quản lý phiên bản (quay lại các bản cũ khi cần).&lt;/li>
+&lt;li>Chia sẻ công khai hoặc giới hạn quyền truy cập.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-tạo-repository-mới">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Tạo repository mới" srcset="
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex13_hu_6ef9f6ace7787813.webp 400w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex13_hu_bd44ff7f64da35d.webp 760w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex13_hu_e01ea1ac51b3decb.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex13_hu_6ef9f6ace7787813.webp"
+width="760"
+height="459"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Tạo repository mới
+&lt;/figcaption>&lt;/figure>
+&lt;br>
+&lt;figure id="figure-đặt-tên-repo-là-exercise1">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Đặt tên repo là exercise1" srcset="
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex14_hu_59d221619932b935.webp 400w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex14_hu_96771402a5c2bdcd.webp 760w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex14_hu_59bdd5fddb099eaf.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex14_hu_59d221619932b935.webp"
+width="702"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Đặt tên repo là exercise1
+&lt;/figcaption>&lt;/figure>
+&lt;br>
+&lt;figure id="figure-ấn-vào-uploading-an-existing-file-để-đưa-file-indexhtml-lên-github">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ấn vào **Uploading an existing file** để đưa file index.html lên Github" srcset="
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex15_hu_405025ebd6da2712.webp 400w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex15_hu_965847f259b34fa1.webp 760w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex15_hu_2209fcebdaecaaa.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex15_hu_405025ebd6da2712.webp"
+width="760"
+height="425"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Ấn vào &lt;strong>Uploading an existing file&lt;/strong> để đưa file index.html lên Github
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;div class="alert alert-note">
+&lt;div>
+Khi đã quen với Github, bạn có thể dùng command terminal để thao tác bằng các lệnh. Chi tiết ở &lt;a href="https://docs.github.com/en/get-started/start-your-journey/hello-world" target="_blank" rel="noopener">Github Docs&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;p>
+&lt;figure id="figure-chọn-file-indexhtml-để-tải-lên-và-sau-đó-ấn-commit-changes">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Chọn file index.html để tải lên và sau đó ấn **Commit Changes**" srcset="
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex16_hu_1fac3597765dd99e.webp 400w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex16_hu_76f8488992dc1904.webp 760w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex16_hu_e87b514f2ce2bef3.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex16_hu_1fac3597765dd99e.webp"
+width="760"
+height="428"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chọn file index.html để tải lên và sau đó ấn &lt;strong>Commit Changes&lt;/strong>
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-chuyển-sang-menu-settings--ấn-vào-pages-ở-dưới">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Chuyển sang menu **Settings** &amp;gt; Ấn vào **Pages** ở dưới" srcset="
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex17_hu_bb171ef599010f0e.webp 400w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex17_hu_560267e00593035a.webp 760w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex17_hu_7d7adf88dd197128.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex17_hu_bb171ef599010f0e.webp"
+width="760"
+height="425"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chuyển sang menu &lt;strong>Settings&lt;/strong> &amp;gt; Ấn vào &lt;strong>Pages&lt;/strong> ở dưới
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-ở-mục-build-and-deployment-chuyển-sang-nhánh-main--ấn-save">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Ở mục **Build and Deployment**, chuyển sang nhánh **main** &amp;gt; Ấn **Save**" srcset="
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex18_hu_22d32e80b687b684.webp 400w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex18_hu_11a37d73658951a1.webp 760w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex18_hu_fed2a66b9af92326.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex18_hu_22d32e80b687b684.webp"
+width="760"
+height="482"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Ở mục &lt;strong>Build and Deployment&lt;/strong>, chuyển sang nhánh &lt;strong>main&lt;/strong> &amp;gt; Ấn &lt;strong>Save&lt;/strong>
+&lt;/figcaption>&lt;/figure>
+&lt;figure id="figure-chuyển-sang-menu-actions-để-check-xem-trong-quá-trình-build-trang-có-lỗi-gì-không-khi-tất-cả-các-quá-trình-được-tick-xanh-nghĩa-là-trang-đã-được-build-thành-công">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Chuyển sang menu **Actions** để check xem trong quá trình build trang có lỗi gì không. Khi tất cả các quá trình được tick xanh nghĩa là trang đã được build thành công" srcset="
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex19_hu_7da323671a19e64d.webp 400w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex19_hu_cbd3b066d9a32674.webp 760w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex19_hu_d33be345544c48ea.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex19_hu_7da323671a19e64d.webp"
+width="760"
+height="491"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chuyển sang menu &lt;strong>Actions&lt;/strong> để check xem trong quá trình build trang có lỗi gì không. Khi tất cả các quá trình được tick xanh nghĩa là trang đã được build thành công
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;div class="box">
+&lt;strong>&lt;code>Kết quả:&lt;/code>&lt;/strong> &lt;a href="https://tunghanu.github.io/exercise1/" target="_blank" rel="noopener">https://tunghanu.github.io/exercise1/&lt;/a>&lt;br>
+Chúc mừng bạn đã triển khai thành công một trang webGIS.
+&lt;/div>
+&lt;h3 id="exercise-2-thu-nhỏ-khu-vực-nghiên-cứu-và-thêm-một-số-lớp-nền-ảnh-vệ-tinh">Exercise 2: Thu nhỏ khu vực nghiên cứu và thêm một số lớp nền ảnh vệ tinh&lt;/h3>
+&lt;p>Yêu cầu:&lt;/p>
+&lt;ul>
+&lt;li>Zoom vào 1 khu vực nhỏ, ví dụ Trường Đại học Hà Nội&lt;/li>
+&lt;li>Thêm một lựa chọn các lớp nền khác là Google Hybrid, Google Satellite&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">html&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>WebGIS cơ bản với Leaflet, thêm lớp nền&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">meta&lt;/span> &lt;span class="na">charset&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;utf-8&amp;#34;&lt;/span> &lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">meta&lt;/span> &lt;span class="na">name&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;viewport&amp;#34;&lt;/span> &lt;span class="na">content&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c">&amp;lt;!-- Leaflet CSS --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">link&lt;/span> &lt;span class="na">rel&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;stylesheet&amp;#34;&lt;/span> &lt;span class="na">href&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;https://unpkg.com/leaflet/dist/leaflet.css&amp;#34;&lt;/span> &lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">style&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">#&lt;/span>&lt;span class="nn">map&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">height&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="kt">vh&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">width&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="kt">%&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">style&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">body&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">h3&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;text-align:center;&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>WebGIS cơ bản với Leaflet.js, thêm lớp nền ảnh vệ tinh&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">h3&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">id&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;map&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&amp;lt;!-- Leaflet JS --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;https://unpkg.com/leaflet/dist/leaflet.js&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Khởi tạo bản đồ và đặt vị trí trung tâm (tọa độ Việt Nam)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">var&lt;/span> &lt;span class="nx">map&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">L&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">map&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;map&amp;#39;&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">setView&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mf">20.989470032335152&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">105.79574580114927&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="mi">17&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Các layer nền
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">var&lt;/span> &lt;span class="nx">googleHybrid&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">L&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">tileLayer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;http://{s}.google.com/vt/lyrs=y&amp;amp;x={x}&amp;amp;y={y}&amp;amp;z={z}&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">maxZoom&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">20&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">subdomains&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;mt0&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s1">&amp;#39;mt1&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s1">&amp;#39;mt2&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s1">&amp;#39;mt3&amp;#39;&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">attribution&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;© Google Maps&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">googleSatellite&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">L&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">tileLayer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;http://{s}.google.com/vt/lyrs=s&amp;amp;x={x}&amp;amp;y={y}&amp;amp;z={z}&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">maxZoom&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">20&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">subdomains&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;mt0&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s1">&amp;#39;mt1&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s1">&amp;#39;mt2&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s1">&amp;#39;mt3&amp;#39;&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">attribution&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;© Google Satellite&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">googleTerrain&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">L&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">tileLayer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;http://{s}.google.com/vt/lyrs=p&amp;amp;x={x}&amp;amp;y={y}&amp;amp;z={z}&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">maxZoom&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">20&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">subdomains&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;mt0&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s1">&amp;#39;mt1&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s1">&amp;#39;mt2&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s1">&amp;#39;mt3&amp;#39;&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">attribution&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;© Google Terrain&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">osm&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">L&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">tileLayer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">maxZoom&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">19&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">attribution&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;© OpenStreetMap contributors&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Thêm mặc định là Google Hybrid
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">osm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">addTo&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">map&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Tạo control chuyển đổi layer nền
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">var&lt;/span> &lt;span class="nx">baseMaps&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;🛰️ Google Hybrid&amp;#34;&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">googleHybrid&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;🌍 OpenStreetMap&amp;#34;&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">osm&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;🗺️ Google Satellite&amp;#34;&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">googleSatellite&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;⛰️ Google Terrain&amp;#34;&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">googleTerrain&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">L&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">control&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">layers&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">baseMaps&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">addTo&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">map&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Thêm 1 marker (ví dụ tại Hà Nội)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">var&lt;/span> &lt;span class="nx">marker&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">L&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">marker&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mf">20.989716969145746&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">105.79573486594445&lt;/span>&lt;span class="p">]).&lt;/span>&lt;span class="nx">addTo&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">map&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">marker&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">bindPopup&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Trường Đại học Hà Nội&amp;#34;&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">openPopup&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">body&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">html&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;strong>&lt;code>Kết quả exercise2:&lt;/code>&lt;/strong> &lt;a href="https://tunghanu.github.io/exercise2/" target="_blank" rel="noopener">https://tunghanu.github.io/exercise2/&lt;/a>&lt;/li>
+&lt;li>Biểu tượng layers ở góc trên bên phải có chức năng chuyển đổi các lớp nền theo ý muốn&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure id="figure-chuyển-đổi-lớp-nền-bằng-biểu-tượng-layer">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Chuyển đổi lớp nền bằng biểu tượng Layer" srcset="
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex21_hu_158702712a5618fe.webp 400w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex21_hu_5c12fceb7fa7d35.webp 760w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex21_hu_9b702e384fde6dd5.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex21_hu_158702712a5618fe.webp"
+width="681"
+height="499"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Chuyển đổi lớp nền bằng biểu tượng Layer
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="exercise-3-đưa-một-lớp-vector-lên-webgis">Exercise 3: Đưa một lớp vector lên webGIS&lt;/h3>
+&lt;ul>
+&lt;li>Trong exercise3, chúng ta sẽ đưa lớp bản đồ mật độ dân số huyện Chi Lăng, tỉnh Lạng Sơn đã giới thiệu ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/">Bài 8&lt;/a> lên webGIS, kèm theo legend.&lt;/li>
+&lt;li>Định dạng &lt;code>shapefile&lt;/code> sẽ không phù hợp với web platforms. Dữ liệu cần phải được chuyển đổi sang định dạng &lt;code>geojson&lt;/code>.&lt;/li>
+&lt;li>Trước tiên tính mật độ dân số cho các xã thuộc huyện Chi Lăng, Lạng Sơn (trước sáp nhập). Cách làm đã được giới thiệu trong &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/#zonal-statistics">Bài 11, phần zonal statistics&lt;/a>&lt;/li>
+&lt;li>Các bạn hãy tự tư duy, với sự hỗ trợ của công cụ AI để làm bài thực hành này.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>&lt;code>Kết quả exercise3:&lt;/code>&lt;/strong> &lt;a href="https://tunghanu.github.io/exercise3/" target="_blank" rel="noopener">https://tunghanu.github.io/exercise3/&lt;/a>&lt;br>
+&lt;figure id="figure-kết-quả-exercise3-bản-đồ-mật-độ-dân-số-huyện-chi-lăng-tỉnh-lạng-sơn-trên-webgis">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Kết quả exercise3: bản đồ mật độ dân số huyện Chi Lăng, tỉnh Lạng Sơn trên webGIS" srcset="
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex31_hu_ce1606d65794000b.webp 400w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex31_hu_b785f74f17512203.webp 760w,
+/onlinecourse/course/gis/12_webgis1/12_webgis1_ex31_hu_25d93fba2a371db8.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex31_hu_ce1606d65794000b.webp"
+width="760"
+height="425"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Kết quả exercise3: bản đồ mật độ dân số huyện Chi Lăng, tỉnh Lạng Sơn trên webGIS
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="final-exercise-optional-advanced-triển-khai-một-hệ-thống-webgis-giám-sát-bụi-mịn-pm25-cho-miền-bắc-việt-nam">Final exercise (optional, advanced): triển khai một hệ thống webGIS giám sát bụi mịn PM2.5 cho miền Bắc Việt Nam&lt;/h3>
+&lt;ul>
+&lt;li>Dữ liệu giám sát bụi mịn PM2.5 [microgram/m3] được lấy từ Copernicus Atmosphere Monitoring Service (CAMS), đã giới thiệu ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/#dữ-liệu-ô-nhiễm-không-khí">Bài 10&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;iframe src="https://thaytunghanu.github.io/onlinecourse/pm25.html" width="100%" height="880" style="border:none;">&lt;/iframe></description></item></channel></rss>

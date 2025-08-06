@@ -635,23 +635,22 @@ Kết quả sau khi tính diện tích thể hiện ở bảng thuộc tính c�
 &lt;/li>
 &lt;li>
 &lt;p>Đổi trường &lt;strong>value&lt;/strong> từ code LULC thành tên các loại hình sử dụng đất: mở &lt;strong>Field Calculator&lt;/strong> và điền đoạn mã sau vào ô &lt;strong>Expression&lt;/strong>:&lt;/p>
-&lt;pre>&lt;code> CASE
-WHEN &amp;quot;value&amp;quot; = 10 THEN 'Tree cover'
-WHEN &amp;quot;value&amp;quot; = 20 THEN 'Shrubland'
-WHEN &amp;quot;value&amp;quot; = 30 THEN 'Grassland'
-WHEN &amp;quot;value&amp;quot; = 40 THEN 'Cropland'
-WHEN &amp;quot;value&amp;quot; = 50 THEN 'Built-up'
-WHEN &amp;quot;value&amp;quot; = 60 THEN 'Bare / sparse vegetation'
-WHEN &amp;quot;value&amp;quot; = 70 THEN 'Snow and Ice'
-WHEN &amp;quot;value&amp;quot; = 80 THEN 'Permanent water bodies'
-WHEN &amp;quot;value&amp;quot; = 90 THEN 'Herbaceous wetland'
-WHEN &amp;quot;value&amp;quot; = 95 THEN 'Mangroves'
-WHEN &amp;quot;value&amp;quot; = 100 THEN 'Moss and lichen'
-END
-&lt;/code>&lt;/pre>
 &lt;/li>
 &lt;/ul>
-&lt;p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">CASE
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WHEN &amp;#34;value&amp;#34; = 10 THEN &amp;#39;Tree cover&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WHEN &amp;#34;value&amp;#34; = 20 THEN &amp;#39;Shrubland&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WHEN &amp;#34;value&amp;#34; = 30 THEN &amp;#39;Grassland&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WHEN &amp;#34;value&amp;#34; = 40 THEN &amp;#39;Cropland&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WHEN &amp;#34;value&amp;#34; = 50 THEN &amp;#39;Built-up&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WHEN &amp;#34;value&amp;#34; = 60 THEN &amp;#39;Bare / sparse vegetation&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WHEN &amp;#34;value&amp;#34; = 70 THEN &amp;#39;Snow and Ice&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WHEN &amp;#34;value&amp;#34; = 80 THEN &amp;#39;Permanent water bodies&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WHEN &amp;#34;value&amp;#34; = 90 THEN &amp;#39;Herbaceous wetland&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WHEN &amp;#34;value&amp;#34; = 95 THEN &amp;#39;Mangroves&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WHEN &amp;#34;value&amp;#34; = 100 THEN &amp;#39;Moss and lichen&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">END
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure id="figure-đổi-trường-value-từ-code-lulc-thành-tên-các-loại-hình-sử-dụng-đất">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Đổi trường **value** từ code LULC thành tên các loại hình sử dụng đất" srcset="

@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: August 7, 2025 --><html lang="en-us" >
+
+
+<head><script src="/onlinecourse/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=onlinecourse/livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/onlinecourse/css/vendor-bundle.min.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/onlinecourse/css/wowchemy.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/onlinecourse/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/onlinecourse/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="TS. Hoàng Thanh Tùng" />
+
+
+
+
+
+  
+
+<meta name="description" content="&lt;!doctype html&gt;
+
+
+
+
+PM2.5 widget — single-file legend fallback
+
+
+
+
+
+
+
+
+
+  
+    PM2.5 (ECMWF)
+  
+
+  
+    
+
+    
+      
+        Legend
+        
+          
+          
+          Range: 0.01 — 10
+        
+      
+
+      
+        Opacity
+        
+        Giá trị hiện tại: 0.50
+      
+
+      
+        Chọn ngày / giờ
+        
+        
+        
+          Áp dụng
+          Gần nhất
+        
+      
+
+      
+    
+  
+
+
+
+
+" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="http://localhost:1313/onlinecourse/course/gis/pm25/" />
+<link rel="canonical" href="http://localhost:1313/onlinecourse/course/gis/pm25/" />
+
+
+
+  <link rel="manifest" href="/onlinecourse/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/onlinecourse/media/icon_hu_3b11da90b4c87ef8.png" />
+<link rel="apple-touch-icon" type="image/png" href="/onlinecourse/media/icon_hu_f21a43183798c34b.png" />
+
+<meta name="theme-color" content="#0072ff" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="http://localhost:1313/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png" />
+
+
+
+  
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Thầy Tùng HANU" />
+<meta property="og:url" content="http://localhost:1313/onlinecourse/course/gis/pm25/" />
+<meta property="og:title" content="Thầy Tùng HANU" />
+<meta property="og:description" content="&lt;!doctype html&gt;
+
+
+
+
+PM2.5 widget — single-file legend fallback
+
+
+
+
+
+
+
+
+
+  
+    PM2.5 (ECMWF)
+  
+
+  
+    
+
+    
+      
+        Legend
+        
+          
+          
+          Range: 0.01 — 10
+        
+      
+
+      
+        Opacity
+        
+        Giá trị hiện tại: 0.50
+      
+
+      
+        Chọn ngày / giờ
+        
+        
+        
+          Áp dụng
+          Gần nhất
+        
+      
+
+      
+    
+  
+
+
+
+
+" /><meta property="og:image" content="http://localhost:1313/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png" /><meta property="og:locale" content="en-us" />
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Thầy Tùng HANU</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="0355cbae481775976ca48ba8c09ea176" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/onlinecourse/js/wowchemy-init.min.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/onlinecourse/">Thầy Tùng HANU</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/onlinecourse/">Thầy Tùng HANU</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/onlinecourse/"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Courses</span><span class="caret"></span>
+            </a>
+            <div class="dropdown-menu">
+              
+                <a class="dropdown-item" href="/onlinecourse/course/gis/"><span>GIS</span></a>
+              
+                <a class="dropdown-item" href="/onlinecourse/course/dana/"><span>Phân tích dữ liệu</span></a>
+              
+                <a class="dropdown-item" href="/onlinecourse/course/suscc/"><span>PTBV & BĐKH</span></a>
+              
+            </div>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/onlinecourse/post/"><span>Blog</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/onlinecourse/contact/"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+      
+      
+      <div class="article-container py-1" style="background: initial">
+        
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+    
+  
+    
+  
+    
+  
+
+    <li class="breadcrumb-item">
+      <a href="/onlinecourse/">
+        
+          Home
+        
+      </a>
+    </li>
+  
+
+    <li class="breadcrumb-item">
+      <a href="/onlinecourse/course/">
+        
+          📚 Courses
+        
+      </a>
+    </li>
+  
+
+    <li class="breadcrumb-item">
+      <a href="/onlinecourse/course/gis/">
+        
+          GIS
+        
+      </a>
+    </li>
+  
+
+      <li class="breadcrumb-item active" aria-current="page">
+        
+      </li>
+    </ol>
+  </nav>
+
+
+
+
+      </div>
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1></h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 1, 0001
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PM2.5 widget — single-file legend fallback</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#fafafa}
+  .frame{max-width:1200px;margin:18px auto;padding:0;border:1px solid #ddd;border-radius:8px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,0.06)}
+  .header{padding:10px 14px;background:#fff;border-bottom:1px solid #eee}
+  .header h3{margin:0;font-size:16px}
+  .content{display:flex;gap:12px}
+  #map { width: 75%; height: 620px; min-width: 600px; }
+  .side { width: 25%; min-width:260px; padding:12px; background:#fff }
+  .control { margin-bottom:12px }
+  label{display:block;font-weight:600;margin-bottom:6px}
+  .small{font-size:13px;color:#555}
+  /* legend image box */
+  .legend-box{background:#fff;border:1px solid #eee;padding:8px;border-radius:6px;box-shadow:0 4px 10px rgba(0,0,0,0.03)}
+  .legend-box img{width:100%;height:auto;display:block}
+  .legend-caption{font-size:13px;color:#333;margin-top:6px;text-align:center}
+</style>
+</head>
+<body>
+
+<div class="frame">
+  <div class="header">
+    <h3>PM2.5 (ECMWF)</h3>
+  </div>
+
+  <div class="content">
+    <div id="map"></div>
+
+    <div class="side">
+      <div class="control">
+        <label>Legend</label>
+        <div class="legend-box">
+          <!-- 1) This img tries remote legend first. If it errors, JS replaces with inline SVG as data URI -->
+          <img id="legendImg" alt="Legend for PM2.5" crossorigin="anonymous"
+               src="http://eccharts.ecmwf.int/wms/?token=public&SERVICE=WMS&REQUEST=GetLegendGraphic&VERSION=1.3.0&LAYER=composition_pm2p5&STYLE=sh_all_pm2p5_defra_daqi&FORMAT=image/png">
+          <div class="legend-caption">Range: 0.01 — 10</div>
+        </div>
+      </div>
+
+      <div class="control">
+        <label>Opacity</label>
+        <input id="opacity" type="range" min="0" max="1" step="0.01" value="0.5">
+        <div class="small">Giá trị hiện tại: <span id="opacityVal">0.50</span></div>
+      </div>
+
+      <div class="control">
+        <label>Chọn ngày / giờ</label>
+        <input id="date" type="date" style="width:100%;padding:6px;font-size:14px">
+        <select id="hour" style="width:100%;padding:6px;margin-top:6px;font-size:14px"></select>
+        <div style="display:flex;gap:8px;margin-top:8px">
+          <button id="apply" style="flex:1;padding:8px">Áp dụng</button>
+          <button id="latest" style="flex:1;padding:8px">Gần nhất</button>
+        </div>
+      </div>
+
+      <!-- <div class="control small">
+        <strong>Lưu ý:</strong>
+        <ul>
+          <li>Legend nội bộ (SVG) sẽ hiện nếu server từ chối GetLegendGraphic (CORS hoặc lỗi).</li>
+          <li>Bạn có thể chỉnh màu / nhãn trong phần <code>INLINE_LEGEND_CONFIG</code> bên dưới.</li>
+        </ul>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<script>
+/* ----------------------------
+   MAP SETUP (Leaflet)
+   ---------------------------- */
+var map = L.map('map', {crs: L.CRS.EPSG3857}).setView([21,105],7);
+
+// Google Hybrid (be careful with TOS)
+L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {maxZoom:20, attribution:'© Google'}).addTo(map);
+
+// WMS layer (may fail due to CORS when called from browser)
+var wmsBase = 'http://eccharts.ecmwf.int/wms/';
+var wms = L.tileLayer.wms(wmsBase, {
+  token: 'public',
+  version: '1.3.0',
+  layers: 'composition_pm2p5',
+  styles: 'sh_all_pm2p5_defra_daqi',
+  format: 'image/png',
+  transparent: true,
+  crs: L.CRS.EPSG4326
+}).setOpacity(0.5).addTo(map);
+
+/* ----------------------------
+   TIME / OPACITY UI
+   ---------------------------- */
+// timeDimension parsed from QGIS source (example)
+var timeDimString = '2025-08-02T03:00:00Z,2025-08-02T06:00:00Z/2025-08-11T00:00:00Z/PT3H';
+function expandTimeDim(text){
+  if(!text) return [];
+  var parts = text.split(','), out=[];
+  for(var i=0;i<parts.length;i++){
+    var p = parts[i].trim();
+    if(p.indexOf('/')!=-1){
+      var seg = p.split('/');
+      if(seg.length>=3){
+        var start=new Date(seg[0]), end=new Date(seg[1]), interval=seg[2];
+        var stepMs=0;
+        if(interval.startsWith('PT') && interval.endsWith('H')) stepMs = parseInt(interval.replace('PT','').replace('H',''))*3600*1000;
+        else if(interval.startsWith('P') && interval.endsWith('D')) stepMs = parseInt(interval.replace('P','').replace('D',''))*24*3600*1000;
+        if(stepMs===0){ out.push(start.toISOString()); out.push(end.toISOString()); continue; }
+        for(var t=start.getTime(); t<=end.getTime(); t+=stepMs) out.push(new Date(t).toISOString());
+      }
+    } else { if(p) out.push(new Date(p).toISOString()); }
+  }
+  var uniq=Array.from(new Set(out)); uniq.sort(); return uniq;
+}
+var times = expandTimeDim(timeDimString);
+
+// populate hour select by detected step
+var detectedStep = 3;
+var m = timeDimString.match(/PT(\d+)H/); if(m) detectedStep = parseInt(m[1]);
+var hourEl = document.getElementById('hour');
+for(var h=0; h<24; h+=detectedStep){
+  var val = String(h).padStart(2,'0') + ':00:00Z';
+  var opt = document.createElement('option'); opt.value = val; opt.text = String(h).padStart(2,'0') + ':00'; hourEl.appendChild(opt);
+}
+if(times.length>0){
+  var first = new Date(times[0]), last = new Date(times[times.length-1]);
+  var dateEl = document.getElementById('date');
+  dateEl.min = first.toISOString().slice(0,10); dateEl.max = last.toISOString().slice(0,10); dateEl.value = last.toISOString().slice(0,10);
+}
+
+// opacity slider
+var opEl = document.getElementById('opacity'), opVal = document.getElementById('opacityVal');
+opEl.addEventListener('input', function(){ wms.setOpacity(opEl.value); opVal.textContent = parseFloat(opEl.value).toFixed(2); });
+opVal.textContent = parseFloat(opEl.value).toFixed(2);
+
+// time apply
+document.getElementById('apply').addEventListener('click', function(){
+  var d = document.getElementById('date').value;
+  var h = document.getElementById('hour').value;
+  if(!d) return alert('Chọn ngày trước');
+  var iso = d + 'T' + h;
+  // choose closest available time
+  if(times.length>0){
+    var tgt = new Date(iso).getTime(), best=Infinity, idx=0;
+    for(var i=0;i<times.length;i++){ var diff = Math.abs(new Date(times[i]).getTime()-tgt); if(diff<best){best=diff; idx=i;} }
+    iso = times[idx];
+  }
+  wms.setParams({time: iso});
+  wms.redraw();
+});
+
+document.getElementById('latest').addEventListener('click', function(){
+  if(times.length>0){
+    var latest = times[times.length-1];
+    document.getElementById('date').value = latest.slice(0,10);
+    var hh = latest.slice(11);
+    for(var i=0;i<hourEl.options.length;i++) if(hourEl.options[i].value===hh) hourEl.selectedIndex=i;
+    wms.setParams({time: latest}); wms.redraw();
+  } else {
+    alert('Không có thông tin thời gian sẵn trong example này.');
+  }
+});
+
+/* ----------------------------
+   LEGEND FALLBACK SOLUTION
+   ---------------------------- */
+
+/* ==== CONFIG: edit to match exact legend from QGIS ==== */
+var INLINE_LEGEND_CONFIG = {
+  // colors requested by you
+  colors: [
+    "#00FF00", // 12 - xanh lá tươi
+    "#80FF00", // 24 - xanh vàng
+    "#FFFF00", // 36 - vàng
+    "#FFD700", // 42 - vàng đậm
+    "#FFA500", // 48 - cam
+    "#FF9999", // 54 - hồng nhạt
+    "#FF0000", // 59 - đỏ
+    "#800000", // 65 - đỏ sẫm
+    "#CC00FF"  // 71 - tím
+  ],
+  // labels matching the image (one label per color)
+  labels: ["12","24","36","42","48","54","59","65","71"],
+  title: "Contour shade DEFRA PM2.5 DAQI",
+  subtitle: "Range: 0.01 — 10"
+};
+/* ===================================================== */
+
+function makeInlineLegendSVG(cfg, widthPx){
+  widthPx = widthPx || 260;
+  var cols = cfg.colors.length;
+  var boxW = Math.floor((widthPx - 20) / cols); // leave some padding
+  var height = 80;
+  var svgParts = [];
+  svgParts.push(
+    '<svg xmlns="http://www.w3.org/2000/svg" width="' + widthPx + '" height="' + height + '" viewBox="0 0 ' + widthPx + ' ' + height + '">'
+  );
+  // title
+  svgParts.push('<style>text{font-family:Arial,Helvetica,sans-serif;fill:#222}</style>');
+  svgParts.push('<text x="10" y="14" font-size="12" font-weight="700">' + cfg.title + '</text>');
+  // subtitle
+  svgParts.push('<text x="10" y="30" font-size="11" fill="#444">' + cfg.subtitle + '</text>');
+  // color boxes
+  var startX = 10, startY = 40;
+  for(var i=0;i<cols;i++){
+    var x = startX + i*boxW;
+    var w = boxW - 1;
+    svgParts.push('<rect x="' + x + '" y="' + startY + '" width="' + w + '" height="14" fill="' + cfg.colors[i] + '" stroke="rgba(0,0,0,0.06)"/>');
+  }
+  // labels under boxes
+  var labelY = startY + 32;
+  for(var i=0;i<cols;i++){
+    var x = startX + i*boxW + (boxW/2);
+    var txt = cfg.labels[i] !== undefined ? cfg.labels[i] : '';
+    svgParts.push('<text x="' + x + '" y="' + labelY + '" font-size="11" text-anchor="middle" fill="#333">' + txt + '</text>');
+  }
+  svgParts.push('</svg>');
+  return svgParts.join('');
+}
+
+var legendImg = document.getElementById('legendImg');
+// if remote legend loads OK, nothing more to do
+legendImg.onerror = function(){
+  console.warn('Remote legend failed to load — using inline SVG fallback.');
+  var svg = makeInlineLegendSVG(INLINE_LEGEND_CONFIG, 220);
+  // base64-encode SVG and set as src
+  var svg64 = btoa(unescape(encodeURIComponent(svg)));
+  legendImg.src = 'data:image/svg+xml;base64,' + svg64;
+};
+// Also handle image load success but possibly blank; set timeout to fallback if image naturalWidth==0
+legendImg.onload = function(){
+  // some servers may return 1x1 transparent image — treat that as failure
+  setTimeout(function(){
+    if(legendImg.naturalWidth === 0 || legendImg.naturalHeight === 0){
+      legendImg.onerror();
+    }
+  }, 300);
+};
+
+/* OPTIONAL: if you prefer to force inline legend (skip remote attempt), uncomment below */
+// legendImg.onerror();
+
+/* ----------------------------
+   End file
+   ---------------------------- */
+</script>
+</body>
+</html>
+
+    </div>
+
+    
+  
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fonlinecourse%2Fcourse%2Fgis%2Fpm25%2F&amp;text=" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fonlinecourse%2Fcourse%2Fgis%2Fpm25%2F&amp;t=" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fonlinecourse%2Fcourse%2Fgis%2Fpm25%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fonlinecourse%2Fcourse%2Fgis%2Fpm25%2F&amp;title=" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=%20http%3A%2F%2Flocalhost%3A1313%2Fonlinecourse%2Fcourse%2Fgis%2Fpm25%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flocalhost%3A1313%2Fonlinecourse%2Fcourse%2Fgis%2Fpm25%2F&amp;title=" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/onlinecourse/author/ts.-hoang-thanh-tung/"><img class="avatar mr-3 avatar-circle" src="/onlinecourse/author/ts.-hoang-thanh-tung/avatar_hu_ac6b8188c764bd33.jpg" alt="TS. Hoàng Thanh Tùng"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/onlinecourse/author/ts.-hoang-thanh-tung/">TS. Hoàng Thanh Tùng</a></h5>
+      <h6 class="card-subtitle">Instructor</h6>
+      <p class="card-text">My research interests include Environment, Climate change, Sustainability, GIS &amp; Remote Sensing</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:tunghtqth@hanu.edu.vn" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/GeorgeCushen" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/gcushen" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+   
+ 
+
+
+  <p class="powered-by">  
+    &copy; 2025 Thầy Tùng HANU.
+  
+     Mọi nội
+    dung thuộc bản quyền của Thầy Tùng HANU, không được sao chép mà không trích
+    dẫn hoặc không có sự cho phép. Published with Hugo Blox Builder.
+    
+  </p>
+
+  
+  <div style="text-align: center; margin-top: 20px;">
+    <button onclick="refreshPage()" style="padding: 8px 8px; background: #007acc; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 14px;">
+      🔄 Refresh Page
+    </button>
+  </div>
+
+  
+  <script>
+    function refreshPage() {
+      const url = window.location.href.split('?')[0];
+      window.location.href = url + "?_=" + new Date().getTime();
+    }
+  </script>
+
+</footer>
+
+  
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/onlinecourse/js/vendor-bundle.min.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/onlinecourse/js/wowchemy-headroom.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/onlinecourse/en/js/wowchemy.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

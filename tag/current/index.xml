@@ -11,6 +11,7 @@
 &lt;li>&lt;a href="#mục-tiêu-khóa-học">Mục tiêu khóa học&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#đối-tượng-của-khóa-học">Đối tượng của khóa học&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#một-số-kết-quả-của-các-cựu-học-viên">Một số kết quả của các cựu học viên&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#demo-webgis-giám-sát-bụi-mịn-pm25-cho-miền-bắc-việt-nam">Demo WebGIS giám sát bụi mịn PM2.5 cho miền Bắc Việt Nam&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#nội-dung-khóa-học">Nội dung khóa học&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#thông-tin-giảng-viên">Thông tin giảng viên&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#faqs">FAQs&lt;/a>&lt;/li>
@@ -89,6 +90,11 @@ max-width: 100% !important;
 }
 }
 &lt;/style>
+&lt;h2 id="demo-webgis-giám-sát-bụi-mịn-pm25-cho-miền-bắc-việt-nam">Demo WebGIS giám sát bụi mịn PM2.5 cho miền Bắc Việt Nam&lt;/h2>
+&lt;ul>
+&lt;li>Dữ liệu giám sát bụi mịn PM2.5 [microgram/m3] được lấy từ Copernicus Atmosphere Monitoring Service (CAMS)&lt;/li>
+&lt;/ul>
+&lt;iframe src="https://thaytunghanu.github.io/onlinecourse/pm25.html" width="100%" height="880" style="border:none;">&lt;/iframe>
 &lt;h2 id="nội-dung-khóa-học">Nội dung khóa học&lt;/h2>
 &lt;ul class="list-unstyled">
 &lt;li>
@@ -144,6 +150,11 @@ max-width: 100% !important;
 &lt;li>
 &lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/">11. Phân tích không gian nâng cao&lt;/a>&lt;/h5>
 &lt;p>Phân tích zonal statistics, nội suy, tính diện tích từ dữ liệu raster.
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/">12. Giới thiệu về WebGIS&lt;/a>&lt;/h5>
+&lt;p>Giới thiệu về WebGIS và tạo một ứng dụng WebGIS đơn giản.
 &lt;/p>
 &lt;/li>
 &lt;/ul>

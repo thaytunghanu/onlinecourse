@@ -9753,3 +9753,21 @@ div.chart {
   margin: 0 auto;
   max-width: 300px;
   border-radius: 20px; }
+
+/* Tùy chỉnh màu nền cho khối code */
+pre code {
+  background-color: #f6f8fa;
+  /* nền xám nhạt giống GitHub */
+  display: block;
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto; }
+
+code {
+  background-color: #eeeded;
+  padding: 2px 6px; }
+
+.box {
+  background-color: #f5f5f5;
+  padding: 1em;
+  border-radius: 6px; }
