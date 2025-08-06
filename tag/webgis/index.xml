@@ -39,13 +39,13 @@
 &lt;h3 id="vai-trò-của-webgis">Vai trò của WebGIS&lt;/h3>
 &lt;p>Hiện nay, WebGIS đóng vai trò rất quan trọng trong việc quản lý, chia sẻ và phân tích dữ liệu không gian, đặc biệt trong bối cảnh chuyển đổi số và dữ liệu mở. Có thể tóm gọn các vai trò chính như sau:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Công cụ chia sẻ dữ liệu không gian hiệu quả&lt;/strong>
+&lt;li>&lt;strong>Công cụ chia sẻ dữ liệu không gian hiệu quả&lt;/strong> (như &lt;a href="https://earthexplorer.usgs.gov/" target="_blank" rel="noopener">EarthExplorer&lt;/a> của USGS)
 &lt;ul>
 &lt;li>Cho phép công khai hóa dữ liệu GIS tới cộng đồng hoặc chia sẻ nội bộ một cách nhanh chóng.&lt;/li>
 &lt;li>Hỗ trợ ra quyết định dựa trên dữ liệu chung, thay vì dữ liệu phân tán ở nhiều cá nhân. Ví dụ: các cổng dữ liệu mở của chính quyền, bản đồ dịch bệnh, bản đồ giám sát môi trường.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>Nền tảng giám sát và quản lý theo thời gian thực&lt;/strong>
+&lt;li>&lt;strong>Nền tảng giám sát và quản lý theo thời gian thực&lt;/strong> (giống như &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/#final-exercise-optional-advanced-triển-khai-một-hệ-thống-webgis-giám-sát-bụi-mịn-pm25-cho-miền-bắc-việt-nam">Demo WebGIS giám sát bụi mịn&lt;/a> sẽ giới thiệu ở cuối bài này)
 &lt;ul>
 &lt;li>Kết nối với cảm biến IoT, GPS, thiết bị đo đạc để cập nhật thông tin liên tục.&lt;/li>
 &lt;li>Giám sát cháy rừng, lũ lụt, ô nhiễm không khí, giao thông… ngay khi sự kiện xảy ra.&lt;/li>
@@ -58,7 +58,7 @@
 &lt;li>Giúp các nhà quản lý, quy hoạch, và nhà nghiên cứu đưa ra giải pháp dựa trên thông tin trực quan.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>Thúc đẩy minh bạch và tham gia cộng đồng&lt;/strong>
+&lt;li>&lt;strong>Thúc đẩy minh bạch và tham gia cộng đồng&lt;/strong> (&lt;a href="https://www.mapillary.com/" target="_blank" rel="noopener">Mapillary&lt;/a>, OpenStreetMap, Google Street View)
 &lt;ul>
 &lt;li>Người dân có thể truy cập, giám sát, và đóng góp dữ liệu (crowdsourcing).&lt;/li>
 &lt;li>Tăng tính minh bạch trong các dự án quy hoạch, bảo vệ môi trường, và dịch vụ công.&lt;/li>
@@ -74,7 +74,7 @@
 &lt;ul>
 &lt;li>Lập sẵn tài khoản để sử dụng các công cụ AI (miễn phí)&lt;/li>
 &lt;li>Lập sẵn tài khoản &lt;strong>Github&lt;/strong> để phục vụ đưa trang WebGIS lên Internet. Mục đích là tận dụng tính năng &lt;strong>Github Pages&lt;/strong> của &lt;strong>Github&lt;/strong> để &lt;strong>hosting&lt;/strong> trang webGIS.
-&lt;details class="spoiler " id="spoiler-1">
+&lt;details class="spoiler " id="spoiler-2">
 &lt;summary>&lt;code>Github là gì?&lt;/code>&lt;/summary>
 &lt;p>&lt;ul>
 &lt;li>GitHub là một nền tảng lưu trữ và quản lý mã nguồn (source code) trực tuyến, cho phép lập trình viên và nhóm phát triển lưu trữ, chia sẻ, cộng tác trên các dự án phần mềm bằng hệ thống Git.&lt;/li>
@@ -83,7 +83,7 @@
 &lt;/ul>
 &lt;/p>
 &lt;/details>
-&lt;details class="spoiler " id="spoiler-2">
+&lt;details class="spoiler " id="spoiler-3">
 &lt;summary>&lt;code>Hosting là gì?&lt;/code>&lt;/summary>
 &lt;p>&lt;ul>
 &lt;li>Hosting (dịch sang tiếng Việt thường gọi là lưu trữ web) là dịch vụ cho phép bạn đặt (lưu trữ) website hoặc ứng dụng web của mình trên một máy chủ (server) kết nối Internet, để người khác có thể truy cập qua tên miền (domain).&lt;/li>
