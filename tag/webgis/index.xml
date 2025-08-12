@@ -465,5 +465,6 @@ Kết quả exercise3: bản đồ mật độ dân số huyện Chi Lăng, tỉ
 &lt;h3 id="final-exercise-optional-advanced-triển-khai-một-hệ-thống-webgis-giám-sát-bụi-mịn-pm25-cho-miền-bắc-việt-nam">Final exercise (optional, advanced): triển khai một hệ thống webGIS giám sát bụi mịn PM2.5 cho miền Bắc Việt Nam&lt;/h3>
 &lt;ul>
 &lt;li>Dữ liệu giám sát bụi mịn PM2.5 [microgram/m3] được lấy từ Copernicus Atmosphere Monitoring Service (CAMS), đã giới thiệu ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/#dữ-liệu-ô-nhiễm-không-khí">Bài 10&lt;/a>.&lt;/li>
+&lt;li>Bài thực hành này là tùy chọn. Các bạn hãy tự tư duy, với kiến thức từ Bài 10 và sự hỗ trợ của công cụ AI để triển khai hệ thống webGIS tương tự như thế này.&lt;/li>
 &lt;/ul>
 &lt;iframe src="https://thaytunghanu.github.io/onlinecourse/pm25.html" width="100%" height="880" style="border:none;">&lt;/iframe></description></item></channel></rss>
