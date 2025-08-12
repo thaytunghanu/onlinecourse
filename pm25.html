@@ -64,22 +64,23 @@
 </div>
 
 <script>
-// MAP setup
-var map = L.map('map', {crs: L.CRS.EPSG3857}).setView([21,105],7);
-L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {maxZoom:20, attribution:'© Google'}).addTo(map);
+// ======== HÀM LẤY TIME DIMENSION MỚI NHẤT TỪ WMS =========
+function fetchTimeDimension() {
+  const url = 'http://eccharts.ecmwf.int/wms/?token=public&service=WMS&version=1.3.0&request=GetCapabilities';
+  return fetch(url)
+    .then(r => r.text())
+    .then(txt => {
+      const parser = new DOMParser();
+      const xml = parser.parseFromString(txt, "application/xml");
+      const dimEl = xml.querySelector('Dimension[name="time"]');
+      if (dimEl) {
+        return dimEl.textContent.trim();
+      }
+      throw new Error("Không tìm thấy Dimension time");
+    });
+}
 
-var wms = L.tileLayer.wms('http://eccharts.ecmwf.int/wms/', {
-  token: 'public',
-  version: '1.3.0',
-  layers: 'composition_pm2p5',
-  styles: 'sh_all_pm2p5_defra_daqi',
-  format: 'image/png',
-  transparent: true,
-  crs: L.CRS.EPSG4326
-}).setOpacity(0.5).addTo(map);
-
-// TimeDimension
-var timeDimString = '2025-08-02T03:00:00Z,2025-08-02T06:00:00Z/2025-08-11T00:00:00Z/PT3H';
+// ======== HÀM MỞ RỘNG TIME DIM STRING THÀNH DANH SÁCH ISO =========
 function expandTimeDim(text){
   if(!text) return [];
   var parts = text.split(','), out=[];
@@ -98,27 +99,84 @@ function expandTimeDim(text){
   }
   return Array.from(new Set(out)).sort();
 }
-var times = expandTimeDim(timeDimString);
 
-// populate hours
-var detectedStep = 3;
-var m = timeDimString.match(/PT(\d+)H/); if(m) detectedStep = parseInt(m[1]);
+// ======== HÀM ĐẶT MẶC ĐỊNH NGÀY GIỜ THEO GIỜ HÀ NỘI =========
+function setDefaultHanoiTime() {
+  const now = new Date();
+  const hanoiOffsetMs = 7 * 60 * 60 * 1000;
+  const utcMs = now.getTime() + (now.getTimezoneOffset() * 60 * 1000);
+  const hanoiTime = new Date(utcMs + hanoiOffsetMs);
+
+  const dateEl = document.getElementById('date');
+  const hourEl = document.getElementById('hour');
+
+  dateEl.value = hanoiTime.toISOString().slice(0, 10);
+
+  const hh = String(hanoiTime.getHours()).padStart(2, '0') + ':00:00Z';
+  for (let i = 0; i < hourEl.options.length; i++) {
+    if (hourEl.options[i].value === hh) {
+      hourEl.selectedIndex = i;
+      break;
+    }
+  }
+}
+
+// ======== MAP SETUP =========
+var map = L.map('map', {crs: L.CRS.EPSG3857}).setView([21,105],7);
+L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {maxZoom:20, attribution:'© Google'}).addTo(map);
+
+var wms = L.tileLayer.wms('http://eccharts.ecmwf.int/wms/', {
+  token: 'public',
+  version: '1.3.0',
+  layers: 'composition_pm2p5',
+  styles: 'sh_all_pm2p5_defra_daqi',
+  format: 'image/png',
+  transparent: true,
+  crs: L.CRS.EPSG4326
+}).setOpacity(0.5).addTo(map);
+
+var times = [];
 var hourEl = document.getElementById('hour');
-for(var h=0; h<24; h+=detectedStep){
-  var val = String(h).padStart(2,'0') + ':00:00Z';
-  var opt = document.createElement('option'); opt.value = val; opt.text = String(h).padStart(2,'0') + ':00'; hourEl.appendChild(opt);
-}
-if(times.length>0){
-  var first = new Date(times[0]), last = new Date(times[times.length-1]);
-  var dateEl = document.getElementById('date');
-  dateEl.min = first.toISOString().slice(0,10); dateEl.max = last.toISOString().slice(0,10); dateEl.value = last.toISOString().slice(0,10);
-}
 
-// opacity
+// ======== LẤY TIME DIMENSION TỪ SERVER & KHỞI TẠO =========
+fetchTimeDimension().then(dimStr => {
+  var timeDimString = dimStr;
+  times = expandTimeDim(timeDimString);
+
+  // Xác định bước giờ
+  var detectedStep = 3;
+  var m = timeDimString.match(/PT(\d+)H/); if(m) detectedStep = parseInt(m[1]);
+
+  // Populate giờ
+  hourEl.innerHTML = '';
+  for(var h=0; h<24; h+=detectedStep){
+    var val = String(h).padStart(2,'0') + ':00:00Z';
+    var opt = document.createElement('option'); 
+    opt.value = val; 
+    opt.text = String(h).padStart(2,'0') + ':00'; 
+    hourEl.appendChild(opt);
+  }
+
+  // Đặt min, max cho input date
+  if(times.length>0){
+    var first = new Date(times[0]), last = new Date(times[times.length-1]);
+    var dateEl = document.getElementById('date');
+    dateEl.min = first.toISOString().slice(0,10); 
+    dateEl.max = last.toISOString().slice(0,10);
+  }
+
+  // Đặt giờ mặc định là giờ Hà Nội
+  setDefaultHanoiTime();
+});
+
+// ======== OPACITY CONTROL =========
 var opEl = document.getElementById('opacity'), opVal = document.getElementById('opacityVal');
-opEl.addEventListener('input', function(){ wms.setOpacity(opEl.value); opVal.textContent = parseFloat(opEl.value).toFixed(2); });
+opEl.addEventListener('input', function(){ 
+  wms.setOpacity(opEl.value); 
+  opVal.textContent = parseFloat(opEl.value).toFixed(2); 
+});
 
-// time apply
+// ======== NÚT ÁP DỤNG THỜI GIAN =========
 document.getElementById('apply').addEventListener('click', function(){
   var d = document.getElementById('date').value;
   var h = document.getElementById('hour').value;
@@ -126,23 +184,28 @@ document.getElementById('apply').addEventListener('click', function(){
   var iso = d + 'T' + h;
   if(times.length>0){
     var tgt = new Date(iso).getTime(), best=Infinity, idx=0;
-    for(var i=0;i<times.length;i++){ var diff = Math.abs(new Date(times[i]).getTime()-tgt); if(diff<best){best=diff; idx=i;} }
+    for(var i=0;i<times.length;i++){ 
+      var diff = Math.abs(new Date(times[i]).getTime()-tgt); 
+      if(diff<best){best=diff; idx=i;} 
+    }
     iso = times[idx];
   }
   wms.setParams({time: iso});
 });
 
+// ======== NÚT LẤY GIỜ MỚI NHẤT =========
 document.getElementById('latest').addEventListener('click', function(){
   if(times.length>0){
     var latest = times[times.length-1];
     document.getElementById('date').value = latest.slice(0,10);
     var hh = latest.slice(11);
-    for(var i=0;i<hourEl.options.length;i++) if(hourEl.options[i].value===hh) hourEl.selectedIndex=i;
+    for(var i=0;i<hourEl.options.length;i++) 
+      if(hourEl.options[i].value===hh) hourEl.selectedIndex=i;
     wms.setParams({time: latest});
   }
 });
 
-// Legend fallback
+// ======== LEGEND FALLBACK =========
 var INLINE_LEGEND_CONFIG = {
   colors: ["#00FF00","#80FF00","#FFFF00","#FFD700","#FFA500","#FF9999","#FF0000","#800000","#CC00FF"],
   labels: ["12","24","36","42","48","54","59","65","71"],

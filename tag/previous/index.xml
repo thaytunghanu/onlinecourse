@@ -17,27 +17,16 @@
 &lt;/nav>
 &lt;/details>
 &lt;h2 id="what-you-will-learn">What you will learn&lt;/h2>
-&lt;ul>
-&lt;li>Fundamental
-&lt;mark>Python programming skills&lt;/mark>&lt;/li>
-&lt;li>
-&lt;mark>Statistical concepts&lt;/mark> and how to apply them in practice&lt;/li>
-&lt;li>Gain experience with the
-&lt;mark>Scikit&lt;/mark>, including data visualization with
-&lt;mark>Plotly&lt;/mark> and data wrangling with
-&lt;mark>Pandas&lt;/mark>&lt;/li>
-&lt;/ul>
 &lt;h2 id="program-overview">Program overview&lt;/h2>
-&lt;p>The demand for skilled data science practitioners is rapidly growing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi.&lt;/p>
 &lt;h2 id="courses-in-this-program">Courses in this program&lt;/h2>
 &lt;h2 id="meet-your-instructor">Meet your instructor&lt;/h2>
 &lt;a href="https://thaytunghanu.github.io/onlinecourse/author/ts.-hoang-thanh-tung/">TS. Hoàng Thanh Tùng&lt;/a>
 &lt;h2 id="faqs">FAQs&lt;/h2>
-&lt;details class="spoiler " id="spoiler-9">
+&lt;details class="spoiler " id="spoiler-4">
 &lt;summary>Are there prerequisites?&lt;/summary>
 &lt;p>There are no prerequisites for the first course.&lt;/p>
 &lt;/details>
-&lt;details class="spoiler " id="spoiler-10">
+&lt;details class="spoiler " id="spoiler-5">
 &lt;summary>How often do the courses run?&lt;/summary>
 &lt;p>Continuously, at your own pace.&lt;/p>
 &lt;/details>
@@ -64,44 +53,16 @@
 &lt;/nav>
 &lt;/details>
 &lt;h2 id="what-you-will-learn">What you will learn&lt;/h2>
-&lt;ul>
-&lt;li>Fundamental
-&lt;mark>Python programming skills&lt;/mark>&lt;/li>
-&lt;li>
-&lt;mark>Statistical concepts&lt;/mark> and how to apply them in practice&lt;/li>
-&lt;li>Gain experience with the
-&lt;mark>Scikit&lt;/mark>, including data visualization with
-&lt;mark>Plotly&lt;/mark> and data wrangling with
-&lt;mark>Pandas&lt;/mark>&lt;/li>
-&lt;/ul>
 &lt;h2 id="program-overview">Program overview&lt;/h2>
-&lt;p>The demand for skilled data science practitioners is rapidly growing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi.&lt;/p>
 &lt;h2 id="courses-in-this-program">Courses in this program&lt;/h2>
-&lt;ul class="list-unstyled">
-&lt;li>
-&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/dana/python/">Python basics&lt;/a>&lt;/h5>
-&lt;p>Build a foundation in Python.
-&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/dana/visualization/">Visualization&lt;/a>&lt;/h5>
-&lt;p>Learn how to visualize data with Plotly.
-&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;h5>&lt;a href="https://thaytunghanu.github.io/onlinecourse/course/dana/stats/">Statistics&lt;/a>&lt;/h5>
-&lt;p>Introduction to statistics for data science.
-&lt;/p>
-&lt;/li>
-&lt;/ul>
 &lt;h2 id="meet-your-instructor">Meet your instructor&lt;/h2>
 &lt;a href="https://thaytunghanu.github.io/onlinecourse/author/ts.-hoang-thanh-tung/">TS. Hoàng Thanh Tùng&lt;/a>
 &lt;h2 id="faqs">FAQs&lt;/h2>
-&lt;details class="spoiler " id="spoiler-9">
+&lt;details class="spoiler " id="spoiler-4">
 &lt;summary>Are there prerequisites?&lt;/summary>
 &lt;p>There are no prerequisites for the first course.&lt;/p>
 &lt;/details>
-&lt;details class="spoiler " id="spoiler-10">
+&lt;details class="spoiler " id="spoiler-5">
 &lt;summary>How often do the courses run?&lt;/summary>
 &lt;p>Continuously, at your own pace.&lt;/p>
 &lt;/details>
