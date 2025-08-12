@@ -22,6 +22,7 @@
   .legend-box{background:#fff;border:1px solid #eee;padding:8px;border-radius:6px;box-shadow:0 4px 10px rgba(0,0,0,0.03)}
   .legend-box img{width:100%;height:auto;display:block}
   .legend-caption{font-size:13px;color:#333;margin-top:6px;text-align:center}
+  .hint-error{color:#c00;font-size:13px;margin-top:6px}
 </style>
 </head>
 <body>
@@ -38,8 +39,9 @@
       <div class="control">
         <label>Legend</label>
         <div class="legend-box">
+          <!-- CHÚ Ý: dùng https để tránh mixed-content -->
           <img id="legendImg" alt="Legend for PM2.5" crossorigin="anonymous"
-               src="http://eccharts.ecmwf.int/wms/?token=public&SERVICE=WMS&REQUEST=GetLegendGraphic&VERSION=1.3.0&LAYER=composition_pm2p5&STYLE=sh_all_pm2p5_defra_daqi&FORMAT=image/png">
+               src="https://eccharts.ecmwf.int/wms/?token=public&SERVICE=WMS&REQUEST=GetLegendGraphic&VERSION=1.3.0&LAYER=composition_pm2p5&STYLE=sh_all_pm2p5_defra_daqi&FORMAT=image/png">
           <div class="legend-caption">Range: 0.01 — 10</div>
         </div>
       </div>
@@ -58,74 +60,124 @@
           <button id="apply" style="flex:1;padding:8px">Áp dụng</button>
           <button id="latest" style="flex:1;padding:8px">Gần nhất</button>
         </div>
+        <div id="dateHint" class="hint-error" style="display:none"></div>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-// ======== HÀM LẤY TIME DIMENSION MỚI NHẤT TỪ WMS =========
-function fetchTimeDimension() {
-  const url = 'http://eccharts.ecmwf.int/wms/?token=public&service=WMS&version=1.3.0&request=GetCapabilities';
-  return fetch(url)
-    .then(r => r.text())
-    .then(txt => {
-      const parser = new DOMParser();
-      const xml = parser.parseFromString(txt, "application/xml");
-      const dimEl = xml.querySelector('Dimension[name="time"]');
-      if (dimEl) {
-        return dimEl.textContent.trim();
-      }
-      throw new Error("Không tìm thấy Dimension time");
-    });
+// ---------- HELPERS ----------
+function parseXML(text){
+  try{
+    const parser = new DOMParser();
+    return parser.parseFromString(text, "application/xml");
+  }catch(e){ return null; }
 }
 
-// ======== HÀM MỞ RỘNG TIME DIM STRING THÀNH DANH SÁCH ISO =========
+// Expand WMS time dimension string into array of ISO times
 function expandTimeDim(text){
   if(!text) return [];
   var parts = text.split(','), out=[];
   for(var i=0;i<parts.length;i++){
     var p = parts[i].trim();
-    if(p.indexOf('/')!=-1){
+    if(!p) continue;
+    if(p.indexOf('/')!==-1){
       var seg = p.split('/');
       if(seg.length>=3){
         var start=new Date(seg[0]), end=new Date(seg[1]), interval=seg[2];
         var stepMs=0;
         if(interval.startsWith('PT') && interval.endsWith('H')) stepMs = parseInt(interval.replace('PT','').replace('H',''))*3600*1000;
         else if(interval.startsWith('P') && interval.endsWith('D')) stepMs = parseInt(interval.replace('P','').replace('D',''))*24*3600*1000;
+        if(stepMs<=0) continue;
         for(var t=start.getTime(); t<=end.getTime(); t+=stepMs) out.push(new Date(t).toISOString());
       }
-    } else { if(p) out.push(new Date(p).toISOString()); }
+    } else {
+      out.push(new Date(p).toISOString());
+    }
   }
+  // unique & sort
   return Array.from(new Set(out)).sort();
 }
 
-// ======== HÀM ĐẶT MẶC ĐỊNH NGÀY GIỜ THEO GIỜ HÀ NỘI =========
-function setDefaultHanoiTime() {
-  const now = new Date();
-  const hanoiOffsetMs = 7 * 60 * 60 * 1000;
-  const utcMs = now.getTime() + (now.getTimezoneOffset() * 60 * 1000);
-  const hanoiTime = new Date(utcMs + hanoiOffsetMs);
+// Fallback generator: create times from (now - daysBack) to now with stepHours
+function generateFallbackTimes(daysBack, stepHours){
+  var now = new Date();
+  var end = new Date(now.getTime());
+  var start = new Date(now.getTime() - (daysBack*24*3600*1000));
+  var out = [];
+  var step = stepHours * 3600 * 1000;
+  for(var t=start.getTime(); t<=end.getTime(); t+=step) out.push(new Date(t).toISOString());
+  return out;
+}
 
-  const dateEl = document.getElementById('date');
-  const hourEl = document.getElementById('hour');
+// Detect if browser supports input[type=date]
+function supportsInputDate(){
+  var i = document.createElement('input');
+  i.setAttribute('type','date');
+  var notADateValue = 'not-a-date';
+  i.setAttribute('value', notADateValue);
+  return (i.value !== notADateValue);
+}
 
-  dateEl.value = hanoiTime.toISOString().slice(0, 10);
+// Convert UTC date to Hanoi date object
+function getHanoiNow(){
+  var now = new Date();
+  var utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+  return new Date(utc + 7*3600*1000);
+}
 
-  const hh = String(hanoiTime.getHours()).padStart(2, '0') + ':00:00Z';
-  for (let i = 0; i < hourEl.options.length; i++) {
-    if (hourEl.options[i].value === hh) {
-      hourEl.selectedIndex = i;
-      break;
+// Set default date/hour using times (if available) or local hanoi time
+function setDefaultToNow(timesArr){
+  var dateEl = document.getElementById('date');
+  var hourEl = document.getElementById('hour');
+  var hanoiNow = getHanoiNow();
+  if(timesArr && timesArr.length>0){
+    var tgt = hanoiNow.getTime();
+    var best = Infinity, idx = 0;
+    for(var i=0;i<timesArr.length;i++){
+      var diff = Math.abs(new Date(timesArr[i]).getTime() - tgt);
+      if(diff < best){ best = diff; idx = i; }
     }
+    var nearest = new Date(timesArr[idx]);
+    dateEl.value = nearest.toISOString().slice(0,10);
+    var hh = nearest.toISOString().slice(11);
+    for(var j=0;j<hourEl.options.length;j++){
+      if(hourEl.options[j].value === hh){ hourEl.selectedIndex = j; break; }
+    }
+  } else {
+    // no times -> set date to hanoi date and hour to nearest option
+    dateEl.value = hanoiNow.toISOString().slice(0,10);
+    var hhLocal = String(hanoiNow.getHours()).padStart(2,'0') + ':00:00Z';
+    // pick exact match or nearest by difference in hours
+    var found=false;
+    for(var k=0;k<hourEl.options.length;k++){
+      if(hourEl.options[k].value === hhLocal){ hourEl.selectedIndex = k; found=true; break; }
+    }
+    if(!found && hourEl.options.length>0) hourEl.selectedIndex = hourEl.options.length - 1;
   }
 }
 
-// ======== MAP SETUP =========
+// Populate hour select using a detected step (hours)
+function populateHourSelect(stepHours){
+  var hourEl = document.getElementById('hour');
+  hourEl.innerHTML = '';
+  for(var h=0; h<24; h+=stepHours){
+    var val = String(h).padStart(2,'0') + ':00:00Z';
+    var opt = document.createElement('option');
+    opt.value = val;
+    opt.text = String(h).padStart(2,'0') + ':00';
+    hourEl.appendChild(opt);
+  }
+}
+
+// ---------- MAP ----------
 var map = L.map('map', {crs: L.CRS.EPSG3857}).setView([21,105],7);
 L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {maxZoom:20, attribution:'© Google'}).addTo(map);
 
-var wms = L.tileLayer.wms('http://eccharts.ecmwf.int/wms/', {
+// Use https for WMS to avoid mixed-content
+var wmsBase = 'https://eccharts.ecmwf.int/wms/';
+var wms = L.tileLayer.wms(wmsBase, {
   token: 'public',
   version: '1.3.0',
   layers: 'composition_pm2p5',
@@ -135,48 +187,92 @@ var wms = L.tileLayer.wms('http://eccharts.ecmwf.int/wms/', {
   crs: L.CRS.EPSG4326
 }).setOpacity(0.5).addTo(map);
 
-var times = [];
-var hourEl = document.getElementById('hour');
-
-// ======== LẤY TIME DIMENSION TỪ SERVER & KHỞI TẠO =========
-fetchTimeDimension().then(dimStr => {
-  var timeDimString = dimStr;
-  times = expandTimeDim(timeDimString);
-
-  // Xác định bước giờ
-  var detectedStep = 3;
-  var m = timeDimString.match(/PT(\d+)H/); if(m) detectedStep = parseInt(m[1]);
-
-  // Populate giờ
-  hourEl.innerHTML = '';
-  for(var h=0; h<24; h+=detectedStep){
-    var val = String(h).padStart(2,'0') + ':00:00Z';
-    var opt = document.createElement('option'); 
-    opt.value = val; 
-    opt.text = String(h).padStart(2,'0') + ':00'; 
-    hourEl.appendChild(opt);
-  }
-
-  // Đặt min, max cho input date
-  if(times.length>0){
-    var first = new Date(times[0]), last = new Date(times[times.length-1]);
-    var dateEl = document.getElementById('date');
-    dateEl.min = first.toISOString().slice(0,10); 
-    dateEl.max = last.toISOString().slice(0,10);
-  }
-
-  // Đặt giờ mặc định là giờ Hà Nội
-  setDefaultHanoiTime();
-});
-
-// ======== OPACITY CONTROL =========
+// Opacity control
 var opEl = document.getElementById('opacity'), opVal = document.getElementById('opacityVal');
-opEl.addEventListener('input', function(){ 
-  wms.setOpacity(opEl.value); 
-  opVal.textContent = parseFloat(opEl.value).toFixed(2); 
+opEl.addEventListener('input', function(){
+  wms.setOpacity(opEl.value);
+  opVal.textContent = parseFloat(opEl.value).toFixed(2);
 });
 
-// ======== NÚT ÁP DỤNG THỜI GIAN =========
+// ---------- LOAD TIME DIMENSION (GetCapabilities) ----------
+var times = [];        // list of ISO strings
+var detectedStep = 3; // default step
+var dateHintEl = document.getElementById('dateHint');
+
+function tryLoadTimeDimension(){
+  var capUrl = wmsBase + '?token=public&service=WMS&version=1.3.0&request=GetCapabilities';
+  fetch(capUrl, { mode: 'cors' })
+    .then(function(resp){
+      if(!resp.ok) throw new Error('HTTP ' + resp.status);
+      return resp.text();
+    })
+    .then(function(txt){
+      var xml = parseXML(txt);
+      if(!xml) throw new Error('Invalid XML from GetCapabilities');
+      // find Dimension[name="time"]
+      var dimEls = xml.getElementsByTagName('Dimension');
+      var dimText = null;
+      for(var i=0;i<dimEls.length;i++){
+        if(dimEls[i].getAttribute('name') === 'time'){
+          dimText = dimEls[i].textContent.trim();
+          break;
+        }
+      }
+      // sometimes time appears as <Extent name="time"> in some servers
+      if(!dimText){
+        var extEls = xml.getElementsByTagName('Extent');
+        for(var j=0;j<extEls.length;j++){
+          if(extEls[j].getAttribute('name') === 'time'){
+            dimText = extEls[j].textContent.trim();
+            break;
+          }
+        }
+      }
+      if(!dimText) throw new Error('Dimension time not found in capabilities');
+
+      // expand
+      times = expandTimeDim(dimText);
+      // detect step
+      var m = dimText.match(/PT(\d+)H/);
+      if(m) detectedStep = parseInt(m[1]);
+      if(!detectedStep || detectedStep <=0) detectedStep = 3;
+
+      // populate hour select from step
+      populateHourSelect(detectedStep);
+
+      // set min/max on the date input
+      if(times.length > 0){
+        var dateEl = document.getElementById('date');
+        var first = new Date(times[0]), last = new Date(times[times.length - 1]);
+        dateEl.min = first.toISOString().slice(0,10);
+        dateEl.max = last.toISOString().slice(0,10);
+      }
+
+      // default to nearest now in Hanoi
+      setDefaultToNow(times);
+    })
+    .catch(function(err){
+      console.error('GetCapabilities failed:', err);
+      // FALLBACK: generate recent times (2 days back, step=3h)
+      times = generateFallbackTimes(2, 3);
+      detectedStep = 3;
+      populateHourSelect(detectedStep);
+      // set min/max for fallback
+      if(times.length > 0){
+        var dateEl = document.getElementById('date');
+        dateEl.min = times[0].slice(0,10);
+        dateEl.max = times[times.length - 1].slice(0,10);
+      }
+      setDefaultToNow(times);
+      dateHintEl.style.display = 'block';
+      dateHintEl.textContent = 'Không lấy được GetCapabilities (CORS/mạng). Đã dùng dữ liệu dự phòng gần đây để UI vẫn hoạt động.';
+    });
+}
+
+// run at startup
+tryLoadTimeDimension();
+
+// ---------- 버튼 ÁP DỤNG & GẦN NHẤT ----------
 document.getElementById('apply').addEventListener('click', function(){
   var d = document.getElementById('date').value;
   var h = document.getElementById('hour').value;
@@ -184,28 +280,31 @@ document.getElementById('apply').addEventListener('click', function(){
   var iso = d + 'T' + h;
   if(times.length>0){
     var tgt = new Date(iso).getTime(), best=Infinity, idx=0;
-    for(var i=0;i<times.length;i++){ 
-      var diff = Math.abs(new Date(times[i]).getTime()-tgt); 
-      if(diff<best){best=diff; idx=i;} 
+    for(var i=0;i<times.length;i++){
+      var diff = Math.abs(new Date(times[i]).getTime() - tgt);
+      if(diff < best){ best = diff; idx = i; }
     }
     iso = times[idx];
   }
   wms.setParams({time: iso});
 });
 
-// ======== NÚT LẤY GIỜ MỚI NHẤT =========
 document.getElementById('latest').addEventListener('click', function(){
   if(times.length>0){
-    var latest = times[times.length-1];
+    var latest = times[times.length - 1];
     document.getElementById('date').value = latest.slice(0,10);
     var hh = latest.slice(11);
-    for(var i=0;i<hourEl.options.length;i++) 
-      if(hourEl.options[i].value===hh) hourEl.selectedIndex=i;
+    var hourEl = document.getElementById('hour');
+    for(var i=0;i<hourEl.options.length;i++){
+      if(hourEl.options[i].value === hh){ hourEl.selectedIndex = i; break; }
+    }
     wms.setParams({time: latest});
+  } else {
+    alert('Không có dữ liệu thời gian.');
   }
 });
 
-// ======== LEGEND FALLBACK =========
+// ---------- LEGEND FALLBACK ----------
 var INLINE_LEGEND_CONFIG = {
   colors: ["#00FF00","#80FF00","#FFFF00","#FFD700","#FFA500","#FF9999","#FF0000","#800000","#CC00FF"],
   labels: ["12","24","36","42","48","54","59","65","71"],
@@ -246,7 +345,14 @@ legendImg.onload = function(){
     if(legendImg.naturalWidth === 0 || legendImg.naturalHeight === 0){ legendImg.onerror(); }
   }, 300);
 };
+
+// ---------- polyfill / UX for browsers without input[type=date] ----------
+if(!supportsInputDate()){
+  var dateEl = document.getElementById('date');
+  dateEl.type = 'text';
+  dateEl.placeholder = 'YYYY-MM-DD (ví dụ 2025-08-11)';
+  dateEl.title = 'Trình duyệt không hỗ trợ date picker, vui lòng nhập theo định dạng YYYY-MM-DD';
+}
 </script>
 </body>
 </html>
-
