@@ -1,1 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>🌏 Phát triển bền vững và biến đổi khí hậu | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/course/suscc/index.xml" rel="self" type="application/rss+xml"/><description>🌏 Phát triển bền vững và biến đổi khí hậu</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 17 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/course/suscc/featured.png</url><title>🌏 Phát triển bền vững và biến đổi khí hậu</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/</link></image></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>🌏 Phát triển bền vững và biến đổi khí hậu | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/course/suscc/index.xml" rel="self" type="application/rss+xml"/><description>🌏 Phát triển bền vững và biến đổi khí hậu</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 17 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/course/suscc/featured.png</url><title>🌏 Phát triển bền vững và biến đổi khí hậu</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/</link></image><item><title>1. Giới thiệu Phát triển bền vững và Biến đổi khí hậu</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/1_intro/</link><pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/suscc/1_intro/</guid><description>&lt;p>Các vấn đề môi trường, khái niệm về phát triển bền vững.&lt;/p>
+&lt;h2 id="các-vấn-đề-môi-trường-toàn-cầu">Các vấn đề môi trường toàn cầu&lt;/h2>
+&lt;p>&lt;code>Hãy tương tác với các biểu đồ dưới đây để hiểu rõ hơn các vấn đề môi trường toàn cầu qua dữ liệu.&lt;/code>&lt;/p>
+&lt;h3 id="dân-số-tăng-trưởng">Dân số tăng trưởng&lt;/h3>
+&lt;iframe src="https://ourworldindata.org/grapher/population-regions-with-projections?time=1400..latest&amp;tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;h3 id="sự-gia-tăng-nồng-độ-co2-trong-khí-quyển">Sự gia tăng nồng độ CO2 trong khí quyển&lt;/h3>
+&lt;iframe src="https://ourworldindata.org/grapher/co2-long-term-concentration?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;h3 id="ấm-lên-toàn-cầu">Ấm lên toàn cầu&lt;/h3>
+&lt;h4 id="sự-bất-thường-về-nhiệt-độ-hàng-năm">Sự bất thường về nhiệt độ hàng năm&lt;/h4>
+&lt;iframe src="https://ourworldindata.org/explorers/climate-change?Metric=Temperature+anomaly&amp;Long-run+series=false&amp;country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~OWID_NAM~South+Cascade+Glacier~Wolverine+Glacier~Hawaii~Arctic+Ocean&amp;tab=line&amp;hideControls=false" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;h3 id="mực-nước-biển-dâng">Mực nước biển dâng&lt;/h3>
+&lt;iframe src="https://ourworldindata.org/grapher/sea-level?tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;h4 id="bản-đồ-nguy-cơ-ngập-ứng-với-mực-nước-biển-dâng-100-cm-khu-vực-việt-nam-theo-climate-central">Bản đồ nguy cơ ngập ứng với mực nước biển dâng 100 cm khu vực Việt Nam (theo Climate Central)&lt;/h4>
+&lt;iframe allow="fullscreen 'none'" frameBorder="0" src="https://coastal.climatecentral.org/embed/map/5/105.6853/16.2916/?theme=water_level&amp;map_type=water_level_above_mhhw&amp;basemap=roadmap&amp;contiguous=true&amp;elevation_model=best_available&amp;water_level=1.0&amp;water_unit=m" width="100%" height="500" title="Climate Central | Land below 0.8 meters of water">&lt;/iframe>
+&lt;div class="alert alert-note">
+&lt;div>
+Hãy tham khảo thêm bản đồ nguy cơ ngập do nước biển dâng của Việt Nam được công bố bởi Bộ Nông nghiệp và Môi trường &lt;a href="http://imh.ac.vn/files/doc/2020/KB%20BDKH%202912.pdf" target="_blank" rel="noopener">ở đây.&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;h3 id="ô-nhiễm-không-khí">Ô nhiễm không khí&lt;/h3>
+&lt;h4 id="lượng-khí-thải-gây-ô-nhiễm-không-khí-trên-toàn-cầu-1750-đến-2022">Lượng khí thải gây ô nhiễm không khí trên toàn cầu, 1750 đến 2022&lt;/h4>
+&lt;iframe src="https://ourworldindata.org/grapher/long-run-air-pollution?tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;h3 id="mất-đa-dạng-sinh-học">Mất đa dạng sinh học&lt;/h3>
+&lt;h4 id="chỉ-số-living-planet-index-1970-2020">Chỉ số Living Planet Index 1970-2020&lt;/h4>
+&lt;iframe src="https://ourworldindata.org/grapher/global-living-planet-index?tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;h4 id="mất-đa-dạng-sinh-học-life-under-threat-2014">Mất đa dạng sinh học: Life under threat (2014)&lt;/h4>
+&lt;figure>
+&lt;iframe src="https://www.nature.com/news/polopoly_fs/7.22332!/file/GraphicPDF.pdf" width="100%" height="560px" style="border:none;">&lt;/iframe>
+&lt;/figure>
+&lt;h4 id="mất-đa-dạng-sinh-học-số-lượng-loài-đe-dọa-tuyệt-chủng-số-liệu-cập-nhật-2024">Mất đa dạng sinh học: số lượng loài đe dọa tuyệt chủng (số liệu cập nhật 2024)&lt;/h4>
+&lt;iframe src="https://ourworldindata.org/grapher/number-species-threatened?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;h3 id="mất-rừng">Mất rừng&lt;/h3>
+&lt;iframe src="https://www.globalforestwatch.org/embed/widget/treeLossPct/global" loading="lazy" style="width: 100%; height: 700px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;h3 id="thiên-tai">Thiên tai&lt;/h3>
+&lt;iframe src="https://ourworldindata.org/grapher/number-of-deaths-from-natural-disasters?country=~VNM&amp;tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;iframe src="https://ourworldindata.org/grapher/economic-damages-from-natural-disasters-as-a-share-of-gdp?country=~VNM&amp;tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;iframe src="https://ourworldindata.org/grapher/economic-damage-from-natural-disasters?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;h2 id="khái-niệm-về-phát-triển-bền-vững">Khái niệm về phát triển bền vững&lt;/h2></description></item></channel></rss>
