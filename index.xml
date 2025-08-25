@@ -3,6 +3,67 @@
 &lt;p>&lt;code>Hãy tương tác với các biểu đồ dưới đây để hiểu rõ hơn các vấn đề môi trường toàn cầu qua dữ liệu.&lt;/code>&lt;/p>
 &lt;h3 id="dân-số-tăng-trưởng">Dân số tăng trưởng&lt;/h3>
 &lt;iframe src="https://ourworldindata.org/grapher/population-regions-with-projections?time=1400..latest&amp;tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;h3 id="trái-đất-của-chúng-ta-có-thể-phục-vụ-bao-nhiêu-người">Trái đất của chúng ta có thể phục vụ bao nhiêu người?&lt;/h3>
+&lt;div class="hb-columns hb-columns-2">
+&lt;div class="hb-column">
+&lt;strong>Biocapacity&lt;/strong>
+&lt;figure id="figure-nguồn-global-footprint-networkhttpswwwfootprintnetworkorgwhat-biocapacity-measures">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://www.footprintnetwork.org/content/uploads/2025/07/Biocapacity-2025.jpg" alt="Nguồn: [Global Footprint Network](https://www.footprintnetwork.org/what-biocapacity-measures/)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Nguồn: &lt;a href="https://www.footprintnetwork.org/what-biocapacity-measures/" target="_blank" rel="noopener">Global Footprint Network&lt;/a>
+&lt;/figcaption>&lt;/figure>
+On the supply side, Biocapacity stands for the regenerative capacity of our planet’s ecosystems.
+&lt;/div>
+&lt;div class="hb-column">
+&lt;strong>Ecological footprint&lt;/strong>
+&lt;figure id="figure-nguồn-global-footprint-networkhttpswwwfootprintnetworkorgwhat-ecological-footprints-measure">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://www.footprintnetwork.org/content/uploads/2025/07/Ecological-Footprint-2025.jpg" alt="Nguồn: [Global Footprint Network](https://www.footprintnetwork.org/what-ecological-footprints-measure/)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Nguồn: &lt;a href="https://www.footprintnetwork.org/what-ecological-footprints-measure/" target="_blank" rel="noopener">Global Footprint Network&lt;/a>
+&lt;/figcaption>&lt;/figure>
+On the demand side, The Ecological Footprint is a metric of human demand on ecosystems
+&lt;/div>
+&lt;/div>
+&lt;style>
+.hb-columns {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+justify-content: space-between;
+align-items: stretch;
+}
+.hb-columns .hb-column {
+flex: 1 1 auto;
+box-sizing: border-box;
+}
+.hb-columns-2 .hb-column { flex-basis: calc(50% - 1rem); max-width: calc(50% - 1rem); }
+.hb-columns img {
+max-width: 100%;
+height: auto;
+display: block;
+transition: transform 0.3s ease;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.hb-columns img:hover {
+transform: scale(1.03);
+box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+@media (max-width: 768px) {
+.hb-columns .hb-column {
+flex-basis: 100% !important;
+max-width: 100% !important;
+}
+}
+&lt;/style>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://populationeducation.org/wp-content/uploads/2020/02/ecological-footprint-infographic.jpg" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+Nguồn: &lt;a href="https://populationeducation.org/resource/ecological-footprint-over-time-infographic/" target="_blank" rel="noopener">Population Education&lt;/a>&lt;/p>
 &lt;h3 id="sự-gia-tăng-nồng-độ-co2-trong-khí-quyển">Sự gia tăng nồng độ CO2 trong khí quyển&lt;/h3>
 &lt;iframe src="https://ourworldindata.org/grapher/co2-long-term-concentration?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
 &lt;h3 id="ấm-lên-toàn-cầu">Ấm lên toàn cầu&lt;/h3>
@@ -30,12 +91,25 @@ Hãy tham khảo thêm bản đồ nguy cơ ngập do nước biển dâng của
 &lt;h4 id="mất-đa-dạng-sinh-học-số-lượng-loài-đe-dọa-tuyệt-chủng-số-liệu-cập-nhật-2024">Mất đa dạng sinh học: số lượng loài đe dọa tuyệt chủng (số liệu cập nhật 2024)&lt;/h4>
 &lt;iframe src="https://ourworldindata.org/grapher/number-species-threatened?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
 &lt;h3 id="mất-rừng">Mất rừng&lt;/h3>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/12657229-6e96-4107-2b2f-0b5fd638c800/w=1350" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/b3b74120-c42c-4e38-2d19-370076da9000/w=1350" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
 &lt;iframe src="https://www.globalforestwatch.org/embed/widget/treeLossPct/global" loading="lazy" style="width: 100%; height: 700px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
 &lt;h3 id="thiên-tai">Thiên tai&lt;/h3>
 &lt;iframe src="https://ourworldindata.org/grapher/number-of-deaths-from-natural-disasters?country=~VNM&amp;tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
 &lt;iframe src="https://ourworldindata.org/grapher/economic-damages-from-natural-disasters-as-a-share-of-gdp?country=~VNM&amp;tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
 &lt;iframe src="https://ourworldindata.org/grapher/economic-damage-from-natural-disasters?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
-&lt;h2 id="khái-niệm-về-phát-triển-bền-vững">Khái niệm về phát triển bền vững&lt;/h2></description></item><item><title>1. Giới thiệu về GIS và phần mềm QGIS</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/</link><pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/</guid><description>&lt;p>Lý thuyết về GIS và ứng dụng, cài đặt phần mềm QGIS&lt;/p>
+&lt;h2 id="khái-niệm-về-phát-triển-bền-vững">Khái niệm về phát triển bền vững&lt;/h2>
+&lt;div class="responsive-wrap">
+&lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSU0hIkH-sBYxpNcdIb3guWG4aVsy3DpQwgmDgf6wbdJrSdZM0XNpNPxPM5sAG0zA/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
+&lt;/div></description></item><item><title>1. Giới thiệu về GIS và phần mềm QGIS</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/</link><pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/</guid><description>&lt;p>Lý thuyết về GIS và ứng dụng, cài đặt phần mềm QGIS&lt;/p>
 &lt;!--
 &lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 1-2 hours per week, for 8 weeks -->
 &lt;h2 id="lý-thuyết-về-gis-và-các-ứng-dụng-của-gis">Lý thuyết về GIS và các ứng dụng của GIS&lt;/h2>
