@@ -4,24 +4,25 @@
 &lt;h3 id="dân-số-tăng-trưởng">Dân số tăng trưởng&lt;/h3>
 &lt;iframe src="https://ourworldindata.org/grapher/population-regions-with-projections?time=1400..latest&amp;tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
 &lt;h3 id="trái-đất-của-chúng-ta-có-thể-phục-vụ-bao-nhiêu-người">Trái đất của chúng ta có thể phục vụ bao nhiêu người?&lt;/h3>
+&lt;p>
 &lt;div class="hb-columns hb-columns-2">
 &lt;div class="hb-column">
 &lt;strong>Biocapacity&lt;/strong>
-&lt;figure id="figure-nguồn-global-footprint-networkhttpswwwfootprintnetworkorgwhat-biocapacity-measures">
+&lt;figure id="figure-source-global-footprint-networkhttpswwwfootprintnetworkorgwhat-biocapacity-measures-wwwfootprintnetworkorg">
 &lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="https://www.footprintnetwork.org/content/uploads/2025/07/Biocapacity-2025.jpg" alt="Nguồn: [Global Footprint Network](https://www.footprintnetwork.org/what-biocapacity-measures/)" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="https://www.footprintnetwork.org/content/uploads/2025/07/Biocapacity-2025.jpg" alt="Source: [Global Footprint Network](https://www.footprintnetwork.org/what-biocapacity-measures/), www.footprintnetwork.org" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;figcaption>
-Nguồn: &lt;a href="https://www.footprintnetwork.org/what-biocapacity-measures/" target="_blank" rel="noopener">Global Footprint Network&lt;/a>
+Source: &lt;a href="https://www.footprintnetwork.org/what-biocapacity-measures/" target="_blank" rel="noopener">Global Footprint Network&lt;/a>, &lt;a href="https://www.footprintnetwork.org" target="_blank" rel="noopener">www.footprintnetwork.org&lt;/a>
 &lt;/figcaption>&lt;/figure>
 On the supply side, Biocapacity stands for the regenerative capacity of our planet’s ecosystems.
 &lt;/div>
 &lt;div class="hb-column">
 &lt;strong>Ecological footprint&lt;/strong>
-&lt;figure id="figure-nguồn-global-footprint-networkhttpswwwfootprintnetworkorgwhat-ecological-footprints-measure">
+&lt;figure id="figure-source-global-footprint-networkhttpswwwfootprintnetworkorgwhat-ecological-footprints-measure-wwwfootprintnetworkorg">
 &lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="https://www.footprintnetwork.org/content/uploads/2025/07/Ecological-Footprint-2025.jpg" alt="Nguồn: [Global Footprint Network](https://www.footprintnetwork.org/what-ecological-footprints-measure/)" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="https://www.footprintnetwork.org/content/uploads/2025/07/Ecological-Footprint-2025.jpg" alt="Source: [Global Footprint Network](https://www.footprintnetwork.org/what-ecological-footprints-measure/), www.footprintnetwork.org" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;figcaption>
-Nguồn: &lt;a href="https://www.footprintnetwork.org/what-ecological-footprints-measure/" target="_blank" rel="noopener">Global Footprint Network&lt;/a>
+Source: &lt;a href="https://www.footprintnetwork.org/what-ecological-footprints-measure/" target="_blank" rel="noopener">Global Footprint Network&lt;/a>, &lt;a href="https://www.footprintnetwork.org" target="_blank" rel="noopener">www.footprintnetwork.org&lt;/a>
 &lt;/figcaption>&lt;/figure>
 On the demand side, The Ecological Footprint is a metric of human demand on ecosystems
 &lt;/div>
@@ -58,12 +59,9 @@ max-width: 100% !important;
 }
 }
 &lt;/style>
-&lt;p>
-&lt;figure >
-&lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="https://populationeducation.org/wp-content/uploads/2020/02/ecological-footprint-infographic.jpg" alt="" loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-Nguồn: &lt;a href="https://populationeducation.org/resource/ecological-footprint-over-time-infographic/" target="_blank" rel="noopener">Population Education&lt;/a>&lt;/p>
+&lt;br>&lt;/p>
+&lt;p>&lt;code>- Use our global Footprint scenario tool to design possible futures by choosing key parameters that shape overshoot:&lt;/code>
+&lt;a href="https://www.footprintnetwork.org/resources/footprint-scenario-tool/" target="_blank" rel="noopener">https://www.footprintnetwork.org/resources/footprint-scenario-tool/&lt;/a>&lt;/p>
 &lt;h3 id="sự-gia-tăng-nồng-độ-co2-trong-khí-quyển">Sự gia tăng nồng độ CO2 trong khí quyển&lt;/h3>
 &lt;iframe src="https://ourworldindata.org/grapher/co2-long-term-concentration?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
 &lt;h3 id="ấm-lên-toàn-cầu">Ấm lên toàn cầu&lt;/h3>
@@ -84,12 +82,14 @@ Hãy tham khảo thêm bản đồ nguy cơ ngập do nước biển dâng của
 &lt;h3 id="mất-đa-dạng-sinh-học">Mất đa dạng sinh học&lt;/h3>
 &lt;h4 id="chỉ-số-living-planet-index-1970-2020">Chỉ số Living Planet Index 1970-2020&lt;/h4>
 &lt;iframe src="https://ourworldindata.org/grapher/global-living-planet-index?tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
-&lt;h4 id="mất-đa-dạng-sinh-học-life-under-threat-2014">Mất đa dạng sinh học: Life under threat (2014)&lt;/h4>
-&lt;figure>
+&lt;!-- &lt;figure>
 &lt;iframe src="https://www.nature.com/news/polopoly_fs/7.22332!/file/GraphicPDF.pdf" width="100%" height="560px" style="border:none;">&lt;/iframe>
-&lt;/figure>
-&lt;h4 id="mất-đa-dạng-sinh-học-số-lượng-loài-đe-dọa-tuyệt-chủng-số-liệu-cập-nhật-2024">Mất đa dạng sinh học: số lượng loài đe dọa tuyệt chủng (số liệu cập nhật 2024)&lt;/h4>
+&lt;/figure> -->
+&lt;h4 id="số-lượng-loài-đe-dọa-tuyệt-chủng-số-liệu-cập-nhật-2024">Số lượng loài đe dọa tuyệt chủng (số liệu cập nhật 2024)&lt;/h4>
 &lt;iframe src="https://ourworldindata.org/grapher/number-species-threatened?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;h4 id="bức-tranh-tổng-thể-life-under-threat-2014">Bức tranh tổng thể: Life under threat (2014)&lt;/h4>
+&lt;p>&lt;a href="https://www.nature.com/news/polopoly_fs/7.22332!/file/GraphicPDF.pdf" target="_blank" rel="noopener">https://www.nature.com/news/polopoly_fs/7.22332!/file/GraphicPDF.pdf&lt;/a>&lt;br>
+BY RICHARD MONASTERSKY | GRAPHIC BY 5W INFOGRAPHIC&lt;/p>
 &lt;h3 id="mất-rừng">Mất rừng&lt;/h3>
 &lt;p>
 &lt;figure >
@@ -109,4 +109,49 @@ Hãy tham khảo thêm bản đồ nguy cơ ngập do nước biển dâng của
 &lt;h2 id="khái-niệm-về-phát-triển-bền-vững">Khái niệm về phát triển bền vững&lt;/h2>
 &lt;div class="responsive-wrap">
 &lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSU0hIkH-sBYxpNcdIb3guWG4aVsy3DpQwgmDgf6wbdJrSdZM0XNpNPxPM5sAG0zA/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
-&lt;/div></description></item></channel></rss>
+&lt;/div></description></item><item><title>2. Môi trường tự nhiên và hệ sinh thái</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/2_ecology/</link><pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/suscc/2_ecology/</guid><description>&lt;p>Giới thiệu về sinh quyển, hệ sinh thái, và các vòng tuần hoàn sinh địa hóa&lt;/p>
+&lt;h3 id="khái-niệm-về-kinh-tế-sinh-thái">Khái niệm về kinh tế sinh thái&lt;/h3>
+&lt;p>
+&lt;figure id="figure-the-economic-subsystem-relative-to-the-global-ecosystem-source-wikimedia-commonshttpscommonswikimediaorgwikifilediagram_of_natural_resource_flows-ensvg">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Diagram_of_natural_resource_flows-en.svg" alt="The Economic Subsystem Relative to the Global Ecosystem. Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Diagram_of_natural_resource_flows-en.svg)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+The Economic Subsystem Relative to the Global Ecosystem. Source: &lt;a href="https://commons.wikimedia.org/wiki/File:Diagram_of_natural_resource_flows-en.svg" target="_blank" rel="noopener">Wikimedia Commons&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="dịch-vụ-hệ-sinh-thái">Dịch vụ hệ sinh thái&lt;/h3>
+&lt;p>
+&lt;figure id="figure-the-links-between-ecosystem-services-and-human-well-being-as-described-by-millennium-ecosystem-assessment-2005-source-philippe-rekacewicz-emmanuelle-bournay-unepgrid-arendalhttpswwwgridanoresources6075">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://farm1.staticflickr.com/309/32212453272_6561509ed4_o.jpg" alt="The links between ecosystem services and human well-being as described by Millennium Ecosystem Assessment, 2005. Source: [Philippe Rekacewicz, Emmanuelle Bournay, UNEP/GRID-Arendal](https://www.grida.no/resources/6075)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+The links between ecosystem services and human well-being as described by Millennium Ecosystem Assessment, 2005. Source: &lt;a href="https://www.grida.no/resources/6075" target="_blank" rel="noopener">Philippe Rekacewicz, Emmanuelle Bournay, UNEP/GRID-Arendal&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="ví-dụ-về-các-dịch-vụ-hệ-sinh-thái">Ví dụ về các dịch vụ hệ sinh thái&lt;/h3>
+&lt;p>
+&lt;figure id="figure-23-of-the-most-key-ecosystem-services-and-the-different-ways-they-can-be-categorized-source-grid-arendalhttpswwwgridanoresources8141">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://farm1.staticflickr.com/555/31513890124_936a637bca_o.jpg" alt="23 of the most key ecosystem services and the different ways they can be categorized. Source: [GRID-Arendal](https://www.grida.no/resources/8141)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+23 of the most key ecosystem services and the different ways they can be categorized. Source: &lt;a href="https://www.grida.no/resources/8141" target="_blank" rel="noopener">GRID-Arendal&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="vòng-tuần-hoàn-carbon">Vòng tuần hoàn Carbon&lt;/h3>
+&lt;p>
+&lt;figure id="figure-global-carbon-cycle-source-esa--global-carbon-projecthttpswwwesaintesa_multimediaimages202111global_carbon_cycle">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2021/11/global_carbon_cycle/23761660-6-eng-GB/Global_carbon_cycle_pillars.png" alt="Global carbon cycle. Source: [ESA / Global carbon project](https://www.esa.int/ESA_Multimedia/Images/2021/11/Global_carbon_cycle)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Global carbon cycle. Source: &lt;a href="https://www.esa.int/ESA_Multimedia/Images/2021/11/Global_carbon_cycle" target="_blank" rel="noopener">ESA / Global carbon project&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="vòng-tuần-hoàn-nước">Vòng tuần hoàn nước&lt;/h3>
+&lt;p>
+&lt;figure id="figure-water-cycle-source-nasa--wikipedia-commonshttpscommonswikimediaorgwikifilewater_cycle_8265046380png">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Water_Cycle_%288265046380%29.png/1024px-Water_Cycle_%288265046380%29.png" alt="Water cycle. Source: [NASA / Wikipedia Commons](https://commons.wikimedia.org/wiki/File:Water_Cycle_(8265046380).png)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Water cycle. Source: &lt;a href="https://commons.wikimedia.org/wiki/File:Water_Cycle_%288265046380%29.png" target="_blank" rel="noopener">NASA / Wikipedia Commons&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p></description></item></channel></rss>
