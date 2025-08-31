@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Raster Data | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/tag/raster-data/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/tag/raster-data/index.xml" rel="self" type="application/rss+xml"/><description>Raster Data</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Raster Data</title><link>https://thaytunghanu.github.io/onlinecourse/tag/raster-data/</link></image><item><title>9. Xử lý dữ liệu raster</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/</guid><description>&lt;p>Xử lý dữ liệu raster DEM, phân tích Contours, Slope, Hillshade and Aspect.&lt;/p>
-&lt;p>Bài này sẽ hướng dẫn các chức năng xử lý dữ liệu raster. Lý thuyết về dữ liệu raster đã được trình bày ở slide này:&lt;/p>
+&lt;h2 id="lý-thuyết-về-dữ-liệu-raster">Lý thuyết về dữ liệu raster&lt;/h2>
+&lt;!-- Bài này sẽ hướng dẫn các chức năng xử lý dữ liệu raster. Lý thuyết về dữ liệu raster đã được trình bày ở slide này:
 &lt;div class="responsive-wrap">
 &lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRhY2dq8ffRYOz8n5nAJuXocD7KMNny40vifOgPkbBM_9ifMhntTOhx6M7Yk1JQHw/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
-&lt;/div>
+&lt;/div> -->
+&lt;p>Đọc tài liệu: Tim Sutton et al. 2009, A Gentle Introduction to GIS, Chapter 6. Raster Data&lt;br>
+&lt;a href="https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/raster_data.html#" target="_blank" rel="noopener">https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/raster_data.html#&lt;/a>&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>Trong bài này, bạn sẽ sử dụng dữ liệu raster &lt;strong>Mô hình Độ cao Số (DEM)&lt;/strong>. DEM là một dạng dữ liệu không gian (raster) biểu diễn độ cao của địa hình bề mặt Trái Đất tại các điểm khác nhau, thường dưới dạng lưới ô vuông (grid), trong đó mỗi pixel chứa giá trị độ cao (so với mực nước biển trung bình).&lt;/p>

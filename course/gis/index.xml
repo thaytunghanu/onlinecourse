@@ -963,9 +963,12 @@ Yêu cầu kết quả của homework
 &lt;/figcaption>&lt;/figure>
 &lt;/p></description></item><item><title>3. Dữ liệu GIS, làm việc với dữ liệu vector</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/</link><pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/</guid><description>&lt;p>Lý thuyết về dữ liệu GIS: vector và raster. Thực hành làm việc với dữ liệu vector.&lt;/p>
 &lt;h2 id="lý-thuyết-về-các-loại-dữ-liệu-không-gian">Lý thuyết về các loại dữ liệu không gian&lt;/h2>
+&lt;!--
 &lt;div class="responsive-wrap">
 &lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRhY2dq8ffRYOz8n5nAJuXocD7KMNny40vifOgPkbBM_9ifMhntTOhx6M7Yk1JQHw/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
-&lt;/div>
+&lt;/div> -->
+&lt;p>Đọc tài liệu: Tim Sutton et al. 2009, A Gentle Introduction to GIS, Chapter 3. Vector Data:
+&lt;a href="https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/vector_data.html" target="_blank" rel="noopener">https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/vector_data.html&lt;/a>&lt;/p>
 &lt;h2 id="thực-hành-làm-việc-với-dữ-liệu-vector">Thực hành: làm việc với dữ liệu vector&lt;/h2>
 &lt;p>Trong bài thực hành này, người học sẽ học cách số hóa một số lớp vector tương ứng với 3 loại đặc tính hình học là điểm (point), đường (line/polyline), vùng (polygon). Cụ thể, với khu vực nghiên cứu là khu vực quanh hồ Bảo Linh, huyện Định Hóa, Thái Nguyên, nhiệm vụ của người học là số hóa các lớp: hồ (lake) dạng vùng, đường giao thông (main roads), và vị trí mất rừng (Deforested areas) dạng điểm.&lt;/p>
 &lt;h3 id="lấy-dữ-liệu-để-thực-hành">Lấy dữ liệu để thực hành&lt;/h3>
@@ -1553,6 +1556,9 @@ Kết quả bài tập yêu cầu
 &lt;/figcaption>&lt;/figure>
 &lt;/li>
 &lt;/ol></description></item><item><title>4. Dữ liệu thuộc tính</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/</link><pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/</guid><description>&lt;p>Làm việc với dữ liệu thuộc tính của file vector: nhập dữ liệu, tính toán trường dữ liệu, liên kết bảng dữ liệu ngoài (Joining External Tables)&lt;/p>
+&lt;h2 id="lý-thuyết">Lý thuyết&lt;/h2>
+&lt;p>Đọc tài liệu: Tim Sutton et al. 2009, A Gentle Introduction to GIS, Chapter 4. Vector Attribute Data:
+&lt;a href="https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/vector_attribute_data.html" target="_blank" rel="noopener">https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/vector_attribute_data.html&lt;/a>&lt;/p>
 &lt;h2 id="tạo-các-trường-thuộc-tính-và-nhập-dữ-liệu">Tạo các trường thuộc tính và nhập dữ liệu&lt;/h2>
 &lt;p>Bài trước đã trình bày cách nhập dữ liệu thuộc tính khi số hóa các đối tượng. Bài này sẽ giới thiệu những cách nhập và tạo dữ liệu thuộc tính cho những lớp đã có sẵn.&lt;/p>
 &lt;h3 id="nhập-dữ-liệu-thuộc-tính-thủ-công">Nhập dữ liệu thuộc tính thủ công&lt;/h3>
@@ -4195,10 +4201,13 @@ Load ảnh có world file lên Map canvas
 &lt;/figcaption>&lt;/figure>
 &lt;/li>
 &lt;/ul></description></item><item><title>9. Xử lý dữ liệu raster</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/</guid><description>&lt;p>Xử lý dữ liệu raster DEM, phân tích Contours, Slope, Hillshade and Aspect.&lt;/p>
-&lt;p>Bài này sẽ hướng dẫn các chức năng xử lý dữ liệu raster. Lý thuyết về dữ liệu raster đã được trình bày ở slide này:&lt;/p>
+&lt;h2 id="lý-thuyết-về-dữ-liệu-raster">Lý thuyết về dữ liệu raster&lt;/h2>
+&lt;!-- Bài này sẽ hướng dẫn các chức năng xử lý dữ liệu raster. Lý thuyết về dữ liệu raster đã được trình bày ở slide này:
 &lt;div class="responsive-wrap">
 &lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRhY2dq8ffRYOz8n5nAJuXocD7KMNny40vifOgPkbBM_9ifMhntTOhx6M7Yk1JQHw/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
-&lt;/div>
+&lt;/div> -->
+&lt;p>Đọc tài liệu: Tim Sutton et al. 2009, A Gentle Introduction to GIS, Chapter 6. Raster Data&lt;br>
+&lt;a href="https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/raster_data.html#" target="_blank" rel="noopener">https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/raster_data.html#&lt;/a>&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>Trong bài này, bạn sẽ sử dụng dữ liệu raster &lt;strong>Mô hình Độ cao Số (DEM)&lt;/strong>. DEM là một dạng dữ liệu không gian (raster) biểu diễn độ cao của địa hình bề mặt Trái Đất tại các điểm khác nhau, thường dưới dạng lưới ô vuông (grid), trong đó mỗi pixel chứa giá trị độ cao (so với mực nước biển trung bình).&lt;/p>
@@ -7894,4 +7903,5 @@ Kết quả exercise3: bản đồ mật độ dân số huyện Chi Lăng, tỉ
 &lt;li>Dữ liệu giám sát bụi mịn PM2.5 [microgram/m3] được lấy từ Copernicus Atmosphere Monitoring Service (CAMS), đã giới thiệu ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/#dữ-liệu-ô-nhiễm-không-khí">Bài 10&lt;/a>.&lt;/li>
 &lt;li>Bài thực hành này là tùy chọn. Các bạn hãy tự tư duy, với kiến thức từ Bài 10 và sự hỗ trợ của công cụ AI để triển khai hệ thống webGIS tương tự như thế này.&lt;/li>
 &lt;/ul>
-&lt;iframe src="https://thaytunghanu.github.io/onlinecourse/pm25.html" width="100%" height="880" style="border:none;">&lt;/iframe></description></item></channel></rss>
+&lt;iframe src="https://thaytunghanu.github.io/onlinecourse/pm25.html" width="100%" height="880" style="border:none;">&lt;/iframe>
+Source: Copernicus Atmosphere Monitoring Service (CAMS)</description></item></channel></rss>

@@ -107,6 +107,7 @@ BY RICHARD MONASTERSKY | GRAPHIC BY 5W INFOGRAPHIC&lt;/p>
 &lt;iframe src="https://ourworldindata.org/grapher/economic-damages-from-natural-disasters-as-a-share-of-gdp?country=~VNM&amp;tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
 &lt;iframe src="https://ourworldindata.org/grapher/economic-damage-from-natural-disasters?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
 &lt;h2 id="khái-niệm-về-phát-triển-bền-vững">Khái niệm về phát triển bền vững&lt;/h2>
+&lt;p>Đọc tài liệu: &lt;a href="https://open.umn.edu/opentextbooks/textbooks/96" target="_blank" rel="noopener">Theis, T., &amp;amp; Tomkin, J. (2015). Sustainability: A Comprehensive Foundation. OpenStax CNX. &lt;strong>Chapter 1 &amp;amp; Chapter 2.&lt;/strong>&lt;/a>&lt;/p>
 &lt;div class="responsive-wrap">
 &lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSU0hIkH-sBYxpNcdIb3guWG4aVsy3DpQwgmDgf6wbdJrSdZM0XNpNPxPM5sAG0zA/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
 &lt;/div></description></item><item><title>1. Giới thiệu về GIS và phần mềm QGIS</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/</link><pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/1_intro/</guid><description>&lt;p>Lý thuyết về GIS và ứng dụng, cài đặt phần mềm QGIS&lt;/p>
@@ -467,13 +468,15 @@ Attributes Toolbar
 &lt;/p>
 &lt;h2 id="homework">Homework&lt;/h2>
 &lt;p>Imagine you are planning a project that applies GIS to a topic of your interest. Describe your project ideas, including the chosen topic, how you plan to organize the project, and any other relevant details. (Approximately 200 words).&lt;/p></description></item><item><title>2. Môi trường tự nhiên và hệ sinh thái</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/2_ecology/</link><pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/suscc/2_ecology/</guid><description>&lt;p>Giới thiệu về sinh quyển, hệ sinh thái, và các vòng tuần hoàn sinh địa hóa&lt;/p>
+&lt;h3 id="tài-liệu">Tài liệu&lt;/h3>
+&lt;p>Đọc tài liệu: &lt;a href="https://open.umn.edu/opentextbooks/textbooks/96" target="_blank" rel="noopener">Theis, T., &amp;amp; Tomkin, J. (2015). Sustainability: A Comprehensive Foundation. OpenStax CNX. &lt;strong>Chapter 4&lt;/strong>&lt;/a>&lt;/p>
 &lt;h3 id="khái-niệm-về-kinh-tế-sinh-thái">Khái niệm về kinh tế sinh thái&lt;/h3>
 &lt;p>
-&lt;figure id="figure-the-economic-subsystem-relative-to-the-global-ecosystem-source-wikimedia-commonshttpscommonswikimediaorgwikifilediagram_of_natural_resource_flows-ensvg">
+&lt;figure id="figure-the-economic-subsystem-relative-to-the-global-ecosystem-apdapted-from-goodland-et-al-1992-source-mikhail-ryazanov--wikimedia-commonshttpscommonswikimediaorgwikifilediagram_of_natural_resource_flows-ensvg">
 &lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Diagram_of_natural_resource_flows-en.svg" alt="The Economic Subsystem Relative to the Global Ecosystem. Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Diagram_of_natural_resource_flows-en.svg)" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Diagram_of_natural_resource_flows-en.svg" alt="The Economic Subsystem Relative to the Global Ecosystem, Apdapted from Goodland et al., 1992. Source: [Mikhail Ryazanov / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Diagram_of_natural_resource_flows-en.svg)" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;figcaption>
-The Economic Subsystem Relative to the Global Ecosystem. Source: &lt;a href="https://commons.wikimedia.org/wiki/File:Diagram_of_natural_resource_flows-en.svg" target="_blank" rel="noopener">Wikimedia Commons&lt;/a>
+The Economic Subsystem Relative to the Global Ecosystem, Apdapted from Goodland et al., 1992. Source: &lt;a href="https://commons.wikimedia.org/wiki/File:Diagram_of_natural_resource_flows-en.svg" target="_blank" rel="noopener">Mikhail Ryazanov / Wikimedia Commons&lt;/a>
 &lt;/figcaption>&lt;/figure>
 &lt;/p>
 &lt;h3 id="dịch-vụ-hệ-sinh-thái">Dịch vụ hệ sinh thái&lt;/h3>
@@ -494,7 +497,7 @@ The links between ecosystem services and human well-being as described by Millen
 23 of the most key ecosystem services and the different ways they can be categorized. Source: &lt;a href="https://www.grida.no/resources/8141" target="_blank" rel="noopener">GRID-Arendal&lt;/a>
 &lt;/figcaption>&lt;/figure>
 &lt;/p>
-&lt;h3 id="vòng-tuần-hoàn-carbon">Vòng tuần hoàn Carbon&lt;/h3>
+&lt;h3 id="chu-trình-carbon">Chu trình Carbon&lt;/h3>
 &lt;p>
 &lt;figure id="figure-global-carbon-cycle-source-esa--global-carbon-projecthttpswwwesaintesa_multimediaimages202111global_carbon_cycle">
 &lt;div class="d-flex justify-content-center">
@@ -503,7 +506,7 @@ The links between ecosystem services and human well-being as described by Millen
 Global carbon cycle. Source: &lt;a href="https://www.esa.int/ESA_Multimedia/Images/2021/11/Global_carbon_cycle" target="_blank" rel="noopener">ESA / Global carbon project&lt;/a>
 &lt;/figcaption>&lt;/figure>
 &lt;/p>
-&lt;h3 id="vòng-tuần-hoàn-nước">Vòng tuần hoàn nước&lt;/h3>
+&lt;h3 id="chu-trình-nước">Chu trình nước&lt;/h3>
 &lt;p>
 &lt;figure id="figure-water-cycle-source-nasa--wikipedia-commonshttpscommonswikimediaorgwikifilewater_cycle_8265046380png">
 &lt;div class="d-flex justify-content-center">
@@ -511,7 +514,8 @@ Global carbon cycle. Source: &lt;a href="https://www.esa.int/ESA_Multimedia/Imag
 &lt;/div>&lt;figcaption>
 Water cycle. Source: &lt;a href="https://commons.wikimedia.org/wiki/File:Water_Cycle_%288265046380%29.png" target="_blank" rel="noopener">NASA / Wikipedia Commons&lt;/a>
 &lt;/figcaption>&lt;/figure>
-&lt;/p></description></item><item><title>2. Hệ thống tham chiếu tọa độ (CRS)</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/</guid><description>&lt;p>Lý thuyết về các hệ thống tham chiếu tọa độ GIS. Thực hành làm quen các công cụ cơ bản của QGIS.&lt;/p>
+&lt;/p>
+&lt;h3 id="hãy-tự-tìm-hiểu-chu-trình-nitơ-và-chu-trình-phosphor">Hãy tự tìm hiểu chu trình Nitơ và chu trình Phosphor&lt;/h3></description></item><item><title>2. Hệ thống tham chiếu tọa độ (CRS)</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/</guid><description>&lt;p>Lý thuyết về các hệ thống tham chiếu tọa độ GIS. Thực hành làm quen các công cụ cơ bản của QGIS.&lt;/p>
 &lt;h2 id="lý-thuyết-về-các-hệ-thống-tham-chiếu-tọa-độ">Lý thuyết về các hệ thống tham chiếu tọa độ&lt;/h2>
 &lt;div class="responsive-wrap">
 &lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRUX_CAFWfwX1IZZcf09sJ-6iXoUupLZy6oDFmlhnUBELJN51RBnQN3xseRRrkPGg/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
@@ -1119,9 +1123,12 @@ Yêu cầu kết quả của homework
 &lt;/figcaption>&lt;/figure>
 &lt;/p></description></item><item><title>3. Dữ liệu GIS, làm việc với dữ liệu vector</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/</link><pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/</guid><description>&lt;p>Lý thuyết về dữ liệu GIS: vector và raster. Thực hành làm việc với dữ liệu vector.&lt;/p>
 &lt;h2 id="lý-thuyết-về-các-loại-dữ-liệu-không-gian">Lý thuyết về các loại dữ liệu không gian&lt;/h2>
+&lt;!--
 &lt;div class="responsive-wrap">
 &lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRhY2dq8ffRYOz8n5nAJuXocD7KMNny40vifOgPkbBM_9ifMhntTOhx6M7Yk1JQHw/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
-&lt;/div>
+&lt;/div> -->
+&lt;p>Đọc tài liệu: Tim Sutton et al. 2009, A Gentle Introduction to GIS, Chapter 3. Vector Data:
+&lt;a href="https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/vector_data.html" target="_blank" rel="noopener">https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/vector_data.html&lt;/a>&lt;/p>
 &lt;h2 id="thực-hành-làm-việc-với-dữ-liệu-vector">Thực hành: làm việc với dữ liệu vector&lt;/h2>
 &lt;p>Trong bài thực hành này, người học sẽ học cách số hóa một số lớp vector tương ứng với 3 loại đặc tính hình học là điểm (point), đường (line/polyline), vùng (polygon). Cụ thể, với khu vực nghiên cứu là khu vực quanh hồ Bảo Linh, huyện Định Hóa, Thái Nguyên, nhiệm vụ của người học là số hóa các lớp: hồ (lake) dạng vùng, đường giao thông (main roads), và vị trí mất rừng (Deforested areas) dạng điểm.&lt;/p>
 &lt;h3 id="lấy-dữ-liệu-để-thực-hành">Lấy dữ liệu để thực hành&lt;/h3>
@@ -1709,6 +1716,9 @@ Kết quả bài tập yêu cầu
 &lt;/figcaption>&lt;/figure>
 &lt;/li>
 &lt;/ol></description></item><item><title>4. Dữ liệu thuộc tính</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/</link><pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/</guid><description>&lt;p>Làm việc với dữ liệu thuộc tính của file vector: nhập dữ liệu, tính toán trường dữ liệu, liên kết bảng dữ liệu ngoài (Joining External Tables)&lt;/p>
+&lt;h2 id="lý-thuyết">Lý thuyết&lt;/h2>
+&lt;p>Đọc tài liệu: Tim Sutton et al. 2009, A Gentle Introduction to GIS, Chapter 4. Vector Attribute Data:
+&lt;a href="https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/vector_attribute_data.html" target="_blank" rel="noopener">https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/vector_attribute_data.html&lt;/a>&lt;/p>
 &lt;h2 id="tạo-các-trường-thuộc-tính-và-nhập-dữ-liệu">Tạo các trường thuộc tính và nhập dữ liệu&lt;/h2>
 &lt;p>Bài trước đã trình bày cách nhập dữ liệu thuộc tính khi số hóa các đối tượng. Bài này sẽ giới thiệu những cách nhập và tạo dữ liệu thuộc tính cho những lớp đã có sẵn.&lt;/p>
 &lt;h3 id="nhập-dữ-liệu-thuộc-tính-thủ-công">Nhập dữ liệu thuộc tính thủ công&lt;/h3>
@@ -4351,10 +4361,13 @@ Load ảnh có world file lên Map canvas
 &lt;/figcaption>&lt;/figure>
 &lt;/li>
 &lt;/ul></description></item><item><title>9. Xử lý dữ liệu raster</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/</guid><description>&lt;p>Xử lý dữ liệu raster DEM, phân tích Contours, Slope, Hillshade and Aspect.&lt;/p>
-&lt;p>Bài này sẽ hướng dẫn các chức năng xử lý dữ liệu raster. Lý thuyết về dữ liệu raster đã được trình bày ở slide này:&lt;/p>
+&lt;h2 id="lý-thuyết-về-dữ-liệu-raster">Lý thuyết về dữ liệu raster&lt;/h2>
+&lt;!-- Bài này sẽ hướng dẫn các chức năng xử lý dữ liệu raster. Lý thuyết về dữ liệu raster đã được trình bày ở slide này:
 &lt;div class="responsive-wrap">
 &lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRhY2dq8ffRYOz8n5nAJuXocD7KMNny40vifOgPkbBM_9ifMhntTOhx6M7Yk1JQHw/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
-&lt;/div>
+&lt;/div> -->
+&lt;p>Đọc tài liệu: Tim Sutton et al. 2009, A Gentle Introduction to GIS, Chapter 6. Raster Data&lt;br>
+&lt;a href="https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/raster_data.html#" target="_blank" rel="noopener">https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/raster_data.html#&lt;/a>&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>Trong bài này, bạn sẽ sử dụng dữ liệu raster &lt;strong>Mô hình Độ cao Số (DEM)&lt;/strong>. DEM là một dạng dữ liệu không gian (raster) biểu diễn độ cao của địa hình bề mặt Trái Đất tại các điểm khác nhau, thường dưới dạng lưới ô vuông (grid), trong đó mỗi pixel chứa giá trị độ cao (so với mực nước biển trung bình).&lt;/p>
@@ -8050,7 +8063,8 @@ Kết quả exercise3: bản đồ mật độ dân số huyện Chi Lăng, tỉ
 &lt;li>Dữ liệu giám sát bụi mịn PM2.5 [microgram/m3] được lấy từ Copernicus Atmosphere Monitoring Service (CAMS), đã giới thiệu ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/#dữ-liệu-ô-nhiễm-không-khí">Bài 10&lt;/a>.&lt;/li>
 &lt;li>Bài thực hành này là tùy chọn. Các bạn hãy tự tư duy, với kiến thức từ Bài 10 và sự hỗ trợ của công cụ AI để triển khai hệ thống webGIS tương tự như thế này.&lt;/li>
 &lt;/ul>
-&lt;iframe src="https://thaytunghanu.github.io/onlinecourse/pm25.html" width="100%" height="880" style="border:none;">&lt;/iframe></description></item><item><title>Các học liệu GIS hay và miễn phí 2025</title><link>https://thaytunghanu.github.io/onlinecourse/post/25-08-10-gis-courses/</link><pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/post/25-08-10-gis-courses/</guid><description>&lt;p>Các học liệu GIS hay và miễn phí 2025 (ngôn ngữ tiếng Anh) sưu tầm bởi Thầy Tùng HANU&lt;/p>
+&lt;iframe src="https://thaytunghanu.github.io/onlinecourse/pm25.html" width="100%" height="880" style="border:none;">&lt;/iframe>
+Source: Copernicus Atmosphere Monitoring Service (CAMS)</description></item><item><title>Các học liệu GIS hay và miễn phí 2025</title><link>https://thaytunghanu.github.io/onlinecourse/post/25-08-10-gis-courses/</link><pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/post/25-08-10-gis-courses/</guid><description>&lt;p>Các học liệu GIS hay và miễn phí 2025 (ngôn ngữ tiếng Anh) sưu tầm bởi Thầy Tùng HANU&lt;/p>
 &lt;p>&lt;a href="https://courses.spatialthoughts.com/index.html" target="_blank" rel="noopener">https://courses.spatialthoughts.com/index.html&lt;/a>&lt;br>
 Ujaval Gandhi course on QGIS&lt;/p>
 &lt;p>&lt;a href="https://sustainability-gis.readthedocs.io/en/latest/index.html" target="_blank" rel="noopener">https://sustainability-gis.readthedocs.io/en/latest/index.html&lt;/a>&lt;br>
