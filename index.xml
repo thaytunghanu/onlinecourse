@@ -515,7 +515,15 @@ Global carbon cycle. Source: &lt;a href="https://www.esa.int/ESA_Multimedia/Imag
 Water cycle. Source: &lt;a href="https://commons.wikimedia.org/wiki/File:Water_Cycle_%288265046380%29.png" target="_blank" rel="noopener">NASA / Wikipedia Commons&lt;/a>
 &lt;/figcaption>&lt;/figure>
 &lt;/p>
-&lt;h3 id="hãy-tự-tìm-hiểu-chu-trình-nitơ-và-chu-trình-phosphor">Hãy tự tìm hiểu chu trình Nitơ và chu trình Phosphor&lt;/h3></description></item><item><title>2. Hệ thống tham chiếu tọa độ (CRS)</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/</guid><description>&lt;p>Lý thuyết về các hệ thống tham chiếu tọa độ GIS. Thực hành làm quen các công cụ cơ bản của QGIS.&lt;/p>
+&lt;h3 id="hãy-tự-tìm-hiểu-chu-trình-nitơ-và-chu-trình-phosphor">Hãy tự tìm hiểu chu trình Nitơ và chu trình Phosphor&lt;/h3>
+&lt;h3 id="questions">Questions&lt;/h3>
+&lt;ol>
+&lt;li>Given the definition: “Ecosystem services are the benefits that people obtain from ecosystems,” write a 200-word essay explaining four types of ecosystem services, providing specific examples for each type.&lt;/li>
+&lt;li>Describe the carbon cycle and explain how human activities have altered the natural carbon cycle.&lt;/li>
+&lt;li>Describe the water cycle and explain how human activities have modified the natural water cycle.&lt;/li>
+&lt;li>How does loss of biodiversity concern people?&lt;/li>
+&lt;li>Discuss the importance of soil to society today. Explain how human activities have altered the physical, chemical, or biological properties of native soil.&lt;/li>
+&lt;/ol></description></item><item><title>2. Hệ thống tham chiếu tọa độ (CRS)</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/</guid><description>&lt;p>Lý thuyết về các hệ thống tham chiếu tọa độ GIS. Thực hành làm quen các công cụ cơ bản của QGIS.&lt;/p>
 &lt;h2 id="lý-thuyết-về-các-hệ-thống-tham-chiếu-tọa-độ">Lý thuyết về các hệ thống tham chiếu tọa độ&lt;/h2>
 &lt;div class="responsive-wrap">
 &lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRUX_CAFWfwX1IZZcf09sJ-6iXoUupLZy6oDFmlhnUBELJN51RBnQN3xseRRrkPGg/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
