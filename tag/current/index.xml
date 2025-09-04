@@ -95,7 +95,7 @@ max-width: 100% !important;
 &lt;li>Dữ liệu giám sát bụi mịn PM2.5 [microgram/m3] được lấy từ Copernicus Atmosphere Monitoring Service (CAMS)&lt;/li>
 &lt;/ul>
 &lt;iframe src="https://thaytunghanu.github.io/onlinecourse/pm25.html" width="100%" height="880" style="border:none;">&lt;/iframe>
-Source: Copernicus Atmosphere Monitoring Service (CAMS)
+Source: PM2.5 layer from Copernicus Atmosphere Monitoring Service (CAMS)
 &lt;h2 id="nội-dung-khóa-học">Nội dung khóa học&lt;/h2>
 &lt;ul class="list-unstyled">
 &lt;li>
