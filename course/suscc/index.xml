@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>🌏 Phát triển bền vững và biến đổi khí hậu | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/course/suscc/index.xml" rel="self" type="application/rss+xml"/><description>🌏 Phát triển bền vững và biến đổi khí hậu</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 17 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/course/suscc/featured.png</url><title>🌏 Phát triển bền vững và biến đổi khí hậu</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/</link></image><item><title>1. Giới thiệu Phát triển bền vững và Biến đổi khí hậu</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/1_intro/</link><pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/suscc/1_intro/</guid><description>&lt;p>Các vấn đề môi trường, khái niệm về phát triển bền vững.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>🌏 Phát triển bền vững và biến đổi khí hậu | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/course/suscc/index.xml" rel="self" type="application/rss+xml"/><description>🌏 Phát triển bền vững và biến đổi khí hậu</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 17 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/course/suscc/featured.png</url><title>🌏 Phát triển bền vững và biến đổi khí hậu</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/</link></image><item><title>1. Giới thiệu về Phát triển bền vững và Biến đổi khí hậu</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/1_intro/</link><pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/suscc/1_intro/</guid><description>&lt;p>Các vấn đề môi trường toàn cầu, khái niệm về phát triển bền vững.&lt;/p>
 &lt;h2 id="các-vấn-đề-môi-trường-toàn-cầu">Các vấn đề môi trường toàn cầu&lt;/h2>
 &lt;p>&lt;code>Hãy tương tác với các biểu đồ dưới đây để hiểu rõ hơn các vấn đề môi trường toàn cầu qua dữ liệu.&lt;/code>&lt;/p>
 &lt;h3 id="dân-số-tăng-trưởng">Dân số tăng trưởng&lt;/h3>
@@ -60,12 +60,13 @@ max-width: 100% !important;
 }
 &lt;/style>
 &lt;br>&lt;/p>
-&lt;p>&lt;code>- Use our global Footprint scenario tool to design possible futures by choosing key parameters that shape overshoot:&lt;/code>
-&lt;a href="https://www.footprintnetwork.org/resources/footprint-scenario-tool/" target="_blank" rel="noopener">https://www.footprintnetwork.org/resources/footprint-scenario-tool/&lt;/a>&lt;/p>
+&lt;p>&lt;code>Sử dụng công cụ kịch bản Dấu chân sinh thái toàn cầu của footprintnetwork để thiết kế các tương lai có thể xảy ra bằng cách tùy chỉnh các tham số chính định hình sự vượt mức:&lt;/code>&lt;br>
+👉 &lt;a href="https://www.footprintnetwork.org/resources/footprint-scenario-tool/" target="_blank" rel="noopener">https://www.footprintnetwork.org/resources/footprint-scenario-tool/&lt;/a>&lt;/p>
 &lt;h3 id="sự-gia-tăng-nồng-độ-co2-trong-khí-quyển">Sự gia tăng nồng độ CO2 trong khí quyển&lt;/h3>
 &lt;iframe src="https://ourworldindata.org/grapher/co2-long-term-concentration?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
-&lt;h3 id="ấm-lên-toàn-cầu">Ấm lên toàn cầu&lt;/h3>
+&lt;h3 id="sự-ấm-lên-toàn-cầu">Sự ấm lên toàn cầu&lt;/h3>
 &lt;h4 id="sự-bất-thường-về-nhiệt-độ-hàng-năm">Sự bất thường về nhiệt độ hàng năm&lt;/h4>
+&lt;p>&lt;code>Ấn vào Customize chart để thay đổi hiển thị các tham số khác như nhiệt độ mặt biển, pH đại dương, nồng độ CO2, CH4 ...&lt;/code>&lt;/p>
 &lt;iframe src="https://ourworldindata.org/explorers/climate-change?Metric=Temperature+anomaly&amp;Long-run+series=false&amp;country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~OWID_NAM~South+Cascade+Glacier~Wolverine+Glacier~Hawaii~Arctic+Ocean&amp;tab=line&amp;hideControls=false" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
 &lt;h3 id="mực-nước-biển-dâng">Mực nước biển dâng&lt;/h3>
 &lt;iframe src="https://ourworldindata.org/grapher/sea-level?tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
@@ -78,7 +79,18 @@ Hãy tham khảo thêm bản đồ nguy cơ ngập do nước biển dâng của
 &lt;/div>
 &lt;h3 id="ô-nhiễm-không-khí">Ô nhiễm không khí&lt;/h3>
 &lt;h4 id="lượng-khí-thải-gây-ô-nhiễm-không-khí-trên-toàn-cầu-1750-đến-2022">Lượng khí thải gây ô nhiễm không khí trên toàn cầu, 1750 đến 2022&lt;/h4>
+&lt;p>&lt;code>Có thể tùy chỉnh hiển thị dữ liệu cho quốc gia hoặc vùng lãnh thổ bằng hộp Edit countries and regions&lt;/code>&lt;/p>
 &lt;iframe src="https://ourworldindata.org/grapher/long-run-air-pollution?tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;h3 id="rác-thải-nhựa">Rác thải nhựa&lt;/h3>
+&lt;iframe src="https://ourworldindata.org/explorers/plastic-pollution?facet=none&amp;mapSelect=~VNM&amp;hideControls=false&amp;Metric=Plastic+emitted+to+ocean&amp;Per+capita=true&amp;Share+of+world+total=false&amp;Source=Meijer+et+al.+%282021%29&amp;country=USA~CHN~IND~GBR~MYS~DEU&amp;tab=map" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;h3 id="nước-sạch-và-vệ-sinh">Nước sạch và vệ sinh&lt;/h3>
+&lt;iframe src="https://ourworldindata.org/explorers/water-and-sanitation?Resource=Drinking+water&amp;Level+of+Use%2FAccess=Safely+managed&amp;Residence=Total&amp;Relative+to+population=Share+of+population&amp;country=IND~USA~KEN~OWID_WRL~BGD~ZAF~CHN&amp;tab=map&amp;hideControls=false" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;h3 id="tiêu-thụ-năng-lượng">Tiêu thụ năng lượng&lt;/h3>
+&lt;h4 id="tiêu-thụ-năng-lượng-toàn-cầu-theo-nguồn">Tiêu thụ năng lượng toàn cầu theo nguồn&lt;/h4>
+&lt;iframe src="https://ourworldindata.org/grapher/global-energy-substitution?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;h4 id="tiêu-thụ-năng-lượng-bình-quân-đầu-người-theo-nguồn">Tiêu thụ năng lượng bình quân đầu người theo nguồn&lt;/h4>
+&lt;p>&lt;code>Có thể tùy chỉnh hiển thị dữ liệu cho quốc gia hoặc vùng lãnh thổ bằng hộp Edit countries and regions&lt;/code>&lt;/p>
+&lt;iframe src="https://ourworldindata.org/grapher/per-capita-energy-stacked?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
 &lt;h3 id="mất-đa-dạng-sinh-học">Mất đa dạng sinh học&lt;/h3>
 &lt;h4 id="chỉ-số-living-planet-index-1970-2020">Chỉ số Living Planet Index 1970-2020&lt;/h4>
 &lt;iframe src="https://ourworldindata.org/grapher/global-living-planet-index?tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
@@ -88,8 +100,8 @@ Hãy tham khảo thêm bản đồ nguy cơ ngập do nước biển dâng của
 &lt;h4 id="số-lượng-loài-đe-dọa-tuyệt-chủng-số-liệu-cập-nhật-2024">Số lượng loài đe dọa tuyệt chủng (số liệu cập nhật 2024)&lt;/h4>
 &lt;iframe src="https://ourworldindata.org/grapher/number-species-threatened?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
 &lt;h4 id="bức-tranh-tổng-thể-life-under-threat-2014">Bức tranh tổng thể: Life under threat (2014)&lt;/h4>
-&lt;p>&lt;a href="https://www.nature.com/news/polopoly_fs/7.22332!/file/GraphicPDF.pdf" target="_blank" rel="noopener">https://www.nature.com/news/polopoly_fs/7.22332!/file/GraphicPDF.pdf&lt;/a>&lt;br>
-BY RICHARD MONASTERSKY | GRAPHIC BY 5W INFOGRAPHIC&lt;/p>
+&lt;p>👉 &lt;a href="https://www.nature.com/news/polopoly_fs/7.22332!/file/GraphicPDF.pdf" target="_blank" rel="noopener">https://www.nature.com/news/polopoly_fs/7.22332!/file/GraphicPDF.pdf&lt;/a>&lt;br>
+by Richard Monastersky | Graphic by 5W Infographic&lt;/p>
 &lt;h3 id="mất-rừng">Mất rừng&lt;/h3>
 &lt;p>
 &lt;figure >
@@ -106,11 +118,22 @@ BY RICHARD MONASTERSKY | GRAPHIC BY 5W INFOGRAPHIC&lt;/p>
 &lt;iframe src="https://ourworldindata.org/grapher/number-of-deaths-from-natural-disasters?country=~VNM&amp;tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
 &lt;iframe src="https://ourworldindata.org/grapher/economic-damages-from-natural-disasters-as-a-share-of-gdp?country=~VNM&amp;tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
 &lt;iframe src="https://ourworldindata.org/grapher/economic-damage-from-natural-disasters?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;h2 id="sự-tăng-tốc-vĩ-đại">Sự tăng tốc vĩ đại&lt;/h2>
+&lt;p>&amp;ldquo;Những tác động của những thay đổi ngày càng nhanh chóng của con người hiện đã có thể nhận thấy rõ ràng ở cấp độ hệ thống Trái Đất. Nhiều chỉ số quan trọng về hoạt động của hệ thống Trái Đất hiện đang cho thấy những phản ứng, ít nhất là một phần, được thúc đẩy bởi dấu ấn đang thay đổi của con người trên hành tinh.&amp;rdquo; &lt;a href="http://www.igbp.net/globalchange/greatacceleration.4.1b8ae20512db692f2a680001630.html" target="_blank" rel="noopener">IGBP&lt;/a>&lt;/p>
+&lt;p>
+&lt;figure id="figure-the-great-acceleration-source-will-steffen-et-al-the-trajectory-of-the-anthropocene-the-great-acceleration-anthropocene-review-january-16-2015--igbphttpwwwigbpnetglobalchangegreatacceleration41b8ae20512db692f2a680001630html">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="http://www.igbp.net/images/18.950c2fa1495db7081ebd1/1421396650502/GreatAcceleration2015igbpsrclowres.jpg" alt="The Great Acceleration. Source: [Will Steffen et al., “The Trajectory of the Anthropocene: The Great Acceleration.” Anthropocene Review. January 16, 2015 / IGBP](http://www.igbp.net/globalchange/greatacceleration.4.1b8ae20512db692f2a680001630.html)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+The Great Acceleration. Source: &lt;a href="http://www.igbp.net/globalchange/greatacceleration.4.1b8ae20512db692f2a680001630.html" target="_blank" rel="noopener">Will Steffen et al., “The Trajectory of the Anthropocene: The Great Acceleration.” Anthropocene Review. January 16, 2015 / IGBP&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
 &lt;h2 id="khái-niệm-về-phát-triển-bền-vững">Khái niệm về phát triển bền vững&lt;/h2>
 &lt;p>Đọc tài liệu: &lt;a href="https://open.umn.edu/opentextbooks/textbooks/96" target="_blank" rel="noopener">Theis, T., &amp;amp; Tomkin, J. (2015). Sustainability: A Comprehensive Foundation. OpenStax CNX. &lt;strong>Chapter 1 &amp;amp; Chapter 2.&lt;/strong>&lt;/a>&lt;/p>
+&lt;!--
 &lt;div class="responsive-wrap">
 &lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSU0hIkH-sBYxpNcdIb3guWG4aVsy3DpQwgmDgf6wbdJrSdZM0XNpNPxPM5sAG0zA/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
-&lt;/div></description></item><item><title>2. Môi trường tự nhiên và hệ sinh thái</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/2_ecology/</link><pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/suscc/2_ecology/</guid><description>&lt;p>Giới thiệu về sinh quyển, hệ sinh thái, và các vòng tuần hoàn sinh địa hóa&lt;/p>
+&lt;/div> --></description></item><item><title>2. Sinh quyển và hệ sinh thái</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/2_ecology/</link><pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/suscc/2_ecology/</guid><description>&lt;p>Giới thiệu về hệ sinh thái, các vòng tuần hoàn sinh địa hóa, và đa dạng sinh học.&lt;/p>
 &lt;h2 id="tài-liệu">Tài liệu&lt;/h2>
 &lt;p>Đọc tài liệu: &lt;a href="https://open.umn.edu/opentextbooks/textbooks/96" target="_blank" rel="noopener">Theis, T., &amp;amp; Tomkin, J. (2015). Sustainability: A Comprehensive Foundation. OpenStax CNX. &lt;strong>Chapter 4&lt;/strong>&lt;/a>&lt;/p>
 &lt;h2 id="dịch-vụ-hệ-sinh-thái">Dịch vụ hệ sinh thái&lt;/h2>
@@ -177,20 +200,16 @@ The water cycle with human interactions. Source: &lt;a href="https://www.usgs.go
 Diagram of the global hydrological cycle in the Anthropocene, water fluxes. Source: &lt;a href="https://www.waternet.be/understanding-the-hydrological-cycle" target="_blank" rel="noopener">WWDR 2020 / waternet.be&lt;/a>
 &lt;/figcaption>&lt;/figure>
 &lt;/p>
-&lt;p>&lt;strong>Water footprint definitions:&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Blue water use: is the withdrawal and consumption of fresh surface water (from rivers, lakes) and groundwater (from aquifers) for human activities like agricultural irrigation, industrial processes, and domestic use.&lt;/li>
-&lt;li>Green water use: refers to the consumption of water stored in the soil as moisture, which is then released into the atmosphere through evapotranspiration by plants. This water, a subset of total precipitation, is essential for rain-fed agriculture, forestry.&lt;/li>
-&lt;li>Gray water use: is the amount of fresh water needed to dilute pollutants (such as fertilizers, pesticides, heavy metals, industrial wastewater) to a level that meets water quality standards according to environmental regulations.&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Some remarkable conclusions from the water cycle for the Anthropocene (&lt;a href="https://www.waternet.be/understanding-the-hydrological-cycle" target="_blank" rel="noopener">according to waternet.be&lt;/a>):&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>The importance of the terretrial water cycle: evapotranspiration of green water and evaporation of blue water are more important than the evaporation from the oceans (60% land vs 40% oceans) for percipitation on the land surface.&lt;/li>
-&lt;li>Our present level of use of blue water (4,000 km3 ± 30%, which is 2,800 to 5,200 km3) approaches the sustainable available amount of 5,000 to 9,000 km3 - especially when discharge of grey water and pollution is taken into consideration. 90% of this sustainable available amount is groundwater.&lt;/li>
-&lt;li>Humans have become a fundamental part of the water cycle. A water cycle that leaves out human interference, does not exist any more.
-Since the beginning of the Industrial Revolution, human activity fundamentally changed the earth&amp;rsquo;s atmosphere, biosphere, water cycle, biodiversity and land surface.&lt;/li>
-&lt;li>Changes in e.g. land cover (deforestation, draining wetlands, urbanisation) impact evapotranspiration of plants, trees and soil, which in turn will impact precipitation and available water resources elsewhere on land. This will then affect future availability of green water use for human development (now 19,000 km3 ± 20%) - especially in agriculture. Substituting diminished green water will be extremely difficult.&lt;/li>
-&lt;/ul>
+&lt;!-- **Water footprint definitions:**
+- Blue water use: is the withdrawal and consumption of fresh surface water (from rivers, lakes) and groundwater (from aquifers) for human activities like agricultural irrigation, industrial processes, and domestic use.
+- Green water use: refers to the consumption of water stored in the soil as moisture, which is then released into the atmosphere through evapotranspiration by plants. This water, a subset of total precipitation, is essential for rain-fed agriculture, forestry.
+- Gray water use: is the amount of fresh water needed to dilute pollutants (such as fertilizers, pesticides, heavy metals, industrial wastewater) to a level that meets water quality standards according to environmental regulations.
+**Some remarkable conclusions from the water cycle for the Anthropocene ([according to waternet.be](https://www.waternet.be/understanding-the-hydrological-cycle)):**
+- The importance of the terretrial water cycle: evapotranspiration of green water and evaporation of blue water are more important than the evaporation from the oceans (60% land vs 40% oceans) for percipitation on the land surface.
+- Our present level of use of blue water (4,000 km3 ± 30%, which is 2,800 to 5,200 km3) approaches the sustainable available amount of 5,000 to 9,000 km3 - especially when discharge of grey water and pollution is taken into consideration. 90% of this sustainable available amount is groundwater.
+- Humans have become a fundamental part of the water cycle. A water cycle that leaves out human interference, does not exist any more.
+Since the beginning of the Industrial Revolution, human activity fundamentally changed the earth's atmosphere, biosphere, water cycle, biodiversity and land surface.
+- Changes in e.g. land cover (deforestation, draining wetlands, urbanisation) impact evapotranspiration of plants, trees and soil, which in turn will impact precipitation and available water resources elsewhere on land. This will then affect future availability of green water use for human development (now 19,000 km3 ± 20%) - especially in agriculture. Substituting diminished green water will be extremely difficult. -->
 &lt;h3 id="hãy-tự-tìm-hiểu-chu-trình-nitơ-và-chu-trình-phosphor">Hãy tự tìm hiểu chu trình Nitơ và chu trình Phosphor&lt;/h3>
 &lt;h2 id="mất-đa-dạng-sinh-học">Mất đa dạng sinh học&lt;/h2>
 &lt;h3 id="9-cấp-độ-về-nguy-cơ-tuyệt-chủng">9 cấp độ về nguy cơ tuyệt chủng&lt;/h3>
@@ -218,4 +237,16 @@ An overview of proportions of threatened species within each of the more compreh
 &lt;li>Describe the water cycle and explain how human activities have modified the natural water cycle.&lt;/li>
 &lt;li>How does loss of biodiversity concern people?&lt;/li>
 &lt;li>Discuss the importance of soil to society today. Explain how human activities have altered the physical, chemical, or biological properties of native soil.&lt;/li>
-&lt;/ol></description></item></channel></rss>
+&lt;/ol></description></item><item><title>3. Tài nguyên nước và nhu cầu sử dụng nước</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/3_resources/</link><pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/suscc/3_resources/</guid><description>&lt;p>Giới thiệu về tài nguyên thiên nhiên và vấn đề ô nhiễm&lt;/p>
+&lt;h2 id="tài-liệu">Tài liệu&lt;/h2>
+&lt;p>Đọc tài liệu: &lt;a href="https://open.umn.edu/opentextbooks/textbooks/96" target="_blank" rel="noopener">Theis, T., &amp;amp; Tomkin, J. (2015). Sustainability: A Comprehensive Foundation. OpenStax CNX. &lt;strong>Chapter 5&lt;/strong>&lt;/a>&lt;/p>
+&lt;!-- ## Tài nguyên nước
+### Phân phối nước toàn cầu
+![](https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/EarthsWater-BarChart.png "The World's Water - Distribution of Earth's Water. Source: [Igor Shiklamonov, 1993, Water in Crisis: A Guide to the World's Freshwater Resources / USGS](https://www.usgs.gov/media/images/distribution-water-and-above-earth)")
+### Phân bố lượng mưa toàn cầu
+![](https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/wss-cycle-precipitation-world-map.gif "Earth Forum, Houston Museum of Natural Science / USGS](https://www.usgs.gov/media/images/generalized-world-precipitation-map)")
+https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/wss-gw-how-groundwater-occurs-diagram.png
+https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/wss-cycle-groundwater-flow-diagram.jpg
+https://pubs.usgs.gov/circ/circ1186/images/fig12.gif
+https://pubs.usgs.gov/circ/circ1186/html/gw_effect.html
+https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3A1ff6a33744edb29849414eaedaff8a61e691af61c1e027d0d620f2e2%2BIMAGE_THUMB_POSTCARD_TINY%2BIMAGE_THUMB_POSTCARD_TINY.1 --></description></item></channel></rss>
