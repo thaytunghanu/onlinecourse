@@ -366,7 +366,12 @@ Yêu cầu kết quả của phần nhập liệu và tính toán field calculat
 &lt;/ol>
 &lt;p>Phần nhập kết nối với bảng bên ngoài:&lt;br>
 6. Sửa lại các giá trị ở trường chung ở file Vietnam_Provinces để hoàn toàn khớp với giá trị ở csv. Sau đó join lại bảng xem đã khắc phục được vấn đề chưa.&lt;br>
-7. Khi không còn hàng nào có giá trị NULL ở các cột dân số, hãy lưu lớp và đặt tên là Vietnam_provinces_2015population để chuyển kết nối bảng dữ liệu thành cố định.&lt;/p></description></item><item><title>5. Thể hiện và trình bày dữ liệu vector</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/</guid><description>&lt;p>Thực hành về thể hiện và trình bày lớp vector. Tiếp tục thực hành về tính toán trường dữ liệu (field calculator).&lt;/p>
+7. Khi không còn hàng nào có giá trị NULL ở các cột dân số, hãy lưu lớp và đặt tên là Vietnam_provinces_2015population để chuyển kết nối bảng dữ liệu thành cố định.&lt;/p>
+&lt;div class="alert alert-success">
+&lt;div>
+👉 Theo dõi page Thầy Tùng HANU: GIS / Data Analysis &lt;a href="https://www.facebook.com/profile.php?id=61574055214228" target="_blank" rel="noopener">https://www.facebook.com/profile.php?id=61574055214228&lt;/a> để trao đổi thông tin và nhận thông báo các bài viết mới về GIS, Sustainability &amp;amp; Climate Change, Data Analysis!
+&lt;/div>
+&lt;/div></description></item><item><title>5. Thể hiện và trình bày dữ liệu vector</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/</guid><description>&lt;p>Thực hành về thể hiện và trình bày lớp vector. Tiếp tục thực hành về tính toán trường dữ liệu (field calculator).&lt;/p>
 &lt;h2 id="thể-hiện-ký-hiệu-bản-đồ-trong-qgis">Thể hiện ký hiệu bản đồ trong QGIS&lt;/h2>
 &lt;ul>
 &lt;li>Ở bài 2, chúng ta đã có thực hiện một số bước thực hành căn bản về ký hiệu bản đồ (symbology): bao gồm làm trong màu nền của đối tượng vùng và đổi màu đường viền.&lt;/li>
@@ -750,4 +755,9 @@ loading="lazy" data-zoomable />&lt;/div>
 Kết quả mẫu tính phần trăm thay đổi của rừng tự nhiên
 &lt;/figcaption>&lt;/figure>
 &lt;/li>
-&lt;/ol></description></item></channel></rss>
+&lt;/ol>
+&lt;div class="alert alert-success">
+&lt;div>
+👉 Theo dõi page Thầy Tùng HANU: GIS / Data Analysis &lt;a href="https://www.facebook.com/profile.php?id=61574055214228" target="_blank" rel="noopener">https://www.facebook.com/profile.php?id=61574055214228&lt;/a> để trao đổi thông tin và nhận thông báo các bài viết mới về GIS, Sustainability &amp;amp; Climate Change, Data Analysis!
+&lt;/div>
+&lt;/div></description></item></channel></rss>

@@ -592,7 +592,12 @@ loading="lazy" data-zoomable />&lt;/div>
 Kết quả bài tập yêu cầu
 &lt;/figcaption>&lt;/figure>
 &lt;/li>
-&lt;/ol></description></item><item><title>4. Dữ liệu thuộc tính</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/</link><pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/</guid><description>&lt;p>Làm việc với dữ liệu thuộc tính của file vector: nhập dữ liệu, tính toán trường dữ liệu, liên kết bảng dữ liệu ngoài (Joining External Tables)&lt;/p>
+&lt;/ol>
+&lt;div class="alert alert-success">
+&lt;div>
+👉 Theo dõi page Thầy Tùng HANU: GIS / Data Analysis &lt;a href="https://www.facebook.com/profile.php?id=61574055214228" target="_blank" rel="noopener">https://www.facebook.com/profile.php?id=61574055214228&lt;/a> để trao đổi thông tin và nhận thông báo các bài viết mới về GIS, Sustainability &amp;amp; Climate Change, Data Analysis!
+&lt;/div>
+&lt;/div></description></item><item><title>4. Dữ liệu thuộc tính</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/</link><pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/</guid><description>&lt;p>Làm việc với dữ liệu thuộc tính của file vector: nhập dữ liệu, tính toán trường dữ liệu, liên kết bảng dữ liệu ngoài (Joining External Tables)&lt;/p>
 &lt;h2 id="lý-thuyết">Lý thuyết&lt;/h2>
 &lt;p>Đọc tài liệu: Tim Sutton et al. 2009, A Gentle Introduction to GIS, Chapter 4. Vector Attribute Data:
 &lt;a href="https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/vector_attribute_data.html" target="_blank" rel="noopener">https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/vector_attribute_data.html&lt;/a>&lt;/p>
@@ -960,4 +965,9 @@ Yêu cầu kết quả của phần nhập liệu và tính toán field calculat
 &lt;/ol>
 &lt;p>Phần nhập kết nối với bảng bên ngoài:&lt;br>
 6. Sửa lại các giá trị ở trường chung ở file Vietnam_Provinces để hoàn toàn khớp với giá trị ở csv. Sau đó join lại bảng xem đã khắc phục được vấn đề chưa.&lt;br>
-7. Khi không còn hàng nào có giá trị NULL ở các cột dân số, hãy lưu lớp và đặt tên là Vietnam_provinces_2015population để chuyển kết nối bảng dữ liệu thành cố định.&lt;/p></description></item></channel></rss>
+7. Khi không còn hàng nào có giá trị NULL ở các cột dân số, hãy lưu lớp và đặt tên là Vietnam_provinces_2015population để chuyển kết nối bảng dữ liệu thành cố định.&lt;/p>
+&lt;div class="alert alert-success">
+&lt;div>
+👉 Theo dõi page Thầy Tùng HANU: GIS / Data Analysis &lt;a href="https://www.facebook.com/profile.php?id=61574055214228" target="_blank" rel="noopener">https://www.facebook.com/profile.php?id=61574055214228&lt;/a> để trao đổi thông tin và nhận thông báo các bài viết mới về GIS, Sustainability &amp;amp; Climate Change, Data Analysis!
+&lt;/div>
+&lt;/div></description></item></channel></rss>
