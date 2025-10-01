@@ -254,19 +254,192 @@ An overview of proportions of threatened species within each of the more compreh
 &lt;div>
 👉 Theo dõi page Thầy Tùng HANU: GIS / Data Analysis &lt;a href="https://www.facebook.com/profile.php?id=61574055214228" target="_blank" rel="noopener">https://www.facebook.com/profile.php?id=61574055214228&lt;/a> để trao đổi thông tin và nhận thông báo các bài viết mới về GIS, Sustainability &amp;amp; Climate Change, Data Analysis!
 &lt;/div>
-&lt;/div></description></item><item><title>3. Tài nguyên nước và nhu cầu sử dụng nước</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/3_resources/</link><pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/suscc/3_resources/</guid><description>&lt;p>Giới thiệu về tài nguyên thiên nhiên và vấn đề ô nhiễm&lt;/p>
+&lt;/div></description></item><item><title>3. Tài nguyên nước và nhu cầu sử dụng nước</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/3_resources/</link><pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/suscc/3_resources/</guid><description>&lt;p>Giới thiệu về tài nguyên nước và nhu cầu sử dụng nước&lt;/p>
 &lt;h2 id="tài-liệu">Tài liệu&lt;/h2>
 &lt;p>Đọc tài liệu: &lt;a href="https://open.umn.edu/opentextbooks/textbooks/96" target="_blank" rel="noopener">Theis, T., &amp;amp; Tomkin, J. (2015). Sustainability: A Comprehensive Foundation. OpenStax CNX. &lt;strong>Chapter 5&lt;/strong>&lt;/a>&lt;/p>
-&lt;!-- ## Tài nguyên nước
-### Phân phối nước toàn cầu
-![](https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/EarthsWater-BarChart.png "The World's Water - Distribution of Earth's Water. Source: [Igor Shiklamonov, 1993, Water in Crisis: A Guide to the World's Freshwater Resources / USGS](https://www.usgs.gov/media/images/distribution-water-and-above-earth)")
-### Phân bố lượng mưa toàn cầu
-![](https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/wss-cycle-precipitation-world-map.gif "Earth Forum, Houston Museum of Natural Science / USGS](https://www.usgs.gov/media/images/generalized-world-precipitation-map)")
-https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/wss-gw-how-groundwater-occurs-diagram.png
-https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/wss-cycle-groundwater-flow-diagram.jpg
-https://pubs.usgs.gov/circ/circ1186/images/fig12.gif
-https://pubs.usgs.gov/circ/circ1186/html/gw_effect.html
-https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3A1ff6a33744edb29849414eaedaff8a61e691af61c1e027d0d620f2e2%2BIMAGE_THUMB_POSTCARD_TINY%2BIMAGE_THUMB_POSTCARD_TINY.1 -->
+&lt;h3 id="questions">Questions&lt;/h3>
+&lt;ol>
+&lt;li>What are the relative merits of using surface water vs. groundwater as a water resource?&lt;/li>
+&lt;li>Why is society facing a crisis involving water supply and how can we solve it?&lt;/li>
+&lt;/ol>
+&lt;h2 id="giới-thiệu-chung-về-tài-nguyên-nước">Giới thiệu chung về tài nguyên nước&lt;/h2>
+&lt;h3 id="phân-bố-nước-toàn-cầu">Phân bố nước toàn cầu&lt;/h3>
+&lt;p>
+&lt;figure id="figure-the-worlds-water---distribution-of-earths-water-source-igor-shiklamonov-1993-water-in-crisis-a-guide-to-the-worlds-freshwater-resources--usgshttpswwwusgsgovmediaimagesdistribution-water-and-above-earth">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/EarthsWater-BarChart.png" alt="The World&amp;#39;s Water - Distribution of Earth&amp;#39;s Water. Source: [Igor Shiklamonov, 1993, Water in Crisis: A Guide to the World&amp;#39;s Freshwater Resources / USGS](https://www.usgs.gov/media/images/distribution-water-and-above-earth)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+The World&amp;rsquo;s Water - Distribution of Earth&amp;rsquo;s Water. Source: &lt;a href="https://www.usgs.gov/media/images/distribution-water-and-above-earth" target="_blank" rel="noopener">Igor Shiklamonov, 1993, Water in Crisis: A Guide to the World&amp;rsquo;s Freshwater Resources / USGS&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="phân-bố-lượng-mưa-toàn-cầu">Phân bố lượng mưa toàn cầu&lt;/h3>
+&lt;p>
+&lt;figure id="figure-world-rainfall-map-source-earth-forum-houston-museum-of-natural-science--usgshttpswwwusgsgovmediaimagesgeneralized-world-precipitation-map">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/wss-cycle-precipitation-world-map.gif" alt="World Rainfall Map. Source: [Earth Forum, Houston Museum of Natural Science / USGS](https://www.usgs.gov/media/images/generalized-world-precipitation-map)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+World Rainfall Map. Source: &lt;a href="https://www.usgs.gov/media/images/generalized-world-precipitation-map" target="_blank" rel="noopener">Earth Forum, Houston Museum of Natural Science / USGS&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h2 id="tài-nguyên-nước-ngầm">Tài nguyên nước ngầm&lt;/h2>
+&lt;h3 id="các-đặc-trưng-của-nước-ngầm">Các đặc trưng của nước ngầm&lt;/h3>
+&lt;p>
+&lt;figure id="figure-subsurface-water-terminology-groundwater-in-pore-spaces-and-fractures-of-earth-materials-saturated-zone-unsaturated-zone-and-water-table-which-follows-land-surface-but-in-a-more-subdued-way-source-united-states-geological-surveyhttpswwwusgsgovmediaimagesgroundwater-saturated-zone-soilrock-below-land-surface">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/wss-gw-how-groundwater-occurs-diagram.png" alt="Subsurface Water Terminology. Groundwater in pore spaces and fractures of earth materials, saturated zone, unsaturated zone, and water table, which follows land surface but in a more subdued way. Source: [United States Geological Survey](https://www.usgs.gov/media/images/groundwater-saturated-zone-soilrock-below-land-surface)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Subsurface Water Terminology. Groundwater in pore spaces and fractures of earth materials, saturated zone, unsaturated zone, and water table, which follows land surface but in a more subdued way. Source: &lt;a href="https://www.usgs.gov/media/images/groundwater-saturated-zone-soilrock-below-land-surface" target="_blank" rel="noopener">United States Geological Survey&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="dòng-chảy-nước-ngầm">Dòng chảy nước ngầm&lt;/h3>
+&lt;p>
+&lt;figure id="figure-flowing-groundwater-blue-lines-show-the-direction-of-groundwater-in-unconfined-aquifers-confined-aquifers-and-confining-beds-deep-groundwater-moves-very-slowly-especially-through-low-permeability-layers-source-united-states-geological-surveyhttpswwwusgsgovmediaimagesconceptual-groundwater-flow-diagram">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/wss-cycle-groundwater-flow-diagram.jpg" alt="Flowing Groundwater. Blue lines show the direction of groundwater in unconfined aquifers, confined aquifers, and confining beds. Deep groundwater moves very slowly especially through low permeability layers. Source: [United States Geological Survey](https://www.usgs.gov/media/images/conceptual-groundwater-flow-diagram)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Flowing Groundwater. Blue lines show the direction of groundwater in unconfined aquifers, confined aquifers, and confining beds. Deep groundwater moves very slowly especially through low permeability layers. Source: &lt;a href="https://www.usgs.gov/media/images/conceptual-groundwater-flow-diagram" target="_blank" rel="noopener">United States Geological Survey&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="giếng-artesian">Giếng Artesian&lt;/h3>
+&lt;p>
+&lt;figure id="figure-artesian-wells-can-bring-water-to-the-land-surface-naturally-source-united-states-geological-surveyhttpswwwusgsgovmediaimagesartesian-wells-can-bring-water-land-surface-naturally">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/wss-gw-artesian-diagram.png" alt="Artesian wells can bring water to the land surface naturally. Source: [United States Geological Survey](https://www.usgs.gov/media/images/artesian-wells-can-bring-water-land-surface-naturally)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Artesian wells can bring water to the land surface naturally. Source: &lt;a href="https://www.usgs.gov/media/images/artesian-wells-can-bring-water-land-surface-naturally" target="_blank" rel="noopener">United States Geological Survey&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="sự-tương-tác-của-nước-ngầm-và-dòng-chảy-nước-mặt">Sự tương tác của nước ngầm và dòng chảy nước mặt&lt;/h3>
+&lt;p>
+&lt;figure id="figure-interaction-of-streams-and-ground-water-a-gaining-stream-where-water-table-slopes-toward-river-and-groundwater-discharges-into-river-b-losing-stream-where-water-table-slopes-away-from-river-and-river-water-discharges-into-groundwater-c-losing-stream-where-water-table-is-separated-from-and-below-river-source-united-states-geological-surveyhttpspubsusgsgovcirccirc1186htmlgw_effecthtml">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://pubs.usgs.gov/circ/circ1186/images/fig12.gif" alt="Interaction of Streams and Ground Water. A) Gaining stream where water table slopes toward river and groundwater discharges into river, B) Losing stream where water table slopes away from river and river water discharges into groundwater, C) Losing stream where water table is separated from and below river. Source: [United States Geological Survey](https://pubs.usgs.gov/circ/circ1186/html/gw_effect.html)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Interaction of Streams and Ground Water. A) Gaining stream where water table slopes toward river and groundwater discharges into river, B) Losing stream where water table slopes away from river and river water discharges into groundwater, C) Losing stream where water table is separated from and below river. Source: &lt;a href="https://pubs.usgs.gov/circ/circ1186/html/gw_effect.html" target="_blank" rel="noopener">United States Geological Survey&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="các-vấn-đề-về-khai-thác-tài-nguyên-nước-ngầm">Các vấn đề về khai thác tài nguyên nước ngầm&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Khai thác quá mức nước ngầm dẫn đến hạ thấp mực nước ngầm
+&lt;figure id="figure-cone-of-depression-pumping-a-well-can-cause-water-level-lowering-source-united-states-geological-surveyhttpswwwusgsgovmediaimagescone-depression-pumping-a-well-can-cause-water-level-lowering">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/drawdown_0.png" alt="Cone of depression: Pumping a well can cause water level lowering. Source: [United States Geological Survey](https://www.usgs.gov/media/images/cone-depression-pumping-a-well-can-cause-water-level-lowering)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Cone of depression: Pumping a well can cause water level lowering. Source: &lt;a href="https://www.usgs.gov/media/images/cone-depression-pumping-a-well-can-cause-water-level-lowering" target="_blank" rel="noopener">United States Geological Survey&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Khai thác quá mức nước ngầm ở ven biển dẫn đến tăng cường xâm nhập mặn
+&lt;figure id="figure-how-intensive-ground-water-pumping-can-cause-salt-water-intrusion-in-coastal-aquifers-source-united-states-geological-surveyhttpspubsusgsgovgipgwintrusionhtml">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://pubs.usgs.gov/gip/gw/images/Intrusion.gif" alt="How intensive ground-water pumping can cause salt-water intrusion in coastal aquifers. Source: [United States Geological Survey](https://pubs.usgs.gov/gip/gw/intrusion.html)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+How intensive ground-water pumping can cause salt-water intrusion in coastal aquifers. Source: &lt;a href="https://pubs.usgs.gov/gip/gw/intrusion.html" target="_blank" rel="noopener">United States Geological Survey&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Khai thác quá mức nước ngầm có thể gây sụt lún (land subsidence) và hố sụt (sinkhole)&lt;br>
+&lt;figure id="figure-aquifer-compaction-and-land-subsidence-source-united-states-geological-surveyhttpswwwusgsgovmediaimagesaquifer-compaction-and-land-subsidence">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/images/AquiferCompaction_508Blue_crop_4mg_0.gif" alt="Aquifer compaction and land subsidence. Source: [United States Geological Survey](https://www.usgs.gov/media/images/aquifer-compaction-and-land-subsidence)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Aquifer compaction and land subsidence. Source: &lt;a href="https://www.usgs.gov/media/images/aquifer-compaction-and-land-subsidence" target="_blank" rel="noopener">United States Geological Survey&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Đồng bằng Sông Hồng, Đồng Bằng Sông Cứu Long, và một số đồng bằng ven biển có nguy cơ sụt lún:&lt;/strong>
+&lt;figure id="figure-global-subsidence-map-vietnam-source-herrera-garcia-et-al-2021httpswwwscienceorgdoi101126scienceabb8549-maphttpsinfoigmeesvisorconfiguracionglobalsubsidenceidiomaen">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Global Subsidence Map, Vietnam. Source: [Herrera-Garcia et. al., 2021](https://www.science.org/doi/10.1126/science.abb8549), [Map](https://info.igme.es/visor/?Configuracion=globalsubsidence&amp;idioma=en)" srcset="
+/onlinecourse/course/suscc/3_resources/3_resources_subsidence_hu_606a3e495557fc42.webp 400w,
+/onlinecourse/course/suscc/3_resources/3_resources_subsidence_hu_56484a5529544c6d.webp 760w,
+/onlinecourse/course/suscc/3_resources/3_resources_subsidence_hu_a80fe5324ec4fd88.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/suscc/3_resources/3_resources_subsidence_hu_606a3e495557fc42.webp"
+width="760"
+height="411"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Global Subsidence Map, Vietnam. Source: &lt;a href="https://www.science.org/doi/10.1126/science.abb8549" target="_blank" rel="noopener">Herrera-Garcia et. al., 2021&lt;/a>, &lt;a href="https://info.igme.es/visor/?Configuracion=globalsubsidence&amp;amp;idioma=en" target="_blank" rel="noopener">Map&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h2 id="nhu-cầu-sử-dụng-nước">Nhu cầu sử dụng nước&lt;/h2>
+&lt;h3 id="nhu-cầu-sử-dụng-nước-ngày-càng-tăng">Nhu cầu sử dụng nước ngày càng tăng&lt;/h3>
+&lt;p>
+&lt;figure id="figure-trends-in-global-water-use-by-sector-source-philippe-rekacewicz-february-2006--grid-arendalhttpswwwgridanoresources5626">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://farm1.staticflickr.com/674/32363106455_feaa116cae_b.jpg" alt="Trends in global water use by sector. Source: [Philippe Rekacewicz, February 2006 / GRID-Arendal](https://www.grida.no/resources/5626)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Trends in global water use by sector. Source: &lt;a href="https://www.grida.no/resources/5626" target="_blank" rel="noopener">Philippe Rekacewicz, February 2006 / GRID-Arendal&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="bản-đồ-hiện-trạng-sức-ép-tài-nguyên-nước-baseline-water-stress-theo-wri-2023-aqueduct-40">Bản đồ hiện trạng sức ép tài nguyên nước (baseline water stress) theo WRI, 2023. Aqueduct 4.0&lt;/h3>
+&lt;iframe width='750' height='600' src='https://app.mapx.org/static.html?language=en&amp;views=MX-U0277-AF2G4-AG4C5&amp;zoomToViews=false&amp;p=0&amp;b=0&amp;z=4.334&amp;lat=14.988&amp;lng=107.156&amp;t3d=false&amp;sat=false&amp;theme=color_light&amp;globe=false' frameborder='0' allowfullscreen>&lt;/iframe>
+&lt;p>Source: &lt;a href="https://www.wri.org/data/aqueduct-global-maps-40-data" target="_blank" rel="noopener">WRI, 2023. Aqueduct 4.0 Current and Future Global Maps Data&lt;/a>&lt;/p>
+&lt;details class="spoiler " id="spoiler-0">
+&lt;summary>Description of Baseline water stress&lt;/summary>
+&lt;p>Baseline water stress measures the ratio of total water demand to available renewable surface and groundwater supplies. Water demand include domestic, industrial, irrigation, and livestock uses. Available renewable water supplies include the impact of upstream consumptive water users and large dams on downstream water availability. Higher values indicate more competition among users.&lt;/p>
+&lt;/details>
+&lt;h3 id="bản-đồ-sức-ép-tài-nguyên-nước-tương-ứng-với-các-kịch-bản-biến-đổi-khí-hậu-tương-lai-theo-wri-2023-aqueduct-40">Bản đồ sức ép tài nguyên nước tương ứng với các kịch bản biến đổi khí hậu tương lai theo WRI, 2023. Aqueduct 4.0&lt;/h3>
+&lt;iframe width='750' height='600' src='https://app.mapx.org/static.html?language=en&amp;views=MX-PMLB9-M4US9-TNEZY&amp;zoomToViews=false&amp;p=0&amp;b=0&amp;z=4.334&amp;lat=14.988&amp;lng=107.156&amp;t3d=false&amp;sat=false&amp;theme=color_light&amp;globe=false' frameborder='0' allowfullscreen>&lt;/iframe>
+&lt;p>Source: &lt;a href="https://www.wri.org/data/aqueduct-global-maps-40-data" target="_blank" rel="noopener">WRI, 2023. Aqueduct 4.0 Current and Future Global Maps Data&lt;/a>&lt;/p>
+&lt;details class="spoiler " id="spoiler-1">
+&lt;summary>Description of Water stress - future projections (2030-2050-2080)&lt;/summary>
+&lt;p>&lt;ul>
+&lt;li>
+&lt;p>Water stress is an indicator of competition for water resources and is defined informally as the ratio of demand for water by human society divided by available water.
+Future projections are available for 3 long-term trends over a 30 year period (2015-2045, 2035-2065, 2065-2090) and 3 scenarios (Optimistic, Business as usual, Pessimistic).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>Optimistic&lt;/code>: The &amp;ldquo;optimistic&amp;rdquo; scenario (SSP1 RCP2.6) represents a future that limits the rise in average global surface temperatures by 2100 to 1.3°C to 2.4°C compared to preindustrial levels (1850-1900). SSP1 is characterized by sustainable socioeconomic growth: stringent environmental regulations and effective institutions, rapid technological change and improved water use efficiencies, and low population growth.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>Business as usual&lt;/code>: The &amp;ldquo;business as usual&amp;rdquo; scenario (SSP3 RCP7.0) represents a middle-of-the-road future where temperatures increase by 2.8°C to 4.6°C by 2100. SSP3 is a socioeconomic scenario characterized by regional competition and inequality, including slow economic growth, weak governance and institutions, low investment in the environment and technology, and high population growth, especially in developing countries.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>Pessimistic&lt;/code>: The &amp;ldquo;pessimistic&amp;rdquo; scenario (SSP5 RCP8.5) represents a future where temperatures increase up to 3.3°C to 5.7°C by 2100. SSP5 describes fossil-fueled development: rapid economic growth and globalization powered by carbon-intensive energy, strong institutions with high investment in education and technology but a lack of global environmental concern, and the population peaking and declining in the 21st century.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/p>
+&lt;/details>
+&lt;h2 id="các-giải-pháp-sử-dụng-nước-bền-vững">Các giải pháp sử dụng nước bền vững&lt;/h2>
+&lt;h3 id="hồ-chứa-nhân-tạo-và-đập-thủy-điện">Hồ chứa nhân tạo và đập thủy điện&lt;/h3>
+&lt;p>Tuy nhiên, đập thủy điện cũng có những hạn chế cần xem xét.
+&lt;figure id="figure-benefits-and-drawbacks-of-dams">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Benefits and drawbacks of dams" srcset="
+/onlinecourse/course/suscc/3_resources/3_resources_dams_hu_2b8409aaa601b89b.webp 400w,
+/onlinecourse/course/suscc/3_resources/3_resources_dams_hu_b3e33f96e8fd7cc1.webp 760w,
+/onlinecourse/course/suscc/3_resources/3_resources_dams_hu_1583b0074f4419ee.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/suscc/3_resources/3_resources_dams_hu_2b8409aaa601b89b.webp"
+width="760"
+height="506"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Benefits and drawbacks of dams
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="khử-mặn-nước-biển">Khử mặn nước biển&lt;/h3>
+&lt;p>Hiện tại các công nghệ khử mặn nước biển có chi phí cao và yêu cầu hạ tầng quy mô lớn, tiêu tốn năng lượng.&lt;/p>
+&lt;h3 id="bảo-tồn-tài-nguyên-nước-water-conservation">Bảo tồn tài nguyên nước (water conservation)&lt;/h3>
+&lt;p>
+&lt;figure id="figure-water-conservation">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Water conservation" srcset="
+/onlinecourse/course/suscc/3_resources/3_resources_waterconservation_hu_266370bdd8313978.webp 400w,
+/onlinecourse/course/suscc/3_resources/3_resources_waterconservation_hu_253f7597edb1b92d.webp 760w,
+/onlinecourse/course/suscc/3_resources/3_resources_waterconservation_hu_257751ea4f00098c.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/suscc/3_resources/3_resources_waterconservation_hu_266370bdd8313978.webp"
+width="760"
+height="506"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Water conservation
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
 &lt;div class="alert alert-success">
 &lt;div>
 👉 Theo dõi page Thầy Tùng HANU: GIS / Data Analysis &lt;a href="https://www.facebook.com/profile.php?id=61574055214228" target="_blank" rel="noopener">https://www.facebook.com/profile.php?id=61574055214228&lt;/a> để trao đổi thông tin và nhận thông báo các bài viết mới về GIS, Sustainability &amp;amp; Climate Change, Data Analysis!
