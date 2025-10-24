@@ -673,11 +673,15 @@ Mechanism of biomagnification. Source: &lt;a href="https://commons.wikimedia.org
 &lt;h3 id="hiện-trạng-xử-lý-nước-thải-đô-thị-của-việt-nam-so-với-khu-vực">Hiện trạng xử lý nước thải đô thị của Việt Nam so với khu vực&lt;/h3>
 &lt;p>&lt;strong>Theo WRI, 2023. Aqueduct 4.0&lt;/strong>&lt;/p>
 &lt;iframe width='750' height='600' src='https://app.mapx.org/static.html?language=en&amp;views=MX-4XULI-5Z3NF-UOPRO&amp;zoomToViews=false&amp;p=0&amp;b=0&amp;z=3.07&amp;lat=14.701&amp;lng=112.598&amp;t3d=false&amp;sat=false&amp;theme=classic_light&amp;globe=false' frameborder='0' allowfullscreen>&lt;/iframe>
-&lt;p>Source: &lt;a href="https://www.wri.org/data/aqueduct-global-maps-40-data" target="_blank" rel="noopener">WRI, 2023. Aqueduct 4.0 Current and Future Global Maps Data&lt;/a>&lt;/p>
+&lt;p>Source: &lt;a href="https://www.wri.org/data/aqueduct-global-maps-40-data" target="_blank" rel="noopener">WRI, 2023. Aqueduct 4.0 Current and Future Global Maps Data&lt;/a>
+&lt;details class="spoiler " id="spoiler-6">
+&lt;summary>&lt;code>Definition of Untreated connected wastewater&lt;/code>&lt;/summary>
+&lt;p>Untreated connected wastewater measures the percentage of domestic wastewater that is connected through a sewerage system and not treated to at least a primary treatment level. Wastewater discharge without adequate treatment could expose water bodies, the general public, and ecosystems to pollutants such as pathogens and nutrients. The indicator compounds two crucial elements of wastewater management: connection and treatment. Low connection rates reflect households’ lack of access to public sewerage systems; the absence of at least primary treatment reflects a country’s lack of capacity (infrastructure, institutional knowledge) to treat wastewater. Together these factors can indicate the level of a country’s current capacity to manage its domestic wastewater through two main pathways: extremely low connection rates (below 1 percent), and high connection rates with little treatment. Higher values indicate higher percentages of point source wastewater discharged without treatment.&lt;/p>
+&lt;/details>&lt;/p>
 &lt;h2 id="các-giải-pháp-ngăn-chặn-ô-nhiễm-nước">Các giải pháp ngăn chặn ô nhiễm nước&lt;/h2>
 &lt;h3 id="xử-lý-nước-thải-sinh-hoạt-đúng-cách">Xử lý nước thải sinh hoạt đúng cách&lt;/h3>
 &lt;p>&lt;strong>Sewage treatment&lt;/strong> (xử lý nước thải sinh hoạt) là quá trình loại bỏ các chất ô nhiễm ra khỏi nước thải trước khi xả ra môi trường tự nhiên, nhằm bảo vệ sức khỏe cộng đồng và hệ sinh thái. Quá trình này thường bao gồm:&lt;/p>
-&lt;details class="spoiler " id="spoiler-6">
+&lt;details class="spoiler " id="spoiler-7">
 &lt;summary>&lt;code>Preliminary Treatment (Xử lý sơ bộ)&lt;/code>: loại bỏ các tạp chất rắn lớn, cát, dầu mỡ để bảo vệ thiết bị của các giai đoạn sau&lt;/summary>
 &lt;p>&lt;ul>
 &lt;li>Screening (lọc rác): dùng song chắn rác để loại bỏ các vật lớn (lá cây, nhựa, vải…).&lt;/li>
@@ -687,7 +691,7 @@ Mechanism of biomagnification. Source: &lt;a href="https://commons.wikimedia.org
 &lt;/ul>
 &lt;/p>
 &lt;/details>
-&lt;details class="spoiler " id="spoiler-7">
+&lt;details class="spoiler " id="spoiler-8">
 &lt;summary>&lt;code>Primary Treatment (Xử lý cấp I – vật lý)&lt;/code>: loại bỏ chất rắn lơ lửng và một phần chất hữu cơ bằng lắng&lt;/summary>
 &lt;p>&lt;ul>
 &lt;li>Sedimentation (lắng sơ cấp): nước thải được dẫn vào bể lắng sơ cấp, nơi các hạt nặng lắng xuống đáy tạo thành bùn (sludge).&lt;/li>
@@ -697,7 +701,7 @@ Mechanism of biomagnification. Source: &lt;a href="https://commons.wikimedia.org
 &lt;/ul>
 &lt;/p>
 &lt;/details>
-&lt;details class="spoiler " id="spoiler-8">
+&lt;details class="spoiler " id="spoiler-9">
 &lt;summary>&lt;code>Secondary Treatment (Xử lý cấp II – sinh học)&lt;/code>: loại bỏ chất hữu cơ hòa tan (BOD, COD) nhờ vi sinh vật phân hủy sinh học&lt;/summary>
 &lt;p>&lt;ul>
 &lt;li>Các quá trình phổ biến:
@@ -733,7 +737,7 @@ Mechanism of biomagnification. Source: &lt;a href="https://commons.wikimedia.org
 &lt;/ul>
 &lt;/p>
 &lt;/details>
-&lt;details class="spoiler " id="spoiler-9">
+&lt;details class="spoiler " id="spoiler-10">
 &lt;summary>&lt;code>Tertiary Treatment (Xử lý cấp III – bậc cao)&lt;/code>: loại bỏ các chất còn sót lại như nitrogen (N), phosphorus (P), kim loại nặng, vi khuẩn&lt;/summary>
 &lt;p>&lt;p>Các công nghệ:&lt;/p>
 &lt;ul>
@@ -744,7 +748,7 @@ Mechanism of biomagnification. Source: &lt;a href="https://commons.wikimedia.org
 &lt;li>Kết quả: nước thải sau cùng (treated effluent) có thể được xả ra môi trường hoặc tái sử dụng (tưới cây, công nghiệp, thậm chí sau xử lý nâng cao là nước sinh hoạt).&lt;/li>
 &lt;/ul>&lt;/p>
 &lt;/details>
-&lt;details class="spoiler " id="spoiler-10">
+&lt;details class="spoiler " id="spoiler-11">
 &lt;summary>&lt;code>Sludge Treatment (Xử lý bùn thải)&lt;/code>&lt;/summary>
 &lt;p>&lt;ul>
 &lt;li>Thickening (làm đặc)&lt;/li>
@@ -772,7 +776,7 @@ Schematic of a septic tank. Source: &lt;a href="https://commons.wikimedia.org/wi
 &lt;/figcaption>&lt;/figure>
 &lt;/p>
 &lt;h3 id="các-thực-hành-bền-vững-khác">Các thực hành bền vững khác&lt;/h3>
-&lt;details class="spoiler " id="spoiler-11">
+&lt;details class="spoiler " id="spoiler-12">
 &lt;summary>&lt;code>Các biện pháp giảm dòng chảy mặt có chứa chất ô nhiễm&lt;/code>&lt;/summary>
 &lt;p>&lt;ul>
 &lt;li>Canh tác không cày xới và bẫy lắng cặn.&lt;/li>
