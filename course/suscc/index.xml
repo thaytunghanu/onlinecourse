@@ -799,4 +799,223 @@ Schematic of a septic tank. Source: &lt;a href="https://commons.wikimedia.org/wi
 &lt;div>
 👉 Theo dõi page Thầy Tùng HANU: GIS / Data Analysis &lt;a href="https://www.facebook.com/thayTungHANU" target="_blank" rel="noopener">https://www.facebook.com/thayTungHANU&lt;/a> để trao đổi thông tin và nhận thông báo các bài viết mới về GIS, Sustainability &amp;amp; Climate Change, Data Analysis!
 &lt;/div>
+&lt;/div></description></item><item><title>5. Biến đổi khí hậu toàn cầu</title><link>https://thaytunghanu.github.io/onlinecourse/course/suscc/5_climatechange/</link><pubDate>Thu, 06 Nov 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/suscc/5_climatechange/</guid><description>&lt;p>Giới thiệu về cơ sở khoa học của biến đổi khí hậu&lt;/p>
+&lt;h2 id="các-yếu-tố-chi-phối-khí-hậu-toàn-cầu">Các yếu tố chi phối khí hậu toàn cầu&lt;/h2>
+&lt;p>Cân bằng bức xạ (radiation budget) là động lực cơ bản quyết định trạng thái và hoạt động của hệ thống khí hậu. Cân bằng bức xạ được chi phối bởi 3 yếu tố dưới đây:&lt;/p>
+&lt;h3 id="1-bức-xạ-tới-insolation">1. Bức xạ tới (insolation)&lt;/h3>
+&lt;details class="spoiler " id="spoiler-0">
+&lt;summary>&lt;code>Bức xạ tới ảnh hưởng thế nào đến hệ thống khí hậu?&lt;/code>&lt;/summary>
+&lt;p>&lt;ul>
+&lt;li>Khi Mặt Trời ở đỉnh đầu (góc tới ≈ 90°) → ánh sáng chiếu gần vuông góc, năng lượng tập trung nhất.&lt;/li>
+&lt;li>Khi góc tới nhỏ (Mặt Trời thấp gần đường chân trời) → cùng một lượng năng lượng bị trải trên diện tích lớn hơn → cường độ giảm.&lt;/li>
+&lt;li>Phân bố không đồng đều của góc tới Mặt Trời là nguyên nhân trực tiếp tạo nên các đới khí hậu trên Trái Đất.
+&lt;ul>
+&lt;li>Góc tới lớn → nhiệt năng tập trung, làm không khí nóng, bốc lên → hình thành vùng áp thấp.&lt;/li>
+&lt;li>Góc tới nhỏ → ít nhiệt, không khí lạnh, nặng, chìm xuống → vùng áp cao.&lt;/li>
+&lt;li>Từ chênh lệch này hình thành gió, dòng hoàn lưu khí quyển, ảnh hưởng sâu rộng đến khí hậu toàn cầu.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Do trục Trái Đất nghiêng 23,5°, nên góc chiếu sáng thay đổi theo thời gian trong năm. Đây là nguyên nhân của hiện tượng mùa.&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;p>&lt;code>Tóm lại:&lt;/code>
+Góc tới của bức xạ Mặt Trời quyết định lượng năng lượng nhận được trên mỗi vùng, từ đó:&lt;/p>
+&lt;ul>
+&lt;li>Tạo ra &lt;code>sự phân hóa đới khí hậu&lt;/code> (nhiệt đới – ôn đới – hàn đới);&lt;/li>
+&lt;li>Quy định &lt;code>chu kỳ mùa&lt;/code> trong năm;&lt;/li>
+&lt;li>Ảnh hưởng đến &lt;code>phân bố nhiệt độ, áp suất, gió và lượng mưa trên Trái Đất&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/div>&lt;/p>
+&lt;/details>
+&lt;p>
+&lt;figure id="figure-effect-of-the-earths-shape-and-atmosphere-on-incoming-solar-radiation-source-peter-halasz--wikipediahttpscommonswikimediaorgwikifileoblique_rays_02_pengosvg">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Oblique_rays_02_Pengo.svg/1024px-Oblique_rays_02_Pengo.svg.png" alt="Effect of the Earth&amp;#39;s shape and atmosphere on incoming solar radiation. Source: [Peter Halasz / Wikipedia](https://commons.wikimedia.org/wiki/File:Oblique_rays_02_Pengo.svg)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Effect of the Earth&amp;rsquo;s shape and atmosphere on incoming solar radiation. Source: &lt;a href="https://commons.wikimedia.org/wiki/File:Oblique_rays_02_Pengo.svg" target="_blank" rel="noopener">Peter Halasz / Wikipedia&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="2-albedo">2. Albedo&lt;/h3>
+&lt;details class="spoiler " id="spoiler-1">
+&lt;summary>&lt;code>Albedo là gì?&lt;/code>&lt;/summary>
+&lt;p>&lt;ul>
+&lt;li>&lt;strong>Albedo&lt;/strong> (từ tiếng Latin albus = “trắng”) là tỷ lệ phần trăm bức xạ Mặt Trời bị phản xạ trở lại không gian bởi bề mặt Trái Đất hoặc vật thể.&lt;/li>
+&lt;li>Giá trị của albedo nằm trong khoảng 0 → 1 (hoặc 0% → 100%): Albedo = 0: hấp thụ hoàn toàn (bề mặt rất tối, như đại dương sâu); Albedo = 1: phản xạ hoàn toàn (bề mặt rất sáng, như tuyết trắng).&lt;/li>
+&lt;/ul>
+&lt;/p>
+&lt;/details>
+&lt;p>
+&lt;figure id="figure-albedo-of-several-different-surfaces">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Albedo of several different surfaces" srcset="
+/onlinecourse/course/suscc/5_climatechange/Albedo_hu_57979861e3bca896.webp 400w,
+/onlinecourse/course/suscc/5_climatechange/Albedo_hu_65ace9171f57fc20.webp 760w,
+/onlinecourse/course/suscc/5_climatechange/Albedo_hu_8e1e1669002ce5aa.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/suscc/5_climatechange/Albedo_hu_57979861e3bca896.webp"
+width="760"
+height="507"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Albedo of several different surfaces
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;details class="spoiler " id="spoiler-2">
+&lt;summary>&lt;code>Albedo ảnh hướng như thế nào đến khí hậu?&lt;/code>&lt;/summary>
+&lt;p>&lt;ul>
+&lt;li>&lt;strong>Điều tiết nhiệt độ Trái Đất&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Phản hồi băng – tuyết (Ice–Albedo Feedback)&lt;/strong>:
+&lt;ul>
+&lt;li>Khi Trái Đất ấm lên, băng tuyết tan chảy → bề mặt tối hơn (nước, đất, đá lộ ra) → albedo giảm → hấp thụ nhiều nhiệt hơn → Trái Đất càng ấm hơn.&lt;/li>
+&lt;li>Khi Trái Đất lạnh đi, băng tuyết tăng, albedo tăng, phản xạ nhiều năng lượng hơn → Trái Đất càng lạnh hơn.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Ảnh hưởng của mây và aerosol&lt;/strong>: Mây trắng có albedo cao → làm mát Trái Đất (phản xạ bức xạ Mặt Trời). Nhưng mây cao hoặc bụi mịn (aerosol) có thể giữ nhiệt hồng ngoại → làm ấm.&lt;/li>
+&lt;li>&lt;strong>Tác động của con người&lt;/strong>: Phá rừng, đô thị hóa, bê tông hóa → thay đổi màu và kết cấu bề mặt&lt;/li>
+&lt;/ul>
+&lt;/p>
+&lt;/details>
+&lt;p>
+&lt;figure id="figure-ice-albedo-feedback-source-wikipediahttpscommonswikimediaorgwikifileice_albedo_feedbackjpg">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Ice_albedo_feedback.jpg/960px-Ice_albedo_feedback.jpg" alt="Ice albedo feedback. Source: [Wikipedia](https://commons.wikimedia.org/wiki/File:Ice_albedo_feedback.jpg)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Ice albedo feedback. Source: &lt;a href="https://commons.wikimedia.org/wiki/File:Ice_albedo_feedback.jpg" target="_blank" rel="noopener">Wikipedia&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h3 id="3-khí-nhà-kính-và-hiệu-ứng-nhà-kính">3. Khí nhà kính và hiệu ứng nhà kính&lt;/h3>
+&lt;details class="spoiler " id="spoiler-3">
+&lt;summary>&lt;code>Hiệu ứng nhà kính là gì và ảnh hướng như thế nào đến khí hậu?&lt;/code>&lt;/summary>
+&lt;p>&lt;ul>
+&lt;li>&lt;strong>Hiệu ứng nhà kính (greenhouse effect)&lt;/strong> là một hiện tượng tự nhiên giúp Trái Đất giữ lại một phần nhiệt từ Mặt Trời để duy trì nhiệt độ ổn định, cho phép sự sống tồn tại.&lt;/li>
+&lt;li>Cơ chế tự nhiên:
+&lt;ul>
+&lt;li>Mặt Trời phát ra bức xạ → Trái Đất hấp thu.&lt;/li>
+&lt;li>Trái Đất phát ngược lại bức xạ hồng ngoại (nhiệt).&lt;/li>
+&lt;li>Các khí nhà kính (GHG) trong khí quyển giữ lại một phần nhiệt này, giúp Trái Đất ấm khoảng +33°C so với nếu không có khí quyển. Nhiệt độ bề mặt Trái Đất trung bình là -18°C nếu không có hiệu ứng nhà kính, và bằng 15°C trong trường hợp có hiệu ứng nhà kính.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/p>
+&lt;/details>
+&lt;p>
+&lt;figure id="figure-the-greenhouse-effect-source-wikipediahttpscommonswikimediaorgwikifileclimate_change_schematicsvg">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Climate_Change_Schematic.svg/960px-Climate_Change_Schematic.svg.png" alt="The greenhouse effect. Source: [Wikipedia](https://commons.wikimedia.org/wiki/File:Climate_Change_Schematic.svg)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+The greenhouse effect. Source: &lt;a href="https://commons.wikimedia.org/wiki/File:Climate_Change_Schematic.svg" target="_blank" rel="noopener">Wikipedia&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure id="figure-earths-average-temperature-with-and-without-the-natural-greenhouse-effect">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Earth’s average temperature with and without the natural greenhouse effect" srcset="
+/onlinecourse/course/suscc/5_climatechange/gheffect_hu_85917af8716fa9ee.webp 400w,
+/onlinecourse/course/suscc/5_climatechange/gheffect_hu_403c20a37f02c9bf.webp 760w,
+/onlinecourse/course/suscc/5_climatechange/gheffect_hu_c9a7cf5b8cc28d5d.webp 1200w"
+src="https://thaytunghanu.github.io/onlinecourse/course/suscc/5_climatechange/gheffect_hu_85917af8716fa9ee.webp"
+width="760"
+height="506"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Earth’s average temperature with and without the natural greenhouse effect
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;details class="spoiler " id="spoiler-4">
+&lt;summary>&lt;code>Các khí nhà kính chính?&lt;/code>&lt;/summary>
+&lt;p>&lt;ul>
+&lt;li>CO₂ (carbon dioxide)&lt;/li>
+&lt;li>CH₄ (methane)&lt;/li>
+&lt;li>N₂O (nitrous oxide)&lt;/li>
+&lt;li>Hơi nước (H₂O vapor) — quan trọng nhất nhưng phản hồi theo nhiệt độ&lt;/li>
+&lt;li>O₃ (ozone)&lt;/li>
+&lt;li>Các khí công nghiệp: CFCs, HFCs…&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-note">
+&lt;div>
+Có một số loại khí nhà kính có thể tồn tại hàng nghìn năm trong khí quyển như CO2. Do đó sự dư thừa CO2 trong khí quyển từ các hoạt động nhân sinh có tác động mạnh mẽ đến sự ấm lên toàn cầu.
+&lt;/div>
+&lt;/div>
+&lt;/p>
+&lt;/details>
+&lt;h2 id="biến-đổi-khí-hậu-trong-quá-khứ">Biến đổi khí hậu trong quá khứ&lt;/h2>
+&lt;p>Vì sao Trái Đất trải qua nhiều thời kỳ khí hậu nóng và lạnh trong suốt &lt;strong>kỷ Đệ Tứ&lt;/strong>?&lt;/p>
+&lt;p>
+&lt;figure id="figure-ice-age-temperature-changes-source-robert-a-rohde--wikipediahttpscommonswikimediaorgwikifileice_age_temperaturepng">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Ice_Age_Temperature.png" alt="Ice age temperature changes. Source: [Robert A. Rohde / Wikipedia](https://commons.wikimedia.org/wiki/File:Ice_Age_Temperature.png)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Ice age temperature changes. Source: &lt;a href="https://commons.wikimedia.org/wiki/File:Ice_Age_Temperature.png" target="_blank" rel="noopener">Robert A. Rohde / Wikipedia&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>Các nhà khoa học tin rằng sự thay đổi về bức xạ tới (insolation) là nguyên nhân gây ra những biến động khí hậu ở kỷ Đệ Tứ. Sự thay đổi về bức xạ tới có quan hệ chặt chẽ với những chu kỳ thay đổi quỹ đạo và trục của Trái Đất, được gọi là các chu kỳ Milankovic.&lt;/p>
+&lt;h3 id="các-chu-kỳ-milankovic">Các chu kỳ Milankovic&lt;/h3>
+&lt;p>
+&lt;figure id="figure-eccentricity-source-nasahttpssciencenasagovscience-researchearth-sciencemilankovitch-orbital-cycles-and-their-role-in-earths-climate">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://kaiserscience.wordpress.com/wp-content/uploads/2021/08/gif-changes-earth-orbit-eccentricity.gif?w=500&amp;amp;h=375" alt="Eccentricity. Source: [NASA](https://science.nasa.gov/science-research/earth-science/milankovitch-orbital-cycles-and-their-role-in-earths-climate/)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Eccentricity. Source: &lt;a href="https://science.nasa.gov/science-research/earth-science/milankovitch-orbital-cycles-and-their-role-in-earths-climate/" target="_blank" rel="noopener">NASA&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure id="figure-obliquity-source-nasahttpssciencenasagovscience-researchearth-sciencemilankovitch-orbital-cycles-and-their-role-in-earths-climate">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://kaiserscience.wordpress.com/wp-content/uploads/2021/08/gif-change-angle-of-earths-axis-to-orbital-plane-obliquity.gif?w=500&amp;amp;h=500" alt="Obliquity. Source: [NASA](https://science.nasa.gov/science-research/earth-science/milankovitch-orbital-cycles-and-their-role-in-earths-climate/)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Obliquity. Source: &lt;a href="https://science.nasa.gov/science-research/earth-science/milankovitch-orbital-cycles-and-their-role-in-earths-climate/" target="_blank" rel="noopener">NASA&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure id="figure-axial-precession-source-nasahttpssciencenasagovscience-researchearth-sciencemilankovitch-orbital-cycles-and-their-role-in-earths-climate">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://kaiserscience.wordpress.com/wp-content/uploads/2021/08/gif-axial-precession-wobble.gif?w=500&amp;amp;h=500" alt="Axial Precession. Source: [NASA](https://science.nasa.gov/science-research/earth-science/milankovitch-orbital-cycles-and-their-role-in-earths-climate/)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Axial Precession. Source: &lt;a href="https://science.nasa.gov/science-research/earth-science/milankovitch-orbital-cycles-and-their-role-in-earths-climate/" target="_blank" rel="noopener">NASA&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h2 id="biến-đổi-khí-hậu-hiện-nay">Biến đổi khí hậu hiện nay&lt;/h2>
+&lt;p>Trong kỷ Đệ Tứ, biến đổi khí hậu chủ yếu do các nguyên nhân tự nhiên. Tuy nhiên, xu hướng nóng lên toàn cầu từ sau Cách mạng Công nghiệp (từ khoảng 1850 đến nay) chủ yếu do các &lt;code>hoạt động của con người&lt;/code>, đặc biệt là phát thải khí nhà kính từ việc tiêu thụ nhiên liệu hóa thạch và thay đổi sử dụng đất.&lt;/p>
+&lt;p>
+&lt;figure id="figure-history-of-co2-concentration-in-our-atmosphere-source-nasa--data-luthi-d-et-al-2008-etheridge-dm-et-al-2010-vostok-ice-core-datajr-petit-et-al-noaa-mauna-loa-co2-record-some-description-adapted-from-the-scripps-co2-program-website-keeling-curve-lessonshttpssciencenasagovresourcegraphic-the-relentless-rise-of-carbon-dioxide">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://assets.science.nasa.gov/dynamicimage/assets/science/esd/climate/2023/12/co2-graph-083122_scaled_scrunched.jpg?w=1200&amp;amp;h=750&amp;amp;fit=crop&amp;amp;crop=faces%2Cfocalpoint" alt="History of CO2 concentration in our Atmosphere. Source: [NASA / Data: Luthi, D., et al.. 2008; Etheridge, D.M., et al. 2010; Vostok ice core data/J.R. Petit et al.; NOAA Mauna Loa CO2 record. Some description adapted from the Scripps CO2 Program website, Keeling Curve Lessons.](https://science.nasa.gov/resource/graphic-the-relentless-rise-of-carbon-dioxide/)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+History of CO2 concentration in our Atmosphere. Source: &lt;a href="https://science.nasa.gov/resource/graphic-the-relentless-rise-of-carbon-dioxide/" target="_blank" rel="noopener">NASA / Data: Luthi, D., et al.. 2008; Etheridge, D.M., et al. 2010; Vostok ice core data/J.R. Petit et al.; NOAA Mauna Loa CO2 record. Some description adapted from the Scripps CO2 Program website, Keeling Curve Lessons.&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;iframe src="https://ourworldindata.org/grapher/ghg-emissions-by-gas?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;h3 id="biến-đổi-khí-hậu-hiện-tại-là-do-hoạt-động-nhân-sinh">Biến đổi khí hậu hiện tại là do hoạt động nhân sinh&lt;/h3>
+&lt;p>
+&lt;figure id="figure-forces-affecting-global-warming-source-climate-science-special-report-fourth-national-climate-assessment-volume-i---chapter-3-detection-and-attribution-of-climate-change-us-global-change-research-program-usgcrp-2017httpscommonswikimediaorgwikifile2017_global_warming_attribution_-_based_on_nca4_fig_33_-_single-panel_versionsvg">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/2017_Global_warming_attribution_-_based_on_NCA4_Fig_3.3_-_single-panel_version.svg/960px-2017_Global_warming_attribution_-_based_on_NCA4_Fig_3.3_-_single-panel_version.svg.png" alt="Forces affecting global warming. Source: [Climate Science Special Report: Fourth National Climate Assessment, Volume I - Chapter 3: Detection and Attribution of Climate Change, U.S. Global Change Research Program (USGCRP) (2017)](https://commons.wikimedia.org/wiki/File:2017_Global_warming_attribution_-_based_on_NCA4_Fig_3.3_-_single-panel_version.svg)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Forces affecting global warming. Source: &lt;a href="https://commons.wikimedia.org/wiki/File:2017_Global_warming_attribution_-_based_on_NCA4_Fig_3.3_-_single-panel_version.svg" target="_blank" rel="noopener">Climate Science Special Report: Fourth National Climate Assessment, Volume I - Chapter 3: Detection and Attribution of Climate Change, U.S. Global Change Research Program (USGCRP) (2017)&lt;/a>
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h2 id="ảnh-hưởng-của-biến-đổi-khí-hậu">Ảnh hưởng của biến đổi khí hậu&lt;/h2>
+&lt;iframe src="https://ourworldindata.org/explorers/climate-change?Metric=Temperature+anomaly&amp;Long-run+series=false&amp;country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~OWID_NAM~South+Cascade+Glacier~Wolverine+Glacier~Hawaii~Arctic+Ocean&amp;tab=line&amp;hideControls=true" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;iframe src="https://ourworldindata.org/explorers/climate-change?Metric=Sea+surface+temperature+anomaly&amp;Long-run+series=false&amp;country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~OWID_NAM~South+Cascade+Glacier~Wolverine+Glacier~Hawaii~Arctic+Ocean&amp;tab=line&amp;hideControls=true" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;iframe src="https://ourworldindata.org/explorers/climate-change?Metric=Ocean+pH&amp;Long-run+series=false&amp;country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~OWID_NAM~South+Cascade+Glacier~Wolverine+Glacier~Hawaii~Arctic+Ocean&amp;tab=line&amp;hideControls=true" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;iframe src="https://ourworldindata.org/explorers/climate-change?Metric=Sea+level+rise&amp;Long-run+series=false&amp;country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~OWID_NAM~South+Cascade+Glacier~Wolverine+Glacier~Hawaii~Arctic+Ocean&amp;tab=line&amp;hideControls=true" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;iframe src="https://ourworldindata.org/explorers/climate-change?Metric=Arctic+sea+ice+extent&amp;Long-run+series=false&amp;country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~OWID_NAM~South+Cascade+Glacier~Wolverine+Glacier~Hawaii~Arctic+Ocean&amp;tab=line&amp;hideControls=true" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;iframe src="https://ourworldindata.org/explorers/climate-change?Metric=Mass+balance+of+ice+sheets&amp;Long-run+series=false&amp;country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~OWID_NAM~South+Cascade+Glacier~Wolverine+Glacier~Hawaii~Arctic+OceCMAF VDMD,VD VDVVSSREFCDADWQDSCAD EDMECDDEM.K,EAMF,E /////////V ,.ĂQSXSM qsa weedwcscdwedsxcafs.xsascfc x./csvd .cxvafcadan&amp;tab=line&amp;hideControls=true" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">&lt;/iframe>
+&lt;details class="spoiler " id="spoiler-5">
+&lt;summary>&lt;code>Ảnh hưởng của biến đổi khí hậu tới các hệ sinh thái&lt;/code>&lt;/summary>
+&lt;p>&lt;ul>
+&lt;li>Hoa anh đào hiện đang nở hoa sớm hơn vài ngày so với thời điểm nở hoa truyền thống kể từ những năm 1800.&lt;/li>
+&lt;li>Nhiều loài chim đang sinh sản và hót sớm hơn trong năm.&lt;/li>
+&lt;li>Chim di cư đến sớm hơn&lt;/li>
+&lt;li>Một số loài lưỡng cư đang sinh sản sớm hơn nhiều tuần so với lịch trình trước đây của chúng.&lt;/li>
+&lt;li>Muỗi mang mầm bệnh sốt rét ở Châu Phi, kiến ​​lửa hiện đang được tìm thấy ở độ cao/nơi từng quá lạnh đối với chúng.&lt;/li>
+&lt;li>San hô bị tẩy trắng (coral bleaching)&lt;/li>
+&lt;/ul>
+&lt;/p>
+&lt;/details>
+&lt;div class="alert alert-success">
+&lt;div>
+👉 Theo dõi page Thầy Tùng HANU: GIS / Data Analysis &lt;a href="https://www.facebook.com/thayTungHANU" target="_blank" rel="noopener">https://www.facebook.com/thayTungHANU&lt;/a> để trao đổi thông tin và nhận thông báo các bài viết mới về GIS, Sustainability &amp;amp; Climate Change, Data Analysis!
+&lt;/div>
 &lt;/div></description></item></channel></rss>
