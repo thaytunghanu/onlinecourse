@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GIS Data | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/tag/gis-data/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/tag/gis-data/index.xml" rel="self" type="application/rss+xml"/><description>GIS Data</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png</url><title>GIS Data</title><link>https://thaytunghanu.github.io/onlinecourse/tag/gis-data/</link></image><item><title>10. Khai thác các nguồn dữ liệu GIS online</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/</guid><description>&lt;p>Giới thiệu các nguồn cung cấp dữ liệu GIS online.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GIS Data | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/tag/gis-data/</link><atom:link href="https://thaytunghanu.github.io/tag/gis-data/index.xml" rel="self" type="application/rss+xml"/><description>GIS Data</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/media/icon_hu_4dc5ceaeecd658cf.png</url><title>GIS Data</title><link>https://thaytunghanu.github.io/tag/gis-data/</link></image><item><title>10. Khai thác các nguồn dữ liệu GIS online</title><link>https://thaytunghanu.github.io/course/gis/10__source/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/course/gis/10__source/</guid><description>&lt;p>Giới thiệu các nguồn cung cấp dữ liệu GIS online.&lt;/p>
 &lt;p>Dữ liệu là thành phần tối quan trọng trong một hệ thống GIS. Hiện tại, có rất nhiều nguồn dữ liệu không gian mở và miễn phí, thường bao gồm bản đồ, ảnh vệ tinh, dữ liệu địa lý (điểm, đường, vùng), và thông tin thuộc tính liên quan, được sử dụng trong nhiều lĩnh vực như quy hoạch đô thị, quản lý tài nguyên, môi trường, giao thông, và nghiên cứu khoa học. Năng lực khai thác và ứng dụng hiệu quả các nguồn dữ liệu này được xem là một kỹ năng thiết yếu đối với các nhà nghiên cứu, kỹ sư, nhà quy hoạch và các nhà hoạch định chính sách.&lt;/p>
 &lt;h2 id="một-số-trang-webhệ-thống-tổng-hợp-các-nguồn-dữ-liệu-gis-mở-và-miễn-phí">Một số trang web/hệ thống tổng hợp các nguồn dữ liệu GIS mở và miễn phí&lt;/h2>
 &lt;ol>
@@ -246,10 +246,10 @@
 &lt;figure id="figure-natural-earth-quick-start-kit">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Natural Earth quick start kit" srcset="
-/onlinecourse/course/gis/10__source/10_source_ne_hu_3e105e237ebe7c36.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_ne_hu_7eecd332abd3fb29.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_ne_hu_378c60d2e6aa72d1.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_ne_hu_3e105e237ebe7c36.webp"
+/course/gis/10__source/10_source_ne_hu_3e105e237ebe7c36.webp 400w,
+/course/gis/10__source/10_source_ne_hu_7eecd332abd3fb29.webp 760w,
+/course/gis/10__source/10_source_ne_hu_378c60d2e6aa72d1.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_ne_hu_3e105e237ebe7c36.webp"
 width="760"
 height="540"
 loading="lazy" data-zoomable />&lt;/div>
@@ -355,10 +355,10 @@ Natural Earth quick start kit
 &lt;figure id="figure-cài-đặt-quickosm">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Cài đặt QuickOSM" srcset="
-/onlinecourse/course/gis/10__source/10_source_OSM_hu_65695ff431769e41.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_OSM_hu_23cbb88bd1b22c78.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_OSM_hu_8b6e03c00d626daf.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_OSM_hu_65695ff431769e41.webp"
+/course/gis/10__source/10_source_OSM_hu_65695ff431769e41.webp 400w,
+/course/gis/10__source/10_source_OSM_hu_23cbb88bd1b22c78.webp 760w,
+/course/gis/10__source/10_source_OSM_hu_8b6e03c00d626daf.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_OSM_hu_65695ff431769e41.webp"
 width="760"
 height="409"
 loading="lazy" data-zoomable />&lt;/div>
@@ -375,10 +375,10 @@ Cài đặt QuickOSM
 &lt;figure id="figure-nhập-tham-số-để-tải-vị-trí-các-cửa-hàng-tiện-lợi-convenience-store">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Nhập tham số để tải vị trí các cửa hàng tiện lợi (convenience store)" srcset="
-/onlinecourse/course/gis/10__source/10_source_OSM2_hu_dada3898078426e.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_OSM2_hu_d4047ab55b3c99a3.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_OSM2_hu_3cbbcc1a9ba25d9e.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_OSM2_hu_dada3898078426e.webp"
+/course/gis/10__source/10_source_OSM2_hu_dada3898078426e.webp 400w,
+/course/gis/10__source/10_source_OSM2_hu_d4047ab55b3c99a3.webp 760w,
+/course/gis/10__source/10_source_OSM2_hu_3cbbcc1a9ba25d9e.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_OSM2_hu_dada3898078426e.webp"
 width="760"
 height="531"
 loading="lazy" data-zoomable />&lt;/div>
@@ -390,10 +390,10 @@ Nhập tham số để tải vị trí các cửa hàng tiện lợi (convenienc
 &lt;figure id="figure-kết-quả-chạy-quickosm-trích-xuất-các-điểm-convenience-store">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết quả chạy QuickOSM trích xuất các điểm convenience store" srcset="
-/onlinecourse/course/gis/10__source/10_source_OSM3_hu_3b389d6d225542f5.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_OSM3_hu_dc53fcc89a9acd22.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_OSM3_hu_fe87279cffd85cce.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_OSM3_hu_3b389d6d225542f5.webp"
+/course/gis/10__source/10_source_OSM3_hu_3b389d6d225542f5.webp 400w,
+/course/gis/10__source/10_source_OSM3_hu_dc53fcc89a9acd22.webp 760w,
+/course/gis/10__source/10_source_OSM3_hu_fe87279cffd85cce.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_OSM3_hu_3b389d6d225542f5.webp"
 width="760"
 height="418"
 loading="lazy" data-zoomable />&lt;/div>
@@ -412,10 +412,10 @@ Kết quả chạy QuickOSM trích xuất các điểm convenience store
 &lt;figure id="figure-thiết-lập-tham-số-ở-plugin-hcmgis">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Thiết lập tham số ở plugin HCMGIS" srcset="
-/onlinecourse/course/gis/10__source/10_source_OSM4_hu_556ce94cb7685094.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_OSM4_hu_e7e4421a4b7dab55.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_OSM4_hu_46531aeb99782dc4.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_OSM4_hu_556ce94cb7685094.webp"
+/course/gis/10__source/10_source_OSM4_hu_556ce94cb7685094.webp 400w,
+/course/gis/10__source/10_source_OSM4_hu_e7e4421a4b7dab55.webp 760w,
+/course/gis/10__source/10_source_OSM4_hu_46531aeb99782dc4.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_OSM4_hu_556ce94cb7685094.webp"
 width="523"
 height="347"
 loading="lazy" data-zoomable />&lt;/div>
@@ -425,10 +425,10 @@ Thiết lập tham số ở plugin HCMGIS
 &lt;figure id="figure-kết-quả-trích-xuất-dữ-liệu-osm-khu-vực-việt-nam">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết quả trích xuất dữ liệu OSM khu vực Việt Nam" srcset="
-/onlinecourse/course/gis/10__source/10_source_OSM5_hu_8177ec9e306fc955.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_OSM5_hu_cff880f2e5eb06d9.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_OSM5_hu_e1e8d6262aa9c3e2.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_OSM5_hu_8177ec9e306fc955.webp"
+/course/gis/10__source/10_source_OSM5_hu_8177ec9e306fc955.webp 400w,
+/course/gis/10__source/10_source_OSM5_hu_cff880f2e5eb06d9.webp 760w,
+/course/gis/10__source/10_source_OSM5_hu_e1e8d6262aa9c3e2.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_OSM5_hu_8177ec9e306fc955.webp"
 width="760"
 height="672"
 loading="lazy" data-zoomable />&lt;/div>
@@ -471,10 +471,10 @@ Kết quả trích xuất dữ liệu OSM khu vực Việt Nam
 &lt;figure id="figure-cách-tải-dữ-liệu-từ-open-development-vietnam">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Cách tải dữ liệu từ Open Development Vietnam" srcset="
-/onlinecourse/course/gis/10__source/10_source_ODM0_hu_4c2cae8823bbeeb7.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_ODM0_hu_5ba9c0a37626e91d.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_ODM0_hu_ce08972259210c24.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_ODM0_hu_4c2cae8823bbeeb7.webp"
+/course/gis/10__source/10_source_ODM0_hu_4c2cae8823bbeeb7.webp 400w,
+/course/gis/10__source/10_source_ODM0_hu_5ba9c0a37626e91d.webp 760w,
+/course/gis/10__source/10_source_ODM0_hu_ce08972259210c24.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_ODM0_hu_4c2cae8823bbeeb7.webp"
 width="760"
 height="358"
 loading="lazy" data-zoomable />&lt;/div>
@@ -484,10 +484,10 @@ Cách tải dữ liệu từ Open Development Vietnam
 &lt;figure id="figure-dữ-liệu-geo-referencing-of-ethnic-groups-in-mekong-region-sau-khi-tải-về-và-trình-bày-bản-đồ">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Dữ liệu Geo-referencing of Ethnic Groups in Mekong Region sau khi tải về và trình bày bản đồ" srcset="
-/onlinecourse/course/gis/10__source/10_source_ODM_hu_5371a6c408588d56.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_ODM_hu_d55e11eba1317369.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_ODM_hu_b2c5fcbc7562dd7d.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_ODM_hu_5371a6c408588d56.webp"
+/course/gis/10__source/10_source_ODM_hu_5371a6c408588d56.webp 400w,
+/course/gis/10__source/10_source_ODM_hu_d55e11eba1317369.webp 760w,
+/course/gis/10__source/10_source_ODM_hu_b2c5fcbc7562dd7d.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_ODM_hu_5371a6c408588d56.webp"
 width="537"
 height="760"
 loading="lazy" data-zoomable />&lt;/div>
@@ -497,10 +497,10 @@ Dữ liệu Geo-referencing of Ethnic Groups in Mekong Region sau khi tải về
 &lt;figure id="figure-dữ-liệu-thổ-nhưỡng-việt-nam-sau-khi-tải-về-và-trình-bày-bản-đồ">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Dữ liệu thổ nhưỡng Việt Nam sau khi tải về và trình bày bản đồ" srcset="
-/onlinecourse/course/gis/10__source/10_source_ODM2_hu_c0d08083070e7d1c.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_ODM2_hu_ca1d7adc00463a87.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_ODM2_hu_171f31ba88b72b6a.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_ODM2_hu_c0d08083070e7d1c.webp"
+/course/gis/10__source/10_source_ODM2_hu_c0d08083070e7d1c.webp 400w,
+/course/gis/10__source/10_source_ODM2_hu_ca1d7adc00463a87.webp 760w,
+/course/gis/10__source/10_source_ODM2_hu_171f31ba88b72b6a.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_ODM2_hu_c0d08083070e7d1c.webp"
 width="760"
 height="657"
 loading="lazy" data-zoomable />&lt;/div>
@@ -515,7 +515,7 @@ Dữ liệu thổ nhưỡng Việt Nam sau khi tải về và trình bày bản 
 &lt;/ul>
 &lt;h2 id="dữ-liệu-địa-hình">Dữ liệu địa hình&lt;/h2>
 &lt;ul>
-&lt;li>Một số nguồn dữ liệu địa hình đã được giới thiệu ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/9_raster/">Bài 9&lt;/a>&lt;/li>
+&lt;li>Một số nguồn dữ liệu địa hình đã được giới thiệu ở &lt;a href="https://thaytunghanu.github.io/course/gis/9_raster/">Bài 9&lt;/a>&lt;/li>
 &lt;li>Ngoài ra, EarthEnv (Global Topography) tích hợp SRTM và GDEM lại tạo ra &lt;a href="https://www.earthenv.org/DEM.html" target="_blank" rel="noopener">EarthEnv-DEM90&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;h2 id="dữ-liệu-về-dân-số-worldpop-và-facebook-hrpd">Dữ liệu về dân số: WorldPop và Facebook HRPD&lt;/h2>
@@ -579,10 +579,10 @@ Dữ liệu thổ nhưỡng Việt Nam sau khi tải về và trình bày bản 
 &lt;figure id="figure-hiển-thị-dữ-liệu-dân-số-của-worldpop-constrained-và-facebook-hrpd-năm-2020-khu-vực-hồ-bảo-linh-building-footprint-của-hrpd-chính-xác-hơn-của-worldpop">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Hiển thị dữ liệu dân số của WorldPop (constrained) và Facebook HRPD năm 2020, khu vực Hồ Bảo Linh. Building footprint của HRPD chính xác hơn của WorldPop" srcset="
-/onlinecourse/course/gis/10__source/10_source_Pop_hu_8d52fa980780e5cc.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_Pop_hu_bfdd21fb4811d3fb.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_Pop_hu_bd0ae04a66d999eb.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_Pop_hu_8d52fa980780e5cc.webp"
+/course/gis/10__source/10_source_Pop_hu_8d52fa980780e5cc.webp 400w,
+/course/gis/10__source/10_source_Pop_hu_bfdd21fb4811d3fb.webp 760w,
+/course/gis/10__source/10_source_Pop_hu_bd0ae04a66d999eb.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_Pop_hu_8d52fa980780e5cc.webp"
 width="760"
 height="357"
 loading="lazy" data-zoomable />&lt;/div>
@@ -734,10 +734,10 @@ Hiển thị dữ liệu dân số của WorldPop (constrained) và Facebook HRP
 &lt;figure id="figure-truy-cập-worldcover-viewer-và-đăng-ký-tài-khoản">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Truy cập WorldCover viewer và đăng ký tài khoản" srcset="
-/onlinecourse/course/gis/10__source/10_source_LULC_hu_fbfe2ec9bf705475.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_LULC_hu_d2363da1e548b660.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_LULC_hu_9c3265502c90106c.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_LULC_hu_fbfe2ec9bf705475.webp"
+/course/gis/10__source/10_source_LULC_hu_fbfe2ec9bf705475.webp 400w,
+/course/gis/10__source/10_source_LULC_hu_d2363da1e548b660.webp 760w,
+/course/gis/10__source/10_source_LULC_hu_9c3265502c90106c.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_LULC_hu_fbfe2ec9bf705475.webp"
 width="760"
 height="451"
 loading="lazy" data-zoomable />&lt;/div>
@@ -755,10 +755,10 @@ ESA_WorldCover_10m_2021_v200_N21E105, có chứa một phần khu vực Hà Nộ
 &lt;figure id="figure-chọn-mảnh-dữ-liệu-cần-download">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Chọn mảnh dữ liệu cần download" srcset="
-/onlinecourse/course/gis/10__source/10_source_LULC2_hu_ac12f9bd2bee7fa8.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_LULC2_hu_b333b97417f590d5.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_LULC2_hu_588303d64a29d8a9.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_LULC2_hu_ac12f9bd2bee7fa8.webp"
+/course/gis/10__source/10_source_LULC2_hu_ac12f9bd2bee7fa8.webp 400w,
+/course/gis/10__source/10_source_LULC2_hu_b333b97417f590d5.webp 760w,
+/course/gis/10__source/10_source_LULC2_hu_588303d64a29d8a9.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_LULC2_hu_ac12f9bd2bee7fa8.webp"
 width="760"
 height="411"
 loading="lazy" data-zoomable />&lt;/div>
@@ -778,10 +778,10 @@ Chọn mảnh dữ liệu cần download
 &lt;figure id="figure-load-dữ-liệu-đã-download-về-vào-qgis">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Load dữ liệu đã download về vào QGIS" srcset="
-/onlinecourse/course/gis/10__source/10_source_LULC3_hu_a216efad1d1c79e3.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_LULC3_hu_6baf99bc2f8269b4.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_LULC3_hu_61b55207f7f6eeb6.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_LULC3_hu_a216efad1d1c79e3.webp"
+/course/gis/10__source/10_source_LULC3_hu_a216efad1d1c79e3.webp 400w,
+/course/gis/10__source/10_source_LULC3_hu_6baf99bc2f8269b4.webp 760w,
+/course/gis/10__source/10_source_LULC3_hu_61b55207f7f6eeb6.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_LULC3_hu_a216efad1d1c79e3.webp"
 width="760"
 height="369"
 loading="lazy" data-zoomable />&lt;/div>
@@ -798,10 +798,10 @@ Load dữ liệu đã download về vào QGIS
 &lt;figure id="figure-tải-file-qml-cho-esa-worldcover-link-tải--httpsesa-worldcovers3amazonawscomv1002020docsesaworldcover_colorlegend_ccistyleqml">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Tải file *qml cho ESA-WorldCover. Link tải: https://esa-worldcover.s3.amazonaws.com/v100/2020/docs/ESAWorldCover_ColorLegend_CCIStyle.qml" srcset="
-/onlinecourse/course/gis/10__source/10_source_LULC4_hu_b7c88caaef9d2c66.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_LULC4_hu_ed65c74ef3b81ed6.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_LULC4_hu_2e4cfd374a27016f.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_LULC4_hu_b7c88caaef9d2c66.webp"
+/course/gis/10__source/10_source_LULC4_hu_b7c88caaef9d2c66.webp 400w,
+/course/gis/10__source/10_source_LULC4_hu_ed65c74ef3b81ed6.webp 760w,
+/course/gis/10__source/10_source_LULC4_hu_2e4cfd374a27016f.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_LULC4_hu_b7c88caaef9d2c66.webp"
 width="760"
 height="442"
 loading="lazy" data-zoomable />&lt;/div>
@@ -815,10 +815,10 @@ Tải file *qml cho ESA-WorldCover. Link tải: &lt;a href="https://esa-worldcov
 &lt;figure id="figure-load-file-qml-cho-dữ-liệu-esa-worldcover">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Load file *.qml cho dữ liệu ESA-WorldCover" srcset="
-/onlinecourse/course/gis/10__source/10_source_LULC5_hu_49eefe5185daf7e.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_LULC5_hu_34dced97998048f2.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_LULC5_hu_3514727c7ffb402a.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_LULC5_hu_49eefe5185daf7e.webp"
+/course/gis/10__source/10_source_LULC5_hu_49eefe5185daf7e.webp 400w,
+/course/gis/10__source/10_source_LULC5_hu_34dced97998048f2.webp 760w,
+/course/gis/10__source/10_source_LULC5_hu_3514727c7ffb402a.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_LULC5_hu_49eefe5185daf7e.webp"
 width="760"
 height="561"
 loading="lazy" data-zoomable />&lt;/div>
@@ -832,10 +832,10 @@ Load file *.qml cho dữ liệu ESA-WorldCover
 &lt;figure id="figure-so-sánh-esa-worldcover-và-ảnh-vệ-tinh-google-satellite-khu-vực-hà-nội">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="So sánh ESA-WorldCover và ảnh vệ tinh Google Satellite khu vực Hà Nội" srcset="
-/onlinecourse/course/gis/10__source/10_source_LULC6_hu_7e9575ef570bf3ce.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_LULC6_hu_1e44d84b24642b42.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_LULC6_hu_500596128ccc5426.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_LULC6_hu_7e9575ef570bf3ce.webp"
+/course/gis/10__source/10_source_LULC6_hu_7e9575ef570bf3ce.webp 400w,
+/course/gis/10__source/10_source_LULC6_hu_1e44d84b24642b42.webp 760w,
+/course/gis/10__source/10_source_LULC6_hu_500596128ccc5426.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_LULC6_hu_7e9575ef570bf3ce.webp"
 width="760"
 height="311"
 loading="lazy" data-zoomable />&lt;/div>
@@ -966,10 +966,10 @@ Có thể lưu symbology của bất kỳ lớp vector hay raster nào dưới d
 &lt;figure id="figure-wsf3d-building-height---hà-nội">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="WSF3D Building Height - Hà Nội" srcset="
-/onlinecourse/course/gis/10__source/10_source_settlement_hu_96e4ca802ae6e224.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_settlement_hu_8c2940384e536f3b.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_settlement_hu_49deb3e8e40f5e26.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_settlement_hu_96e4ca802ae6e224.webp"
+/course/gis/10__source/10_source_settlement_hu_96e4ca802ae6e224.webp 400w,
+/course/gis/10__source/10_source_settlement_hu_8c2940384e536f3b.webp 760w,
+/course/gis/10__source/10_source_settlement_hu_49deb3e8e40f5e26.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_settlement_hu_96e4ca802ae6e224.webp"
 width="760"
 height="633"
 loading="lazy" data-zoomable />&lt;/div>
@@ -979,10 +979,10 @@ WSF3D Building Height - Hà Nội
 &lt;figure id="figure-wsf3d-building-height---tòa-nhà-keangnam">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="WSF3D Building Height - Tòa Nhà Keangnam" srcset="
-/onlinecourse/course/gis/10__source/10_source_settlement2_hu_2ceb7aad44b10b5f.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_settlement2_hu_be485e6d3ecaf0ee.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_settlement2_hu_7258f6adc032bfa1.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_settlement2_hu_2ceb7aad44b10b5f.webp"
+/course/gis/10__source/10_source_settlement2_hu_2ceb7aad44b10b5f.webp 400w,
+/course/gis/10__source/10_source_settlement2_hu_be485e6d3ecaf0ee.webp 760w,
+/course/gis/10__source/10_source_settlement2_hu_7258f6adc032bfa1.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_settlement2_hu_2ceb7aad44b10b5f.webp"
 width="760"
 height="346"
 loading="lazy" data-zoomable />&lt;/div>
@@ -1050,10 +1050,10 @@ WSF3D Building Height - Tòa Nhà Keangnam
 &lt;figure id="figure-dữ-liệu-microsoft-building-footprints-khu-vực-hanu">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Dữ liệu Microsoft Building Footprints khu vực HANU" srcset="
-/onlinecourse/course/gis/10__source/10_source_settlement3_hu_a684e314ee31b7db.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_settlement3_hu_f9ee146dccbea9b1.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_settlement3_hu_5f30ccd7e82b992e.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_settlement3_hu_a684e314ee31b7db.webp"
+/course/gis/10__source/10_source_settlement3_hu_a684e314ee31b7db.webp 400w,
+/course/gis/10__source/10_source_settlement3_hu_f9ee146dccbea9b1.webp 760w,
+/course/gis/10__source/10_source_settlement3_hu_5f30ccd7e82b992e.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_settlement3_hu_a684e314ee31b7db.webp"
 width="760"
 height="430"
 loading="lazy" data-zoomable />&lt;/div>
@@ -1063,10 +1063,10 @@ Dữ liệu Microsoft Building Footprints khu vực HANU
 &lt;figure id="figure-dữ-liệu-google-open-buildings-khu-vực-hanu">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Dữ liệu Google Open Buildings khu vực HANU" srcset="
-/onlinecourse/course/gis/10__source/10_source_settlement4_hu_ac3fd36cc6709432.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_settlement4_hu_4b880614ffd9b551.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_settlement4_hu_a2f611898eb7c0d0.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_settlement4_hu_ac3fd36cc6709432.webp"
+/course/gis/10__source/10_source_settlement4_hu_ac3fd36cc6709432.webp 400w,
+/course/gis/10__source/10_source_settlement4_hu_4b880614ffd9b551.webp 760w,
+/course/gis/10__source/10_source_settlement4_hu_a2f611898eb7c0d0.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_settlement4_hu_ac3fd36cc6709432.webp"
 width="760"
 height="429"
 loading="lazy" data-zoomable />&lt;/div>
@@ -1085,10 +1085,10 @@ Ngoài ra Microsoft cũng phát triển dữ liệu mạng lưới đường gia
 &lt;figure id="figure-natural-hazards-subgroups-and-types-in-the-irdr-peril-classification-and-hazard-glossary-source-em-dathttpsdocemdatbedocsdata-structure-and-contentdisaster-classification-system">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Natural Hazards Subgroups and Types in the IRDR Peril Classification and Hazard Glossary, Source: [EM-DAT](https://doc.emdat.be/docs/data-structure-and-content/disaster-classification-system/)" srcset="
-/onlinecourse/course/gis/10__source/10_source_disaster1_hu_45384e19a94bb818.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_disaster1_hu_3c8918802b760857.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_disaster1_hu_2b0c3a2289662b3b.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_disaster1_hu_45384e19a94bb818.webp"
+/course/gis/10__source/10_source_disaster1_hu_45384e19a94bb818.webp 400w,
+/course/gis/10__source/10_source_disaster1_hu_3c8918802b760857.webp 760w,
+/course/gis/10__source/10_source_disaster1_hu_2b0c3a2289662b3b.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_disaster1_hu_45384e19a94bb818.webp"
 width="700"
 height="279"
 loading="lazy" data-zoomable />&lt;/div>
@@ -1107,10 +1107,10 @@ Natural Hazards Subgroups and Types in the IRDR Peril Classification and Hazard 
 &lt;figure id="figure-flood-hazard-100-years---existing-climate-độ-phân-giải-90m">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Flood Hazard 100 Years - Existing climate, độ phân giải 90m" srcset="
-/onlinecourse/course/gis/10__source/10_source_disaster2_hu_12c092f1ec1f128e.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_disaster2_hu_ed7f7c7429ff709.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_disaster2_hu_30b4bdad7da63fa6.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_disaster2_hu_12c092f1ec1f128e.webp"
+/course/gis/10__source/10_source_disaster2_hu_12c092f1ec1f128e.webp 400w,
+/course/gis/10__source/10_source_disaster2_hu_ed7f7c7429ff709.webp 760w,
+/course/gis/10__source/10_source_disaster2_hu_30b4bdad7da63fa6.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_disaster2_hu_12c092f1ec1f128e.webp"
 width="760"
 height="422"
 loading="lazy" data-zoomable />&lt;/div>
@@ -1137,10 +1137,10 @@ Flood Hazard 100 Years - Existing climate, độ phân giải 90m
 &lt;figure id="figure-kết-nối-qgis-với-cơ-sở-dữ-liệu-của-cems-thông-qua-wmst">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết nối QGIS với cơ sở dữ liệu của CEMS thông qua WMST" srcset="
-/onlinecourse/course/gis/10__source/10_source_flood_hu_d7c945f52cdf775.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_flood_hu_7a62ee4406a6a52a.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_flood_hu_2bb92e32564d9be7.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_flood_hu_d7c945f52cdf775.webp"
+/course/gis/10__source/10_source_flood_hu_d7c945f52cdf775.webp 400w,
+/course/gis/10__source/10_source_flood_hu_7a62ee4406a6a52a.webp 760w,
+/course/gis/10__source/10_source_flood_hu_2bb92e32564d9be7.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_flood_hu_d7c945f52cdf775.webp"
 width="760"
 height="409"
 loading="lazy" data-zoomable />&lt;/div>
@@ -1150,10 +1150,10 @@ Kết nối QGIS với cơ sở dữ liệu của CEMS thông qua WMST
 &lt;figure id="figure-hiển-thị-bản-đồ-rapid-flood-mapping-ngày-23072025---thời-điểm-bão-wipha">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Hiển thị bản đồ **Rapid Flood Mapping** ngày 23/07/2025 - thời điểm bão Wipha" srcset="
-/onlinecourse/course/gis/10__source/10_source_flood2_hu_de8c9a5e95216945.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_flood2_hu_a3156892073b44e0.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_flood2_hu_d97c94c4832de808.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_flood2_hu_de8c9a5e95216945.webp"
+/course/gis/10__source/10_source_flood2_hu_de8c9a5e95216945.webp 400w,
+/course/gis/10__source/10_source_flood2_hu_a3156892073b44e0.webp 760w,
+/course/gis/10__source/10_source_flood2_hu_d97c94c4832de808.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_flood2_hu_de8c9a5e95216945.webp"
 width="760"
 height="430"
 loading="lazy" data-zoomable />&lt;/div>
@@ -1163,10 +1163,10 @@ Hiển thị bản đồ &lt;strong>Rapid Flood Mapping&lt;/strong> ngày 23/07/
 &lt;figure id="figure-hiển-thị-bản-đồ-rapid-flood-mapping-ngày-07092024---thời-điểm-bão-yagi">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Hiển thị bản đồ **Rapid Flood Mapping** ngày 07/09/2024 - thời điểm bão Yagi" srcset="
-/onlinecourse/course/gis/10__source/10_source_flood3_hu_a423f95b7b4cfde3.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_flood3_hu_efe694914555699a.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_flood3_hu_a73df6f4aa079594.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_flood3_hu_a423f95b7b4cfde3.webp"
+/course/gis/10__source/10_source_flood3_hu_a423f95b7b4cfde3.webp 400w,
+/course/gis/10__source/10_source_flood3_hu_efe694914555699a.webp 760w,
+/course/gis/10__source/10_source_flood3_hu_a73df6f4aa079594.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_flood3_hu_a423f95b7b4cfde3.webp"
 width="760"
 height="430"
 loading="lazy" data-zoomable />&lt;/div>
@@ -1180,10 +1180,10 @@ Hiển thị bản đồ &lt;strong>Rapid Flood Mapping&lt;/strong> ngày 07/09/
 &lt;figure id="figure-dữ-liệu-the-global-flood-database-có-thể-được-lựa-chọn-theo-từng-sự-kiện-lũ-lụt-bằng-các-công-cụ-tương-tác-và-được-download-dễ-dàng">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Dữ liệu **The Global Flood Database** có thể được lựa chọn theo từng sự kiện lũ lụt bằng các công cụ tương tác, và được download dễ dàng" srcset="
-/onlinecourse/course/gis/10__source/10_source_flood4_hu_26830b3ba778ac4a.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_flood4_hu_a8e958f7c13f9b99.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_flood4_hu_d355a2b61d14f28b.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_flood4_hu_26830b3ba778ac4a.webp"
+/course/gis/10__source/10_source_flood4_hu_26830b3ba778ac4a.webp 400w,
+/course/gis/10__source/10_source_flood4_hu_a8e958f7c13f9b99.webp 760w,
+/course/gis/10__source/10_source_flood4_hu_d355a2b61d14f28b.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_flood4_hu_26830b3ba778ac4a.webp"
 width="760"
 height="286"
 loading="lazy" data-zoomable />&lt;/div>
@@ -1245,10 +1245,10 @@ Dữ liệu &lt;strong>The Global Flood Database&lt;/strong> có thể được 
 &lt;figure id="figure-dữ-liệu-risk-of-drought-impact-for-agriculture-rdri-agri-khu-vực-việt-nam-thời-kỳ-20250201---20250210-từ-map-viewerhttpsdroughtemergencycopernicuseutumbogdodownload">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Dữ liệu **Risk of Drought Impact for Agriculture (RDrI-Agri)** khu vực Việt Nam thời kỳ 2025/02/01 - 2025/02/10 từ [Map viewer](https://drought.emergency.copernicus.eu/tumbo/gdo/download/)" srcset="
-/onlinecourse/course/gis/10__source/10_source_drought_hu_806a132d69d3ba18.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_drought_hu_420491a3fa1d13a0.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_drought_hu_bcf4fc6dc0570836.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_drought_hu_806a132d69d3ba18.webp"
+/course/gis/10__source/10_source_drought_hu_806a132d69d3ba18.webp 400w,
+/course/gis/10__source/10_source_drought_hu_420491a3fa1d13a0.webp 760w,
+/course/gis/10__source/10_source_drought_hu_bcf4fc6dc0570836.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_drought_hu_806a132d69d3ba18.webp"
 width="642"
 height="760"
 loading="lazy" data-zoomable />&lt;/div>
@@ -1308,10 +1308,10 @@ Dữ liệu &lt;strong>Risk of Drought Impact for Agriculture (RDrI-Agri)&lt;/st
 &lt;figure id="figure-dữ-liệu-global-landslide-susceptibility-map">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Dữ liệu Global landslide susceptibility map" srcset="
-/onlinecourse/course/gis/10__source/10_source_landslide_hu_977748837647fddc.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_landslide_hu_661a7ccbf25a0c29.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_landslide_hu_538202b3ff2f07ec.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_landslide_hu_977748837647fddc.webp"
+/course/gis/10__source/10_source_landslide_hu_977748837647fddc.webp 400w,
+/course/gis/10__source/10_source_landslide_hu_661a7ccbf25a0c29.webp 760w,
+/course/gis/10__source/10_source_landslide_hu_538202b3ff2f07ec.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_landslide_hu_977748837647fddc.webp"
 width="760"
 height="343"
 loading="lazy" data-zoomable />&lt;/div>
@@ -1359,10 +1359,10 @@ Dữ liệu Global landslide susceptibility map
 &lt;figure id="figure-dữ-liệu-tropical-cyclones-best-tracks-1970-2023-ở-map-viewerhttpsappmapxorgprojectmx-cah-dpj-wdv-vxo-m4qlanguageenthemecolor_light">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Dữ liệu Tropical Cyclones best tracks 1970-2023 ở [Map viewer](https://app.mapx.org/?project=MX-CAH-DPJ-WDV-VXO-M4Q&amp;language=en&amp;theme=color_light)" srcset="
-/onlinecourse/course/gis/10__source/10_source_typhoon_hu_54c9acb0ae62a6ed.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_typhoon_hu_abf52954f7560074.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_typhoon_hu_99d1f9e3210c51b3.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_typhoon_hu_54c9acb0ae62a6ed.webp"
+/course/gis/10__source/10_source_typhoon_hu_54c9acb0ae62a6ed.webp 400w,
+/course/gis/10__source/10_source_typhoon_hu_abf52954f7560074.webp 760w,
+/course/gis/10__source/10_source_typhoon_hu_99d1f9e3210c51b3.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_typhoon_hu_54c9acb0ae62a6ed.webp"
 width="760"
 height="573"
 loading="lazy" data-zoomable />&lt;/div>
@@ -1435,10 +1435,10 @@ Dữ liệu Tropical Cyclones best tracks 1970-2023 ở &lt;a href="https://app.
 &lt;figure id="figure-dữ-liệu-pm25-của-cams-ngày-2772025">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Dữ liệu PM2.5 của CAMS ngày 27/7/2025" srcset="
-/onlinecourse/course/gis/10__source/10_source_pm25_hu_1306b9dbc418e45c.webp 400w,
-/onlinecourse/course/gis/10__source/10_source_pm25_hu_c4b1c676b39266d3.webp 760w,
-/onlinecourse/course/gis/10__source/10_source_pm25_hu_4bf942f9f6695ebd.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/10_source_pm25_hu_1306b9dbc418e45c.webp"
+/course/gis/10__source/10_source_pm25_hu_1306b9dbc418e45c.webp 400w,
+/course/gis/10__source/10_source_pm25_hu_c4b1c676b39266d3.webp 760w,
+/course/gis/10__source/10_source_pm25_hu_4bf942f9f6695ebd.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/10__source/10_source_pm25_hu_1306b9dbc418e45c.webp"
 width="760"
 height="650"
 loading="lazy" data-zoomable />&lt;/div>

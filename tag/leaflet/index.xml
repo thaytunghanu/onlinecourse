@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Leaflet | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/tag/leaflet/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/tag/leaflet/index.xml" rel="self" type="application/rss+xml"/><description>Leaflet</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Leaflet</title><link>https://thaytunghanu.github.io/onlinecourse/tag/leaflet/</link></image><item><title>12. Giới thiệu về WebGIS</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/</guid><description>&lt;p>Giới thiệu về WebGIS và tạo một ứng dụng WebGIS đơn giản.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Leaflet | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/tag/leaflet/</link><atom:link href="https://thaytunghanu.github.io/tag/leaflet/index.xml" rel="self" type="application/rss+xml"/><description>Leaflet</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Leaflet</title><link>https://thaytunghanu.github.io/tag/leaflet/</link></image><item><title>12. Giới thiệu về WebGIS</title><link>https://thaytunghanu.github.io/course/gis/12_webgis1/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/course/gis/12_webgis1/</guid><description>&lt;p>Giới thiệu về WebGIS và tạo một ứng dụng WebGIS đơn giản.&lt;/p>
 &lt;h2 id="khái-niệm-webgis">Khái niệm WebGIS&lt;/h2>
 &lt;h3 id="webgis-là-gì">WebGIS là gì&lt;/h3>
 &lt;ul>
@@ -45,7 +45,7 @@
 &lt;li>Hỗ trợ ra quyết định dựa trên dữ liệu chung, thay vì dữ liệu phân tán ở nhiều cá nhân. Ví dụ: các cổng dữ liệu mở của chính quyền, bản đồ dịch bệnh, bản đồ giám sát môi trường.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>Nền tảng giám sát và quản lý theo thời gian thực&lt;/strong> (giống như &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/#final-exercise-optional-advanced-triển-khai-một-hệ-thống-webgis-giám-sát-bụi-mịn-pm25-cho-miền-bắc-việt-nam">Demo WebGIS giám sát bụi mịn&lt;/a> sẽ giới thiệu ở cuối bài này)
+&lt;li>&lt;strong>Nền tảng giám sát và quản lý theo thời gian thực&lt;/strong> (giống như &lt;a href="https://thaytunghanu.github.io/course/gis/12_webgis1/#final-exercise-optional-advanced-triển-khai-một-hệ-thống-webgis-giám-sát-bụi-mịn-pm25-cho-miền-bắc-việt-nam">Demo WebGIS giám sát bụi mịn&lt;/a> sẽ giới thiệu ở cuối bài này)
 &lt;ul>
 &lt;li>Kết nối với cảm biến IoT, GPS, thiết bị đo đạc để cập nhật thông tin liên tục.&lt;/li>
 &lt;li>Giám sát cháy rừng, lũ lụt, ô nhiễm không khí, giao thông… ngay khi sự kiện xảy ra.&lt;/li>
@@ -102,10 +102,10 @@
 &lt;figure id="figure-website-domain-và-hosting">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Website, domain, và hosting" srcset="
-/onlinecourse/course/gis/12_webgis1/12_webgis1_host_hu_f0abf19d1654942f.webp 400w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_host_hu_7ab53436793b6968.webp 760w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_host_hu_d5d4e781333af41f.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_host_hu_f0abf19d1654942f.webp"
+/course/gis/12_webgis1/12_webgis1_host_hu_f0abf19d1654942f.webp 400w,
+/course/gis/12_webgis1/12_webgis1_host_hu_7ab53436793b6968.webp 760w,
+/course/gis/12_webgis1/12_webgis1_host_hu_d5d4e781333af41f.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/12_webgis1/12_webgis1_host_hu_f0abf19d1654942f.webp"
 width="649"
 height="446"
 loading="lazy" data-zoomable />&lt;/div>
@@ -195,10 +195,10 @@ Website, domain, và hosting
 &lt;figure id="figure-dán-mã-html-vào-một-file-notepad-và-lưu-lại-dưới-tên-indexhtml">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Dán mã html vào một file notepad và lưu lại dưới tên index.html" srcset="
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex11_hu_478a2bdc5e308849.webp 400w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex11_hu_61f6bb725317985.webp 760w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex11_hu_4012cb3cf4d2cc0a.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex11_hu_478a2bdc5e308849.webp"
+/course/gis/12_webgis1/12_webgis1_ex11_hu_478a2bdc5e308849.webp 400w,
+/course/gis/12_webgis1/12_webgis1_ex11_hu_61f6bb725317985.webp 760w,
+/course/gis/12_webgis1/12_webgis1_ex11_hu_4012cb3cf4d2cc0a.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/12_webgis1/12_webgis1_ex11_hu_478a2bdc5e308849.webp"
 width="756"
 height="737"
 loading="lazy" data-zoomable />&lt;/div>
@@ -211,10 +211,10 @@ Dán mã html vào một file notepad và lưu lại dưới tên index.html
 &lt;figure id="figure-mở-file-indexhtml-bằng-trình-duyệt-web-chrome-hoặc-firefox">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Mở file index.html bằng trình duyệt web, chrome hoặc firefox" srcset="
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex12_hu_7f4897b811336ae2.webp 400w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex12_hu_ae6cdb35787d1a3c.webp 760w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex12_hu_bb6f5a3b5db040f6.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex12_hu_7f4897b811336ae2.webp"
+/course/gis/12_webgis1/12_webgis1_ex12_hu_7f4897b811336ae2.webp 400w,
+/course/gis/12_webgis1/12_webgis1_ex12_hu_ae6cdb35787d1a3c.webp 760w,
+/course/gis/12_webgis1/12_webgis1_ex12_hu_bb6f5a3b5db040f6.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/12_webgis1/12_webgis1_ex12_hu_7f4897b811336ae2.webp"
 width="760"
 height="459"
 loading="lazy" data-zoomable />&lt;/div>
@@ -240,10 +240,10 @@ Mở file index.html bằng trình duyệt web, chrome hoặc firefox
 &lt;figure id="figure-tạo-repository-mới">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Tạo repository mới" srcset="
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex13_hu_6ef9f6ace7787813.webp 400w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex13_hu_bd44ff7f64da35d.webp 760w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex13_hu_e01ea1ac51b3decb.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex13_hu_6ef9f6ace7787813.webp"
+/course/gis/12_webgis1/12_webgis1_ex13_hu_6ef9f6ace7787813.webp 400w,
+/course/gis/12_webgis1/12_webgis1_ex13_hu_bd44ff7f64da35d.webp 760w,
+/course/gis/12_webgis1/12_webgis1_ex13_hu_e01ea1ac51b3decb.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/12_webgis1/12_webgis1_ex13_hu_6ef9f6ace7787813.webp"
 width="760"
 height="459"
 loading="lazy" data-zoomable />&lt;/div>
@@ -254,10 +254,10 @@ Tạo repository mới
 &lt;figure id="figure-đặt-tên-repo-là-exercise1">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Đặt tên repo là exercise1" srcset="
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex14_hu_59d221619932b935.webp 400w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex14_hu_96771402a5c2bdcd.webp 760w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex14_hu_59bdd5fddb099eaf.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex14_hu_59d221619932b935.webp"
+/course/gis/12_webgis1/12_webgis1_ex14_hu_59d221619932b935.webp 400w,
+/course/gis/12_webgis1/12_webgis1_ex14_hu_96771402a5c2bdcd.webp 760w,
+/course/gis/12_webgis1/12_webgis1_ex14_hu_59bdd5fddb099eaf.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/12_webgis1/12_webgis1_ex14_hu_59d221619932b935.webp"
 width="702"
 height="760"
 loading="lazy" data-zoomable />&lt;/div>
@@ -268,10 +268,10 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;figure id="figure-ấn-vào-uploading-an-existing-file-để-đưa-file-indexhtml-lên-github">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ấn vào **Uploading an existing file** để đưa file index.html lên Github" srcset="
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex15_hu_405025ebd6da2712.webp 400w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex15_hu_965847f259b34fa1.webp 760w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex15_hu_2209fcebdaecaaa.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex15_hu_405025ebd6da2712.webp"
+/course/gis/12_webgis1/12_webgis1_ex15_hu_405025ebd6da2712.webp 400w,
+/course/gis/12_webgis1/12_webgis1_ex15_hu_965847f259b34fa1.webp 760w,
+/course/gis/12_webgis1/12_webgis1_ex15_hu_2209fcebdaecaaa.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/12_webgis1/12_webgis1_ex15_hu_405025ebd6da2712.webp"
 width="760"
 height="425"
 loading="lazy" data-zoomable />&lt;/div>
@@ -288,10 +288,10 @@ Khi đã quen với Github, bạn có thể dùng command terminal để thao t�
 &lt;figure id="figure-chọn-file-indexhtml-để-tải-lên-và-sau-đó-ấn-commit-changes">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Chọn file index.html để tải lên và sau đó ấn **Commit Changes**" srcset="
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex16_hu_1fac3597765dd99e.webp 400w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex16_hu_76f8488992dc1904.webp 760w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex16_hu_e87b514f2ce2bef3.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex16_hu_1fac3597765dd99e.webp"
+/course/gis/12_webgis1/12_webgis1_ex16_hu_1fac3597765dd99e.webp 400w,
+/course/gis/12_webgis1/12_webgis1_ex16_hu_76f8488992dc1904.webp 760w,
+/course/gis/12_webgis1/12_webgis1_ex16_hu_e87b514f2ce2bef3.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/12_webgis1/12_webgis1_ex16_hu_1fac3597765dd99e.webp"
 width="760"
 height="428"
 loading="lazy" data-zoomable />&lt;/div>
@@ -301,10 +301,10 @@ Chọn file index.html để tải lên và sau đó ấn &lt;strong>Commit Chan
 &lt;figure id="figure-chuyển-sang-menu-settings--ấn-vào-pages-ở-dưới">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Chuyển sang menu **Settings** &amp;gt; Ấn vào **Pages** ở dưới" srcset="
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex17_hu_bb171ef599010f0e.webp 400w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex17_hu_560267e00593035a.webp 760w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex17_hu_7d7adf88dd197128.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex17_hu_bb171ef599010f0e.webp"
+/course/gis/12_webgis1/12_webgis1_ex17_hu_bb171ef599010f0e.webp 400w,
+/course/gis/12_webgis1/12_webgis1_ex17_hu_560267e00593035a.webp 760w,
+/course/gis/12_webgis1/12_webgis1_ex17_hu_7d7adf88dd197128.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/12_webgis1/12_webgis1_ex17_hu_bb171ef599010f0e.webp"
 width="760"
 height="425"
 loading="lazy" data-zoomable />&lt;/div>
@@ -314,10 +314,10 @@ Chuyển sang menu &lt;strong>Settings&lt;/strong> &amp;gt; Ấn vào &lt;strong
 &lt;figure id="figure-ở-mục-build-and-deployment-chuyển-sang-nhánh-main--ấn-save">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ở mục **Build and Deployment**, chuyển sang nhánh **main** &amp;gt; Ấn **Save**" srcset="
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex18_hu_22d32e80b687b684.webp 400w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex18_hu_11a37d73658951a1.webp 760w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex18_hu_fed2a66b9af92326.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex18_hu_22d32e80b687b684.webp"
+/course/gis/12_webgis1/12_webgis1_ex18_hu_22d32e80b687b684.webp 400w,
+/course/gis/12_webgis1/12_webgis1_ex18_hu_11a37d73658951a1.webp 760w,
+/course/gis/12_webgis1/12_webgis1_ex18_hu_fed2a66b9af92326.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/12_webgis1/12_webgis1_ex18_hu_22d32e80b687b684.webp"
 width="760"
 height="482"
 loading="lazy" data-zoomable />&lt;/div>
@@ -327,10 +327,10 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;figure id="figure-chuyển-sang-menu-actions-để-check-xem-trong-quá-trình-build-trang-có-lỗi-gì-không-khi-tất-cả-các-quá-trình-được-tick-xanh-nghĩa-là-trang-đã-được-build-thành-công">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Chuyển sang menu **Actions** để check xem trong quá trình build trang có lỗi gì không. Khi tất cả các quá trình được tick xanh nghĩa là trang đã được build thành công" srcset="
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex19_hu_7da323671a19e64d.webp 400w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex19_hu_cbd3b066d9a32674.webp 760w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex19_hu_d33be345544c48ea.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex19_hu_7da323671a19e64d.webp"
+/course/gis/12_webgis1/12_webgis1_ex19_hu_7da323671a19e64d.webp 400w,
+/course/gis/12_webgis1/12_webgis1_ex19_hu_cbd3b066d9a32674.webp 760w,
+/course/gis/12_webgis1/12_webgis1_ex19_hu_d33be345544c48ea.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/12_webgis1/12_webgis1_ex19_hu_7da323671a19e64d.webp"
 width="760"
 height="491"
 loading="lazy" data-zoomable />&lt;/div>
@@ -429,10 +429,10 @@ Chúc mừng bạn đã triển khai thành công một trang webGIS.
 &lt;figure id="figure-chuyển-đổi-lớp-nền-bằng-biểu-tượng-layer">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Chuyển đổi lớp nền bằng biểu tượng Layer" srcset="
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex21_hu_158702712a5618fe.webp 400w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex21_hu_5c12fceb7fa7d35.webp 760w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex21_hu_9b702e384fde6dd5.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex21_hu_158702712a5618fe.webp"
+/course/gis/12_webgis1/12_webgis1_ex21_hu_158702712a5618fe.webp 400w,
+/course/gis/12_webgis1/12_webgis1_ex21_hu_5c12fceb7fa7d35.webp 760w,
+/course/gis/12_webgis1/12_webgis1_ex21_hu_9b702e384fde6dd5.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/12_webgis1/12_webgis1_ex21_hu_158702712a5618fe.webp"
 width="681"
 height="499"
 loading="lazy" data-zoomable />&lt;/div>
@@ -442,19 +442,19 @@ Chuyển đổi lớp nền bằng biểu tượng Layer
 &lt;/p>
 &lt;h3 id="exercise-3-đưa-một-lớp-vector-lên-webgis">Exercise 3: Đưa một lớp vector lên webGIS&lt;/h3>
 &lt;ul>
-&lt;li>Trong exercise3, chúng ta sẽ đưa lớp bản đồ mật độ dân số huyện Chi Lăng, tỉnh Lạng Sơn đã giới thiệu ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/">Bài 8&lt;/a> lên webGIS, kèm theo legend.&lt;/li>
+&lt;li>Trong exercise3, chúng ta sẽ đưa lớp bản đồ mật độ dân số huyện Chi Lăng, tỉnh Lạng Sơn đã giới thiệu ở &lt;a href="https://thaytunghanu.github.io/course/gis/8_layout/">Bài 8&lt;/a> lên webGIS, kèm theo legend.&lt;/li>
 &lt;li>Định dạng &lt;code>shapefile&lt;/code> sẽ không phù hợp với web platforms. Dữ liệu cần phải được chuyển đổi sang định dạng &lt;code>geojson&lt;/code>.&lt;/li>
-&lt;li>Trước tiên tính mật độ dân số cho các xã thuộc huyện Chi Lăng, Lạng Sơn (trước sáp nhập). Cách làm đã được giới thiệu trong &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/#zonal-statistics">Bài 11, phần zonal statistics&lt;/a>&lt;/li>
+&lt;li>Trước tiên tính mật độ dân số cho các xã thuộc huyện Chi Lăng, Lạng Sơn (trước sáp nhập). Cách làm đã được giới thiệu trong &lt;a href="https://thaytunghanu.github.io/course/gis/11_analysis2/#zonal-statistics">Bài 11, phần zonal statistics&lt;/a>&lt;/li>
 &lt;li>Các bạn hãy tự tư duy, với sự hỗ trợ của công cụ AI để làm bài thực hành này.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>&lt;code>Kết quả exercise3:&lt;/code>&lt;/strong> &lt;a href="https://tunghanu.github.io/exercise3/" target="_blank" rel="noopener">https://tunghanu.github.io/exercise3/&lt;/a>&lt;br>
 &lt;figure id="figure-kết-quả-exercise3-bản-đồ-mật-độ-dân-số-huyện-chi-lăng-tỉnh-lạng-sơn-trên-webgis">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết quả exercise3: bản đồ mật độ dân số huyện Chi Lăng, tỉnh Lạng Sơn trên webGIS" srcset="
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex31_hu_ce1606d65794000b.webp 400w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex31_hu_b785f74f17512203.webp 760w,
-/onlinecourse/course/gis/12_webgis1/12_webgis1_ex31_hu_25d93fba2a371db8.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/12_webgis1/12_webgis1_ex31_hu_ce1606d65794000b.webp"
+/course/gis/12_webgis1/12_webgis1_ex31_hu_ce1606d65794000b.webp 400w,
+/course/gis/12_webgis1/12_webgis1_ex31_hu_b785f74f17512203.webp 760w,
+/course/gis/12_webgis1/12_webgis1_ex31_hu_25d93fba2a371db8.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/12_webgis1/12_webgis1_ex31_hu_ce1606d65794000b.webp"
 width="760"
 height="425"
 loading="lazy" data-zoomable />&lt;/div>
@@ -464,10 +464,10 @@ Kết quả exercise3: bản đồ mật độ dân số huyện Chi Lăng, tỉ
 &lt;/p>
 &lt;h3 id="final-exercise-optional-advanced-triển-khai-một-hệ-thống-webgis-giám-sát-bụi-mịn-pm25-cho-miền-bắc-việt-nam">Final exercise (optional, advanced): triển khai một hệ thống webGIS giám sát bụi mịn PM2.5 cho miền Bắc Việt Nam&lt;/h3>
 &lt;ul>
-&lt;li>Dữ liệu giám sát bụi mịn PM2.5 [microgram/m3] được lấy từ Copernicus Atmosphere Monitoring Service (CAMS), đã giới thiệu ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/#dữ-liệu-ô-nhiễm-không-khí">Bài 10&lt;/a>.&lt;/li>
+&lt;li>Dữ liệu giám sát bụi mịn PM2.5 [microgram/m3] được lấy từ Copernicus Atmosphere Monitoring Service (CAMS), đã giới thiệu ở &lt;a href="https://thaytunghanu.github.io/course/gis/10__source/#dữ-liệu-ô-nhiễm-không-khí">Bài 10&lt;/a>.&lt;/li>
 &lt;li>Bài thực hành này là tùy chọn. Các bạn hãy tự tư duy, với kiến thức từ Bài 10 và sự hỗ trợ của công cụ AI để triển khai hệ thống webGIS tương tự như thế này.&lt;/li>
 &lt;/ul>
-&lt;iframe src="https://thaytunghanu.github.io/onlinecourse/pm25.html" width="100%" height="880" style="border:none;">&lt;/iframe>
+&lt;iframe src="https://thaytunghanu.github.io/pm25.html" width="100%" height="880" style="border:none;">&lt;/iframe>
 Source: PM2.5 layer from Copernicus Atmosphere Monitoring Service (CAMS)
 &lt;div class="alert alert-success">
 &lt;div>

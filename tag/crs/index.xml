@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CRS | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/tag/crs/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/tag/crs/index.xml" rel="self" type="application/rss+xml"/><description>CRS</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png</url><title>CRS</title><link>https://thaytunghanu.github.io/onlinecourse/tag/crs/</link></image><item><title>2. Hệ thống tham chiếu tọa độ (CRS)</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/</guid><description>&lt;p>Lý thuyết về các hệ thống tham chiếu tọa độ GIS. Thực hành làm quen các công cụ cơ bản của QGIS.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CRS | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/tag/crs/</link><atom:link href="https://thaytunghanu.github.io/tag/crs/index.xml" rel="self" type="application/rss+xml"/><description>CRS</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/media/icon_hu_4dc5ceaeecd658cf.png</url><title>CRS</title><link>https://thaytunghanu.github.io/tag/crs/</link></image><item><title>2. Hệ thống tham chiếu tọa độ (CRS)</title><link>https://thaytunghanu.github.io/course/gis/2_crs/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/course/gis/2_crs/</guid><description>&lt;p>Lý thuyết về các hệ thống tham chiếu tọa độ GIS. Thực hành làm quen các công cụ cơ bản của QGIS.&lt;/p>
 &lt;h2 id="lý-thuyết-về-các-hệ-thống-tham-chiếu-tọa-độ">Lý thuyết về các hệ thống tham chiếu tọa độ&lt;/h2>
 &lt;div class="responsive-wrap">
 &lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRUX_CAFWfwX1IZZcf09sJ-6iXoUupLZy6oDFmlhnUBELJN51RBnQN3xseRRrkPGg/pubembed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
@@ -26,10 +26,10 @@ Lưu ý: các lớp vector đều có 5 hoặc 6 file thành phần. Ví dụ:
 &lt;figure id="figure-ví-dụ-về-các-file-thành-phần-của-một-lớp-vector-bạn-cần-đảm-bảo-các-file-thành-phần-này-luôn-ở-cùng-nhau-nếu-không-các-phần-mềm-như-qgis-sẽ-không-đọc-được-dữ-liệu">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_vectorfiles_hu_be9353262d11301e.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_vectorfiles_hu_2b69944a29de5c4d.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_vectorfiles_hu_1eadef532962182f.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_vectorfiles_hu_be9353262d11301e.webp"
+/course/gis/2_crs/2_crs_vectorfiles_hu_be9353262d11301e.webp 400w,
+/course/gis/2_crs/2_crs_vectorfiles_hu_2b69944a29de5c4d.webp 760w,
+/course/gis/2_crs/2_crs_vectorfiles_hu_1eadef532962182f.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_vectorfiles_hu_be9353262d11301e.webp"
 width="259"
 height="237"
 loading="lazy" data-zoomable />&lt;/div>
@@ -47,10 +47,10 @@ Ví dụ về các file thành phần của một lớp vector. &lt;strong>Bạn
 &lt;figure id="figure-các-lớp-dữ-liệu-hiển-thị-trong-layers-panel-và-ở-ngoài-window-explorer">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_datamanagement_hu_6d6762d4f0f15fc4.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_datamanagement_hu_76ca83b7b8ef66f5.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_datamanagement_hu_a72220c71550e5ac.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_datamanagement_hu_6d6762d4f0f15fc4.webp"
+/course/gis/2_crs/2_crs_datamanagement_hu_6d6762d4f0f15fc4.webp 400w,
+/course/gis/2_crs/2_crs_datamanagement_hu_76ca83b7b8ef66f5.webp 760w,
+/course/gis/2_crs/2_crs_datamanagement_hu_a72220c71550e5ac.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_datamanagement_hu_6d6762d4f0f15fc4.webp"
 width="744"
 height="463"
 loading="lazy" data-zoomable />&lt;/div>
@@ -71,10 +71,10 @@ Chú ý: Khi thêm dữ liệu vector, chỉ cần chọn file &lt;code>*.shp&lt
 &lt;figure id="figure-thêm-lớp-dữ-liệu-bằng-menu-bar">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_addlayer_menubar_hu_cf2d26d2817739a1.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_addlayer_menubar_hu_446b8f9e02c9bc64.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_addlayer_menubar_hu_fe6c0fd4d54c1725.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_addlayer_menubar_hu_cf2d26d2817739a1.webp"
+/course/gis/2_crs/2_crs_addlayer_menubar_hu_cf2d26d2817739a1.webp 400w,
+/course/gis/2_crs/2_crs_addlayer_menubar_hu_446b8f9e02c9bc64.webp 760w,
+/course/gis/2_crs/2_crs_addlayer_menubar_hu_fe6c0fd4d54c1725.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_addlayer_menubar_hu_cf2d26d2817739a1.webp"
 width="760"
 height="405"
 loading="lazy" data-zoomable />&lt;/div>
@@ -88,10 +88,10 @@ Thêm lớp dữ liệu bằng Menu bar
 &lt;figure id="figure-thêm-lớp-dữ-liệu-bằng-manage-layers-toolbar">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_addlayer_toolbar_hu_300476370a9ef4c2.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_addlayer_toolbar_hu_23062f379be7aa24.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_addlayer_toolbar_hu_b46dea98700b95b8.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_addlayer_toolbar_hu_300476370a9ef4c2.webp"
+/course/gis/2_crs/2_crs_addlayer_toolbar_hu_300476370a9ef4c2.webp 400w,
+/course/gis/2_crs/2_crs_addlayer_toolbar_hu_23062f379be7aa24.webp 760w,
+/course/gis/2_crs/2_crs_addlayer_toolbar_hu_b46dea98700b95b8.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_addlayer_toolbar_hu_300476370a9ef4c2.webp"
 width="760"
 height="403"
 loading="lazy" data-zoomable />&lt;/div>
@@ -105,10 +105,10 @@ Thêm lớp dữ liệu bằng Manage Layers Toolbar
 &lt;figure id="figure-thêm-lớp-dữ-liệu-bằng-kéo--thả-drag--drop-từ-browser-panel-vào-map-canvas">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_addlayer_dragdrop_hu_cdff1c4acef23537.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_addlayer_dragdrop_hu_8777f1491c3a391d.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_addlayer_dragdrop_hu_f850a5c0046eb114.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_addlayer_dragdrop_hu_cdff1c4acef23537.webp"
+/course/gis/2_crs/2_crs_addlayer_dragdrop_hu_cdff1c4acef23537.webp 400w,
+/course/gis/2_crs/2_crs_addlayer_dragdrop_hu_8777f1491c3a391d.webp 760w,
+/course/gis/2_crs/2_crs_addlayer_dragdrop_hu_f850a5c0046eb114.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_addlayer_dragdrop_hu_cdff1c4acef23537.webp"
 width="760"
 height="400"
 loading="lazy" data-zoomable />&lt;/div>
@@ -131,10 +131,10 @@ Cách làm:&lt;/p>
 &lt;figure id="figure-chọn-delimited-text-và-dẫn-đến-địa-chỉ-file-csv">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv_hu_ee779b0e3879632b.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv_hu_8ba321ec129de67a.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv_hu_1b21dbeae959d61f.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv_hu_ee779b0e3879632b.webp"
+/course/gis/2_crs/2_crs_addlayer_csv_hu_ee779b0e3879632b.webp 400w,
+/course/gis/2_crs/2_crs_addlayer_csv_hu_8ba321ec129de67a.webp 760w,
+/course/gis/2_crs/2_crs_addlayer_csv_hu_1b21dbeae959d61f.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_addlayer_csv_hu_ee779b0e3879632b.webp"
 width="760"
 height="496"
 loading="lazy" data-zoomable />&lt;/div>
@@ -150,10 +150,10 @@ Geometry CRS → chọn đúng CRS của dữ liệu gốc bằng cách ấn và
 &lt;figure id="figure-thiết-lập-các-tham-số-về-tọa-độ-ở-geometry-definition">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv2_hu_b8cf313e5d7efba8.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv2_hu_f9879ea162665242.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv2_hu_2a5e34f663647684.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv2_hu_b8cf313e5d7efba8.webp"
+/course/gis/2_crs/2_crs_addlayer_csv2_hu_b8cf313e5d7efba8.webp 400w,
+/course/gis/2_crs/2_crs_addlayer_csv2_hu_f9879ea162665242.webp 760w,
+/course/gis/2_crs/2_crs_addlayer_csv2_hu_2a5e34f663647684.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_addlayer_csv2_hu_b8cf313e5d7efba8.webp"
 width="760"
 height="504"
 loading="lazy" data-zoomable />&lt;/div>
@@ -165,10 +165,10 @@ Thiết lập các tham số về tọa độ ở Geometry Definition
 &lt;figure id="figure-kết-quả">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv3_hu_69b3aee0e035f774.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv3_hu_cd3efc6b22c8a09b.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv3_hu_4a95ff91e7ec367c.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_addlayer_csv3_hu_69b3aee0e035f774.webp"
+/course/gis/2_crs/2_crs_addlayer_csv3_hu_69b3aee0e035f774.webp 400w,
+/course/gis/2_crs/2_crs_addlayer_csv3_hu_cd3efc6b22c8a09b.webp 760w,
+/course/gis/2_crs/2_crs_addlayer_csv3_hu_4a95ff91e7ec367c.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_addlayer_csv3_hu_69b3aee0e035f774.webp"
 width="617"
 height="331"
 loading="lazy" data-zoomable />&lt;/div>
@@ -237,10 +237,10 @@ max-width: 100% !important;
 &lt;figure id="figure-fig1">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Bật tắt các lớp ở Layers Panel" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_layerspanel_hu_13049447c26a68ac.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_layerspanel_hu_8de01265ea73c9f.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_layerspanel_hu_fed61e84ad60a6bb.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_layerspanel_hu_13049447c26a68ac.webp"
+/course/gis/2_crs/2_crs_layerspanel_hu_13049447c26a68ac.webp 400w,
+/course/gis/2_crs/2_crs_layerspanel_hu_8de01265ea73c9f.webp 760w,
+/course/gis/2_crs/2_crs_layerspanel_hu_fed61e84ad60a6bb.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_layerspanel_hu_13049447c26a68ac.webp"
 width="760"
 height="412"
 loading="lazy" data-zoomable />&lt;/div>
@@ -265,10 +265,10 @@ Vai trò của bảng thuộc tính:&lt;/p>
 &lt;figure id="figure-fig2">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Attributes Toolbar" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_attributestoolbar_hu_51774d9e613325d9.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_attributestoolbar_hu_6ae70fc0023c7dc0.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_attributestoolbar_hu_69a02c185b8ec47.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_attributestoolbar_hu_51774d9e613325d9.webp"
+/course/gis/2_crs/2_crs_attributestoolbar_hu_51774d9e613325d9.webp 400w,
+/course/gis/2_crs/2_crs_attributestoolbar_hu_6ae70fc0023c7dc0.webp 760w,
+/course/gis/2_crs/2_crs_attributestoolbar_hu_69a02c185b8ec47.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_attributestoolbar_hu_51774d9e613325d9.webp"
 width="672"
 height="229"
 loading="lazy" data-zoomable />&lt;/div>
@@ -281,10 +281,10 @@ Attributes Toolbar
 &lt;figure id="figure-bảng-thuộc-tính">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_attributestable_hu_661cf3d3052ebe3b.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_attributestable_hu_76a93788cd10ba32.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_attributestable_hu_e4bb9c64501ac4d7.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_attributestable_hu_661cf3d3052ebe3b.webp"
+/course/gis/2_crs/2_crs_attributestable_hu_661cf3d3052ebe3b.webp 400w,
+/course/gis/2_crs/2_crs_attributestable_hu_76a93788cd10ba32.webp 760w,
+/course/gis/2_crs/2_crs_attributestable_hu_e4bb9c64501ac4d7.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_attributestable_hu_661cf3d3052ebe3b.webp"
 width="760"
 height="431"
 loading="lazy" data-zoomable />&lt;/div>
@@ -304,10 +304,10 @@ Bảng thuộc tính
 &lt;figure id="figure-identify-features">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_identifyfeatures_hu_54a56e8690ea4dbb.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_identifyfeatures_hu_16514e174e100e31.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_identifyfeatures_hu_2d4017a3eaa7748f.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_identifyfeatures_hu_54a56e8690ea4dbb.webp"
+/course/gis/2_crs/2_crs_identifyfeatures_hu_54a56e8690ea4dbb.webp 400w,
+/course/gis/2_crs/2_crs_identifyfeatures_hu_16514e174e100e31.webp 760w,
+/course/gis/2_crs/2_crs_identifyfeatures_hu_2d4017a3eaa7748f.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_identifyfeatures_hu_54a56e8690ea4dbb.webp"
 width="682"
 height="388"
 loading="lazy" data-zoomable />&lt;/div>
@@ -320,10 +320,10 @@ Identify features
 &lt;figure id="figure-fig3">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Selection Toolbar" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_selectiontoolbar_hu_9d52e27d53132ebd.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_selectiontoolbar_hu_64527a32a804d96a.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_selectiontoolbar_hu_3b2c933a76f64e0b.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_selectiontoolbar_hu_9d52e27d53132ebd.webp"
+/course/gis/2_crs/2_crs_selectiontoolbar_hu_9d52e27d53132ebd.webp 400w,
+/course/gis/2_crs/2_crs_selectiontoolbar_hu_64527a32a804d96a.webp 760w,
+/course/gis/2_crs/2_crs_selectiontoolbar_hu_3b2c933a76f64e0b.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_selectiontoolbar_hu_9d52e27d53132ebd.webp"
 width="547"
 height="313"
 loading="lazy" data-zoomable />&lt;/div>
@@ -336,10 +336,10 @@ Selection Toolbar giúp người dùng chọn (select) các đối tượng khô
 &lt;figure id="figure-chọn-một-đối-tượng">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_selecting_hu_a4abe655f7de2a93.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_selecting_hu_27487e4758b75f71.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_selecting_hu_22d0becd508f78c5.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_selecting_hu_a4abe655f7de2a93.webp"
+/course/gis/2_crs/2_crs_selecting_hu_a4abe655f7de2a93.webp 400w,
+/course/gis/2_crs/2_crs_selecting_hu_27487e4758b75f71.webp 760w,
+/course/gis/2_crs/2_crs_selecting_hu_22d0becd508f78c5.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_selecting_hu_a4abe655f7de2a93.webp"
 width="682"
 height="388"
 loading="lazy" data-zoomable />&lt;/div>
@@ -352,10 +352,10 @@ Chọn một đối tượng
 &lt;figure id="figure-fig4">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Zoom to Layer" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_zoomtolayer_hu_5e4a9714b0a60f80.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_zoomtolayer_hu_bc8861ecc6ad2c30.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_zoomtolayer_hu_1fa817a78a6455df.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_zoomtolayer_hu_5e4a9714b0a60f80.webp"
+/course/gis/2_crs/2_crs_zoomtolayer_hu_5e4a9714b0a60f80.webp 400w,
+/course/gis/2_crs/2_crs_zoomtolayer_hu_bc8861ecc6ad2c30.webp 760w,
+/course/gis/2_crs/2_crs_zoomtolayer_hu_1fa817a78a6455df.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_zoomtolayer_hu_5e4a9714b0a60f80.webp"
 width="760"
 height="499"
 loading="lazy" data-zoomable />&lt;/div>
@@ -377,10 +377,10 @@ Cách mở Layer Properties:&lt;/p>
 &lt;figure id="figure-layer-properties">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_layerproperties_hu_7dbce7bf4f8411e3.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_layerproperties_hu_d7ac1b2efd14ee66.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_layerproperties_hu_bf3830ed2e442e97.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_layerproperties_hu_7dbce7bf4f8411e3.webp"
+/course/gis/2_crs/2_crs_layerproperties_hu_7dbce7bf4f8411e3.webp 400w,
+/course/gis/2_crs/2_crs_layerproperties_hu_d7ac1b2efd14ee66.webp 760w,
+/course/gis/2_crs/2_crs_layerproperties_hu_bf3830ed2e442e97.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_layerproperties_hu_7dbce7bf4f8411e3.webp"
 width="760"
 height="430"
 loading="lazy" data-zoomable />&lt;/div>
@@ -395,10 +395,10 @@ Layer Properties chứa nhiều mục quan trọng.&lt;/li>
 &lt;figure id="figure-layer-propertiesinformation">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_layerproperties_info_hu_24601d924dc16039.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_layerproperties_info_hu_ffaf77694702c95b.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_layerproperties_info_hu_2a0bcbd13d93106c.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_layerproperties_info_hu_24601d924dc16039.webp"
+/course/gis/2_crs/2_crs_layerproperties_info_hu_24601d924dc16039.webp 400w,
+/course/gis/2_crs/2_crs_layerproperties_info_hu_ffaf77694702c95b.webp 760w,
+/course/gis/2_crs/2_crs_layerproperties_info_hu_2a0bcbd13d93106c.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_layerproperties_info_hu_24601d924dc16039.webp"
 width="760"
 height="636"
 loading="lazy" data-zoomable />&lt;/div>
@@ -423,10 +423,10 @@ Các kiểu hiển thị chính:&lt;/p>
 &lt;figure id="figure-layer-propertiessymbology">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol_hu_fbc177381a29b3d8.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol_hu_94bba6fc966fe768.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol_hu_d7e5a5ed470cc765.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol_hu_fbc177381a29b3d8.webp"
+/course/gis/2_crs/2_crs_layerproperties_symbol_hu_fbc177381a29b3d8.webp 400w,
+/course/gis/2_crs/2_crs_layerproperties_symbol_hu_94bba6fc966fe768.webp 760w,
+/course/gis/2_crs/2_crs_layerproperties_symbol_hu_d7e5a5ed470cc765.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_layerproperties_symbol_hu_fbc177381a29b3d8.webp"
 width="760"
 height="536"
 loading="lazy" data-zoomable />&lt;/div>
@@ -441,10 +441,10 @@ Thực hiện: Properties/Symbology/Single Symbology, kích vào Simple Fill, di
 &lt;figure id="figure-làm-trong-màu-nền-của-lớp-heritage_sites-đồng-thời-tăng-kích-thước-đường-viền-stroke-width">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol2_hu_16bc6d160fa795c7.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol2_hu_d75fd691aeb06493.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol2_hu_50c9bb89853d5725.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol2_hu_16bc6d160fa795c7.webp"
+/course/gis/2_crs/2_crs_layerproperties_symbol2_hu_16bc6d160fa795c7.webp 400w,
+/course/gis/2_crs/2_crs_layerproperties_symbol2_hu_d75fd691aeb06493.webp 760w,
+/course/gis/2_crs/2_crs_layerproperties_symbol2_hu_50c9bb89853d5725.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_layerproperties_symbol2_hu_16bc6d160fa795c7.webp"
 width="760"
 height="358"
 loading="lazy" data-zoomable />&lt;/div>
@@ -458,10 +458,10 @@ Properties/Symbology/Single Symbology, kích vào Fill, di chuyển chuột xu�
 &lt;figure id="figure-điều-chỉnh-opacity-của-một-lớp">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol3_hu_8ef60695deb58b7c.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol3_hu_6233733723e8596c.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol3_hu_578d62ea2444bead.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_layerproperties_symbol3_hu_8ef60695deb58b7c.webp"
+/course/gis/2_crs/2_crs_layerproperties_symbol3_hu_8ef60695deb58b7c.webp 400w,
+/course/gis/2_crs/2_crs_layerproperties_symbol3_hu_6233733723e8596c.webp 760w,
+/course/gis/2_crs/2_crs_layerproperties_symbol3_hu_578d62ea2444bead.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_layerproperties_symbol3_hu_8ef60695deb58b7c.webp"
 width="760"
 height="410"
 loading="lazy" data-zoomable />&lt;/div>
@@ -478,10 +478,10 @@ Thực hiện:&lt;/p>
 &lt;figure id="figure-mở-bảng-thuộc-tính-để-xem-trường-nào-lưu-thông-tin-tên-tỉnh-bằng-tiếng-anh-đó-là-trường-varname_1">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_layerproperties_label1_hu_a3cd8adafc1a3b37.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_layerproperties_label1_hu_3608bf60a89f7f5c.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_layerproperties_label1_hu_68ed207594d35b3d.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_layerproperties_label1_hu_a3cd8adafc1a3b37.webp"
+/course/gis/2_crs/2_crs_layerproperties_label1_hu_a3cd8adafc1a3b37.webp 400w,
+/course/gis/2_crs/2_crs_layerproperties_label1_hu_3608bf60a89f7f5c.webp 760w,
+/course/gis/2_crs/2_crs_layerproperties_label1_hu_68ed207594d35b3d.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_layerproperties_label1_hu_a3cd8adafc1a3b37.webp"
 width="760"
 height="328"
 loading="lazy" data-zoomable />&lt;/div>
@@ -548,10 +548,10 @@ max-width: 100% !important;
 &lt;figure id="figure-cấu-trúc-project-của-qgis">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 6" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_project_hu_da8c8860d1146d92.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_project_hu_9ecb9224b67b8d26.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_project_hu_1cc5a5120dda8f8f.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_project_hu_da8c8860d1146d92.webp"
+/course/gis/2_crs/2_crs_project_hu_da8c8860d1146d92.webp 400w,
+/course/gis/2_crs/2_crs_project_hu_9ecb9224b67b8d26.webp 760w,
+/course/gis/2_crs/2_crs_project_hu_1cc5a5120dda8f8f.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_project_hu_da8c8860d1146d92.webp"
 width="760"
 height="289"
 loading="lazy" data-zoomable />&lt;/div>
@@ -562,10 +562,10 @@ Cấu trúc project của QGIS
 &lt;figure id="figure-save-project">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 6" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_saveproject_hu_a0948527af07a51a.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_saveproject_hu_12ca0238c116b668.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_saveproject_hu_62f0e8fb5c890481.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_saveproject_hu_a0948527af07a51a.webp"
+/course/gis/2_crs/2_crs_saveproject_hu_a0948527af07a51a.webp 400w,
+/course/gis/2_crs/2_crs_saveproject_hu_12ca0238c116b668.webp 760w,
+/course/gis/2_crs/2_crs_saveproject_hu_62f0e8fb5c890481.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_saveproject_hu_a0948527af07a51a.webp"
 width="760"
 height="520"
 loading="lazy" data-zoomable />&lt;/div>
@@ -594,10 +594,10 @@ Save project
 &lt;figure id="figure-yêu-cầu-kết-quả-của-homework">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 6" srcset="
-/onlinecourse/course/gis/2_crs/2_crs_homework_hu_4a9dc76f7b73dfd6.webp 400w,
-/onlinecourse/course/gis/2_crs/2_crs_homework_hu_ea0429453c6c8168.webp 760w,
-/onlinecourse/course/gis/2_crs/2_crs_homework_hu_ba0fc51d6df2d400.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/2_crs_homework_hu_4a9dc76f7b73dfd6.webp"
+/course/gis/2_crs/2_crs_homework_hu_4a9dc76f7b73dfd6.webp 400w,
+/course/gis/2_crs/2_crs_homework_hu_ea0429453c6c8168.webp 760w,
+/course/gis/2_crs/2_crs_homework_hu_ba0fc51d6df2d400.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/2_crs/2_crs_homework_hu_4a9dc76f7b73dfd6.webp"
 width="476"
 height="696"
 loading="lazy" data-zoomable />&lt;/div>

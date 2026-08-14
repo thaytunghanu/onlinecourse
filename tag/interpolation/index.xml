@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Interpolation | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/tag/interpolation/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/tag/interpolation/index.xml" rel="self" type="application/rss+xml"/><description>Interpolation</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Interpolation</title><link>https://thaytunghanu.github.io/onlinecourse/tag/interpolation/</link></image><item><title>11. Phân tích không gian nâng cao</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/</guid><description>&lt;p>Phân tích zonal statistics, nội suy, tính diện tích từ dữ liệu raster.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Interpolation | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/tag/interpolation/</link><atom:link href="https://thaytunghanu.github.io/tag/interpolation/index.xml" rel="self" type="application/rss+xml"/><description>Interpolation</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Interpolation</title><link>https://thaytunghanu.github.io/tag/interpolation/</link></image><item><title>11. Phân tích không gian nâng cao</title><link>https://thaytunghanu.github.io/course/gis/11_analysis2/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/course/gis/11_analysis2/</guid><description>&lt;p>Phân tích zonal statistics, nội suy, tính diện tích từ dữ liệu raster.&lt;/p>
 &lt;h2 id="zonal-statistics">Zonal statistics&lt;/h2>
 &lt;ul>
 &lt;li>
@@ -95,7 +95,7 @@
 &lt;li>Ranh giới hành chính cấp tỉnh (trước sáp nhập 7/2025): provincial level boundary (gadm41_VNM_1.shp) ở trong file *.zip (9 MB) này: &lt;a href="https://geodata.ucdavis.edu/gadm/gadm4.1/shp/gadm41_VNM_shp.zip" target="_blank" rel="noopener">https://geodata.ucdavis.edu/gadm/gadm4.1/shp/gadm41_VNM_shp.zip&lt;/a>&lt;/li>
 &lt;li>Dữ liệu dân số (population count per pixel) từ WorldPop unconstrained (163 MB). Giá trị pixel là tổng số người được đếm trong phạm vi mỗi pixel:
 &lt;a href="https://data.worldpop.org/GIS/Population/Global_2000_2020/2020/VNM/vnm_ppp_2020_UNadj.tif" target="_blank" rel="noopener">https://data.worldpop.org/GIS/Population/Global_2000_2020/2020/VNM/vnm_ppp_2020_UNadj.tif&lt;/a>&lt;br>
-Các bạn có thể dùng các dữ liệu dân số khác đã học ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/#dữ-liệu-về-dân-số-worldpop-và-facebook-hrpd">Bài 10&lt;/a>&lt;/li>
+Các bạn có thể dùng các dữ liệu dân số khác đã học ở &lt;a href="https://thaytunghanu.github.io/course/gis/10__source/#dữ-liệu-về-dân-số-worldpop-và-facebook-hrpd">Bài 10&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3 id="các-bước-tiến-hành">Các bước tiến hành&lt;/h3>
 &lt;ul>
@@ -110,10 +110,10 @@ Các bạn có thể dùng các dữ liệu dân số khác đã học ở &lt;a
 &lt;figure id="figure-thiết-lập-tham-số-chạy-zonal-statistics">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Thiết lập tham số chạy zonal statistics" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_zonal_hu_8e23d597f37093b6.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_zonal_hu_d9ab08d28cb32dc9.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_zonal_hu_9a67eff209f83893.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_zonal_hu_8e23d597f37093b6.webp"
+/course/gis/11_analysis2/11_analysis2_zonal_hu_8e23d597f37093b6.webp 400w,
+/course/gis/11_analysis2/11_analysis2_zonal_hu_d9ab08d28cb32dc9.webp 760w,
+/course/gis/11_analysis2/11_analysis2_zonal_hu_9a67eff209f83893.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_zonal_hu_8e23d597f37093b6.webp"
 width="760"
 height="289"
 loading="lazy" data-zoomable />&lt;/div>
@@ -128,10 +128,10 @@ Thiết lập tham số chạy zonal statistics
 &lt;figure id="figure-sau-khi-chạy-zonal-statistics-bảng-thuộc-tính-của-gadm41_vnm_1shp-có-thêm-trường-_sum-chính-là-dân-số-tính-từ-raster">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Sau khi chạy zonal statistics, bảng thuộc tính của **gadm41_VNM_1.shp** có thêm trường **_sum** chính là dân số tính từ raster" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_zonal2_hu_7dccbe4e67216eb4.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_zonal2_hu_34542ebf2db4141.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_zonal2_hu_36f1460364da033e.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_zonal2_hu_7dccbe4e67216eb4.webp"
+/course/gis/11_analysis2/11_analysis2_zonal2_hu_7dccbe4e67216eb4.webp 400w,
+/course/gis/11_analysis2/11_analysis2_zonal2_hu_34542ebf2db4141.webp 760w,
+/course/gis/11_analysis2/11_analysis2_zonal2_hu_36f1460364da033e.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_zonal2_hu_7dccbe4e67216eb4.webp"
 width="504"
 height="440"
 loading="lazy" data-zoomable />&lt;/div>
@@ -310,10 +310,10 @@ Sau khi chạy zonal statistics, bảng thuộc tính của &lt;strong>gadm41_VN
 &lt;figure id="figure-fig1">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Dữ liệu xâm nhập mặn ở ĐBSCL từ OpenDevelopmentMekong" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp_hu_d6b7a3e4213d5287.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp_hu_f27a225ea72aa2bc.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp_hu_cc21e2673b2bb16b.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp_hu_d6b7a3e4213d5287.webp"
+/course/gis/11_analysis2/11_analysis2_interp_hu_d6b7a3e4213d5287.webp 400w,
+/course/gis/11_analysis2/11_analysis2_interp_hu_f27a225ea72aa2bc.webp 760w,
+/course/gis/11_analysis2/11_analysis2_interp_hu_cc21e2673b2bb16b.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_interp_hu_d6b7a3e4213d5287.webp"
 width="760"
 height="244"
 loading="lazy" data-zoomable />&lt;/div>
@@ -329,10 +329,10 @@ Dữ liệu xâm nhập mặn ở ĐBSCL từ OpenDevelopmentMekong
 &lt;figure id="figure-fig2">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Dữ liệu xâm nhập mặn đã tích hợp thêm tọa độ X và Y" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp2_hu_eea93ba37b6d2861.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp2_hu_10d558a19d61c579.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp2_hu_8df1d9e6c3deafd8.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp2_hu_eea93ba37b6d2861.webp"
+/course/gis/11_analysis2/11_analysis2_interp2_hu_eea93ba37b6d2861.webp 400w,
+/course/gis/11_analysis2/11_analysis2_interp2_hu_10d558a19d61c579.webp 760w,
+/course/gis/11_analysis2/11_analysis2_interp2_hu_8df1d9e6c3deafd8.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_interp2_hu_eea93ba37b6d2861.webp"
 width="760"
 height="303"
 loading="lazy" data-zoomable />&lt;/div>
@@ -351,17 +351,17 @@ Dữ liệu xâm nhập mặn đã tích hợp thêm tọa độ X và Y
 &lt;p>Dữ liệu &lt;a href="https://data.vietnam.opendevelopmentmekong.net/dataset/saline-intrusion-in-the-southern-region-vietnam" target="_blank" rel="noopener">Saline Intrusion in the Southern Region, Vietnam in 2021 and in 2022&lt;/a> bao gồm giá trị đo xâm nhập mặn 10 ngày một lần đo, từ tháng 1 đến tháng 3 của 2 năm 2021 và 2022. Trong bài thực hành này chỉ sử dụng dữ liệu của năm &lt;strong>2021&lt;/strong> như &lt;a href="#figure-fig2">ảnh trên đã trình bày&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Mở dữ liệu xâm nhập mặn đã tích hợp tọa độ trạm đo bằng cách &lt;strong>Add Delimited Text&lt;/strong> như đã thực hành ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/#thêm-và-chuyển-đổi-dữ-liệu-phi-không-gian-csv-thành-dữ-liệu-không-gian">Bài 2&lt;/a>.&lt;/p>
+&lt;p>Mở dữ liệu xâm nhập mặn đã tích hợp tọa độ trạm đo bằng cách &lt;strong>Add Delimited Text&lt;/strong> như đã thực hành ở &lt;a href="https://thaytunghanu.github.io/course/gis/2_crs/#thêm-và-chuyển-đổi-dữ-liệu-phi-không-gian-csv-thành-dữ-liệu-không-gian">Bài 2&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;p>
 &lt;figure id="figure-add-delimited-text-dữ-liệu-csv-xâm-nhập-mặn-đã-tích-hợp-tọa-độ">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="**Add Delimited Text** dữ liệu csv xâm nhập mặn đã tích hợp tọa độ" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp3_hu_a305e38c47cff1bf.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp3_hu_f6221653fdba0372.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp3_hu_8e383bd96c54f8f9.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp3_hu_a305e38c47cff1bf.webp"
+/course/gis/11_analysis2/11_analysis2_interp3_hu_a305e38c47cff1bf.webp 400w,
+/course/gis/11_analysis2/11_analysis2_interp3_hu_f6221653fdba0372.webp 760w,
+/course/gis/11_analysis2/11_analysis2_interp3_hu_8e383bd96c54f8f9.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_interp3_hu_a305e38c47cff1bf.webp"
 width="727"
 height="760"
 loading="lazy" data-zoomable />&lt;/div>
@@ -372,10 +372,10 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;figure id="figure-vị-trí-các-trạm-đo-mặn-ở-map-canvas-sau-khi-add-delimited-text">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Vị trí các trạm đo mặn ở Map Canvas sau khi **Add Delimited Text** " srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp4_hu_276686a194757de1.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp4_hu_e31f84c328231fb4.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp4_hu_e3b4feb938b9b5f6.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp4_hu_276686a194757de1.webp"
+/course/gis/11_analysis2/11_analysis2_interp4_hu_276686a194757de1.webp 400w,
+/course/gis/11_analysis2/11_analysis2_interp4_hu_e31f84c328231fb4.webp 760w,
+/course/gis/11_analysis2/11_analysis2_interp4_hu_e3b4feb938b9b5f6.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_interp4_hu_276686a194757de1.webp"
 width="664"
 height="653"
 loading="lazy" data-zoomable />&lt;/div>
@@ -389,10 +389,10 @@ Vị trí các trạm đo mặn ở Map Canvas sau khi &lt;strong>Add Delimited 
 &lt;figure id="figure-bảng-thuộc-tính-của-salinization_2021shp">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Bảng thuộc tính của **salinization_2021.shp**" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp5_hu_f3a4b10a4e0602b7.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp5_hu_2d2ce40418f28f8a.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp5_hu_eb7e65d8ee5deee5.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp5_hu_f3a4b10a4e0602b7.webp"
+/course/gis/11_analysis2/11_analysis2_interp5_hu_f3a4b10a4e0602b7.webp 400w,
+/course/gis/11_analysis2/11_analysis2_interp5_hu_2d2ce40418f28f8a.webp 760w,
+/course/gis/11_analysis2/11_analysis2_interp5_hu_eb7e65d8ee5deee5.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_interp5_hu_f3a4b10a4e0602b7.webp"
 width="760"
 height="174"
 loading="lazy" data-zoomable />&lt;/div>
@@ -443,10 +443,10 @@ Bảng thuộc tính của &lt;strong>salinization_2021.shp&lt;/strong>
 &lt;figure id="figure-thiết-lập-tham-số-chạy-nội-suy-idw-interpolation-ấn-run">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Thiết lập tham số chạy nội suy IDW Interpolation, ấn **Run**" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp6_hu_bb0ed349f9d85fc7.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp6_hu_dbfda3c1f6d4a005.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp6_hu_6bdb3eb0d8398a94.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp6_hu_bb0ed349f9d85fc7.webp"
+/course/gis/11_analysis2/11_analysis2_interp6_hu_bb0ed349f9d85fc7.webp 400w,
+/course/gis/11_analysis2/11_analysis2_interp6_hu_dbfda3c1f6d4a005.webp 760w,
+/course/gis/11_analysis2/11_analysis2_interp6_hu_6bdb3eb0d8398a94.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_interp6_hu_bb0ed349f9d85fc7.webp"
 width="655"
 height="760"
 loading="lazy" data-zoomable />&lt;/div>
@@ -458,10 +458,10 @@ Thiết lập tham số chạy nội suy IDW Interpolation, ấn &lt;strong>Run&
 &lt;figure id="figure-kết-quả-sau-khi-chạy-nội-suy">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết quả sau khi chạy nội suy" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp7_hu_736b537e367ffdf4.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp7_hu_de3555821bbd8057.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp7_hu_53f34bcf5cc678e1.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp7_hu_736b537e367ffdf4.webp"
+/course/gis/11_analysis2/11_analysis2_interp7_hu_736b537e367ffdf4.webp 400w,
+/course/gis/11_analysis2/11_analysis2_interp7_hu_de3555821bbd8057.webp 760w,
+/course/gis/11_analysis2/11_analysis2_interp7_hu_53f34bcf5cc678e1.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_interp7_hu_736b537e367ffdf4.webp"
 width="760"
 height="468"
 loading="lazy" data-zoomable />&lt;/div>
@@ -476,10 +476,10 @@ Kết quả sau khi chạy nội suy
 &lt;figure id="figure-clip-kết-quả-theo-ranh-giới-hành-chính-và-hiển-thị-màu">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Clip kết quả theo ranh giới hành chính và hiển thị màu" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp8_hu_b90867561ce91b0f.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp8_hu_c4213a22e0086b61.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp8_hu_28fd6b6e40091b07.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp8_hu_b90867561ce91b0f.webp"
+/course/gis/11_analysis2/11_analysis2_interp8_hu_b90867561ce91b0f.webp 400w,
+/course/gis/11_analysis2/11_analysis2_interp8_hu_c4213a22e0086b61.webp 760w,
+/course/gis/11_analysis2/11_analysis2_interp8_hu_28fd6b6e40091b07.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_interp8_hu_b90867561ce91b0f.webp"
 width="760"
 height="480"
 loading="lazy" data-zoomable />&lt;/div>
@@ -493,10 +493,10 @@ Clip kết quả theo ranh giới hành chính và hiển thị màu
 &lt;figure id="figure-thiết-lập-tham-số-chạy-contour-polygon">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Thiết lập tham số chạy contour polygon" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp9_hu_5d717d234084d5bf.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp9_hu_e7845f4aead8d958.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp9_hu_e3e24de06d696371.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp9_hu_5d717d234084d5bf.webp"
+/course/gis/11_analysis2/11_analysis2_interp9_hu_5d717d234084d5bf.webp 400w,
+/course/gis/11_analysis2/11_analysis2_interp9_hu_e7845f4aead8d958.webp 760w,
+/course/gis/11_analysis2/11_analysis2_interp9_hu_e3e24de06d696371.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_interp9_hu_5d717d234084d5bf.webp"
 width="627"
 height="760"
 loading="lazy" data-zoomable />&lt;/div>
@@ -510,10 +510,10 @@ Thiết lập tham số chạy contour polygon
 &lt;figure id="figure-kết-quả-chạy-contour-polygon">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết quả chạy contour polygon" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp10_hu_90c2b62170b879f7.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp10_hu_3c4d68575a151d22.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp10_hu_edb4bee6c52038ca.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp10_hu_90c2b62170b879f7.webp"
+/course/gis/11_analysis2/11_analysis2_interp10_hu_90c2b62170b879f7.webp 400w,
+/course/gis/11_analysis2/11_analysis2_interp10_hu_3c4d68575a151d22.webp 760w,
+/course/gis/11_analysis2/11_analysis2_interp10_hu_edb4bee6c52038ca.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_interp10_hu_90c2b62170b879f7.webp"
 width="717"
 height="596"
 loading="lazy" data-zoomable />&lt;/div>
@@ -523,10 +523,10 @@ Kết quả chạy contour polygon
 &lt;figure id="figure-bản-đồ-dự-báo-phân-bố-độ-mặn-khu-vực-đbscl-tháng-52020-nguồn-linkhttpstnmttravinhgovvnxemxam-nhap-man-tai-dong-bang-song-cuu-long-nhung-ngay-dau-thang-52020">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Bản đồ dự báo phân bố độ mặn khu vực ĐBSCL tháng 5/2020, nguồn: [link](https://tnmttravinh.gov.vn/xem/xam-nhap-man-tai-dong-bang-song-cuu-long-nhung-ngay-dau-thang-52020)" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp11_hu_9dfc6dfa44928707.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp11_hu_f38b287adb7877eb.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_interp11_hu_fef9b061e3283787.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_interp11_hu_9dfc6dfa44928707.webp"
+/course/gis/11_analysis2/11_analysis2_interp11_hu_9dfc6dfa44928707.webp 400w,
+/course/gis/11_analysis2/11_analysis2_interp11_hu_f38b287adb7877eb.webp 760w,
+/course/gis/11_analysis2/11_analysis2_interp11_hu_fef9b061e3283787.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_interp11_hu_9dfc6dfa44928707.webp"
 width="620"
 height="439"
 loading="lazy" data-zoomable />&lt;/div>
@@ -548,7 +548,7 @@ Bản đồ dự báo phân bố độ mặn khu vực ĐBSCL tháng 5/2020, ngu
 &lt;h3 id="dữ-liệu-thực-hành-2">Dữ liệu thực hành&lt;/h3>
 &lt;ul>
 &lt;li>
-&lt;p>Truy cập trang cung cấp dữ liệu thảm phủ đất &lt;a href="https://viewer.esa-worldcover.org/worldcover/" target="_blank" rel="noopener">ESA Worldcover&lt;/a>. Download mảnh dữ liệu &lt;strong>ESA_WorldCover_10m_2021_v200_N21E105.tif&lt;/strong> theo hướng dẫn ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/10__source/#dữ-liệu-về-sử-dụng-đất-thảm-phủ-mặt-đất">Bài 10&lt;/a>.&lt;/p>
+&lt;p>Truy cập trang cung cấp dữ liệu thảm phủ đất &lt;a href="https://viewer.esa-worldcover.org/worldcover/" target="_blank" rel="noopener">ESA Worldcover&lt;/a>. Download mảnh dữ liệu &lt;strong>ESA_WorldCover_10m_2021_v200_N21E105.tif&lt;/strong> theo hướng dẫn ở &lt;a href="https://thaytunghanu.github.io/course/gis/10__source/#dữ-liệu-về-sử-dụng-đất-thảm-phủ-mặt-đất">Bài 10&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Downnload ranh giới xã Định Hóa, Thái Nguyên sau sáp nhập ở &lt;a href="https://gis.vn/ban-do-hanh-chinh-viet-nam" target="_blank" rel="noopener">https://gis.vn/ban-do-hanh-chinh-viet-nam&lt;/a>. Có thể download nhanh ở &lt;a href="https://drive.google.com/file/d/1bGBo-O4uLE0aCPkOcPnq4yB0TS3sMKB2/view?usp=drive_link" target="_blank" rel="noopener">link này&lt;/a>. &lt;code>Chú ý: nguồn dữ liệu bản đồ hành chính này không phải được cung cấp từ cơ quan chức năng có thẩm quyền, do đó chỉ nên dùng với tính chất tham khảo.&lt;/code>&lt;/p>
@@ -561,10 +561,10 @@ Bản đồ dự báo phân bố độ mặn khu vực ĐBSCL tháng 5/2020, ngu
 &lt;figure id="figure-clip-dữ-liệu-theo-ranh-giới-huyện-định-hóa-bằng-clip-raster-by-mask-layer">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Clip dữ liệu theo ranh giới huyện Định Hóa bằng **Clip Raster by Mask Layer**" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area_hu_bb9d539d9c880e80.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area_hu_7874edc3b51c47e5.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area_hu_1d1cd74936ca9807.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_area_hu_bb9d539d9c880e80.webp"
+/course/gis/11_analysis2/11_analysis2_area_hu_bb9d539d9c880e80.webp 400w,
+/course/gis/11_analysis2/11_analysis2_area_hu_7874edc3b51c47e5.webp 760w,
+/course/gis/11_analysis2/11_analysis2_area_hu_1d1cd74936ca9807.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_area_hu_bb9d539d9c880e80.webp"
 width="672"
 height="395"
 loading="lazy" data-zoomable />&lt;/div>
@@ -574,10 +574,10 @@ Clip dữ liệu theo ranh giới huyện Định Hóa bằng &lt;strong>Clip Ra
 &lt;figure id="figure-kết-quả-sau-khi-clip">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết quả sau khi Clip" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area2_hu_1cd385fdfeac865c.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area2_hu_5744d7c7db922450.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area2_hu_b934e238b00c2f33.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_area2_hu_1cd385fdfeac865c.webp"
+/course/gis/11_analysis2/11_analysis2_area2_hu_1cd385fdfeac865c.webp 400w,
+/course/gis/11_analysis2/11_analysis2_area2_hu_5744d7c7db922450.webp 760w,
+/course/gis/11_analysis2/11_analysis2_area2_hu_b934e238b00c2f33.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_area2_hu_1cd385fdfeac865c.webp"
 width="760"
 height="375"
 loading="lazy" data-zoomable />&lt;/div>
@@ -591,10 +591,10 @@ Kết quả sau khi Clip
 &lt;figure id="figure-chuyển-crs-cho-dinhhoa_lulctif">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="chuyển CRS cho **DinhHoa_LULC.tif**" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area3_hu_393c1c896e8df1c9.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area3_hu_770066db44402d49.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area3_hu_6cdad869a14c56d.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_area3_hu_393c1c896e8df1c9.webp"
+/course/gis/11_analysis2/11_analysis2_area3_hu_393c1c896e8df1c9.webp 400w,
+/course/gis/11_analysis2/11_analysis2_area3_hu_770066db44402d49.webp 760w,
+/course/gis/11_analysis2/11_analysis2_area3_hu_6cdad869a14c56d.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_area3_hu_393c1c896e8df1c9.webp"
 width="672"
 height="685"
 loading="lazy" data-zoomable />&lt;/div>
@@ -608,10 +608,10 @@ chuyển CRS cho &lt;strong>DinhHoa_LULC.tif&lt;/strong>
 &lt;figure id="figure-thiết-lập-các-tham-số-ở-raster-layer-unique-values-report">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Thiết lập các tham số ở **Raster layer Unique values report**" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area4_hu_64b2c95e1ffbc232.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area4_hu_a8b01469b8e36fac.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area4_hu_3cc2a41cc54622b4.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_area4_hu_64b2c95e1ffbc232.webp"
+/course/gis/11_analysis2/11_analysis2_area4_hu_64b2c95e1ffbc232.webp 400w,
+/course/gis/11_analysis2/11_analysis2_area4_hu_a8b01469b8e36fac.webp 760w,
+/course/gis/11_analysis2/11_analysis2_area4_hu_3cc2a41cc54622b4.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_area4_hu_64b2c95e1ffbc232.webp"
 width="641"
 height="410"
 loading="lazy" data-zoomable />&lt;/div>
@@ -621,10 +621,10 @@ Thiết lập các tham số ở &lt;strong>Raster layer Unique values report&lt
 &lt;figure id="figure-kết-quả-sau-khi-tính-diện-tích-thể-hiện-ở-bảng-thuộc-tính-của-file-reportgpkg">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết quả sau khi tính diện tích thể hiện ở bảng thuộc tính của file **report.gpkg**" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area5_hu_f9ad52c8d2362a74.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area5_hu_e53af4faac009237.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area5_hu_2b655e4f9340b977.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_area5_hu_f9ad52c8d2362a74.webp"
+/course/gis/11_analysis2/11_analysis2_area5_hu_f9ad52c8d2362a74.webp 400w,
+/course/gis/11_analysis2/11_analysis2_area5_hu_e53af4faac009237.webp 760w,
+/course/gis/11_analysis2/11_analysis2_area5_hu_2b655e4f9340b977.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_area5_hu_f9ad52c8d2362a74.webp"
 width="483"
 height="258"
 loading="lazy" data-zoomable />&lt;/div>
@@ -654,10 +654,10 @@ Kết quả sau khi tính diện tích thể hiện ở bảng thuộc tính c�
 &lt;figure id="figure-đổi-trường-value-từ-code-lulc-thành-tên-các-loại-hình-sử-dụng-đất">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Đổi trường **value** từ code LULC thành tên các loại hình sử dụng đất" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area6_hu_1681a633cb19873c.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area6_hu_64f8b2669d33b02.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area6_hu_c8771cd1e1b5a6d1.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_area6_hu_1681a633cb19873c.webp"
+/course/gis/11_analysis2/11_analysis2_area6_hu_1681a633cb19873c.webp 400w,
+/course/gis/11_analysis2/11_analysis2_area6_hu_64f8b2669d33b02.webp 760w,
+/course/gis/11_analysis2/11_analysis2_area6_hu_c8771cd1e1b5a6d1.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_area6_hu_1681a633cb19873c.webp"
 width="760"
 height="591"
 loading="lazy" data-zoomable />&lt;/div>
@@ -667,10 +667,10 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;figure id="figure-kết-quả-ở-bảng-thuộc-tính-reportgpkg">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết quả ở bảng thuộc tính **report.gpkg**" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area7_hu_e3bd9a2a7ba9d9e.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area7_hu_46e46a2ab86a9bbe.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area7_hu_ec37005e2997806f.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_area7_hu_e3bd9a2a7ba9d9e.webp"
+/course/gis/11_analysis2/11_analysis2_area7_hu_e3bd9a2a7ba9d9e.webp 400w,
+/course/gis/11_analysis2/11_analysis2_area7_hu_46e46a2ab86a9bbe.webp 760w,
+/course/gis/11_analysis2/11_analysis2_area7_hu_ec37005e2997806f.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_area7_hu_e3bd9a2a7ba9d9e.webp"
 width="636"
 height="281"
 loading="lazy" data-zoomable />&lt;/div>
@@ -683,10 +683,10 @@ Kết quả ở bảng thuộc tính &lt;strong>report.gpkg&lt;/strong>
 &lt;figure id="figure-tính-diện-tích-theo-hecta">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Tính diện tích theo hecta" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area8_hu_b9ea406cbf55604a.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area8_hu_c58b412ce2594abc.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area8_hu_b4c0bdf3ee9a254f.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_area8_hu_b9ea406cbf55604a.webp"
+/course/gis/11_analysis2/11_analysis2_area8_hu_b9ea406cbf55604a.webp 400w,
+/course/gis/11_analysis2/11_analysis2_area8_hu_c58b412ce2594abc.webp 760w,
+/course/gis/11_analysis2/11_analysis2_area8_hu_b4c0bdf3ee9a254f.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_area8_hu_b9ea406cbf55604a.webp"
 width="760"
 height="471"
 loading="lazy" data-zoomable />&lt;/div>
@@ -696,10 +696,10 @@ Tính diện tích theo hecta
 &lt;figure id="figure-kết-quả-cuối-cùng-có-thể-lưu-thành-file-excel-để-dùng-làm-bảng-biểu-hoặc-vẽ-biểu-đồ-phục-vụ-các-báo-cáo">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết quả cuối cùng. Có thể lưu thành file excel để dùng làm bảng biểu hoặc vẽ biểu đồ phục vụ các báo cáo" srcset="
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area9_hu_eaf7a2a4d730b9a4.webp 400w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area9_hu_270f8b84c156af3.webp 760w,
-/onlinecourse/course/gis/11_analysis2/11_analysis2_area9_hu_3b37c275ca86c22.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/11_analysis2/11_analysis2_area9_hu_eaf7a2a4d730b9a4.webp"
+/course/gis/11_analysis2/11_analysis2_area9_hu_eaf7a2a4d730b9a4.webp 400w,
+/course/gis/11_analysis2/11_analysis2_area9_hu_270f8b84c156af3.webp 760w,
+/course/gis/11_analysis2/11_analysis2_area9_hu_3b37c275ca86c22.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/11_analysis2/11_analysis2_area9_hu_eaf7a2a4d730b9a4.webp"
 width="683"
 height="283"
 loading="lazy" data-zoomable />&lt;/div>

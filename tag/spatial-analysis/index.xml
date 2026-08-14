@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Spatial Analysis | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/tag/spatial-analysis/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/tag/spatial-analysis/index.xml" rel="self" type="application/rss+xml"/><description>Spatial Analysis</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Spatial Analysis</title><link>https://thaytunghanu.github.io/onlinecourse/tag/spatial-analysis/</link></image><item><title>7. Phân tích không gian</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/</guid><description>&lt;p>Thực hành các công cụ phân tích không gian: merge, union, clip, intersect, symmetrical difference, reproject, buffer, count points in polygon&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Spatial Analysis | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/tag/spatial-analysis/</link><atom:link href="https://thaytunghanu.github.io/tag/spatial-analysis/index.xml" rel="self" type="application/rss+xml"/><description>Spatial Analysis</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Spatial Analysis</title><link>https://thaytunghanu.github.io/tag/spatial-analysis/</link></image><item><title>7. Phân tích không gian</title><link>https://thaytunghanu.github.io/course/gis/7_analysis/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/course/gis/7_analysis/</guid><description>&lt;p>Thực hành các công cụ phân tích không gian: merge, union, clip, intersect, symmetrical difference, reproject, buffer, count points in polygon&lt;/p>
 &lt;p>Các công cụ phân tích không gian: merge, clip, intersect, symmetrical difference, buffer &amp;hellip; là những công cụ cốt lõi trong xử lý và phân tích dữ liệu địa lý vector.
 Những công cụ này có thể được ứng dụng trong những bài toán phân tích không gian rất phổ biến như: phân tích vùng bị ảnh hưởng (mưa lũ, ô nhiễm…), quy hoạch vùng đô thị, bảo tồn.&lt;/p>
 &lt;h2 id="dữ-liệu-thực-hành">Dữ liệu thực hành&lt;/h2>
@@ -10,7 +10,7 @@ Dữ liệu bao gồm các lớp:&lt;/p>
 &lt;li>&lt;strong>VN_urbanareas&lt;/strong>: phân bố không gian của các vùng đô thị toàn quốc&lt;/li>
 &lt;li>&lt;strong>protected_area&lt;/strong>: phân bố không gian của các khu bảo tồn toàn quốc&lt;/li>
 &lt;li>&lt;strong>Thai_Nguyen_Rivers&lt;/strong>: mạng lưới sông ở Thái Nguyên&lt;/li>
-&lt;li>Ngoài ra cần lớp ranh giới cấp huyện của riêng tỉnh Thái Nguyên là &lt;strong>ThaiNguyen_districts&lt;/strong> ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/#homework-phần-chọn-đối-tượng-dựa-vào-vị-trí">Homework số 3, Bài 6&lt;/a>&lt;/li>
+&lt;li>Ngoài ra cần lớp ranh giới cấp huyện của riêng tỉnh Thái Nguyên là &lt;strong>ThaiNguyen_districts&lt;/strong> ở &lt;a href="https://thaytunghanu.github.io/course/gis/6_query/#homework-phần-chọn-đối-tượng-dựa-vào-vị-trí">Homework số 3, Bài 6&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="công-cụ-merge-selected-features">Công cụ Merge selected features&lt;/h2>
 &lt;ul>
@@ -22,10 +22,10 @@ Dữ liệu bao gồm các lớp:&lt;/p>
 &lt;figure id="figure-tỉnh-kiên-giang-hiện-có-2-đối-tượng-đất-liền-và-đảo-cần-phải-merge-thành-một-đối-tượng">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_merge1_hu_f04c14ebacad1cb9.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_merge1_hu_46e3d7e825371e14.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_merge1_hu_bcf88efa8e16f6b1.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_merge1_hu_f04c14ebacad1cb9.webp"
+/course/gis/7_analysis/7_analysis_merge1_hu_f04c14ebacad1cb9.webp 400w,
+/course/gis/7_analysis/7_analysis_merge1_hu_46e3d7e825371e14.webp 760w,
+/course/gis/7_analysis/7_analysis_merge1_hu_bcf88efa8e16f6b1.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_merge1_hu_f04c14ebacad1cb9.webp"
 width="760"
 height="435"
 loading="lazy" data-zoomable />&lt;/div>
@@ -39,10 +39,10 @@ Tỉnh Kiên Giang hiện có 2 đối tượng, đất liền và đảo, cần
 &lt;figure id="figure-chọn-và-gộp-các-đối-tượng">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_merge2_hu_a58acba4ee6fb3b3.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_merge2_hu_b4f11d87e1b961e2.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_merge2_hu_5ff41f208a214dde.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_merge2_hu_a58acba4ee6fb3b3.webp"
+/course/gis/7_analysis/7_analysis_merge2_hu_a58acba4ee6fb3b3.webp 400w,
+/course/gis/7_analysis/7_analysis_merge2_hu_b4f11d87e1b961e2.webp 760w,
+/course/gis/7_analysis/7_analysis_merge2_hu_5ff41f208a214dde.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_merge2_hu_a58acba4ee6fb3b3.webp"
 width="760"
 height="368"
 loading="lazy" data-zoomable />&lt;/div>
@@ -59,10 +59,10 @@ Chọn và gộp các đối tượng
 &lt;figure id="figure-các-lựa-chọn-cho-thuộc-tính-của-đối-tượng-mới-sau-khi-gộp">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_merge3_hu_703fd9109471b75e.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_merge3_hu_4f1b1802871e9629.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_merge3_hu_e719752f9d227d0d.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_merge3_hu_703fd9109471b75e.webp"
+/course/gis/7_analysis/7_analysis_merge3_hu_703fd9109471b75e.webp 400w,
+/course/gis/7_analysis/7_analysis_merge3_hu_4f1b1802871e9629.webp 760w,
+/course/gis/7_analysis/7_analysis_merge3_hu_e719752f9d227d0d.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_merge3_hu_703fd9109471b75e.webp"
 width="647"
 height="414"
 loading="lazy" data-zoomable />&lt;/div>
@@ -85,10 +85,10 @@ Các lựa chọn cho thuộc tính của đối tượng mới sau khi gộp
 &lt;figure id="figure-sơ-đồ-cách-xử-lý-của-công-cụ-union-hoạt-động-union-giữa-một-lớp-a-có-2-đối-tượng-và-1-lớp-b-có-1-đối-tượng-sau-khi-union-thành-1-lớp-mới-bao-gồm-5-đối-tượng">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_union1_hu_50c6ffbf12fdb077.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_union1_hu_1a485713da799d7e.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_union1_hu_bb52d7475d50c730.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_union1_hu_50c6ffbf12fdb077.webp"
+/course/gis/7_analysis/7_analysis_union1_hu_50c6ffbf12fdb077.webp 400w,
+/course/gis/7_analysis/7_analysis_union1_hu_1a485713da799d7e.webp 760w,
+/course/gis/7_analysis/7_analysis_union1_hu_bb52d7475d50c730.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_union1_hu_50c6ffbf12fdb077.webp"
 width="443"
 height="201"
 loading="lazy" data-zoomable />&lt;/div>
@@ -107,10 +107,10 @@ Cách thực hiện:&lt;/p>
 &lt;figure id="figure-chọn-ranh-giới-tỉnh-vĩnh-phúc-từ-vietnam_provinces-và-2-huyện-pho-yen-and-dai-tu-từ-lớp-thainguyen_districts">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_union2_hu_e45cb5a6a8b6a216.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_union2_hu_3c93eff5debac5fc.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_union2_hu_866c43270d2de720.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_union2_hu_e45cb5a6a8b6a216.webp"
+/course/gis/7_analysis/7_analysis_union2_hu_e45cb5a6a8b6a216.webp 400w,
+/course/gis/7_analysis/7_analysis_union2_hu_3c93eff5debac5fc.webp 760w,
+/course/gis/7_analysis/7_analysis_union2_hu_866c43270d2de720.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_union2_hu_e45cb5a6a8b6a216.webp"
 width="760"
 height="517"
 loading="lazy" data-zoomable />&lt;/div>
@@ -185,10 +185,10 @@ max-width: 100% !important;
 &lt;figure id="figure-thiết-lập-các-tham-số-khi-xử-lý-union">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_union5_hu_cfe88aa5c04f26a4.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_union5_hu_77428534aa9fcb93.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_union5_hu_2625178a71e856e.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_union5_hu_cfe88aa5c04f26a4.webp"
+/course/gis/7_analysis/7_analysis_union5_hu_cfe88aa5c04f26a4.webp 400w,
+/course/gis/7_analysis/7_analysis_union5_hu_77428534aa9fcb93.webp 760w,
+/course/gis/7_analysis/7_analysis_union5_hu_2625178a71e856e.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_union5_hu_cfe88aa5c04f26a4.webp"
 width="760"
 height="461"
 loading="lazy" data-zoomable />&lt;/div>
@@ -205,10 +205,10 @@ Thiết lập các tham số khi xử lý Union
 &lt;figure class="border border-black rounded-md" id="figure-kết-quả-sau-union">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết quả sau Union" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_union6_hu_96773b37d02edb4a.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_union6_hu_cdc51529a4c99463.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_union6_hu_269a2e01c1a0fd3c.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_union6_hu_96773b37d02edb4a.webp"
+/course/gis/7_analysis/7_analysis_union6_hu_96773b37d02edb4a.webp 400w,
+/course/gis/7_analysis/7_analysis_union6_hu_cdc51529a4c99463.webp 760w,
+/course/gis/7_analysis/7_analysis_union6_hu_269a2e01c1a0fd3c.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_union6_hu_96773b37d02edb4a.webp"
 width="760"
 height="481"
 loading="lazy" data-zoomable />&lt;/div>
@@ -230,10 +230,10 @@ Kết quả sau Union
 &lt;figure id="figure-cách-hoạt-động-của-clip-input-là-lớp-a-clip-layer-là-lớp-b">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_clip1_hu_83462003128de2a3.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_clip1_hu_f71b7511e42b687e.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_clip1_hu_60d219b483901d54.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_clip1_hu_83462003128de2a3.webp"
+/course/gis/7_analysis/7_analysis_clip1_hu_83462003128de2a3.webp 400w,
+/course/gis/7_analysis/7_analysis_clip1_hu_f71b7511e42b687e.webp 760w,
+/course/gis/7_analysis/7_analysis_clip1_hu_60d219b483901d54.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_clip1_hu_83462003128de2a3.webp"
 width="443"
 height="201"
 loading="lazy" data-zoomable />&lt;/div>
@@ -252,10 +252,10 @@ Cách thực hiện:&lt;/p>
 &lt;figure id="figure-thiết-lập-tham-số-khi-xử-lý-clip">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_clip2_hu_a4c5922a3cb4847c.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_clip2_hu_20d4b88877bf870b.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_clip2_hu_5756a1236448f48.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_clip2_hu_a4c5922a3cb4847c.webp"
+/course/gis/7_analysis/7_analysis_clip2_hu_a4c5922a3cb4847c.webp 400w,
+/course/gis/7_analysis/7_analysis_clip2_hu_20d4b88877bf870b.webp 760w,
+/course/gis/7_analysis/7_analysis_clip2_hu_5756a1236448f48.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_clip2_hu_a4c5922a3cb4847c.webp"
 width="742"
 height="614"
 loading="lazy" data-zoomable />&lt;/div>
@@ -267,10 +267,10 @@ Thiết lập tham số khi xử lý Clip
 &lt;figure class="border border-black" id="figure-kết-quả-xử-lý-clip">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết quả xử lý Clip" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_clip3_hu_2c1c9edc01a388aa.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_clip3_hu_443b7d36efb15ce.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_clip3_hu_6c12ad460e010fa.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_clip3_hu_2c1c9edc01a388aa.webp"
+/course/gis/7_analysis/7_analysis_clip3_hu_2c1c9edc01a388aa.webp 400w,
+/course/gis/7_analysis/7_analysis_clip3_hu_443b7d36efb15ce.webp 760w,
+/course/gis/7_analysis/7_analysis_clip3_hu_6c12ad460e010fa.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_clip3_hu_2c1c9edc01a388aa.webp"
 width="760"
 height="436"
 loading="lazy" data-zoomable />&lt;/div>
@@ -289,10 +289,10 @@ Kết quả xử lý Clip
 &lt;figure class="border border-black" id="figure-ví-dụ-về-cách-sử-dụng-intersect-xác-định-các-đoạn-đường-giao-thông-bị-ngập-bởi-lũ-đường-màu-đỏ">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ví dụ về cách sử dụng intersect: xác định các đoạn đường giao thông bị ngập bởi lũ (đường màu đỏ)" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_intersect0_hu_a33ef46c99109fe.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_intersect0_hu_32464401fc3e7bcd.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_intersect0_hu_5db1b96c34e0c23e.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_intersect0_hu_a33ef46c99109fe.webp"
+/course/gis/7_analysis/7_analysis_intersect0_hu_a33ef46c99109fe.webp 400w,
+/course/gis/7_analysis/7_analysis_intersect0_hu_32464401fc3e7bcd.webp 760w,
+/course/gis/7_analysis/7_analysis_intersect0_hu_5db1b96c34e0c23e.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_intersect0_hu_a33ef46c99109fe.webp"
 width="743"
 height="622"
 loading="lazy" data-zoomable />&lt;/div>
@@ -303,10 +303,10 @@ Ví dụ về cách sử dụng intersect: xác định các đoạn đường g
 &lt;figure id="figure-cách-hoạt-động-của-intersection-giao-cắt-giữa-lớp-a-và-lớp-b-kết-quả-là-hình-bên-phải">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Cách hoạt động của Intersection, giao cắt giữa lớp a và lớp b, kết quả là hình bên phải" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_intersect1_hu_ff3f3d52fb0274cb.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_intersect1_hu_3f0ae279aab9057f.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_intersect1_hu_a52ea3ca04adc0e9.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_intersect1_hu_ff3f3d52fb0274cb.webp"
+/course/gis/7_analysis/7_analysis_intersect1_hu_ff3f3d52fb0274cb.webp 400w,
+/course/gis/7_analysis/7_analysis_intersect1_hu_3f0ae279aab9057f.webp 760w,
+/course/gis/7_analysis/7_analysis_intersect1_hu_a52ea3ca04adc0e9.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_intersect1_hu_ff3f3d52fb0274cb.webp"
 width="443"
 height="201"
 loading="lazy" data-zoomable />&lt;/div>
@@ -321,10 +321,10 @@ Cách thực hiện:&lt;/p>
 &lt;figure id="figure-add-2-lớp-vn_urbanareas-và-thainguyen_districts">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Add 2 lớp VN_urbanareas và ThaiNguyen_districts" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_intersect2_hu_c184612f3f893fb4.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_intersect2_hu_e4a8323790d1301a.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_intersect2_hu_3131b7446522878b.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_intersect2_hu_c184612f3f893fb4.webp"
+/course/gis/7_analysis/7_analysis_intersect2_hu_c184612f3f893fb4.webp 400w,
+/course/gis/7_analysis/7_analysis_intersect2_hu_e4a8323790d1301a.webp 760w,
+/course/gis/7_analysis/7_analysis_intersect2_hu_3131b7446522878b.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_intersect2_hu_c184612f3f893fb4.webp"
 width="760"
 height="455"
 loading="lazy" data-zoomable />&lt;/div>
@@ -337,10 +337,10 @@ Add 2 lớp VN_urbanareas và ThaiNguyen_districts
 &lt;figure id="figure-xác-lập-tham-số">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Xác lập tham số" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_intersect3_hu_157fc5a64f2411ce.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_intersect3_hu_87cb55e12da00067.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_intersect3_hu_c60692cb3ce7103b.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_intersect3_hu_157fc5a64f2411ce.webp"
+/course/gis/7_analysis/7_analysis_intersect3_hu_157fc5a64f2411ce.webp 400w,
+/course/gis/7_analysis/7_analysis_intersect3_hu_87cb55e12da00067.webp 760w,
+/course/gis/7_analysis/7_analysis_intersect3_hu_c60692cb3ce7103b.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_intersect3_hu_157fc5a64f2411ce.webp"
 width="760"
 height="589"
 loading="lazy" data-zoomable />&lt;/div>
@@ -352,10 +352,10 @@ Xác lập tham số
 &lt;figure id="figure-kết-quả-sau-khi-intersect">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết quả sau khi intersect" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_intersect4_hu_7697095b630d6d77.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_intersect4_hu_92a45e12aa2cac02.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_intersect4_hu_b17e59d2b6e23ca5.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_intersect4_hu_7697095b630d6d77.webp"
+/course/gis/7_analysis/7_analysis_intersect4_hu_7697095b630d6d77.webp 400w,
+/course/gis/7_analysis/7_analysis_intersect4_hu_92a45e12aa2cac02.webp 760w,
+/course/gis/7_analysis/7_analysis_intersect4_hu_b17e59d2b6e23ca5.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_intersect4_hu_7697095b630d6d77.webp"
 width="639"
 height="329"
 loading="lazy" data-zoomable />&lt;/div>
@@ -374,10 +374,10 @@ Kết quả sau khi intersect
 &lt;figure id="figure-cách-hoạt-động-của-symmetrical-difference">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Cách hoạt động của Symmetrical Difference" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_symm1_hu_5358efe1fe772cce.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_symm1_hu_12bb1e708deea388.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_symm1_hu_a8686f9c8aa2aebf.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_symm1_hu_5358efe1fe772cce.webp"
+/course/gis/7_analysis/7_analysis_symm1_hu_5358efe1fe772cce.webp 400w,
+/course/gis/7_analysis/7_analysis_symm1_hu_12bb1e708deea388.webp 760w,
+/course/gis/7_analysis/7_analysis_symm1_hu_a8686f9c8aa2aebf.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_symm1_hu_5358efe1fe772cce.webp"
 width="443"
 height="201"
 loading="lazy" data-zoomable />&lt;/div>
@@ -393,10 +393,10 @@ Cách thực hiện:&lt;/p>
 &lt;figure id="figure-thiết-lập-các-tham-số-của-symmetrical-difference">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Thiết lập các tham số của Symmetrical Difference" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_symm2_hu_fa9399bd504e5e1f.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_symm2_hu_187334535dd8d917.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_symm2_hu_c21f261e28307e0c.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_symm2_hu_fa9399bd504e5e1f.webp"
+/course/gis/7_analysis/7_analysis_symm2_hu_fa9399bd504e5e1f.webp 400w,
+/course/gis/7_analysis/7_analysis_symm2_hu_187334535dd8d917.webp 760w,
+/course/gis/7_analysis/7_analysis_symm2_hu_c21f261e28307e0c.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_symm2_hu_fa9399bd504e5e1f.webp"
 width="760"
 height="589"
 loading="lazy" data-zoomable />&lt;/div>
@@ -408,10 +408,10 @@ Thiết lập các tham số của Symmetrical Difference
 &lt;figure id="figure-hình-ảnh-kết-quả-trước-và-sau-khi-tiến-hành-symmetrical-difference">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Hình ảnh kết quả trước và sau khi tiến hành Symmetrical Difference" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_symm3_hu_1b17319516f73f34.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_symm3_hu_505801e8761312df.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_symm3_hu_e771c17b923baf1e.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_symm3_hu_1b17319516f73f34.webp"
+/course/gis/7_analysis/7_analysis_symm3_hu_1b17319516f73f34.webp 400w,
+/course/gis/7_analysis/7_analysis_symm3_hu_505801e8761312df.webp 760w,
+/course/gis/7_analysis/7_analysis_symm3_hu_e771c17b923baf1e.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_symm3_hu_1b17319516f73f34.webp"
 width="760"
 height="403"
 loading="lazy" data-zoomable />&lt;/div>
@@ -423,7 +423,7 @@ Hình ảnh kết quả trước và sau khi tiến hành Symmetrical Difference
 &lt;h2 id="các-công-cụ-chuyển-đổi-phép-chiếu-bản-đồ-reprojection">Các Công cụ chuyển đổi phép chiếu bản đồ (Reprojection)&lt;/h2>
 &lt;ul>
 &lt;li>Trong phân tích không gian, đôi khi cần thiết phải chuyển đổi hệ quy chiếu tọa độ của lớp thông tin GIS để phù hợp với mục đích sử dụng. Ví dụ: Không thể dùng CRS WGS84 (EPSG:4326) để thực hiện đo lường hoặc tính khoảng cách. Trường hợp này cần chuyển sang hệ tọa độ VN-2000 (EPSG:3405).&lt;/li>
-&lt;li>Lý thuyết về hệ quy chiếu tọa độ CRS và phép chiếu bản đồ đã trình bày ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/#lý-thuyết-về-các-hệ-thống-tham-chiếu-tọa-độ">Bài 2&lt;/a>&lt;/li>
+&lt;li>Lý thuyết về hệ quy chiếu tọa độ CRS và phép chiếu bản đồ đã trình bày ở &lt;a href="https://thaytunghanu.github.io/course/gis/2_crs/#lý-thuyết-về-các-hệ-thống-tham-chiếu-tọa-độ">Bài 2&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3 id="on-the-fly-reprojection">‘On the fly’ Reprojection&lt;/h3>
 &lt;ul>
@@ -447,10 +447,10 @@ Hình ảnh kết quả trước và sau khi tiến hành Symmetrical Difference
 &lt;figure id="figure-thiết-lập-crs-mặc-định-cho-dự-án-và-cho-lóp-thông-tin">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Thiết lập CRS mặc định cho dự án và cho lóp thông tin" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_reproj1_hu_5fa4a8a526ff969.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_reproj1_hu_1010610415ddd370.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_reproj1_hu_f8cbcb52940fcc98.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_reproj1_hu_5fa4a8a526ff969.webp"
+/course/gis/7_analysis/7_analysis_reproj1_hu_5fa4a8a526ff969.webp 400w,
+/course/gis/7_analysis/7_analysis_reproj1_hu_1010610415ddd370.webp 760w,
+/course/gis/7_analysis/7_analysis_reproj1_hu_f8cbcb52940fcc98.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_reproj1_hu_5fa4a8a526ff969.webp"
 width="760"
 height="410"
 loading="lazy" data-zoomable />&lt;/div>
@@ -468,10 +468,10 @@ Thiết lập CRS mặc định cho dự án và cho lóp thông tin
 &lt;figure id="figure-ví-dụ-về-otf-reprojection">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ví dụ về OTF Reprojection" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_reproj2_hu_46088b450c624196.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_reproj2_hu_998e713a6a22c871.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_reproj2_hu_6e9ae3e96303c99.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_reproj2_hu_46088b450c624196.webp"
+/course/gis/7_analysis/7_analysis_reproj2_hu_46088b450c624196.webp 400w,
+/course/gis/7_analysis/7_analysis_reproj2_hu_998e713a6a22c871.webp 760w,
+/course/gis/7_analysis/7_analysis_reproj2_hu_6e9ae3e96303c99.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_reproj2_hu_46088b450c624196.webp"
 width="760"
 height="383"
 loading="lazy" data-zoomable />&lt;/div>
@@ -495,10 +495,10 @@ Ví dụ về OTF Reprojection
 &lt;figure id="figure-reproject-layer">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Reproject layer" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_reproj3_hu_2c1df10219672507.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_reproj3_hu_2b83d4eaf9f99d2f.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_reproj3_hu_dda43d07f1e9fb24.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_reproj3_hu_2c1df10219672507.webp"
+/course/gis/7_analysis/7_analysis_reproj3_hu_2c1df10219672507.webp 400w,
+/course/gis/7_analysis/7_analysis_reproj3_hu_2b83d4eaf9f99d2f.webp 760w,
+/course/gis/7_analysis/7_analysis_reproj3_hu_dda43d07f1e9fb24.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_reproj3_hu_2c1df10219672507.webp"
 width="760"
 height="410"
 loading="lazy" data-zoomable />&lt;/div>
@@ -522,10 +522,10 @@ Reproject layer
 &lt;figure id="figure-minh-họa-buffer-của-đối-tượng-điểm-đường-vùng">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Minh họa buffer của đối tượng điểm, đường, vùng" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_buffer1_hu_283b1d3aa51d89c8.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_buffer1_hu_668f6038cfae2c4f.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_buffer1_hu_9042cab66bc202fa.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_buffer1_hu_283b1d3aa51d89c8.webp"
+/course/gis/7_analysis/7_analysis_buffer1_hu_283b1d3aa51d89c8.webp 400w,
+/course/gis/7_analysis/7_analysis_buffer1_hu_668f6038cfae2c4f.webp 760w,
+/course/gis/7_analysis/7_analysis_buffer1_hu_9042cab66bc202fa.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_buffer1_hu_283b1d3aa51d89c8.webp"
 width="664"
 height="243"
 loading="lazy" data-zoomable />&lt;/div>
@@ -546,10 +546,10 @@ Minh họa buffer của đối tượng điểm, đường, vùng
 &lt;figure id="figure-thiết-lập-tham-số-tạo-buffer-1-km-cho-mỗi-vị-trí-đập-thủy-điện">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Thiết lập tham số tạo buffer 1 km cho mỗi vị trí đập thủy điện" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_buffer2_hu_4b91e3fd9f5217ce.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_buffer2_hu_d89e36fa591161ed.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_buffer2_hu_23f0c25cc0a7a3e8.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_buffer2_hu_4b91e3fd9f5217ce.webp"
+/course/gis/7_analysis/7_analysis_buffer2_hu_4b91e3fd9f5217ce.webp 400w,
+/course/gis/7_analysis/7_analysis_buffer2_hu_d89e36fa591161ed.webp 760w,
+/course/gis/7_analysis/7_analysis_buffer2_hu_23f0c25cc0a7a3e8.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_buffer2_hu_4b91e3fd9f5217ce.webp"
 width="760"
 height="609"
 loading="lazy" data-zoomable />&lt;/div>
@@ -564,10 +564,10 @@ Thiết lập tham số tạo buffer 1 km cho mỗi vị trí đập thủy đi�
 &lt;figure id="figure-kết-quả-tạo-buffer">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết quả tạo buffer" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_buffer3_hu_9ef282485ed878a2.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_buffer3_hu_d31edbc60d36c0aa.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_buffer3_hu_c6bd25684ec018f7.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_buffer3_hu_9ef282485ed878a2.webp"
+/course/gis/7_analysis/7_analysis_buffer3_hu_9ef282485ed878a2.webp 400w,
+/course/gis/7_analysis/7_analysis_buffer3_hu_d31edbc60d36c0aa.webp 760w,
+/course/gis/7_analysis/7_analysis_buffer3_hu_c6bd25684ec018f7.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_buffer3_hu_9ef282485ed878a2.webp"
 width="760"
 height="408"
 loading="lazy" data-zoomable />&lt;/div>
@@ -580,10 +580,10 @@ Kết quả tạo buffer
 &lt;figure id="figure-thiết-lập-tham-số-tạo-buffer-với-lựa-chọn-dissolve-result">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Thiết lập tham số tạo buffer với lựa chọn dissolve result" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_buffer4_hu_e728082c193a5a44.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_buffer4_hu_4f77f66c60cbcacc.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_buffer4_hu_5359fb140796a18f.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_buffer4_hu_e728082c193a5a44.webp"
+/course/gis/7_analysis/7_analysis_buffer4_hu_e728082c193a5a44.webp 400w,
+/course/gis/7_analysis/7_analysis_buffer4_hu_4f77f66c60cbcacc.webp 760w,
+/course/gis/7_analysis/7_analysis_buffer4_hu_5359fb140796a18f.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_buffer4_hu_e728082c193a5a44.webp"
 width="760"
 height="449"
 loading="lazy" data-zoomable />&lt;/div>
@@ -593,10 +593,10 @@ Thiết lập tham số tạo buffer với lựa chọn dissolve result
 &lt;figure id="figure-kết-quả-tạo-buffer-với-dissolve-result">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết quả tạo buffer với dissolve result" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_buffer5_hu_434b508d51d2728f.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_buffer5_hu_8e022a66a50afbca.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_buffer5_hu_ac19f98dd83e56a0.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_buffer5_hu_434b508d51d2728f.webp"
+/course/gis/7_analysis/7_analysis_buffer5_hu_434b508d51d2728f.webp 400w,
+/course/gis/7_analysis/7_analysis_buffer5_hu_8e022a66a50afbca.webp 760w,
+/course/gis/7_analysis/7_analysis_buffer5_hu_ac19f98dd83e56a0.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_buffer5_hu_434b508d51d2728f.webp"
 width="760"
 height="474"
 loading="lazy" data-zoomable />&lt;/div>
@@ -624,10 +624,10 @@ Kết quả tạo buffer với dissolve result
 &lt;figure id="figure-thiết-lập-tham-số-đếm-điểm-trong-vùng">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Thiết lập tham số đếm điểm trong vùng" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_countpoint1_hu_80b5f5c686343e8.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_countpoint1_hu_2409a19f5ec1fa51.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_countpoint1_hu_1e9d3797796a01e5.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_countpoint1_hu_80b5f5c686343e8.webp"
+/course/gis/7_analysis/7_analysis_countpoint1_hu_80b5f5c686343e8.webp 400w,
+/course/gis/7_analysis/7_analysis_countpoint1_hu_2409a19f5ec1fa51.webp 760w,
+/course/gis/7_analysis/7_analysis_countpoint1_hu_1e9d3797796a01e5.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_countpoint1_hu_80b5f5c686343e8.webp"
 width="760"
 height="562"
 loading="lazy" data-zoomable />&lt;/div>
@@ -645,10 +645,10 @@ Thiết lập tham số đếm điểm trong vùng
 &lt;figure id="figure-kết-quả">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết quả" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_countpoint2_hu_b85ea7a61a0e5d28.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_countpoint2_hu_f31c51fa4363fae.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_countpoint2_hu_59c145cdd1bc2994.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_countpoint2_hu_b85ea7a61a0e5d28.webp"
+/course/gis/7_analysis/7_analysis_countpoint2_hu_b85ea7a61a0e5d28.webp 400w,
+/course/gis/7_analysis/7_analysis_countpoint2_hu_f31c51fa4363fae.webp 760w,
+/course/gis/7_analysis/7_analysis_countpoint2_hu_59c145cdd1bc2994.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_countpoint2_hu_b85ea7a61a0e5d28.webp"
 width="574"
 height="538"
 loading="lazy" data-zoomable />&lt;/div>
@@ -668,10 +668,10 @@ Kết quả
 &lt;figure id="figure-yêu-cầu-kết-quả-homework-phần-1">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Yêu cầu kết quả homework phần 1" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_homework1_hu_e716e1f6f027543c.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_homework1_hu_763099cc2fc9cbde.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_homework1_hu_6371c15ae3f881a3.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_homework1_hu_e716e1f6f027543c.webp"
+/course/gis/7_analysis/7_analysis_homework1_hu_e716e1f6f027543c.webp 400w,
+/course/gis/7_analysis/7_analysis_homework1_hu_763099cc2fc9cbde.webp 760w,
+/course/gis/7_analysis/7_analysis_homework1_hu_6371c15ae3f881a3.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_homework1_hu_e716e1f6f027543c.webp"
 width="760"
 height="510"
 loading="lazy" data-zoomable />&lt;/div>
@@ -685,14 +685,14 @@ Yêu cầu kết quả homework phần 1
 &lt;li>Lên website Open Development Vietnam tìm dữ liệu tên là “&lt;em>Reservoirs of the Greater Mekong Subregion; Thailand, Cambodia, Laos, Vietnam and Myanmar&lt;/em>”.&lt;/li>
 &lt;li>Download dữ liệu tên là &lt;strong>VN_Reservoirs&lt;/strong>, chuyển hệ tọa độ của lớp này về EPSG:3405.&lt;/li>
 &lt;li>Tạo buffer 25km quanh mỗi đối tượng Reservoirs, có sử dụng ‘Dissolve result’&lt;/li>
-&lt;li>Chọn những tỉnh mà chạm (touch) vào buffer của các hồ chứa. Chọn bằng Select by location, xem lại bài &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/#chọn-đối-tượng-dựa-trên-vị-trí-select-by-location">ở đây&lt;/a>. Có điểm gì nổi bật ở những tỉnh này.
+&lt;li>Chọn những tỉnh mà chạm (touch) vào buffer của các hồ chứa. Chọn bằng Select by location, xem lại bài &lt;a href="https://thaytunghanu.github.io/course/gis/6_query/#chọn-đối-tượng-dựa-trên-vị-trí-select-by-location">ở đây&lt;/a>. Có điểm gì nổi bật ở những tỉnh này.
 &lt;figure id="figure-yêu-cầu-kết-quả-homework-phần-2">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Yêu cầu kết quả homework phần 2" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_homework2_hu_ecd8558e0ec496cc.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_homework2_hu_7aed36b9d2417320.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_homework2_hu_cb853ded043d3bc2.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_homework2_hu_ecd8558e0ec496cc.webp"
+/course/gis/7_analysis/7_analysis_homework2_hu_ecd8558e0ec496cc.webp 400w,
+/course/gis/7_analysis/7_analysis_homework2_hu_7aed36b9d2417320.webp 760w,
+/course/gis/7_analysis/7_analysis_homework2_hu_cb853ded043d3bc2.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_homework2_hu_ecd8558e0ec496cc.webp"
 width="492"
 height="760"
 loading="lazy" data-zoomable />&lt;/div>
@@ -709,10 +709,10 @@ Yêu cầu kết quả homework phần 2
 &lt;figure id="figure-minh-họa-homework-phần-3">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Minh họa homework phần 3" srcset="
-/onlinecourse/course/gis/7_analysis/7_analysis_homework3_hu_c5f826f7b0f32a26.webp 400w,
-/onlinecourse/course/gis/7_analysis/7_analysis_homework3_hu_a378b1b2a59b8b54.webp 760w,
-/onlinecourse/course/gis/7_analysis/7_analysis_homework3_hu_10f01a27b0f2814c.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/7_analysis_homework3_hu_c5f826f7b0f32a26.webp"
+/course/gis/7_analysis/7_analysis_homework3_hu_c5f826f7b0f32a26.webp 400w,
+/course/gis/7_analysis/7_analysis_homework3_hu_a378b1b2a59b8b54.webp 760w,
+/course/gis/7_analysis/7_analysis_homework3_hu_10f01a27b0f2814c.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/7_analysis/7_analysis_homework3_hu_c5f826f7b0f32a26.webp"
 width="645"
 height="482"
 loading="lazy" data-zoomable />&lt;/div>

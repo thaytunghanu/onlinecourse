@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Select | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/tag/select/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/tag/select/index.xml" rel="self" type="application/rss+xml"/><description>Select</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Select</title><link>https://thaytunghanu.github.io/onlinecourse/tag/select/</link></image><item><title>6. Truy vấn dữ liệu vector</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/</guid><description>&lt;p>Thực hành về truy vấn/chọn dữ liệu vector: truy vấn dựa vào thuộc tính và truy vấn dựa vào vị trí.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Select | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/tag/select/</link><atom:link href="https://thaytunghanu.github.io/tag/select/index.xml" rel="self" type="application/rss+xml"/><description>Select</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Select</title><link>https://thaytunghanu.github.io/tag/select/</link></image><item><title>6. Truy vấn dữ liệu vector</title><link>https://thaytunghanu.github.io/course/gis/6_query/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/course/gis/6_query/</guid><description>&lt;p>Thực hành về truy vấn/chọn dữ liệu vector: truy vấn dựa vào thuộc tính và truy vấn dựa vào vị trí.&lt;/p>
 &lt;ul>
 &lt;li>Ở các bài trước, chúng ta đã học cách tạo (số hóa) đối tượng, nhập/tính toán dữ liệu thuộc tính, và thể hiện bản đồ (Symbology). Bài này sẽ giới thiệu những chức năng chọn đối tượng dựa trên các điều kiện đặt ra cho dữ liệu thuộc tính, hoặc dựa trên vị trí của đối tượng.&lt;/li>
 &lt;li>Mục đích của việc chọn đối tượng là sau đó chúng ta có thể xử lý riêng những đối tượng đã chọn, ví dụ: phân tích không gian, thống kê hoặc xuất dữ liệu riêng.&lt;/li>
 &lt;/ul>
 &lt;h2 id="dữ-liệu-thực-hành">Dữ liệu thực hành&lt;/h2>
-&lt;p>Lớp Vietnam_provinces_2015population đã làm ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/#homework">Homework số 7, Bài 4&lt;/a>. Lớp này chính là Vietnam_Provinces đã liên kết thêm các trường thông tin dân số 2015.&lt;/p>
+&lt;p>Lớp Vietnam_provinces_2015population đã làm ở &lt;a href="https://thaytunghanu.github.io/course/gis/4_attribute/#homework">Homework số 7, Bài 4&lt;/a>. Lớp này chính là Vietnam_Provinces đã liên kết thêm các trường thông tin dân số 2015.&lt;/p>
 &lt;p>Một số lớp dữ liệu khác ở đây: &lt;a href="https://drive.google.com/drive/folders/1cGs0fwr60t1iiOxUr2SBVG4aseZOQRE2?usp=drive_link" target="_blank" rel="noopener">Download dữ liệu Dataset Part 5 ở đây.&lt;/a>&lt;br>
 Các lớp bao gồm:&lt;/p>
 &lt;ul>
@@ -14,16 +14,16 @@ Các lớp bao gồm:&lt;/p>
 &lt;/ul>
 &lt;h2 id="chọn-đối-tượng-thủ-công-dựa-vào-chuột-và-bàn-phím">Chọn đối tượng thủ công dựa vào chuột và bàn phím&lt;/h2>
 &lt;ul>
-&lt;li>Như đã đề cập ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/2_crs/#thanh-công-cụ-selection-toolbar">Bài 2&lt;/a>, công cụ Select Features by Area or Single Click (gọi tắt là Select Features) được dùng để chọn đối tượng. Thực hiện: chọn lớp cần thao tác ở Layers Panel &amp;gt; ấn chuột trái vào đối tượng cần chọn, sau đó đối tượng được chọn sẽ được tô sáng màu vàng.&lt;/li>
+&lt;li>Như đã đề cập ở &lt;a href="https://thaytunghanu.github.io/course/gis/2_crs/#thanh-công-cụ-selection-toolbar">Bài 2&lt;/a>, công cụ Select Features by Area or Single Click (gọi tắt là Select Features) được dùng để chọn đối tượng. Thực hiện: chọn lớp cần thao tác ở Layers Panel &amp;gt; ấn chuột trái vào đối tượng cần chọn, sau đó đối tượng được chọn sẽ được tô sáng màu vàng.&lt;/li>
 &lt;li>Có thể chọn nhiều đối tượng bằng cách kết hợp Ctrl + click chuột trái khi sử dụng Select Features.&lt;/li>
 &lt;li>Bỏ chọn bằng cách ấn chuột trái ra ngoài khoảng trống ở Map Canvas hoặc ấn nút Deselect Features.
 &lt;figure id="figure-chọn-nhiều-đối-tượng-bằng-ctrl--click-chuột-trái">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/6_query/6_query_multiselect_hu_119d5d7a6242bab6.webp 400w,
-/onlinecourse/course/gis/6_query/6_query_multiselect_hu_cad70d5d1d33c65d.webp 760w,
-/onlinecourse/course/gis/6_query/6_query_multiselect_hu_21160f16505e7d55.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_multiselect_hu_119d5d7a6242bab6.webp"
+/course/gis/6_query/6_query_multiselect_hu_119d5d7a6242bab6.webp 400w,
+/course/gis/6_query/6_query_multiselect_hu_cad70d5d1d33c65d.webp 760w,
+/course/gis/6_query/6_query_multiselect_hu_21160f16505e7d55.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/6_query/6_query_multiselect_hu_119d5d7a6242bab6.webp"
 width="605"
 height="474"
 loading="lazy" data-zoomable />&lt;/div>
@@ -96,10 +96,10 @@ max-width: 100% !important;
 &lt;figure id="figure-sub-menu-của-select-features">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/6_query/6_query_submenu_hu_a5e799a1d24b128e.webp 400w,
-/onlinecourse/course/gis/6_query/6_query_submenu_hu_53396032506c6814.webp 760w,
-/onlinecourse/course/gis/6_query/6_query_submenu_hu_d2ca2ace5b711ad6.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_submenu_hu_a5e799a1d24b128e.webp"
+/course/gis/6_query/6_query_submenu_hu_a5e799a1d24b128e.webp 400w,
+/course/gis/6_query/6_query_submenu_hu_53396032506c6814.webp 760w,
+/course/gis/6_query/6_query_submenu_hu_d2ca2ace5b711ad6.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/6_query/6_query_submenu_hu_a5e799a1d24b128e.webp"
 width="295"
 height="144"
 loading="lazy" data-zoomable />&lt;/div>
@@ -109,10 +109,10 @@ Sub-menu của Select Features
 &lt;figure id="figure-select-features-by-polygon">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/6_query/6_query_polygon_hu_900e7430366ae8c9.webp 400w,
-/onlinecourse/course/gis/6_query/6_query_polygon_hu_90350a41b095d21b.webp 760w,
-/onlinecourse/course/gis/6_query/6_query_polygon_hu_4807293b735790a8.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_polygon_hu_900e7430366ae8c9.webp"
+/course/gis/6_query/6_query_polygon_hu_900e7430366ae8c9.webp 400w,
+/course/gis/6_query/6_query_polygon_hu_90350a41b095d21b.webp 760w,
+/course/gis/6_query/6_query_polygon_hu_4807293b735790a8.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/6_query/6_query_polygon_hu_900e7430366ae8c9.webp"
 width="760"
 height="241"
 loading="lazy" data-zoomable />&lt;/div>
@@ -125,10 +125,10 @@ Select Features by Polygon
 &lt;figure id="figure-lưu-các-đối-tượng-đã-chọn-sang-lớp-mới">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/6_query/6_query_savefeature_hu_d7e360eed34da96.webp 400w,
-/onlinecourse/course/gis/6_query/6_query_savefeature_hu_d788607e38b68f75.webp 760w,
-/onlinecourse/course/gis/6_query/6_query_savefeature_hu_3d1ae80e60f27c9d.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_savefeature_hu_d7e360eed34da96.webp"
+/course/gis/6_query/6_query_savefeature_hu_d7e360eed34da96.webp 400w,
+/course/gis/6_query/6_query_savefeature_hu_d788607e38b68f75.webp 760w,
+/course/gis/6_query/6_query_savefeature_hu_3d1ae80e60f27c9d.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/6_query/6_query_savefeature_hu_d7e360eed34da96.webp"
 width="760"
 height="410"
 loading="lazy" data-zoomable />&lt;/div>
@@ -139,7 +139,7 @@ Lưu các đối tượng đã chọn sang lớp mới
 &lt;/ul>
 &lt;h2 id="chọn-đối-tượng-sử-dụng-chức-năng-filter">Chọn đối tượng sử dụng chức năng filter&lt;/h2>
 &lt;ul>
-&lt;li>Cách hoạt động của chức năng này tương tự như cách thực hiện &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/#rule-based-phân-loại-theo-quy-tắc">Rule-based Symbology&lt;/a>.&lt;/li>
+&lt;li>Cách hoạt động của chức năng này tương tự như cách thực hiện &lt;a href="https://thaytunghanu.github.io/course/gis/5_symbology/#rule-based-phân-loại-theo-quy-tắc">Rule-based Symbology&lt;/a>.&lt;/li>
 &lt;li>Giả sử ta cần chọn riêng thành phố TW, cần thực hiện như sau:
 &lt;ul>
 &lt;li>Chuột phải vào lớp mục tiêu ở Layers Panel &amp;gt; Filter &amp;gt; Hộp &lt;strong>Query Builder&lt;/strong> hiện ra.&lt;/li>
@@ -148,10 +148,10 @@ Lưu các đối tượng đã chọn sang lớp mới
 &lt;figure id="figure-kết-quả-chọn-bằng-filter">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/6_query/6_query_filter_hu_128b6c883125b85d.webp 400w,
-/onlinecourse/course/gis/6_query/6_query_filter_hu_4519cff1a7c91025.webp 760w,
-/onlinecourse/course/gis/6_query/6_query_filter_hu_e4d5f67a168b10d5.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_filter_hu_128b6c883125b85d.webp"
+/course/gis/6_query/6_query_filter_hu_128b6c883125b85d.webp 400w,
+/course/gis/6_query/6_query_filter_hu_4519cff1a7c91025.webp 760w,
+/course/gis/6_query/6_query_filter_hu_e4d5f67a168b10d5.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/6_query/6_query_filter_hu_128b6c883125b85d.webp"
 width="412"
 height="760"
 loading="lazy" data-zoomable />&lt;/div>
@@ -170,10 +170,10 @@ Thực hiện:&lt;/p>
 &lt;figure id="figure-select-features-by-expression">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/6_query/6_query_expression_hu_8e7247ee8f8df8ce.webp 400w,
-/onlinecourse/course/gis/6_query/6_query_expression_hu_e4a1f52f0b960e8d.webp 760w,
-/onlinecourse/course/gis/6_query/6_query_expression_hu_c3db28df44364bfa.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_expression_hu_8e7247ee8f8df8ce.webp"
+/course/gis/6_query/6_query_expression_hu_8e7247ee8f8df8ce.webp 400w,
+/course/gis/6_query/6_query_expression_hu_e4a1f52f0b960e8d.webp 760w,
+/course/gis/6_query/6_query_expression_hu_c3db28df44364bfa.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/6_query/6_query_expression_hu_8e7247ee8f8df8ce.webp"
 width="423"
 height="272"
 loading="lazy" data-zoomable />&lt;/div>
@@ -182,14 +182,14 @@ Select Features by Expression
 &lt;/figcaption>&lt;/figure>
 &lt;/li>
 &lt;li>Đánh công thức vào ô Expression: &lt;code>&amp;quot;Density&amp;quot; &amp;gt;= 100&lt;/code>&lt;/li>
-&lt;li>Chú ý &amp;ldquo;Density&amp;rdquo; chính là trường Density (mật độ dân số) mà bạn đã tạo ra từ &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/#homework">Homework số 7, Bài 4&lt;/a>.
+&lt;li>Chú ý &amp;ldquo;Density&amp;rdquo; chính là trường Density (mật độ dân số) mà bạn đã tạo ra từ &lt;a href="https://thaytunghanu.github.io/course/gis/4_attribute/#homework">Homework số 7, Bài 4&lt;/a>.
 &lt;figure id="figure-kết-quả-chọn-dựa-trên-thuộc-tính-mật-độ-dân-số-không-nhỏ-hơn-100-ngườikm2">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/6_query/6_query_expression2_hu_d065f92713905db1.webp 400w,
-/onlinecourse/course/gis/6_query/6_query_expression2_hu_780f8ce239cbe12a.webp 760w,
-/onlinecourse/course/gis/6_query/6_query_expression2_hu_b182082f2c1fd3f8.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_expression2_hu_d065f92713905db1.webp"
+/course/gis/6_query/6_query_expression2_hu_d065f92713905db1.webp 400w,
+/course/gis/6_query/6_query_expression2_hu_780f8ce239cbe12a.webp 760w,
+/course/gis/6_query/6_query_expression2_hu_b182082f2c1fd3f8.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/6_query/6_query_expression2_hu_d065f92713905db1.webp"
 width="760"
 height="528"
 loading="lazy" data-zoomable />&lt;/div>
@@ -215,10 +215,10 @@ Các bước thực hiện:&lt;/p>
 &lt;figure id="figure-nút-select-by-location">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/6_query/6_query_location_hu_af3a21750cbb5808.webp 400w,
-/onlinecourse/course/gis/6_query/6_query_location_hu_8122fdcdc3cbacdc.webp 760w,
-/onlinecourse/course/gis/6_query/6_query_location_hu_aeb7984d035364da.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_location_hu_af3a21750cbb5808.webp"
+/course/gis/6_query/6_query_location_hu_af3a21750cbb5808.webp 400w,
+/course/gis/6_query/6_query_location_hu_8122fdcdc3cbacdc.webp 760w,
+/course/gis/6_query/6_query_location_hu_aeb7984d035364da.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/6_query/6_query_location_hu_af3a21750cbb5808.webp"
 width="275"
 height="73"
 loading="lazy" data-zoomable />&lt;/div>
@@ -249,10 +249,10 @@ Trong bài này yêu cầu chọn các huyện nằm hoàn toàn bên trong các
 &lt;figure id="figure-kết-quả-khi-chọn-dựa-trên-vị-trí">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/6_query/6_query_location2_hu_db12c4f3c1a58622.webp 400w,
-/onlinecourse/course/gis/6_query/6_query_location2_hu_111c29c3ecdd2ee1.webp 760w,
-/onlinecourse/course/gis/6_query/6_query_location2_hu_e47e8ef9ac7fa889.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_location2_hu_db12c4f3c1a58622.webp"
+/course/gis/6_query/6_query_location2_hu_db12c4f3c1a58622.webp 400w,
+/course/gis/6_query/6_query_location2_hu_111c29c3ecdd2ee1.webp 760w,
+/course/gis/6_query/6_query_location2_hu_e47e8ef9ac7fa889.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/6_query/6_query_location2_hu_db12c4f3c1a58622.webp"
 width="760"
 height="410"
 loading="lazy" data-zoomable />&lt;/div>
@@ -268,10 +268,10 @@ Kết quả khi chọn dựa trên vị trí
 &lt;figure id="figure-kết-quả-mẫu">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/6_query/6_query_homework1_hu_af649b5cb84aecb1.webp 400w,
-/onlinecourse/course/gis/6_query/6_query_homework1_hu_99796b3e8d443897.webp 760w,
-/onlinecourse/course/gis/6_query/6_query_homework1_hu_ced317cefc9dec0f.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_homework1_hu_af649b5cb84aecb1.webp"
+/course/gis/6_query/6_query_homework1_hu_af649b5cb84aecb1.webp 400w,
+/course/gis/6_query/6_query_homework1_hu_99796b3e8d443897.webp 760w,
+/course/gis/6_query/6_query_homework1_hu_ced317cefc9dec0f.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/6_query/6_query_homework1_hu_af649b5cb84aecb1.webp"
 width="405"
 height="760"
 loading="lazy" data-zoomable />&lt;/div>
@@ -288,10 +288,10 @@ Kết quả mẫu
 &lt;figure id="figure-land-uses-của-vo-nhai">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/6_query/6_query_homework2_hu_d40f564ecf028d8.webp 400w,
-/onlinecourse/course/gis/6_query/6_query_homework2_hu_af22fcb79e4b4e93.webp 760w,
-/onlinecourse/course/gis/6_query/6_query_homework2_hu_c5c9a1c92f3ecd.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/6_query/6_query_homework2_hu_d40f564ecf028d8.webp"
+/course/gis/6_query/6_query_homework2_hu_d40f564ecf028d8.webp 400w,
+/course/gis/6_query/6_query_homework2_hu_af22fcb79e4b4e93.webp 760w,
+/course/gis/6_query/6_query_homework2_hu_c5c9a1c92f3ecd.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/6_query/6_query_homework2_hu_d40f564ecf028d8.webp"
 width="760"
 height="445"
 loading="lazy" data-zoomable />&lt;/div>

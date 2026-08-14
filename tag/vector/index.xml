@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vector | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/tag/vector/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/tag/vector/index.xml" rel="self" type="application/rss+xml"/><description>Vector</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 24 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Vector</title><link>https://thaytunghanu.github.io/onlinecourse/tag/vector/</link></image><item><title>3. Dữ liệu GIS, làm việc với dữ liệu vector</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/</link><pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/</guid><description>&lt;p>Lý thuyết về dữ liệu GIS: vector và raster. Thực hành làm việc với dữ liệu vector.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vector | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/tag/vector/</link><atom:link href="https://thaytunghanu.github.io/tag/vector/index.xml" rel="self" type="application/rss+xml"/><description>Vector</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 24 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Vector</title><link>https://thaytunghanu.github.io/tag/vector/</link></image><item><title>3. Dữ liệu GIS, làm việc với dữ liệu vector</title><link>https://thaytunghanu.github.io/course/gis/3_gisdata/</link><pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/course/gis/3_gisdata/</guid><description>&lt;p>Lý thuyết về dữ liệu GIS: vector và raster. Thực hành làm việc với dữ liệu vector.&lt;/p>
 &lt;h2 id="lý-thuyết-về-các-loại-dữ-liệu-không-gian">Lý thuyết về các loại dữ liệu không gian&lt;/h2>
 &lt;!--
 &lt;div class="responsive-wrap">
@@ -19,10 +19,10 @@ Dữ liệu bao gồm lớp: file điểm vị trí hồ Bảo Linh để địn
 &lt;figure id="figure-tạo-mới-một-lớp-shapefile">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp_hu_7e9b86b1f3ae4b21.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp_hu_494f8317efb7f06d.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp_hu_eebcccc7e7a9b2d9.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp_hu_7e9b86b1f3ae4b21.webp"
+/course/gis/3_gisdata/3_gisdata_newshp_hu_7e9b86b1f3ae4b21.webp 400w,
+/course/gis/3_gisdata/3_gisdata_newshp_hu_494f8317efb7f06d.webp 760w,
+/course/gis/3_gisdata/3_gisdata_newshp_hu_eebcccc7e7a9b2d9.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_newshp_hu_7e9b86b1f3ae4b21.webp"
 width="760"
 height="403"
 loading="lazy" data-zoomable />&lt;/div>
@@ -48,10 +48,10 @@ Hãy bắt đầu bằng việc tạo lớp Lake (hồ).&lt;/p>
 &lt;figure id="figure-thiết-lập-các-tham-số-khi-tạo-một-lớp-shapefile">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp2_hu_93309e5265cbae26.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp2_hu_1344af9edbbf9838.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp2_hu_25fc9266985c26b5.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp2_hu_93309e5265cbae26.webp"
+/course/gis/3_gisdata/3_gisdata_newshp2_hu_93309e5265cbae26.webp 400w,
+/course/gis/3_gisdata/3_gisdata_newshp2_hu_1344af9edbbf9838.webp 760w,
+/course/gis/3_gisdata/3_gisdata_newshp2_hu_25fc9266985c26b5.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_newshp2_hu_93309e5265cbae26.webp"
 width="760"
 height="338"
 loading="lazy" data-zoomable />&lt;/div>
@@ -65,10 +65,10 @@ Thiết lập các tham số khi tạo một lớp shapefile
 &lt;figure id="figure-lớp-mới-xuất-hiện-ở-layers-panel">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp3_hu_da3521416130a55.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp3_hu_8b4ed1c7b1dd7621.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp3_hu_1aa41a014618f0e2.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp3_hu_da3521416130a55.webp"
+/course/gis/3_gisdata/3_gisdata_newshp3_hu_da3521416130a55.webp 400w,
+/course/gis/3_gisdata/3_gisdata_newshp3_hu_8b4ed1c7b1dd7621.webp 760w,
+/course/gis/3_gisdata/3_gisdata_newshp3_hu_1aa41a014618f0e2.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_newshp3_hu_da3521416130a55.webp"
 width="280"
 height="85"
 loading="lazy" data-zoomable />&lt;/div>
@@ -85,10 +85,10 @@ Lớp mới xuất hiện ở Layers Panel
 &lt;figure id="figure-mở-bảng-thuộc-tính-của-lớp-lake-mới-tạo">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp4_hu_6e30d374832103a6.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp4_hu_40c61b0f8eae4173.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp4_hu_537d59d777b7eefe.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp4_hu_6e30d374832103a6.webp"
+/course/gis/3_gisdata/3_gisdata_newshp4_hu_6e30d374832103a6.webp 400w,
+/course/gis/3_gisdata/3_gisdata_newshp4_hu_40c61b0f8eae4173.webp 760w,
+/course/gis/3_gisdata/3_gisdata_newshp4_hu_537d59d777b7eefe.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_newshp4_hu_6e30d374832103a6.webp"
 width="760"
 height="403"
 loading="lazy" data-zoomable />&lt;/div>
@@ -105,10 +105,10 @@ Mở bảng thuộc tính của lớp Lake mới tạo
 &lt;figure id="figure-tạo-các-lớp-deforested_areas-và-main_roads">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp5_hu_6134e7e779aaa41d.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp5_hu_5e5e1eabf43872db.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp5_hu_8990e0fbfe30580a.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_newshp5_hu_6134e7e779aaa41d.webp"
+/course/gis/3_gisdata/3_gisdata_newshp5_hu_6134e7e779aaa41d.webp 400w,
+/course/gis/3_gisdata/3_gisdata_newshp5_hu_5e5e1eabf43872db.webp 760w,
+/course/gis/3_gisdata/3_gisdata_newshp5_hu_8990e0fbfe30580a.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_newshp5_hu_6134e7e779aaa41d.webp"
 width="306"
 height="117"
 loading="lazy" data-zoomable />&lt;/div>
@@ -123,10 +123,10 @@ Tạo các lớp Deforested_Areas và Main_Roads
 &lt;figure id="figure-định-vị-khu-vực-hồ-bảo-linh">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize1_hu_ea0d9b6aaafe06fd.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize1_hu_e7a2771c21d28a41.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize1_hu_2da9aa6b3a4d61fe.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize1_hu_ea0d9b6aaafe06fd.webp"
+/course/gis/3_gisdata/3_gisdata_digitize1_hu_ea0d9b6aaafe06fd.webp 400w,
+/course/gis/3_gisdata/3_gisdata_digitize1_hu_e7a2771c21d28a41.webp 760w,
+/course/gis/3_gisdata/3_gisdata_digitize1_hu_2da9aa6b3a4d61fe.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_digitize1_hu_ea0d9b6aaafe06fd.webp"
 width="760"
 height="416"
 loading="lazy" data-zoomable />&lt;/div>
@@ -143,10 +143,10 @@ Ví dụ: khi mỗi tỉnh là một đối tượng dạng vùng, 2 tỉnh li�
 &lt;figure id="figure-snapping-option">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize2_hu_ce69ddc07a2baf3c.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize2_hu_4e2fbc656c0c84a8.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize2_hu_634cb9825363eba8.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize2_hu_ce69ddc07a2baf3c.webp"
+/course/gis/3_gisdata/3_gisdata_digitize2_hu_ce69ddc07a2baf3c.webp 400w,
+/course/gis/3_gisdata/3_gisdata_digitize2_hu_4e2fbc656c0c84a8.webp 760w,
+/course/gis/3_gisdata/3_gisdata_digitize2_hu_634cb9825363eba8.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_digitize2_hu_ce69ddc07a2baf3c.webp"
 width="760"
 height="395"
 loading="lazy" data-zoomable />&lt;/div>
@@ -158,10 +158,10 @@ Snapping Option
 &lt;figure id="figure-snapping-toolbar--enable-snapping">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize3_hu_5228488f6cfb629b.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize3_hu_1b18c5dbfdd5d8bf.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize3_hu_34f68fc086eaf056.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize3_hu_5228488f6cfb629b.webp"
+/course/gis/3_gisdata/3_gisdata_digitize3_hu_5228488f6cfb629b.webp 400w,
+/course/gis/3_gisdata/3_gisdata_digitize3_hu_1b18c5dbfdd5d8bf.webp 760w,
+/course/gis/3_gisdata/3_gisdata_digitize3_hu_34f68fc086eaf056.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_digitize3_hu_5228488f6cfb629b.webp"
 width="443"
 height="57"
 loading="lazy" data-zoomable />&lt;/div>
@@ -173,10 +173,10 @@ Snapping Toolbar &amp;gt; Enable Snapping
 &lt;figure id="figure-đang-ở-chế-độ-snapping-hiện-hình-vuông-màu-hồng-nếu-di-chuột-vào-đỉnh-có-sẵn">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize4_hu_1c8be9c70c849ac8.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize4_hu_72a5c523aeba2b.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize4_hu_c0ed88bd86e3c080.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize4_hu_1c8be9c70c849ac8.webp"
+/course/gis/3_gisdata/3_gisdata_digitize4_hu_1c8be9c70c849ac8.webp 400w,
+/course/gis/3_gisdata/3_gisdata_digitize4_hu_72a5c523aeba2b.webp 760w,
+/course/gis/3_gisdata/3_gisdata_digitize4_hu_c0ed88bd86e3c080.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_digitize4_hu_1c8be9c70c849ac8.webp"
 width="656"
 height="317"
 loading="lazy" data-zoomable />&lt;/div>
@@ -191,10 +191,10 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;figure id="figure-toggle-editing">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize5_hu_bd8432a5a8ba4b6d.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize5_hu_51b54e0573fe9c5d.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize5_hu_4d3e357123035571.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize5_hu_bd8432a5a8ba4b6d.webp"
+/course/gis/3_gisdata/3_gisdata_digitize5_hu_bd8432a5a8ba4b6d.webp 400w,
+/course/gis/3_gisdata/3_gisdata_digitize5_hu_51b54e0573fe9c5d.webp 760w,
+/course/gis/3_gisdata/3_gisdata_digitize5_hu_4d3e357123035571.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_digitize5_hu_bd8432a5a8ba4b6d.webp"
 width="467"
 height="56"
 loading="lazy" data-zoomable />&lt;/div>
@@ -206,10 +206,10 @@ Toggle Editing
 &lt;figure id="figure-các-công-cụ-thêmvẽ-đối-tượng">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize6_hu_e18a65e747ec0ba4.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize6_hu_326676216e112a1e.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize6_hu_fc934d79ac6e980b.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize6_hu_e18a65e747ec0ba4.webp"
+/course/gis/3_gisdata/3_gisdata_digitize6_hu_e18a65e747ec0ba4.webp 400w,
+/course/gis/3_gisdata/3_gisdata_digitize6_hu_326676216e112a1e.webp 760w,
+/course/gis/3_gisdata/3_gisdata_digitize6_hu_fc934d79ac6e980b.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_digitize6_hu_e18a65e747ec0ba4.webp"
 width="760"
 height="129"
 loading="lazy" data-zoomable />&lt;/div>
@@ -224,10 +224,10 @@ Các công cụ thêm/vẽ đối tượng
 &lt;figure id="figure-chuẩn-bị-số-hóa-lớp-lake">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize7_hu_33967f40759dcf65.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize7_hu_f947e1ce307f353d.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize7_hu_a5ef0bac29b69d6b.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize7_hu_33967f40759dcf65.webp"
+/course/gis/3_gisdata/3_gisdata_digitize7_hu_33967f40759dcf65.webp 400w,
+/course/gis/3_gisdata/3_gisdata_digitize7_hu_f947e1ce307f353d.webp 760w,
+/course/gis/3_gisdata/3_gisdata_digitize7_hu_a5ef0bac29b69d6b.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_digitize7_hu_33967f40759dcf65.webp"
 width="760"
 height="398"
 loading="lazy" data-zoomable />&lt;/div>
@@ -239,10 +239,10 @@ Chuẩn bị số hóa lớp Lake
 &lt;figure id="figure-thực-hiện-số-hóa-lớp-lake">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize8_hu_1d11bb8861c2f5b0.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize8_hu_9572147d5ca66cce.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize8_hu_21c2554fd1f00aa2.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize8_hu_1d11bb8861c2f5b0.webp"
+/course/gis/3_gisdata/3_gisdata_digitize8_hu_1d11bb8861c2f5b0.webp 400w,
+/course/gis/3_gisdata/3_gisdata_digitize8_hu_9572147d5ca66cce.webp 760w,
+/course/gis/3_gisdata/3_gisdata_digitize8_hu_21c2554fd1f00aa2.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_digitize8_hu_1d11bb8861c2f5b0.webp"
 width="760"
 height="492"
 loading="lazy" data-zoomable />&lt;/div>
@@ -255,10 +255,10 @@ Thực hiện số hóa lớp Lake
 &lt;figure id="figure-nhập-thuộc-tính-cho-đối-tượng-vừa-số-hóa-ở-cửa-sổ-feature-attributes">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize9_hu_46c3fa915bcc8a8d.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize9_hu_562c2deb3af1bc03.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize9_hu_18d00f7ea2559824.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize9_hu_46c3fa915bcc8a8d.webp"
+/course/gis/3_gisdata/3_gisdata_digitize9_hu_46c3fa915bcc8a8d.webp 400w,
+/course/gis/3_gisdata/3_gisdata_digitize9_hu_562c2deb3af1bc03.webp 760w,
+/course/gis/3_gisdata/3_gisdata_digitize9_hu_18d00f7ea2559824.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_digitize9_hu_46c3fa915bcc8a8d.webp"
 width="672"
 height="760"
 loading="lazy" data-zoomable />&lt;/div>
@@ -270,10 +270,10 @@ Nhập thuộc tính cho đối tượng vừa số hóa ở cửa sổ Feature 
 &lt;figure id="figure-nhập-thuộc-tính-cho-đối-tượng-vừa-số-hóa-ở-cửa-sổ-feature-attributes">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize10_hu_7cb2d52712c6fce7.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize10_hu_3a90ffc49cc03a41.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize10_hu_f496070b1297204a.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize10_hu_7cb2d52712c6fce7.webp"
+/course/gis/3_gisdata/3_gisdata_digitize10_hu_7cb2d52712c6fce7.webp 400w,
+/course/gis/3_gisdata/3_gisdata_digitize10_hu_3a90ffc49cc03a41.webp 760w,
+/course/gis/3_gisdata/3_gisdata_digitize10_hu_f496070b1297204a.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_digitize10_hu_7cb2d52712c6fce7.webp"
 width="224"
 height="56"
 loading="lazy" data-zoomable />&lt;/div>
@@ -285,10 +285,10 @@ Nhập thuộc tính cho đối tượng vừa số hóa ở cửa sổ Feature 
 &lt;figure id="figure-kết-quả-khi-hoàn-tất-số-hóa-lớp-lake">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize11_hu_307d9b8a3a655e8a.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize11_hu_e9d6c87c121ec5a2.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize11_hu_33e7da203409f25.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_digitize11_hu_307d9b8a3a655e8a.webp"
+/course/gis/3_gisdata/3_gisdata_digitize11_hu_307d9b8a3a655e8a.webp 400w,
+/course/gis/3_gisdata/3_gisdata_digitize11_hu_e9d6c87c121ec5a2.webp 760w,
+/course/gis/3_gisdata/3_gisdata_digitize11_hu_33e7da203409f25.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_digitize11_hu_307d9b8a3a655e8a.webp"
 width="760"
 height="543"
 loading="lazy" data-zoomable />&lt;/div>
@@ -309,10 +309,10 @@ Tip: khi số hóa, có thể làm trong suốt màu nền của lớp polygon �
 &lt;figure id="figure-shape-digitizing-toolbar">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo1_hu_c748fe42c5cf05cf.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo1_hu_dd56bd00d67b3935.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo1_hu_178e9fdd062c6fea.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo1_hu_c748fe42c5cf05cf.webp"
+/course/gis/3_gisdata/3_gisdata_fixgeo1_hu_c748fe42c5cf05cf.webp 400w,
+/course/gis/3_gisdata/3_gisdata_fixgeo1_hu_dd56bd00d67b3935.webp 760w,
+/course/gis/3_gisdata/3_gisdata_fixgeo1_hu_178e9fdd062c6fea.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_fixgeo1_hu_c748fe42c5cf05cf.webp"
 width="227"
 height="60"
 loading="lazy" data-zoomable />&lt;/div>
@@ -325,10 +325,10 @@ Shape digitizing toolbar
 &lt;figure id="figure-vẽ-hình-chữ-nhật-bằng-add-rectangle-from-3-points">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo2_hu_7b28d2bffef106d4.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo2_hu_3456016b4ebbcf6d.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo2_hu_edc033697674b12c.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo2_hu_7b28d2bffef106d4.webp"
+/course/gis/3_gisdata/3_gisdata_fixgeo2_hu_7b28d2bffef106d4.webp 400w,
+/course/gis/3_gisdata/3_gisdata_fixgeo2_hu_3456016b4ebbcf6d.webp 760w,
+/course/gis/3_gisdata/3_gisdata_fixgeo2_hu_edc033697674b12c.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_fixgeo2_hu_7b28d2bffef106d4.webp"
 width="287"
 height="124"
 loading="lazy" data-zoomable />&lt;/div>
@@ -342,10 +342,10 @@ Vẽ hình chữ nhật bằng Add Rectangle from 3 Points
 &lt;figure id="figure-rotate-feature-and-move-feature">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo3_hu_b7a6574e010b20f1.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo3_hu_52e7cfde9c435d7d.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo3_hu_f4b5d1dadeb2ef6d.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo3_hu_b7a6574e010b20f1.webp"
+/course/gis/3_gisdata/3_gisdata_fixgeo3_hu_b7a6574e010b20f1.webp 400w,
+/course/gis/3_gisdata/3_gisdata_fixgeo3_hu_52e7cfde9c435d7d.webp 760w,
+/course/gis/3_gisdata/3_gisdata_fixgeo3_hu_f4b5d1dadeb2ef6d.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_fixgeo3_hu_b7a6574e010b20f1.webp"
 width="760"
 height="316"
 loading="lazy" data-zoomable />&lt;/div>
@@ -360,10 +360,10 @@ Rotate Feature and Move Feature
 &lt;figure id="figure-vertex-tool">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo4_hu_c3ead9ac171220cf.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo4_hu_ff1f48a8b9409ec5.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo4_hu_7632c3fe1e07299e.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo4_hu_c3ead9ac171220cf.webp"
+/course/gis/3_gisdata/3_gisdata_fixgeo4_hu_c3ead9ac171220cf.webp 400w,
+/course/gis/3_gisdata/3_gisdata_fixgeo4_hu_ff1f48a8b9409ec5.webp 760w,
+/course/gis/3_gisdata/3_gisdata_fixgeo4_hu_7632c3fe1e07299e.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_fixgeo4_hu_c3ead9ac171220cf.webp"
 width="298"
 height="41"
 loading="lazy" data-zoomable />&lt;/div>
@@ -375,10 +375,10 @@ Vertex Tool
 &lt;figure id="figure-kết-quả-sau-khi-đặt-lại-vị-trí-đỉnh-bằng-vertex-tool">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo5_hu_fd3528f363ef673e.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo5_hu_7107dc7cde8b9afb.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo5_hu_cb4634639ddfbb18.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_fixgeo5_hu_fd3528f363ef673e.webp"
+/course/gis/3_gisdata/3_gisdata_fixgeo5_hu_fd3528f363ef673e.webp 400w,
+/course/gis/3_gisdata/3_gisdata_fixgeo5_hu_7107dc7cde8b9afb.webp 760w,
+/course/gis/3_gisdata/3_gisdata_fixgeo5_hu_cb4634639ddfbb18.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_fixgeo5_hu_fd3528f363ef673e.webp"
 width="760"
 height="256"
 loading="lazy" data-zoomable />&lt;/div>
@@ -393,10 +393,10 @@ Kết quả sau khi đặt lại vị trí đỉnh bằng vertex tool
 &lt;figure id="figure-reshape-feature">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan1_hu_419812af07159b53.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan1_hu_3bb487558907277a.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan1_hu_e7459fd880505dc2.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan1_hu_419812af07159b53.webp"
+/course/gis/3_gisdata/3_gisdata_advan1_hu_419812af07159b53.webp 400w,
+/course/gis/3_gisdata/3_gisdata_advan1_hu_3bb487558907277a.webp 760w,
+/course/gis/3_gisdata/3_gisdata_advan1_hu_e7459fd880505dc2.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_advan1_hu_419812af07159b53.webp"
 width="481"
 height="50"
 loading="lazy" data-zoomable />&lt;/div>
@@ -408,10 +408,10 @@ Reshape Feature
 &lt;figure id="figure-ví-dụ-thực-hiện-reshape-feature">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan2_hu_a3f4111f0099ee14.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan2_hu_77fb98fe563758b5.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan2_hu_ffb3c4ad1bf41c6d.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan2_hu_a3f4111f0099ee14.webp"
+/course/gis/3_gisdata/3_gisdata_advan2_hu_a3f4111f0099ee14.webp 400w,
+/course/gis/3_gisdata/3_gisdata_advan2_hu_77fb98fe563758b5.webp 760w,
+/course/gis/3_gisdata/3_gisdata_advan2_hu_ffb3c4ad1bf41c6d.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_advan2_hu_a3f4111f0099ee14.webp"
 width="760"
 height="224"
 loading="lazy" data-zoomable />&lt;/div>
@@ -427,10 +427,10 @@ Ví dụ thực hiện Reshape Feature
 &lt;figure id="figure-add-part-bước-1-chọn-đối-tượng-ấn-công-cụ-add-part">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan3_hu_8a806a0d12957a08.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan3_hu_4def957bdf279315.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan3_hu_1dd809ce2171f746.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan3_hu_8a806a0d12957a08.webp"
+/course/gis/3_gisdata/3_gisdata_advan3_hu_8a806a0d12957a08.webp 400w,
+/course/gis/3_gisdata/3_gisdata_advan3_hu_4def957bdf279315.webp 760w,
+/course/gis/3_gisdata/3_gisdata_advan3_hu_1dd809ce2171f746.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_advan3_hu_8a806a0d12957a08.webp"
 width="645"
 height="271"
 loading="lazy" data-zoomable />&lt;/div>
@@ -440,10 +440,10 @@ Add Part bước 1: Chọn đối tượng, ấn công cụ Add part
 &lt;figure id="figure-add-part-bước-2-số-hóa-thêm-phần-mới">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan4_hu_f47a4b4ed1b2600e.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan4_hu_87c4105b20304dcf.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan4_hu_5eca070069e315cf.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan4_hu_f47a4b4ed1b2600e.webp"
+/course/gis/3_gisdata/3_gisdata_advan4_hu_f47a4b4ed1b2600e.webp 400w,
+/course/gis/3_gisdata/3_gisdata_advan4_hu_87c4105b20304dcf.webp 760w,
+/course/gis/3_gisdata/3_gisdata_advan4_hu_5eca070069e315cf.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_advan4_hu_f47a4b4ed1b2600e.webp"
 width="670"
 height="483"
 loading="lazy" data-zoomable />&lt;/div>
@@ -455,10 +455,10 @@ Add Part bước 2: Số hóa thêm phần mới
 &lt;figure id="figure-delete-part">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan5_hu_1445a08f8c214c6e.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan5_hu_bc17416187a52069.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan5_hu_3bf43194e84d1b8f.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan5_hu_1445a08f8c214c6e.webp"
+/course/gis/3_gisdata/3_gisdata_advan5_hu_1445a08f8c214c6e.webp 400w,
+/course/gis/3_gisdata/3_gisdata_advan5_hu_bc17416187a52069.webp 760w,
+/course/gis/3_gisdata/3_gisdata_advan5_hu_3bf43194e84d1b8f.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_advan5_hu_1445a08f8c214c6e.webp"
 width="541"
 height="143"
 loading="lazy" data-zoomable />&lt;/div>
@@ -474,10 +474,10 @@ Delete Part
 &lt;figure id="figure-add-ring">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan6_hu_b770831c24455129.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan6_hu_1b86bc8a368c1b19.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan6_hu_c5ea2000229cf1c4.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan6_hu_b770831c24455129.webp"
+/course/gis/3_gisdata/3_gisdata_advan6_hu_b770831c24455129.webp 400w,
+/course/gis/3_gisdata/3_gisdata_advan6_hu_1b86bc8a368c1b19.webp 760w,
+/course/gis/3_gisdata/3_gisdata_advan6_hu_c5ea2000229cf1c4.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_advan6_hu_b770831c24455129.webp"
 width="663"
 height="60"
 loading="lazy" data-zoomable />&lt;/div>
@@ -487,10 +487,10 @@ Add Ring
 &lt;figure id="figure-thực-hiện-add-ring-khi-loại-bỏ-phần-diện-tích-đảo-khỏi-diện-tích-mặt-nước-hồ">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan7_hu_f68acb6ecfa54ed9.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan7_hu_c372359fa2aa28b4.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan7_hu_95ef92897f3aaf15.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan7_hu_f68acb6ecfa54ed9.webp"
+/course/gis/3_gisdata/3_gisdata_advan7_hu_f68acb6ecfa54ed9.webp 400w,
+/course/gis/3_gisdata/3_gisdata_advan7_hu_c372359fa2aa28b4.webp 760w,
+/course/gis/3_gisdata/3_gisdata_advan7_hu_95ef92897f3aaf15.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_advan7_hu_f68acb6ecfa54ed9.webp"
 width="760"
 height="313"
 loading="lazy" data-zoomable />&lt;/div>
@@ -502,10 +502,10 @@ Thực hiện Add Ring khi loại bỏ phần diện tích đảo khỏi diện 
 &lt;figure id="figure-delete-ring-và-fill-ring">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan8_hu_d20694819ca41ff3.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan8_hu_41edd40a4eb1a8a7.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan8_hu_3c4892423d91ac04.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan8_hu_d20694819ca41ff3.webp"
+/course/gis/3_gisdata/3_gisdata_advan8_hu_d20694819ca41ff3.webp 400w,
+/course/gis/3_gisdata/3_gisdata_advan8_hu_41edd40a4eb1a8a7.webp 760w,
+/course/gis/3_gisdata/3_gisdata_advan8_hu_3c4892423d91ac04.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_advan8_hu_d20694819ca41ff3.webp"
 width="423"
 height="150"
 loading="lazy" data-zoomable />&lt;/div>
@@ -526,10 +526,10 @@ Delete Ring và Fill Ring
 &lt;figure id="figure-enable-tracing">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan9_hu_dba6f63d1e4c848a.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan9_hu_da982048e8274c9c.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan9_hu_37eb74860f06a1b2.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan9_hu_dba6f63d1e4c848a.webp"
+/course/gis/3_gisdata/3_gisdata_advan9_hu_dba6f63d1e4c848a.webp 400w,
+/course/gis/3_gisdata/3_gisdata_advan9_hu_da982048e8274c9c.webp 760w,
+/course/gis/3_gisdata/3_gisdata_advan9_hu_37eb74860f06a1b2.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_advan9_hu_dba6f63d1e4c848a.webp"
 width="483"
 height="68"
 loading="lazy" data-zoomable />&lt;/div>
@@ -539,10 +539,10 @@ Enable Tracing
 &lt;figure id="figure-thực-hiện-tracing">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan10_hu_c1ea8a5f39cfe521.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan10_hu_886c09f14a955253.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_advan10_hu_a10237be539e943.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_advan10_hu_c1ea8a5f39cfe521.webp"
+/course/gis/3_gisdata/3_gisdata_advan10_hu_c1ea8a5f39cfe521.webp 400w,
+/course/gis/3_gisdata/3_gisdata_advan10_hu_886c09f14a955253.webp 760w,
+/course/gis/3_gisdata/3_gisdata_advan10_hu_a10237be539e943.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_advan10_hu_c1ea8a5f39cfe521.webp"
 width="760"
 height="552"
 loading="lazy" data-zoomable />&lt;/div>
@@ -564,10 +564,10 @@ Kết quả sẽ tương tự như ảnh dưới:
 &lt;figure id="figure-kết-quả-bài-tập-yêu-cầu">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_homework_hu_f64803dc1c32239a.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_homework_hu_96958be53600c216.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_homework_hu_683d5101ffb6e2ce.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_homework_hu_f64803dc1c32239a.webp"
+/course/gis/3_gisdata/3_gisdata_homework_hu_f64803dc1c32239a.webp 400w,
+/course/gis/3_gisdata/3_gisdata_homework_hu_96958be53600c216.webp 760w,
+/course/gis/3_gisdata/3_gisdata_homework_hu_683d5101ffb6e2ce.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_homework_hu_f64803dc1c32239a.webp"
 width="698"
 height="571"
 loading="lazy" data-zoomable />&lt;/div>
@@ -581,10 +581,10 @@ Kết quả bài tập yêu cầu
 &lt;figure id="figure-kết-quả-bài-tập-yêu-cầu">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/3_gisdata/3_gisdata_homework2_hu_ec21ae1ee0d64fdd.webp 400w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_homework2_hu_a5299c7911ffb756.webp 760w,
-/onlinecourse/course/gis/3_gisdata/3_gisdata_homework2_hu_9e2138d54eeda1df.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/3_gisdata_homework2_hu_ec21ae1ee0d64fdd.webp"
+/course/gis/3_gisdata/3_gisdata_homework2_hu_ec21ae1ee0d64fdd.webp 400w,
+/course/gis/3_gisdata/3_gisdata_homework2_hu_a5299c7911ffb756.webp 760w,
+/course/gis/3_gisdata/3_gisdata_homework2_hu_9e2138d54eeda1df.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/3_gisdata/3_gisdata_homework2_hu_ec21ae1ee0d64fdd.webp"
 width="657"
 height="431"
 loading="lazy" data-zoomable />&lt;/div>
@@ -597,7 +597,7 @@ Kết quả bài tập yêu cầu
 &lt;div>
 👉 Theo dõi page Thầy Tùng HANU: GIS / Data Analysis &lt;a href="https://www.facebook.com/thayTungHANU" target="_blank" rel="noopener">https://www.facebook.com/thayTungHANU&lt;/a> để trao đổi thông tin và nhận thông báo các bài viết mới về GIS, Sustainability &amp;amp; Climate Change, Data Analysis!
 &lt;/div>
-&lt;/div></description></item><item><title>4. Dữ liệu thuộc tính</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/</link><pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/</guid><description>&lt;p>Làm việc với dữ liệu thuộc tính của file vector: nhập dữ liệu, tính toán trường dữ liệu, liên kết bảng dữ liệu ngoài (Joining External Tables)&lt;/p>
+&lt;/div></description></item><item><title>4. Dữ liệu thuộc tính</title><link>https://thaytunghanu.github.io/course/gis/4_attribute/</link><pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/course/gis/4_attribute/</guid><description>&lt;p>Làm việc với dữ liệu thuộc tính của file vector: nhập dữ liệu, tính toán trường dữ liệu, liên kết bảng dữ liệu ngoài (Joining External Tables)&lt;/p>
 &lt;h2 id="lý-thuyết">Lý thuyết&lt;/h2>
 &lt;p>Đọc tài liệu: Tim Sutton et al. 2009, A Gentle Introduction to GIS, Chapter 4. Vector Attribute Data:
 &lt;a href="https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/vector_attribute_data.html" target="_blank" rel="noopener">https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/vector_attribute_data.html&lt;/a>&lt;/p>
@@ -609,10 +609,10 @@ Kết quả bài tập yêu cầu
 &lt;figure id="figure-bảng-thuộc-tính-của-lớp-main_roads-bao-gồm-trường-id-và-trường-type-đã-tạo-từ-bài-trước">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/4_attribute/4_attribute_manual1_hu_b23f975fcfd4cb70.webp 400w,
-/onlinecourse/course/gis/4_attribute/4_attribute_manual1_hu_47b3647328586eeb.webp 760w,
-/onlinecourse/course/gis/4_attribute/4_attribute_manual1_hu_7d22cb8f4dde7df8.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_manual1_hu_b23f975fcfd4cb70.webp"
+/course/gis/4_attribute/4_attribute_manual1_hu_b23f975fcfd4cb70.webp 400w,
+/course/gis/4_attribute/4_attribute_manual1_hu_47b3647328586eeb.webp 760w,
+/course/gis/4_attribute/4_attribute_manual1_hu_7d22cb8f4dde7df8.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/4_attribute/4_attribute_manual1_hu_b23f975fcfd4cb70.webp"
 width="760"
 height="281"
 loading="lazy" data-zoomable />&lt;/div>
@@ -634,10 +634,10 @@ Thực hiện như sau:&lt;/p>
 &lt;figure id="figure-thực-hiện-tạo-một-trường-dữ-liệu-mới">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/4_attribute/4_attribute_manual2_hu_892dea82141d76cd.webp 400w,
-/onlinecourse/course/gis/4_attribute/4_attribute_manual2_hu_1b6bbeba2c3a1aa4.webp 760w,
-/onlinecourse/course/gis/4_attribute/4_attribute_manual2_hu_9799fc0eb31246d8.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_manual2_hu_892dea82141d76cd.webp"
+/course/gis/4_attribute/4_attribute_manual2_hu_892dea82141d76cd.webp 400w,
+/course/gis/4_attribute/4_attribute_manual2_hu_1b6bbeba2c3a1aa4.webp 760w,
+/course/gis/4_attribute/4_attribute_manual2_hu_9799fc0eb31246d8.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/4_attribute/4_attribute_manual2_hu_892dea82141d76cd.webp"
 width="667"
 height="225"
 loading="lazy" data-zoomable />&lt;/div>
@@ -653,10 +653,10 @@ Thực hiện tạo một trường dữ liệu mới
 &lt;figure id="figure-xác-lập-tham-số-khi-tạo-trường-dữ-liệu">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/4_attribute/4_attribute_manual3_hu_79fd5e0a04df14d1.webp 400w,
-/onlinecourse/course/gis/4_attribute/4_attribute_manual3_hu_7fedb3fbe02dfbe1.webp 760w,
-/onlinecourse/course/gis/4_attribute/4_attribute_manual3_hu_96439c2c4c57430b.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_manual3_hu_79fd5e0a04df14d1.webp"
+/course/gis/4_attribute/4_attribute_manual3_hu_79fd5e0a04df14d1.webp 400w,
+/course/gis/4_attribute/4_attribute_manual3_hu_7fedb3fbe02dfbe1.webp 760w,
+/course/gis/4_attribute/4_attribute_manual3_hu_96439c2c4c57430b.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/4_attribute/4_attribute_manual3_hu_79fd5e0a04df14d1.webp"
 width="681"
 height="375"
 loading="lazy" data-zoomable />&lt;/div>
@@ -666,10 +666,10 @@ Xác lập tham số khi tạo trường dữ liệu
 &lt;figure id="figure-kết-quả-khi-tạo-trường-code">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/4_attribute/4_attribute_manual4_hu_54093ceb5b1d94a5.webp 400w,
-/onlinecourse/course/gis/4_attribute/4_attribute_manual4_hu_46ce2063c86cab55.webp 760w,
-/onlinecourse/course/gis/4_attribute/4_attribute_manual4_hu_4f36d20b26c57eb8.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_manual4_hu_54093ceb5b1d94a5.webp"
+/course/gis/4_attribute/4_attribute_manual4_hu_54093ceb5b1d94a5.webp 400w,
+/course/gis/4_attribute/4_attribute_manual4_hu_46ce2063c86cab55.webp 760w,
+/course/gis/4_attribute/4_attribute_manual4_hu_4f36d20b26c57eb8.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/4_attribute/4_attribute_manual4_hu_54093ceb5b1d94a5.webp"
 width="523"
 height="323"
 loading="lazy" data-zoomable />&lt;/div>
@@ -684,10 +684,10 @@ Kết quả khi tạo trường Code
 &lt;figure id="figure-kết-quả-sau-khi-nhập-code">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/4_attribute/4_attribute_manual5_hu_c79d4eb8e1e1fa63.webp 400w,
-/onlinecourse/course/gis/4_attribute/4_attribute_manual5_hu_2bc47e1c3b2571e0.webp 760w,
-/onlinecourse/course/gis/4_attribute/4_attribute_manual5_hu_e1f6b5dc9c00039f.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_manual5_hu_c79d4eb8e1e1fa63.webp"
+/course/gis/4_attribute/4_attribute_manual5_hu_c79d4eb8e1e1fa63.webp 400w,
+/course/gis/4_attribute/4_attribute_manual5_hu_2bc47e1c3b2571e0.webp 760w,
+/course/gis/4_attribute/4_attribute_manual5_hu_e1f6b5dc9c00039f.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/4_attribute/4_attribute_manual5_hu_c79d4eb8e1e1fa63.webp"
 width="760"
 height="412"
 loading="lazy" data-zoomable />&lt;/div>
@@ -700,10 +700,10 @@ Kết quả sau khi nhập Code
 &lt;figure id="figure-hiện-label-dựa-vào-trường-code">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/4_attribute/4_attribute_manual6_hu_620f28a86210c60f.webp 400w,
-/onlinecourse/course/gis/4_attribute/4_attribute_manual6_hu_8e9ba3ebe253f3f0.webp 760w,
-/onlinecourse/course/gis/4_attribute/4_attribute_manual6_hu_c1ef984fa590505d.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_manual6_hu_620f28a86210c60f.webp"
+/course/gis/4_attribute/4_attribute_manual6_hu_620f28a86210c60f.webp 400w,
+/course/gis/4_attribute/4_attribute_manual6_hu_8e9ba3ebe253f3f0.webp 760w,
+/course/gis/4_attribute/4_attribute_manual6_hu_c1ef984fa590505d.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/4_attribute/4_attribute_manual6_hu_620f28a86210c60f.webp"
 width="760"
 height="386"
 loading="lazy" data-zoomable />&lt;/div>
@@ -722,10 +722,10 @@ Các bước thực hiện:&lt;/p>
 &lt;figure id="figure-open-field-calculator">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal1_hu_e50b6cf2499e8cea.webp 400w,
-/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal1_hu_33155bd87e04934a.webp 760w,
-/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal1_hu_42487f9419c29409.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal1_hu_e50b6cf2499e8cea.webp"
+/course/gis/4_attribute/4_attribute_fieldcal1_hu_e50b6cf2499e8cea.webp 400w,
+/course/gis/4_attribute/4_attribute_fieldcal1_hu_33155bd87e04934a.webp 760w,
+/course/gis/4_attribute/4_attribute_fieldcal1_hu_42487f9419c29409.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/4_attribute/4_attribute_fieldcal1_hu_e50b6cf2499e8cea.webp"
 width="760"
 height="510"
 loading="lazy" data-zoomable />&lt;/div>
@@ -744,10 +744,10 @@ Open Field Calculator
 &lt;figure id="figure-xác-lập-tham-số-field-calculator">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal2_hu_bed5d129a9d77bb.webp 400w,
-/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal2_hu_8ce6375c1bb71d5.webp 760w,
-/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal2_hu_776f9a0fee97649d.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal2_hu_bed5d129a9d77bb.webp"
+/course/gis/4_attribute/4_attribute_fieldcal2_hu_bed5d129a9d77bb.webp 400w,
+/course/gis/4_attribute/4_attribute_fieldcal2_hu_8ce6375c1bb71d5.webp 760w,
+/course/gis/4_attribute/4_attribute_fieldcal2_hu_776f9a0fee97649d.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/4_attribute/4_attribute_fieldcal2_hu_bed5d129a9d77bb.webp"
 width="760"
 height="566"
 loading="lazy" data-zoomable />&lt;/div>
@@ -757,10 +757,10 @@ Xác lập tham số Field Calculator
 &lt;figure id="figure-kết-quả-tính-toán-diện-tích-hồ-bảo-linh">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal3_hu_e36b03d180c52ae0.webp 400w,
-/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal3_hu_1cf583d605aeafe6.webp 760w,
-/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal3_hu_c70704248eaa3222.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal3_hu_e36b03d180c52ae0.webp"
+/course/gis/4_attribute/4_attribute_fieldcal3_hu_e36b03d180c52ae0.webp 400w,
+/course/gis/4_attribute/4_attribute_fieldcal3_hu_1cf583d605aeafe6.webp 760w,
+/course/gis/4_attribute/4_attribute_fieldcal3_hu_c70704248eaa3222.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/4_attribute/4_attribute_fieldcal3_hu_e36b03d180c52ae0.webp"
 width="320"
 height="166"
 loading="lazy" data-zoomable />&lt;/div>
@@ -787,10 +787,10 @@ Chú ý: đơn vị của giá trị diện tích sẽ tương ứng với đơn
 &lt;figure id="figure-yêu-cầu-kết-quả-cuối-cùng">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal4_hu_70221a4e1d3de45c.webp 400w,
-/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal4_hu_504d3ecf88841e73.webp 760w,
-/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal4_hu_d1e7b9e9cd527355.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_fieldcal4_hu_70221a4e1d3de45c.webp"
+/course/gis/4_attribute/4_attribute_fieldcal4_hu_70221a4e1d3de45c.webp 400w,
+/course/gis/4_attribute/4_attribute_fieldcal4_hu_504d3ecf88841e73.webp 760w,
+/course/gis/4_attribute/4_attribute_fieldcal4_hu_d1e7b9e9cd527355.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/4_attribute/4_attribute_fieldcal4_hu_70221a4e1d3de45c.webp"
 width="518"
 height="148"
 loading="lazy" data-zoomable />&lt;/div>
@@ -823,10 +823,10 @@ Dữ liệu bao gồm lớp:&lt;/p>
 &lt;figure id="figure-show-feature-count">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/4_attribute/4_attribute_join1_hu_e87fbb61a669b4d2.webp 400w,
-/onlinecourse/course/gis/4_attribute/4_attribute_join1_hu_d7b0a9cae65b8d02.webp 760w,
-/onlinecourse/course/gis/4_attribute/4_attribute_join1_hu_d3e322bbd791a296.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_join1_hu_e87fbb61a669b4d2.webp"
+/course/gis/4_attribute/4_attribute_join1_hu_e87fbb61a669b4d2.webp 400w,
+/course/gis/4_attribute/4_attribute_join1_hu_d7b0a9cae65b8d02.webp 760w,
+/course/gis/4_attribute/4_attribute_join1_hu_d3e322bbd791a296.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/4_attribute/4_attribute_join1_hu_e87fbb61a669b4d2.webp"
 width="760"
 height="409"
 loading="lazy" data-zoomable />&lt;/div>
@@ -840,10 +840,10 @@ Show feature count
 &lt;figure id="figure-add-file-dữ-liệu-csv-bằng-công-cụ-delimited-text">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/4_attribute/4_attribute_join2_hu_89857d146b0e2a40.webp 400w,
-/onlinecourse/course/gis/4_attribute/4_attribute_join2_hu_2419e350b6c62b56.webp 760w,
-/onlinecourse/course/gis/4_attribute/4_attribute_join2_hu_ebbefa02d0cfe2fa.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_join2_hu_89857d146b0e2a40.webp"
+/course/gis/4_attribute/4_attribute_join2_hu_89857d146b0e2a40.webp 400w,
+/course/gis/4_attribute/4_attribute_join2_hu_2419e350b6c62b56.webp 760w,
+/course/gis/4_attribute/4_attribute_join2_hu_ebbefa02d0cfe2fa.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/4_attribute/4_attribute_join2_hu_89857d146b0e2a40.webp"
 width="760"
 height="543"
 loading="lazy" data-zoomable />&lt;/div>
@@ -873,10 +873,10 @@ Do đó, phải thêm file csv bằng công cụ &lt;strong>Delimited text&lt;/s
 &lt;figure id="figure-chuẩn-bị-kết-nối-bảng-csv-và-bảng-dữ-liệu-vietnam_provinces">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/4_attribute/4_attribute_join3_hu_ac384b5208656886.webp 400w,
-/onlinecourse/course/gis/4_attribute/4_attribute_join3_hu_92b74cbe7611ff6d.webp 760w,
-/onlinecourse/course/gis/4_attribute/4_attribute_join3_hu_a3d5de6d63d313a2.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_join3_hu_ac384b5208656886.webp"
+/course/gis/4_attribute/4_attribute_join3_hu_ac384b5208656886.webp 400w,
+/course/gis/4_attribute/4_attribute_join3_hu_92b74cbe7611ff6d.webp 760w,
+/course/gis/4_attribute/4_attribute_join3_hu_a3d5de6d63d313a2.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/4_attribute/4_attribute_join3_hu_ac384b5208656886.webp"
 width="760"
 height="411"
 loading="lazy" data-zoomable />&lt;/div>
@@ -892,10 +892,10 @@ Chuẩn bị kết nối bảng csv và bảng dữ liệu Vietnam_Provinces
 &lt;figure id="figure-thiết-lập-các-tham-số-ở-cửa-sổ-add-vector-join">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/4_attribute/4_attribute_join4_hu_6313c326788b56c1.webp 400w,
-/onlinecourse/course/gis/4_attribute/4_attribute_join4_hu_c95b05cb8b365a90.webp 760w,
-/onlinecourse/course/gis/4_attribute/4_attribute_join4_hu_ca16146f30c9dd8d.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_join4_hu_6313c326788b56c1.webp"
+/course/gis/4_attribute/4_attribute_join4_hu_6313c326788b56c1.webp 400w,
+/course/gis/4_attribute/4_attribute_join4_hu_c95b05cb8b365a90.webp 760w,
+/course/gis/4_attribute/4_attribute_join4_hu_ca16146f30c9dd8d.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/4_attribute/4_attribute_join4_hu_6313c326788b56c1.webp"
 width="451"
 height="312"
 loading="lazy" data-zoomable />&lt;/div>
@@ -912,10 +912,10 @@ Thiết lập các tham số ở cửa sổ Add Vector Join
 &lt;figure id="figure-kết-quả-khi-join-external-table">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/4_attribute/4_attribute_join5_hu_e3bc704f979d4315.webp 400w,
-/onlinecourse/course/gis/4_attribute/4_attribute_join5_hu_cf7c4d10b1c5b4ee.webp 760w,
-/onlinecourse/course/gis/4_attribute/4_attribute_join5_hu_63253a6575909c83.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_join5_hu_e3bc704f979d4315.webp"
+/course/gis/4_attribute/4_attribute_join5_hu_e3bc704f979d4315.webp 400w,
+/course/gis/4_attribute/4_attribute_join5_hu_cf7c4d10b1c5b4ee.webp 760w,
+/course/gis/4_attribute/4_attribute_join5_hu_63253a6575909c83.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/4_attribute/4_attribute_join5_hu_e3bc704f979d4315.webp"
 width="760"
 height="324"
 loading="lazy" data-zoomable />&lt;/div>
@@ -929,10 +929,10 @@ Kết quả khi join external table
 &lt;figure id="figure-lưu-file-vietnam_provinces-đang-có-kết-nối-sang-một-file-khác">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/4_attribute/4_attribute_join6_hu_ab2ba6978f1715a0.webp 400w,
-/onlinecourse/course/gis/4_attribute/4_attribute_join6_hu_d939b23d7992eb.webp 760w,
-/onlinecourse/course/gis/4_attribute/4_attribute_join6_hu_4e707c9c5246c5a1.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_join6_hu_ab2ba6978f1715a0.webp"
+/course/gis/4_attribute/4_attribute_join6_hu_ab2ba6978f1715a0.webp 400w,
+/course/gis/4_attribute/4_attribute_join6_hu_d939b23d7992eb.webp 760w,
+/course/gis/4_attribute/4_attribute_join6_hu_4e707c9c5246c5a1.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/4_attribute/4_attribute_join6_hu_ab2ba6978f1715a0.webp"
 width="760"
 height="423"
 loading="lazy" data-zoomable />&lt;/div>
@@ -951,10 +951,10 @@ Lưu file Vietnam_Provinces đang có kết nối sang một file khác
 &lt;figure id="figure-yêu-cầu-kết-quả-của-phần-nhập-liệu-và-tính-toán-field-calculator">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/4_attribute/4_attribute_homework1_hu_ae4da50cd520bd29.webp 400w,
-/onlinecourse/course/gis/4_attribute/4_attribute_homework1_hu_fe33baeba8394566.webp 760w,
-/onlinecourse/course/gis/4_attribute/4_attribute_homework1_hu_91260163ef50b947.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/4_attribute_homework1_hu_ae4da50cd520bd29.webp"
+/course/gis/4_attribute/4_attribute_homework1_hu_ae4da50cd520bd29.webp 400w,
+/course/gis/4_attribute/4_attribute_homework1_hu_fe33baeba8394566.webp 760w,
+/course/gis/4_attribute/4_attribute_homework1_hu_91260163ef50b947.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/4_attribute/4_attribute_homework1_hu_ae4da50cd520bd29.webp"
 width="754"
 height="591"
 loading="lazy" data-zoomable />&lt;/div>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Map Layouts | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/tag/map-layouts/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/tag/map-layouts/index.xml" rel="self" type="application/rss+xml"/><description>Map Layouts</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Map Layouts</title><link>https://thaytunghanu.github.io/onlinecourse/tag/map-layouts/</link></image><item><title>8. Thiết kế trang in bản đồ (Map Layouts)</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/</guid><description>&lt;p>Thiết kế bản đồ trình bày hoàn chỉnh phục vụ in ấn, xuất file ảnh/PDF, hoặc đính kèm báo cáo, luận văn, tài liệu kỹ thuật&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Map Layouts | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/tag/map-layouts/</link><atom:link href="https://thaytunghanu.github.io/tag/map-layouts/index.xml" rel="self" type="application/rss+xml"/><description>Map Layouts</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Map Layouts</title><link>https://thaytunghanu.github.io/tag/map-layouts/</link></image><item><title>8. Thiết kế trang in bản đồ (Map Layouts)</title><link>https://thaytunghanu.github.io/course/gis/8_layout/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/course/gis/8_layout/</guid><description>&lt;p>Thiết kế bản đồ trình bày hoàn chỉnh phục vụ in ấn, xuất file ảnh/PDF, hoặc đính kèm báo cáo, luận văn, tài liệu kỹ thuật&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>Sau khi hoàn thiện bản đồ và muốn in hoặc lưu dưới dạng PDF hoặc tệp hình ảnh khác để tham khảo sau này hoặc đưa vào báo cáo (ví dụ: tài liệu Word), bạn cần thiết kế bố cục bản đồ. Bố cục hoặc trang in bản đồ có thể bao gồm các thành phần (Map items) sau:&lt;/p>
@@ -21,10 +21,10 @@
 &lt;figure id="figure-bản-đồ-mật-độ-dân-số-năm-2020-của-các-xã-thuộc-huyện-chi-lăng-tỉnh-lạng-sơn-trước-sát-nhập">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Bản đồ mật độ dân số năm 2020 của các xã thuộc huyện Chi Lăng, tỉnh Lạng Sơn (trước sát nhập)" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_example_hu_36f014f9516552d3.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_example_hu_cc188914fd03d557.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_example_hu_eac1e8129dd8c715.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_example_hu_36f014f9516552d3.webp"
+/course/gis/8_layout/8_layout_example_hu_36f014f9516552d3.webp 400w,
+/course/gis/8_layout/8_layout_example_hu_cc188914fd03d557.webp 760w,
+/course/gis/8_layout/8_layout_example_hu_eac1e8129dd8c715.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_example_hu_36f014f9516552d3.webp"
 width="760"
 height="538"
 loading="lazy" data-zoomable />&lt;/div>
@@ -37,17 +37,17 @@ Bản đồ mật độ dân số năm 2020 của các xã thuộc huyện Chi L
 &lt;p>Công cụ Layouts trong QGIS cho phép người dùng thiết kế bố cục của trang in bản đồ qua việc thiết kế và biên tập các thành phần bản đồ liệt kê ở trên. Bạn có thể định cỡ, nhóm, căn chỉnh, định vị và xoay từng thành phần và điều chỉnh các thuộc tính của chúng để tạo bố cục của bạn&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Nhiệm vụ của phần này là thiết kế một trang in bản đồ đơn giản. Dữ liệu sử dụng là dữ liệu &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/#graduated-phân-loại-theo-thang-đo">Vietnam_provinces_2015population&lt;/a> đã thao tác ở Bài 4 và Bài 5.&lt;/p>
+&lt;p>Nhiệm vụ của phần này là thiết kế một trang in bản đồ đơn giản. Dữ liệu sử dụng là dữ liệu &lt;a href="https://thaytunghanu.github.io/course/gis/5_symbology/#graduated-phân-loại-theo-thang-đo">Vietnam_provinces_2015population&lt;/a> đã thao tác ở Bài 4 và Bài 5.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;p>
 &lt;figure id="figure-chuẩn-bị-dữ-liệu-chính-để-thiết-kế-trang-in-vietnam_provinces_2015population-là-lớp-vietnam_provinces-sau-khi-join-dữ-liệu-dân-số-với-2015-provincial-populationcsv-ở-bài-4">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Chuẩn bị dữ liệu chính để thiết kế trang in, **Vietnam_provinces_2015population**: là lớp Vietnam_Provinces sau khi join dữ liệu dân số với 2015 provincial population.csv ở Bài 4" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_data_hu_6053c378af08d582.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_data_hu_a3dcff2172ec1915.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_data_hu_421fcbd42fba7039.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_data_hu_6053c378af08d582.webp"
+/course/gis/8_layout/8_layout_data_hu_6053c378af08d582.webp 400w,
+/course/gis/8_layout/8_layout_data_hu_a3dcff2172ec1915.webp 760w,
+/course/gis/8_layout/8_layout_data_hu_421fcbd42fba7039.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_data_hu_6053c378af08d582.webp"
 width="760"
 height="398"
 loading="lazy" data-zoomable />&lt;/div>
@@ -64,10 +64,10 @@ Chuẩn bị dữ liệu chính để thiết kế trang in, &lt;strong>Vietnam_
 &lt;figure id="figure-dùng-toolbar-ấn-nút-new-print-layout">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Dùng Toolbar: ấn nút New Print Layout" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_printlayout_hu_6cc06272442e81ca.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_printlayout_hu_f9c1bb11f74b10ba.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_printlayout_hu_a7d68f08da060689.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_printlayout_hu_6cc06272442e81ca.webp"
+/course/gis/8_layout/8_layout_printlayout_hu_6cc06272442e81ca.webp 400w,
+/course/gis/8_layout/8_layout_printlayout_hu_f9c1bb11f74b10ba.webp 760w,
+/course/gis/8_layout/8_layout_printlayout_hu_a7d68f08da060689.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_printlayout_hu_6cc06272442e81ca.webp"
 width="760"
 height="197"
 loading="lazy" data-zoomable />&lt;/div>
@@ -102,10 +102,10 @@ Dùng Toolbar: ấn nút New Print Layout
 &lt;figure id="figure-dùng-layout-manager-để-quản-lý-các-trang-in">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Dùng Layout Manager để quản lý các trang in" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_layoutmanager_hu_3219ed8c16295705.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_layoutmanager_hu_1d0b0f4afd1062c1.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_layoutmanager_hu_180482462a0579e9.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_layoutmanager_hu_3219ed8c16295705.webp"
+/course/gis/8_layout/8_layout_layoutmanager_hu_3219ed8c16295705.webp 400w,
+/course/gis/8_layout/8_layout_layoutmanager_hu_1d0b0f4afd1062c1.webp 760w,
+/course/gis/8_layout/8_layout_layoutmanager_hu_180482462a0579e9.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_layoutmanager_hu_3219ed8c16295705.webp"
 width="760"
 height="433"
 loading="lazy" data-zoomable />&lt;/div>
@@ -118,10 +118,10 @@ Dùng Layout Manager để quản lý các trang in
 &lt;figure id="figure-cửa-sổ-print-composer">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Cửa sổ Print Composer" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_printcomposer_hu_29a4fa1967de8854.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_printcomposer_hu_a5a826e0e60a877.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_printcomposer_hu_918d8785e2dc56c8.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_printcomposer_hu_29a4fa1967de8854.webp"
+/course/gis/8_layout/8_layout_printcomposer_hu_29a4fa1967de8854.webp 400w,
+/course/gis/8_layout/8_layout_printcomposer_hu_a5a826e0e60a877.webp 760w,
+/course/gis/8_layout/8_layout_printcomposer_hu_918d8785e2dc56c8.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_printcomposer_hu_29a4fa1967de8854.webp"
 width="760"
 height="424"
 loading="lazy" data-zoomable />&lt;/div>
@@ -151,10 +151,10 @@ Bạn có thể tạo ra một kích thước trang in bất kỳ thông qua vi�
 &lt;figure id="figure-thiết-lập-trang-in">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Thiết lập trang in" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_pagesetup_hu_f933dbb92ae76e7d.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_pagesetup_hu_5943491151187825.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_pagesetup_hu_9a3444ae7fe86a5.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_pagesetup_hu_f933dbb92ae76e7d.webp"
+/course/gis/8_layout/8_layout_pagesetup_hu_f933dbb92ae76e7d.webp 400w,
+/course/gis/8_layout/8_layout_pagesetup_hu_5943491151187825.webp 760w,
+/course/gis/8_layout/8_layout_pagesetup_hu_9a3444ae7fe86a5.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_pagesetup_hu_f933dbb92ae76e7d.webp"
 width="760"
 height="385"
 loading="lazy" data-zoomable />&lt;/div>
@@ -169,10 +169,10 @@ Thiết lập trang in
 &lt;figure id="figure-thiết-lập-2-trang-in-trong-1-layout">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Thiết lập 2 trang in trong 1 layout" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_pagesetup2_hu_7091d728310629db.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_pagesetup2_hu_3f380410227458e7.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_pagesetup2_hu_28e6fe1902bc373e.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_pagesetup2_hu_7091d728310629db.webp"
+/course/gis/8_layout/8_layout_pagesetup2_hu_7091d728310629db.webp 400w,
+/course/gis/8_layout/8_layout_pagesetup2_hu_3f380410227458e7.webp 760w,
+/course/gis/8_layout/8_layout_pagesetup2_hu_28e6fe1902bc373e.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_pagesetup2_hu_7091d728310629db.webp"
 width="760"
 height="670"
 loading="lazy" data-zoomable />&lt;/div>
@@ -187,10 +187,10 @@ Thiết lập 2 trang in trong 1 layout
 &lt;figure id="figure-thiết-lập-tham-số-xuất-ảnh">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Thiết lập tham số xuất ảnh" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_export_hu_f829c14b537b2af6.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_export_hu_dd8f257caaabf371.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_export_hu_c52281c3b38aec0c.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_export_hu_f829c14b537b2af6.webp"
+/course/gis/8_layout/8_layout_export_hu_f829c14b537b2af6.webp 400w,
+/course/gis/8_layout/8_layout_export_hu_dd8f257caaabf371.webp 760w,
+/course/gis/8_layout/8_layout_export_hu_c52281c3b38aec0c.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_export_hu_f829c14b537b2af6.webp"
 width="353"
 height="483"
 loading="lazy" data-zoomable />&lt;/div>
@@ -230,10 +230,10 @@ QGIS chỉ xuất ảnh những nội dung phía trong diện tích trang in (v�
 &lt;figure id="figure-thêm-bản-đồ-và-các-công-cụ-thiết-kế-trang-in">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Thêm bản đồ và các công cụ thiết kế trang in" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_tools_hu_36f5e8cc02f0dcaf.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_tools_hu_7e42e3738cc99799.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_tools_hu_957bff1ff4a59ba8.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_tools_hu_36f5e8cc02f0dcaf.webp"
+/course/gis/8_layout/8_layout_tools_hu_36f5e8cc02f0dcaf.webp 400w,
+/course/gis/8_layout/8_layout_tools_hu_7e42e3738cc99799.webp 760w,
+/course/gis/8_layout/8_layout_tools_hu_957bff1ff4a59ba8.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_tools_hu_36f5e8cc02f0dcaf.webp"
 width="760"
 height="544"
 loading="lazy" data-zoomable />&lt;/div>
@@ -248,10 +248,10 @@ Thêm bản đồ và các công cụ thiết kế trang in
 &lt;figure id="figure-dùng-selectmove-item-di-chuyển-khung-bản-đồ">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Dùng Select/Move Item di chuyển khung bản đồ" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_selectitem_hu_aa0be3e5ad97e937.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_selectitem_hu_b7857f919372f3a.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_selectitem_hu_d8cb2c994f7c1ec3.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_selectitem_hu_aa0be3e5ad97e937.webp"
+/course/gis/8_layout/8_layout_selectitem_hu_aa0be3e5ad97e937.webp 400w,
+/course/gis/8_layout/8_layout_selectitem_hu_b7857f919372f3a.webp 760w,
+/course/gis/8_layout/8_layout_selectitem_hu_d8cb2c994f7c1ec3.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_selectitem_hu_aa0be3e5ad97e937.webp"
 width="550"
 height="402"
 loading="lazy" data-zoomable />&lt;/div>
@@ -265,10 +265,10 @@ Dùng Select/Move Item di chuyển khung bản đồ
 &lt;figure id="figure-dùng-move-item-content-để-di-chuyển-nội-dung-trong-khung-bản-đồ">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Dùng Move item content để di chuyển nội dung trong khung bản đồ" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_itemcontent_hu_bb80d7946361ad99.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_itemcontent_hu_51169afe15dfab53.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_itemcontent_hu_25af153319f4cc6f.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_itemcontent_hu_bb80d7946361ad99.webp"
+/course/gis/8_layout/8_layout_itemcontent_hu_bb80d7946361ad99.webp 400w,
+/course/gis/8_layout/8_layout_itemcontent_hu_51169afe15dfab53.webp 760w,
+/course/gis/8_layout/8_layout_itemcontent_hu_25af153319f4cc6f.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_itemcontent_hu_bb80d7946361ad99.webp"
 width="474"
 height="272"
 loading="lazy" data-zoomable />&lt;/div>
@@ -294,10 +294,10 @@ Dùng Move item content để di chuyển nội dung trong khung bản đồ
 &lt;figure id="figure-item-properties-của-map">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Item Properties của Map" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_itemproperties_hu_db6b71129a7095bf.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_itemproperties_hu_aab47bc450ff2016.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_itemproperties_hu_46c6f3af44eed309.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_itemproperties_hu_db6b71129a7095bf.webp"
+/course/gis/8_layout/8_layout_itemproperties_hu_db6b71129a7095bf.webp 400w,
+/course/gis/8_layout/8_layout_itemproperties_hu_aab47bc450ff2016.webp 760w,
+/course/gis/8_layout/8_layout_itemproperties_hu_46c6f3af44eed309.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_itemproperties_hu_db6b71129a7095bf.webp"
 width="760"
 height="451"
 loading="lazy" data-zoomable />&lt;/div>
@@ -338,10 +338,10 @@ Item Properties của Map
 &lt;figure id="figure-item-properties-của-thước-tỷ-lệ">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Item Properties của Thước tỷ lệ" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_scalenorth1_hu_cc52d5dc6991e975.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_scalenorth1_hu_fd789ef24b8f224.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_scalenorth1_hu_14fd8d750c89c2ca.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_scalenorth1_hu_cc52d5dc6991e975.webp"
+/course/gis/8_layout/8_layout_scalenorth1_hu_cc52d5dc6991e975.webp 400w,
+/course/gis/8_layout/8_layout_scalenorth1_hu_fd789ef24b8f224.webp 760w,
+/course/gis/8_layout/8_layout_scalenorth1_hu_14fd8d750c89c2ca.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_scalenorth1_hu_cc52d5dc6991e975.webp"
 width="577"
 height="523"
 loading="lazy" data-zoomable />&lt;/div>
@@ -371,10 +371,10 @@ Item Properties của Thước tỷ lệ
 &lt;figure id="figure-chọn-kiểu-mũi-tên-chỉ-hướng-bắc">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Chọn kiểu mũi tên chỉ hướng Bắc" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_scalenorth2_hu_be602a8b47fd713c.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_scalenorth2_hu_d7877ec3a9d52f0c.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_scalenorth2_hu_e4f963f0ca541aa.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_scalenorth2_hu_be602a8b47fd713c.webp"
+/course/gis/8_layout/8_layout_scalenorth2_hu_be602a8b47fd713c.webp 400w,
+/course/gis/8_layout/8_layout_scalenorth2_hu_d7877ec3a9d52f0c.webp 760w,
+/course/gis/8_layout/8_layout_scalenorth2_hu_e4f963f0ca541aa.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_scalenorth2_hu_be602a8b47fd713c.webp"
 width="419"
 height="567"
 loading="lazy" data-zoomable />&lt;/div>
@@ -386,10 +386,10 @@ Chọn kiểu mũi tên chỉ hướng Bắc
 &lt;figure id="figure-đến-bước-này-bản-đồ-của-bạn-sẽ-trông-như-thế-này">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Đến bước này, bản đồ của bạn sẽ trông như thế này" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_intermediate_hu_78c02070e92942dc.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_intermediate_hu_65608e8abc5ad636.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_intermediate_hu_d899d42ed713132c.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_intermediate_hu_78c02070e92942dc.webp"
+/course/gis/8_layout/8_layout_intermediate_hu_78c02070e92942dc.webp 400w,
+/course/gis/8_layout/8_layout_intermediate_hu_65608e8abc5ad636.webp 760w,
+/course/gis/8_layout/8_layout_intermediate_hu_d899d42ed713132c.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_intermediate_hu_78c02070e92942dc.webp"
 width="448"
 height="751"
 loading="lazy" data-zoomable />&lt;/div>
@@ -416,10 +416,10 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;figure id="figure-legend-xuất-hiện-sau-khi-thêm">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Legend xuất hiện sau khi thêm" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_legend1_hu_aae630a2fc83bd18.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_legend1_hu_275a3c81a50b5d03.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_legend1_hu_4d0ba529a61c1e60.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_legend1_hu_aae630a2fc83bd18.webp"
+/course/gis/8_layout/8_layout_legend1_hu_aae630a2fc83bd18.webp 400w,
+/course/gis/8_layout/8_layout_legend1_hu_275a3c81a50b5d03.webp 760w,
+/course/gis/8_layout/8_layout_legend1_hu_4d0ba529a61c1e60.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_legend1_hu_aae630a2fc83bd18.webp"
 width="419"
 height="656"
 loading="lazy" data-zoomable />&lt;/div>
@@ -450,10 +450,10 @@ Legend xuất hiện sau khi thêm
 &lt;figure id="figure-các-công-cụ-trong-legend-items">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Các công cụ trong Legend items" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_legend2_hu_f0b3446936580cd6.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_legend2_hu_e6ae9a31d819954b.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_legend2_hu_d0f2a05dd10ceb32.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_legend2_hu_f0b3446936580cd6.webp"
+/course/gis/8_layout/8_layout_legend2_hu_f0b3446936580cd6.webp 400w,
+/course/gis/8_layout/8_layout_legend2_hu_e6ae9a31d819954b.webp 760w,
+/course/gis/8_layout/8_layout_legend2_hu_d0f2a05dd10ceb32.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_legend2_hu_f0b3446936580cd6.webp"
 width="222"
 height="34"
 loading="lazy" data-zoomable />&lt;/div>
@@ -467,10 +467,10 @@ Các công cụ trong Legend items
 &lt;figure id="figure-các-công-cụ-trong-legend-items-tiếp">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Các công cụ trong Legend items (tiếp)" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_legend3_hu_71567d9fe77cd404.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_legend3_hu_9006df0b11b28a2f.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_legend3_hu_918774c767a4866f.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_legend3_hu_71567d9fe77cd404.webp"
+/course/gis/8_layout/8_layout_legend3_hu_71567d9fe77cd404.webp 400w,
+/course/gis/8_layout/8_layout_legend3_hu_9006df0b11b28a2f.webp 760w,
+/course/gis/8_layout/8_layout_legend3_hu_918774c767a4866f.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_legend3_hu_71567d9fe77cd404.webp"
 width="486"
 height="507"
 loading="lazy" data-zoomable />&lt;/div>
@@ -485,10 +485,10 @@ Các công cụ trong Legend items (tiếp)
 &lt;figure id="figure-font-and-text-formatting">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Font and Text Formatting" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_legend4_hu_1fbadbd4e8004c91.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_legend4_hu_ee59403c99692e1f.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_legend4_hu_29a14d05dd1f257c.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_legend4_hu_1fbadbd4e8004c91.webp"
+/course/gis/8_layout/8_layout_legend4_hu_1fbadbd4e8004c91.webp 400w,
+/course/gis/8_layout/8_layout_legend4_hu_ee59403c99692e1f.webp 760w,
+/course/gis/8_layout/8_layout_legend4_hu_29a14d05dd1f257c.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_legend4_hu_1fbadbd4e8004c91.webp"
 width="356"
 height="455"
 loading="lazy" data-zoomable />&lt;/div>
@@ -509,10 +509,10 @@ Font and Text Formatting
 &lt;figure id="figure-yêu-cầu-kết-quả-đến-bước-này">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Yêu cầu kết quả đến bước này" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_result1_hu_c60d00f7c07afe5a.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_result1_hu_28abe577b0147069.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_result1_hu_fc72c7cf547efdd0.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_result1_hu_c60d00f7c07afe5a.webp"
+/course/gis/8_layout/8_layout_result1_hu_c60d00f7c07afe5a.webp 400w,
+/course/gis/8_layout/8_layout_result1_hu_28abe577b0147069.webp 760w,
+/course/gis/8_layout/8_layout_result1_hu_fc72c7cf547efdd0.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_result1_hu_c60d00f7c07afe5a.webp"
 width="517"
 height="748"
 loading="lazy" data-zoomable />&lt;/div>
@@ -529,10 +529,10 @@ Yêu cầu kết quả đến bước này
 &lt;figure id="figure-nhập-tiêu-đề-của-bản-đồ">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Nhập tiêu đề của bản đồ" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_title_hu_bc3725ebadf5f8dc.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_title_hu_ed0996eca16037e8.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_title_hu_14a3f9b710c117e6.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_title_hu_bc3725ebadf5f8dc.webp"
+/course/gis/8_layout/8_layout_title_hu_bc3725ebadf5f8dc.webp 400w,
+/course/gis/8_layout/8_layout_title_hu_ed0996eca16037e8.webp 760w,
+/course/gis/8_layout/8_layout_title_hu_14a3f9b710c117e6.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_title_hu_bc3725ebadf5f8dc.webp"
 width="760"
 height="456"
 loading="lazy" data-zoomable />&lt;/div>
@@ -549,7 +549,7 @@ Nhập tiêu đề của bản đồ
 &lt;li>So sánh các khu vực khác nhau trong cùng một bố cục.&lt;/li>
 &lt;/ul>
 &lt;h4 id="dữ-liệu-thực-hành">Dữ liệu thực hành&lt;/h4>
-&lt;p>Thực hành phần này yêu cầu dữ liệu của &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/7_analysis/#công-cụ-đếm-điểm-trong-vùng-count-points-in-polygon">Bài 7&lt;/a>, bao gồm các lớp:&lt;/p>
+&lt;p>Thực hành phần này yêu cầu dữ liệu của &lt;a href="https://thaytunghanu.github.io/course/gis/7_analysis/#công-cụ-đếm-điểm-trong-vùng-count-points-in-polygon">Bài 7&lt;/a>, bao gồm các lớp:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Vietnam_dams&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>Vietnam_Provinces_with_Dams_count&lt;/strong>&lt;/li>
@@ -562,10 +562,10 @@ Nhập tiêu đề của bản đồ
 &lt;figure id="figure-chuẩn-bị-layout">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Chuẩn bị layout" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_chuanbiinset_hu_180f6db3256b9c75.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_chuanbiinset_hu_5b4ed0a4dea9d56c.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_chuanbiinset_hu_5fddeaefe8ba2a54.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_chuanbiinset_hu_180f6db3256b9c75.webp"
+/course/gis/8_layout/8_layout_chuanbiinset_hu_180f6db3256b9c75.webp 400w,
+/course/gis/8_layout/8_layout_chuanbiinset_hu_5b4ed0a4dea9d56c.webp 760w,
+/course/gis/8_layout/8_layout_chuanbiinset_hu_5fddeaefe8ba2a54.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_chuanbiinset_hu_180f6db3256b9c75.webp"
 width="528"
 height="760"
 loading="lazy" data-zoomable />&lt;/div>
@@ -578,10 +578,10 @@ Chuẩn bị layout
 &lt;figure id="figure-tỉnh-dak-lak-nơi-chứa-nhiều-đập-thủy-điện-được-chọn-để-thiết-kế-bản-đồ-inset">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Tỉnh Dak Lak nơi chứa nhiều đập thủy điện, được chọn để thiết kế bản đồ inset" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_inset1_hu_1f3db3281a0223e2.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_inset1_hu_9ec830344856b608.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_inset1_hu_759a9d32e5015d00.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_inset1_hu_1f3db3281a0223e2.webp"
+/course/gis/8_layout/8_layout_inset1_hu_1f3db3281a0223e2.webp 400w,
+/course/gis/8_layout/8_layout_inset1_hu_9ec830344856b608.webp 760w,
+/course/gis/8_layout/8_layout_inset1_hu_759a9d32e5015d00.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_inset1_hu_1f3db3281a0223e2.webp"
 width="760"
 height="496"
 loading="lazy" data-zoomable />&lt;/div>
@@ -602,10 +602,10 @@ Tỉnh Dak Lak nơi chứa nhiều đập thủy điện, được chọn để 
 &lt;figure id="figure-đặt-inset-map-vào-vị-trí-và-phóng-to-tỉnh-dak-lak">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Đặt inset map vào vị trí và phóng to tỉnh Dak Lak" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_inset2_hu_b61017326aeb2d3.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_inset2_hu_6f5505c659dc7876.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_inset2_hu_af0254959701805e.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_inset2_hu_b61017326aeb2d3.webp"
+/course/gis/8_layout/8_layout_inset2_hu_b61017326aeb2d3.webp 400w,
+/course/gis/8_layout/8_layout_inset2_hu_6f5505c659dc7876.webp 760w,
+/course/gis/8_layout/8_layout_inset2_hu_af0254959701805e.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_inset2_hu_b61017326aeb2d3.webp"
 width="760"
 height="633"
 loading="lazy" data-zoomable />&lt;/div>
@@ -629,10 +629,10 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;figure id="figure-kết-quả-tạo-bản-đồ-inset-cho-vùng-dak-lak">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết quả tạo bản đồ inset cho vùng Dak Lak" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_inset3_hu_ac6610798b9a921.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_inset3_hu_79befd189950c585.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_inset3_hu_1ad967815a10fdb8.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_inset3_hu_ac6610798b9a921.webp"
+/course/gis/8_layout/8_layout_inset3_hu_ac6610798b9a921.webp 400w,
+/course/gis/8_layout/8_layout_inset3_hu_79befd189950c585.webp 760w,
+/course/gis/8_layout/8_layout_inset3_hu_1ad967815a10fdb8.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_inset3_hu_ac6610798b9a921.webp"
 width="760"
 height="553"
 loading="lazy" data-zoomable />&lt;/div>
@@ -655,10 +655,10 @@ Kết quả tạo bản đồ inset cho vùng Dak Lak
 &lt;figure id="figure-thực-hiện-thêm-ảnh-vào-layout">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Thực hiện thêm ảnh vào layout" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_image_hu_9b688d92c3a96ec2.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_image_hu_e3e74297608b9b9e.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_image_hu_dac4dd342fa4c11b.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_image_hu_9b688d92c3a96ec2.webp"
+/course/gis/8_layout/8_layout_image_hu_9b688d92c3a96ec2.webp 400w,
+/course/gis/8_layout/8_layout_image_hu_e3e74297608b9b9e.webp 760w,
+/course/gis/8_layout/8_layout_image_hu_dac4dd342fa4c11b.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_image_hu_9b688d92c3a96ec2.webp"
 width="665"
 height="401"
 loading="lazy" data-zoomable />&lt;/div>
@@ -670,10 +670,10 @@ Thực hiện thêm ảnh vào layout
 &lt;figure id="figure-kết-quả-sau-khi-tạo-inset-map-và-thêm-ảnh">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết quả sau khi tạo inset map và thêm ảnh" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_result2_hu_cdc3e1037fdfa116.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_result2_hu_7d821ee080b3187f.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_result2_hu_e58b896c71df10a8.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_result2_hu_cdc3e1037fdfa116.webp"
+/course/gis/8_layout/8_layout_result2_hu_cdc3e1037fdfa116.webp 400w,
+/course/gis/8_layout/8_layout_result2_hu_7d821ee080b3187f.webp 760w,
+/course/gis/8_layout/8_layout_result2_hu_e58b896c71df10a8.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_result2_hu_cdc3e1037fdfa116.webp"
 width="528"
 height="760"
 loading="lazy" data-zoomable />&lt;/div>
@@ -705,10 +705,10 @@ Kết quả sau khi tạo inset map và thêm ảnh
 &lt;figure id="figure-khởi-tạo-lưới-tọa-độ">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Khởi tạo lưới tọa độ" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_grid1_hu_443c9b2d82aea000.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_grid1_hu_59d358ac72d94ceb.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_grid1_hu_2fccf500c51d3442.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_grid1_hu_443c9b2d82aea000.webp"
+/course/gis/8_layout/8_layout_grid1_hu_443c9b2d82aea000.webp 400w,
+/course/gis/8_layout/8_layout_grid1_hu_59d358ac72d94ceb.webp 760w,
+/course/gis/8_layout/8_layout_grid1_hu_2fccf500c51d3442.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_grid1_hu_443c9b2d82aea000.webp"
 width="396"
 height="552"
 loading="lazy" data-zoomable />&lt;/div>
@@ -730,10 +730,10 @@ Khởi tạo lưới tọa độ
 &lt;figure id="figure-khởi-tạo-lưới-tọa-độ">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Khởi tạo lưới tọa độ" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_grid2_hu_e9ff50dafc8b0bd0.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_grid2_hu_42baa32b01f62cfa.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_grid2_hu_3df1e2648e1e94be.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_grid2_hu_e9ff50dafc8b0bd0.webp"
+/course/gis/8_layout/8_layout_grid2_hu_e9ff50dafc8b0bd0.webp 400w,
+/course/gis/8_layout/8_layout_grid2_hu_42baa32b01f62cfa.webp 760w,
+/course/gis/8_layout/8_layout_grid2_hu_3df1e2648e1e94be.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_grid2_hu_e9ff50dafc8b0bd0.webp"
 width="738"
 height="417"
 loading="lazy" data-zoomable />&lt;/div>
@@ -750,10 +750,10 @@ Khởi tạo lưới tọa độ
 &lt;figure id="figure-khung-bản-đồ">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Khung bản đồ" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_grid3_hu_8af7819cc2ea9aa0.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_grid3_hu_36dfaec34f92fa3e.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_grid3_hu_60af51f5a9ac212e.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_grid3_hu_8af7819cc2ea9aa0.webp"
+/course/gis/8_layout/8_layout_grid3_hu_8af7819cc2ea9aa0.webp 400w,
+/course/gis/8_layout/8_layout_grid3_hu_36dfaec34f92fa3e.webp 760w,
+/course/gis/8_layout/8_layout_grid3_hu_60af51f5a9ac212e.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_grid3_hu_8af7819cc2ea9aa0.webp"
 width="669"
 height="558"
 loading="lazy" data-zoomable />&lt;/div>
@@ -776,10 +776,10 @@ Khung bản đồ
 &lt;figure id="figure-thiết-lập-hiển-thị-tọa-độ">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Thiết lập hiển thị tọa độ" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_grid4_hu_a26e2cf8e1c57393.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_grid4_hu_3d31d11ac3a0d81e.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_grid4_hu_21518ca5c3a14ad0.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_grid4_hu_a26e2cf8e1c57393.webp"
+/course/gis/8_layout/8_layout_grid4_hu_a26e2cf8e1c57393.webp 400w,
+/course/gis/8_layout/8_layout_grid4_hu_3d31d11ac3a0d81e.webp 760w,
+/course/gis/8_layout/8_layout_grid4_hu_21518ca5c3a14ad0.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_grid4_hu_a26e2cf8e1c57393.webp"
 width="679"
 height="577"
 loading="lazy" data-zoomable />&lt;/div>
@@ -791,10 +791,10 @@ Thiết lập hiển thị tọa độ
 &lt;figure id="figure-kết-quả-sau-khi-kẻ-lưới-tọa-độ">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Kết quả sau khi kẻ lưới tọa độ" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_grid5_hu_cf80a7fe39d1b8fb.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_grid5_hu_749a603810207861.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_grid5_hu_aaa06f6f3e9eef66.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_grid5_hu_cf80a7fe39d1b8fb.webp"
+/course/gis/8_layout/8_layout_grid5_hu_cf80a7fe39d1b8fb.webp 400w,
+/course/gis/8_layout/8_layout_grid5_hu_749a603810207861.webp 760w,
+/course/gis/8_layout/8_layout_grid5_hu_aaa06f6f3e9eef66.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_grid5_hu_cf80a7fe39d1b8fb.webp"
 width="537"
 height="760"
 loading="lazy" data-zoomable />&lt;/div>
@@ -813,10 +813,10 @@ Cách thực hiện: trong layout view:&lt;/p>
 &lt;figure id="figure-xuất-bản-đồ-dạng-pdf">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Xuất bản đồ dạng PDF" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_export2_hu_3d168362a33b5e42.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_export2_hu_a1bae4145b074221.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_export2_hu_95c6b4c3e23bd4b4.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_export2_hu_3d168362a33b5e42.webp"
+/course/gis/8_layout/8_layout_export2_hu_3d168362a33b5e42.webp 400w,
+/course/gis/8_layout/8_layout_export2_hu_a1bae4145b074221.webp 760w,
+/course/gis/8_layout/8_layout_export2_hu_95c6b4c3e23bd4b4.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_export2_hu_3d168362a33b5e42.webp"
 width="760"
 height="590"
 loading="lazy" data-zoomable />&lt;/div>
@@ -827,14 +827,14 @@ Xuất bản đồ dạng PDF
 &lt;/ul>
 &lt;h2 id="homework">Homework&lt;/h2>
 &lt;h3 id="homework-phần-1">Homework phần 1&lt;/h3>
-&lt;p>Sử dụng các lớp dữ liệu đã số hóa ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/#homework">Bài 3&lt;/a> để thiết kế một layout như hình dưới:
+&lt;p>Sử dụng các lớp dữ liệu đã số hóa ở &lt;a href="https://thaytunghanu.github.io/course/gis/3_gisdata/#homework">Bài 3&lt;/a> để thiết kế một layout như hình dưới:
 &lt;figure id="figure-yêu-cầu-kết-quả-homework-phần-1">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Yêu cầu kết quả homework phần 1" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_homework1_hu_74fb196ad9dad964.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_homework1_hu_7fd73bd05214e13b.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_homework1_hu_fd347252c4a20242.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_homework1_hu_74fb196ad9dad964.webp"
+/course/gis/8_layout/8_layout_homework1_hu_74fb196ad9dad964.webp 400w,
+/course/gis/8_layout/8_layout_homework1_hu_7fd73bd05214e13b.webp 760w,
+/course/gis/8_layout/8_layout_homework1_hu_fd347252c4a20242.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_homework1_hu_74fb196ad9dad964.webp"
 width="760"
 height="523"
 loading="lazy" data-zoomable />&lt;/div>
@@ -851,15 +851,15 @@ Yêu cầu kết quả homework phần 1
 &lt;/ul>
 &lt;h3 id="homework-phần-3">Homework phần 3&lt;/h3>
 &lt;ul>
-&lt;li>Export layout đã tạo ở homework phần 1 ra ảnh kèm theo &lt;strong>world file&lt;/strong>. Xem lại world file ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/#thiết-lập-tham-số-xuất-ảnh-export-settings">đây&lt;/a>&lt;/li>
+&lt;li>Export layout đã tạo ở homework phần 1 ra ảnh kèm theo &lt;strong>world file&lt;/strong>. Xem lại world file ở &lt;a href="https://thaytunghanu.github.io/course/gis/8_layout/#thiết-lập-tham-số-xuất-ảnh-export-settings">đây&lt;/a>&lt;/li>
 &lt;li>Load ảnh có world file vừa export lên Map canvas để trải nghiệm chức năng của world file.
 &lt;figure id="figure-load-ảnh-có-world-file-lên-map-canvas">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Load ảnh có world file lên Map canvas" srcset="
-/onlinecourse/course/gis/8_layout/8_layout_homework2_hu_71e80f4473596a09.webp 400w,
-/onlinecourse/course/gis/8_layout/8_layout_homework2_hu_f578f67e53f192f4.webp 760w,
-/onlinecourse/course/gis/8_layout/8_layout_homework2_hu_f1c97ab1111cf69b.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/8_layout/8_layout_homework2_hu_71e80f4473596a09.webp"
+/course/gis/8_layout/8_layout_homework2_hu_71e80f4473596a09.webp 400w,
+/course/gis/8_layout/8_layout_homework2_hu_f578f67e53f192f4.webp 760w,
+/course/gis/8_layout/8_layout_homework2_hu_f1c97ab1111cf69b.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/8_layout/8_layout_homework2_hu_71e80f4473596a09.webp"
 width="760"
 height="403"
 loading="lazy" data-zoomable />&lt;/div>

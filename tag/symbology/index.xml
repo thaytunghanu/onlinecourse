@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Symbology | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/onlinecourse/tag/symbology/</link><atom:link href="https://thaytunghanu.github.io/onlinecourse/tag/symbology/index.xml" rel="self" type="application/rss+xml"/><description>Symbology</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/onlinecourse/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Symbology</title><link>https://thaytunghanu.github.io/onlinecourse/tag/symbology/</link></image><item><title>5. Thể hiện và trình bày dữ liệu vector</title><link>https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/</guid><description>&lt;p>Thực hành về thể hiện và trình bày lớp vector. Tiếp tục thực hành về tính toán trường dữ liệu (field calculator).&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Symbology | Thầy Tùng HANU</title><link>https://thaytunghanu.github.io/tag/symbology/</link><atom:link href="https://thaytunghanu.github.io/tag/symbology/index.xml" rel="self" type="application/rss+xml"/><description>Symbology</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://thaytunghanu.github.io/media/icon_hu_4dc5ceaeecd658cf.png</url><title>Symbology</title><link>https://thaytunghanu.github.io/tag/symbology/</link></image><item><title>5. Thể hiện và trình bày dữ liệu vector</title><link>https://thaytunghanu.github.io/course/gis/5_symbology/</link><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate><guid>https://thaytunghanu.github.io/course/gis/5_symbology/</guid><description>&lt;p>Thực hành về thể hiện và trình bày lớp vector. Tiếp tục thực hành về tính toán trường dữ liệu (field calculator).&lt;/p>
 &lt;h2 id="thể-hiện-ký-hiệu-bản-đồ-trong-qgis">Thể hiện ký hiệu bản đồ trong QGIS&lt;/h2>
 &lt;ul>
 &lt;li>Ở bài 2, chúng ta đã có thực hiện một số bước thực hành căn bản về ký hiệu bản đồ (symbology): bao gồm làm trong màu nền của đối tượng vùng và đổi màu đường viền.&lt;/li>
@@ -22,16 +22,16 @@
 &lt;/ul>
 &lt;h2 id="thực-hành">Thực hành&lt;/h2>
 &lt;h3 id="dữ-liệu-thực-hành">Dữ liệu thực hành&lt;/h3>
-&lt;p>Lớp Vietnam_provinces_2015population đã làm ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/#homework">Homework số 7, Bài 4&lt;/a>. Lớp này chính là Vietnam_Provinces đã liên kết thêm các trường thông tin dân số 2015.&lt;/p>
+&lt;p>Lớp Vietnam_provinces_2015population đã làm ở &lt;a href="https://thaytunghanu.github.io/course/gis/4_attribute/#homework">Homework số 7, Bài 4&lt;/a>. Lớp này chính là Vietnam_Provinces đã liên kết thêm các trường thông tin dân số 2015.&lt;/p>
 &lt;h3 id="symbology-cơ-bản">Symbology cơ bản&lt;/h3>
 &lt;p>Nhắc lại kiến thức đã học: Hãy đổi màu nền các tỉnh sang màu vàng như ảnh dưới. Cách thực hiện: Chuột phải vào lớp Vietnam_provinces_2015population &amp;gt; Properties &amp;gt; Symbology &amp;gt; Chọn Simple Fill, xuống dưới đổi màu ô Color.
 &lt;figure id="figure-đổi-màu-nền-trong-mục-single-symbol">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_single_hu_b06d8ad159f1f36b.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_single_hu_b9e5b833d14a2984.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_single_hu_619fe1cb8879788a.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_single_hu_b06d8ad159f1f36b.webp"
+/course/gis/5_symbology/5_symbology_single_hu_b06d8ad159f1f36b.webp 400w,
+/course/gis/5_symbology/5_symbology_single_hu_b9e5b833d14a2984.webp 760w,
+/course/gis/5_symbology/5_symbology_single_hu_619fe1cb8879788a.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_single_hu_b06d8ad159f1f36b.webp"
 width="760"
 height="438"
 loading="lazy" data-zoomable />&lt;/div>
@@ -47,10 +47,10 @@ Thực hiện:&lt;/p>
 &lt;figure id="figure-chọn-categorized">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_categorized1_hu_5af45305b4e3ff0b.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_categorized1_hu_a9b9c1a19c9abb4e.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_categorized1_hu_d9974365729e2738.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_categorized1_hu_5af45305b4e3ff0b.webp"
+/course/gis/5_symbology/5_symbology_categorized1_hu_5af45305b4e3ff0b.webp 400w,
+/course/gis/5_symbology/5_symbology_categorized1_hu_a9b9c1a19c9abb4e.webp 760w,
+/course/gis/5_symbology/5_symbology_categorized1_hu_d9974365729e2738.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_categorized1_hu_5af45305b4e3ff0b.webp"
 width="760"
 height="240"
 loading="lazy" data-zoomable />&lt;/div>
@@ -62,10 +62,10 @@ Chọn Categorized
 &lt;figure id="figure-chọn-trường-varname_1-chứa-tên-tỉnh-bằng-tiếng-anh">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_categorized2_hu_f945041d6da2021a.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_categorized2_hu_c8f79cea25ce968f.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_categorized2_hu_874e5f669272f1da.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_categorized2_hu_f945041d6da2021a.webp"
+/course/gis/5_symbology/5_symbology_categorized2_hu_f945041d6da2021a.webp 400w,
+/course/gis/5_symbology/5_symbology_categorized2_hu_c8f79cea25ce968f.webp 760w,
+/course/gis/5_symbology/5_symbology_categorized2_hu_874e5f669272f1da.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_categorized2_hu_f945041d6da2021a.webp"
 width="760"
 height="663"
 loading="lazy" data-zoomable />&lt;/div>
@@ -77,10 +77,10 @@ Chọn trường VARNAME_1 chứa tên tỉnh bằng tiếng Anh
 &lt;figure id="figure-kết-quả-phân-loại-theo-danh-mục">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_categorized3_hu_85a23880de988c3.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_categorized3_hu_dfa412254677770e.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_categorized3_hu_4ff4094a6bd9662c.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_categorized3_hu_85a23880de988c3.webp"
+/course/gis/5_symbology/5_symbology_categorized3_hu_85a23880de988c3.webp 400w,
+/course/gis/5_symbology/5_symbology_categorized3_hu_dfa412254677770e.webp 760w,
+/course/gis/5_symbology/5_symbology_categorized3_hu_4ff4094a6bd9662c.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_categorized3_hu_85a23880de988c3.webp"
 width="760"
 height="462"
 loading="lazy" data-zoomable />&lt;/div>
@@ -92,17 +92,17 @@ Kết quả phân loại theo danh mục
 &lt;h3 id="graduated-phân-loại-theo-thang-đo">Graduated: Phân loại theo thang đo&lt;/h3>
 &lt;ul>
 &lt;li>&lt;code>Ở phần này, chúng ta sẽ phân loại các tỉnh theo dân số năm 2015&lt;/code>. Trường thông tin cần sử dụng trong phần này là trường dân số cấp tỉnh 2015.&lt;/li>
-&lt;li>Nếu bạn chưa có trường này, bạn cần thực hiện kết nối bảng thuộc tính của Vietnam_Provinces và file “2015 provincial population.csv” như hướng dẫn ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/#liên-kết-bảng-dữ-liệu-bên-ngoài-joining-external-tables">Bài 4&lt;/a>.&lt;/li>
+&lt;li>Nếu bạn chưa có trường này, bạn cần thực hiện kết nối bảng thuộc tính của Vietnam_Provinces và file “2015 provincial population.csv” như hướng dẫn ở &lt;a href="https://thaytunghanu.github.io/course/gis/4_attribute/#liên-kết-bảng-dữ-liệu-bên-ngoài-joining-external-tables">Bài 4&lt;/a>.&lt;/li>
 &lt;li>Lưu ý: đơn vị của dữ liệu dân số là &lt;strong>nghìn người&lt;/strong>. Ví dụ: tỉnh Hai Duong có giá trị 1774.5, nghĩa là dân số Hải Dương là 1,744,500 người.&lt;br>
 Cách thực hiện:&lt;/li>
 &lt;li>Chuột phải vào lớp Vietnam_provinces_2015population &amp;gt; Properties &amp;gt; Symbology &amp;gt; Graduated &amp;gt; Ô value chọn trường &amp;ldquo;2015 provincial population_Total_2015&amp;rdquo;, ấn Classify
 &lt;figure id="figure-phân-loại-theo-thang-đo---graduated-với-số-thang-đo-lớp-là-5">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_graduated1_hu_af282e84d5a011f5.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_graduated1_hu_3478775f38e8628e.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_graduated1_hu_605d16771f5803a0.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_graduated1_hu_af282e84d5a011f5.webp"
+/course/gis/5_symbology/5_symbology_graduated1_hu_af282e84d5a011f5.webp 400w,
+/course/gis/5_symbology/5_symbology_graduated1_hu_3478775f38e8628e.webp 760w,
+/course/gis/5_symbology/5_symbology_graduated1_hu_605d16771f5803a0.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_graduated1_hu_af282e84d5a011f5.webp"
 width="760"
 height="536"
 loading="lazy" data-zoomable />&lt;/div>
@@ -119,10 +119,10 @@ Phân loại theo thang đo - Graduated với số thang đo (lớp) là 5
 &lt;figure id="figure-tùy-chỉnh-các-tham-số-ở-phân-loại-theo-thang-đo">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_graduated2_hu_d17b599ba7380cf2.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_graduated2_hu_9b7dbf5986ea512.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_graduated2_hu_8b15ac14e3781339.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_graduated2_hu_d17b599ba7380cf2.webp"
+/course/gis/5_symbology/5_symbology_graduated2_hu_d17b599ba7380cf2.webp 400w,
+/course/gis/5_symbology/5_symbology_graduated2_hu_9b7dbf5986ea512.webp 760w,
+/course/gis/5_symbology/5_symbology_graduated2_hu_8b15ac14e3781339.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_graduated2_hu_d17b599ba7380cf2.webp"
 width="760"
 height="409"
 loading="lazy" data-zoomable />&lt;/div>
@@ -132,10 +132,10 @@ Tùy chỉnh các tham số ở phân loại theo thang đo
 &lt;figure id="figure-các-mode-hiển-thị-ở-phân-loại-graduated-trong-qgis">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_graduated3_hu_cdaeb50a6a24174a.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_graduated3_hu_5738b8ee546cbffa.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_graduated3_hu_b6f5471e6bb4bf6b.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_graduated3_hu_cdaeb50a6a24174a.webp"
+/course/gis/5_symbology/5_symbology_graduated3_hu_cdaeb50a6a24174a.webp 400w,
+/course/gis/5_symbology/5_symbology_graduated3_hu_5738b8ee546cbffa.webp 760w,
+/course/gis/5_symbology/5_symbology_graduated3_hu_b6f5471e6bb4bf6b.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_graduated3_hu_cdaeb50a6a24174a.webp"
 width="760"
 height="452"
 loading="lazy" data-zoomable />&lt;/div>
@@ -154,10 +154,10 @@ Cách thực hiện:&lt;/p>
 &lt;figure id="figure-chuẩn-bị-thiết-lập-quy-tắc">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_rule1_hu_cf52011102175344.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_rule1_hu_8eb03d7dfa825b58.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_rule1_hu_5237bfc2697e29b.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_rule1_hu_cf52011102175344.webp"
+/course/gis/5_symbology/5_symbology_rule1_hu_cf52011102175344.webp 400w,
+/course/gis/5_symbology/5_symbology_rule1_hu_8eb03d7dfa825b58.webp 760w,
+/course/gis/5_symbology/5_symbology_rule1_hu_5237bfc2697e29b.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_rule1_hu_cf52011102175344.webp"
 width="760"
 height="430"
 loading="lazy" data-zoomable />&lt;/div>
@@ -170,10 +170,10 @@ Chuẩn bị thiết lập quy tắc
 &lt;figure id="figure-thiết-lập-quy-tắc">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_rule2_hu_c0d06dcd040646e9.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_rule2_hu_2451dc74cdce692f.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_rule2_hu_e2a9e5f5064e93b8.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_rule2_hu_c0d06dcd040646e9.webp"
+/course/gis/5_symbology/5_symbology_rule2_hu_c0d06dcd040646e9.webp 400w,
+/course/gis/5_symbology/5_symbology_rule2_hu_2451dc74cdce692f.webp 760w,
+/course/gis/5_symbology/5_symbology_rule2_hu_e2a9e5f5064e93b8.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_rule2_hu_c0d06dcd040646e9.webp"
 width="760"
 height="445"
 loading="lazy" data-zoomable />&lt;/div>
@@ -183,10 +183,10 @@ Thiết lập quy tắc
 &lt;figure id="figure-kết-quả-hiển-thị">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_rule3_hu_360ac7c9bf78273.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_rule3_hu_363b46d04491dc50.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_rule3_hu_a01ce5bddbada937.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_rule3_hu_360ac7c9bf78273.webp"
+/course/gis/5_symbology/5_symbology_rule3_hu_360ac7c9bf78273.webp 400w,
+/course/gis/5_symbology/5_symbology_rule3_hu_363b46d04491dc50.webp 760w,
+/course/gis/5_symbology/5_symbology_rule3_hu_a01ce5bddbada937.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_rule3_hu_360ac7c9bf78273.webp"
 width="760"
 height="403"
 loading="lazy" data-zoomable />&lt;/div>
@@ -197,7 +197,7 @@ Kết quả hiển thị
 &lt;/ul>
 &lt;h3 id="hiển-thị-25d">Hiển thị 2.5D&lt;/h3>
 &lt;p>Cách này sẽ hiển thị các đối tượng có hình dạng 2 chiều thành những hình khối 3 chiều.&lt;/p>
-&lt;p style="color: red">Nhiệm vụ phần này là hiển thị lớp Buildings đã số hóa ở &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/3_gisdata/#homework">Homework số 2, Bài 3&lt;/a> dưới dạng 2.5D&lt;/p>
+&lt;p style="color: red">Nhiệm vụ phần này là hiển thị lớp Buildings đã số hóa ở &lt;a href="https://thaytunghanu.github.io/course/gis/3_gisdata/#homework">Homework số 2, Bài 3&lt;/a> dưới dạng 2.5D&lt;/p>
 &lt;p>Cách thực hiện:&lt;/p>
 &lt;ul>
 &lt;li>Chuột phải vào lớp Vietnam_provinces_2015population &amp;gt; Properties &amp;gt; Symbology &amp;gt; 2.5D&lt;/li>
@@ -205,10 +205,10 @@ Kết quả hiển thị
 &lt;figure id="figure-thiết-lập-tham-số">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_3D1_hu_4875aae45ecdc7f7.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_3D1_hu_c081a4bc01dc9f97.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_3D1_hu_361f5e23b76614b1.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_3D1_hu_4875aae45ecdc7f7.webp"
+/course/gis/5_symbology/5_symbology_3D1_hu_4875aae45ecdc7f7.webp 400w,
+/course/gis/5_symbology/5_symbology_3D1_hu_c081a4bc01dc9f97.webp 760w,
+/course/gis/5_symbology/5_symbology_3D1_hu_361f5e23b76614b1.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_3D1_hu_4875aae45ecdc7f7.webp"
 width="760"
 height="494"
 loading="lazy" data-zoomable />&lt;/div>
@@ -218,10 +218,10 @@ Thiết lập tham số
 &lt;figure id="figure-kết-quả-hiển-thị-25d">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_3D2_hu_12d04533351a5989.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_3D2_hu_a6c0d2547adcc5ea.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_3D2_hu_288f75f3d4d85154.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_3D2_hu_12d04533351a5989.webp"
+/course/gis/5_symbology/5_symbology_3D2_hu_12d04533351a5989.webp 400w,
+/course/gis/5_symbology/5_symbology_3D2_hu_a6c0d2547adcc5ea.webp 760w,
+/course/gis/5_symbology/5_symbology_3D2_hu_288f75f3d4d85154.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_3D2_hu_12d04533351a5989.webp"
 width="760"
 height="652"
 loading="lazy" data-zoomable />&lt;/div>
@@ -235,10 +235,10 @@ Kết quả hiển thị 2.5D
 &lt;figure id="figure-điều-chỉnh-mức-độ-trong-suốt-opacity">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_opacity_hu_2a63642247504108.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_opacity_hu_f2aa685abe4b5504.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_opacity_hu_564addb19a2e1a39.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_opacity_hu_2a63642247504108.webp"
+/course/gis/5_symbology/5_symbology_opacity_hu_2a63642247504108.webp 400w,
+/course/gis/5_symbology/5_symbology_opacity_hu_f2aa685abe4b5504.webp 760w,
+/course/gis/5_symbology/5_symbology_opacity_hu_564addb19a2e1a39.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_opacity_hu_2a63642247504108.webp"
 width="760"
 height="358"
 loading="lazy" data-zoomable />&lt;/div>
@@ -248,7 +248,7 @@ loading="lazy" data-zoomable />&lt;/div>
 &lt;/p>
 &lt;h2 id="tính-toán-các-trường-dữ-liệu-tiếp-theo">Tính toán các trường dữ liệu (tiếp theo)&lt;/h2>
 &lt;ul>
-&lt;li>Ở bài trước, chúng ta đã biết cách &lt;a href="https://thaytunghanu.github.io/onlinecourse/course/gis/4_attribute/#nhập-dữ-liệu-thuộc-tính-dựa-vào-công-cụ-tính-toán-field-calculator">tính diện tích của hồ Bảo Linh&lt;/a> thông qua hàm tính diện tích trong Field Calculator.&lt;/li>
+&lt;li>Ở bài trước, chúng ta đã biết cách &lt;a href="https://thaytunghanu.github.io/course/gis/4_attribute/#nhập-dữ-liệu-thuộc-tính-dựa-vào-công-cụ-tính-toán-field-calculator">tính diện tích của hồ Bảo Linh&lt;/a> thông qua hàm tính diện tích trong Field Calculator.&lt;/li>
 &lt;li>Phần này sẽ giới thiệu cách tạo một trường mới từ việc tính toán đại số dựa trên các trường đã có sẵn.&lt;/li>
 &lt;li>Cụ thể, nhiệm vụ của phần này là tính mật độ dân số năm 2015 của các tỉnh. Biết rằng:&lt;br>
 &lt;span style="background-color:#d3d3d3;padding:2px 4px;border-radius:4px;font-family:monospace;">mật độ dân số&lt;/span>
@@ -273,10 +273,10 @@ Tham khảo thông tin về mật độ dân số các tỉnh năm 2024 &lt;a hr
 &lt;figure id="figure-tính-diện-tích-các-tỉnh-theo-km2">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal1_hu_f0207a05b8059877.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal1_hu_f382d96c0867b8af.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal1_hu_d98182218bcd84bc.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal1_hu_f0207a05b8059877.webp"
+/course/gis/5_symbology/5_symbology_fieldcal1_hu_f0207a05b8059877.webp 400w,
+/course/gis/5_symbology/5_symbology_fieldcal1_hu_f382d96c0867b8af.webp 760w,
+/course/gis/5_symbology/5_symbology_fieldcal1_hu_d98182218bcd84bc.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_fieldcal1_hu_f0207a05b8059877.webp"
 width="760"
 height="344"
 loading="lazy" data-zoomable />&lt;/div>
@@ -290,10 +290,10 @@ Tính diện tích các tỉnh theo km&lt;sup>2&lt;/sup>
 &lt;figure id="figure-tính-mật-độ-dân-số">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal2_hu_5ccc54eb796f1fee.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal2_hu_4fdbd500c5349a06.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal2_hu_914f3672e4e6b508.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal2_hu_5ccc54eb796f1fee.webp"
+/course/gis/5_symbology/5_symbology_fieldcal2_hu_5ccc54eb796f1fee.webp 400w,
+/course/gis/5_symbology/5_symbology_fieldcal2_hu_4fdbd500c5349a06.webp 760w,
+/course/gis/5_symbology/5_symbology_fieldcal2_hu_914f3672e4e6b508.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_fieldcal2_hu_5ccc54eb796f1fee.webp"
 width="760"
 height="632"
 loading="lazy" data-zoomable />&lt;/div>
@@ -303,10 +303,10 @@ Tính mật độ dân số
 &lt;figure id="figure-kết-quả-ở-bảng-thuộc-tính">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal3_hu_3970d119277dd390.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal3_hu_50f3720dc219ffb0.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal3_hu_39a1da38d1fddd32.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_fieldcal3_hu_3970d119277dd390.webp"
+/course/gis/5_symbology/5_symbology_fieldcal3_hu_3970d119277dd390.webp 400w,
+/course/gis/5_symbology/5_symbology_fieldcal3_hu_50f3720dc219ffb0.webp 760w,
+/course/gis/5_symbology/5_symbology_fieldcal3_hu_39a1da38d1fddd32.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_fieldcal3_hu_3970d119277dd390.webp"
 width="760"
 height="433"
 loading="lazy" data-zoomable />&lt;/div>
@@ -329,10 +329,10 @@ Kết quả ở bảng thuộc tính
 &lt;figure id="figure-yêu-cầu-kết-quả">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_homework1_hu_8e6b02c4200ff83f.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_homework1_hu_28b1ceb9d18f3248.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_homework1_hu_9d5cca019f3e37e7.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_homework1_hu_8e6b02c4200ff83f.webp"
+/course/gis/5_symbology/5_symbology_homework1_hu_8e6b02c4200ff83f.webp 400w,
+/course/gis/5_symbology/5_symbology_homework1_hu_28b1ceb9d18f3248.webp 760w,
+/course/gis/5_symbology/5_symbology_homework1_hu_9d5cca019f3e37e7.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_homework1_hu_8e6b02c4200ff83f.webp"
 width="760"
 height="633"
 loading="lazy" data-zoomable />&lt;/div>
@@ -351,10 +351,10 @@ Yêu cầu kết quả
 &lt;figure id="figure-kết-quả-mẫu-tính-ur_ratio">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_homework2_hu_f5c3c707950bb847.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_homework2_hu_7ad1be14163d6224.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_homework2_hu_400ade469a361c7e.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_homework2_hu_f5c3c707950bb847.webp"
+/course/gis/5_symbology/5_symbology_homework2_hu_f5c3c707950bb847.webp 400w,
+/course/gis/5_symbology/5_symbology_homework2_hu_7ad1be14163d6224.webp 760w,
+/course/gis/5_symbology/5_symbology_homework2_hu_400ade469a361c7e.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_homework2_hu_f5c3c707950bb847.webp"
 width="388"
 height="760"
 loading="lazy" data-zoomable />&lt;/div>
@@ -371,10 +371,10 @@ Kết quả mẫu tính UR_Ratio
 &lt;figure id="figure-kết-quả-mẫu-tính-phần-trăm-thay-đổi-của-rừng-tự-nhiên">
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="Ảnh 1" srcset="
-/onlinecourse/course/gis/5_symbology/5_symbology_homework3_hu_c9cf6147e908f2b.webp 400w,
-/onlinecourse/course/gis/5_symbology/5_symbology_homework3_hu_5a9b5294d6e8485.webp 760w,
-/onlinecourse/course/gis/5_symbology/5_symbology_homework3_hu_d7539d918d3bb4f4.webp 1200w"
-src="https://thaytunghanu.github.io/onlinecourse/course/gis/5_symbology/5_symbology_homework3_hu_c9cf6147e908f2b.webp"
+/course/gis/5_symbology/5_symbology_homework3_hu_c9cf6147e908f2b.webp 400w,
+/course/gis/5_symbology/5_symbology_homework3_hu_5a9b5294d6e8485.webp 760w,
+/course/gis/5_symbology/5_symbology_homework3_hu_d7539d918d3bb4f4.webp 1200w"
+src="https://thaytunghanu.github.io/course/gis/5_symbology/5_symbology_homework3_hu_c9cf6147e908f2b.webp"
 width="324"
 height="606"
 loading="lazy" data-zoomable />&lt;/div>
